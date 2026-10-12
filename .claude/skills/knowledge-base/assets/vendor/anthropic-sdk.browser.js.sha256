@@ -1,0 +1,1 @@
+83a2ec305d453155d50cb963d8ca5af43f2010a5019f546ac394eee39bda9371  esbuild --bundle --format=iife --global-name=AnthropicSDK --platform=browser --target=es2020 --minify @anthropic-ai/sdk@0.124.0

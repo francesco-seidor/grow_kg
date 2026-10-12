@@ -1,0 +1,637 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "17-leasing-and-real-estate",
+  "cluster_title": "Leasing and Real Estate",
+  "cluster_description": "Real estate rental objects and contracts, lease-in and lease-out/sublease accounting in local, IFRS and US GAAP ledgers, sales-based rent, and earmarked funds from lease-in contracts.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 19,
+  "nodes": [
+    {
+      "id": "17-leasing-and-real-estate/accounting-interface-for-contract-and-lease-management-7od-ae-test-scr",
+      "title": "Accounting Interface for Contract and Lease Management (7OD_AE) - Test Script (7OD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7OD (AE): real estate expense types, G/L determination, posting periods, and reviewing finance notifications.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "accounting interface",
+        "contract and lease management",
+        "real estate expense types",
+        "g/l account determination",
+        "finance notifications",
+        "posting periods",
+        "journal entries",
+        "business roles",
+        "demo data"
+      ],
+      "aliases": [
+        "7OD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/accounting-interface-for-contract-and-lease-management-7od-ae-test-scr.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7OD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Accounting Interface for Contract and Lease Management (7OD_AE) - Test Script (7OD_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7OD (AE): real estate expense types, G/L determination, posting periods, and reviewing finance notifications | keywords: Real Estate Rental Objects and Lease Accounting, accounting interface, contract and lease management, real estate expense types, g/l account determination, finance notifications, posting periods, journal entries, business roles, demo data, 7OD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/create-rental-object-master-data-script-7ad-521",
+      "title": "Create Rental Object – Master Data Script (7AD) (7AD_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (scope item 7AD) for creating usable, rentable and intercompany rental objects, with prerequisites and test steps.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "rental objects",
+        "usable objects",
+        "rentable objects",
+        "intercompany lease",
+        "usage categories",
+        "usage types",
+        "number ranges",
+        "measurement types",
+        "architecture objects"
+      ],
+      "aliases": [
+        "7AD_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/create-rental-object-master-data-script-7ad-521.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7AD_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Rental Object – Master Data Script (7AD) (7AD_S4CLD2608_Master_Data_EN_XX) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 master data script (scope item 7AD) for creating usable, rentable and intercompany rental objects, with prerequisites and test steps | keywords: Real Estate Rental Objects and Lease Accounting, rental objects, usable objects, rentable objects, intercompany lease, usage categories, usage types, number ranges, measurement types, architecture objects, 7AD_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/intercompany-process-for-sublease-accounting-2o9-test-script-sap-s-4ha",
+      "title": "Intercompany Process for Sublease Accounting (2O9) - Test Script, SAP S/4HANA Cloud Public Edition (2O9_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 2O9: intercompany sublease accounting (lease-out) under local GAAP (2SB), IFRS (2SA) and US GAAP (34O), with prerequisites and test steps.",
+      "keywords": [
+        "Lease-Out, Sublease and Sales-Based Rent Accounting",
+        "sublease accounting",
+        "intercompany lease-out",
+        "lease contract creation",
+        "valuation rules",
+        "periodic valuation posting",
+        "periodic posting",
+        "reverse contract postings",
+        "group ledger ifrs",
+        "group ledger us gaap"
+      ],
+      "aliases": [
+        "2O9_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-out-sublease-and-sales-based-rent"
+      ],
+      "path": "17-leasing-and-real-estate/intercompany-process-for-sublease-accounting-2o9-test-script-sap-s-4ha.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2O9_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Intercompany Process for Sublease Accounting (2O9) - Test Script, SAP S/4HANA Cloud Public Edition (2O9_S4CLD2608_BPD_EN_XX) (Leasing and Real Estate) — SAP test script for scope item 2O9: intercompany sublease accounting (lease-out) under local GAAP (2SB), IFRS (2SA) and US GAAP (34O), with prerequisites and test steps | keywords: Lease-Out, Sublease and Sales-Based Rent Accounting, sublease accounting, intercompany lease-out, lease contract creation, valuation rules, periodic valuation posting, periodic posting, reverse contract postings, group ledger ifrs, group ledger us gaap, 2O9_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/lease-in-accounting-group-ledger-ifrs-21p-ae-test-script-797",
+      "title": "Lease-In Accounting – Group Ledger IFRS (21P_AE) Test Script (21P_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 21P Lease-In Accounting Group Ledger IFRS: prerequisites, config steps and Fiori test procedures.",
+      "keywords": [
+        "Lease-In Accounting",
+        "contract creation",
+        "contract renewal",
+        "contract notice",
+        "contract valuation",
+        "valuation posting",
+        "periodic posting",
+        "contract adjustment",
+        "preliminary configuration",
+        "contract reminders"
+      ],
+      "aliases": [
+        "21P_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-in-accounting"
+      ],
+      "path": "17-leasing-and-real-estate/lease-in-accounting-group-ledger-ifrs-21p-ae-test-script-797.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/21P_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Lease-In Accounting – Group Ledger IFRS (21P_AE) Test Script (21P_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 21P Lease-In Accounting Group Ledger IFRS: prerequisites, config steps and Fiori test procedures | keywords: Lease-In Accounting, contract creation, contract renewal, contract notice, contract valuation, valuation posting, periodic posting, contract adjustment, preliminary configuration, contract reminders, 21P_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/lease-out-for-sublease-accounting-group-ledger-ifrs-2sa-ae-858",
+      "title": "Lease-Out for Sublease Accounting – Group Ledger IFRS (2SA_AE) (2SA_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 2SA: IFRS 16 lease-out sublease contracts, valuation, posting, invoicing, adjustment, with prerequisites.",
+      "keywords": [
+        "Lease-Out, Sublease and Sales-Based Rent Accounting",
+        "sublease accounting",
+        "lease-out contracts",
+        "contract valuation",
+        "periodic posting",
+        "invoicing",
+        "rent adjustment",
+        "account determination",
+        "contract renewal",
+        "contract notice"
+      ],
+      "aliases": [
+        "2SA_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-out-sublease-and-sales-based-rent"
+      ],
+      "path": "17-leasing-and-real-estate/lease-out-for-sublease-accounting-group-ledger-ifrs-2sa-ae-858.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2SA_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Lease-Out for Sublease Accounting – Group Ledger IFRS (2SA_AE) (2SA_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 2SA: IFRS 16 lease-out sublease contracts, valuation, posting, invoicing, adjustment, with prerequisites | keywords: Lease-Out, Sublease and Sales-Based Rent Accounting, sublease accounting, lease-out contracts, contract valuation, periodic posting, invoicing, rent adjustment, account determination, contract renewal, contract notice, 2SA_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/sap-s-4hana-cloud-public-edition-mds-7ad-523",
+      "title": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - 賃貸対象の登録 – MDS (7AD) (7AD_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (7AD, SAP S/4HANA Cloud Public Edition 2608) for registering general rental objects: usable, rentable and intercompany, with/without portfolio structure.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "rental objects",
+        "usable objects",
+        "rentable objects",
+        "intercompany leasing",
+        "usage categories",
+        "usage types",
+        "number ranges",
+        "measurements",
+        "real estate structure objects"
+      ],
+      "aliases": [
+        "7AD_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/sap-s-4hana-cloud-public-edition-mds-7ad-523.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7AD_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - 賃貸対象の登録 – MDS (7AD) (7AD_S4CLD2608_Master_Data_JA_XX) (Leasing and Real Estate) — Japanese master data script (7AD, SAP S/4HANA Cloud Public Edition 2608) for registering general rental objects: usable, rentable and intercompany, with/without portfolio structure | keywords: Real Estate Rental Objects and Lease Accounting, rental objects, usable objects, rentable objects, intercompany leasing, usage categories, usage types, number ranges, measurements, real estate structure objects, 7AD_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/sap-s-4hana-cloud-public-edition-mds-7ad-525",
+      "title": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建租赁对象 - MDS (7AD) (7AD_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated master data script (7AD) for creating generic lease objects (usable/leasable, intercompany) in S/4HANA Cloud Public Edition 2608, with test steps.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "lease objects",
+        "usable objects",
+        "leasable objects",
+        "intercompany leasing",
+        "usage categories",
+        "usage types",
+        "number ranges",
+        "measurement types",
+        "real estate physical objects"
+      ],
+      "aliases": [
+        "7AD_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/sap-s-4hana-cloud-public-edition-mds-7ad-525.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7AD_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建租赁对象 - MDS (7AD) (7AD_S4CLD2608_Master_Data_ZH_XX) (Leasing and Real Estate) — Chinese machine-translated master data script (7AD) for creating generic lease objects (usable/leasable, intercompany) in S/4HANA Cloud Public Edition 2608, with test steps | keywords: Real Estate Rental Objects and Lease Accounting, lease objects, usable objects, leasable objects, intercompany leasing, usage categories, usage types, number ranges, measurement types, real estate physical objects, 7AD_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/script-de-dados-mestre-criar-objeto-de-locacao-mds-7ad-524",
+      "title": "Script de dados mestre - Criar objeto de locação (MDS 7AD) (7AD_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (7AD) for SAP S/4HANA Cloud Public Edition 2608: creating generic lease objects (usable/rentable, intercompany), prerequisites and test steps.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "generic lease objects",
+        "usable objects",
+        "rentable objects",
+        "intercompany leasing",
+        "usage categories",
+        "usage types",
+        "number ranges",
+        "measurements",
+        "real estate architecture objects"
+      ],
+      "aliases": [
+        "7AD_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/script-de-dados-mestre-criar-objeto-de-locacao-mds-7ad-524.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7AD_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar objeto de locação (MDS 7AD) (7AD_S4CLD2608_Master_Data_PT_XX) (Leasing and Real Estate) — Portuguese master data script (7AD) for SAP S/4HANA Cloud Public Edition 2608: creating generic lease objects (usable/rentable, intercompany), prerequisites and test steps | keywords: Real Estate Rental Objects and Lease Accounting, generic lease objects, usable objects, rentable objects, intercompany leasing, usage categories, usage types, number ranges, measurements, real estate architecture objects, 7AD_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/script-de-datos-maestros-crear-objeto-de-alquiler-mds-7ad-522",
+      "title": "Script de datos maestros - Crear objeto de alquiler – MDS (7AD) (7AD_S4CLD2608_Master_Data_ES_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (7AD, Spanish): creating usable and rentable generic rental objects, incl. intercompany, with test steps.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "generic rental objects",
+        "usable objects",
+        "rentable objects",
+        "intercompany leasing",
+        "usage categories",
+        "usage types and number ranges",
+        "measurements",
+        "real estate architectural objects",
+        "master data integration"
+      ],
+      "aliases": [
+        "7AD_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/script-de-datos-maestros-crear-objeto-de-alquiler-mds-7ad-522.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7AD_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear objeto de alquiler – MDS (7AD) (7AD_S4CLD2608_Master_Data_ES_XX) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 master data script (7AD, Spanish): creating usable and rentable generic rental objects, incl. intercompany, with test steps | keywords: Real Estate Rental Objects and Lease Accounting, generic rental objects, usable objects, rentable objects, intercompany leasing, usage categories, usage types and number ranges, measurements, real estate architectural objects, master data integration, 7AD_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/stammdatenskript-mietobjekt-anlegen-sds-7ad-520",
+      "title": "Stammdatenskript: Mietobjekt anlegen – SDS (7AD) (7AD_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (SAP S/4HANA Cloud Public Edition 2608, scope 7AD): creating generic rental objects (usable/rentable, intercompany) with prerequisites and test steps.",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "generic rental objects",
+        "usable objects",
+        "rentable objects",
+        "intercompany leasing",
+        "usage types",
+        "number ranges",
+        "measurements",
+        "real estate architecture objects",
+        "master data integration"
+      ],
+      "aliases": [
+        "7AD_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/stammdatenskript-mietobjekt-anlegen-sds-7ad-520.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7AD_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Mietobjekt anlegen – SDS (7AD) (7AD_S4CLD2608_Master_Data_DE_XX) (Leasing and Real Estate) — German master data script (SAP S/4HANA Cloud Public Edition 2608, scope 7AD): creating generic rental objects (usable/rentable, intercompany) with prerequisites and test steps | keywords: Real Estate Rental Objects and Lease Accounting, generic rental objects, usable objects, rentable objects, intercompany leasing, usage types, number ranges, measurements, real estate architecture objects, master data integration, 7AD_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-earmarked-funds-for-real-estate-contracts-6r3-sap-s-4hana",
+      "title": "Test Script: Earmarked Funds for Real Estate Contracts (6R3) - SAP S/4HANA Cloud Public Edition (6R3_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 6R3: configure and test earmarked funds auto-generated from lease-in contracts (create, approve, post, report) in S/4HANA Cloud.",
+      "keywords": [
+        "Lease-In Accounting",
+        "earmarked funds",
+        "lease-in contracts",
+        "contract and lease management",
+        "earmarked funds workflow",
+        "earmarked funds approval",
+        "document types",
+        "contract types",
+        "periodic posting",
+        "cash flow update"
+      ],
+      "aliases": [
+        "6R3_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-in-accounting"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-earmarked-funds-for-real-estate-contracts-6r3-sap-s-4hana.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6R3_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Earmarked Funds for Real Estate Contracts (6R3) - SAP S/4HANA Cloud Public Edition (6R3_S4CLD2608_BPD_EN_XX) (Leasing and Real Estate) — SAP test script for scope item 6R3: configure and test earmarked funds auto-generated from lease-in contracts (create, approve, post, report) in S/4HANA Cloud | keywords: Lease-In Accounting, earmarked funds, lease-in contracts, contract and lease management, earmarked funds workflow, earmarked funds approval, document types, contract types, periodic posting, cash flow update, 6R3_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-integration-of-sap-s-4hana-and-sap-cloud-for-real-estate-4",
+      "title": "Test Script: Integration of SAP S/4HANA and SAP Cloud for Real Estate (4X3) (4X3_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 4X3: assigning a building in SAP Cloud for Real Estate to an existing or new leasing contract via app F6627 (S/4HANA Cloud Public 2608).",
+      "keywords": [
+        "Real Estate Rental Objects and Lease Accounting",
+        "real estate integration",
+        "building contract assignment",
+        "test scripts",
+        "business roles",
+        "lease accounting",
+        "prerequisites",
+        "4X3"
+      ],
+      "aliases": [
+        "4X3_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/real-estate-contracts-and-leasing"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-integration-of-sap-s-4hana-and-sap-cloud-for-real-estate-4.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4X3_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Integration of SAP S/4HANA and SAP Cloud for Real Estate (4X3) (4X3_S4CLD2608_BPD_EN_XX) (Leasing and Real Estate) — Test script for scope item 4X3: assigning a building in SAP Cloud for Real Estate to an existing or new leasing contract via app F6627 (S/4HANA Cloud Public 2608) | keywords: Real Estate Rental Objects and Lease Accounting, real estate integration, building contract assignment, test scripts, business roles, lease accounting, prerequisites, 4X3, 4X3_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-lease-in-accounting-group-ledger-us-gaap-34n-ae-914",
+      "title": "Test Script: Lease-In Accounting – Group Ledger US GAAP (34N_AE) (34N_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (2608, AE) for scope item 34N: lease-in contracts, valuation, postings, adjustments, prerequisites and technical jobs.",
+      "keywords": [
+        "Lease-In Accounting",
+        "contract management",
+        "contract renewal",
+        "contract notice",
+        "contract valuation",
+        "valuation posting",
+        "periodic posting",
+        "rent adjustment",
+        "contract reminders",
+        "rou asset deactivation"
+      ],
+      "aliases": [
+        "34N_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-in-accounting"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-lease-in-accounting-group-ledger-us-gaap-34n-ae-914.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34N_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lease-In Accounting – Group Ledger US GAAP (34N_AE) (34N_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition test script (2608, AE) for scope item 34N: lease-in contracts, valuation, postings, adjustments, prerequisites and technical jobs | keywords: Lease-In Accounting, contract management, contract renewal, contract notice, contract valuation, valuation posting, periodic posting, rent adjustment, contract reminders, rou asset deactivation, 34N_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-lease-out-accounting-21q-ae-sap-s-4hana-cloud-public-editi",
+      "title": "Test Script: Lease-Out Accounting (21Q_AE) - SAP S/4HANA Cloud Public Edition (21Q_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 21Q (UAE) Lease-Out Accounting, release 2608: prerequisites, SSCUI setup, and test steps for contracts, periodic posting, invoicing, adjustment.",
+      "keywords": [
+        "Lease-Out, Sublease and Sales-Based Rent Accounting",
+        "lease-out accounting",
+        "lease contract management",
+        "contract renewal",
+        "contract notice",
+        "periodic posting",
+        "lease invoicing",
+        "condition adjustment",
+        "account symbols",
+        "contract reminders"
+      ],
+      "aliases": [
+        "21Q_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-out-sublease-and-sales-based-rent"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-lease-out-accounting-21q-ae-sap-s-4hana-cloud-public-editi.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/21Q_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lease-Out Accounting (21Q_AE) - SAP S/4HANA Cloud Public Edition (21Q_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP test script for scope item 21Q (UAE) Lease-Out Accounting, release 2608: prerequisites, SSCUI setup, and test steps for contracts, periodic posting, invoicing, adjustment | keywords: Lease-Out, Sublease and Sales-Based Rent Accounting, lease-out accounting, lease contract management, contract renewal, contract notice, periodic posting, lease invoicing, condition adjustment, account symbols, contract reminders, 21Q_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-lease-out-for-sublease-accounting-2sb-ae-859",
+      "title": "Test Script: Lease-Out for Sublease Accounting (2SB_AE) (2SB_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2SB (UAE, company code 3310): lease-out sublease contracts, valuation, posting, invoicing, adjustment.",
+      "keywords": [
+        "Lease-Out, Sublease and Sales-Based Rent Accounting",
+        "lease-out sublease accounting",
+        "contract management",
+        "contract renewal",
+        "contract notice",
+        "contract valuation",
+        "valuation posting",
+        "periodic posting",
+        "invoicing",
+        "rent adjustment"
+      ],
+      "aliases": [
+        "2SB_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-out-sublease-and-sales-based-rent"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-lease-out-for-sublease-accounting-2sb-ae-859.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2SB_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lease-Out for Sublease Accounting (2SB_AE) (2SB_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2SB (UAE, company code 3310): lease-out sublease contracts, valuation, posting, invoicing, adjustment | keywords: Lease-Out, Sublease and Sales-Based Rent Accounting, lease-out sublease accounting, contract management, contract renewal, contract notice, contract valuation, valuation posting, periodic posting, invoicing, rent adjustment, 2SB_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-lease-out-for-sublease-accounting-group-ledger-us-gaap-34o",
+      "title": "Test Script: Lease-Out for Sublease Accounting – Group Ledger US GAAP (34O_AE) (34O_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 34O (UAE, company code 3310): lease-out sublease contracts, valuation, posting, invoicing, adjustment, admin.",
+      "keywords": [
+        "Lease-Out, Sublease and Sales-Based Rent Accounting",
+        "lease-out sublease accounting",
+        "contract management",
+        "contract renewal",
+        "contract notice",
+        "contract valuation",
+        "valuation posting",
+        "periodic posting",
+        "invoicing",
+        "rent adjustment"
+      ],
+      "aliases": [
+        "34O_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-out-sublease-and-sales-based-rent"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-lease-out-for-sublease-accounting-group-ledger-us-gaap-34o.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34O_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lease-Out for Sublease Accounting – Group Ledger US GAAP (34O_AE) (34O_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 34O (UAE, company code 3310): lease-out sublease contracts, valuation, posting, invoicing, adjustment, admin | keywords: Lease-Out, Sublease and Sales-Based Rent Accounting, lease-out sublease accounting, contract management, contract renewal, contract notice, contract valuation, valuation posting, periodic posting, invoicing, rent adjustment, 34O_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-sales-based-rent-3f4-ae-sap-s-4hana-cloud-public-edition-9",
+      "title": "Test Script: Sales-Based Rent (3F4_AE) - SAP S/4HANA Cloud Public Edition (3F4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script (scope item 3F4, UAE) for sales-based rent in leasing: prerequisites, config SSCUIs, and step-by-step tests for contracts, accounting, settlement, adjustment, jobs, archiving.",
+      "keywords": [
+        "Lease-Out, Sublease and Sales-Based Rent Accounting",
+        "sales-based rent",
+        "sales-based rent settlement",
+        "lease contract management",
+        "contract renewal",
+        "periodic posting",
+        "invoicing",
+        "rent adjustment",
+        "contract notice",
+        "contract reminders"
+      ],
+      "aliases": [
+        "3F4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-out-sublease-and-sales-based-rent"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-sales-based-rent-3f4-ae-sap-s-4hana-cloud-public-edition-9.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3F4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Sales-Based Rent (3F4_AE) - SAP S/4HANA Cloud Public Edition (3F4_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP test script (scope item 3F4, UAE) for sales-based rent in leasing: prerequisites, config SSCUIs, and step-by-step tests for contracts, accounting, settlement, adjustment, jobs, archiving | keywords: Lease-Out, Sublease and Sales-Based Rent Accounting, sales-based rent, sales-based rent settlement, lease contract management, contract renewal, periodic posting, invoicing, rent adjustment, contract notice, contract reminders, 3F4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-sap-s-4hana-cloud-public-edition-lease-in-accounting-1t6-a",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Lease-In Accounting (1T6_AE) (1T6_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP best-practice test script (scope item 1T6, AE, release 2608) for Lease-In Accounting: prerequisites, config steps and step-by-step test procedures for contracts, valuation, posting, adjustment.",
+      "keywords": [
+        "Lease-In Accounting",
+        "contract management",
+        "contract valuation",
+        "periodic posting",
+        "rent adjustment",
+        "contract renewal",
+        "contract notice",
+        "contract reminders",
+        "valuation rules",
+        "account determination"
+      ],
+      "aliases": [
+        "1T6_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-in-accounting"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-sap-s-4hana-cloud-public-edition-lease-in-accounting-1t6-a.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1T6_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Lease-In Accounting (1T6_AE) (1T6_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — SAP best-practice test script (scope item 1T6, AE, release 2608) for Lease-In Accounting: prerequisites, config steps and step-by-step test procedures for contracts, valuation, posting, adjustment | keywords: Lease-In Accounting, contract management, contract valuation, periodic posting, rent adjustment, contract renewal, contract notice, contract reminders, valuation rules, account determination, 1T6_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "17-leasing-and-real-estate/test-script-sap-s-4hana-cloud-public-edition-service-contract-21r-ae-7",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Service Contract (21R_AE) (21R_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script (21R, UAE localization, 2608) for Service Contract / lease contract management: config prerequisites, contract lifecycle, postings, adjustments, reports, archiving.",
+      "keywords": [
+        "Lease-In Accounting",
+        "lease contract management",
+        "contract creation",
+        "contract renewal",
+        "contract notice",
+        "contract reminders",
+        "periodic posting",
+        "reverse contract postings",
+        "rent adjustment",
+        "contract reports"
+      ],
+      "aliases": [
+        "21R_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "topic/lease-in-accounting"
+      ],
+      "path": "17-leasing-and-real-estate/test-script-sap-s-4hana-cloud-public-edition-service-contract-21r-ae-7.md",
+      "cluster": "17-leasing-and-real-estate",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/21R_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Service Contract (21R_AE) (21R_S4CLD2608_BPD_EN_AE) (Leasing and Real Estate) — Test script (21R, UAE localization, 2608) for Service Contract / lease contract management: config prerequisites, contract lifecycle, postings, adjustments, reports, archiving | keywords: Lease-In Accounting, lease contract management, contract creation, contract renewal, contract notice, contract reminders, periodic posting, reverse contract postings, rent adjustment, contract reports, 21R_S4CLD2608_BPD_EN_AE"
+    }
+  ]
+}

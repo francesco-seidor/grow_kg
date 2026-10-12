@@ -1,0 +1,1084 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "16-two-tier-erp-and-central-finance",
+  "cluster_title": "Two-Tier ERP and Central Finance",
+  "cluster_description": "Headquarter-subsidiary scenarios between SAP Cloud ERP and ECC/Private Edition: integration setup, master data replication, intercompany supply, projects and Central Finance.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 33,
+  "nodes": [
+    {
+      "id": "16-two-tier-erp-and-central-finance/contentmetadata-240",
+      "title": "Contentmetadata (contentmetadata)",
+      "description": "Machine-generated contentmetadata file (single base64 string, no prose) from the Master data / MasterData Replication Two tier ERP user-guide asset folder; decodes to version properties.",
+      "keywords": [
+        "Two-Tier Customer and Supplier Replication"
+      ],
+      "aliases": [
+        "contentmetadata"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/business-partner-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/contentmetadata-240.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/MasterData Replication_Two tier ERP/contentmetadata.md"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Contentmetadata (contentmetadata) (Two-Tier ERP and Central Finance) — Machine-generated contentmetadata file (single base64 string, no prose) from the Master data / MasterData Replication Two tier ERP user-guide asset folder; decodes to version properties | keywords: Two-Tier Customer and Supplier Replication, contentmetadata"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/demand-planning-with-sap-ibp-for-headquarter-subsidiary-model-252",
+      "title": "Demand Planning with SAP IBP for Headquarter-Subsidiary model (S4CLD2608_2T_DP_IBP)",
+      "description": "Two-Tier ERP customer guide: SAP IBP demand planning for HQ-subsidiary model with scope items, integration setup, roles and test script ending in PIR transfer.",
+      "keywords": [
+        "Two-Tier MRP Visibility and Demand Planning",
+        "demand planning",
+        "two-tier erp",
+        "sap ibp integration",
+        "statistical forecasting",
+        "planned independent requirements",
+        "historical data cleansing",
+        "scope items",
+        "communication arrangements",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_DP_IBP"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/supply-and-demand-planning"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/demand-planning-with-sap-ibp-for-headquarter-subsidiary-model-252.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Supply Chain Planning/S4CLD2608_2T_DP_IBP.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Demand Planning with SAP IBP for Headquarter-Subsidiary model (S4CLD2608_2T_DP_IBP) (Two-Tier ERP and Central Finance) — Two-Tier ERP customer guide: SAP IBP demand planning for HQ-subsidiary model with scope items, integration setup, roles and test script ending in PIR transfer | keywords: Two-Tier MRP Visibility and Demand Planning, demand planning, two-tier erp, sap ibp integration, statistical forecasting, planned independent requirements, historical data cleansing, scope items, communication arrangements, business roles, S4CLD2608_2T_DP_IBP"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/equipment-calibration-in-two-tier-erp-223",
+      "title": "Equipment Calibration in Two-Tier ERP (S4CLD2608_2T_Equip_Calibration)",
+      "description": "Customer guide for the Two-Tier ERP equipment calibration scenario between subsidiary (SAP Cloud ERP) and headquarters, with event-based integration and test steps.",
+      "keywords": [
+        "Two-Tier Equipment Calibration and Refurbishment",
+        "equipment calibration",
+        "two-tier erp",
+        "calibration process flow",
+        "maintenance notification replication",
+        "event mesh integration",
+        "communication arrangements",
+        "api integration",
+        "test procedure",
+        "proactive maintenance"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Equip_Calibration"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/equipment-calibration-and-refurbishment"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/equipment-calibration-in-two-tier-erp-223.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Asset Management/S4CLD2608_2T_Equip_Calibration.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Equipment Calibration in Two-Tier ERP (S4CLD2608_2T_Equip_Calibration) (Two-Tier ERP and Central Finance) — Customer guide for the Two-Tier ERP equipment calibration scenario between subsidiary (SAP Cloud ERP) and headquarters, with event-based integration and test steps | keywords: Two-Tier Equipment Calibration and Refurbishment, equipment calibration, two-tier erp, calibration process flow, maintenance notification replication, event mesh integration, communication arrangements, api integration, test procedure, proactive maintenance, S4CLD2608_2T_Equip_Calibration"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/material-requirement-planning-visibility-in-two-tier-erp-232",
+      "title": "Material Requirement Planning Visibility in Two-Tier ERP (S4CLD2608_2T_MRP_Analytics)",
+      "description": "Customer guide for the Two-Tier ERP scenario giving headquarters and subsidiary API-based visibility of each other's MRP supply and demand results.",
+      "keywords": [
+        "Two-Tier MRP Visibility and Demand Planning",
+        "mrp visibility",
+        "two-tier erp",
+        "mrp results view",
+        "communication arrangements",
+        "api integration",
+        "business application studio",
+        "cloud connector",
+        "test procedure",
+        "manufacturing scope items"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_MRP_Analytics"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/supply-and-demand-planning"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/material-requirement-planning-visibility-in-two-tier-erp-232.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Manufacturing/S4CLD2608_2T_MRP_Analytics.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Material Requirement Planning Visibility in Two-Tier ERP (S4CLD2608_2T_MRP_Analytics) (Two-Tier ERP and Central Finance) — Customer guide for the Two-Tier ERP scenario giving headquarters and subsidiary API-based visibility of each other's MRP supply and demand results | keywords: Two-Tier MRP Visibility and Demand Planning, mrp visibility, two-tier erp, mrp results view, communication arrangements, api integration, business application studio, cloud connector, test procedure, manufacturing scope items, S4CLD2608_2T_MRP_Analytics"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/test-script-enable-manufacturing-subsidiary-to-handle-assembly-for-hea",
+      "title": "Test Script: Enable Manufacturing Subsidiary to Handle Assembly for Headquarter (2WL_AE) (2WL_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 2WL: subsidiary performs make-to-order assembly for headquarters, from sales order to invoice.",
+      "keywords": [
+        "Manufacturing Subsidiary Assembly for Headquarters",
+        "assembly processing",
+        "subcontracting",
+        "make-to-order production",
+        "test script prerequisites",
+        "material requirements planning",
+        "production orders",
+        "outbound delivery",
+        "billing documents",
+        "business roles"
+      ],
+      "aliases": [
+        "2WL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/subsidiary-assembly-for-hq"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/test-script-enable-manufacturing-subsidiary-to-handle-assembly-for-hea.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2WL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Enable Manufacturing Subsidiary to Handle Assembly for Headquarter (2WL_AE) (2WL_S4CLD2608_BPD_EN_AE) (Two-Tier ERP and Central Finance) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 2WL: subsidiary performs make-to-order assembly for headquarters, from sales order to invoice | keywords: Manufacturing Subsidiary Assembly for Headquarters, assembly processing, subcontracting, make-to-order production, test script prerequisites, material requirements planning, production orders, outbound delivery, billing documents, business roles, 2WL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/test-script-process-integration-of-sap-s-4hana-finance-with-central-fi",
+      "title": "Test Script: Process Integration of SAP S/4HANA Finance with Central Finance (88K) (88K_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for 88K: replicating supplier invoices, reversals, changes and billing documents to Central Finance and verifying them.",
+      "keywords": [
+        "Central Finance Replication from Subsidiaries",
+        "central finance",
+        "financial data replication",
+        "supplier invoices",
+        "invoice reversal",
+        "document change",
+        "billing documents",
+        "business roles",
+        "demo data",
+        "process integration"
+      ],
+      "aliases": [
+        "88K_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/central-finance-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/test-script-process-integration-of-sap-s-4hana-finance-with-central-fi.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/88K_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Process Integration of SAP S/4HANA Finance with Central Finance (88K) (88K_S4CLD2608_BPD_EN_XX) (Two-Tier ERP and Central Finance) — SAP S/4HANA Cloud Public Edition test script for 88K: replicating supplier invoices, reversals, changes and billing documents to Central Finance and verifying them | keywords: Central Finance Replication from Subsidiaries, central finance, financial data replication, supplier invoices, invoice reversal, document change, billing documents, business roles, demo data, process integration, 88K_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/test-script-project-data-replication-to-central-finance-3w1-978",
+      "title": "Test Script - Project Data Replication to Central Finance (3W1) (3W1_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 3W1: create and release a project in the source system and verify replication of project accounting data to Central Finance.",
+      "keywords": [
+        "Central Finance Replication from Subsidiaries",
+        "central finance",
+        "project data replication",
+        "project creation",
+        "project release",
+        "enterprise projects",
+        "communication arrangements",
+        "business roles",
+        "test scripts",
+        "3W1"
+      ],
+      "aliases": [
+        "3W1_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/central-finance-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/test-script-project-data-replication-to-central-finance-3w1-978.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3W1_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Project Data Replication to Central Finance (3W1) (3W1_S4CLD2608_BPD_EN_XX) (Two-Tier ERP and Central Finance) — Test script for scope item 3W1: create and release a project in the source system and verify replication of project accounting data to Central Finance | keywords: Central Finance Replication from Subsidiaries, central finance, project data replication, project creation, project release, enterprise projects, communication arrangements, business roles, test scripts, 3W1, 3W1_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/test-script-subsidiary-integration-of-sap-s-4hana-cloud-to-central-fin",
+      "title": "Test Script: Subsidiary Integration of SAP S/4HANA Cloud to Central Finance (1W4) (1W4_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 1W4: replicating supplier invoices, payments and outgoing invoices to Central Finance (CFIN).",
+      "keywords": [
+        "Central Finance Replication from Subsidiaries",
+        "central finance integration",
+        "financial data replication",
+        "supplier invoices",
+        "payment run",
+        "outgoing invoices",
+        "incoming payments",
+        "test scripts",
+        "business roles",
+        "master data"
+      ],
+      "aliases": [
+        "1W4_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/central-finance-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/test-script-subsidiary-integration-of-sap-s-4hana-cloud-to-central-fin.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1W4_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subsidiary Integration of SAP S/4HANA Cloud to Central Finance (1W4) (1W4_S4CLD2608_BPD_EN_XX) (Two-Tier ERP and Central Finance) — SAP S/4HANA Cloud Public Edition test script for scope item 1W4: replicating supplier invoices, payments and outgoing invoices to Central Finance (CFIN) | keywords: Central Finance Replication from Subsidiaries, central finance integration, financial data replication, supplier invoices, payment run, outgoing invoices, incoming payments, test scripts, business roles, master data, 1W4_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-central-financial-compliance-management-225",
+      "title": "Two-Tier: Central Financial Compliance Management (S4CLD2608_2T_Central Financial Compliance Management)",
+      "description": "Customer guide for connecting SAP Cloud ERP and on-premise/private S/4HANA systems to SAP Financial Compliance Management in a Two-Tier setup, with test steps and use cases.",
+      "keywords": [
+        "Central Financial Compliance Management",
+        "financial compliance management",
+        "two-tier erp",
+        "automated procedures",
+        "compliance use cases",
+        "sap business technology platform",
+        "connectivity setup",
+        "additional software and services",
+        "controls and work packages"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Central Financial Compliance Management"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/central-financial-compliance-management"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-central-financial-compliance-management-225.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Finance/S4CLD2608_2T_Central Financial Compliance Management.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier: Central Financial Compliance Management (S4CLD2608_2T_Central Financial Compliance Management) (Two-Tier ERP and Central Finance) — Customer guide for connecting SAP Cloud ERP and on-premise/private S/4HANA systems to SAP Financial Compliance Management in a Two-Tier setup, with test steps and use cases | keywords: Central Financial Compliance Management, financial compliance management, two-tier erp, automated procedures, compliance use cases, sap business technology platform, connectivity setup, additional software and services, controls and work packages, S4CLD2608_2T_Central Financial Compliance Management"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-consolidation-of-autonomous-subsidiaries-via-central-finance",
+      "title": "Two-Tier – Consolidation of autonomous subsidiaries via Central Finance (1W4) (S4CLD2608_2T__Consolidation_with_CFINEN)",
+      "description": "Customer guide and test script for scope item 1W4: replicating finance documents from an S/4HANA Cloud Public Edition subsidiary to an on-premise Central Finance HQ.",
+      "keywords": [
+        "Central Finance Replication from Subsidiaries",
+        "central finance",
+        "two-tier erp",
+        "financial consolidation",
+        "data replication",
+        "subsidiary integration",
+        "communication arrangements",
+        "supplier invoices",
+        "payment run",
+        "outgoing invoices"
+      ],
+      "aliases": [
+        "S4CLD2608_2T__Consolidation_with_CFINEN"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/central-finance-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-consolidation-of-autonomous-subsidiaries-via-central-finance.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Finance/S4CLD2608_2T__Consolidation_with_CFINEN.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier – Consolidation of autonomous subsidiaries via Central Finance (1W4) (S4CLD2608_2T__Consolidation_with_CFINEN) (Two-Tier ERP and Central Finance) — Customer guide and test script for scope item 1W4: replicating finance documents from an S/4HANA Cloud Public Edition subsidiary to an on-premise Central Finance HQ | keywords: Central Finance Replication from Subsidiaries, central finance, two-tier erp, financial consolidation, data replication, subsidiary integration, communication arrangements, supplier invoices, payment run, outgoing invoices, S4CLD2608_2T__Consolidation_with_CFINEN"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-bill-of-material-integration-using-cloud-integration-236",
+      "title": "Two Tier ERP – Bill of Material Integration using Cloud Integration (S4CLD2608_2T_BoM_Int_User_Guide)",
+      "description": "Customer guide for replicating BOMs from HQ (Cloud ERP Private/SAP ERP) to a subsidiary SAP Cloud ERP via BOMMAT01 IDoc, Cloud Integration and OData, with field mapping and test script.",
+      "keywords": [
+        "Two-Tier Product Master and BOM Replication",
+        "bill of material integration",
+        "two-tier erp",
+        "cloud integration iflow",
+        "bom field mapping",
+        "error handling monitoring",
+        "communication arrangement",
+        "test script",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_BoM_Int_User_Guide"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/product-and-bom-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-bill-of-material-integration-using-cloud-integration-236.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/Bill Of Material Integration/S4CLD2608_2T_BoM_Int_User_Guide.DOCX"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier ERP – Bill of Material Integration using Cloud Integration (S4CLD2608_2T_BoM_Int_User_Guide) (Two-Tier ERP and Central Finance) — Customer guide for replicating BOMs from HQ (Cloud ERP Private/SAP ERP) to a subsidiary SAP Cloud ERP via BOMMAT01 IDoc, Cloud Integration and OData, with field mapping and test script | keywords: Two-Tier Product Master and BOM Replication, bill of material integration, two-tier erp, cloud integration iflow, bom field mapping, error handling monitoring, communication arrangement, test script, business roles, S4CLD2608_2T_BoM_Int_User_Guide"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-billing-document-to-supplier-invoice-integration-using-cl",
+      "title": "Two Tier ERP – Billing Document to Supplier Invoice Integration using Cloud Integration (S4CLD2608_Two tier ERP_Bill_Invoice_User_Guide_EN)",
+      "description": "Customer guide for two-tier ERP integration converting an HQ billing document (IDoc INVOIC02) into a supplier invoice in S/4HANA Cloud Public Edition via Cloud Integration, with test script.",
+      "keywords": [
+        "Subsidiary Procurement from Headquarters",
+        "two-tier erp",
+        "billing document integration",
+        "supplier invoice",
+        "cloud integration",
+        "integration prerequisites",
+        "field mapping",
+        "error handling",
+        "test script",
+        "communication arrangements"
+      ],
+      "aliases": [
+        "S4CLD2608_Two tier ERP_Bill_Invoice_User_Guide_EN"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/subsidiary-replenishment-from-hq"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-billing-document-to-supplier-invoice-integration-using-cl.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Sales & Service/S4CLD2608_2T_Billto Inv/S4CLD2608_Two tier ERP_Bill_Invoice_User_Guide_EN.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier ERP – Billing Document to Supplier Invoice Integration using Cloud Integration (S4CLD2608_Two tier ERP_Bill_Invoice_User_Guide_EN) (Two-Tier ERP and Central Finance) — Customer guide for two-tier ERP integration converting an HQ billing document (IDoc INVOIC02) into a supplier invoice in S/4HANA Cloud Public Edition via Cloud Integration, with test script | keywords: Subsidiary Procurement from Headquarters, two-tier erp, billing document integration, supplier invoice, cloud integration, integration prerequisites, field mapping, error handling, test script, communication arrangements, S4CLD2608_Two tier ERP_Bill_Invoice_User_Guide_EN"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-integrated-financial-planning-with-sap-analytics-cloud-22",
+      "title": "Two-Tier ERP: Integrated Financial Planning with SAP Analytics Cloud (S4CLD2608_2T_Integrated Financial Planning)",
+      "description": "Customer guide for hybrid two-tier headquarter/subsidiary integrated financial planning with SAP Analytics Cloud and S/4HANA: prerequisites, connections, test steps (scope 4RC, 1YB).",
+      "keywords": [
+        "Two-Tier Financial Planning",
+        "integrated financial planning",
+        "two-tier erp",
+        "sap analytics cloud",
+        "data connections",
+        "master and actual data import",
+        "planning stories",
+        "planning data export",
+        "system prerequisites",
+        "scope items"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Integrated Financial Planning"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/financial-planning-hq-and-subsidiary"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-integrated-financial-planning-with-sap-analytics-cloud-22.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Finance/S4CLD2608_2T_Integrated Financial Planning.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP: Integrated Financial Planning with SAP Analytics Cloud (S4CLD2608_2T_Integrated Financial Planning) (Two-Tier ERP and Central Finance) — Customer guide for hybrid two-tier headquarter/subsidiary integrated financial planning with SAP Analytics Cloud and S/4HANA: prerequisites, connections, test steps (scope 4RC, 1YB) | keywords: Two-Tier Financial Planning, integrated financial planning, two-tier erp, sap analytics cloud, data connections, master and actual data import, planning stories, planning data export, system prerequisites, scope items, S4CLD2608_2T_Integrated Financial Planning"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-integration-setup-document-230",
+      "title": "Two-Tier ERP Integration Setup Document (S4CLD2608_2T_Int_Setup_Guide_EN)",
+      "description": "Customer guide for configuring integration between SAP ECC / on-premise S/4HANA and S/4HANA Cloud Public Edition via SAP Cloud Integration, inbound and outbound IDoc scenarios.",
+      "keywords": [
+        "Two-Tier ERP Integration Setup",
+        "two-tier erp integration",
+        "inbound integration",
+        "outbound integration",
+        "idoc configuration",
+        "sap cloud integration",
+        "cloud connector",
+        "communication management",
+        "certificate trust list",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Int_Setup_Guide_EN"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/two-tier-integration-setup"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-integration-setup-document-230.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Integration/S4CLD2608_2T_Int_Setup_Guide_EN.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP Integration Setup Document (S4CLD2608_2T_Int_Setup_Guide_EN) (Two-Tier ERP and Central Finance) — Customer guide for configuring integration between SAP ECC / on-premise S/4HANA and S/4HANA Cloud Public Edition via SAP Cloud Integration, inbound and outbound IDoc scenarios | keywords: Two-Tier ERP Integration Setup, two-tier erp integration, inbound integration, outbound integration, idoc configuration, sap cloud integration, cloud connector, communication management, certificate trust list, business roles, S4CLD2608_2T_Int_Setup_Guide_EN"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-pricing-master-integration-using-cloud-integration-237",
+      "title": "Two Tier ERP – Pricing Master Integration using Cloud Integration (S4CLD2608_2T_Pricing Master_Userguide)",
+      "description": "Customer guide for replicating SD pricing condition records (IDoc COND_A04) from HQ SAP Cloud ERP Private/SAP ERP to a subsidiary SAP Cloud ERP via Cloud Integration, with test script.",
+      "keywords": [
+        "Two-Tier Pricing Replication and Harmonization",
+        "centralized pricing",
+        "two-tier erp",
+        "pricing condition integration",
+        "idoc mapping",
+        "communication arrangement",
+        "error monitoring",
+        "integration test script"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Pricing Master_Userguide"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/pricing-replication-and-harmonization"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-pricing-master-integration-using-cloud-integration-237.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/Centralized Pricing/S4CLD2608_2T_Pricing Master_Userguide.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier ERP – Pricing Master Integration using Cloud Integration (S4CLD2608_2T_Pricing Master_Userguide) (Two-Tier ERP and Central Finance) — Customer guide for replicating SD pricing condition records (IDoc COND_A04) from HQ SAP Cloud ERP Private/SAP ERP to a subsidiary SAP Cloud ERP via Cloud Integration, with test script | keywords: Two-Tier Pricing Replication and Harmonization, centralized pricing, two-tier erp, pricing condition integration, idoc mapping, communication arrangement, error monitoring, integration test script, S4CLD2608_2T_Pricing Master_Userguide"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-procurement-by-subsidiary-from-headquarters-replenishment",
+      "title": "Two-Tier ERP: Procurement by Subsidiary from Headquarters (Replenishments) (S4CLD2608_2T_Replenishment_Guide)",
+      "description": "SAP Two-Tier ERP customer guide: subsidiary replenishment from HQ via EDI/IDoc (PO to sales order, ASN, billing), with configuration, master data and test script.",
+      "keywords": [
+        "Subsidiary Procurement from Headquarters",
+        "two-tier replenishment",
+        "idoc integration",
+        "process prerequisites",
+        "vendor and customer master",
+        "material requirements planning",
+        "test script",
+        "tax code mapping",
+        "company code determination",
+        "buyer integration"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Replenishment_Guide"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/subsidiary-replenishment-from-hq"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-procurement-by-subsidiary-from-headquarters-replenishment.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Procurement/S4CLD2608_2T_Replenishment_Guide.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP: Procurement by Subsidiary from Headquarters (Replenishments) (S4CLD2608_2T_Replenishment_Guide) (Two-Tier ERP and Central Finance) — SAP Two-Tier ERP customer guide: subsidiary replenishment from HQ via EDI/IDoc (PO to sales order, ASN, billing), with configuration, master data and test script | keywords: Subsidiary Procurement from Headquarters, two-tier replenishment, idoc integration, process prerequisites, vendor and customer master, material requirements planning, test script, tax code mapping, company code determination, buyer integration, S4CLD2608_2T_Replenishment_Guide"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-product-centric-pricing-harmonization-customer-guide-238",
+      "title": "Two Tier ERP – Product-Centric Pricing Harmonization (Customer Guide) (S4CLD2608_2T_Product_Pricing Harmonization)",
+      "description": "Customer guide and test script for replicating HQ sales pricing conditions to subsidiary purchasing info records in a Two-Tier ERP via Event Mesh and a custom iFlow.",
+      "keywords": [
+        "Two-Tier Pricing Replication and Harmonization",
+        "pricing harmonization",
+        "two-tier erp",
+        "pricing condition replication",
+        "purchasing info records",
+        "communication arrangements",
+        "event mesh integration",
+        "error monitoring",
+        "test script",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Product_Pricing Harmonization"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/pricing-replication-and-harmonization"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-product-centric-pricing-harmonization-customer-guide-238.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/Centralized Pricing/S4CLD2608_2T_Product_Pricing Harmonization.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier ERP – Product-Centric Pricing Harmonization (Customer Guide) (S4CLD2608_2T_Product_Pricing Harmonization) (Two-Tier ERP and Central Finance) — Customer guide and test script for replicating HQ sales pricing conditions to subsidiary purchasing info records in a Two-Tier ERP via Event Mesh and a custom iFlow | keywords: Two-Tier Pricing Replication and Harmonization, pricing harmonization, two-tier erp, pricing condition replication, purchasing info records, communication arrangements, event mesh integration, error monitoring, test script, business roles, S4CLD2608_2T_Product_Pricing Harmonization"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-scenario-integrated-multiple-specification-inspection-in",
+      "title": "Two-Tier ERP scenario: Integrated Multiple Specification Inspection in Two-Tier ERP (S4CLD2608_2T_Int Multi_Spec Insp)",
+      "description": "Customer guide for a Two-Tier ERP scenario where a subsidiary on SAP Cloud ERP orders from a headquarter that produces and inspects against country-specific quality standards via APIs.",
+      "keywords": [
+        "Two-Tier Multiple Specification Inspection",
+        "two-tier erp",
+        "multiple specification inspection",
+        "quality certificates",
+        "communication arrangements",
+        "api integration",
+        "supplier batch",
+        "inbound delivery",
+        "scope items",
+        "batch classification"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Int Multi_Spec Insp"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/multiple-specification-inspection"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-scenario-integrated-multiple-specification-inspection-in.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Manufacturing/S4CLD2608_2T_Int Multi_Spec Insp.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP scenario: Integrated Multiple Specification Inspection in Two-Tier ERP (S4CLD2608_2T_Int Multi_Spec Insp) (Two-Tier ERP and Central Finance) — Customer guide for a Two-Tier ERP scenario where a subsidiary on SAP Cloud ERP orders from a headquarter that produces and inspects against country-specific quality standards via APIs | keywords: Two-Tier Multiple Specification Inspection, two-tier erp, multiple specification inspection, quality certificates, communication arrangements, api integration, supplier batch, inbound delivery, scope items, batch classification, S4CLD2608_2T_Int Multi_Spec Insp"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-scenario-refurbishment-with-service-customer-guide-224",
+      "title": "Two-Tier ERP scenario: Refurbishment with Service (Customer Guide) (S4CLD2608_2T_Refurbishment with Service)",
+      "description": "Customer guide for Two-Tier ERP equipment refurbishment with service between HQ (Tier 1) and subsidiary on SAP Cloud ERP (Tier 2), with event-based integration and test steps.",
+      "keywords": [
+        "Two-Tier Equipment Calibration and Refurbishment",
+        "equipment refurbishment",
+        "two-tier erp",
+        "lease and rental contracts",
+        "event mesh integration",
+        "communication arrangements",
+        "maintenance orders",
+        "subcontracting",
+        "api integration",
+        "consignment"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Refurbishment with Service"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/equipment-calibration-and-refurbishment"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-scenario-refurbishment-with-service-customer-guide-224.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Asset Management/S4CLD2608_2T_Refurbishment with Service.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP scenario: Refurbishment with Service (Customer Guide) (S4CLD2608_2T_Refurbishment with Service) (Two-Tier ERP and Central Finance) — Customer guide for Two-Tier ERP equipment refurbishment with service between HQ (Tier 1) and subsidiary on SAP Cloud ERP (Tier 2), with event-based integration and test steps | keywords: Two-Tier Equipment Calibration and Refurbishment, equipment refurbishment, two-tier erp, lease and rental contracts, event mesh integration, communication arrangements, maintenance orders, subcontracting, api integration, consignment, S4CLD2608_2T_Refurbishment with Service"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-service-order-management-in-headquarter-subsidiary-model",
+      "title": "Two-Tier ERP: Service Order Management in Headquarter-Subsidiary Model (2-Tier ERP) (S4CLD2608_2T_Service ord)",
+      "description": "SAP customer guide for two-tier ERP where a subsidiary on Cloud ERP delivers services against a headquarter purchase order: process, EDI/IDoc/API setup, test script.",
+      "keywords": [
+        "Subsidiary Service Order Delivery for Headquarters",
+        "two-tier erp",
+        "service order management",
+        "headquarter-subsidiary integration",
+        "edi idoc integration",
+        "service confirmation",
+        "release for billing",
+        "billing documents",
+        "supplier invoice",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Service ord"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/subsidiary-service-delivery"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-service-order-management-in-headquarter-subsidiary-model.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Sales & Service/S4CLD2608_2T_Service ord.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP: Service Order Management in Headquarter-Subsidiary Model (2-Tier ERP) (S4CLD2608_2T_Service ord) (Two-Tier ERP and Central Finance) — SAP customer guide for two-tier ERP where a subsidiary on Cloud ERP delivers services against a headquarter purchase order: process, EDI/IDoc/API setup, test script | keywords: Subsidiary Service Order Delivery for Headquarters, two-tier erp, service order management, headquarter-subsidiary integration, edi idoc integration, service confirmation, release for billing, billing documents, supplier invoice, business roles, S4CLD2608_2T_Service ord"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erp-subsidiary-as-sales-office-drop-shipment-from-headquarter",
+      "title": "Two-Tier ERP: Subsidiary as Sales Office, Drop-shipment from Headquarter - Customer Guide (S4CLD2608_2T_ Drop Shipment_User_Guide)",
+      "description": "SAP Cloud ERP two-tier guide: subsidiary sales office with drop shipment from headquarters; prerequisites, EDI/IDoc setup, master data, and test script (scope BD3/2EJ).",
+      "keywords": [
+        "Subsidiary as Sales Office with HQ Drop Shipment",
+        "drop shipment",
+        "two-tier erp",
+        "idoc integration",
+        "master data",
+        "third-party sales order",
+        "billing documents",
+        "communication arrangement",
+        "tax code mapping",
+        "integration with buyer"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_ Drop Shipment_User_Guide"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/subsidiary-sales-office-drop-shipment"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erp-subsidiary-as-sales-office-drop-shipment-from-headquarter.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Sales & Service/S4CLD2608_2T_ Drop Shipment_User_Guide.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier ERP: Subsidiary as Sales Office, Drop-shipment from Headquarter - Customer Guide (S4CLD2608_2T_ Drop Shipment_User_Guide) (Two-Tier ERP and Central Finance) — SAP Cloud ERP two-tier guide: subsidiary sales office with drop shipment from headquarters; prerequisites, EDI/IDoc setup, master data, and test script (scope BD3/2EJ) | keywords: Subsidiary as Sales Office with HQ Drop Shipment, drop shipment, two-tier erp, idoc integration, master data, third-party sales order, billing documents, communication arrangement, tax code mapping, integration with buyer, S4CLD2608_2T_ Drop Shipment_User_Guide"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-erpcost-center-and-profit-center-replication-using-cloud-inte",
+      "title": "Two Tier ERP–Cost center and Profit center replication using Cloud Integration (S4CLD2608_2T_CC_PC_Replication_Guide)",
+      "description": "Customer guide for replicating cost center and profit center master data from HQ (ECC/Private) to S/4HANA Cloud public edition via Cloud Integration iFlows, with mapping and test script.",
+      "keywords": [
+        "Two-Tier Cost Center and Profit Center Replication",
+        "cost center replication",
+        "profit center replication",
+        "two-tier erp",
+        "financial master data",
+        "cloud integration iflow",
+        "idoc configuration",
+        "field mapping",
+        "error monitoring",
+        "test procedure"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_CC_PC_Replication_Guide"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/cost-and-profit-center-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-erpcost-center-and-profit-center-replication-using-cloud-inte.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/Fin Master Data Sync/S4CLD2608_2T_CC_PC_Replication_Guide.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier ERP–Cost center and Profit center replication using Cloud Integration (S4CLD2608_2T_CC_PC_Replication_Guide) (Two-Tier ERP and Central Finance) — Customer guide for replicating cost center and profit center master data from HQ (ECC/Private) to S/4HANA Cloud public edition via Cloud Integration iFlows, with mapping and test script | keywords: Two-Tier Cost Center and Profit Center Replication, cost center replication, profit center replication, two-tier erp, financial master data, cloud integration iflow, idoc configuration, field mapping, error monitoring, test procedure, S4CLD2608_2T_CC_PC_Replication_Guide"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-master-data-replication-business-partner-master-customer-233",
+      "title": "Two-Tier: Master Data Replication - Business Partner Master (Customer) (S4CLD2608_2T_Customer Master)",
+      "description": "Customer guide for replicating customer business partner master data from headquarter S/4HANA Cloud Private Edition to a subsidiary's SAP Cloud ERP via DRF, with test script.",
+      "keywords": [
+        "Two-Tier Customer and Supplier Replication",
+        "two-tier erp",
+        "master data replication",
+        "customer master",
+        "data replication framework",
+        "scope item 1ro",
+        "idoc integration",
+        "replication test procedures",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Customer Master"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/business-partner-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-master-data-replication-business-partner-master-customer-233.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/S4CLD2608_2T_Customer Master.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier: Master Data Replication - Business Partner Master (Customer) (S4CLD2608_2T_Customer Master) (Two-Tier ERP and Central Finance) — Customer guide for replicating customer business partner master data from headquarter S/4HANA Cloud Private Edition to a subsidiary's SAP Cloud ERP via DRF, with test script | keywords: Two-Tier Customer and Supplier Replication, two-tier erp, master data replication, customer master, data replication framework, scope item 1ro, idoc integration, replication test procedures, business roles, S4CLD2608_2T_Customer Master"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-master-data-replication-product-master-customer-guide-234",
+      "title": "Two-Tier: Master Data Replication - Product Master (Customer Guide) (S4CLD2608_2T_Product Master)",
+      "description": "Two-Tier ERP guide for replicating Product Master data from headquarter S/4HANA Cloud Private Edition to subsidiary SAP Cloud ERP via DRF, with test script (scope 1RO).",
+      "keywords": [
+        "Two-Tier Product Master and BOM Replication",
+        "product master replication",
+        "two-tier erp",
+        "data replication framework",
+        "test procedures",
+        "master data governance integration",
+        "idoc matmas",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Product Master"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/product-and-bom-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-master-data-replication-product-master-customer-guide-234.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/S4CLD2608_2T_Product Master.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier: Master Data Replication - Product Master (Customer Guide) (S4CLD2608_2T_Product Master) (Two-Tier ERP and Central Finance) — Two-Tier ERP guide for replicating Product Master data from headquarter S/4HANA Cloud Private Edition to subsidiary SAP Cloud ERP via DRF, with test script (scope 1RO) | keywords: Two-Tier Product Master and BOM Replication, product master replication, two-tier erp, data replication framework, test procedures, master data governance integration, idoc matmas, business roles, S4CLD2608_2T_Product Master"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-master-data-replication-supplier-master-235",
+      "title": "Two-Tier: Master Data Replication - Supplier Master (S4CLD2608_2T_Supplier Master)",
+      "description": "Customer guide for replicating supplier master data from headquarter S/4HANA Cloud Private Edition to a subsidiary's Public Edition via DRF, with test script.",
+      "keywords": [
+        "Two-Tier Customer and Supplier Replication",
+        "two-tier erp",
+        "master data replication",
+        "supplier master",
+        "data replication framework",
+        "scope item 1ro",
+        "idoc integration",
+        "replication test procedures",
+        "business roles"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Supplier Master"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/business-partner-replication"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-master-data-replication-supplier-master-235.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Master data/S4CLD2608_2T_Supplier Master.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier: Master Data Replication - Supplier Master (S4CLD2608_2T_Supplier Master) (Two-Tier ERP and Central Finance) — Customer guide for replicating supplier master data from headquarter S/4HANA Cloud Private Edition to a subsidiary's Public Edition via DRF, with test script | keywords: Two-Tier Customer and Supplier Replication, two-tier erp, master data replication, supplier master, data replication framework, scope item 1ro, idoc integration, replication test procedures, business roles, S4CLD2608_2T_Supplier Master"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-multi-level-project-scenario-eppm-customer-guide-243",
+      "title": "Two-Tier: Multi-Level Project Scenario - EPPM (Customer Guide) (S4CLD2608_2T__Multilevel_Project)",
+      "description": "Conceptual customer guide on integrating headquarters (S/4HANA On-Premise) and subsidiary SAP Cloud ERP via APIs for multi-level portfolio and enterprise project management; no out-of-box…",
+      "keywords": [
+        "Two-Tier Engineer-to-Order and Multi-Level Projects",
+        "two-tier erp",
+        "enterprise project management",
+        "multi-level projects",
+        "api integration",
+        "portfolio management",
+        "enterprise project service",
+        "badi and bapi",
+        "integration test procedure",
+        "project scope items"
+      ],
+      "aliases": [
+        "S4CLD2608_2T__Multilevel_Project"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/project-based-eto-and-eppm"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-multi-level-project-scenario-eppm-customer-guide-243.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/PLM_EPPM/S4CLD2608_2T__Multilevel_Project.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier: Multi-Level Project Scenario - EPPM (Customer Guide) (S4CLD2608_2T__Multilevel_Project) (Two-Tier ERP and Central Finance) — Conceptual customer guide on integrating headquarters (S/4HANA On-Premise) and subsidiary SAP Cloud ERP via APIs for multi-level portfolio and enterprise project management; no out-of-box… | keywords: Two-Tier Engineer-to-Order and Multi-Level Projects, two-tier erp, enterprise project management, multi-level projects, api integration, portfolio management, enterprise project service, badi and bapi, integration test procedure, project scope items, S4CLD2608_2T__Multilevel_Project"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-procurement-directly-by-subsidiary-with-visibility-to-headqua",
+      "title": "Two-Tier Procurement directly by subsidiary with visibility to Headquarters (J45) (S4CLD2608_2T_Proc_J45)",
+      "description": "SAP S/4HANA Cloud 2608 customer guide and test script for scope item J45: subsidiary-run procurement and sales with HQ visibility via APIs and CDS views.",
+      "keywords": [
+        "Subsidiary Procurement with HQ Visibility",
+        "two-tier procurement",
+        "hq visibility",
+        "purchase order approval",
+        "purchase order creation",
+        "integration requirements",
+        "analytical cds views",
+        "goods receipt",
+        "supplier invoice",
+        "gr/ir clearing"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Proc_J45"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/subsidiary-procurement-with-hq-visibility"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-procurement-directly-by-subsidiary-with-visibility-to-headqua.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Procurement/S4CLD2608_2T_Proc_J45.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier Procurement directly by subsidiary with visibility to Headquarters (J45) (S4CLD2608_2T_Proc_J45) (Two-Tier ERP and Central Finance) — SAP S/4HANA Cloud 2608 customer guide and test script for scope item J45: subsidiary-run procurement and sales with HQ visibility via APIs and CDS views | keywords: Subsidiary Procurement with HQ Visibility, two-tier procurement, hq visibility, purchase order approval, purchase order creation, integration requirements, analytical cds views, goods receipt, supplier invoice, gr/ir clearing, S4CLD2608_2T_Proc_J45"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-project-based-services-procurement-between-headquarter-and-su",
+      "title": "Two Tier - Project Based Services Procurement between Headquarter and Subsidiary (S4CLD2608_2T_Proj_ServiceProcurement)",
+      "description": "SAP S/4HANA Cloud Public Edition customer guide and test script for two-tier project-based services procurement: HQ on-premise/ECC buys services from a Cloud ERP subsidiary.",
+      "keywords": [
+        "Two-Tier Professional Services Projects",
+        "two-tier erp",
+        "project based services procurement",
+        "customer project management",
+        "customer project billing",
+        "billing proposals",
+        "timesheet recording",
+        "integration apis",
+        "contingent workers",
+        "work package staffing"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Proj_ServiceProcurement"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/two-tier-professional-services-projects"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-project-based-services-procurement-between-headquarter-and-su.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Procurement/S4CLD2608_2T_Proj_ServiceProcurement.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier - Project Based Services Procurement between Headquarter and Subsidiary (S4CLD2608_2T_Proj_ServiceProcurement) (Two-Tier ERP and Central Finance) — SAP S/4HANA Cloud Public Edition customer guide and test script for two-tier project-based services procurement: HQ on-premise/ECC buys services from a Cloud ERP subsidiary | keywords: Two-Tier Professional Services Projects, two-tier erp, project based services procurement, customer project management, customer project billing, billing proposals, timesheet recording, integration apis, contingent workers, work package staffing, S4CLD2608_2T_Proj_ServiceProcurement"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-sale-from-local-stock-by-subsidiary-249",
+      "title": "Two-Tier: Sale from Local Stock by Subsidiary (S4CLD2608_2T_Sale_from_Local_Stock)",
+      "description": "SAP Cloud ERP Two-Tier customer guide: subsidiary sells from local stock with HQ visibility on quotes, orders, stock, receivables; APIs, CDS views, test script.",
+      "keywords": [
+        "Subsidiary Sales from Local Stock and Returns",
+        "two-tier erp",
+        "sale from local stock",
+        "headquarter visibility",
+        "integration apis",
+        "analytical cds views",
+        "sales order creation",
+        "outbound delivery",
+        "picking",
+        "post goods issue"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Sale_from_Local_Stock"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/sell-from-local-stock"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-sale-from-local-stock-by-subsidiary-249.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Sales & Service/S4CLD2608_2T_Sale_from_Local_Stock.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier: Sale from Local Stock by Subsidiary (S4CLD2608_2T_Sale_from_Local_Stock) (Two-Tier ERP and Central Finance) — SAP Cloud ERP Two-Tier customer guide: subsidiary sells from local stock with HQ visibility on quotes, orders, stock, receivables; APIs, CDS views, test script | keywords: Subsidiary Sales from Local Stock and Returns, two-tier erp, sale from local stock, headquarter visibility, integration apis, analytical cds views, sales order creation, outbound delivery, picking, post goods issue, S4CLD2608_2T_Sale_from_Local_Stock"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-scenario-managing-intercompany-professional-services-projects",
+      "title": "Two-Tier scenario: Managing Intercompany Professional Services Projects (S4CLD2608_2T_Managing PFS Projects)",
+      "description": "Customer guide for the two-tier headquarters/subsidiary scenario for intercompany professional services projects: process flows, communication arrangements, prerequisites, scope items.",
+      "keywords": [
+        "Two-Tier Professional Services Projects",
+        "two-tier erp",
+        "intercompany projects",
+        "professional services projects",
+        "communication arrangements",
+        "assembly processing",
+        "sap cloud integration",
+        "scope items",
+        "system landscape",
+        "intercompany billing"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Managing PFS Projects"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/two-tier-professional-services-projects"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-scenario-managing-intercompany-professional-services-projects.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/PLM_EPPM/S4CLD2608_2T_Managing PFS Projects.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier scenario: Managing Intercompany Professional Services Projects (S4CLD2608_2T_Managing PFS Projects) (Two-Tier ERP and Central Finance) — Customer guide for the two-tier headquarters/subsidiary scenario for intercompany professional services projects: process flows, communication arrangements, prerequisites, scope items | keywords: Two-Tier Professional Services Projects, two-tier erp, intercompany projects, professional services projects, communication arrangements, assembly processing, sap cloud integration, scope items, system landscape, intercompany billing, S4CLD2608_2T_Managing PFS Projects"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-scenario-project-based-engineer-to-order-customer-guide-241",
+      "title": "Two-Tier scenario: Project Based Engineer-to-Order (Customer Guide) (S4CLD2608_2T_ETO)",
+      "description": "Customer guide for the two-tier HQ/subsidiary project-based engineer-to-order integration between SAP Cloud ERP and SAP Cloud ERP (Private) via APIs.",
+      "keywords": [
+        "Two-Tier Engineer-to-Order and Multi-Level Projects",
+        "two-tier erp",
+        "engineer-to-order",
+        "project-based manufacturing",
+        "process flow",
+        "api integration",
+        "communication arrangements",
+        "cloud integration",
+        "scope items",
+        "system landscape"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_ETO"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/project-based-eto-and-eppm"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-scenario-project-based-engineer-to-order-customer-guide-241.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/PLM_EPPM/S4CLD2608_2T_ETO.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier scenario: Project Based Engineer-to-Order (Customer Guide) (S4CLD2608_2T_ETO) (Two-Tier ERP and Central Finance) — Customer guide for the two-tier HQ/subsidiary project-based engineer-to-order integration between SAP Cloud ERP and SAP Cloud ERP (Private) via APIs | keywords: Two-Tier Engineer-to-Order and Multi-Level Projects, two-tier erp, engineer-to-order, project-based manufacturing, process flow, api integration, communication arrangements, cloud integration, scope items, system landscape, S4CLD2608_2T_ETO"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-sell-from-local-stock-returns-customer-guide-248",
+      "title": "Two Tier – Sell from Local Stock: Returns (Customer Guide) (S4CLD2608_2T_Local_Stock_Returns)",
+      "description": "SAP Cloud ERP two-tier customer guide and test script for customer returns at a subsidiary (return order to credit memo) with HQ visibility via API/CDS views.",
+      "keywords": [
+        "Subsidiary Sales from Local Stock and Returns",
+        "two-tier returns",
+        "return order creation",
+        "return delivery",
+        "goods receipt posting",
+        "credit memo billing",
+        "hq visibility",
+        "api integration",
+        "test script",
+        "billing block removal"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Local_Stock_Returns"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/sell-from-local-stock"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-sell-from-local-stock-returns-customer-guide-248.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Sales & Service/S4CLD2608_2T_Local_Stock_Returns.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two Tier – Sell from Local Stock: Returns (Customer Guide) (S4CLD2608_2T_Local_Stock_Returns) (Two-Tier ERP and Central Finance) — SAP Cloud ERP two-tier customer guide and test script for customer returns at a subsidiary (return order to credit memo) with HQ visibility via API/CDS views | keywords: Subsidiary Sales from Local Stock and Returns, two-tier returns, return order creation, return delivery, goods receipt posting, credit memo billing, hq visibility, api integration, test script, billing block removal, S4CLD2608_2T_Local_Stock_Returns"
+    },
+    {
+      "id": "16-two-tier-erp-and-central-finance/two-tier-subsidiary-as-financial-planning-and-upload-of-plan-data-from",
+      "title": "Two-Tier – Subsidiary as Financial Planning and Upload of Plan data from Headquarters (1HB) (S4CLD2608_2T_Financial Plng_upload_plan)",
+      "description": "SAP Cloud ERP Customer Guide and test script for uploading HQ plan data via CSV into a subsidiary (Import Financial Plan Data) and comparing P&L actual vs plan.",
+      "keywords": [
+        "Two-Tier Financial Planning",
+        "financial plan upload",
+        "two-tier erp",
+        "csv file format",
+        "plan data scope",
+        "p&l actual versus plan",
+        "cost center planning",
+        "market segment planning",
+        "report relevancy",
+        "runtime hierarchy replication"
+      ],
+      "aliases": [
+        "S4CLD2608_2T_Financial Plng_upload_plan"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "topic/financial-planning-hq-and-subsidiary"
+      ],
+      "path": "16-two-tier-erp-and-central-finance/two-tier-subsidiary-as-financial-planning-and-upload-of-plan-data-from.md",
+      "cluster": "16-two-tier-erp-and-central-finance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/Two-Tier_ERP_Assets_User_Guides/Two-Tier_ERP_Assets_User_Guides/Finance/S4CLD2608_2T_Financial Plng_upload_plan.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Two-Tier – Subsidiary as Financial Planning and Upload of Plan data from Headquarters (1HB) (S4CLD2608_2T_Financial Plng_upload_plan) (Two-Tier ERP and Central Finance) — SAP Cloud ERP Customer Guide and test script for uploading HQ plan data via CSV into a subsidiary (Import Financial Plan Data) and comparing P&L actual vs plan | keywords: Two-Tier Financial Planning, financial plan upload, two-tier erp, csv file format, plan data scope, p&l actual versus plan, cost center planning, market segment planning, report relevancy, runtime hierarchy replication, S4CLD2608_2T_Financial Plng_upload_plan"
+    }
+  ]
+}

@@ -1,0 +1,3186 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "14-maintenance-service-and-projects",
+  "cluster_title": "Maintenance, Service and Projects",
+  "cluster_description": "Technical objects and maintenance orders, service products, quotations, solution orders and analytics, and customer projects: project billing, time recording, staffing and ETO.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 97,
+  "nodes": [
+    {
+      "id": "14-maintenance-service-and-projects/5mi-469",
+      "title": "マスタデータスクリプト: 計測点の登録 (5MI) (5MI_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud master data script for creating measuring points and counters (EAM), incl. measuring point category M configuration.",
+      "keywords": [
+        "Measuring Points and Counters",
+        "measuring points",
+        "measuring counters",
+        "measuring point category",
+        "condition-based maintenance",
+        "business roles",
+        "master data script",
+        "5MI"
+      ],
+      "aliases": [
+        "5MI_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/measuring-points-and-counters"
+      ],
+      "path": "14-maintenance-service-and-projects/5mi-469.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MI_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: 計測点の登録 (5MI) (5MI_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese SAP S/4HANA Cloud master data script for creating measuring points and counters (EAM), incl. measuring point category M configuration | keywords: Measuring Points and Counters, measuring points, measuring counters, measuring point category, condition-based maintenance, business roles, master data script, 5MI, 5MI_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/bom-mds-63j-493",
+      "title": "マスタデータスクリプト - サービスの品目および設備 BOM の登録 - MDS (63J) (63J_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud Public Edition 2608 master data script (63J): creating service products, material BOMs, equipment and equipment BOMs.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "service products",
+        "material bom",
+        "equipment bom",
+        "equipment master data",
+        "master data scripts",
+        "product master data",
+        "sales organization data",
+        "business roles",
+        "profit center"
+      ],
+      "aliases": [
+        "63J_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/bom-mds-63j-493.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/63J_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト - サービスの品目および設備 BOM の登録 - MDS (63J) (63J_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese SAP S/4HANA Cloud Public Edition 2608 master data script (63J): creating service products, material BOMs, equipment and equipment BOMs | keywords: Technical Objects and BOMs for Service, service products, material bom, equipment bom, equipment master data, master data scripts, product master data, sales organization data, business roles, profit center, 63J_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/collaborative-project-management-6jn-test-script-sap-s-4hana-cloud-pub",
+      "title": "Collaborative Project Management (6JN) - Test Script, SAP S/4HANA Cloud Public Edition (6JN_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 6JN: step-by-step tests of collaborative project initiation, planning and execution in SAP Project and Resource Management.",
+      "keywords": [
+        "Internal and Collaborative Project Management",
+        "collaborative projects",
+        "project initiation",
+        "project partners",
+        "project plans",
+        "project scheduling",
+        "risk management",
+        "task management",
+        "issue management",
+        "document management"
+      ],
+      "aliases": [
+        "6JN_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/internal-and-collaborative-projects"
+      ],
+      "path": "14-maintenance-service-and-projects/collaborative-project-management-6jn-test-script-sap-s-4hana-cloud-pub.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6JN_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Collaborative Project Management (6JN) - Test Script, SAP S/4HANA Cloud Public Edition (6JN_S4CLD2608_BPD_EN_XX) (Maintenance, Service and Projects) — SAP test script for scope item 6JN: step-by-step tests of collaborative project initiation, planning and execution in SAP Project and Resource Management | keywords: Internal and Collaborative Project Management, collaborative projects, project initiation, project partners, project plans, project scheduling, risk management, task management, issue management, document management, 6JN_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/creacion-de-producto-de-servicio-para-proyecto-mds-5to-486",
+      "title": "Creación de producto de servicio para proyecto - MDS (5TO) (5TO_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP master data script for creating service product PROYECTO with MM01 in S/4HANA Cloud Public Edition 2608, for solution orders.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "service product",
+        "material master",
+        "master data creation",
+        "sales organization data",
+        "profit center",
+        "business roles",
+        "brazil tax fields",
+        "test procedures",
+        "5TO"
+      ],
+      "aliases": [
+        "5TO_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/creacion-de-producto-de-servicio-para-proyecto-mds-5to-486.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5TO_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Creación de producto de servicio para proyecto - MDS (5TO) (5TO_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish (machine-translated) SAP master data script for creating service product PROYECTO with MM01 in S/4HANA Cloud Public Edition 2608, for solution orders | keywords: Solution Orders and SAP CPQ Quotations, service product, material master, master data creation, sales organization data, profit center, business roles, brazil tax fields, test procedures, 5TO, 5TO_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/creacion-de-ubicacion-tecnica-mds-5lm-es-444",
+      "title": "Creación de ubicación técnica - MDS (5LM) [ES] (5LM_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish machine-translated SAP S/4HANA Cloud master data script 5LM for creating a technical location hierarchy (one parent, two child locations) for maintenance.",
+      "keywords": [
+        "Functional Locations",
+        "technical location",
+        "technical objects",
+        "plant maintenance",
+        "structure indicator",
+        "technical object category",
+        "maintenance work center",
+        "cost center",
+        "business roles",
+        "master data"
+      ],
+      "aliases": [
+        "5LM_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/functional-locations"
+      ],
+      "path": "14-maintenance-service-and-projects/creacion-de-ubicacion-tecnica-mds-5lm-es-444.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LM_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Creación de ubicación técnica - MDS (5LM) [ES] (5LM_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish machine-translated SAP S/4HANA Cloud master data script 5LM for creating a technical location hierarchy (one parent, two child locations) for maintenance | keywords: Functional Locations, technical location, technical objects, plant maintenance, structure indicator, technical object category, maintenance work center, cost center, business roles, master data, 5LM_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/crear-equipo-mds-5mf-456",
+      "title": "Crear equipo - MDS (5MF) (5MF_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script 5MF for creating an equipment record and installing it at a technical location in SAP S/4HANA Cloud 2608.",
+      "keywords": [
+        "Equipment Master Records",
+        "equipment master data",
+        "technical objects",
+        "technical location",
+        "maintenance work center",
+        "cost center",
+        "business roles",
+        "master data scripts",
+        "5MF"
+      ],
+      "aliases": [
+        "5MF_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/equipment"
+      ],
+      "path": "14-maintenance-service-and-projects/crear-equipo-mds-5mf-456.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MF_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear equipo - MDS (5MF) (5MF_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish (machine-translated) master data script 5MF for creating an equipment record and installing it at a technical location in SAP S/4HANA Cloud 2608 | keywords: Equipment Master Records, equipment master data, technical objects, technical location, maintenance work center, cost center, business roles, master data scripts, 5MF, 5MF_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/crear-punto-de-medicion-mds-5mi-468",
+      "title": "Crear punto de medición - MDS (5MI) (5MI_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script (5MI): create measuring points and measuring counters for maintenance, with measuring point type setup.",
+      "keywords": [
+        "Measuring Points and Counters",
+        "measuring points",
+        "measuring counters",
+        "maintenance master data",
+        "master data scripts",
+        "measuring point category",
+        "condition-based maintenance",
+        "technical objects",
+        "fiori launchpad roles",
+        "5MI"
+      ],
+      "aliases": [
+        "5MI_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/measuring-points-and-counters"
+      ],
+      "path": "14-maintenance-service-and-projects/crear-punto-de-medicion-mds-5mi-468.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MI_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear punto de medición - MDS (5MI) (5MI_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script (5MI): create measuring points and measuring counters for maintenance, with measuring point type setup | keywords: Measuring Points and Counters, measuring points, measuring counters, maintenance master data, master data scripts, measuring point category, condition-based maintenance, technical objects, fiori launchpad roles, 5MI, 5MI_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/create-equipment-mds-5mf-455",
+      "title": "Create Equipment - MDS (5MF) (5MF_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data script (5MF) for SAP S/4HANA Cloud Public Edition: creating equipment master records and installing them in a functional location via Create Technical Object.",
+      "keywords": [
+        "Equipment Master Records",
+        "equipment master data",
+        "technical objects",
+        "functional locations",
+        "maintenance work center",
+        "cost center",
+        "business roles",
+        "master data scripts",
+        "plant dependency",
+        "5MF"
+      ],
+      "aliases": [
+        "5MF_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/equipment"
+      ],
+      "path": "14-maintenance-service-and-projects/create-equipment-mds-5mf-455.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MF_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Equipment - MDS (5MF) (5MF_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — English master data script (5MF) for SAP S/4HANA Cloud Public Edition: creating equipment master records and installing them in a functional location via Create Technical Object | keywords: Equipment Master Records, equipment master data, technical objects, functional locations, maintenance work center, cost center, business roles, master data scripts, plant dependency, 5MF, 5MF_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/create-functional-location-mds-5lm-443",
+      "title": "Create Functional Location - MDS (5LM) (5LM_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data test script (5LM) for creating a functional location hierarchy via the Create Technical Object Fiori app.",
+      "keywords": [
+        "Functional Locations",
+        "functional location",
+        "technical object",
+        "structure indicator",
+        "plant maintenance master data",
+        "business roles",
+        "organizational units",
+        "maintenance work center",
+        "cost center",
+        "master data scripts"
+      ],
+      "aliases": [
+        "5LM_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/functional-locations"
+      ],
+      "path": "14-maintenance-service-and-projects/create-functional-location-mds-5lm-443.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LM_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Functional Location - MDS (5LM) (5LM_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data test script (5LM) for creating a functional location hierarchy via the Create Technical Object Fiori app | keywords: Functional Locations, functional location, technical object, structure indicator, plant maintenance master data, business roles, organizational units, maintenance work center, cost center, master data scripts, 5LM_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/create-maintenance-work-center-mds-5mh-461",
+      "title": "Create Maintenance Work Center - MDS (5MH) (5MH_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP Best Practices master data script for creating a plant maintenance work center (CR01) in S/4HANA Cloud Public Edition 2608, with step-by-step test procedure.",
+      "keywords": [
+        "Maintenance Work Centers",
+        "maintenance work center",
+        "work center category",
+        "master data creation",
+        "business roles",
+        "standard value key",
+        "work center capacity",
+        "work center costing",
+        "test procedures",
+        "5MH"
+      ],
+      "aliases": [
+        "5MH_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-work-centers"
+      ],
+      "path": "14-maintenance-service-and-projects/create-maintenance-work-center-mds-5mh-461.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MH_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Maintenance Work Center - MDS (5MH) (5MH_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP Best Practices master data script for creating a plant maintenance work center (CR01) in S/4HANA Cloud Public Edition 2608, with step-by-step test procedure | keywords: Maintenance Work Centers, maintenance work center, work center category, master data creation, business roles, standard value key, work center capacity, work center costing, test procedures, 5MH, 5MH_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/create-measuring-point-mds-5mi-467",
+      "title": "Create Measuring Point - MDS (5MI) (5MI_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (5MI): configure measuring point category and create measuring points and counters in Maintenance Management.",
+      "keywords": [
+        "Measuring Points and Counters",
+        "measuring point",
+        "measuring counter",
+        "measuring point category",
+        "condition based maintenance",
+        "master data scripts",
+        "business roles",
+        "maintenance management",
+        "5MI"
+      ],
+      "aliases": [
+        "5MI_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/measuring-points-and-counters"
+      ],
+      "path": "14-maintenance-service-and-projects/create-measuring-point-mds-5mi-467.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MI_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Measuring Point - MDS (5MI) (5MI_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (5MI): configure measuring point category and create measuring points and counters in Maintenance Management | keywords: Measuring Points and Counters, measuring point, measuring counter, measuring point category, condition based maintenance, master data scripts, business roles, maintenance management, 5MI, 5MI_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/criar-centro-de-trabalho-de-manutencao-mds-5mh-464",
+      "title": "Criar centro de trabalho de manutenção – MDS (5MH) (5MH_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (5MH) for creating a maintenance work center (CR01) in SAP S/4HANA Cloud Public Edition 2608, with test steps.",
+      "keywords": [
+        "Maintenance Work Centers",
+        "maintenance work center",
+        "work center master data",
+        "work center category",
+        "standard value key",
+        "capacity planning",
+        "cost center",
+        "business roles",
+        "master data scripts",
+        "5MH"
+      ],
+      "aliases": [
+        "5MH_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-work-centers"
+      ],
+      "path": "14-maintenance-service-and-projects/criar-centro-de-trabalho-de-manutencao-mds-5mh-464.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MH_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar centro de trabalho de manutenção – MDS (5MH) (5MH_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese master data script (5MH) for creating a maintenance work center (CR01) in SAP S/4HANA Cloud Public Edition 2608, with test steps | keywords: Maintenance Work Centers, maintenance work center, work center master data, work center category, standard value key, capacity planning, cost center, business roles, master data scripts, 5MH, 5MH_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/criar-equipamento-mds-5mf-458",
+      "title": "Criar equipamento - MDS (5MF) (5MF_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud master data script (5MF): creating equipment master data with Criar objeto técnico and installing it at a functional location.",
+      "keywords": [
+        "Equipment Master Records",
+        "equipment master",
+        "technical objects",
+        "master data scripts",
+        "test procedures",
+        "plant maintenance",
+        "business roles",
+        "organizational units",
+        "mandatory master data",
+        "functional location"
+      ],
+      "aliases": [
+        "5MF_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/equipment"
+      ],
+      "path": "14-maintenance-service-and-projects/criar-equipamento-mds-5mf-458.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MF_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar equipamento - MDS (5MF) (5MF_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese SAP S/4HANA Cloud master data script (5MF): creating equipment master data with Criar objeto técnico and installing it at a functional location | keywords: Equipment Master Records, equipment master, technical objects, master data scripts, test procedures, plant maintenance, business roles, organizational units, mandatory master data, functional location, 5MF_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/criar-ponto-de-medicao-mds-5mi-470",
+      "title": "Criar ponto de medição – MDS (5MI) (5MI_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (5MI) for SAP S/4HANA Cloud Public Edition: configure measuring point category and create measuring points and counters in Fiori.",
+      "keywords": [
+        "Measuring Points and Counters",
+        "measuring points",
+        "measuring counters",
+        "measuring point categories",
+        "master data scripts",
+        "business roles",
+        "maintenance master data",
+        "condition-based updates",
+        "configuration steps",
+        "5MI"
+      ],
+      "aliases": [
+        "5MI_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/measuring-points-and-counters"
+      ],
+      "path": "14-maintenance-service-and-projects/criar-ponto-de-medicao-mds-5mi-470.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MI_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar ponto de medição – MDS (5MI) (5MI_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese master data script (5MI) for SAP S/4HANA Cloud Public Edition: configure measuring point category and create measuring points and counters in Fiori | keywords: Measuring Points and Counters, measuring points, measuring counters, measuring point categories, master data scripts, business roles, maintenance master data, condition-based updates, configuration steps, 5MI, 5MI_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/criar-produto-de-servico-configuravel-mds-5be-script-de-dados-mestre-s",
+      "title": "Criar produto de serviço configurável - MDS (5BE) - Script de dados mestre SAP S/4HANA Cloud Public Edition 2608 (5BE_S4CLD2608_Master_Data_PT_XX)",
+      "description": "SAP Best Practices master data script (PT, 5BE): step-by-step creation of configurable service products, classes, characteristics, config profiles and variant prices in S/4HANA Cloud 2608.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "configurable service products",
+        "service contract products",
+        "service order products",
+        "characteristics",
+        "classes",
+        "configuration profile",
+        "variant pricing",
+        "material variants",
+        "business roles"
+      ],
+      "aliases": [
+        "5BE_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/criar-produto-de-servico-configuravel-mds-5be-script-de-dados-mestre-s.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BE_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar produto de serviço configurável - MDS (5BE) - Script de dados mestre SAP S/4HANA Cloud Public Edition 2608 (5BE_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — SAP Best Practices master data script (PT, 5BE): step-by-step creation of configurable service products, classes, characteristics, config profiles and variant prices in S/4HANA Cloud 2608 | keywords: Configurable Service Products and Advanced Variant…, configurable service products, service contract products, service order products, characteristics, classes, configuration profile, variant pricing, material variants, business roles, 5BE_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/criar-produto-de-servico-para-projeto-mds-5to-488",
+      "title": "Criar produto de serviço para projeto – MDS (5TO) (5TO_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud master data script (5TO): create service product PROJETO with sales data via Create Material (MM01).",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "service product",
+        "product master data",
+        "material creation",
+        "sales organization data",
+        "business roles",
+        "profit center assignment",
+        "brazil tax fields",
+        "5TO"
+      ],
+      "aliases": [
+        "5TO_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/criar-produto-de-servico-para-projeto-mds-5to-488.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5TO_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar produto de serviço para projeto – MDS (5TO) (5TO_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese SAP S/4HANA Cloud master data script (5TO): create service product PROJETO with sales data via Create Material (MM01) | keywords: Solution Orders and SAP CPQ Quotations, service product, product master data, material creation, sales organization data, business roles, profit center assignment, brazil tax fields, 5TO, 5TO_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/equipment-anlegen-sds-5mf-454",
+      "title": "Equipment anlegen - SDS (5MF) (5MF_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud master data script (5MF): creating equipment master data with Technisches Objekt anlegen and installing it at a functional location.",
+      "keywords": [
+        "Equipment Master Records",
+        "equipment master",
+        "technical objects",
+        "master data scripts",
+        "test procedures",
+        "plant maintenance",
+        "business roles",
+        "organizational units",
+        "mandatory master data",
+        "functional location"
+      ],
+      "aliases": [
+        "5MF_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/equipment"
+      ],
+      "path": "14-maintenance-service-and-projects/equipment-anlegen-sds-5mf-454.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MF_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Equipment anlegen - SDS (5MF) (5MF_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German SAP S/4HANA Cloud master data script (5MF): creating equipment master data with Technisches Objekt anlegen and installing it at a functional location | keywords: Equipment Master Records, equipment master, technical objects, master data scripts, test procedures, plant maintenance, business roles, organizational units, mandatory master data, functional location, 5MF_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/instandhaltungs-stammdaten-fur-service-anlegen-sds-3u3-370",
+      "title": "Instandhaltungs-Stammdaten für Service anlegen – SDS (3U3) (3U3_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (3U3) for SAP S/4HANA Cloud Public Edition: creating functional location and equipment master data for service orders, confirmations and contracts.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "functional locations",
+        "equipment master data",
+        "service master data",
+        "equipment installation",
+        "warranty",
+        "business roles",
+        "master data scripts",
+        "technical objects",
+        "3U3"
+      ],
+      "aliases": [
+        "3U3_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/instandhaltungs-stammdaten-fur-service-anlegen-sds-3u3-370.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3U3_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Instandhaltungs-Stammdaten für Service anlegen – SDS (3U3) (3U3_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German master data script (3U3) for SAP S/4HANA Cloud Public Edition: creating functional location and equipment master data for service orders, confirmations and contracts | keywords: Technical Objects and BOMs for Service, functional locations, equipment master data, service master data, equipment installation, warranty, business roles, master data scripts, technical objects, 3U3, 3U3_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/intercompany-billing-for-service-documents-53y-ae-test-script-1064",
+      "title": "Intercompany Billing for Service Documents (53Y_AE) - Test Script (53Y_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 53Y_AE: intercompany billing of service and repair orders, from order to intercompany invoice.",
+      "keywords": [
+        "Service Order Management and Billing",
+        "intercompany billing",
+        "service orders",
+        "in-house repair",
+        "service confirmation",
+        "repair confirmation",
+        "intercompany billing request",
+        "intercompany invoice",
+        "intercompany cost rates",
+        "intercompany sales order"
+      ],
+      "aliases": [
+        "53Y_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-order-management-and-billing"
+      ],
+      "path": "14-maintenance-service-and-projects/intercompany-billing-for-service-documents-53y-ae-test-script-1064.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/53Y_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Intercompany Billing for Service Documents (53Y_AE) - Test Script (53Y_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 53Y_AE: intercompany billing of service and repair orders, from order to intercompany invoice | keywords: Service Order Management and Billing, intercompany billing, service orders, in-house repair, service confirmation, repair confirmation, intercompany billing request, intercompany invoice, intercompany cost rates, intercompany sales order, 53Y_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/internal-project-management-project-based-services-1a8-ae-test-script",
+      "title": "Internal Project Management – Project-Based Services (1A8_AE) – Test Script, SAP S/4HANA Cloud Public Edition 2608 (1A8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script for scope item 1A8_AE: create, plan, staff, settle, complete and close internal projects in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Internal and Collaborative Project Management",
+        "internal project management",
+        "internal project creation",
+        "work packages",
+        "settlement rules",
+        "work package staffing",
+        "project stage status",
+        "project settlement",
+        "project closing",
+        "situation handling"
+      ],
+      "aliases": [
+        "1A8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/internal-and-collaborative-projects"
+      ],
+      "path": "14-maintenance-service-and-projects/internal-project-management-project-based-services-1a8-ae-test-script.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1A8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Internal Project Management – Project-Based Services (1A8_AE) – Test Script, SAP S/4HANA Cloud Public Edition 2608 (1A8_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP Best Practices test script for scope item 1A8_AE: create, plan, staff, settle, complete and close internal projects in S/4HANA Cloud Public Edition 2608 | keywords: Internal and Collaborative Project Management, internal project management, internal project creation, work packages, settlement rules, work package staffing, project stage status, project settlement, project closing, situation handling, 1A8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/maintenance-order-processing-with-sap-field-service-management-7z2-ae",
+      "title": "Maintenance Order Processing with SAP Field Service Management (7Z2_AE) - Test Script (7Z2_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 7Z2 (AE): reactive maintenance orders in S/4HANA Cloud Public Edition 2608 integrated with SAP Field Service Management; prerequisites, config, test steps.",
+      "keywords": [
+        "Field Service Management and Mobile Maintenance",
+        "maintenance order processing",
+        "field service management integration",
+        "reactive maintenance",
+        "fsm integration configuration",
+        "maintenance notifications",
+        "service call dispatching",
+        "service confirmation",
+        "multiple company replication",
+        "technician mobile app"
+      ],
+      "aliases": [
+        "7Z2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-service-and-mobile-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/maintenance-order-processing-with-sap-field-service-management-7z2-ae.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7Z2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Maintenance Order Processing with SAP Field Service Management (7Z2_AE) - Test Script (7Z2_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — Test script for scope item 7Z2 (AE): reactive maintenance orders in S/4HANA Cloud Public Edition 2608 integrated with SAP Field Service Management; prerequisites, config, test steps | keywords: Field Service Management and Mobile Maintenance, maintenance order processing, field service management integration, reactive maintenance, fsm integration configuration, maintenance notifications, service call dispatching, service confirmation, multiple company replication, technician mobile app, 7Z2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/master-data-script-create-configurable-service-product-mds-5be-431",
+      "title": "Master Data Script: Create Configurable Service Product - MDS (5BE) (5BE_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (5BE) for creating configurable service products, classes, profiles, variants and prices for service contracts and orders.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "configurable service product",
+        "service contract product",
+        "service order product",
+        "variant configuration",
+        "characteristics and classes",
+        "variant pricing",
+        "material variant",
+        "business roles",
+        "organizational units"
+      ],
+      "aliases": [
+        "5BE_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/master-data-script-create-configurable-service-product-mds-5be-431.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BE_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Configurable Service Product - MDS (5BE) (5BE_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (5BE) for creating configurable service products, classes, profiles, variants and prices for service contracts and orders | keywords: Configurable Service Products and Advanced Variant…, configurable service product, service contract product, service order product, variant configuration, characteristics and classes, variant pricing, material variant, business roles, organizational units, 5BE_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/master-data-script-create-material-and-equipment-bom-for-service-mds-6",
+      "title": "Master Data Script: Create Material and Equipment BOM for Service - MDS (63J) (63J_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script: create service products, a material BOM and an equipment with equipment BOM for service (scope item 63J).",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "service products",
+        "material bom",
+        "equipment bom",
+        "equipment master data",
+        "business roles",
+        "organizational units",
+        "master data prerequisites",
+        "service contracts",
+        "sap fiori apps"
+      ],
+      "aliases": [
+        "63J_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/master-data-script-create-material-and-equipment-bom-for-service-mds-6.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/63J_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Material and Equipment BOM for Service - MDS (63J) (63J_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script: create service products, a material BOM and an equipment with equipment BOM for service (scope item 63J) | keywords: Technical Objects and BOMs for Service, service products, material bom, equipment bom, equipment master data, business roles, organizational units, master data prerequisites, service contracts, sap fiori apps, 63J_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/master-data-script-create-plant-maintenance-master-data-for-service-md",
+      "title": "Master Data Script: Create Plant Maintenance Master Data for Service - MDS (3U3) (3U3_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data script (3U3) for creating functional location and equipment master data for plant maintenance/service in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "functional location",
+        "equipment master data",
+        "plant maintenance",
+        "master data script",
+        "user roles",
+        "warranty",
+        "in-house repair",
+        "test procedure",
+        "3U3"
+      ],
+      "aliases": [
+        "3U3_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/master-data-script-create-plant-maintenance-master-data-for-service-md.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3U3_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Plant Maintenance Master Data for Service - MDS (3U3) (3U3_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — English master data script (3U3) for creating functional location and equipment master data for plant maintenance/service in SAP S/4HANA Cloud Public Edition | keywords: Technical Objects and BOMs for Service, functional location, equipment master data, plant maintenance, master data script, user roles, warranty, in-house repair, test procedure, 3U3, 3U3_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/master-data-script-create-service-product-for-project-5to-485",
+      "title": "Master Data Script: Create Service Product for Project (5TO) (5TO_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud master data script for creating service product PROJECT via Create Material (MM01), with sales org data for solution orders.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "service product",
+        "material master",
+        "sales organization data",
+        "business roles",
+        "profit center",
+        "master data script",
+        "5TO"
+      ],
+      "aliases": [
+        "5TO_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/master-data-script-create-service-product-for-project-5to-485.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5TO_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Service Product for Project (5TO) (5TO_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud master data script for creating service product PROJECT via Create Material (MM01), with sales org data for solution orders | keywords: Solution Orders and SAP CPQ Quotations, service product, material master, sales organization data, business roles, profit center, master data script, 5TO, 5TO_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/master-data-script-create-service-product-for-service-processes-mds-3k",
+      "title": "Master Data Script: Create Service Product for Service Processes - MDS (3KV) (3KV_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (3KV): step-by-step creation of service products (SRV_*, FSM expenses) and their sales prices, overtime and accounting indicator conditions.",
+      "keywords": [
+        "Service Products and Service Prices",
+        "service products",
+        "service product master data",
+        "material pricing",
+        "overtime pricing",
+        "accounting indicator",
+        "service bundles",
+        "service contract products",
+        "field service management expenses",
+        "stock service parts"
+      ],
+      "aliases": [
+        "3KV_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-products-for-service-processes"
+      ],
+      "path": "14-maintenance-service-and-projects/master-data-script-create-service-product-for-service-processes-mds-3k.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KV_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Service Product for Service Processes - MDS (3KV) (3KV_S4CLD2608_Master_Data_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (3KV): step-by-step creation of service products (SRV_*, FSM expenses) and their sales prices, overtime and accounting indicator conditions | keywords: Service Products and Service Prices, service products, service product master data, material pricing, overtime pricing, accounting indicator, service bundles, service contract products, field service management expenses, stock service parts, 3KV_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/material-und-equipmentstuckliste-fur-service-anlegen-sds-63j-490",
+      "title": "Material- und Equipmentstückliste für Service anlegen – SDS (63J) (63J_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition master data script 63J: create service products, material BOM and equipment BOM for service contracts, with test steps.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "service products",
+        "material bill of materials",
+        "equipment bill of materials",
+        "equipment master data",
+        "material master",
+        "business roles",
+        "organizational units",
+        "profit center",
+        "service contracts"
+      ],
+      "aliases": [
+        "63J_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/material-und-equipmentstuckliste-fur-service-anlegen-sds-63j-490.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/63J_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Material- und Equipmentstückliste für Service anlegen – SDS (63J) (63J_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German SAP S/4HANA Cloud Public Edition master data script 63J: create service products, material BOM and equipment BOM for service contracts, with test steps | keywords: Technical Objects and BOMs for Service, service products, material bill of materials, equipment bill of materials, equipment master data, material master, business roles, organizational units, profit center, service contracts, 63J_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-3u3-373",
+      "title": "サービスのプラント保全マスタデータの作成 - MDS (3U3) (3U3_S4CLD2608_Master_Data_JA_XX)",
+      "description": "マスタデータスクリプト（日本語）：サービス向けに機能場所と設備のマスタデータを登録する手順。",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "functional location",
+        "equipment master data",
+        "plant maintenance",
+        "master data scripts",
+        "in-house repair warranty",
+        "business roles",
+        "3U3"
+      ],
+      "aliases": [
+        "3U3_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-3u3-373.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3U3_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "サービスのプラント保全マスタデータの作成 - MDS (3U3) (3U3_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — マスタデータスクリプト（日本語）：サービス向けに機能場所と設備のマスタデータを登録する手順。 | keywords: Technical Objects and BOMs for Service, functional location, equipment master data, plant maintenance, master data scripts, in-house repair warranty, business roles, 3U3, 3U3_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-3u3-375",
+      "title": "创建服务工厂维护主数据 - MDS (3U3) (3U3_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Master data script (Chinese, machine-translated) for creating functional locations and equipment master data for service orders, confirmations and contracts.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "functional locations",
+        "equipment master data",
+        "technical objects",
+        "warranty",
+        "service orders",
+        "master data scripts",
+        "3U3"
+      ],
+      "aliases": [
+        "3U3_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-3u3-375.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3U3_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建服务工厂维护主数据 - MDS (3U3) (3U3_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Master data script (Chinese, machine-translated) for creating functional locations and equipment master data for service orders, confirmations and contracts | keywords: Technical Objects and BOMs for Service, functional locations, equipment master data, technical objects, warranty, service orders, master data scripts, 3U3, 3U3_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5be-master-data-script-create-configurable-service-products-435",
+      "title": "主数据脚本: 创建可配置服务产品 - MDS (5BE) (Master Data Script: Create Configurable Service Products) (5BE_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated SAP S/4HANA Cloud 2608 master data script (5BE): characteristics, classes, configuration profiles, pricing and variants for configurable service products.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "configurable service products",
+        "characteristics",
+        "classes",
+        "configuration profiles",
+        "variant pricing",
+        "material variants",
+        "service contracts",
+        "service orders",
+        "business roles"
+      ],
+      "aliases": [
+        "5BE_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5be-master-data-script-create-configurable-service-products-435.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BE_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本: 创建可配置服务产品 - MDS (5BE) (Master Data Script: Create Configurable Service Products) (5BE_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Chinese machine-translated SAP S/4HANA Cloud 2608 master data script (5BE): characteristics, classes, configuration profiles, pricing and variants for configurable service products | keywords: Configurable Service Products and Advanced Variant…, configurable service products, characteristics, classes, configuration profiles, variant pricing, material variants, service contracts, service orders, business roles, 5BE_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5lm-445",
+      "title": "機能場所の登録 - MDS (5LM) (5LM_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (5LM) for creating a functional location structure (one parent, two children) for plant maintenance in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Functional Locations",
+        "plant maintenance",
+        "structure indicator",
+        "technical object category",
+        "maintenance planner role",
+        "cost centers",
+        "maintenance work centers",
+        "5LM"
+      ],
+      "aliases": [
+        "5LM_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/functional-locations"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5lm-445.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LM_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "機能場所の登録 - MDS (5LM) (5LM_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese master data script (5LM) for creating a functional location structure (one parent, two children) for plant maintenance in SAP S/4HANA Cloud Public Edition | keywords: Functional Locations, plant maintenance, structure indicator, technical object category, maintenance planner role, cost centers, maintenance work centers, 5LM, 5LM_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5lm-447",
+      "title": "主数据脚本: 创建功能位置 - MDS (5LM) (5LM_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 5LM for creating a functional location structure (one top-level, two sub-locations) in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Functional Locations",
+        "technical objects",
+        "master data scripts",
+        "structure indicator",
+        "maintenance planning",
+        "maintenance work centers",
+        "cost centers",
+        "business roles",
+        "5LM"
+      ],
+      "aliases": [
+        "5LM_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/functional-locations"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5lm-447.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LM_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本: 创建功能位置 - MDS (5LM) (5LM_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Chinese (machine-translated) master data script 5LM for creating a functional location structure (one top-level, two sub-locations) in SAP S/4HANA Cloud Public Edition 2608 | keywords: Functional Locations, technical objects, master data scripts, structure indicator, maintenance planning, maintenance work centers, cost centers, business roles, 5LM, 5LM_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5mf-457",
+      "title": "マスタデータスクリプト: 設備の登録 - MDS (5MF) (5MF_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (MDS 5MF) for creating equipment master records in SAP S/4HANA Cloud Public Edition 2608 using the Create Technical Object app, incl. installation at a functional location.",
+      "keywords": [
+        "Equipment Master Records",
+        "equipment master data",
+        "technical objects",
+        "master data scripts",
+        "functional location installation",
+        "maintenance planning",
+        "business roles",
+        "maintenance work centers",
+        "cost centers",
+        "5MF"
+      ],
+      "aliases": [
+        "5MF_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/equipment"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5mf-457.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MF_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: 設備の登録 - MDS (5MF) (5MF_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese master data script (MDS 5MF) for creating equipment master records in SAP S/4HANA Cloud Public Edition 2608 using the Create Technical Object app, incl. installation at a functional location | keywords: Equipment Master Records, equipment master data, technical objects, master data scripts, functional location installation, maintenance planning, business roles, maintenance work centers, cost centers, 5MF, 5MF_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5mf-459",
+      "title": "创建设备 - MDS (5MF) (5MF_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "主数据脚本（中文机器翻译）：在 SAP S/4HANA Cloud Public Edition 中创建设备主数据并安装到功能位置。",
+      "keywords": [
+        "Equipment Master Records",
+        "equipment master data",
+        "technical object category",
+        "master data scripts",
+        "functional location",
+        "maintenance work center",
+        "cost center",
+        "business roles",
+        "5MF"
+      ],
+      "aliases": [
+        "5MF_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/equipment"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5mf-459.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MF_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建设备 - MDS (5MF) (5MF_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — 主数据脚本（中文机器翻译）：在 SAP S/4HANA Cloud Public Edition 中创建设备主数据并安装到功能位置。 | keywords: Equipment Master Records, equipment master data, technical object category, master data scripts, functional location, maintenance work center, cost center, business roles, 5MF, 5MF_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5mh-463",
+      "title": "保全作業区の登録 - MDS (5MH) (5MH_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud 2608 master data script 5MH: create a plant maintenance work center with app CR01 as production engineer, including capacity and costing data.",
+      "keywords": [
+        "Maintenance Work Centers",
+        "work center",
+        "plant maintenance",
+        "master data scripts",
+        "work center category",
+        "standard value key",
+        "work center capacity",
+        "business roles",
+        "5MH"
+      ],
+      "aliases": [
+        "5MH_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-work-centers"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5mh-463.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MH_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "保全作業区の登録 - MDS (5MH) (5MH_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese SAP S/4HANA Cloud 2608 master data script 5MH: create a plant maintenance work center with app CR01 as production engineer, including capacity and costing data | keywords: Maintenance Work Centers, work center, plant maintenance, master data scripts, work center category, standard value key, work center capacity, business roles, 5MH, 5MH_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5mh-465",
+      "title": "创建维护工作中心 - MDS (5MH) (5MH_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "主数据脚本（中文机器翻译）：在 SAP S/4HANA Cloud Public Edition 中通过 CR01 创建工厂维护工作中心的测试步骤。",
+      "keywords": [
+        "Maintenance Work Centers",
+        "maintenance work center",
+        "work center category",
+        "master data scripts",
+        "standard value key",
+        "capacity planning",
+        "costing data",
+        "business roles",
+        "5MH"
+      ],
+      "aliases": [
+        "5MH_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-work-centers"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5mh-465.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MH_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建维护工作中心 - MDS (5MH) (5MH_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — 主数据脚本（中文机器翻译）：在 SAP S/4HANA Cloud Public Edition 中通过 CR01 创建工厂维护工作中心的测试步骤。 | keywords: Maintenance Work Centers, maintenance work center, work center category, master data scripts, standard value key, capacity planning, costing data, business roles, 5MH, 5MH_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5mi-471",
+      "title": "创建测量点 - MDS (5MI) (5MI_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for creating measuring points and counters (EAMS_WDA_MP_OIF), incl. category M configuration.",
+      "keywords": [
+        "Measuring Points and Counters",
+        "measuring points",
+        "measuring counters",
+        "measuring point category",
+        "condition-based maintenance",
+        "business configuration",
+        "technical objects",
+        "business roles",
+        "master data scripts",
+        "5MI"
+      ],
+      "aliases": [
+        "5MI_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/measuring-points-and-counters"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5mi-471.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MI_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建测量点 - MDS (5MI) (5MI_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Chinese (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for creating measuring points and counters (EAMS_WDA_MP_OIF), incl. category M configuration | keywords: Measuring Points and Counters, measuring points, measuring counters, measuring point category, condition-based maintenance, business configuration, technical objects, business roles, master data scripts, 5MI, 5MI_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5to-487",
+      "title": "プロジェクトのサービス製品の登録 - MDS (5TO) (5TO_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data test script (MDS 5TO) for creating the service product PROJECT with sales org data via MM01 in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "service product",
+        "master data script",
+        "product master",
+        "sales organization data",
+        "profit center",
+        "business roles",
+        "brazil tax fields",
+        "5TO"
+      ],
+      "aliases": [
+        "5TO_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5to-487.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5TO_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "プロジェクトのサービス製品の登録 - MDS (5TO) (5TO_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese master data test script (MDS 5TO) for creating the service product PROJECT with sales org data via MM01 in SAP S/4HANA Cloud Public Edition 2608 | keywords: Solution Orders and SAP CPQ Quotations, service product, master data script, product master, sales organization data, profit center, business roles, brazil tax fields, 5TO, 5TO_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-5to-489",
+      "title": "为项目创建服务产品 - MDS (5TO) (5TO_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Master data script (Chinese, machine-translated) for creating a service product master record 'Project' via MM01, usable in solution orders, SAP S/4HANA Cloud 2",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "service products",
+        "product master data",
+        "sales organization data",
+        "profit center",
+        "solution orders",
+        "master data scripts",
+        "5TO"
+      ],
+      "aliases": [
+        "5TO_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-5to-489.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5TO_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "为项目创建服务产品 - MDS (5TO) (5TO_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Master data script (Chinese, machine-translated) for creating a service product master record 'Project' via MM01, usable in solution orders, SAP S/4HANA Cloud 2 | keywords: Solution Orders and SAP CPQ Quotations, service products, product master data, sales organization data, profit center, solution orders, master data scripts, 5TO, 5TO_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/mds-63j-495",
+      "title": "主数据脚本 - 为服务创建物料和设备物料清单 - MDS (63J) (63J_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script 63J: create service products, material BOM and equipment BOM for service contracts.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "service products",
+        "material bom",
+        "equipment bom",
+        "equipment master data",
+        "master data scripts",
+        "business roles",
+        "sales organization data",
+        "service contracts",
+        "profit center assignment"
+      ],
+      "aliases": [
+        "63J_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/mds-63j-495.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/63J_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 - 为服务创建物料和设备物料清单 - MDS (63J) (63J_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script 63J: create service products, material BOM and equipment BOM for service contracts | keywords: Technical Objects and BOMs for Service, service products, material bom, equipment bom, equipment master data, master data scripts, business roles, sales organization data, service contracts, profit center assignment, 63J_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/operational-and-overhead-maintenance-4wm-ae-test-script-sap-s-4hana-cl",
+      "title": "Operational and Overhead Maintenance (4WM_AE) - Test Script, SAP S/4HANA Cloud Public Edition (4WM_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 4WM_AE: operational (YA04) and overhead (YA05) maintenance orders from planning to supplier invoice in S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Improvement, Operational and Overhead Maintenance",
+        "operational maintenance",
+        "overhead maintenance",
+        "maintenance orders",
+        "test scripts",
+        "maintenance order approval",
+        "maintenance backlog",
+        "maintenance costs",
+        "maintenance planning buckets",
+        "work packs"
+      ],
+      "aliases": [
+        "4WM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/improvement-operational-overhead-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/operational-and-overhead-maintenance-4wm-ae-test-script-sap-s-4hana-cl.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4WM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Operational and Overhead Maintenance (4WM_AE) - Test Script, SAP S/4HANA Cloud Public Edition (4WM_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — Test script for scope item 4WM_AE: operational (YA04) and overhead (YA05) maintenance orders from planning to supplier invoice in S/4HANA Cloud Public Edition | keywords: Improvement, Operational and Overhead Maintenance, operational maintenance, overhead maintenance, maintenance orders, test scripts, maintenance order approval, maintenance backlog, maintenance costs, maintenance planning buckets, work packs, 4WM_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/project-billing-project-based-services-4e9-ae-test-script-1021",
+      "title": "Project Billing – Project-Based Services (4E9_AE) Test Script (4E9_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4E9_AE: project billing (fixed price, T&E, periodic, usage, down payments, repricing, workflows).",
+      "keywords": [
+        "Project Billing",
+        "fixed price billing",
+        "time and expense billing",
+        "periodic service billing",
+        "usage-based billing",
+        "on account prepayment",
+        "down payments",
+        "repricing schedule",
+        "billing request workflows",
+        "additional billing items"
+      ],
+      "aliases": [
+        "4E9_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/project-billing"
+      ],
+      "path": "14-maintenance-service-and-projects/project-billing-project-based-services-4e9-ae-test-script-1021.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4E9_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Project Billing – Project-Based Services (4E9_AE) Test Script (4E9_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4E9_AE: project billing (fixed price, T&E, periodic, usage, down payments, repricing, workflows) | keywords: Project Billing, fixed price billing, time and expense billing, periodic service billing, usage-based billing, on account prepayment, down payments, repricing schedule, billing request workflows, additional billing items, 4E9_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/reactive-maintenance-4hh-ae-test-script-sap-s-4hana-cloud-public-editi",
+      "title": "Reactive Maintenance (4HH_AE) - Test Script, SAP S/4HANA Cloud Public Edition (4HH_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 4HH_AE Reactive Maintenance (UAE, plant 3310): prerequisites, preliminary setup and step-by-step Fiori test procedures incl. emergency and minor work.",
+      "keywords": [
+        "Corrective and Emergency Maintenance",
+        "reactive maintenance",
+        "maintenance notifications",
+        "maintenance orders",
+        "maintenance order approval",
+        "maintenance backlog",
+        "emergency work",
+        "minor work",
+        "business roles",
+        "split valuation"
+      ],
+      "aliases": [
+        "4HH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/corrective-and-emergency-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/reactive-maintenance-4hh-ae-test-script-sap-s-4hana-cloud-public-editi.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4HH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Reactive Maintenance (4HH_AE) - Test Script, SAP S/4HANA Cloud Public Edition (4HH_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP test script for scope item 4HH_AE Reactive Maintenance (UAE, plant 3310): prerequisites, preliminary setup and step-by-step Fiori test procedures incl. emergency and minor work | keywords: Corrective and Emergency Maintenance, reactive maintenance, maintenance notifications, maintenance orders, maintenance order approval, maintenance backlog, emergency work, minor work, business roles, split valuation, 4HH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/sales-order-processing-project-based-services-j14-ae-test-script-1299",
+      "title": "Sales Order Processing – Project-Based Services (J14_AE) Test Script (J14_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item J14_AE: billing, credit/debit memo requests and scheduled billing jobs for project-based services (UAE).",
+      "keywords": [
+        "Sales Order Processing for Project-Based Services",
+        "project-based services billing",
+        "customer invoices",
+        "credit memo requests",
+        "debit memo requests",
+        "preliminary billing documents",
+        "billing approval workflow",
+        "billing job scheduling",
+        "billing document cancellation",
+        "pro forma invoice"
+      ],
+      "aliases": [
+        "J14_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/project-based-services-sales-orders"
+      ],
+      "path": "14-maintenance-service-and-projects/sales-order-processing-project-based-services-j14-ae-test-script-1299.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J14_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Sales Order Processing – Project-Based Services (J14_AE) Test Script (J14_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item J14_AE: billing, credit/debit memo requests and scheduled billing jobs for project-based services (UAE) | keywords: Sales Order Processing for Project-Based Services, project-based services billing, customer invoices, credit memo requests, debit memo requests, preliminary billing documents, billing approval workflow, billing job scheduling, billing document cancellation, pro forma invoice, J14_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/sap-s-4hana-cloud-public-edition-3kv-349",
+      "title": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - サービスプロセスのサービス製品の登録 (3KV) (3KV_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (3KV, 2608) for creating service product master records (SRV_*, EXP_FSM_*) and their price condition records in S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Service Products and Service Prices",
+        "service products",
+        "master data creation",
+        "service product pricing",
+        "overtime pricing",
+        "calculation type conditions",
+        "service bundles",
+        "service contract products",
+        "field service expenses",
+        "service spare parts"
+      ],
+      "aliases": [
+        "3KV_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-products-for-service-processes"
+      ],
+      "path": "14-maintenance-service-and-projects/sap-s-4hana-cloud-public-edition-3kv-349.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KV_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - サービスプロセスのサービス製品の登録 (3KV) (3KV_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese master data script (3KV, 2608) for creating service product master records (SRV_*, EXP_FSM_*) and their price condition records in S/4HANA Cloud Public Edition | keywords: Service Products and Service Prices, service products, master data creation, service product pricing, overtime pricing, calculation type conditions, service bundles, service contract products, field service expenses, service spare parts, 3KV_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/sap-s-4hana-cloud-public-edition-mds-3kv-351",
+      "title": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建服务流程的服务产品 - MDS (3KV) (3KV_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 3KV: step-by-step creation of service products (SRV_*), their prices, overtime prices and accounting indicator conditions in S/4HANA Cloud.",
+      "keywords": [
+        "Service Products and Service Prices",
+        "service products",
+        "service master data",
+        "service contract products",
+        "service expenses",
+        "service spare parts",
+        "stock spare parts",
+        "service bundles",
+        "material pricing",
+        "overtime pricing"
+      ],
+      "aliases": [
+        "3KV_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-products-for-service-processes"
+      ],
+      "path": "14-maintenance-service-and-projects/sap-s-4hana-cloud-public-edition-mds-3kv-351.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KV_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建服务流程的服务产品 - MDS (3KV) (3KV_S4CLD2608_Master_Data_ZH_XX) (Maintenance, Service and Projects) — Chinese (machine-translated) master data script 3KV: step-by-step creation of service products (SRV_*), their prices, overtime prices and accounting indicator conditions in S/4HANA Cloud | keywords: Service Products and Service Prices, service products, service master data, service contract products, service expenses, service spare parts, stock spare parts, service bundles, material pricing, overtime pricing, 3KV_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/sap-s-4hana-cloud-public-edition-mds-5be-433",
+      "title": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - 選定可能サービス製品の登録 - MDS (5BE) (5BE_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (5BE, 2608) for creating configurable service products for service contracts and orders: characteristics, classes, items, profiles, pricing, variants.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "configurable service products",
+        "characteristics",
+        "classes",
+        "service contract products",
+        "service order products",
+        "configuration profiles",
+        "variant pricing",
+        "material variants",
+        "business roles"
+      ],
+      "aliases": [
+        "5BE_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/sap-s-4hana-cloud-public-edition-mds-5be-433.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BE_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - 選定可能サービス製品の登録 - MDS (5BE) (5BE_S4CLD2608_Master_Data_JA_XX) (Maintenance, Service and Projects) — Japanese master data script (5BE, 2608) for creating configurable service products for service contracts and orders: characteristics, classes, items, profiles, pricing, variants | keywords: Configurable Service Products and Advanced Variant…, configurable service products, characteristics, classes, service contract products, service order products, configuration profiles, variant pricing, material variants, business roles, 5BE_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-dados-mestre-de-manutencao-de-centro-para",
+      "title": "Script de dados mestre: Criar dados mestre de manutenção de centro para serviço - MDS (3U3) (3U3_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese (machine-translated) master data script 3U3 for creating functional location and equipment master data for service in S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "functional location",
+        "equipment master data",
+        "master data scripts",
+        "technical objects",
+        "warranty",
+        "maintenance planner role",
+        "service orders",
+        "3U3"
+      ],
+      "aliases": [
+        "3U3_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-dados-mestre-de-manutencao-de-centro-para.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3U3_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar dados mestre de manutenção de centro para serviço - MDS (3U3) (3U3_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese (machine-translated) master data script 3U3 for creating functional location and equipment master data for service in S/4HANA Cloud Public Edition | keywords: Technical Objects and BOMs for Service, functional location, equipment master data, master data scripts, technical objects, warranty, maintenance planner role, service orders, 3U3, 3U3_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-lista-tecnica-de-material-e-equipamento-p",
+      "title": "Script de dados mestre: Criar lista técnica de material e equipamento para serviço - MDS (63J) (63J_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (63J) for SAP S/4HANA Cloud Public Edition 2608: create service products, material BOM, equipment and equipment BOM.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "material bom",
+        "service products",
+        "equipment master data",
+        "equipment bom",
+        "master data scripts",
+        "business roles",
+        "organizational units",
+        "profit center",
+        "service contracts"
+      ],
+      "aliases": [
+        "63J_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-lista-tecnica-de-material-e-equipamento-p.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/63J_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar lista técnica de material e equipamento para serviço - MDS (63J) (63J_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese master data script (63J) for SAP S/4HANA Cloud Public Edition 2608: create service products, material BOM, equipment and equipment BOM | keywords: Technical Objects and BOMs for Service, material bom, service products, equipment master data, equipment bom, master data scripts, business roles, organizational units, profit center, service contracts, 63J_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-local-de-instalacao-mds-5lm-446",
+      "title": "Script de dados mestre - Criar local de instalação – MDS (5LM) (5LM_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (5LM) for SAP S/4HANA Cloud Public Edition: creating a functional location structure with the Create Technical Object app.",
+      "keywords": [
+        "Functional Locations",
+        "functional location",
+        "technical objects",
+        "master data scripts",
+        "structure indicator",
+        "business roles",
+        "maintenance planning",
+        "organizational units",
+        "cost centers",
+        "5LM"
+      ],
+      "aliases": [
+        "5LM_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/functional-locations"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-local-de-instalacao-mds-5lm-446.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LM_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar local de instalação – MDS (5LM) (5LM_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — Portuguese master data script (5LM) for SAP S/4HANA Cloud Public Edition: creating a functional location structure with the Create Technical Object app | keywords: Functional Locations, functional location, technical objects, master data scripts, structure indicator, business roles, maintenance planning, organizational units, cost centers, 5LM, 5LM_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-produto-de-servicos-para-operacao-de-serv",
+      "title": "Script de dados mestre - Criar produto de serviços para operação de serviço (MDS 3KV) (3KV_S4CLD2608_Master_Data_PT_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (PT): create service products (SRV_*, FSM expenses), their prices and overtime/calculation-criteria conditions.",
+      "keywords": [
+        "Service Products and Service Prices",
+        "service products",
+        "product master data",
+        "service pricing",
+        "overtime pricing",
+        "calculation criteria condition",
+        "service bundles",
+        "service contracts",
+        "contract auto-renewal",
+        "service expenses"
+      ],
+      "aliases": [
+        "3KV_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-products-for-service-processes"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-dados-mestre-criar-produto-de-servicos-para-operacao-de-serv.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KV_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar produto de serviços para operação de serviço (MDS 3KV) (3KV_S4CLD2608_Master_Data_PT_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (PT): create service products (SRV_*, FSM expenses), their prices and overtime/calculation-criteria conditions | keywords: Service Products and Service Prices, service products, product master data, service pricing, overtime pricing, calculation criteria condition, service bundles, service contracts, contract auto-renewal, service expenses, 3KV_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-datos-maestros-creacion-de-producto-de-servicio-configurable",
+      "title": "Script de datos maestros - Creación de producto de servicio configurable - MDS (5BE) (5BE_S4CLD2608_Master_Data_ES_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (5BE, Spanish, machine-translated): create configurable service products, classes, configuration profiles, prices and variants.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "configurable service product",
+        "service contracts",
+        "service orders",
+        "characteristics and classes",
+        "configuration profile",
+        "variant pricing",
+        "material variant",
+        "master data scripts",
+        "business roles"
+      ],
+      "aliases": [
+        "5BE_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-datos-maestros-creacion-de-producto-de-servicio-configurable.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BE_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de producto de servicio configurable - MDS (5BE) (5BE_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (5BE, Spanish, machine-translated): create configurable service products, classes, configuration profiles, prices and variants | keywords: Configurable Service Products and Advanced Variant…, configurable service product, service contracts, service orders, characteristics and classes, configuration profile, variant pricing, material variant, master data scripts, business roles, 5BE_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-datos-maestros-creacion-de-producto-de-servicio-para-proceso",
+      "title": "Script de datos maestros: Creación de producto de servicio para procesos de servicio - MDS (3KV) (3KV_S4CLD2608_Master_Data_ES_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (ES, machine-translated): creating service products SRV_* and EXP_FSM_*, their prices and overtime/calculation-criterion conditions.",
+      "keywords": [
+        "Service Products and Service Prices",
+        "service product master data",
+        "service product types",
+        "service contract products",
+        "service expenses",
+        "spare parts",
+        "service bundles",
+        "stock spare part material",
+        "service product pricing",
+        "overtime pricing"
+      ],
+      "aliases": [
+        "3KV_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-products-for-service-processes"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-datos-maestros-creacion-de-producto-de-servicio-para-proceso.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KV_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Creación de producto de servicio para procesos de servicio - MDS (3KV) (3KV_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (ES, machine-translated): creating service products SRV_* and EXP_FSM_*, their prices and overtime/calculation-criterion conditions | keywords: Service Products and Service Prices, service product master data, service product types, service contract products, service expenses, spare parts, service bundles, stock spare part material, service product pricing, overtime pricing, 3KV_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-datos-maestros-crear-datos-maestros-de-mantenimiento-para-se",
+      "title": "Script de datos maestros - Crear datos maestros de mantenimiento para servicio - MDS (3U3) (3U3_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script 3U3: create technical locations and equipment for service orders, confirmations and contracts.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "technical locations",
+        "equipment master data",
+        "equipment installation",
+        "warranty",
+        "service orders",
+        "business roles",
+        "master data scripts",
+        "3U3"
+      ],
+      "aliases": [
+        "3U3_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-datos-maestros-crear-datos-maestros-de-mantenimiento-para-se.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3U3_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear datos maestros de mantenimiento para servicio - MDS (3U3) (3U3_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script 3U3: create technical locations and equipment for service orders, confirmations and contracts | keywords: Technical Objects and BOMs for Service, technical locations, equipment master data, equipment installation, warranty, service orders, business roles, master data scripts, 3U3, 3U3_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-datos-maestros-crear-lista-de-materiales-para-material-y-equ",
+      "title": "Script de datos maestros - Crear lista de materiales para material y equipo para servicio - MDS (63J) (63J_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script 63J: create service products, a material BOM, equipment and an equipment BOM.",
+      "keywords": [
+        "Technical Objects and BOMs for Service",
+        "service products",
+        "bill of materials",
+        "equipment master data",
+        "equipment bill of materials",
+        "material master",
+        "business roles",
+        "organizational units",
+        "profit center assignment",
+        "service contracts"
+      ],
+      "aliases": [
+        "63J_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-technical-objects-and-boms"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-datos-maestros-crear-lista-de-materiales-para-material-y-equ.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/63J_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear lista de materiales para material y equipo para servicio - MDS (63J) (63J_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script 63J: create service products, a material BOM, equipment and an equipment BOM | keywords: Technical Objects and BOMs for Service, service products, bill of materials, equipment master data, equipment bill of materials, material master, business roles, organizational units, profit center assignment, service contracts, 63J_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/script-de-datos-maestros-crear-puesto-de-trabajo-de-mantenimiento-mds",
+      "title": "Script de datos maestros - Crear puesto de trabajo de mantenimiento (MDS, 5MH) (5MH_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script for scope 5MH: creating a maintenance work center with CR01 in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Maintenance Work Centers",
+        "maintenance work center",
+        "work center class",
+        "work center capacity",
+        "standard value key",
+        "cost calculation",
+        "business roles",
+        "master data scripts",
+        "5MH"
+      ],
+      "aliases": [
+        "5MH_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-work-centers"
+      ],
+      "path": "14-maintenance-service-and-projects/script-de-datos-maestros-crear-puesto-de-trabajo-de-mantenimiento-mds.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MH_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear puesto de trabajo de mantenimiento (MDS, 5MH) (5MH_S4CLD2608_Master_Data_ES_XX) (Maintenance, Service and Projects) — Spanish (machine-translated) master data script for scope 5MH: creating a maintenance work center with CR01 in SAP S/4HANA Cloud Public Edition | keywords: Maintenance Work Centers, maintenance work center, work center class, work center capacity, standard value key, cost calculation, business roles, master data scripts, 5MH, 5MH_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/service-contract-management-with-advanced-variant-configuration-6gu-ae",
+      "title": "Service Contract Management with Advanced Variant Configuration (6GU_AE) - Test Script, SAP S/4HANA Cloud Public Edition (6GU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6GU_AE: service contracts and templates with configurable products (AVC), prerequisites and steps.",
+      "keywords": [
+        "Service Contract Management",
+        "advanced variant configuration",
+        "configurable products",
+        "service contract templates",
+        "follow-up transactions",
+        "service contract printing",
+        "date profiles",
+        "service and response profiles",
+        "service contract pricing",
+        "situation handling"
+      ],
+      "aliases": [
+        "6GU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-contract-management"
+      ],
+      "path": "14-maintenance-service-and-projects/service-contract-management-with-advanced-variant-configuration-6gu-ae.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6GU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Service Contract Management with Advanced Variant Configuration (6GU_AE) - Test Script, SAP S/4HANA Cloud Public Edition (6GU_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 6GU_AE: service contracts and templates with configurable products (AVC), prerequisites and steps | keywords: Service Contract Management, advanced variant configuration, configurable products, service contract templates, follow-up transactions, service contract printing, date profiles, service and response profiles, service contract pricing, situation handling, 6GU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/service-management-with-advanced-variant-configuration-6gs-ae-test-scr",
+      "title": "Service Management with Advanced Variant Configuration (6GS_AE) - Test Script (6GS_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6GS_AE: configurable service products via advanced variant configuration, from quotation to invoice.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "advanced variant configuration",
+        "service quotations",
+        "service orders",
+        "service confirmation",
+        "release for billing",
+        "billing documents",
+        "configurable service products",
+        "business roles",
+        "master data"
+      ],
+      "aliases": [
+        "6GS_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/service-management-with-advanced-variant-configuration-6gs-ae-test-scr.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6GS_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Service Management with Advanced Variant Configuration (6GS_AE) - Test Script (6GS_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 6GS_AE: configurable service products via advanced variant configuration, from quotation to invoice | keywords: Configurable Service Products and Advanced Variant…, advanced variant configuration, service quotations, service orders, service confirmation, release for billing, billing documents, configurable service products, business roles, master data, 6GS_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/service-order-processing-with-sap-field-service-management-49x-ae-test",
+      "title": "Service Order Processing with SAP Field Service Management (49X_AE) - Test Script, SAP S/4HANA Cloud Public Edition (49X_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition 2608 test script (49X_AE): service/repair order integration with SAP Field Service Management, prerequisites and E2E steps.",
+      "keywords": [
+        "Field Service Management and Mobile Maintenance",
+        "service order processing",
+        "field service management",
+        "integration test procedures",
+        "service contract synchronization",
+        "service order release",
+        "service dispatching",
+        "service confirmation",
+        "repair order processing",
+        "smartforms"
+      ],
+      "aliases": [
+        "49X_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-service-and-mobile-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/service-order-processing-with-sap-field-service-management-49x-ae-test.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/49X_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Service Order Processing with SAP Field Service Management (49X_AE) - Test Script, SAP S/4HANA Cloud Public Edition (49X_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — S/4HANA Cloud Public Edition 2608 test script (49X_AE): service/repair order integration with SAP Field Service Management, prerequisites and E2E steps | keywords: Field Service Management and Mobile Maintenance, service order processing, field service management, integration test procedures, service contract synchronization, service order release, service dispatching, service confirmation, repair order processing, smartforms, 49X_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/solution-order-advanced-product-bundling-6bu-ae-1163",
+      "title": "Solution Order – Advanced Product Bundling (6BU_AE) (6BU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 6BU_AE: prerequisites, roles, sample data and steps to create, configure and release a solution order bundle.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "solution bundles",
+        "solution order management",
+        "test scripts",
+        "solution order creation",
+        "bundle configuration",
+        "bundle release",
+        "header discounts",
+        "bundle specific pricing",
+        "purchasing info records"
+      ],
+      "aliases": [
+        "6BU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/solution-order-advanced-product-bundling-6bu-ae-1163.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6BU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Solution Order – Advanced Product Bundling (6BU_AE) (6BU_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud test script for scope item 6BU_AE: prerequisites, roles, sample data and steps to create, configure and release a solution order bundle | keywords: Solution Orders and SAP CPQ Quotations, solution bundles, solution order management, test scripts, solution order creation, bundle configuration, bundle release, header discounts, bundle specific pricing, purchasing info records, 6BU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/solution-order-management-with-advanced-variant-configuration-6hy-ae-t",
+      "title": "Solution Order Management with Advanced Variant Configuration (6HY_AE) - Test Script, SAP S/4HANA Cloud Public Edition (6HY_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6HY_AE (AE): create, release, print solution orders with configurable items, then follow-on orders and billing.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "solution order management",
+        "variant configuration",
+        "solution order creation",
+        "solution order release",
+        "solution order output",
+        "billing documents",
+        "business conditions",
+        "business roles",
+        "sample master data"
+      ],
+      "aliases": [
+        "6HY_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/solution-order-management-with-advanced-variant-configuration-6hy-ae-t.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6HY_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Solution Order Management with Advanced Variant Configuration (6HY_AE) - Test Script, SAP S/4HANA Cloud Public Edition (6HY_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 6HY_AE (AE): create, release, print solution orders with configurable items, then follow-on orders and billing | keywords: Solution Orders and SAP CPQ Quotations, solution order management, variant configuration, solution order creation, solution order release, solution order output, billing documents, business conditions, business roles, sample master data, 6HY_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/solution-order-quotation-management-with-sap-cpq-6bv-ae-test-script-11",
+      "title": "Solution Order Quotation Management with SAP CPQ (6BV_AE) - Test Script (6BV_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 6BV: create a quotation in SAP CPQ and display the resulting solution order.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "sap cpq quotation",
+        "solution order management",
+        "test scripts",
+        "business roles",
+        "master data",
+        "configurable products",
+        "service contracts",
+        "business conditions",
+        "three-system landscape"
+      ],
+      "aliases": [
+        "6BV_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/solution-order-quotation-management-with-sap-cpq-6bv-ae-test-script-11.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6BV_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Solution Order Quotation Management with SAP CPQ (6BV_AE) - Test Script (6BV_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 6BV: create a quotation in SAP CPQ and display the resulting solution order | keywords: Solution Orders and SAP CPQ Quotations, sap cpq quotation, solution order management, test scripts, business roles, master data, configurable products, service contracts, business conditions, three-system landscape, 6BV_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/stammdatenskript-konfigurierbares-serviceprodukt-anlegen-sds-5be-430",
+      "title": "Stammdatenskript: Konfigurierbares Serviceprodukt anlegen – SDS (5BE) (5BE_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script (5BE): create configurable service products for service contracts/orders, variant classes, profiles, prices.",
+      "keywords": [
+        "Configurable Service Products and Advanced Variant…",
+        "configurable service product",
+        "service contracts",
+        "service orders",
+        "characteristics and classes",
+        "configuration profile",
+        "variant pricing",
+        "material variant",
+        "variant configuration",
+        "user roles"
+      ],
+      "aliases": [
+        "5BE_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/configurable-service-products"
+      ],
+      "path": "14-maintenance-service-and-projects/stammdatenskript-konfigurierbares-serviceprodukt-anlegen-sds-5be-430.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BE_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Konfigurierbares Serviceprodukt anlegen – SDS (5BE) (5BE_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German SAP S/4HANA Cloud Public Edition 2608 master data script (5BE): create configurable service products for service contracts/orders, variant classes, profiles, prices | keywords: Configurable Service Products and Advanced Variant…, configurable service product, service contracts, service orders, characteristics and classes, configuration profile, variant pricing, material variant, variant configuration, user roles, 5BE_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/stammdatenskript-messpunkt-anlegen-sds-5mi-466",
+      "title": "Stammdatenskript - Messpunkt anlegen – SDS (5MI) (5MI_S4CLD2608_Master_Data_DE_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (German) for creating measuring points and counters in asset management, plus measuring point type configuration.",
+      "keywords": [
+        "Measuring Points and Counters",
+        "measuring points",
+        "measuring counters",
+        "measuring point types",
+        "condition-based maintenance",
+        "technical objects",
+        "characteristics",
+        "business roles",
+        "solution configuration",
+        "master data scripts"
+      ],
+      "aliases": [
+        "5MI_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/measuring-points-and-counters"
+      ],
+      "path": "14-maintenance-service-and-projects/stammdatenskript-messpunkt-anlegen-sds-5mi-466.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MI_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Messpunkt anlegen – SDS (5MI) (5MI_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 master data script (German) for creating measuring points and counters in asset management, plus measuring point type configuration | keywords: Measuring Points and Counters, measuring points, measuring counters, measuring point types, condition-based maintenance, technical objects, characteristics, business roles, solution configuration, master data scripts, 5MI_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/stammdatenskript-sap-s-4hana-cloud-public-edition-serviceprodukt-fur-s",
+      "title": "Stammdatenskript SAP S/4HANA Cloud Public Edition – Serviceprodukt für Servicevorgänge anlegen – SDS (3KV) (3KV_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (3KV): step-by-step creation of service product materials (SRV_*, EXP_FSM_*) and their sales prices/conditions in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Service Products and Service Prices",
+        "service product master data",
+        "material creation",
+        "service product prices",
+        "overtime pricing",
+        "calculation motive conditions",
+        "service contract products",
+        "field service management expenses",
+        "spare parts",
+        "service bundles"
+      ],
+      "aliases": [
+        "3KV_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-products-for-service-processes"
+      ],
+      "path": "14-maintenance-service-and-projects/stammdatenskript-sap-s-4hana-cloud-public-edition-serviceprodukt-fur-s.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KV_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript SAP S/4HANA Cloud Public Edition – Serviceprodukt für Servicevorgänge anlegen – SDS (3KV) (3KV_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German master data script (3KV): step-by-step creation of service product materials (SRV_*, EXP_FSM_*) and their sales prices/conditions in S/4HANA Cloud Public Edition 2608 | keywords: Service Products and Service Prices, service product master data, material creation, service product prices, overtime pricing, calculation motive conditions, service contract products, field service management expenses, spare parts, service bundles, 3KV_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/stammdatenskript-serviceprodukt-fur-projekt-anlegen-sds-5to-484",
+      "title": "Stammdatenskript: Serviceprodukt für Projekt anlegen – SDS (5TO) (5TO_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud master data script 5TO: create service product PROJEKT via MM01 including sales organization data, for use in solution orders.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "service product",
+        "material master",
+        "sales organization data",
+        "master data scripts",
+        "business roles",
+        "organizational units",
+        "profit center",
+        "brazil tax fields",
+        "5TO"
+      ],
+      "aliases": [
+        "5TO_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/stammdatenskript-serviceprodukt-fur-projekt-anlegen-sds-5to-484.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5TO_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Serviceprodukt für Projekt anlegen – SDS (5TO) (5TO_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German SAP S/4HANA Cloud master data script 5TO: create service product PROJEKT via MM01 including sales organization data, for use in solution orders | keywords: Solution Orders and SAP CPQ Quotations, service product, material master, sales organization data, master data scripts, business roles, organizational units, profit center, brazil tax fields, 5TO, 5TO_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/stammdatenskript-technischen-platz-anlegen-sds-5lm-442",
+      "title": "Stammdatenskript - Technischen Platz anlegen - SDS (5LM) (5LM_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script (5LM): creating a functional location structure (one parent, two children) for maintenance.",
+      "keywords": [
+        "Functional Locations",
+        "functional location",
+        "technical objects",
+        "structure indicator",
+        "master data scripts",
+        "maintenance planning",
+        "work center",
+        "cost center",
+        "business roles",
+        "5LM"
+      ],
+      "aliases": [
+        "5LM_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/functional-locations"
+      ],
+      "path": "14-maintenance-service-and-projects/stammdatenskript-technischen-platz-anlegen-sds-5lm-442.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LM_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Technischen Platz anlegen - SDS (5LM) (5LM_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German SAP S/4HANA Cloud Public Edition 2608 master data script (5LM): creating a functional location structure (one parent, two children) for maintenance | keywords: Functional Locations, functional location, technical objects, structure indicator, master data scripts, maintenance planning, work center, cost center, business roles, 5LM, 5LM_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-corrective-maintenance-bh1-ae-sap-s-4hana-cloud-public-edi",
+      "title": "Test Script: Corrective Maintenance (BH1_AE) - SAP S/4HANA Cloud Public Edition (BH1_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item BH1 corrective maintenance: roles, sample data, Fiori apps and step-by-step procedures from request to technical completion.",
+      "keywords": [
+        "Corrective and Emergency Maintenance",
+        "corrective maintenance",
+        "maintenance notifications",
+        "maintenance orders",
+        "test scripts",
+        "business roles",
+        "service entry sheets",
+        "maintenance order confirmation",
+        "flexible workflow approval",
+        "purchase orders"
+      ],
+      "aliases": [
+        "BH1_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/corrective-and-emergency-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-corrective-maintenance-bh1-ae-sap-s-4hana-cloud-public-edi.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BH1_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Corrective Maintenance (BH1_AE) - SAP S/4HANA Cloud Public Edition (BH1_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item BH1 corrective maintenance: roles, sample data, Fiori apps and step-by-step procedures from request to technical completion | keywords: Corrective and Emergency Maintenance, corrective maintenance, maintenance notifications, maintenance orders, test scripts, business roles, service entry sheets, maintenance order confirmation, flexible workflow approval, purchase orders, BH1_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-credit-and-debit-memo-processing-for-service-management-4g",
+      "title": "Test Script: Credit and Debit Memo Processing for Service Management (4GG_AE) (4GG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 4GG_AE: credit/debit memo requests, approval, rework and billing for service processes.",
+      "keywords": [
+        "Service Order Management and Billing",
+        "credit memo processing",
+        "debit memo processing",
+        "credit memo requests",
+        "debit memo requests",
+        "memo request approval",
+        "service management",
+        "scope item testing",
+        "request rework",
+        "billing creation job"
+      ],
+      "aliases": [
+        "4GG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-order-management-and-billing"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-credit-and-debit-memo-processing-for-service-management-4g.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4GG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Credit and Debit Memo Processing for Service Management (4GG_AE) (4GG_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 4GG_AE: credit/debit memo requests, approval, rework and billing for service processes | keywords: Service Order Management and Billing, credit memo processing, debit memo processing, credit memo requests, debit memo requests, memo request approval, service management, scope item testing, request rework, billing creation job, 4GG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-customer-project-management-project-based-services-j11-ae",
+      "title": "Test Script: Customer Project Management – Project-Based Services (J11_AE) (J11_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item J11_AE: customer project creation, planning, staffing, billing, review and closure (AE demo data).",
+      "keywords": [
+        "Customer Project Management (Project-Based Services)",
+        "customer project management",
+        "customer project creation",
+        "work packages",
+        "work package staffing",
+        "project billing",
+        "billing document request",
+        "service units",
+        "material master data",
+        "project review"
+      ],
+      "aliases": [
+        "J11_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/customer-project-management"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-customer-project-management-project-based-services-j11-ae.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J11_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Customer Project Management – Project-Based Services (J11_AE) (J11_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud 2608 test script for scope item J11_AE: customer project creation, planning, staffing, billing, review and closure (AE demo data) | keywords: Customer Project Management (Project-Based Services), customer project management, customer project creation, work packages, work package staffing, project billing, billing document request, service units, material master data, project review, J11_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-emergency-maintenance-bh2-ae-sap-s-4hana-cloud-public-edit",
+      "title": "Test Script: Emergency Maintenance (BH2_AE) - SAP S/4HANA Cloud Public Edition (BH2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item Emergency Maintenance (BH2): report, repair, goods issue, complete malfunction, review object page.",
+      "keywords": [
+        "Corrective and Emergency Maintenance",
+        "emergency maintenance",
+        "malfunction reports",
+        "repair malfunction",
+        "post goods issue",
+        "complete malfunction report",
+        "asset maintenance object page",
+        "initial material stock",
+        "business roles",
+        "test data"
+      ],
+      "aliases": [
+        "BH2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/corrective-and-emergency-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-emergency-maintenance-bh2-ae-sap-s-4hana-cloud-public-edit.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BH2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Emergency Maintenance (BH2_AE) - SAP S/4HANA Cloud Public Edition (BH2_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item Emergency Maintenance (BH2): report, repair, goods issue, complete malfunction, review object page | keywords: Corrective and Emergency Maintenance, emergency maintenance, malfunction reports, repair malfunction, post goods issue, complete malfunction report, asset maintenance object page, initial material stock, business roles, test data, BH2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-field-logistics-planning-and-execution-40g-ae-sap-s-4hana-part-01",
+      "title": "Test Script: Field Logistics Planning and Execution (40G_AE) - SAP S/4HANA Cloud Public Edition (40G_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "SAP test script for scope item 40G: field logistics supply (SP11-SP14) between base and remote plants, goods receipt/reversal, quality, and returns, in Fiori apps.",
+      "keywords": [
+        "Field Logistics Planning and Execution",
+        "field logistics",
+        "supply processes",
+        "dual plant setup",
+        "single plant setup",
+        "maintenance orders",
+        "goods receipt",
+        "goods receipt reversal",
+        "stock transport orders",
+        "field logistics returns"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-logistics"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-field-logistics-planning-and-execution-40g-ae-sap-s-4hana-part-01.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/40G_S4CLD2608_BPD_EN_AE.docx#lines-1-2554"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Field Logistics Planning and Execution (40G_AE) - SAP S/4HANA Cloud Public Edition (40G_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Maintenance, Service and Projects) — SAP test script for scope item 40G: field logistics supply (SP11-SP14) between base and remote plants, goods receipt/reversal, quality, and returns, in Fiori apps | keywords: Field Logistics Planning and Execution, field logistics, supply processes, dual plant setup, single plant setup, maintenance orders, goods receipt, goods receipt reversal, stock transport orders, field logistics returns"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-field-logistics-planning-and-execution-40g-ae-sap-s-4hana-part-02",
+      "title": "Test Script: Field Logistics Planning and Execution (40G_AE) - SAP S/4HANA Cloud Public Edition (40G_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (AE): final EWM picking steps and technical completion of a maintenance order, plus SAP legal footer.",
+      "keywords": [
+        "Field Logistics Planning and Execution",
+        "warehouse task creation",
+        "outbound delivery",
+        "maintenance order completion",
+        "technical completion",
+        "goods issue",
+        "maintenance order settlement",
+        "test script procedure",
+        "typographic conventions",
+        "40G"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-logistics"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-field-logistics-planning-and-execution-40g-ae-sap-s-4hana-part-02.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/40G_S4CLD2608_BPD_EN_AE.docx#lines-2555-2612"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Field Logistics Planning and Execution (40G_AE) - SAP S/4HANA Cloud Public Edition (40G_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script (AE): final EWM picking steps and technical completion of a maintenance order, plus SAP legal footer | keywords: Field Logistics Planning and Execution, warehouse task creation, outbound delivery, maintenance order completion, technical completion, goods issue, maintenance order settlement, test script procedure, typographic conventions, 40G"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-field-logistics-planning-and-execution-supplier-items-4ah",
+      "title": "Test Script: Field Logistics Planning and Execution – Supplier Items (4AH_AE) (4AH_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4AH_AE: supplier item and rental logistics from PO and receipt at base to remote, transfer, return and Fieldglass.",
+      "keywords": [
+        "Field Logistics Planning and Execution",
+        "supplier items",
+        "field logistics",
+        "test prerequisites",
+        "maintenance orders",
+        "limit purchase requisition",
+        "purchase orders",
+        "fieldglass integration",
+        "goods receipt",
+        "warehouse tasks"
+      ],
+      "aliases": [
+        "4AH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-logistics"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-field-logistics-planning-and-execution-supplier-items-4ah.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4AH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Field Logistics Planning and Execution – Supplier Items (4AH_AE) (4AH_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4AH_AE: supplier item and rental logistics from PO and receipt at base to remote, transfer, return and Fieldglass | keywords: Field Logistics Planning and Execution, supplier items, field logistics, test prerequisites, maintenance orders, limit purchase requisition, purchase orders, fieldglass integration, goods receipt, warehouse tasks, 4AH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-improvement-maintenance-4vt-ae-sap-s-4hana-cloud-public-ed",
+      "title": "Test Script: Improvement Maintenance (4VT_AE) - SAP S/4HANA Cloud Public Edition (4VT_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 4VT (Improvement Maintenance, AE): prerequisites, 6 preliminary steps, 19 test procedures.",
+      "keywords": [
+        "Improvement, Operational and Overhead Maintenance",
+        "improvement maintenance",
+        "maintenance orders",
+        "maintenance order approval",
+        "maintenance backlog",
+        "purchase requisitions",
+        "goods movements",
+        "work packs",
+        "maintenance execution",
+        "service entry sheets"
+      ],
+      "aliases": [
+        "4VT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/improvement-operational-overhead-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-improvement-maintenance-4vt-ae-sap-s-4hana-cloud-public-ed.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4VT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Improvement Maintenance (4VT_AE) - SAP S/4HANA Cloud Public Edition (4VT_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 4VT (Improvement Maintenance, AE): prerequisites, 6 preliminary steps, 19 test procedures | keywords: Improvement, Operational and Overhead Maintenance, improvement maintenance, maintenance orders, maintenance order approval, maintenance backlog, purchase requisitions, goods movements, work packs, maintenance execution, service entry sheets, 4VT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-intercompany-processes-project-based-services-16t-ae-704",
+      "title": "Test Script: Intercompany Processes – Project-Based Services (16T_AE) (16T_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for intercompany project-based services (scope item 16T), US delivering company billing DE ordering company.",
+      "keywords": [
+        "Intercompany Project-Based Services and Project Control",
+        "intercompany project billing",
+        "intercompany sales order",
+        "customer project",
+        "travel expense invoice",
+        "time recording",
+        "business roles",
+        "master data",
+        "business conditions",
+        "demo data"
+      ],
+      "aliases": [
+        "16T_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/intercompany-project-services"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-intercompany-processes-project-based-services-16t-ae-704.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/16T_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intercompany Processes – Project-Based Services (16T_AE) (16T_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for intercompany project-based services (scope item 16T), US delivering company billing DE ordering company | keywords: Intercompany Project-Based Services and Project Control, intercompany project billing, intercompany sales order, customer project, travel expense invoice, time recording, business roles, master data, business conditions, demo data, 16T_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-maintenance-resource-scheduling-43r-ae-sap-s-4hana-cloud-p",
+      "title": "Test Script: Maintenance Resource Scheduling (43R_AE), SAP S/4HANA Cloud Public Edition (43R_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 43R Maintenance Resource Scheduling: prerequisites, Fiori app test steps, process chain.",
+      "keywords": [
+        "Maintenance Resource Scheduling",
+        "scope item testing",
+        "maintenance schedule",
+        "work center utilization",
+        "work center capacity",
+        "schedule freezing",
+        "operation dispatching",
+        "maintenance scheduling board",
+        "maintenance schedule for assets",
+        "person responsible assignment"
+      ],
+      "aliases": [
+        "43R_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-resource-scheduling"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-maintenance-resource-scheduling-43r-ae-sap-s-4hana-cloud-p.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/43R_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Maintenance Resource Scheduling (43R_AE), SAP S/4HANA Cloud Public Edition (43R_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 43R Maintenance Resource Scheduling: prerequisites, Fiori app test steps, process chain | keywords: Maintenance Resource Scheduling, scope item testing, maintenance schedule, work center utilization, work center capacity, schedule freezing, operation dispatching, maintenance scheduling board, maintenance schedule for assets, person responsible assignment, 43R_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-period-end-closing-maintenance-orders-bf7-ae-1261",
+      "title": "Test Script: Period-End Closing – Maintenance Orders (BF7_AE) (BF7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script (BF7, AE) for settling, closing and analyzing maintenance service orders YA01-YA05 at period end.",
+      "keywords": [
+        "Period-End Closing for Maintenance Orders",
+        "period-end closing",
+        "maintenance orders",
+        "order settlement",
+        "settlement profiles",
+        "closing service orders",
+        "maintenance order analysis",
+        "controlling area settings",
+        "cost accounting periods",
+        "business roles"
+      ],
+      "aliases": [
+        "BF7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-order-period-end-closing"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-period-end-closing-maintenance-orders-bf7-ae-1261.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BF7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Period-End Closing – Maintenance Orders (BF7_AE) (BF7_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud 2608 test script (BF7, AE) for settling, closing and analyzing maintenance service orders YA01-YA05 at period end | keywords: Period-End Closing for Maintenance Orders, period-end closing, maintenance orders, order settlement, settlement profiles, closing service orders, maintenance order analysis, controlling area settings, cost accounting periods, business roles, BF7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-preventive-maintenance-bj2-ae-sap-s-4hana-cloud-public-edi",
+      "title": "Test Script: Preventive Maintenance (BJ2_AE) - SAP S/4HANA Cloud Public Edition (BJ2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for Preventive Maintenance (BJ2, AE): time/performance/multiple-counter plans, scheduling and order processing.",
+      "keywords": [
+        "Preventive and Proactive Maintenance Plans",
+        "preventive maintenance",
+        "task lists",
+        "maintenance items",
+        "maintenance plans",
+        "maintenance strategies",
+        "maintenance plan scheduling",
+        "measurement documents",
+        "maintenance order processing",
+        "test prerequisites"
+      ],
+      "aliases": [
+        "BJ2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/preventive-and-proactive-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-preventive-maintenance-bj2-ae-sap-s-4hana-cloud-public-edi.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJ2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Preventive Maintenance (BJ2_AE) - SAP S/4HANA Cloud Public Edition (BJ2_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for Preventive Maintenance (BJ2, AE): time/performance/multiple-counter plans, scheduling and order processing | keywords: Preventive and Proactive Maintenance Plans, preventive maintenance, task lists, maintenance items, maintenance plans, maintenance strategies, maintenance plan scheduling, measurement documents, maintenance order processing, test prerequisites, BJ2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-proactive-maintenance-4hi-ae-sap-s-4hana-cloud-public-edit",
+      "title": "Test Script: Proactive Maintenance (4HI_AE) - SAP S/4HANA Cloud Public Edition (4HI_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 4HI (UAE): proactive maintenance planning, order processing, execution, procurement and invoicing steps in Fiori, dated 19-06-26.",
+      "keywords": [
+        "Preventive and Proactive Maintenance Plans",
+        "proactive maintenance",
+        "maintenance plans",
+        "maintenance strategies",
+        "general task lists",
+        "measurement documents",
+        "maintenance orders",
+        "multiple counter plan",
+        "order approval workflow",
+        "maintenance backlog"
+      ],
+      "aliases": [
+        "4HI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/preventive-and-proactive-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-proactive-maintenance-4hi-ae-sap-s-4hana-cloud-public-edit.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4HI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Proactive Maintenance (4HI_AE) - SAP S/4HANA Cloud Public Edition (4HI_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP test script for scope item 4HI (UAE): proactive maintenance planning, order processing, execution, procurement and invoicing steps in Fiori, dated 19-06-26 | keywords: Preventive and Proactive Maintenance Plans, proactive maintenance, maintenance plans, maintenance strategies, general task lists, measurement documents, maintenance orders, multiple counter plan, order approval workflow, maintenance backlog, 4HI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-project-control-intercompany-4au-ae-sap-s-4hana-cloud-publ",
+      "title": "Test Script: Project Control – Intercompany (4AU_AE), SAP S/4HANA Cloud Public Edition (4AU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4AU (AE): intercompany project control, from project creation to expense posting and billing.",
+      "keywords": [
+        "Intercompany Project-Based Services and Project Control",
+        "intercompany project control",
+        "project creation",
+        "project release",
+        "direct activity allocation",
+        "intercompany expense posting",
+        "intercompany billing",
+        "intercompany cost rates",
+        "activity types",
+        "time recording"
+      ],
+      "aliases": [
+        "4AU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/intercompany-project-services"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-project-control-intercompany-4au-ae-sap-s-4hana-cloud-publ.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4AU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Control – Intercompany (4AU_AE), SAP S/4HANA Cloud Public Edition (4AU_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4AU (AE): intercompany project control, from project creation to expense posting and billing | keywords: Intercompany Project-Based Services and Project Control, intercompany project control, project creation, project release, direct activity allocation, intercompany expense posting, intercompany billing, intercompany cost rates, activity types, time recording, 4AU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-recurring-services-4x5-ae-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: Recurring Services (4X5_AE) - SAP S/4HANA Cloud Public Edition (4X5_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 4X5 Recurring Services (AE), S/4HANA Cloud 2608: maintenance plans, scheduling, mass scheduling, logs, counter readings.",
+      "keywords": [
+        "Preventive and Proactive Maintenance Plans",
+        "recurring services",
+        "maintenance plans",
+        "time-based maintenance plan",
+        "performance-based maintenance plan",
+        "multiple counter plan",
+        "maintenance plan scheduling",
+        "mass scheduling",
+        "mass scheduling logs",
+        "counter readings"
+      ],
+      "aliases": [
+        "4X5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/preventive-and-proactive-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-recurring-services-4x5-ae-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4X5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Recurring Services (4X5_AE) - SAP S/4HANA Cloud Public Edition (4X5_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP test script for scope item 4X5 Recurring Services (AE), S/4HANA Cloud 2608: maintenance plans, scheduling, mass scheduling, logs, counter readings | keywords: Preventive and Proactive Maintenance Plans, recurring services, maintenance plans, time-based maintenance plan, performance-based maintenance plan, multiple counter plan, maintenance plan scheduling, mass scheduling, mass scheduling logs, counter readings, 4X5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-resource-management-for-projects-6jo-1175",
+      "title": "Test Script: Resource Management for Projects (6JO) (6JO_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6JO: resource requests, staffing, utilization, and team member assignments/experience via SAP Project and Resource Management.",
+      "keywords": [
+        "Resource Management for Projects",
+        "resource management",
+        "resource requests",
+        "resource staffing",
+        "resource utilization",
+        "project team member assignments",
+        "project experience",
+        "test scripts",
+        "business roles",
+        "business conditions"
+      ],
+      "aliases": [
+        "6JO_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/resource-management"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-resource-management-for-projects-6jo-1175.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6JO_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Resource Management for Projects (6JO) (6JO_S4CLD2608_BPD_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition test script for scope item 6JO: resource requests, staffing, utilization, and team member assignments/experience via SAP Project and Resource Management | keywords: Resource Management for Projects, resource management, resource requests, resource staffing, resource utilization, project team member assignments, project experience, test scripts, business roles, business conditions, 6JO_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-sap-maintenance-assistant-4rv-sap-s-4hana-cloud-public-edi",
+      "title": "Test Script: SAP Maintenance Assistant (4RV) - SAP S/4HANA Cloud Public Edition (4RV_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for SAP S/4HANA Cloud scope item 4RV (SAP Maintenance Assistant mobile app): prerequisites, roles, test data and procedures for MT, FST, FSM, forms.",
+      "keywords": [
+        "Field Service Management and Mobile Maintenance",
+        "sap maintenance assistant",
+        "maintenance technician persona",
+        "field service technician persona",
+        "fsm integration",
+        "smartforms",
+        "dynamic forms",
+        "maintenance requests",
+        "maintenance operations",
+        "service orders"
+      ],
+      "aliases": [
+        "4RV_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-service-and-mobile-maintenance"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-sap-maintenance-assistant-4rv-sap-s-4hana-cloud-public-edi.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4RV_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: SAP Maintenance Assistant (4RV) - SAP S/4HANA Cloud Public Edition (4RV_S4CLD2608_BPD_EN_XX) (Maintenance, Service and Projects) — Test script for SAP S/4HANA Cloud scope item 4RV (SAP Maintenance Assistant mobile app): prerequisites, roles, test data and procedures for MT, FST, FSM, forms | keywords: Field Service Management and Mobile Maintenance, sap maintenance assistant, maintenance technician persona, field service technician persona, fsm integration, smartforms, dynamic forms, maintenance requests, maintenance operations, service orders, 4RV_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-engineer-products-and-sys",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Engineer Products and Systems – Project with Production (6GD_AE) (6GD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script for scope item 6GD: Engineer-to-Order project with production, from quotation through production, billing, revenue recognition and project close.",
+      "keywords": [
+        "Engineer-to-Order Project with Production",
+        "engineer-to-order",
+        "project with revenue",
+        "wbs elements",
+        "business roles",
+        "master data",
+        "sales quotation",
+        "sales order",
+        "down payment",
+        "preliminary procurement"
+      ],
+      "aliases": [
+        "6GD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/engineer-to-order-project-with-production"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-engineer-products-and-sys.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6GD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Engineer Products and Systems – Project with Production (6GD_AE) (6GD_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud 2608 (AE) test script for scope item 6GD: Engineer-to-Order project with production, from quotation through production, billing, revenue recognition and project close | keywords: Engineer-to-Order Project with Production, engineer-to-order, project with revenue, wbs elements, business roles, master data, sales quotation, sales order, down payment, preliminary procurement, 6GD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-field-logistics-planning",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition: Field Logistics Planning and Execution – Direct Procurement (5OM_AE) (5OM_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 5OM_AE: Field Logistics non-stock procurement, receipt, transport and return between base and remote plants.",
+      "keywords": [
+        "Field Logistics Planning and Execution",
+        "field logistics",
+        "non-stock items",
+        "maintenance orders",
+        "purchase orders",
+        "goods receipt",
+        "return processing",
+        "warehouse tasks",
+        "goods issue and transport",
+        "single plant setup"
+      ],
+      "aliases": [
+        "5OM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/field-logistics"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-field-logistics-planning.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition: Field Logistics Planning and Execution – Direct Procurement (5OM_AE) (5OM_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud test script for scope item 5OM_AE: Field Logistics non-stock procurement, receipt, transport and return between base and remote plants | keywords: Field Logistics Planning and Execution, field logistics, non-stock items, maintenance orders, purchase orders, goods receipt, return processing, warehouse tasks, goods issue and transport, single plant setup, 5OM_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-in-house-repair-3xk-ae-98",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - In-House Repair (3XK_AE) (3XK_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 3XK In-House Repair (AE, release 2608): prerequisites, config steps, roles, and step-by-step procedures from returns to repair, billing and invoice.",
+      "keywords": [
+        "In-House Repair",
+        "business roles",
+        "customer returns",
+        "repair quotations",
+        "repair orders",
+        "repair diagnosis",
+        "repair confirmations",
+        "billing",
+        "master data",
+        "business conditions"
+      ],
+      "aliases": [
+        "3XK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/in-house-repair"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-in-house-repair-3xk-ae-98.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3XK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - In-House Repair (3XK_AE) (3XK_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — Test script for scope item 3XK In-House Repair (AE, release 2608): prerequisites, config steps, roles, and step-by-step procedures from returns to repair, billing and invoice | keywords: In-House Repair, business roles, customer returns, repair quotations, repair orders, repair diagnosis, repair confirmations, billing, master data, business conditions, 3XK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-solution-order-management",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Solution Order Management (4GT_AE) (4GT_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script (UAE, release 2608) for scope item 4GT Solution Order Management: prerequisites, roles, test data, and end-to-end steps from solution order to billing, credit memo and returns.",
+      "keywords": [
+        "Solution Orders and SAP CPQ Quotations",
+        "solution order management",
+        "solution order creation",
+        "solution order release",
+        "business roles",
+        "test master data",
+        "third-party sales",
+        "customer projects",
+        "billing documents",
+        "credit memo requests"
+      ],
+      "aliases": [
+        "4GT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/solution-orders-and-cpq"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-solution-order-management.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4GT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Solution Order Management (4GT_AE) (4GT_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — Test script (UAE, release 2608) for scope item 4GT Solution Order Management: prerequisites, roles, test data, and end-to-end steps from solution order to billing, credit memo and returns | keywords: Solution Orders and SAP CPQ Quotations, solution order management, solution order creation, solution order release, business roles, test master data, third-party sales, customer projects, billing documents, credit memo requests, 4GT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-time-recording-1q4-ae-754",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Time Recording (1Q4_AE) (1Q4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 1Q4 Time Recording: Manage My Timesheet, optional approval, BAdIs, and time confirmation in closed periods.",
+      "keywords": [
+        "Time Recording",
+        "timesheet",
+        "timesheet approval",
+        "data entry profiles",
+        "closed period time confirmation",
+        "timesheet validation",
+        "work locations and task types",
+        "accounting objects",
+        "business roles",
+        "demo data"
+      ],
+      "aliases": [
+        "1Q4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/time-recording"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-sap-s-4hana-cloud-public-edition-time-recording-1q4-ae-754.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1Q4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Time Recording (1Q4_AE) (1Q4_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud 2608 test script for scope item 1Q4 Time Recording: Manage My Timesheet, optional approval, BAdIs, and time confirmation in closed periods | keywords: Time Recording, timesheet, timesheet approval, data entry profiles, closed period time confirmation, timesheet validation, work locations and task types, accounting objects, business roles, demo data, 1Q4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-service-contract-management-3mo-ae-sap-s-4hana-cloud-publi",
+      "title": "Test Script: Service Contract Management (3MO_AE) - SAP S/4HANA Cloud Public Edition (3MO_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script (scope item 3MO, UAE, release 2608): creating, pricing, billing, renewing, changing and cancelling service contracts in S/4HANA Cloud.",
+      "keywords": [
+        "Service Contract Management",
+        "service contracts",
+        "service contract creation",
+        "service contract templates",
+        "service contract billing",
+        "price agreements",
+        "service contract pricing",
+        "ad-hoc billing",
+        "contract renewal",
+        "billing document requests"
+      ],
+      "aliases": [
+        "3MO_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-contract-management"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-service-contract-management-3mo-ae-sap-s-4hana-cloud-publi.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3MO_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Service Contract Management (3MO_AE) - SAP S/4HANA Cloud Public Edition (3MO_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP test script (scope item 3MO, UAE, release 2608): creating, pricing, billing, renewing, changing and cancelling service contracts in S/4HANA Cloud | keywords: Service Contract Management, service contracts, service contract creation, service contract templates, service contract billing, price agreements, service contract pricing, ad-hoc billing, contract renewal, billing document requests, 3MO_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-service-monitoring-and-analytics-43b-sap-s-4hana-cloud-pub",
+      "title": "Test Script: Service Monitoring and Analytics (43B) - SAP S/4HANA Cloud Public Edition (43B_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 43B: service contract/order monitoring, issues, flexible analysis, solution order and O2C dashboards.",
+      "keywords": [
+        "Service Monitoring and Analytics",
+        "service management overview",
+        "service contract issues",
+        "service order issues",
+        "flexible analysis apps",
+        "solution orders",
+        "service contracts dashboard",
+        "order to cash dashboard",
+        "insights cards",
+        "situation handling"
+      ],
+      "aliases": [
+        "43B_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-monitoring-and-analytics"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-service-monitoring-and-analytics-43b-sap-s-4hana-cloud-pub.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/43B_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Service Monitoring and Analytics (43B) - SAP S/4HANA Cloud Public Edition (43B_S4CLD2608_BPD_EN_XX) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 43B: service contract/order monitoring, issues, flexible analysis, solution order and O2C dashboards | keywords: Service Monitoring and Analytics, service management overview, service contract issues, service order issues, flexible analysis apps, solution orders, service contracts dashboard, order to cash dashboard, insights cards, situation handling, 43B_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-service-order-management-and-monitoring-3d2-ae-927",
+      "title": "Test Script: Service Order Management and Monitoring (3D2_AE) (3D2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 3D2: prerequisites, config and step-by-step tests for service orders, confirmations and billing.",
+      "keywords": [
+        "Service Order Management and Billing",
+        "service order management",
+        "service order templates",
+        "service confirmation",
+        "service billing",
+        "fixed price service orders",
+        "service bundles",
+        "ad hoc billing",
+        "service teams",
+        "overtime configuration"
+      ],
+      "aliases": [
+        "3D2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-order-management-and-billing"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-service-order-management-and-monitoring-3d2-ae-927.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3D2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Service Order Management and Monitoring (3D2_AE) (3D2_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 3D2: prerequisites, config and step-by-step tests for service orders, confirmations and billing | keywords: Service Order Management and Billing, service order management, service order templates, service confirmation, service billing, fixed price service orders, service bundles, ad hoc billing, service teams, overtime configuration, 3D2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-service-quotation-4ga-ae-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: Service Quotation (4GA_AE) - SAP S/4HANA Cloud Public Edition (4GA_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (UAE) test script for scope item 4GA Service Quotation: prerequisites, service teams, and create/send/change/accept/requote/reject steps.",
+      "keywords": [
+        "Service Quotations",
+        "service quotation",
+        "test procedures",
+        "fixed price quotation",
+        "service bundle",
+        "fixed price service bundle",
+        "service teams",
+        "quotation requote",
+        "quotation acceptance",
+        "quotation rejection"
+      ],
+      "aliases": [
+        "4GA_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/service-quotation"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-service-quotation-4ga-ae-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4GA_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Service Quotation (4GA_AE) - SAP S/4HANA Cloud Public Edition (4GA_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (UAE) test script for scope item 4GA Service Quotation: prerequisites, service teams, and create/send/change/accept/requote/reject steps | keywords: Service Quotations, service quotation, test procedures, fixed price quotation, service bundle, fixed price service bundle, service teams, quotation requote, quotation acceptance, quotation rejection, 4GA_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-time-recording-project-based-services-j12-ae-1297",
+      "title": "Test Script: Time Recording – Project-Based Services (J12_AE) (J12_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script for J12: timesheet entry, contingent worker time, approval, missing time, team utilization, closed periods.",
+      "keywords": [
+        "Time Recording",
+        "manage my timesheet",
+        "manage timesheet app",
+        "contingent worker time recording",
+        "unstaffed project tasks",
+        "timesheet approval",
+        "missing time notification",
+        "team utilization",
+        "closed period time confirmation",
+        "test scripts"
+      ],
+      "aliases": [
+        "J12_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/time-recording",
+        "topic/customer-project-management"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-time-recording-project-based-services-j12-ae-1297.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J12_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Time Recording – Project-Based Services (J12_AE) (J12_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud 2608 (AE) test script for J12: timesheet entry, contingent worker time, approval, missing time, team utilization, closed periods | keywords: Time Recording, manage my timesheet, manage timesheet app, contingent worker time recording, unstaffed project tasks, timesheet approval, missing time notification, team utilization, closed period time confirmation, test scripts, J12_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/test-script-warranty-claim-management-supplier-recovery-processing-5hr",
+      "title": "Test Script: Warranty Claim Management – Supplier Recovery Processing (5HR_AE) (5HR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 5HR: supplier warranty claims from creation to posting, rejection, closing and reopening.",
+      "keywords": [
+        "Warranty Claim Management",
+        "supplier claims",
+        "supplier recovery",
+        "master warranty",
+        "vendor warranty",
+        "claim validation",
+        "supplier response",
+        "claim posting",
+        "claim lifecycle",
+        "return parts status"
+      ],
+      "aliases": [
+        "5HR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/warranty-claim-management"
+      ],
+      "path": "14-maintenance-service-and-projects/test-script-warranty-claim-management-supplier-recovery-processing-5hr.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5HR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Warranty Claim Management – Supplier Recovery Processing (5HR_AE) (5HR_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 5HR: supplier warranty claims from creation to posting, rejection, closing and reopening | keywords: Warranty Claim Management, supplier claims, supplier recovery, master warranty, vendor warranty, claim validation, supplier response, claim posting, claim lifecycle, return parts status, 5HR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/warranty-claim-management-customer-claim-processing-63y-ae-test-script",
+      "title": "Warranty Claim Management – Customer Claim Processing (63Y_AE) – Test Script, SAP S/4HANA Cloud Public Edition (63Y_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (UAE) test script for scope item 63Y: customer warranty claim lifecycle in Manage Customer Claims (F6204), with prerequisites and sample data.",
+      "keywords": [
+        "Warranty Claim Management",
+        "customer warranty claims",
+        "claim creation",
+        "claim validation",
+        "claim status transitions",
+        "master warranty",
+        "claim posting and reversal",
+        "claim rejection and closure",
+        "equipment warranty assignment",
+        "pricing condition records"
+      ],
+      "aliases": [
+        "63Y_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/warranty-claim-management"
+      ],
+      "path": "14-maintenance-service-and-projects/warranty-claim-management-customer-claim-processing-63y-ae-test-script.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/63Y_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Warranty Claim Management – Customer Claim Processing (63Y_AE) – Test Script, SAP S/4HANA Cloud Public Edition (63Y_S4CLD2608_BPD_EN_AE) (Maintenance, Service and Projects) — SAP S/4HANA Cloud Public Edition 2608 (UAE) test script for scope item 63Y: customer warranty claim lifecycle in Manage Customer Claims (F6204), with prerequisites and sample data | keywords: Warranty Claim Management, customer warranty claims, claim creation, claim validation, claim status transitions, master warranty, claim posting and reversal, claim rejection and closure, equipment warranty assignment, pricing condition records, 63Y_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "14-maintenance-service-and-projects/zweck-stammdatenskript-instandhaltungsarbeitsplatz-anlegen-sds-5mh-460",
+      "title": "Zweck (Stammdatenskript: Instandhaltungsarbeitsplatz anlegen – SDS 5MH) (5MH_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (5MH) for creating a maintenance work center (type 0005) with app CR01 in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Maintenance Work Centers",
+        "maintenance work center",
+        "work center type",
+        "standard value key",
+        "work center capacity",
+        "business roles",
+        "master data scripts",
+        "plant organizational unit",
+        "5MH"
+      ],
+      "aliases": [
+        "5MH_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "topic/maintenance-work-centers"
+      ],
+      "path": "14-maintenance-service-and-projects/zweck-stammdatenskript-instandhaltungsarbeitsplatz-anlegen-sds-5mh-460.md",
+      "cluster": "14-maintenance-service-and-projects",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5MH_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Zweck (Stammdatenskript: Instandhaltungsarbeitsplatz anlegen – SDS 5MH) (5MH_S4CLD2608_Master_Data_DE_XX) (Maintenance, Service and Projects) — German master data script (5MH) for creating a maintenance work center (type 0005) with app CR01 in SAP S/4HANA Cloud Public Edition 2608 | keywords: Maintenance Work Centers, maintenance work center, work center type, standard value key, work center capacity, business roles, master data scripts, plant organizational unit, 5MH, 5MH_S4CLD2608_Master_Data_DE_XX"
+    }
+  ]
+}

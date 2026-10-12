@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude-Agents Setup Visualizer</title>
+<style>
+  :root{
+    --bg:#f6f5f2;
+    --bg-alt:#ffffff;
+    --ink:#1e1c1a;
+    --ink-dim:#5a564f;
+    --line:#ddd8cf;
+    --line-soft:#eae6dc;
+    --card:#ffffff;
+    --shadow:0 1px 2px rgba(30,28,26,.06), 0 1px 8px rgba(30,28,26,.04);
+    --shadow-lg:0 8px 40px rgba(30,28,26,.14), 0 2px 8px rgba(30,28,26,.08);
+    --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --c-ingest:#0f8b8d;
+    --c-digest:#2f6fed;
+    --c-architect:#7c4fe0;
+    --c-write:#d98324;
+    --c-link:#1f9d55;
+    --c-audit:#d1447a;
+    --c-router:#3a7ca5;
+    --c-script:#8a8578;
+    --c-gate:#d9a441;
+    --c-yes:#2f9d5d;
+    --c-no:#c1493f;
+    --radius:10px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#17161a;
+      --bg-alt:#1e1d22;
+      --ink:#eae7e0;
+      --ink-dim:#a29d92;
+      --line:#34323a;
+      --line-soft:#2a2830;
+      --card:#201f25;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 2px 12px rgba(0,0,0,.25);
+      --shadow-lg:0 10px 50px rgba(0,0,0,.55), 0 2px 10px rgba(0,0,0,.4);
+      --c-ingest:#3fb8ba;
+      --c-digest:#6d9bff;
+      --c-architect:#a687f0;
+      --c-write:#e5a04f;
+      --c-link:#4ec27f;
+      --c-audit:#e5719f;
+      --c-router:#6ba8cb;
+      --c-script:#9a958a;
+    }
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;}
+  .wrap{width:100%;margin:0;padding:32px 32px 80px;}
+
+  header.top{margin-bottom:18px;}
+  header.top h1{font-size:1.7rem;margin:0 0 6px;letter-spacing:-.01em;}
+  header.top p{margin:0;color:var(--ink-dim);font-size:.98rem;}
+  header.top .tag{display:inline-block;font-family:var(--mono);font-size:.72rem;color:var(--ink-dim);border:1px solid var(--line);border-radius:20px;padding:2px 10px;margin-top:10px;}
+
+  /* ===== tabs ===== */
+  .tabbar{position:sticky;top:0;z-index:40;display:flex;gap:2px;overflow-x:auto;background:var(--bg);
+          border-bottom:1px solid var(--line);margin:0 0 26px;padding:8px 0 0;scrollbar-width:none;}
+  .tabbar::-webkit-scrollbar{display:none;}
+  .tabbtn{appearance:none;background:none;border:none;border-bottom:2px solid transparent;color:var(--ink-dim);
+          font-family:var(--sans);font-size:.87rem;padding:8px 14px 9px;cursor:pointer;white-space:nowrap;
+          display:flex;align-items:center;gap:7px;border-radius:6px 6px 0 0;}
+  .tabbtn:hover{color:var(--ink);background:var(--bg-alt);}
+  .tabbtn[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink);font-weight:600;}
+  .tabbtn .tnum{font-family:var(--mono);font-size:.68rem;opacity:.6;}
+  .tabbtn:focus-visible{outline:2px solid var(--c-router);outline-offset:-2px;}
+  .tabpanel[hidden]{display:none;}
+  .tabpanel{animation:fade .18s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(3px);}to{opacity:1;transform:none;}}
+
+  section{margin:0 0 42px;}
+  section:last-child{margin-bottom:0;}
+  h2{font-size:1.05rem;margin:0 0 4px;}
+  h2 .num{color:var(--ink-dim);font-weight:500;margin-right:6px;}
+  .sub{color:var(--ink-dim);font-size:.88rem;margin:0 0 16px;}
+
+  /* folder contract */
+  .contract{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding-bottom:4px;}
+  .contract .box{flex:1 1 240px;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);}
+  .contract .box code{font-family:var(--mono);font-size:.95rem;font-weight:600;}
+  .contract .box .role{display:block;margin-top:6px;font-size:.78rem;color:var(--ink-dim);}
+  .contract .arrow{flex:0 0 44px;display:flex;align-items:center;justify-content:center;color:var(--ink-dim);font-size:1.3rem;}
+
+  /* command cards */
+  .cmdgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;}
+  .cmdcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;}
+  .cmdcard .cmdhead{display:flex;align-items:baseline;justify-content:space-between;gap:8px;}
+  .cmdcard .cmdname{font-family:var(--mono);font-weight:700;font-size:.92rem;}
+  .cmdcard .cmdmode{font-family:var(--mono);font-size:.66rem;color:var(--ink-dim);border:1px solid var(--line);border-radius:12px;padding:1px 8px;white-space:nowrap;}
+  .cmdcard p{margin:0;font-size:.85rem;color:var(--ink-dim);}
+  .cmdcard ul{margin:0;padding-left:18px;font-size:.79rem;color:var(--ink-dim);}
+  .cmdcard ul li{margin:3px 0;}
+  .cmdcard .cmdlink{align-self:flex-start;font-family:var(--mono);font-size:.74rem;color:var(--ink);text-decoration:none;
+                    background:none;border:none;border-bottom:1px solid var(--ink-dim);padding:0;margin-top:2px;cursor:pointer;}
+  .cmdcard .cmdlink:hover{border-bottom-color:var(--ink);}
+
+  /* ===== start-here (plain words) tab ===== */
+  .big{font-size:1.55rem;line-height:1.5;margin:0 0 28px;letter-spacing:-.01em;}
+  .big b{border-bottom:3px solid var(--c-link);}
+
+  .steps3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;}
+  .step3{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);}
+  .step3 .s3n{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;
+              background:var(--ink);color:var(--bg);font-weight:700;font-size:.9rem;margin-bottom:12px;}
+  .step3 b{display:block;font-size:1rem;margin-bottom:5px;}
+  .step3 p{margin:0;font-size:.87rem;color:var(--ink-dim);}
+
+  /* the picture is one narrow vertical chain — a full-width card would leave it
+     stranded in empty space, so the card is sized to the picture */
+  .simpleframe{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+               padding:22px;overflow-x:auto;}
+  #simplestage svg{max-width:none!important;display:block;margin:0 auto;}
+
+  .helpers{list-style:none;counter-reset:h;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  .helpers li{counter-increment:h;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--hc);
+              border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:14px;align-items:flex-start;
+              transition:transform .12s ease;}
+  .helpers li:hover{transform:translateX(2px);}
+  .helpers li .hnum{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--hc);color:#fff;font-weight:700;
+                    font-size:.82rem;display:flex;align-items:center;justify-content:center;}
+  .helpers li .hbody{min-width:0;}
+  .helpers li .hname{font-size:1rem;font-weight:700;}
+  .helpers li .hsays{font-size:.88rem;color:var(--ink-dim);margin-top:3px;}
+  .helpers li .hreal{font-family:var(--mono);font-size:.7rem;color:var(--ink-dim);margin-top:7px;opacity:.85;}
+
+  .plaingrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:14px;}
+  .plaincard{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--pc);border-radius:var(--radius);
+             padding:16px 18px;box-shadow:var(--shadow);}
+  .plaincard .pcicon{font-size:1.5rem;line-height:1;margin-bottom:9px;}
+  .plaincard b{display:block;font-size:.98rem;margin-bottom:5px;}
+  .plaincard p{margin:0 0 10px;font-size:.85rem;color:var(--ink-dim);}
+  .plaincard code{font-family:var(--mono);font-size:.76rem;color:var(--ink-dim);border:1px solid var(--line);
+                  border-radius:14px;padding:2px 9px;display:inline-block;}
+
+  .promises{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  .promises li{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;
+               box-shadow:var(--shadow);font-size:.88rem;color:var(--ink-dim);display:flex;gap:11px;align-items:flex-start;}
+  .promises li b{color:var(--ink);font-weight:600;}
+  .promises .pyes{flex:0 0 auto;color:var(--c-yes);font-weight:700;}
+
+  /* a plain-language line at the top of the technical tabs */
+  .plainline{font-size:.9rem;margin:0 0 18px;padding:11px 15px;border-radius:var(--radius);
+             background:var(--bg-alt);border:1px solid var(--line-soft);border-left:4px solid var(--c-link);}
+  .plainline b{font-weight:600;}
+
+  /* ===== diagram tab ===== */
+  .segbar{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;}
+  .segbtn{appearance:none;font-family:var(--sans);font-size:.8rem;padding:6px 13px;border-radius:20px;cursor:pointer;
+          background:var(--card);border:1px solid var(--line);color:var(--ink-dim);box-shadow:var(--shadow);}
+  .segbtn:hover{color:var(--ink);}
+  .segbtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600;}
+  .dgcaption{font-size:.85rem;color:var(--ink-dim);margin:0 0 12px;}
+  .dgframe{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+           overflow:auto;padding:20px;min-height:260px;max-height:84vh;}
+  /* The SVG must keep its intrinsic size: as a shrinkable flex item it was being
+     squashed to the frame width, which shrank the labels to ~6px. Zoom is applied
+     as real width/height so the frame's scrollbars follow it. */
+  .dgstage svg{max-width:none!important;display:block;margin:0 auto;}
+  .dgtools{position:sticky;top:0;float:right;display:flex;gap:4px;z-index:5;}
+  .dgtools button{appearance:none;width:28px;height:28px;border-radius:7px;border:1px solid var(--line);background:var(--bg-alt);
+                  color:var(--ink-dim);font-family:var(--mono);font-size:.82rem;cursor:pointer;line-height:1;}
+  .dgtools button:hover{color:var(--ink);border-color:var(--ink-dim);}
+  .dgtools button.wide{width:auto;padding:0 9px;font-size:.7rem;}
+  .dgfallback{font-family:var(--mono);font-size:.75rem;white-space:pre;overflow-x:auto;color:var(--ink-dim);margin:0;}
+  .dgstatus{font-size:.8rem;color:var(--ink-dim);font-style:italic;}
+  .legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 0;font-size:.76rem;color:var(--ink-dim);}
+  .legend span{display:flex;align-items:center;gap:6px;}
+  .legend i{width:11px;height:11px;border-radius:3px;border:1.5px solid var(--lc);background:color-mix(in srgb,var(--lc) 16%,transparent);display:inline-block;}
+  .legend .shape{font-family:var(--mono);color:var(--ink);}
+
+  /* per-command workflow header */
+  /* full-width layout: the command flows sit side by side and stack as the
+     window narrows, instead of one very wide column */
+  .flows{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:28px;align-items:start;}
+  .flows.single{grid-template-columns:minmax(0,1fr);}
+  .flowsection{margin-bottom:0;padding-bottom:8px;border-bottom:none;}
+  .flowhead{margin:0 0 16px;scroll-margin-top:70px;}
+  .flowhead h3{font-family:var(--mono);font-size:1rem;margin:0 0 4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .flowhead .modebadge{font-size:.66rem;color:var(--ink-dim);border:1px solid var(--line);border-radius:12px;padding:1px 8px;font-family:var(--mono);}
+  .flowhead p{margin:0;font-size:.85rem;color:var(--ink-dim);}
+
+  /* ===== workflow flowchart ===== */
+  .flow{margin:0;display:flex;flex-direction:column;align-items:stretch;}
+  .farrow{align-self:center;color:var(--ink-dim);font-size:1.15rem;line-height:1;padding:3px 0;}
+  .flabel{align-self:center;font-family:var(--mono);font-size:.68rem;color:var(--ink-dim);background:var(--bg);padding:0 6px;margin:-4px 0 -2px;}
+
+  .fstart,.fend{align-self:center;font-family:var(--mono);font-size:.78rem;padding:8px 22px;border-radius:20px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);text-align:center;}
+  .fend.stop{background:transparent;color:var(--ink-dim);border:1px dashed var(--ink-dim);}
+
+  .fstep{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--stage-color,var(--ink-dim));border-radius:var(--radius);padding:11px 16px;box-shadow:var(--shadow);transition:transform .12s ease;}
+  .fstep.script{border-left-style:dashed;}
+  [data-agent],[data-script],[data-file]{cursor:pointer;}
+  .fstep[data-agent]:hover,.fstep[data-script]:hover{transform:translateY(-1px);}
+  .fstep .ftitle{font-family:var(--mono);font-weight:700;font-size:.88rem;}
+  .fstep .ftitle .fk{font-weight:500;color:var(--ink-dim);margin-right:6px;}
+  .fstep .fout{font-family:var(--mono);font-size:.7rem;color:var(--ink-dim);margin-top:4px;}
+  .fstep .fdesc{font-size:.79rem;color:var(--ink-dim);margin-top:4px;}
+
+  .fgate{background:var(--card);border:1px solid var(--c-gate);border-radius:var(--radius);padding:10px 16px;box-shadow:var(--shadow);}
+  .fgate .fq{font-family:var(--mono);font-size:.83rem;font-weight:600;}
+  .fgate .fq::before{content:"◆ ";color:var(--c-gate);}
+  .branches{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;}
+  .branch{border-radius:8px;padding:7px 10px;font-size:.76rem;border:1px solid var(--line);}
+  .branch .blabel{font-family:var(--mono);font-weight:700;font-size:.68rem;display:block;margin-bottom:3px;}
+  .branch.yes{border-color:var(--c-yes);} .branch.yes .blabel{color:var(--c-yes);}
+  .branch.no{border-color:var(--c-no);} .branch.no .blabel{color:var(--c-no);}
+  .branch.stop{opacity:.75;font-style:italic;}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;}
+  .splitcol{display:flex;flex-direction:column;gap:8px;}
+  .splitcol .fcaption{font-family:var(--mono);font-size:.68rem;color:var(--ink-dim);text-align:center;}
+
+  .floop{border:1.5px dashed var(--ink-dim);border-radius:14px;padding:14px 16px 14px;}
+  .floop .lhead{font-family:var(--mono);font-size:.7rem;color:var(--ink-dim);margin-bottom:10px;}
+  .floop .lhead b{color:var(--ink);}
+  .fanout{position:relative;padding:2px 14px 2px 2px;margin:0 12px;}
+  .fanout .fcard{position:relative;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--stage-color);border-radius:8px;padding:10px 14px;box-shadow:var(--shadow);cursor:pointer;transition:transform .12s ease;}
+  .fanout .fcard:hover{transform:translateY(-1px);}
+  .fanout .fcard::before,.fanout .fcard::after{content:"";position:absolute;inset:0;border:1px solid var(--line);border-radius:8px;background:var(--card);z-index:-1;}
+  .fanout .fcard::before{transform:translate(7px,7px);opacity:.55;}
+  .fanout .fcard::after{transform:translate(14px,14px);opacity:.3;}
+  .loopfoot{margin-top:16px;font-size:.73rem;color:var(--ink-dim);display:flex;align-items:flex-start;gap:6px;}
+  .loopfoot .licon{font-size:1rem;flex:0 0 auto;}
+  .loopsub{margin-top:8px;padding:8px 10px;border-radius:8px;background:var(--bg-alt);border:1px solid var(--line-soft);font-size:.73rem;color:var(--ink-dim);}
+
+  .fnote{align-self:center;text-align:center;font-size:.76rem;color:var(--ink-dim);padding:2px 10px;}
+
+  /* generated-output file trees */
+  /* auto-fit rather than a fixed column count: the third tree (exports/) has to
+     drop to two columns and then one as the window narrows */
+  .fttwo{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;}
+  @media (max-width:760px){.fttwo{grid-template-columns:1fr;}}
+  .ftcaption{font-family:var(--mono);font-weight:700;font-size:.85rem;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+  .ftflag{font-family:var(--mono);font-weight:500;font-size:.65rem;border-radius:10px;padding:1px 8px;border:1px solid var(--line);color:var(--ink-dim);}
+  .ftflag.disposable{border-color:var(--c-no);color:var(--c-no);}
+  .ftflag.durable{border-color:var(--c-yes);color:var(--c-yes);}
+  .filetree{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;box-shadow:var(--shadow);font-family:var(--mono);font-size:.78rem;}
+  .frow{display:flex;align-items:baseline;gap:10px;padding:4px 6px;border-radius:6px;flex-wrap:wrap;}
+  .frow:hover{background:var(--bg-alt);}
+  .frow .fpath{white-space:pre;}
+  .frow .fhint{color:var(--ink-dim);font-family:var(--sans);font-size:.72rem;}
+
+  /* ===== detail drawer ===== */
+  .scrim{position:fixed;inset:0;background:rgba(20,18,16,.34);opacity:0;pointer-events:none;transition:opacity .18s ease;z-index:60;}
+  .scrim.open{opacity:1;pointer-events:auto;}
+  .drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100vw);background:var(--card);border-left:1px solid var(--line);
+          box-shadow:var(--shadow-lg);z-index:61;transform:translateX(102%);transition:transform .22s cubic-bezier(.4,0,.2,1);
+          display:flex;flex-direction:column;}
+  .drawer.open{transform:none;}
+  .drawer .dhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:16px 18px 12px;border-bottom:1px solid var(--line-soft);}
+  .drawer .dclose{appearance:none;background:none;border:1px solid var(--line);border-radius:7px;width:28px;height:28px;flex:0 0 auto;
+                  color:var(--ink-dim);cursor:pointer;font-size:.95rem;line-height:1;}
+  .drawer .dclose:hover{color:var(--ink);border-color:var(--ink-dim);}
+  .drawer .dbody{padding:14px 18px 28px;overflow-y:auto;}
+  .drawer h3{margin:0;font-family:var(--mono);font-size:1.02rem;}
+  .drawer .kicker{font-size:.72rem;color:var(--ink-dim);font-family:var(--mono);display:block;margin-bottom:3px;}
+  .drawer p.desc{margin:0 0 14px;font-size:.89rem;}
+  .kv{display:grid;grid-template-columns:78px 1fr;gap:5px 12px;font-size:.85rem;margin-bottom:8px;}
+  .kv .k{color:var(--ink-dim);font-family:var(--mono);font-size:.72rem;padding-top:3px;}
+  .kv .v{font-family:var(--mono);font-size:.78rem;word-break:break-word;}
+  .kv .v.prose{font-family:var(--sans);font-size:.86rem;}
+  .drawer pre{background:var(--bg-alt);border:1px solid var(--line-soft);border-radius:8px;padding:10px 12px;font-family:var(--mono);font-size:.73rem;overflow-x:auto;margin:8px 0 0;}
+  .drawer .egnote{font-size:.72rem;color:var(--ink-dim);margin-top:12px;font-style:italic;}
+  .hintbar{font-size:.78rem;color:var(--ink-dim);font-style:italic;margin:0 0 14px;}
+
+  /* scripts table */
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+  th,td{text-align:left;padding:9px 14px;font-size:.85rem;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  th{font-family:var(--mono);font-size:.72rem;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.03em;background:var(--bg-alt);}
+  tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:var(--bg-alt);}
+  td.script{font-family:var(--mono);font-weight:600;white-space:nowrap;}
+  td.stagecol{white-space:nowrap;color:var(--ink-dim);font-family:var(--mono);font-size:.76rem;}
+
+  /* agent grid */
+  .agentgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;}
+  .agentcard{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--stage-color);border-radius:var(--radius);
+             padding:13px 15px;box-shadow:var(--shadow);transition:transform .12s ease;}
+  .agentcard:hover{transform:translateY(-1px);}
+  .agentcard .an{font-family:var(--mono);font-weight:700;font-size:.85rem;}
+  .agentcard .al{font-family:var(--mono);font-size:.68rem;color:var(--ink-dim);margin-top:2px;}
+  .agentcard .am{font-size:.75rem;color:var(--ink-dim);margin-top:8px;}
+  .agentcard .am b{font-family:var(--mono);font-weight:600;color:var(--ink);}
+  /* clamp rather than cut mid-sentence — the descriptions contain dotted paths */
+  .agentcard .am.blurb{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;}
+
+  /* invariants */
+  .invariants{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px;margin:0;}
+  .invariants li{font-size:.87rem;padding:10px 0;border-bottom:1px solid var(--line-soft);}
+  .invariants li:last-child{border-bottom:none;}
+
+  footer{margin-top:50px;color:var(--ink-dim);font-size:.78rem;font-family:var(--mono);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>Claude-Agents — Knowledge-Base Setup</h1>
+    <p>A knowledge-base compiler: turns a folder of raw documents into a categorized,
+       linked markdown knowledge graph, a <code>wiki/graph.html</code> d3
+       viewer, a <code>wiki/chat.html</code> router playground, and a two-layer retrieval
+       router index. This page is a static workflow map of the
+       <code>.claude/</code> setup — every decision, retry, fan-out wave and loop that
+       actually happens when a command runs — generated by reading the setup, not by
+       running it.</p>
+    <span class="tag">static snapshot · no server · .claude/ untouched</span>
+  </header>
+
+  <div class="tabbar" role="tablist" aria-label="Sections">
+    <button class="tabbtn" role="tab" id="tab-simple"    aria-controls="panel-simple"    data-tab="simple"><span class="tnum">★</span>Start here</button>
+    <button class="tabbtn" role="tab" id="tab-overview"  aria-controls="panel-overview"  data-tab="overview"><span class="tnum">01</span>Overview</button>
+    <button class="tabbtn" role="tab" id="tab-diagram"   aria-controls="panel-diagram"   data-tab="diagram"><span class="tnum">02</span>System map</button>
+    <button class="tabbtn" role="tab" id="tab-workflows" aria-controls="panel-workflows" data-tab="workflows"><span class="tnum">03</span>Workflows</button>
+    <button class="tabbtn" role="tab" id="tab-agents"    aria-controls="panel-agents"    data-tab="agents"><span class="tnum">04</span>Agents</button>
+    <button class="tabbtn" role="tab" id="tab-output"    aria-controls="panel-output"    data-tab="output"><span class="tnum">05</span>Output</button>
+    <button class="tabbtn" role="tab" id="tab-playground" aria-controls="panel-playground" data-tab="playground"><span class="tnum">06</span>Playground</button>
+    <button class="tabbtn" role="tab" id="tab-scripts"   aria-controls="panel-scripts"   data-tab="scripts"><span class="tnum">07</span>Scripts</button>
+    <button class="tabbtn" role="tab" id="tab-invariants" aria-controls="panel-invariants" data-tab="invariants"><span class="tnum">08</span>Invariants</button>
+  </div>
+
+  <!-- ================= START HERE (plain words) ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-simple" aria-labelledby="tab-simple" tabindex="-1" hidden>
+    <section>
+      <p class="big">You have a messy pile of documents.<br>
+         This turns them into a small, tidy <b>library</b> — and then you can just ask it questions.</p>
+
+      <div class="steps3">
+        <div class="step3"><span class="s3n">1</span>
+          <b>You drop papers in a box</b>
+          <p>Word documents, text files, notes — any structure of folders. The machine <em>never</em> writes on them.</p>
+        </div>
+        <div class="step3"><span class="s3n">2</span>
+          <b>Six little helpers build the library</b>
+          <p>They read everything, decide what rooms the library needs, write the pages, and put up signs.</p>
+        </div>
+        <div class="step3"><span class="s3n">3</span>
+          <b>You ask it questions</b>
+          <p>It walks to the right page and answers from it — and always tells you which page it used.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The whole thing, in one picture</h2>
+      <p class="sub">Click a helper to see what it really is under the hood.</p>
+      <div class="simpleframe"><div id="simplestage"><p class="dgstatus">Drawing the picture…</p></div></div>
+    </section>
+
+    <section>
+      <h2>The six helpers</h2>
+      <p class="sub">Each one does a single job, then hands its work to the next. Click one for the technical detail.</p>
+      <ol class="helpers" id="helpers"></ol>
+    </section>
+
+    <section>
+      <h2>The four boxes on your computer</h2>
+      <p class="sub">Four folders. It helps a lot to know which is which.</p>
+      <div class="plaingrid">
+        <div class="plaincard" style="--pc:var(--ink-dim)">
+          <div class="pcicon">📥</div>
+          <b>The in-box</b>
+          <p>Where you put your papers. The machine only ever <em>reads</em> from here — it never changes or deletes anything you put in.</p>
+          <code>raw_assets/</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-no)">
+          <div class="pcicon">🧰</div>
+          <b>The messy workbench</b>
+          <p>Scribbles, half-finished notes, plans. Ugly and temporary. You can throw the whole thing away — it gets rebuilt.</p>
+          <code>.kb/</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-yes)">
+          <div class="pcicon">📚</div>
+          <b>The finished library</b>
+          <p>The thing you actually keep — the pages, plus the two web pages below. This is the deliverable.</p>
+          <code>wiki/</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-architect)">
+          <div class="pcicon">📦</div>
+          <b>The take-away box</b>
+          <p>A copy of the library packed for somewhere else — right now, for a Claude Project. Made on request, never automatically.</p>
+          <code>exports/</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Two pages you can open</h2>
+      <p class="sub">Double-click either — no server, nothing to install. Each reads its data from <code>wiki/_meta/</code> beside it, so keep the folder together; on its own, or before a build, a page tells you which command to run.</p>
+      <div class="plaingrid">
+        <div class="plaincard" style="--pc:var(--c-link)">
+          <div class="pcicon">🕸️</div>
+          <b>The map of the library</b>
+          <p>Every page as a dot, every connection as a line, grouped into rooms — plus a list of everything wrong with it: papers that disagree, pages nothing links to, documents that made it in nowhere. Works with no internet. Open it before you have built anything and it tells you which command to run.</p>
+          <code>wiki/graph.html</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-router)">
+          <div class="pcicon">💬</div>
+          <b>The question window</b>
+          <p>Ask the library questions and watch how it found the answer. Every dial that decides <em>which</em> page it picks is exposed, so you can tune it. Needs an Anthropic API key, pasted into the page itself.</p>
+          <code>wiki/chat.html</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The five things you can ask for</h2>
+      <div class="plaingrid">
+        <div class="plaincard" style="--pc:var(--c-write)">
+          <div class="pcicon">🏗️</div>
+          <b>"Build the library"</b>
+          <p>Reads everything in the in-box and builds the whole library from scratch.</p>
+          <code>/kb-build</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-digest)">
+          <div class="pcicon">➕</div>
+          <b>"I changed some papers"</b>
+          <p>Only redoes the parts that changed, instead of rebuilding everything. Much quicker.</p>
+          <code>/kb-update</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-router)">
+          <div class="pcicon">❓</div>
+          <b>"Answer my question"</b>
+          <p>Finds the right page and answers from it. If nothing covers your question, it says so instead of guessing.</p>
+          <code>/kb-ask</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-audit)">
+          <div class="pcicon">🔍</div>
+          <b>"Check the library"</b>
+          <p>Looks for missing pages, broken signs, and papers that disagree with each other.</p>
+          <code>/kb-audit</code>
+        </div>
+        <div class="plaincard" style="--pc:var(--c-architect)">
+          <div class="pcicon">📦</div>
+          <b>"Pack it for claude.ai"</b>
+          <p>Packs the library into a Claude Project — one instruction sheet plus one file per room. A snapshot: redo it whenever the library changes.</p>
+          <code>/kb-export-project</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Promises it keeps</h2>
+      <p class="sub">These are the rules it will not break, no matter what.</p>
+      <ul class="promises">
+        <li><span class="pyes">✓</span><b>It never writes on your papers.</b> Your originals come out exactly as they went in.</li>
+        <li><span class="pyes">✓</span><b>It never makes up facts.</b> If a number, date or rule isn't in your papers, it will not appear in the library.</li>
+        <li><span class="pyes">✓</span><b>If two papers disagree, it tells you.</b> It won't quietly pick a winner and hide the other one.</li>
+        <li><span class="pyes">✓</span><b>It never throws a page away.</b> Old pages get stamped "out of date" and stay.</li>
+        <li><span class="pyes">✓</span><b>Nothing goes missing quietly.</b> Every single paper is either used, or listed as "couldn't open this one".</li>
+        <li><span class="pyes">✓</span><b>Every answer comes with a receipt.</b> You always get told which page the answer came from.</li>
+        <li><span class="pyes">✓</span><b>The two web pages are always rebuilt, never patched.</b> The map, the question window and the take-away box all come from the pages themselves — so they cannot drift away from what the library actually says.</li>
+      </ul>
+      <p class="sub" style="margin-top:16px">Want the real machinery? The other tabs have it — <button class="cmdlink" data-goto="diagram">the full system map →</button></p>
+    </section>
+  </div>
+
+  <!-- ================= OVERVIEW ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="-1" hidden>
+    <p class="plainline"><b>In plain words:</b> four folders — the box you put papers in, a messy workbench, the finished library, and a take-away box. Then five things you can ask for. <button class="cmdlink" data-goto="simple">explain it simply →</button></p>
+
+    <section>
+      <h2>Folder contract</h2>
+      <p class="sub">Four folders, four jobs. <code>wiki/</code> is the deliverable; <code>.kb/</code> and <code>exports/</code> sit
+         outside it and are both gitignored, so neither staging state nor a generated distribution ever lands in the knowledge
+         base. Nothing but the compiler writes markdown into <code>wiki/</code> — every <code>.md</code> under it (bar
+         <code>_meta/</code>) is scanned as a node, which is exactly why the export lives elsewhere.</p>
+      <div class="contract">
+        <div class="box"><code>raw_assets/</code><span class="role">Input documents. .md .markdown .txt .docx .doc .rtf .xlsx .xlsm .csv — READ ONLY, never modified by the pipeline.</span></div>
+        <div class="arrow">→</div>
+        <div class="box"><code>.kb/</code><span class="role">Pipeline state — extraction, digests, taxonomy, validation. Fully disposable / regenerable, but expensive to rebuild.</span></div>
+        <div class="arrow">→</div>
+        <div class="box"><code>wiki/</code><span class="role">The compiled knowledge base — nodes, clusters, the router index, graph.html and chat.html with their data under _meta/. This is what you keep.</span></div>
+        <div class="arrow">→</div>
+        <div class="box"><code>exports/</code><span class="role">Generated distributions of wiki/ — currently the Claude Project export. On demand, never from /kb-build.</span></div>
+      </div>
+      <p class="sub" style="margin-top:14px">A fifth folder, <code>visualizer/</code>, is documentation rather than pipeline:
+         this page, plus <code>knowledge_graph.md</code> — a portable README you copy next to a finished <code>wiki/</code> so any
+         Claude session can route and answer from it with no <code>.claude/</code> setup at all.</p>
+    </section>
+
+    <section>
+      <h2>Commands &amp; modes</h2>
+      <p class="sub">Every command is a thin entry point into one <code>knowledge-base</code> skill, run in a different mode.</p>
+      <div class="cmdgrid">
+        <div class="cmdcard">
+          <div class="cmdhead"><span class="cmdname">/kb-build</span><span class="cmdmode">Mode 1</span></div>
+          <p>Full compile of everything in raw_assets/.</p>
+          <ul>
+            <li>Runs all 6 stages in order, fan-out waves of up to 6 batches at a time.</li>
+            <li>Above 100 documents: stops and asks the user to confirm before fanning out.</li>
+            <li>Orchestrator sanity-checks .kb/taxonomy.json before Stage 3 — a bad taxonomy costs the entire writer stage.</li>
+          </ul>
+          <button class="cmdlink" data-goto="workflows" data-anchor="flowhead-build">see workflow →</button>
+        </div>
+        <div class="cmdcard">
+          <div class="cmdhead"><span class="cmdname">/kb-update</span><span class="cmdmode">Mode 2</span></div>
+          <p>Incremental recompile of what changed in raw_assets/ (sha256-based).</p>
+          <ul>
+            <li>Digests only new/changed docs; writer rewrites only affected clusters.</li>
+            <li>kb-architect runs incrementally — never renumbers/renames existing clusters; structural changes are proposed, not auto-applied.</li>
+            <li>Linker + auditor still run in full. Stops early if nothing changed.</li>
+          </ul>
+          <button class="cmdlink" data-goto="workflows" data-anchor="flowhead-update">see workflow →</button>
+        </div>
+        <div class="cmdcard">
+          <div class="cmdhead"><span class="cmdname">/kb-ask &lt;question&gt;</span><span class="cmdmode">Mode 3</span></div>
+          <p>Answer from wiki/ only, routing through the two-layer index.</p>
+          <ul>
+            <li>Never touches the 6-stage pipeline or raw_assets/ — reads wiki/_meta/router/*.json directly.</li>
+            <li>Always cites node path(s); never fabricates specifics.</li>
+            <li>Reports if nothing covers the question, or if routing landed wrong.</li>
+          </ul>
+          <button class="cmdlink" data-goto="workflows" data-anchor="flowhead-ask">see workflow →</button>
+        </div>
+        <div class="cmdcard">
+          <div class="cmdhead"><span class="cmdname">/kb-audit</span><span class="cmdmode">Mode 4</span></div>
+          <p>Validation, coverage gaps, conflicts, staleness, router readiness.</p>
+          <ul>
+            <li>Launches kb-auditor directly — the only command that names a specific agent.</li>
+            <li>Checks validation, coverage, conflicts register, staleness, router readiness.</li>
+            <li>Fixes mechanical defects only; factual issues go to a "needs a human decision" list.</li>
+          </ul>
+          <button class="cmdlink" data-goto="workflows" data-anchor="flowhead-audit">see workflow →</button>
+        </div>
+        <div class="cmdcard">
+          <div class="cmdhead"><span class="cmdname">/kb-export-project</span><span class="cmdmode">Mode 5</span></div>
+          <p>Export wiki/ as a Claude Project: an instruction prompt plus per-cluster knowledge bundles.</p>
+          <ul>
+            <li>Runs on an already-compiled wiki, read-only — derives entirely from frontmatter and the router index.</li>
+            <li>Not a pipeline stage: it duplicates the base into a second format, so /kb-build never runs it.</li>
+            <li>A snapshot — <code>--check</code> exits 1 once it has gone stale; re-export after every build or update.</li>
+          </ul>
+          <button class="cmdlink" data-goto="workflows" data-anchor="flowhead-export">see workflow →</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Setup</h2>
+      <p class="sub">Optional but recommended, once. Creates <code>.kb/venv</code> with <code>mammoth</code> (preserves Word heading
+         styles) and <code>pyyaml</code>. Without it, extraction falls back to a bundled dependency-free docx reader that keeps
+         headings, lists and tables but loses inline bold/italic. Spreadsheets (.xlsx .xlsm .csv) become one table per sheet via xlsx2md.py, and a spreadsheet beside a same-named Word document is a companion — reported, not compiled twice. <strong>PDF and PowerPoint are out of scope</strong> — they are
+         reported as unsupported rather than silently skipped.</p>
+      <div class="filetree" style="font-size:.8rem">python3 .claude/skills/knowledge-base/scripts/bootstrap.py</div>
+      <p class="sub" style="margin-top:14px">Two third-party bundles are <b>vendored and committed</b> under
+         <code>.claude/skills/knowledge-base/assets/vendor/</code>, each with a <code>.sha256</code> the build verifies: d3 v7 for
+         <code>graph.html</code> and an IIFE bundle of the Anthropic JS SDK for <code>chat.html</code>. A compile must never
+         silently reach the internet. <code>init_wiki.py</code> copies both into <code>wiki/_meta/vendor/</code> beside the
+         viewers that load them, checking the digest on the way. If a bundle is missing the page falls back to a CDN
+         <code>&lt;script src&gt;</code> and needs the network — <code>validate.py</code> reports the missing copy as a warning.</p>
+    </section>
+  </div>
+
+  <!-- ================= SYSTEM MAP (mermaid) ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-diagram" aria-labelledby="tab-diagram" tabindex="-1" hidden>
+    <section>
+      <h2>System map</h2>
+      <p class="plainline"><b>In plain words:</b> this is the same picture as the Start here tab, but with nothing left out — every helper, every file it writes, and every point where it stops to check its own work. It is meant to be big. <button class="cmdlink" data-goto="simple">show me the simple one →</button></p>
+      <p class="sub">The whole setup as one graph: agents, the scripts they call, every artifact written to disk, and the
+         gates and loops between them. Rectangles are things that run, cylinders are files on disk, hexagons are decisions.
+         Click any agent, script or file node to open its detail.</p>
+
+      <div class="segbar" role="group" aria-label="Diagram">
+        <button class="segbtn" data-diagram="pipeline">Full pipeline</button>
+        <button class="segbtn" data-diagram="sequence">Orchestration sequence</button>
+        <button class="segbtn" data-diagram="router">Two-layer router</button>
+        <button class="segbtn" data-diagram="consumers">Index consumers</button>
+        <button class="segbtn" data-diagram="state">State &amp; resume</button>
+      </div>
+
+      <p class="dgcaption" id="dgcaption"></p>
+
+      <div class="dgframe">
+        <div class="dgtools">
+          <button id="dgOut"  title="Zoom out">−</button>
+          <button id="dgIn"   title="Zoom in">+</button>
+          <button id="dgFit"  class="wide" title="Fit the whole width in view">fit</button>
+          <button id="dg11"   class="wide" title="Natural size — labels at full legibility">1:1</button>
+          <button id="dgCopy" class="wide" title="Copy mermaid source">copy</button>
+        </div>
+        <div class="dgstage" id="dgstage"><p class="dgstatus">Rendering diagram…</p></div>
+      </div>
+
+      <div class="legend" id="legend"></div>
+    </section>
+  </div>
+
+  <!-- ================= WORKFLOWS ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-workflows" aria-labelledby="tab-workflows" tabindex="-1" hidden>
+  <section>
+    <h2>Workflow — what actually happens</h2>
+    <p class="plainline"><b>In plain words:</b> a step-by-step recipe for each of the five commands, including where it pauses to ask you something and where it retries after a failure.</p>
+    <p class="sub">◆ = a decision the orchestrator makes · dashed box = a wave loop that repeats until every batch is done · stacked cards = N subagents running in parallel within one wave. Click any solid step for detail. All five commands below run independently — none of them call each other.</p>
+
+    <div class="segbar" role="group" aria-label="Command">
+      <button class="segbtn" data-flow="all">All five</button>
+      <button class="segbtn" data-flow="build">/kb-build</button>
+      <button class="segbtn" data-flow="update">/kb-update</button>
+      <button class="segbtn" data-flow="ask">/kb-ask</button>
+      <button class="segbtn" data-flow="audit">/kb-audit</button>
+      <button class="segbtn" data-flow="export">/kb-export-project</button>
+    </div>
+
+    <div class="flows" id="flows">
+
+    <!-- ===== BUILD ===== -->
+    <div class="flowsection" data-flowsection="build">
+    <div class="flowhead" id="flowhead-build">
+      <h3>/kb-build <span class="modebadge">Mode 1 · full compile</span></h3>
+      <p>Runs all 6 pipeline stages in order over the entire raw_assets/ folder.</p>
+    </div>
+    <div class="flow" id="flow-build">
+      <div class="fstart">/kb-build invoked</div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">raw_assets/ has files?</div>
+        <div class="branches">
+          <div class="branch no"><span class="blabel">✗ no</span>stop — nothing to compile</div>
+          <div class="branch yes"><span class="blabel">✓ yes</span>continue to Stage 0</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-ingest)" data-agent="kb-ingest">
+        <div class="ftitle"><span class="fk">Stage 0</span>kb-ingest</div>
+        <div class="fout">runs bootstrap.py + extract.py</div>
+        <div class="fdesc">raw_assets/** → .kb/extracted/*.md, manifest.json, unsupported.json</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">extraction degraded / many failures?</div>
+        <div class="branches">
+          <div class="branch yes"><span class="blabel">✓ yes</span>surface to user immediately</div>
+          <div class="branch no"><span class="blabel">✗ no</span>continue</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="plan_batches.py">
+        <div class="ftitle">plan_batches.py digest</div>
+        <div class="fdesc">reports doc / char / batch / wave counts → .kb/batches/digest-batches.json</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">&gt;100 documents?</div>
+        <div class="branches">
+          <div class="branch yes"><span class="blabel">✓ yes</span>stop, ask user to confirm before fanning out</div>
+          <div class="branch no"><span class="blabel">✗ no</span>continue automatically</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="floop">
+        <div class="lhead"><b>Stage 1 · digest fan-out</b> — one wave at a time, default 6 batches/wave</div>
+        <div class="fanout"><div class="fcard" style="--stage-color:var(--c-digest)" data-agent="kb-digest">
+          <div class="ftitle">kb-digest <span class="fk">× batch</span></div>
+          <div class="fout">parallel within the wave</div>
+          <div class="fdesc">one batch of .kb/extracted/*.md → .kb/digests/&lt;doc_id&gt;.json</div>
+        </div></div>
+        <div class="loopsub">◆ a batch producing nothing is retried once, then reported — the run continues.</div>
+        <div class="loopfoot"><span class="licon">↻</span>update .kb/state.json, verify count with ls · next wave until all batches done</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="merge_digest_parts.py">
+        <div class="ftitle">merge_digest_parts.py</div>
+        <div class="fdesc">folds the per-segment digests of very long documents (.kb/digests/parts/) into one .kb/digests/&lt;doc_id&gt;.json; reports any document with a missing part</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="aggregate_topics.py">
+        <div class="ftitle">aggregate_topics.py</div>
+        <div class="fdesc">folds all .kb/digests/*.json into a deduped, ranked topic pool → .kb/topic-pool.json (shards it if too large)</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">topic pool too large for one pass?</div></div>
+      <div class="farrow">↓</div>
+      <div class="split">
+        <div class="splitcol">
+          <div class="fcaption">✓ sharded</div>
+          <div class="fstep" style="--stage-color:var(--c-architect)" data-agent="kb-architect">
+            <div class="ftitle">kb-architect <span class="fk">× shard</span></div>
+            <div class="fout">opus · parallel</div>
+            <div class="fdesc">.kb/shards/pool-NN.json → .kb/taxonomy-shard-NN.json</div>
+          </div>
+          <div class="farrow">↓</div>
+          <div class="fstep" style="--stage-color:var(--c-architect)" data-agent="kb-architect">
+            <div class="ftitle">kb-architect <span class="fk">merge pass</span></div>
+            <div class="fout">opus · single</div>
+            <div class="fdesc">merges shard taxonomies → .kb/taxonomy.json</div>
+          </div>
+        </div>
+        <div class="splitcol">
+          <div class="fcaption">✗ single pool</div>
+          <div class="fstep" style="--stage-color:var(--c-architect)" data-agent="kb-architect">
+            <div class="ftitle">Stage 2 · kb-architect</div>
+            <div class="fout">opus · single pass</div>
+            <div class="fdesc">.kb/topic-pool.json → clusters + node specs → .kb/taxonomy.json</div>
+          </div>
+        </div>
+      </div>
+      <div class="flabel">⤵ merge</div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-architect)">
+        <div class="ftitle">orchestrator sanity-check</div>
+        <div class="fdesc">5–15 clusters, 5–40 nodes each, descriptions pass the swap-test, every doc assigned or in unassigned_topics — "a bad taxonomy costs the entire writer stage." Large/high-stakes corpora: cluster list shown to user first.</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">verbatim mode?</div>
+        <div class="branches">
+          <div class="branch yes"><span class="blabel">✓ yes</span>skip the writers and the linker's judgement: run assemble_verbatim.py, then the linker's scripts</div>
+          <div class="branch no"><span class="blabel">✗ no</span>synthesis: writer fan-out below</div>
+        </div>
+      </div>
+      <div class="fstep script" data-script="assemble_verbatim.py">
+        <div class="ftitle">assemble_verbatim.py <span class="fk">verbatim mode only</span></div>
+        <div class="fdesc">taxonomy + digests + .kb/extracted → wiki/&lt;cluster&gt;/*.md (one node per document, or per segment over 250k chars; body unedited), _cluster.md hubs grouped by topic, index.md</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="plan_batches.py">
+        <div class="ftitle">plan_batches.py writer</div>
+        <div class="fdesc">taxonomy → .kb/batches/writer-batches.json (≤10 nodes / ≤90k chars, never spans clusters)</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="floop">
+        <div class="lhead"><b>Stage 3 · write fan-out</b> — one wave at a time, batches never span a cluster</div>
+        <div class="fanout"><div class="fcard" style="--stage-color:var(--c-write)" data-agent="kb-writer">
+          <div class="ftitle">kb-writer <span class="fk">× batch</span></div>
+          <div class="fout">parallel within the wave</div>
+          <div class="fdesc">node specs + sources → wiki/&lt;cluster&gt;/*.md (+ _cluster.md hub on part 1)</div>
+        </div></div>
+        <div class="loopfoot"><span class="licon">↻</span>update .kb/state.json per wave · next wave until all batches done</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="floop">
+        <div class="lhead"><b>Stage 4 · kb-linker</b> — single pass, runs its own fix-and-recheck loop internally</div>
+        <div class="fanout"><div class="fcard" style="--stage-color:var(--c-link)" data-agent="kb-linker">
+          <div class="ftitle">kb-linker</div>
+          <div class="fdesc">edges + Connections, rebuilds hubs/index.md, then runs init_wiki.py → build_router_index.py → validate.py (pass 1) → build_graph_data.py → build_chat_data.py → validate.py (gate)</div>
+        </div></div>
+        <div class="loopsub">◆ validate.py clean? <b>no</b> → fix the frontmatter and re-run the whole script sequence · <b>yes</b> → continue<br>
+          separate lines, never chained with <b>&amp;&amp;</b>: pass 1 exits 1 on errors and would abort the rest, leaving the payload unbuilt for exactly the run that most needs it. Pass 1 produces the problems payload build_graph_data.py carries; pass 2 is the gate, and the only pass that can see _meta/graph-data.js to check it is current.</div>
+        <div class="loopfoot"><span class="licon">↻</span>loops until validate.py is clean</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-audit)" data-agent="kb-auditor">
+        <div class="ftitle">Stage 5 · kb-auditor</div>
+        <div class="fdesc">single pass → wiki/_meta/provenance.md, conflicts.md, changelog.md (appended)</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fend">final report: sources, structure, router stats, open conflicts, uncovered docs, human-decision items</div>
+    </div>
+    </div>
+
+    <!-- ===== UPDATE ===== -->
+    <div class="flowsection" data-flowsection="update">
+    <div class="flowhead" id="flowhead-update">
+      <h3>/kb-update <span class="modebadge">Mode 2 · incremental</span></h3>
+      <p>Same 6 stages as Build, but scoped to only what changed since last run (sha256-based).</p>
+    </div>
+    <div class="flow" id="flow-update">
+      <div class="fstart">/kb-update invoked</div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-ingest)" data-agent="kb-ingest">
+        <div class="ftitle"><span class="fk">Stage 0</span>kb-ingest</div>
+        <div class="fdesc">sha256 vs previous manifest → marks each doc new / changed / unchanged; vanished docs → manifest.removed_since_last_run</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">anything changed?</div>
+        <div class="branches">
+          <div class="branch no stop"><span class="blabel">✗ no</span>stop — say so, nothing to do</div>
+          <div class="branch yes"><span class="blabel">✓ yes</span>continue</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="floop">
+        <div class="lhead"><b>Stage 1 · digest fan-out</b> — <u>scoped to new + changed docs only</u></div>
+        <div class="fanout"><div class="fcard" style="--stage-color:var(--c-digest)" data-agent="kb-digest">
+          <div class="ftitle">kb-digest <span class="fk">× batch</span></div>
+          <div class="fdesc">only new/changed .kb/extracted/*.md → .kb/digests/&lt;doc_id&gt;.json</div>
+        </div></div>
+        <div class="loopfoot"><span class="licon">↻</span>next wave until all batches done</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="aggregate_topics.py">
+        <div class="ftitle">aggregate_topics.py</div>
+        <div class="fdesc">always runs in full — the pool must reflect the <u>whole</u> corpus, not just the delta</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-architect)" data-agent="kb-architect">
+        <div class="ftitle">Stage 2 · kb-architect <span class="fk">incremental mode</span></div>
+        <div class="fout">opus</div>
+        <div class="fdesc">loads existing .kb/taxonomy.json, places new material into existing clusters — never renumbers or renames a cluster</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">structural changes proposed?</div>
+        <div class="branches">
+          <div class="branch yes"><span class="blabel">✓ yes</span>written to notes_for_review — applied only if the user authorises</div>
+          <div class="branch no"><span class="blabel">✗ no</span>continue</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="plan_batches.py">
+        <div class="ftitle">plan_batches.py writer --clusters &lt;affected&gt;</div>
+        <div class="fdesc">scoped writer-batches.json — only clusters touched by new/changed material</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="floop">
+        <div class="lhead"><b>Stage 3 · write fan-out</b> — <u>only affected nodes rewritten</u></div>
+        <div class="fanout"><div class="fcard" style="--stage-color:var(--c-write)" data-agent="kb-writer">
+          <div class="ftitle">kb-writer <span class="fk">× batch</span></div>
+          <div class="fdesc">→ wiki/&lt;cluster&gt;/*.md for affected clusters only</div>
+        </div></div>
+        <div class="loopfoot"><span class="licon">↻</span>next wave until all batches done</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-link)" data-agent="kb-linker">
+        <div class="ftitle">Stage 4 · kb-linker</div>
+        <div class="fdesc">runs in full regardless of delta size — router index must reflect final state</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-audit)" data-agent="kb-auditor">
+        <div class="ftitle">Stage 5 · kb-auditor</div>
+        <div class="fdesc">runs in full — validation, coverage, conflicts, changelog</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fnote">nodes for removed source docs are <b>never</b> auto-deleted — only reported via manifest.removed_since_last_run</div>
+      <div class="farrow">↓</div>
+      <div class="fend">final report: what changed, what was rewritten, open review items</div>
+    </div>
+    </div>
+
+    <!-- ===== ASK ===== -->
+    <div class="flowsection" data-flowsection="ask">
+    <div class="flowhead" id="flowhead-ask">
+      <h3>/kb-ask &lt;question&gt; <span class="modebadge">Mode 3 · query</span></h3>
+      <p>Bypasses the 6-stage pipeline entirely — just reads the router index and answers from wiki/.</p>
+    </div>
+    <div class="flow" id="flow-ask">
+      <div class="fstart">/kb-ask &lt;question&gt; invoked</div>
+      <div class="farrow">↓</div>
+      <div class="fnote">never touches the 6-stage pipeline or raw_assets/ — reads wiki/_meta/router/*.json directly</div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-router)" data-file="wiki-categories">
+        <div class="ftitle"><span class="fk">step 1</span>read categories.json</div>
+        <div class="fdesc">layer 1 of the router — pick the best-matching category, keep runners-up</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-router)" data-file="wiki-cluster-json">
+        <div class="ftitle"><span class="fk">step 2</span>read &lt;cluster&gt;.json</div>
+        <div class="fdesc">layer 2 — that category's index_path — pick the best matching node(s)</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-router)" data-file="wiki-node">
+        <div class="ftitle"><span class="fk">step 3</span>read the node file</div>
+        <div class="fdesc">answer from it only; always cite the node path(s); conflicts shown as unresolved ⚠️ callouts</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">did anything cover the question?</div>
+        <div class="branches">
+          <div class="branch no"><span class="blabel">✗ no</span>report a gap — content missing or description too weak to route</div>
+          <div class="branch yes"><span class="blabel">✓ yes</span>answer, citing node path(s)</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fend">answer + citations (or reported gap) — never fabricates specifics</div>
+    </div>
+    </div>
+
+    <!-- ===== AUDIT ===== -->
+    <div class="flowsection" data-flowsection="audit">
+    <div class="flowhead" id="flowhead-audit">
+      <h3>/kb-audit <span class="modebadge">Mode 4 · audit</span></h3>
+      <p>Launches kb-auditor directly — the only command that names a specific agent, no other stages involved.</p>
+    </div>
+    <div class="flow" id="flow-audit">
+      <div class="fstart">/kb-audit invoked</div>
+      <div class="farrow">↓</div>
+      <div class="fnote">the only command that names a specific agent directly</div>
+      <div class="farrow">↓</div>
+      <div class="fstep" style="--stage-color:var(--c-audit)" data-agent="kb-auditor">
+        <div class="ftitle">kb-auditor</div>
+        <div class="fdesc">runs validate.py + build_router_index.py over wiki/**, .kb/manifest.json, .kb/digests/*.json</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep">
+        <div class="ftitle">checks</div>
+        <div class="fdesc">validation errors/warnings · coverage gaps · conflicts register · staleness · router readiness (swap test + live routing traces)</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">mechanical defect found?</div>
+        <div class="branches">
+          <div class="branch yes"><span class="blabel">✓ yes</span>auto-fix (frontmatter, links, regenerate the router index and _meta/graph-data.js, re-install the viewer copies)</div>
+          <div class="branch no"><span class="blabel">✗ no</span>continue</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fnote">factual issues are never resolved automatically — they go to a "needs a human decision" list</div>
+      <div class="farrow">↓</div>
+      <div class="fend">findings reported verbatim to the user</div>
+    </div>
+    </div>
+
+    <!-- ===== EXPORT ===== -->
+    <div class="flowsection" data-flowsection="export">
+    <div class="flowhead" id="flowhead-export">
+      <h3>/kb-export-project <span class="modebadge">Mode 5 · export</span></h3>
+      <p>Projects an already-compiled wiki/ into the shape a Claude Project can actually use. Read-only, script-driven, no subagent.</p>
+    </div>
+    <div class="flow" id="flow-export">
+      <div class="fstart">/kb-export-project invoked</div>
+      <div class="farrow">↓</div>
+      <div class="fnote">not a pipeline stage — it duplicates the base into a second format, so /kb-build never runs it</div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">wiki/ and _meta/router/ exist?</div>
+        <div class="branches">
+          <div class="branch no stop"><span class="blabel">✗ no</span>stop — build it first with /kb-build</div>
+          <div class="branch yes"><span class="blabel">✓ yes</span>continue</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="build_router_index.py">
+        <div class="ftitle">build_router_index.py</div>
+        <div class="fdesc">the export mirrors the index — refresh it first so both halves agree</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fstep script" data-script="build_project_export.py">
+        <div class="ftitle">build_project_export.py</div>
+        <div class="fout">read-only over wiki/ · refuses --out paths inside the vault</div>
+        <div class="fdesc">→ exports/claude-project/: project-instructions.md, README.md, manifest.json, knowledge/00-INDEX.md + one bundle per cluster</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fgate"><div class="fq">which index tier fits --max-chars?</div>
+        <div class="branches">
+          <div class="branch yes"><span class="blabel">full / standard</span>every node inline, with (and without) alternate terms</div>
+          <div class="branch no"><span class="blabel">clusters</span>categories only — the Project is directed to read 00-INDEX.md before answering anything</div>
+        </div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fnote">descriptions are never truncated — a truncated description is a broken router payload. Bundles over --max-bundle-kb split at node boundaries only</div>
+      <div class="farrow">↓</div>
+      <div class="fstep">
+        <div class="ftitle">report</div>
+        <div class="fdesc">tier + instruction char count · files with sizes · unresolved wikilinks (edges the Project cannot follow — usually a broken link in the wiki itself) · setup steps</div>
+      </div>
+      <div class="farrow">↓</div>
+      <div class="fend">snapshot — <code>--check</code> exits 1 once stale; re-export after every build or update, replacing both halves</div>
+    </div>
+    </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- ================= AGENTS ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-agents" aria-labelledby="tab-agents" tabindex="-1" hidden>
+    <section>
+      <h2>Agents</h2>
+      <p class="plainline"><b>In plain words:</b> the six helpers from the Start here tab, with their real names and exactly which files each one is allowed to read and write.</p>
+      <p class="sub">Six subagents in <code>.claude/agents/</code>, each owning one stage. Only <code>kb-architect</code> runs on
+         opus — taxonomy quality determines everything downstream. Click a card for tools, model, reads, writes and hand-off.</p>
+      <div class="agentgrid" id="agentgrid"></div>
+    </section>
+  </div>
+
+  <!-- ================= OUTPUT ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-output" aria-labelledby="tab-output" tabindex="-1" hidden>
+    <section>
+      <h2>Generated output — what's actually on disk after a run</h2>
+      <p class="plainline"><b>In plain words:</b> every file the machine creates, and whether it is rubbish you can delete or part of the finished library you keep.</p>
+      <p class="sub">Three separate trees. <code>.kb/</code> is scratch space: disposable, gitignored, safe to delete — it regenerates. <code>wiki/_meta/</code> is generated too, but it's part of the deliverable: it's the machine-readable index that <code>/kb-ask</code>, <code>graph.html</code>, <code>chat.html</code> and the Claude Project export all query, so never hand-edit it — fix the frontmatter in the node files instead and rebuild. <code>exports/</code> is a distribution, produced on request. Click a file for its schema.</p>
+      <div class="fttwo">
+        <div>
+          <div class="ftcaption">.kb/ <span class="ftflag disposable">disposable</span></div>
+          <div class="filetree" id="tree-kb"></div>
+        </div>
+        <div>
+          <div class="ftcaption">wiki/ <span class="ftflag durable">the deliverable</span></div>
+          <div class="filetree" id="tree-wiki"></div>
+        </div>
+        <div>
+          <div class="ftcaption">exports/claude-project/ <span class="ftflag disposable">regenerable</span></div>
+          <div class="filetree" id="tree-exports"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The Claude Project export</h2>
+      <p class="sub">Uploading <code>wiki/</code> raw throws away everything the compile produced — the taxonomy, the router
+         descriptions, the typed edges, the conflict flags, the deprecation markers — and leaves the Project doing
+         undifferentiated search over prose. <code>build_project_export.py</code> projects the vault into the two halves a
+         Project actually has instead: an instructions field carrying both router layers, and uploaded files whose sections are
+         anchored at <code>## &lt;node-id&gt;</code> — the same id the instructions name, so "open
+         <code>02-expenses-and-travel.md</code> and find <code>## 02-expenses-and-travel/expense-limits</code>" is an instruction
+         it can follow.</p>
+      <p class="sub">It lives <b>outside</b> <code>wiki/</code> and the script refuses <code>--out</code> paths inside the vault:
+         every <code>.md</code> under the vault bar <code>_meta/</code> is scanned as a node, so an export written inside would
+         fail <code>validate.py</code> on every bundle and pollute the router index with phantom nodes.</p>
+      <table>
+        <thead><tr><th>Tier</th><th>Inline in the instructions</th></tr></thead>
+        <tbody>
+          <tr><td class="script">full</td><td>categories + every node with its description and alternate terms</td></tr>
+          <tr><td class="script">standard</td><td>categories + every node with its description</td></tr>
+          <tr><td class="script">clusters</td><td>categories only; the Project is directed to read <code>00-INDEX.md</code> <b>before answering anything</b></td></tr>
+        </tbody>
+      </table>
+      <p class="sub" style="margin-top:12px">The script emits the largest tier that fits <code>--max-chars</code> (default
+         30 000, a conservative budget rather than a claimed platform limit); <code>--tier</code> forces one.
+         <code>00-INDEX.md</code> always carries the complete index at full fidelity regardless of tier, so degrading the inline
+         index never loses information. Below roughly 5k chars no tier fits — the grounding contract, routing protocol and answer
+         rules are fixed prose, and the script says so rather than silently trimming them.</p>
+      <p class="sub">In the bundles, wikilinks become <code>Alias (node <code>id</code>)</code>, <code>## Connections</code>
+         becomes <code>type :: id</code>, conflict callouts are preserved verbatim, and deprecated nodes ship with a banner naming
+         their successor — never dropped, matching the never-delete-a-node invariant. Guarantees: every node in the index appears
+         in exactly one bundle, every node in a bundle appears in <code>00-INDEX.md</code>, no <code>[[wikilink]]</code> survives,
+         nothing is written inside <code>wiki/</code>.</p>
+    </section>
+  </div>
+
+  <!-- ================= PLAYGROUND (wiki/chat.html) ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-playground" aria-labelledby="tab-playground" tabindex="-1" hidden>
+    <p class="plainline"><b>In plain words:</b> the question window, <code>wiki/chat.html</code>. Every dial that decides which page the library picks for a question is on this one page, so you can turn them and see what happens — including a free keyword-matching mode that costs nothing to compare against.</p>
+
+    <section>
+      <h2>Why it exists</h2>
+      <p class="sub">The router has no scorer. <code>/kb-ask</code> says "score the categories, keep the runners-up, have a
+         floor" — but how many clusters layer 1 keeps, how many nodes layer 2 keeps, what the floor is, and which model does the
+         scoring are all unspecified, so there is nothing to tune. <code>references/router-index.md</code> specifies the index and
+         then stops at <code>pick(query, candidates)</code>. This page is that <code>pick</code>, with every parameter exposed and
+         a trace under every answer.</p>
+      <p class="sub">The page is a verbatim copy of <code>assets/chat-viewer.html</code>, installed by <code>init_wiki.py</code>
+         together with <code>assets/chat-app.js</code> and the vendored SDK. Only its corpus is rebuilt per compile, by
+         <code>build_chat_data.py</code> — the layer-1 catalog, every layer-2 entry and <b>the full body of every node</b>, arriving
+         as <code>_meta/chat-data.js</code>. No server, no npm, and it never fetches: everything loads as a classic
+         <code>&lt;script src&gt;</code> sibling, which works from <code>file://</code> where <code>fetch()</code> does not. Unlike
+         the graph payload, bodies are never truncated: a node with no body cannot be answered from, so
+         <code>--max-total-mb</code> (default 40) only warns. With no corpus beside it, the page says which command to run.</p>
+    </section>
+
+    <section>
+      <h2>Three retrieval modes</h2>
+      <p class="sub">The baseline is the point: an LLM router that cannot beat keyword matching on your vault is not earning its
+         tokens.</p>
+      <table>
+        <thead><tr><th>Mode</th><th>What it does</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr><td class="script">two_layer</td><td>Score the catalog → keep top <i>N</i> clusters over the L1 floor → <b>one</b> call over the union of their nodes → keep top <i>M</i> over the L2 floor → answer</td><td class="stagecol">3 calls</td></tr>
+          <tr><td class="script">flat</td><td>One scoring call over every node description; skips layer 1 entirely. The control — it tells you whether layer 1 is helping or hurting</td><td class="stagecol">2 calls</td></tr>
+          <tr><td class="script">bm25</td><td>Okapi BM25 over the pre-joined <code>embedding_text</code>, in the browser. The free floor</td><td class="stagecol">1 call (answer only)</td></tr>
+        </tbody>
+      </table>
+      <p class="sub" style="margin-top:12px">Layer 2 scores the <b>union</b> of the kept clusters in a single call. Scoring each
+         cluster separately would produce numbers from different contexts, and ranking across them would be meaningless.</p>
+      <p class="sub"><b>Flat-mode guard:</b> over <code>flat_max_input_tokens</code> (default 60 000) or 2000 candidate ids the
+         page <b>refuses and explains</b> rather than truncating. A baseline that quietly drops half the corpus is not merely
+         wrong, it is confidently wrong.</p>
+    </section>
+
+    <section>
+      <h2>Floors</h2>
+      <p class="sub">Two of them — picking a cluster and picking a note are different decisions with different costs of being
+         wrong. Defaults: L1 <code>0.25</code>, L2 <code>0.45</code>.</p>
+      <p class="sub">The model is asked for a score per candidate and is <b>never told the floor or the keep-count</b>: the moment
+         it knows the threshold it games it, and you lose the ability to move the floor without re-prompting. The page applies
+         <code>clamp to 0–1 → dedupe by key → sort desc → truncate to keep → apply floor</code>. The floor comes last on purpose;
+         applied earlier, a below-floor candidate could still occupy one of the <code>keep</code> slots.</p>
+      <p class="sub"><b>BM25 floors are relative</b> (<code>cut = floor × top score</code>), because BM25 scores are unbounded and
+         corpus-dependent. Normalising against the top hit means the winner always scores 1.0 — so raising the floor in BM25 mode
+         prunes runners-up and never the winner. The only BM25 refusal is a query where no term matches anything, and the stage
+         note in the trace says so.</p>
+    </section>
+
+    <section>
+      <h2>Below the floor</h2>
+      <p class="sub">What happens when nothing clears it. <code>escalate</code> is the one that answers the question you actually
+         have while tuning: it separates "the cheap router was the problem" from "the content isn't there".</p>
+      <table>
+        <thead><tr><th>Setting</th><th>Behaviour</th><th>Extra spend</th></tr></thead>
+        <tbody>
+          <tr><td class="script">refuse <span style="font-weight:400;color:var(--ink-dim)">(default)</span></td><td>No answer call. Names the nearest misses and diagnoses the gap</td><td class="stagecol">none</td></tr>
+          <tr><td class="script">answer_anyway</td><td>Answers from the top candidates, flagged low-confidence in both the answer and the trace</td><td class="stagecol">1 call</td></tr>
+          <tr><td class="script">widen</td><td>Retries layer 2 once at <code>keep × 2</code>, <code>floor × 0.5</code>, reusing layer 1's scores</td><td class="stagecol">1 call</td></tr>
+          <tr><td class="script">escalate</td><td>Re-runs the deciding layer on a better model at high effort</td><td class="stagecol">1 call</td></tr>
+          <tr><td class="script">bm25_rescue</td><td>Falls back to keyword matching over the whole vault — catches the classic LLM-router miss: a rare proper noun that appears in no description</td><td class="stagecol">1 call</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Diagnosis on every refusal</h2>
+      <p class="sub">The <code>/kb-ask</code> rule "say whether the gap is missing content or a weak description", made
+         mechanical. This is the only part of the page that improves the wiki rather than just querying it.</p>
+      <table>
+        <thead><tr><th>Code</th><th>Means</th><th>Fix</th></tr></thead>
+        <tbody>
+          <tr><td class="script">missing_content</td><td>The right cluster exists, nothing in it answers</td><td>Write the note</td></tr>
+          <tr><td class="script">missing_cluster_or_weak_descriptions</td><td>Nothing cleared layer 1</td><td>Add a cluster, or say in the descriptions what they cover</td></tr>
+          <tr><td class="script">overlapping_descriptions</td><td>Top two clusters within 0.05 — the most valuable of these, and invisible from any single answer</td><td>Fix the taxonomy boundary, not the wording</td></tr>
+          <tr><td class="script">overlapping_nodes</td><td>Top two notes within 0.05</td><td>Merge them, or sharpen the boundary</td></tr>
+          <tr><td class="script">no_keyword_match</td><td>BM25 only: no query term appears anywhere</td><td>Try the two-layer router — it matches meaning, not words</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Models, effort and caching</h2>
+      <p class="sub">A per-layer model, so a cheap router can feed an expensive answer. Every request is built by one function, so
+         illegal combinations cannot be sent: an unlisted effort is dropped, <code>thinking</code> is shaped by the model family,
+         and <code>sanitize()</code> repairs stored presets on load and save — a preset written before a model changed degrades
+         with a note instead of 400ing.</p>
+      <table>
+        <thead><tr><th>Model</th><th>temperature</th><th>effort</th><th>thinking</th><th>min cacheable prefix</th></tr></thead>
+        <tbody>
+          <tr><td class="script">claude-opus-5</td><td class="stagecol">400</td><td class="stagecol">low–max</td><td class="stagecol">adaptive</td><td class="stagecol">512</td></tr>
+          <tr><td class="script">claude-opus-4-8</td><td class="stagecol">400</td><td class="stagecol">low–max</td><td class="stagecol">adaptive</td><td class="stagecol">1024</td></tr>
+          <tr><td class="script">claude-sonnet-5</td><td class="stagecol">400</td><td class="stagecol">low–max</td><td class="stagecol">adaptive</td><td class="stagecol">1024</td></tr>
+          <tr><td class="script">claude-haiku-4-5</td><td class="stagecol">allowed</td><td class="stagecol"><b>400</b></td><td class="stagecol">budget_tokens</td><td class="stagecol">4096</td></tr>
+          <tr><td class="script">claude-fable-5-1</td><td class="stagecol">400</td><td class="stagecol">low–max</td><td class="stagecol">always on — omit</td><td class="stagecol">512</td></tr>
+        </tbody>
+      </table>
+      <p class="sub" style="margin-top:12px"><b>There is no temperature control, deliberately.</b> It is removed API-wide on
+         current models; a slider would only produce 400s. <code>effort</code> is the equivalent lever.
+         <code>answer.model: "none"</code> is retrieve-only — no synthesis call, which makes retrieval tuning free and the whole
+         page exercisable with no API key.</p>
+      <p class="sub"><b>Caching</b> is static-first: system block 1 is the frozen instructions with no breakpoint, block 2 is the
+         candidate list carrying <code>cache_control</code>, and the question goes last. <code>auto</code> attaches the breakpoint
+         only when the block clears that model's minimum — do the arithmetic first: a six-cluster catalog is roughly 500 tokens,
+         and Haiku 4.5, the natural cheap layer-1 router, has the highest minimum of any current model at 4096. The place you
+         would instinctively cache is the place it provably cannot fire. Where it pays is layer 2 on a real vault, and the answer
+         synthesiser's node bodies across turns. Candidate blocks are built from <code>slug/title/description/keywords</code> only
+         and sorted by identifier — never by serialising the router JSON, which carries a fresh <code>generated</code> timestamp
+         on every rebuild and would invalidate the cache each time.</p>
+    </section>
+
+    <section>
+      <h2>Two different confidences</h2>
+      <p class="sub"><code>content_confidence</code> comes from a node's frontmatter and is the <b>compiler's</b> confidence in
+         the content. <code>match_score</code> is the <b>router's</b> confidence in the match. They are named apart at the data
+         layer so the UI cannot render them in one column. A <code>content_confidence: low</code> note can still be the right
+         answer — it shows as a caveat, never a demotion, and the answer prompt is told to surface it.</p>
+    </section>
+
+    <section>
+      <h2>Storage, the key, and feeding settings back</h2>
+      <p class="sub">Settings, named presets, a 300-entry run log and (only if you tick "remember") the API key live in
+         <code>localStorage</code>, namespaced by the router index's <code>content_hash</code> so two vaults on one machine keep
+         separate settings.</p>
+      <p class="sub"><code>file://</code> local storage is unreliable — Safari blocks it, and Chrome shares one bucket across all
+         <code>file://</code> pages. Every read and write is wrapped, falling back to memory with a visible banner. Two ways out:
+         <b>Export settings</b> / <b>Import settings</b> (a JSON file, never containing the key), or serve the folder properly with
+         <code>cd wiki &amp;&amp; python3 -m http.server</code>.</p>
+      <p class="sub">The key is held in memory for the session: never baked into the generated page, never written to an exported
+         settings file, never put in the run log, never printed. A <code>redact()</code> pass strips anything matching
+         <code>sk-ant-[A-Za-z0-9_-]{8,}</code> from every string reaching the trace or the log, as insurance against an SDK error
+         echoing a header. The page calls <code>api.anthropic.com</code> directly with <code>dangerouslyAllowBrowser: true</code>.</p>
+      <p class="sub"><b>Export for /kb-ask</b> emits the tuned sizing, floors and prompts as a block to paste into
+         <code>.claude/commands/kb-ask.md</code>. The page never writes that file itself — which is the whole loop: tune here,
+         paste there, and the slash command inherits numbers that were measured rather than guessed.</p>
+    </section>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-scripts" aria-labelledby="tab-scripts" tabindex="-1" hidden>
+    <section>
+      <h2>Scripts</h2>
+      <p class="plainline"><b>In plain words:</b> the boring, reliable little programs the helpers use for counting, checking and file-shuffling — the jobs you want done the same way every single time.</p>
+      <p class="sub"><code>.claude/skills/knowledge-base/scripts/</code> — the deterministic, dependency-free machinery every agent calls out to. Dashed-border steps in the Workflows tab are scripts, not agents.</p>
+      <table>
+        <thead><tr><th>Script</th><th>Stage(s)</th><th>Purpose</th></tr></thead>
+        <tbody id="scriptsBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- ================= INVARIANTS ================= -->
+  <div class="tabpanel" role="tabpanel" id="panel-invariants" aria-labelledby="tab-invariants" tabindex="-1" hidden>
+    <section>
+      <h2>Invariants</h2>
+      <p class="plainline"><b>In plain words:</b> the promises from the Start here tab, in their exact original wording.</p>
+      <p class="sub">Hard rules that hold in every mode, from <code>CLAUDE.md</code>.</p>
+      <ul class="invariants" id="invariants"></ul>
+    </section>
+    <section>
+      <h2>Gate</h2>
+      <p class="sub">Exits 1 on errors. Errors mean the knowledge base or its router index is broken; warnings are worth
+         attention but not blocking.</p>
+      <div class="filetree" style="font-size:.8rem">python3 .claude/skills/knowledge-base/scripts/validate.py</div>
+    </section>
+  </div>
+
+  <footer>visualizer/index.html — static, no server, describes .claude/ as of this snapshot. Nothing generates it: per CLAUDE.md §Keeping the explainer in sync, any change to .claude/ or the folder contract is applied here in the same change.
+    The System map renders with mermaid from a CDN; with no network it falls back to showing the diagram source.</footer>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="false" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="dhead">
+    <div><span class="kicker" id="drawerKicker"></span><h3 id="drawerTitle"></h3></div>
+    <button class="dclose" id="drawerClose" aria-label="Close detail">✕</button>
+  </div>
+  <div class="dbody" id="drawerBody"></div>
+</aside>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.3/mermaid.min.js"></script>
+<script>
+/* ============================ data ============================ */
+const AGENTS = {
+  "kb-ingest":{
+    label:"Stage 0 · ingest", color:"var(--c-ingest)",
+    desc:"Extracts every document in raw_assets/ into normalised markdown under .kb/extracted/ and builds .kb/manifest.json. Handles Markdown, text and Word; reports everything it cannot process.",
+    tools:"Bash, Read, Write, Glob, Grep", model:"sonnet", fanout:"single pass",
+    reads:"raw_assets/** (via extract.py); inspects .kb/extracted/*.md output for quality",
+    writes:".kb/extracted/<doc_id>.md, .kb/manifest.json, .kb/unsupported.json",
+    handoff:"Feeds Stage 1 (kb-digest). Never touches raw_assets/ or wiki/.",
+    scripts:"bootstrap.py, extract.py"
+  },
+  "kb-digest":{
+    label:"Stage 1 · digest", color:"var(--c-digest)",
+    desc:"Reads one batch of extracted documents and writes a compact structured digest JSON per document — the compression step that lets a 1000-document corpus be reasoned about at all.",
+    tools:"Read, Write, Glob, Grep", model:"sonnet", fanout:"×N per batch, one wave at a time",
+    reads:"Its batch entry from .kb/batches/digest-batches.json, handed to it in the prompt with each doc's path and line count; .kb/extracted/<doc_id>.md for its assigned docs only",
+    writes:".kb/digests/<doc_id>.json — or, for a segment of a very long document, .kb/digests/parts/<doc_id>.part-NN.json (title, doc_type, one_line, topics, entities, key_claims, dates_versions, suggested_tags, conflicts_suspected)",
+    handoff:"Reads every character it is handed — never skims. Has no shell, so an unattended wave can never stall at an approval prompt; the orchestrator parses every digest after the wave and re-runs a batch whose file does not load. Part digests are merged by merge_digest_parts.py, then Stage 2 runs via aggregate_topics.py. Never reads outside its batch, never writes to wiki/.",
+    scripts:"consumes plan_batches.py digest output; merge_digest_parts.py follows"
+  },
+  "kb-architect":{
+    label:"Stage 2 · architect", color:"var(--c-architect)",
+    desc:"Turns the aggregated topic pool into the knowledge graph's structure — clusters and node specs, each with the router descriptions layer 1 and layer 2 depend on. The only opus agent: taxonomy quality determines everything downstream.",
+    tools:"Read, Write, Bash, Glob, Grep", model:"opus", fanout:"shards + merge pass on large corpora",
+    reads:".kb/topic-pool.json (or .kb/shards/pool-NN.json); references node-format.md, router-index.md",
+    writes:".kb/taxonomy.json — clusters, node specs, descriptions, edges_hint, source_doc_ids, conflict_watch, unassigned_topics",
+    handoff:"Feeds Stage 3 via plan_batches.py writer. Incremental mode updates taxonomy.json in place — never renumbers/renames clusters.",
+    scripts:"consumes aggregate_topics.py output"
+  },
+  "kb-writer":{
+    label:"Stage 3 · write", color:"var(--c-write)",
+    desc:"Writes the actual knowledge-base node pages for one cluster batch into wiki/<cluster>/, in the full node format (references/node-format.md) with router-ready frontmatter, typed connections and cited sources.",
+    tools:"Read, Write, Edit, Bash, Glob, Grep", model:"sonnet", fanout:"×N per batch, one wave at a time, never spans clusters",
+    reads:"One batch from .kb/batches/writer-batches.json (node specs + exact sources); .kb/digests/ first, then .kb/extracted/",
+    writes:"wiki/<cluster>/<node-slug>.md; wiki/<cluster>/_cluster.md hub if part 1 of that cluster",
+    handoff:"Feeds Stage 4. Must not touch raw_assets/, .kb/manifest.json, .kb/taxonomy.json, other clusters, or wiki/_meta/.",
+    scripts:"consumes plan_batches.py writer output"
+  },
+  "kb-linker":{
+    label:"Stage 4 · link", color:"var(--c-link)",
+    desc:"Wires the written nodes into a navigable graph — resolves typed edges, rebuilds cluster hub tables and the root index, then generates the two-layer router index and the data the d3 graph viewer and the chat playground load.",
+    tools:"Read, Write, Edit, Bash, Glob, Grep", model:"sonnet", fanout:"single pass, with an internal fix-and-recheck loop",
+    reads:"All of wiki/** (written nodes); .kb/taxonomy.json for scope_notes/edges_hint",
+    writes:"wikilinks + Connections edges; wiki/&lt;cluster&gt;/_cluster.md; wiki/index.md; wiki/_meta/router/*.json + router-index.md; wiki/_meta/graph-data.js; wiki/_meta/chat-data.js. graph.html and chat.html are installed by init_wiki.py, not written here",
+    handoff:"Runs init_wiki.py → build_router_index.py → validate.py (pass 1) → build_graph_data.py → build_chat_data.py → validate.py (gate), looping until clean. Separate lines, never chained with && — pass 1 exits 1 on errors and would abort the rest. Feeds Stage 5. Never edits node prose or hand-edits generated files.",
+    scripts:"init_wiki.py, build_router_index.py, build_graph_data.py, build_chat_data.py, validate.py"
+  },
+  "kb-auditor":{
+    label:"Stage 5 · audit", color:"var(--c-audit)",
+    desc:"Validates the compiled wiki, collects open conflicts, builds the provenance and coverage report, checks the router index is routable, and writes the changelog. Also the standalone /kb-audit entry point.",
+    tools:"Read, Write, Edit, Bash, Glob, Grep", model:"sonnet", fanout:"single pass",
+    reads:".kb/validation.json, .kb/manifest.json, all of wiki/** (sources, conflict callouts, frontmatter), .kb/digests/*.json",
+    writes:"wiki/_meta/provenance.md, conflicts.md, changelog.md (appended); mechanical frontmatter/link fixes; regenerates router/*.json and _meta/graph-data.js, and re-installs the viewer copies via init_wiki.py, when needed",
+    handoff:"Terminal stage — no hand-off. Only fixes mechanical defects; factual issues go to a human-decision list, never resolved automatically. A leftover wiki/.obsidian/ or *.canvas from an older build is reported, never deleted — it may be committed or hold hand-tuned settings.",
+    scripts:"init_wiki.py, validate.py, build_router_index.py, build_graph_data.py"
+  },
+};
+
+/* The same six agents, described the way you'd explain them to someone who has
+   never seen the project. `real` is the bridge back to the technical view. */
+const HELPERS = [
+  {real:"kb-ingest",    color:"var(--c-ingest)",    name:"The Unpacker",
+   says:"Opens every single file you put in the box and copies the words out into plain, tidy notes, so everything looks the same from here on. If it can't open something — a PDF, a slideshow — it writes that down and tells you, instead of quietly skipping it."},
+  {real:"kb-digest",    color:"var(--c-digest)",    name:"The Note-taker",
+   says:"Reads each paper and writes one small summary card: what it's about, and its main points. Small cards are far easier to sort into rooms than big papers — that's the whole trick that lets this work on a thousand documents."},
+  {real:"kb-architect", color:"var(--c-architect)", name:"The Planner",
+   says:"Looks at all the little cards at once and decides what rooms the library needs, and which page belongs in each room. This is the cleverest helper, and the most important — if it plans badly, everything built after it is wrong."},
+  {real:"kb-writer",    color:"var(--c-write)",     name:"The Writer",
+   says:"Actually writes the pages, one room at a time, using only what your papers said. At the bottom of every page it lists which papers it used."},
+  {real:"kb-linker",    color:"var(--c-link)",      name:"The Signposter",
+   says:"Puts up all the signs: arrows between related pages, a contents list for each room, and a front door for the whole library. It also builds the little map a computer reads to find things fast, and the two web pages — the picture of the library, and the window you ask questions in."},
+  {real:"kb-auditor",   color:"var(--c-audit)",     name:"The Checker",
+   says:"Walks around the finished library looking for problems — a missing page, a sign pointing nowhere, two papers that disagree. It writes the problems down for you rather than hiding them or guessing at a fix."},
+];
+
+/* The plain-words picture. Same node-id convention as the other diagrams, so
+   clicking a helper opens its real detail. */
+const SIMPLE_SRC = `flowchart LR
+  BOX["📥 Your messy pile of papers"]:::src
+  A_ingest["1 · The Unpacker<br/>opens every file"]:::ingest
+  A_digest["2 · The Note-taker<br/>one small card per paper"]:::digest
+  A_architect["3 · The Planner<br/>decides what rooms are needed"]:::arch
+  A_writer["4 · The Writer<br/>writes the pages"]:::write
+  A_linker["5 · The Signposter<br/>puts up all the signs"]:::link
+  A_auditor["6 · The Checker<br/>looks for problems"]:::audit
+  LIB["📚 A tidy little library<br/>you can walk around and read"]:::wiki
+  Q(["❓ You ask a question"]):::term
+  ANS(["✅ An answer — plus which page it came from"]):::term
+
+  BOX --> A_ingest --> A_digest --> A_architect --> A_writer --> A_linker --> A_auditor --> LIB
+  Q --> LIB --> ANS`;
+
+const SCRIPTS = {
+  "bootstrap.py":["pre-Stage 0","Creates .kb/venv with optional mammoth (docx→HTML, keeps Word heading styles) and pyyaml. Pipeline falls back to a bundled reader without it."],
+  "extract.py":["Stage 0","Extracts raw_assets/** into .kb/extracted/*.md. Routes .docx→mammoth/html2md, .doc/.rtf→macOS textutil, .xlsx/.xlsm/.csv→xlsx2md (companions of a same-named .docx are skipped and reported), .md/.txt→normalised copy. Unsupported files → .kb/unsupported.json."],
+  "plan_batches.py":["Stage 1 &amp; 3","Token-budget batching for fan-out. digest subcommand → digest-batches.json (≤60k chars or ≤8 docs; documents over 250k chars are cut into line-bounded segments, one batch each). writer subcommand → writer-batches.json (≤10 nodes or ≤90k chars, never spans clusters). Resume-aware via mtime."],
+  "assemble_verbatim.py":["Stage 3 (verbatim mode)","Replaces the kb-writer fan-out when documents must stay unedited. Writes one node per source document (one per digest segment for documents over 250k chars) whose body is the extracted text itself — headings shifted one level, xlsx2md's [[Vn]] marker shown as ⟦Vn⟧, borrowed shared-value legends copied in. Frontmatter comes from the digest (description, keywords — any [[Vn]] a digest quotes is rendered ⟦Vn⟧ there too, so hub tables never carry a dead wikilink) and the taxonomy (cluster, topic). Also writes every _cluster.md hub (nodes grouped under their topic) and index.md, so only the linker's scripts need to run after it. Pages a re-run no longer produces are marked deprecated, never deleted."],
+  "merge_digest_parts.py":["Stage 1 (merge)","Documents over 250k chars are cut into segments on line boundaries, one kb-digest agent per segment, each reading its whole slice (.kb/digests/parts/<doc_id>.part-NN.json). This folds the parts of a complete document into .kb/digests/<doc_id>.json and reports any document with a missing part — a partial read never passes for the whole."],
+  "aggregate_topics.py":["Stage 2 (prep)","Folds all per-document digests into a deduplicated, frequency-ranked topic pool (.kb/topic-pool.json) with co-occurrence. Shards it when too large for one architect pass."],
+  "build_router_index.py":["Stage 4 &amp; 5","Builds the two-layer router index from vault frontmatter: wiki/_meta/router/categories.json, /&lt;cluster&gt;.json, /index.json, plus router-index.md. Flags weak descriptions."],
+  "build_graph_data.py":["Stage 4","Writes wiki/_meta/graph-data.js — `window.__KB_GRAPH__`, carrying the whole graph plus the build's own findings (conflicts, validation errors, coverage gaps). Conflicts are read from each page's full text before bodies are truncated or dropped to fit the size budget, so the panel never under-counts. The viewer itself is a static asset copied in by init_wiki.py, so this only produces its data. Drops the `viewer` check family: a payload cannot report on itself. Refuses to run if graph-viewer.html has a leftover {{TOKEN}} or a SCHEMA_EXPECTED that disagrees with kblib."],
+  "build_chat_data.py":["Stage 4","Writes wiki/_meta/chat-data.js — `window.__KB_CHAT__`, carrying the router index and the full body of every node (never truncated). chat.html and its app are static assets copied in by init_wiki.py. Runs after build_router_index.py because it consumes its output; prints the file size and warns past 40 MB — this is the artefact that grows with the vault."],
+  "build_project_export.py":["Mode 5 (on demand)","Projects the vault into exports/claude-project/ — an instruction prompt carrying both router layers at the largest tier that fits, plus one knowledge bundle per cluster with every node anchored at `## &lt;node-id&gt;`. Read-only over wiki/, and refuses to write inside it. --check exits 1 when an existing export is stale."],
+  "init_wiki.py":["Stage 4","Creates the wiki/ skeleton — wiki/, _meta/, _meta/router/, _meta/vendor/ — and the three _meta report stubs so the root index can link to them before the auditor writes them, then installs the viewers: graph-viewer.html → graph.html, chat-viewer.html → chat.html, plus chat-app.js and the vendored d3 and SDK into _meta/. Copies are content-addressed (an unchanged asset touches nothing) and sha256-verified where a checksum exists. The _meta stubs are never clobbered; the viewer copies deliberately are. Reports leftover .obsidian/ or *.canvas as safe to delete, and never deletes them."],
+  "validate.py":["Stage 4 &amp; 5 (gate)","Validates the compiled wiki across eight check families — schema, links, graph, clusters, coverage, router sync, conflicts and viewer (do the viewer copies still match the shipped assets, is _meta/graph-data.js present and does it carry exactly the nodes on disk). Exits 1 on errors — this is the CI-style gate."],
+  "kblib.py":["shared","Stdlib-only helper library used by every script above — path resolution, supported/unsupported extension tables, JSON I/O, vault scanning, YAML fallback parser. No pipeline stage of its own."],
+  "xlsx2md.py":["Stage 0 (helper)","Dependency-free spreadsheet reader used by extract.py: .xlsx/.xlsm/.csv → one '## Sheet: name' markdown table per worksheet, empty rows/columns dropped, dates ISO, HTML inside cells stripped, no cell is truncated; long values repeated across rows are written once in a '### Shared values' legend and cells reference them as [[Vn]]."],
+  "html2md.py":["Stage 0 (helper)","Dependency-free HTML→Markdown converter used by extract.py for whatever mammoth/textutil emit. Unknown tags degrade gracefully — text kept, markup dropped."],
+};
+
+const INVARIANTS = [
+  "raw_assets/ is never modified.",
+  "Never fabricate specifics — numbers, dates, thresholds, entitlements and versions come from sources or do not appear.",
+  "Conflicts between sources are flagged, never silently resolved.",
+  "Nodes are never deleted; superseded ones are marked status: deprecated.",
+  "No document is silently dropped: everything is compiled, listed as unsupported, listed as failed, or reported as uncovered.",
+  "Existing clusters are never renumbered or renamed on an update — that breaks every node id, wikilink and router path.",
+  "Every node and cluster description is a router payload: one sentence, ≤200 chars, saying what questions it answers.",
+  "wiki/_meta/router/*.json, wiki/_meta/graph-data.js, wiki/_meta/chat-data.js and everything under exports/ are generated; wiki/graph.html, wiki/chat.html, wiki/_meta/chat-app.js and wiki/_meta/vendor/* are verbatim copies of .claude/skills/knowledge-base/assets/. Never hand-edit either — node content comes from frontmatter, viewer behaviour from the assets. Fix the source and rebuild.",
+  "Nothing writes markdown into wiki/ except the compiler — every .md under the vault (bar _meta/) is scanned as a node, so exports live outside it.",
+];
+
+const KB_FILES = [
+  {id:"kb-manifest", path:"manifest.json", by:"extract.py", hint:"one record per source doc — sha256 + status",
+    note:"One record per source document: doc_id, rel_path, sha256, chars, method, title, outline, warnings, status (new / changed / unchanged / failed). Every later stage filters on status.",
+    example:`{
+  "doc_id": "hr-leave-policy-2025",
+  "rel_path": "hr/leave-policy-2025.docx",
+  "sha256": "9f2a1c…",
+  "chars": 18432,
+  "method": "mammoth",
+  "title": "Leave Policy 2025",
+  "status": "new"
+}`},
+  {id:"kb-unsupported", path:"unsupported.json", by:"extract.py", hint:"files skipped by type, with reasons",
+    note:"Files skipped by type (e.g. .pdf, .pptx — out of scope) with the reason, so nothing is silently dropped."},
+  {id:"kb-extracted", path:"extracted/&lt;doc_id&gt;.md", by:"extract.py", hint:"normalised markdown, one per source doc",
+    note:"Normalised markdown, one file per source document — what kb-digest and kb-writer actually read instead of the original .docx/.txt/etc."},
+  {id:"kb-digest-batches", path:"batches/digest-batches.json", by:"plan_batches.py digest", hint:"digest fan-out plan",
+    note:"Which documents go in which batch, tagged with a wave number. What each kb-digest subagent is handed."},
+  {id:"kb-writer-batches", path:"batches/writer-batches.json", by:"plan_batches.py writer", hint:"writer fan-out plan",
+    note:"Node specs + the exact source files each batch cites, never spanning clusters. What each kb-writer subagent is handed."},
+  {id:"kb-digests", path:"digests/&lt;doc_id&gt;.json", by:"kb-digest", hint:"structured digest — topics, claims, entities",
+    note:"Structured digest per document — the compression step that lets a 1000-document corpus be reasoned about at all. topics drive clustering; key_claims carry anchors so kb-writer can relocate the passage without re-reading the whole document.",
+    example:`{
+  "doc_id": "hr-leave-policy-2025",
+  "title": "Leave Policy 2025",
+  "doc_type": "policy",
+  "one_line": "Company-wide leave entitlements and request process.",
+  "topics": [{"label": "parental leave", "weight": "primary"}],
+  "key_claims": [{"claim": "…", "anchor": "## Parental Leave"}],
+  "conflicts_suspected": ["notice period differs from the handbook"]
+}`},
+  {id:"kb-topic-pool", path:"topic-pool.json", by:"aggregate_topics.py", hint:"deduped, ranked topic pool for the whole corpus",
+    note:"Deduplicated, frequency-ranked topic pool across the whole corpus, with document co-occurrence — what kb-architect actually looks at instead of every individual digest."},
+  {id:"kb-shards", path:"shards/pool-NN.json", by:"aggregate_topics.py", hint:"large corpora only",
+    note:"Only appears once the pool is too large for one architect pass — split by co-occurrence so multiple kb-architect instances can run in parallel, then merge."},
+  {id:"kb-taxonomy", path:"taxonomy.json", by:"kb-architect", hint:"clusters + node specs — everything wiki/ is built from",
+    note:"Clusters and node specs: descriptions, keywords, edges_hint, source_doc_ids, conflict_watch, unassigned_topics. Every file in wiki/ traces back to an entry here."},
+  {id:"kb-state", path:"state.json", by:"orchestrator", hint:"per-stage, per-wave progress — makes a run resumable",
+    note:"Written after every wave. On restart, the orchestrator reads this, skips stages marked done, and re-plans only the current stage — planning is idempotent and returns only what's left.",
+    example:`{
+  "run_id": "2026-09-01T10:22:04Z",
+  "mode": "build",
+  "stages": {
+    "extract":   {"status": "done", "documents": 412},
+    "digest":    {"status": "running", "batches_done": ["digest-0001"], "batches_total": 58},
+    "architect": {"status": "pending"},
+    "writer":    {"status": "pending"},
+    "linker":    {"status": "pending"},
+    "audit":     {"status": "pending"}
+  }
+}`},
+  {id:"kb-validation", path:"validation.json", by:"validate.py", hint:"full issue report — the CI-style gate",
+    note:"Full structured issue report across eight check families: schema, links, graph, clusters, coverage, router sync, conflicts and viewer. What kb-auditor reads to write its findings, and what exits 1 on error."},
+  {id:"kb-tmp", path:"tmp/&lt;name&gt;.py", by:"any agent with a shell", hint:"scratch check scripts — instead of inline python3 -c",
+    note:"Scratch Python an agent writes for any check, then runs as python3 .kb/tmp/&lt;name&gt;.py. It exists because Claude Code stops for approval on inline Python (python3 -c, even a single line) and on heredocs, whatever the allow rules say, so an unattended build would stall at a prompt; running a script file does not. Disposable, never read by a later stage."},
+  {id:"kb-venv", path:"venv/", by:"bootstrap.py", hint:"optional — mammoth + pyyaml",
+    note:"Optional virtualenv for higher-fidelity docx extraction (keeps Word heading styles) and YAML frontmatter parsing. Skip it and the pipeline still runs, using a bundled dependency-free fallback that loses inline bold/italic."},
+];
+
+const WIKI_FILES = [
+  {id:"wiki-cluster-hub", path:"&lt;cluster&gt;/_cluster.md", by:"kb-writer (first write) / kb-linker (kept current)", hint:"hub page — table of the cluster's nodes",
+    note:"Hub page for one cluster — a table of every node in it. Written by the first kb-writer batch for that cluster, rebuilt by kb-linker as nodes change."},
+  {id:"wiki-node", path:"&lt;cluster&gt;/&lt;node-slug&gt;.md", by:"kb-writer", hint:"one knowledge node — the actual content",
+    note:"One knowledge node — router-ready frontmatter (title, description, tags, status), typed ## Connections, and cited sources. This is what a reader — human or router — actually lands on."},
+  {id:"wiki-graph-html", path:"graph.html", by:"init_wiki.py (copied)", hint:"the d3 graph viewer — open this",
+    note:"One page: the whole graph, plus the build's own findings — open conflicts, validation errors, coverage gaps and unsupported documents. Clusters render as spatially separated lobes with labelled hulls; the inspector shows a node's rendered body with working [[wikilink]] navigation, its typed connections and its sources. It explains its own vocabulary: the legend names all seven relations with line style, directed-or-mutual and a plain-words meaning (the same strings reappear in the Relations filter and above each group of connections, re-worded for inbound edges); a collapsed explainer under the severity chips separates errors and warnings — structural, about whether the wiki holds together — from conflicts, which are a fact about your sources and so can never be an error; and the Sources rail's \"Pairs of documents that disagree\" explains why that count is not the number of conflicts nor the number of `contradicts` lines. `r` opens a printable audit report. It is not generated: it is a verbatim copy of assets/graph-viewer.html, and it loads _meta/graph-data.js and _meta/vendor/d3.v7.min.js as classic &lt;script src&gt; siblings — never fetch(), never type=module, both of which browsers block on file://. So it still opens by double-click with no server and no network — or from any local server such as VS Code Live Server or python3 -m http.server; it declares UTF-8 and ends with an explicit &lt;/body&gt;, because dev servers inject their reload script before the first &lt;/body&gt; and would otherwise land inside a JavaScript string — but it is a folder rather than a file: move graph.html on its own and you get its \"nothing compiled here yet\" banner. Never hand-edit it — init_wiki.py overwrites it, and validate.py warns as soon as the copy differs from the asset."},
+  {id:"wiki-graph-data", path:"_meta/graph-data.js", by:"build_graph_data.py", hint:"what the graph viewer actually reads",
+    note:"One line: window.__KB_GRAPH__ = {…}. Every cluster, node (with its body, capped by --max-body-chars), typed edge, validation problem, open conflict, coverage gap and provenance row, as the viewer renders them. This is the artefact a compile rewrites — the page above is not. A .js assigning a global rather than a .json, because a double-clicked file:// page cannot fetch a sibling but can load one with a script tag; missing, the global is undefined and the viewer shows its banner."},
+  {id:"wiki-chat-html", path:"chat.html", by:"init_wiki.py (copied)", hint:"the router playground — ask it questions",
+    note:"A chat window over this knowledge base with every router parameter exposed: three retrieval modes (two-layer, flat, BM25 baseline), separate floors for each layer applied in the page rather than by the model, a per-layer model, a trace under every answer, and a diagnosis on every refusal saying whether the gap is missing content or two overlapping descriptions. The full body of every node is available — never truncated. Like graph.html it is a verbatim copy of an asset, here loading _meta/chat-data.js, _meta/chat-app.js and the vendored SDK as siblings. Needs an Anthropic API key, held in memory for the session and never written into the page."},
+  {id:"wiki-chat-data", path:"_meta/chat-data.js", by:"build_chat_data.py", hint:"the corpus the playground answers from",
+    note:"One line: window.__KB_CHAT__ = {…}. The layer-1 catalog verbatim from categories.json, every layer-2 node entry, and the full body of every node — never truncated, since a node with no body cannot be answered from. This is the artefact that grows with the vault: --max-total-mb (default 40) warns rather than drops. Missing, chat.html says which command to run."},
+  {id:"wiki-index", path:"index.md", by:"kb-linker", hint:"root index of the knowledge base",
+    note:"Root index of the whole knowledge base — the front door if you are reading the markdown directly."},
+  {id:"wiki-categories", path:"_meta/router/categories.json", by:"build_router_index.py", hint:"router layer 1 — one entry per cluster",
+    note:"Layer 1 of the two-layer router: one entry per cluster with its description, keywords and the index_path to its layer-2 file. The very first thing /kb-ask reads.",
+    example:`{
+  "version": 1, "layer": 1, "count": 6,
+  "categories": [{
+    "slug": "01-leave-and-absence",
+    "title": "Leave and Absence",
+    "description": "Time-off entitlements, request/approval process, absence reporting.",
+    "node_count": 7,
+    "hub_path": "01-leave-and-absence/_cluster.md",
+    "index_path": "_meta/router/01-leave-and-absence.json"
+  }]
+}`},
+  {id:"wiki-cluster-json", path:"_meta/router/&lt;cluster&gt;.json", by:"build_router_index.py", hint:"router layer 2 — one entry per node",
+    note:"Layer 2: one entry per node in that cluster — description, path, status, confidence. /kb-ask reads only the winning cluster's file, never all of them.",
+    example:`{
+  "version": 1, "layer": 2, "cluster": "01-leave-and-absence", "count": 7,
+  "nodes": [{
+    "id": "01-leave-and-absence/parental-leave",
+    "title": "Parental Leave",
+    "description": "Eligibility, duration, pay bands and notice periods.",
+    "path": "01-leave-and-absence/parental-leave.md",
+    "status": "active",
+    "confidence": "high"
+  }]
+}`},
+  {id:"wiki-router-index-json", path:"_meta/router/index.json", by:"build_router_index.py", hint:"single-file bootstrap manifest",
+    note:"Routing instructions, totals, layer2_paths for every cluster, the full layer-1 payload inline, a content_hash (changes only when categories/descriptions/membership change — cache on it) and any schema issues found while building."},
+  {id:"wiki-router-index-md", path:"_meta/router-index.md", by:"build_router_index.py", hint:"human-readable mirror of both layers",
+    note:"Human-readable mirror of both router layers — for you to review. The JSON is what's authoritative; this file is not parsed by anything."},
+  {id:"wiki-provenance", path:"_meta/provenance.md", by:"kb-auditor", hint:"coverage report",
+    note:"Every source document, whether it made it into wiki/, and where — the answer to \"did everything I put in raw_assets/ actually get compiled?\""},
+  {id:"wiki-conflicts", path:"_meta/conflicts.md", by:"kb-auditor", hint:"open ⚠️ conflicts, gathered in one place",
+    note:"Every open ⚠️ Conflict callout across the vault, gathered in one place — conflicts are flagged, never silently resolved, so this list is the place they surface."},
+  {id:"wiki-changelog", path:"_meta/changelog.md", by:"kb-auditor", hint:"running history of audit passes",
+    note:"Appended every audit pass — a running history of what changed, run over run."},
+];
+
+/* exports/ is neither staging nor vault: a generated distribution, produced on
+   demand by /kb-export-project and gitignored. */
+const EXPORT_FILES = [
+  {id:"exp-instructions", path:"project-instructions.md", by:"build_project_export.py", hint:"paste into the Project's Instructions",
+    note:"The instructions half of a Claude Project: the grounding contract, the routing protocol, the answer rules, and the two-layer index inlined at the largest tier that fits --max-chars (default 30000). Descriptions are never truncated — a truncated description is a broken router payload."},
+  {id:"exp-readme", path:"README.md", by:"build_project_export.py", hint:"setup steps + the staleness warning",
+    note:"How to load the export into a Project, and the warning that it is a snapshot: regenerate after every /kb-build or /kb-update and replace both halves, because a stale instruction prompt names nodes that may no longer exist."},
+  {id:"exp-manifest", path:"manifest.json", by:"build_project_export.py", hint:"content_hash, tier, char counts, inventory",
+    note:"Records the router index's content_hash at export time. `build_project_export.py --check` compares it against the live wiki and exits 1 when the export has gone stale. content_hash moves when categories, category descriptions or node membership change — deliberately not on a node body edit, so re-export after any update regardless."},
+  {id:"exp-index", path:"knowledge/00-INDEX.md", by:"build_project_export.py", hint:"the complete index, always full fidelity",
+    note:"Both router layers in full, whatever tier the instructions ended up at — so degrading the inline index never loses information. Records the part file each node landed in."},
+  {id:"exp-conflicts", path:"knowledge/00-CONFLICTS.md", by:"build_project_export.py", hint:"copy of _meta/conflicts.md, when it exists",
+    note:"The open conflicts register, carried into the Project so the grounding rules have something to key off: both versions presented, unresolved."},
+  {id:"exp-bundle", path:"knowledge/NN-&lt;cluster&gt;.md", by:"build_project_export.py", hint:"one bundle per cluster — upload all of these",
+    note:"Every node of one cluster, each anchored at `## <node-id>` — the same id the instructions name. Wikilinks become node ids, `## Connections` becomes `type :: id` so the graph stays traversable, conflict callouts survive verbatim, and deprecated nodes ship with a banner naming their successor. Above --max-bundle-kb (default 512) it splits into -1, -2 … at node boundaries only: a half node is a node that can be answered from wrongly."},
+];
+const FILES = {};
+[...KB_FILES, ...WIKI_FILES, ...EXPORT_FILES].forEach(f => FILES[f.id] = f);
+
+/* ============================ mermaid diagrams ============================ */
+/* Node ids are prefixed so click callbacks can route to the drawer:
+   A_<agent>, S_<script>, F_<file id>. */
+const DIAGRAMS = {
+  pipeline:{
+    caption:"Every artifact and every actor in one graph. Solid arrows are the main path, dotted arrows are reads " +
+            "of something written earlier. Note the two feedback loops (taxonomy sanity-check, validate.py) and that " +
+            "/kb-ask enters from the side — it only ever reads the router index and the node files. The Claude Project " +
+            "export is not here on purpose: it is not a pipeline stage. See Index consumers for it.",
+    src:`flowchart TB
+  RA["raw_assets/**<br/>md · txt · docx · doc · rtf<br/>READ ONLY"]:::src
+
+  subgraph SG0["Stage 0 — ingest"]
+    A_ingest["kb-ingest<br/>sonnet · single pass"]:::ingest
+    S_bootstrap["bootstrap.py"]:::script
+    S_extract["extract.py"]:::script
+    A_ingest --> S_bootstrap --> S_extract
+  end
+  RA --> A_ingest
+
+  F_kbextracted[("extracted/[doc_id].md")]:::data
+  F_kbmanifest[("manifest.json<br/>sha256 + status per doc")]:::data
+  F_kbunsupported[("unsupported.json<br/>pdf · pptx = out of scope")]:::data
+  S_extract --> F_kbextracted & F_kbmanifest & F_kbunsupported
+
+  G1{{"extraction degraded<br/>or many failures?"}}:::gate
+  F_kbmanifest --> G1
+  G1 -.->|"yes — surface to user now"| STOPA(["reported, run continues"]):::term
+
+  S_plan_batches__d["plan_batches.py digest<br/>60k chars / 8 docs per batch"]:::script
+  G1 --> S_plan_batches__d
+  F_kbextracted --> S_plan_batches__d
+  F_kbdigestbatches[("batches/digest-batches.json<br/>batch + wave numbers")]:::data
+  S_plan_batches__d --> F_kbdigestbatches
+
+  G2{{"more than<br/>100 documents?"}}:::gate
+  F_kbdigestbatches --> G2
+  G2 -.->|"yes"| ASKU(["stop — ask user<br/>to confirm fan-out"]):::term
+  ASKU -.->|"confirmed"| SG1
+
+  subgraph SG1["Stage 1 — digest fan-out · one wave at a time, 6 batches in parallel"]
+    A_digest["kb-digest × batch<br/>sonnet · parallel in wave"]:::digest
+    RETRY{{"batch produced<br/>nothing?"}}:::gate
+    A_digest --> RETRY
+    RETRY -->|"retry once, then report"| A_digest
+  end
+  G2 --> A_digest
+
+  F_kbdigests[("digests/[doc_id].json<br/>topics · key_claims · entities")]:::data
+  RETRY --> F_kbdigests
+
+  S_aggregate_topics["aggregate_topics.py<br/>always over the WHOLE corpus"]:::script
+  F_kbdigests --> S_aggregate_topics
+  F_kbtopicpool[("topic-pool.json")]:::data
+  F_kbshards[("shards/pool-NN.json<br/>large corpora only")]:::data
+  S_aggregate_topics --> F_kbtopicpool
+  S_aggregate_topics --> F_kbshards
+
+  subgraph SG2["Stage 2 — architect · the only opus agent"]
+    A_architect["kb-architect<br/>clusters + node specs<br/>+ router descriptions"]:::arch
+    MERGE["kb-architect merge pass<br/>shard taxonomies to one"]:::arch
+    A_architect --> MERGE
+  end
+  F_kbtopicpool --> A_architect
+  F_kbshards -->|"one architect per shard"| A_architect
+
+  F_kbtaxonomy[("taxonomy.json<br/>clusters · nodes · edges_hint<br/>conflict_watch · unassigned_topics")]:::data
+  MERGE --> F_kbtaxonomy
+
+  SANE{{"orchestrator sanity-check<br/>5–15 clusters · 5–40 nodes each<br/>descriptions pass the swap test"}}:::gate
+  F_kbtaxonomy --> SANE
+  SANE -->|"bad — a bad taxonomy costs<br/>the entire writer stage"| A_architect
+
+  S_plan_batches__w["plan_batches.py writer<br/>10 nodes / 90k chars · never spans clusters"]:::script
+  SANE -->|"good"| S_plan_batches__w
+  F_kbwriterbatches[("batches/writer-batches.json<br/>node specs + exact sources")]:::data
+  S_plan_batches__w --> F_kbwriterbatches
+
+  subgraph SG3["Stage 3 — write fan-out · one wave at a time"]
+    A_writer["kb-writer × batch<br/>sonnet · parallel in wave"]:::write
+  end
+  F_kbwriterbatches --> A_writer
+  F_kbdigests -.->|"read first"| A_writer
+  F_kbextracted -.->|"then the full text"| A_writer
+
+  F_wikinode[("wiki/[cluster]/[node].md<br/>frontmatter · Connections · Sources")]:::wiki
+  F_wikiclusterhub[("wiki/[cluster]/_cluster.md<br/>hub table")]:::wiki
+  A_writer --> F_wikinode & F_wikiclusterhub
+
+  subgraph SG4["Stage 4 — link · loops until validate.py is clean"]
+    A_linker["kb-linker<br/>typed edges · hubs · root index"]:::link
+    S_init_wiki["init_wiki.py"]:::script
+    S_build_router_index["build_router_index.py"]:::script
+    S_build_graph_data["build_graph_data.py"]:::script
+    S_build_chat_data["build_chat_data.py"]:::script
+    S_validate["validate.py"]:::script
+    A_linker --> S_init_wiki --> S_build_router_index --> S_validate --> S_build_graph_data --> S_build_chat_data
+    S_validate -->|"errors — fix the frontmatter,<br/>re-run the sequence"| A_linker
+  end
+  F_wikinode --> A_linker
+  F_kbtaxonomy -.->|"scope_notes · edges_hint"| A_linker
+
+  F_wikiindex[("wiki/index.md")]:::wiki
+  F_wikigraphhtml[("wiki/graph.html<br/>d3 viewer — a copy,<br/>installed by init_wiki.py")]:::wiki
+  F_wikigraphdata[("_meta/graph-data.js<br/>the graph the viewer loads")]:::wiki
+  F_wikichathtml[("wiki/chat.html<br/>router playground — a copy")]:::wiki
+  F_wikichatdata[("_meta/chat-data.js<br/>every node body, untruncated")]:::wiki
+  F_wikicategories[("_meta/router/categories.json<br/>LAYER 1 — one per cluster")]:::router
+  F_wikiclusterjson[("_meta/router/[cluster].json<br/>LAYER 2 — one per node")]:::router
+  F_wikirouterindexjson[("_meta/router/index.json<br/>+ router-index.md")]:::router
+  F_kbvalidation[("validation.json<br/>exits 1 on errors")]:::data
+  A_linker --> F_wikiindex
+  S_init_wiki --> F_wikigraphhtml & F_wikichathtml
+  S_build_graph_data --> F_wikigraphdata
+  S_build_chat_data --> F_wikichatdata
+  F_wikigraphdata -.->|"loaded by"| F_wikigraphhtml
+  F_wikichatdata -.->|"loaded by"| F_wikichathtml
+  S_build_router_index --> F_wikicategories & F_wikiclusterjson & F_wikirouterindexjson
+  S_validate --> F_kbvalidation
+
+  subgraph SG5["Stage 5 — audit"]
+    A_auditor["kb-auditor<br/>also the /kb-audit entry point"]:::audit
+    MECH{{"mechanical defect?"}}:::gate
+    A_auditor --> MECH
+    MECH -->|"yes — auto-fix frontmatter, links,<br/>regenerate the router index and graph.html"| A_auditor
+  end
+  S_validate -->|"clean"| A_auditor
+  F_kbvalidation --> A_auditor
+  F_kbmanifest -.->|"coverage"| A_auditor
+  F_kbdigests -.->|"staleness"| A_auditor
+
+  F_wikiprovenance[("_meta/provenance.md<br/>did every doc get compiled?")]:::wiki
+  F_wikiconflicts[("_meta/conflicts.md<br/>flagged, never resolved")]:::wiki
+  F_wikichangelog[("_meta/changelog.md<br/>appended per pass")]:::wiki
+  MECH --> F_wikiprovenance & F_wikiconflicts & F_wikichangelog
+  HUMAN(["needs a human decision<br/>factual issues, never auto-resolved"]):::term
+  MECH -->|"no — factual"| HUMAN
+
+  ASK(["/kb-ask question"]):::term
+  ASK --> F_wikicategories
+  F_wikicategories --> F_wikiclusterjson --> F_wikinode
+  F_wikinode --> ANS(["answer + cited node paths<br/>or a reported gap"]):::term
+
+  F_kbstate[(".kb/state.json<br/>written after every wave — makes a run resumable")]:::data
+  A_digest -.-> F_kbstate
+  A_writer -.-> F_kbstate
+  A_linker -.-> F_kbstate`
+  },
+
+  sequence:{
+    caption:"Who calls whom, in order, for a full /kb-build. The orchestrator is the skill itself — it never digests or " +
+            "writes a node, it only plans batches, launches subagents one wave at a time, and checks their output " +
+            "before spending the next stage.",
+    src:`sequenceDiagram
+  autonumber
+  actor U as You
+  participant O as Orchestrator
+  participant SC as scripts/
+  participant SUB as Subagents
+  participant FS as Disk
+
+  U->>O: /kb-build
+  O->>FS: is raw_assets/ empty?
+  Note over O: empty — stop, nothing to compile
+
+  rect rgb(120,160,180,0.12)
+  Note over O,FS: Stage 0 — ingest
+  O->>SUB: launch kb-ingest
+  SUB->>SC: bootstrap.py, extract.py
+  SC->>FS: .kb/extracted/, manifest.json, unsupported.json
+  SUB-->>O: doc count, methods, failures
+  O->>U: surface degraded extraction immediately
+  end
+
+  O->>SC: plan_batches.py digest
+  SC-->>O: docs, chars, batches, waves
+  opt more than 100 documents
+    O->>U: confirm before fanning out?
+    U-->>O: go ahead
+  end
+
+  rect rgb(120,160,180,0.12)
+  Note over O,FS: Stage 1 — digest, one wave at a time
+  loop each wave, up to 6 batches in parallel
+    O->>SUB: kb-digest x batch (one message, parallel calls)
+    SUB->>FS: .kb/digests/[doc_id].json
+    SUB-->>O: batch done
+    O->>FS: verify count with ls, update state.json
+    alt batch produced nothing
+      O->>SUB: retry once
+      Note over O: still nothing — report and continue
+    end
+  end
+  end
+
+  O->>SC: aggregate_topics.py
+  SC-->>O: topic-pool.json (sharded if large)
+
+  rect rgb(120,160,180,0.12)
+  Note over O,FS: Stage 2 — architect (opus)
+  O->>SUB: kb-architect (per shard, then a merge pass)
+  SUB->>FS: .kb/taxonomy.json
+  SUB-->>O: clusters + node specs
+  O->>O: sanity-check clusters, node counts, swap test
+  Note over O: a bad taxonomy costs the entire writer stage
+  opt large or high-stakes corpus
+    O->>U: here is the cluster list, proceed?
+  end
+  end
+
+  O->>SC: plan_batches.py writer
+  SC-->>O: writer-batches.json, never spanning clusters
+
+  rect rgb(120,160,180,0.12)
+  Note over O,FS: Stage 3 — write, one wave at a time
+  loop each wave
+    O->>SUB: kb-writer x batch
+    SUB->>FS: wiki/[cluster]/*.md, _cluster.md
+    SUB-->>O: nodes written
+    O->>FS: update state.json
+  end
+  end
+
+  rect rgb(120,160,180,0.12)
+  Note over O,FS: Stage 4 — link
+  O->>SUB: kb-linker
+  loop until validate.py is clean
+    SUB->>SC: init_wiki, build_router_index, validate, build_graph_data, build_chat_data, validate
+    SC->>FS: router/*.json, graph.html, chat.html, validation.json
+    SC-->>SUB: errors to fix
+  end
+  SUB-->>O: router stats, link report
+  end
+
+  rect rgb(120,160,180,0.12)
+  Note over O,FS: Stage 5 — audit
+  O->>SUB: kb-auditor
+  SUB->>FS: provenance.md, conflicts.md, changelog.md
+  SUB-->>O: findings, human-decision items
+  end
+
+  O->>U: sources, structure, router stats, open conflicts, uncovered docs`
+  },
+
+  consumers:{
+    caption:"Four things consume the router index, and all four are generated from the same node frontmatter — which is why a " +
+            "weak description is a bug in four places at once, and why hand-editing any of these four is pointless. Note " +
+            "where each one runs: two are pages you open, one is a slash command, one is a snapshot you upload somewhere else.",
+    src:`flowchart TB
+  FM[("every wiki/[cluster]/[node].md<br/>title · description · keywords · status<br/>THE ONLY THING YOU EDIT")]:::wiki
+  S_build_router_index["build_router_index.py<br/>flags weak descriptions"]:::script
+  FM --> S_build_router_index
+  F_wikicategories[("LAYER 1 · categories.json")]:::router
+  F_wikiclusterjson[("LAYER 2 · [cluster].json")]:::router
+  F_wikirouterindexjson[("index.json<br/>bootstrap + content_hash")]:::router
+  S_build_router_index --> F_wikicategories & F_wikiclusterjson & F_wikirouterindexjson
+
+  subgraph C1["1 — /kb-ask · in Claude Code"]
+    ASK(["a question"]):::term
+    ASKR["read categories.json → read [cluster].json → read the node<br/>answer from that file only, cite the path"]:::route
+    ASK --> ASKR
+  end
+
+  subgraph C2["2 — graph.html · a page you open"]
+    S_build_graph_data["build_graph_data.py"]:::script
+    F_wikigraphdata[("_meta/graph-data.js<br/>rebuilt every compile")]:::wiki
+    F_wikigraphhtml[("wiki/graph.html<br/>graph · inspector · problems<br/>a copy · works offline")]:::wiki
+    S_build_graph_data --> F_wikigraphdata --> F_wikigraphhtml
+  end
+
+  subgraph C3["3 — chat.html · a page you open"]
+    S_build_chat_data["build_chat_data.py"]:::script
+    F_wikichatdata[("_meta/chat-data.js<br/>rebuilt every compile")]:::wiki
+    F_wikichathtml[("wiki/chat.html<br/>two_layer | flat | bm25<br/>floors · trace · diagnosis")]:::wiki
+    S_build_chat_data --> F_wikichatdata --> F_wikichathtml
+    KEY(["your API key<br/>in memory, never written<br/>into the page"]):::term
+    KEY -.-> F_wikichathtml
+  end
+
+  subgraph C4["4 — /kb-export-project · on demand"]
+    S_build_project_export["build_project_export.py"]:::script
+    F_expinstructions[("exports/claude-project/<br/>project-instructions.md<br/>+ knowledge/*.md")]:::data
+    S_build_project_export --> F_expinstructions
+    STALE{{"--check:<br/>content_hash still current?"}}:::gate
+    F_expinstructions --> STALE
+    STALE -->|"no — exit 1<br/>re-export, replace both halves"| S_build_project_export
+  end
+
+  F_wikicategories --> ASK
+  F_wikicategories --> S_build_graph_data
+  F_wikicategories --> S_build_chat_data
+  F_wikicategories --> S_build_project_export
+  F_wikiclusterjson -.-> ASKR
+  F_wikiclusterjson -.-> S_build_chat_data
+  F_wikiclusterjson -.-> S_build_project_export
+
+  FIX["a description that routes badly here<br/>routes badly in all four —<br/>fix the frontmatter, rebuild"]:::note
+  F_wikichathtml -.->|"diagnosis:<br/>overlapping_descriptions"| FIX
+  FIX -.-> FM`
+  },
+
+  router:{
+    caption:"Why the vault is compiled the way it is. Retrieval never scans wiki/ — it makes two cheap description-only " +
+            "reads to land on one node file. Both layers are generated from node frontmatter, which is why a weak " +
+            "description is a routing bug, not a cosmetic one.",
+    src:`flowchart TB
+  Q(["a question"]):::term
+
+  subgraph GEN["Generated from frontmatter — never hand-edited"]
+    direction TB
+    FM[("every wiki/[cluster]/[node].md<br/>title · description · tags · status")]:::wiki
+    S_build_router_index["build_router_index.py<br/>flags weak descriptions"]:::script
+    FM --> S_build_router_index
+  end
+
+  F_wikicategories[("LAYER 1 · categories.json<br/>one entry per cluster<br/>description · keywords · index_path")]:::router
+  F_wikiclusterjson[("LAYER 2 · [cluster].json<br/>one entry per node<br/>description · path · status · confidence")]:::router
+  F_wikirouterindexjson[("index.json<br/>bootstrap manifest + content_hash")]:::router
+  S_build_router_index --> F_wikicategories & F_wikiclusterjson & F_wikirouterindexjson
+
+  Q --> R1["step 1 — read categories.json<br/>pick the best category, keep runners-up"]:::route
+  F_wikicategories -.-> R1
+  R1 --> R2["step 2 — read that category's index_path<br/>pick the best node(s)"]:::route
+  F_wikiclusterjson -.-> R2
+  R2 --> R3["step 3 — read the node file itself"]:::route
+  F_wikinode[("the one node file<br/>full content + Sources")]:::wiki
+  F_wikinode -.-> R3
+
+  R3 --> COV{{"did anything<br/>cover the question?"}}:::gate
+  COV -->|"yes"| A(["answer, citing node path(s)<br/>conflicts shown as unresolved ⚠️"]):::term
+  COV -->|"no"| GAP(["report a gap — content missing,<br/>or the description was too weak to route"]):::term
+  GAP -.->|"fix the frontmatter, rebuild"| FM
+
+  NOTE["cost: 2 description-only reads + 1 node read<br/>never a scan of the whole vault<br/><br/>this protocol has four implementations —<br/>/kb-ask, chat.html, graph.html and the<br/>Claude Project export. See Index consumers."]:::note
+  R3 --- NOTE`
+  },
+
+  state:{
+    caption:"How a run survives interruption. .kb/state.json is written after every wave, so a restart skips finished " +
+            "stages and re-plans only the current one — planning is idempotent and returns only what is left. " +
+            "/kb-update is the same machine entered with a delta instead of a whole corpus.",
+    src:`stateDiagram-v2
+  direction TB
+  [*] --> extract
+  extract : extract<br/>status, documents
+  digest : digest<br/>batches_done / batches_total
+  architect : architect
+  writer : writer<br/>batches_done / batches_total
+  linker : linker
+  audit : audit
+
+  extract --> digest : manifest written
+  digest --> digest : wave done, state.json updated
+  digest --> architect : all batches done
+  architect --> architect : sanity-check failed, re-run
+  architect --> writer : taxonomy accepted
+  writer --> writer : wave done, state.json updated
+  writer --> linker : all batches done
+  linker --> linker : validate.py not clean
+  linker --> audit : validate.py clean
+  audit --> [*] : final report
+
+  state resume <<choice>>
+  [*] --> resume : run interrupted, /kb-build again
+  resume --> digest : state says extract done
+  resume --> writer : state says architect done
+  note right of resume
+    stages marked done are skipped
+    the current stage is re-planned
+    planning returns only what is left
+  end note
+
+  note left of extract
+    /kb-update enters here too:
+    sha256 vs previous manifest
+    nothing changed - stop
+    digest + writer scoped to the delta
+    linker + audit always run in full
+  end note`
+  },
+};
+
+/* ============================ drawer ============================ */
+const drawer = document.getElementById("drawer");
+const scrim  = document.getElementById("scrim");
+let lastFocus = null;
+
+function openDrawer(kicker, title, html, titleColor){
+  document.getElementById("drawerKicker").textContent = kicker;
+  const t = document.getElementById("drawerTitle");
+  t.textContent = title;
+  t.style.color = titleColor || "";
+  document.getElementById("drawerBody").innerHTML = html;
+  drawer.classList.add("open");
+  scrim.classList.add("open");
+  drawer.setAttribute("aria-hidden","false");
+  lastFocus = document.activeElement;
+  document.getElementById("drawerClose").focus();
+}
+function closeDrawer(){
+  drawer.classList.remove("open");
+  scrim.classList.remove("open");
+  drawer.setAttribute("aria-hidden","true");
+  if(lastFocus && lastFocus.focus) lastFocus.focus();
+}
+document.getElementById("drawerClose").addEventListener("click", closeDrawer);
+scrim.addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e => { if(e.key === "Escape" && drawer.classList.contains("open")) closeDrawer(); });
+
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function showAgentDetail(id){
+  const a = AGENTS[id]; if(!a) return;
+  openDrawer(a.label, id, `
+    <p class="desc">${esc(a.desc)}</p>
+    <div class="kv"><div class="k">tools</div><div class="v">${esc(a.tools)}</div></div>
+    <div class="kv"><div class="k">model</div><div class="v">${esc(a.model)}</div></div>
+    <div class="kv"><div class="k">fan-out</div><div class="v">${esc(a.fanout)}</div></div>
+    <div class="kv"><div class="k">reads</div><div class="v">${esc(a.reads)}</div></div>
+    <div class="kv"><div class="k">writes</div><div class="v">${esc(a.writes)}</div></div>
+    <div class="kv"><div class="k">scripts</div><div class="v">${esc(a.scripts)}</div></div>
+    <div class="kv"><div class="k">hand-off</div><div class="v prose">${esc(a.handoff)}</div></div>
+    <div class="kv"><div class="k">defined in</div><div class="v">.claude/agents/${id}.md</div></div>
+  `, a.color);
+}
+
+function showScriptDetail(name){
+  const s = SCRIPTS[name]; if(!s) return;
+  const [stage, purpose] = s;
+  openDrawer(`script · ${stage.replace(/&amp;/g,"&")}`, name, `
+    <p class="desc">${purpose.replace(/&lt;/g,"<").replace(/&gt;/g,">")}</p>
+    <div class="kv"><div class="k">location</div><div class="v">.claude/skills/knowledge-base/scripts/${name}</div></div>
+  `, "var(--c-script)");
+}
+
+function showFileDetail(id){
+  const f = FILES[id]; if(!f) return;
+  openDrawer(`generated file · written by ${f.by}`,
+    f.path.replace(/&lt;/g,"<").replace(/&gt;/g,">"),
+    `<p class="desc">${f.note}</p>${f.example ? `<div class="egnote">example</div><pre>${esc(f.example)}</pre>` : ""}`);
+}
+
+/* Mermaid click callbacks — resolve prefixed node ids back to a detail view. */
+window.kbNode = function(nodeId){
+  // "__x" is only there to keep two nodes for the same script distinct
+  const bare = nodeId.slice(2).split("__")[0];
+  if(nodeId.startsWith("A_"))      showAgentDetail("kb-" + bare);
+  else if(nodeId.startsWith("S_")) showScriptDetail(bare + ".py");
+  else if(nodeId.startsWith("F_")) showFileDetail(FILE_BY_MERMAID["F_" + bare]);
+};
+/* mermaid ids cannot contain "-", so map the squashed form back to the real file id */
+const FILE_BY_MERMAID = {};
+Object.keys(FILES).forEach(id => { FILE_BY_MERMAID["F_" + id.replace(/-/g,"")] = id; });
+
+/* ============================ render: static lists ============================ */
+function renderTree(containerId, files){
+  document.getElementById(containerId).innerHTML = files.map(f =>
+    `<div class="frow" data-file="${f.id}"><span class="fpath">${f.path}</span><span class="fhint">— ${f.hint}</span></div>`
+  ).join("");
+}
+function renderScripts(){
+  document.getElementById("scriptsBody").innerHTML = Object.entries(SCRIPTS).map(([name,[stage,purpose]])=>
+    `<tr data-script="${name}"><td class="script">${name}</td><td class="stagecol">${stage}</td><td>${purpose}</td></tr>`
+  ).join("");
+}
+function renderInvariants(){
+  document.getElementById("invariants").innerHTML = INVARIANTS.map(i=>`<li>${esc(i)}</li>`).join("");
+}
+function renderAgents(){
+  document.getElementById("agentgrid").innerHTML = Object.entries(AGENTS).map(([id,a])=>`
+    <div class="agentcard" style="--stage-color:${a.color}" data-agent="${id}">
+      <div class="an">${id}</div>
+      <div class="al">${a.label} · ${a.model}</div>
+      <div class="am blurb">${esc(a.desc)}</div>
+      <div class="am"><b>fan-out</b> ${esc(a.fanout)}</div>
+    </div>`).join("");
+}
+function renderHelpers(){
+  document.getElementById("helpers").innerHTML = HELPERS.map((h,i)=>`
+    <li style="--hc:${h.color}" data-agent="${h.real}">
+      <span class="hnum">${i+1}</span>
+      <div class="hbody">
+        <div class="hname">${h.name}</div>
+        <div class="hsays">${esc(h.says)}</div>
+        <div class="hreal">really called ${h.real} · click for the technical detail</div>
+      </div>
+    </li>`).join("");
+}
+
+function renderLegend(){
+  const items = [
+    ["--c-ingest","kb-ingest"],["--c-digest","kb-digest"],["--c-architect","kb-architect"],
+    ["--c-write","kb-writer"],["--c-link","kb-linker"],["--c-audit","kb-auditor"],
+    ["--c-router","router index"],["--c-script","script"],["--c-gate","decision"],
+  ];
+  document.getElementById("legend").innerHTML =
+    items.map(([v,l])=>`<span style="--lc:var(${v})"><i></i>${l}</span>`).join("") +
+    `<span class="shape">▭ runs</span><span class="shape">▢ file on disk</span><span class="shape">⬡ decision</span>`;
+}
+
+function wireClicks(root=document){
+  root.querySelectorAll("[data-agent]").forEach(n => n.addEventListener("click", () => showAgentDetail(n.dataset.agent)));
+  root.querySelectorAll("[data-script]").forEach(n => n.addEventListener("click", () => showScriptDetail(n.dataset.script)));
+  root.querySelectorAll("[data-file]").forEach(n => n.addEventListener("click", () => showFileDetail(n.dataset.file)));
+}
+
+/* ============================ tabs ============================ */
+const TABS = ["simple","overview","diagram","workflows","agents","output","playground","scripts","invariants"];
+const tabBtns = [...document.querySelectorAll(".tabbtn")];
+
+function selectTab(name, {push=true, anchor=null} = {}){
+  if(!TABS.includes(name)) name = "simple";
+  tabBtns.forEach(b => {
+    const on = b.dataset.tab === name;
+    b.setAttribute("aria-selected", on ? "true" : "false");
+    b.tabIndex = on ? 0 : -1;
+    document.getElementById("panel-" + b.dataset.tab).hidden = !on;
+  });
+  if(name === "diagram") ensureDiagram();
+  if(name === "simple")  ensureSimple();
+  if(anchor){
+    const el = document.getElementById(anchor);
+    if(el) requestAnimationFrame(() => el.scrollIntoView({block:"start"}));
+  } else {
+    window.scrollTo(0, 0);
+  }
+  /* Last, and guarded: replaceState throws on file:// in most browsers, and this
+     page is meant to be opened as a local file. Losing the hash is cosmetic —
+     losing the tab switch above it would not be. */
+  if(push && location.hash.slice(1) !== name){
+    try{ history.replaceState(null, "", "#" + name); }
+    catch{ try{ location.hash = name; }catch{} }
+  }
+}
+tabBtns.forEach((b,i) => {
+  b.addEventListener("click", () => selectTab(b.dataset.tab));
+  b.addEventListener("keydown", e => {
+    const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+    if(!d) return;
+    e.preventDefault();
+    const next = tabBtns[(i + d + tabBtns.length) % tabBtns.length];
+    next.focus(); selectTab(next.dataset.tab);
+  });
+});
+document.querySelectorAll("[data-goto]").forEach(el => {
+  el.addEventListener("click", () => selectTab(el.dataset.goto, {anchor: el.dataset.anchor}));
+});
+window.addEventListener("hashchange", () => selectTab(location.hash.slice(1), {push:false}));
+
+/* ============================ workflow filter ============================ */
+const flowBtns = [...document.querySelectorAll("[data-flow]")];
+function selectFlow(which){
+  flowBtns.forEach(b => b.setAttribute("aria-pressed", b.dataset.flow === which ? "true" : "false"));
+  document.querySelectorAll("[data-flowsection]").forEach(s => {
+    s.hidden = !(which === "all" || s.dataset.flowsection === which);
+  });
+  document.getElementById("flows").classList.toggle("single", which !== "all");
+}
+flowBtns.forEach(b => b.addEventListener("click", () => selectFlow(b.dataset.flow)));
+
+/* ============================ mermaid ============================ */
+const dgStage = document.getElementById("dgstage");
+let currentDiagram = "pipeline";
+let zoom = 1;
+let mermaidReady = false;
+let renderSeq = 0;   // unique mermaid render ids
+let dgToken = 0;     // guards the System map frame against superseded renders
+
+/* matchMedia is guarded so a browser without it can never take the whole page down */
+const darkQuery = typeof window.matchMedia === "function"
+  ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+
+function themeColors(){
+  const cs = getComputedStyle(document.documentElement);
+  const v = n => cs.getPropertyValue(n).trim();
+  return {
+    dark: !!(darkQuery && darkQuery.matches),
+    card:v("--card"), bg:v("--bg"), bgAlt:v("--bg-alt"), ink:v("--ink"), inkDim:v("--ink-dim"),
+    line:v("--line"), lineSoft:v("--line-soft"),
+    ingest:v("--c-ingest"), digest:v("--c-digest"), arch:v("--c-architect"), write:v("--c-write"),
+    link:v("--c-link"), audit:v("--c-audit"), router:v("--c-router"), script:v("--c-script"), gate:v("--c-gate"),
+  };
+}
+
+/* Stage colours are injected as classDefs so the diagram matches the rest of the page in both themes. */
+function classDefs(c){
+  const box = (stroke) => `fill:${c.card},stroke:${stroke},stroke-width:1.6px,color:${c.ink}`;
+  return [
+    `classDef src ${box(c.inkDim)},stroke-dasharray:4 3`,
+    `classDef ingest ${box(c.ingest)}`,
+    `classDef digest ${box(c.digest)}`,
+    `classDef arch ${box(c.arch)}`,
+    `classDef write ${box(c.write)}`,
+    `classDef link ${box(c.link)}`,
+    `classDef audit ${box(c.audit)}`,
+    `classDef router ${box(c.router)}`,
+    `classDef route ${box(c.router)}`,
+    `classDef script fill:${c.bgAlt},stroke:${c.script},stroke-width:1.4px,stroke-dasharray:5 3,color:${c.ink}`,
+    `classDef data fill:${c.bgAlt},stroke:${c.line},stroke-width:1.3px,color:${c.inkDim}`,
+    `classDef wiki fill:${c.bgAlt},stroke:${c.link},stroke-width:1.3px,color:${c.inkDim}`,
+    `classDef gate fill:${c.card},stroke:${c.gate},stroke-width:1.6px,color:${c.ink}`,
+    `classDef term fill:${c.ink},stroke:${c.ink},color:${c.bg}`,
+    `classDef note fill:none,stroke:none,color:${c.inkDim}`,
+  ].join("\n  ");
+}
+
+/* Attach a click callback for every A_/S_/F_ node the source actually declares. */
+function clickDirectives(src){
+  const ids = new Set();
+  src.replace(/\b([ASF]_[A-Za-z0-9_]+)\b/g, (_, id) => { ids.add(id); return _; });
+  return [...ids].map(id => `  click ${id} call kbNode("${id}")`).join("\n");
+}
+
+/* inject the stage palette + click callbacks into a flowchart source */
+function buildSource(src){
+  if(!src.startsWith("flowchart")) return src;
+  return src.replace(/^flowchart (\w+)\n/, (m, dir) => `flowchart ${dir}\n  ${classDefs(themeColors())}\n`)
+       + "\n" + clickDirectives(src);
+}
+
+function fallbackHTML(src, msg){
+  return `<div><p class="dgstatus">${msg}</p><pre class="dgfallback">${esc(src)}</pre></div>`;
+}
+
+/* Render one mermaid source into one element. `isCurrent` lets a caller abandon
+   a render that a newer click has already superseded. */
+async function renderMermaidInto(el, src, isCurrent = () => true){
+  if(typeof mermaid === "undefined"){
+    el.innerHTML = fallbackHTML(src, "The picture needs mermaid, which loads from a CDN — so it needs a network connection the first time. The diagram source is below; paste it into any mermaid renderer.");
+    return null;
+  }
+  initMermaid();
+  try{
+    const {svg, bindFunctions} = await mermaid.render("mm-" + (++renderSeq), buildSource(src));
+    if(!isCurrent()) return null;
+    el.innerHTML = svg;
+    bindFunctions?.(el);
+    el.querySelectorAll("g.node").forEach(n => {
+      if(/\b[ASF]_/.test(n.id)) n.style.cursor = "pointer";
+    });
+    return el.querySelector("svg");
+  }catch(err){
+    if(!isCurrent()) return null;
+    el.innerHTML = fallbackHTML(src, "Mermaid failed to render this diagram: " + esc(err.message || err));
+    return null;
+  }
+}
+
+/* Scale an svg to its container. maxScale allows a small enlargement so a narrow
+   diagram fills its card instead of sitting tiny in the middle of it. */
+function fitSvgInto(container, svg, maxScale = 1){
+  const w = parseFloat(svg.getAttribute("width"));
+  const h = parseFloat(svg.getAttribute("height"));
+  if(!w || !h) return;
+  const s = Math.min(maxScale, container.clientWidth / w);
+  svg.style.width  = (w * s) + "px";
+  svg.style.height = (h * s) + "px";
+}
+
+/* natural (intrinsic) size of the rendered svg, in px */
+let natW = 0, natH = 0;
+
+function applyZoom(){
+  const svg = dgStage.querySelector("svg");
+  if(!svg || !natW) return;
+  svg.style.width  = (natW * zoom) + "px";
+  svg.style.height = (natH * zoom) + "px";
+}
+function fitWidth(){
+  if(!natW) return;
+  const frame = dgStage.closest(".dgframe");
+  const avail = frame.clientWidth - 40;      // .dgframe padding
+  zoom = Math.max(0.15, Math.min(1, avail / natW));
+  applyZoom();
+}
+
+async function renderDiagram(key){
+  currentDiagram = key;
+  document.querySelectorAll("[data-diagram]").forEach(b =>
+    b.setAttribute("aria-pressed", b.dataset.diagram === key ? "true" : "false"));
+  document.getElementById("dgcaption").textContent = DIAGRAMS[key].caption;
+  document.getElementById("legend").style.display = DIAGRAMS[key].src.startsWith("flowchart") ? "" : "none";
+  zoom = 1; natW = natH = 0;
+
+  const token = ++dgToken;
+  dgStage.innerHTML = `<p class="dgstatus">Rendering diagram…</p>`;
+  const el = await renderMermaidInto(dgStage, DIAGRAMS[key].src, () => token === dgToken);
+  if(el){
+    natW = parseFloat(el.getAttribute("width"))  || el.getBoundingClientRect().width;
+    natH = parseFloat(el.getAttribute("height")) || el.getBoundingClientRect().height;
+    /* start at natural size so labels are legible; "fit" gives the overview */
+    zoom = 1; applyZoom();
+    dgStage.closest(".dgframe").scrollTo(0, 0);
+  }
+}
+
+/* the plain-words picture on the Start here tab */
+let simpleBooted = false;
+async function ensureSimple(){
+  if(simpleBooted) return;
+  simpleBooted = true;
+  await renderSimple();
+}
+async function renderSimple(){
+  const el = document.getElementById("simplestage");
+  const svg = await renderMermaidInto(el, SIMPLE_SRC);
+  if(svg) fitSvgInto(el, svg, 1.35);
+}
+
+function initMermaid(){
+  if(typeof mermaid === "undefined" || mermaidReady) return;
+  const c = themeColors();
+  mermaid.initialize({
+    startOnLoad:false,
+    securityLevel:"loose",          // required for click … call
+    theme:"base",
+    fontFamily:'-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif',
+    themeVariables:{
+      background:c.card, primaryColor:c.card, primaryTextColor:c.ink, primaryBorderColor:c.line,
+      secondaryColor:c.bgAlt, tertiaryColor:c.bgAlt, mainBkg:c.card, nodeBorder:c.line,
+      lineColor:c.inkDim, textColor:c.ink, titleColor:c.ink,
+      clusterBkg:"transparent", clusterBorder:c.lineSoft, edgeLabelBackground:c.bg,
+      fontSize:"13px",
+      actorBkg:c.card, actorBorder:c.line, actorTextColor:c.ink, actorLineColor:c.inkDim,
+      signalColor:c.ink, signalTextColor:c.ink, labelBoxBkgColor:c.bgAlt, labelBoxBorderColor:c.line,
+      labelTextColor:c.ink, loopTextColor:c.ink, noteBkgColor:c.bgAlt, noteBorderColor:c.line, noteTextColor:c.ink,
+      sequenceNumberColor:c.bg,
+      transitionColor:c.inkDim, transitionLabelColor:c.ink, stateBkg:c.card, stateBorder:c.line,
+      altBackground:c.bgAlt, compositeBackground:c.bgAlt, compositeBorder:c.lineSoft, altSectionBkgColor:c.bgAlt,
+    },
+    flowchart:{curve:"basis", htmlLabels:true, padding:10, nodeSpacing:34, rankSpacing:44, useMaxWidth:false},
+    sequence:{useMaxWidth:false, wrap:true, width:170, actorMargin:60, boxMargin:9},
+    state:{useMaxWidth:false},
+  });
+  mermaidReady = true;
+}
+
+let diagramBooted = false;
+function ensureDiagram(){
+  if(diagramBooted) return;
+  diagramBooted = true;
+  initMermaid();
+  renderDiagram(currentDiagram);
+}
+
+document.querySelectorAll("[data-diagram]").forEach(b =>
+  b.addEventListener("click", () => renderDiagram(b.dataset.diagram)));
+document.getElementById("dgIn").addEventListener("click",  () => { zoom = Math.min(2.4, zoom * 1.2); applyZoom(); });
+document.getElementById("dgOut").addEventListener("click", () => { zoom = Math.max(0.15, zoom / 1.2); applyZoom(); });
+document.getElementById("dgFit").addEventListener("click", fitWidth);
+document.getElementById("dg11").addEventListener("click",  () => { zoom = 1; applyZoom(); });
+document.getElementById("dgCopy").addEventListener("click", async e => {
+  try{
+    await navigator.clipboard.writeText(DIAGRAMS[currentDiagram].src);
+    const b = e.currentTarget, was = b.textContent;
+    b.textContent = "copied"; setTimeout(() => b.textContent = was, 1200);
+  }catch{ /* clipboard blocked from file:// in some browsers — the copy button is a convenience only */ }
+});
+
+/* re-render on OS theme change so the diagram never keeps stale colours */
+const onThemeChange = () => {
+  if(!diagramBooted && !simpleBooted) return;
+  mermaidReady = false; initMermaid();
+  if(diagramBooted) renderDiagram(currentDiagram);
+  if(simpleBooted)  renderSimple();
+};
+if(darkQuery?.addEventListener)     darkQuery.addEventListener("change", onThemeChange);
+else if(darkQuery?.addListener)     darkQuery.addListener(onThemeChange);   // Safari < 14
+
+/* ============================ boot ============================ */
+renderTree("tree-kb", KB_FILES);
+renderTree("tree-wiki", WIKI_FILES);
+renderTree("tree-exports", EXPORT_FILES);
+renderScripts();
+renderInvariants();
+renderAgents();
+renderHelpers();
+renderLegend();
+wireClicks();
+selectFlow("all");
+selectTab(location.hash.slice(1) || "simple", {push:false});
+</script>
+</body>
+</html>

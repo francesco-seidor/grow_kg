@@ -1,0 +1,2593 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "13-quality-ehs-and-compliance",
+  "cluster_title": "Quality, EHS and Compliance",
+  "cluster_description": "Quality planning, inspections and notifications, EHS locations, waste, audits and permits, dangerous goods, safety data sheets, product footprints, customs (GTS), embargo and sanctioned-party checks.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 80,
+  "nodes": [
+    {
+      "id": "13-quality-ehs-and-compliance/assess-dangerous-goods-for-a-product-3fc-ae-test-script-933",
+      "title": "Assess Dangerous Goods for a Product (3FC_AE) - Test Script (3FC_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3FC: classifying products as dangerous goods or not, and applying regulations to countries.",
+      "keywords": [
+        "Dangerous Goods Classification and Checks",
+        "dangerous goods classification",
+        "unpackaged products",
+        "packaged products",
+        "transport permission",
+        "no dangerous goods",
+        "country regulations",
+        "compliance purposes",
+        "business roles",
+        "test data"
+      ],
+      "aliases": [
+        "3FC_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/dangerous-goods"
+      ],
+      "path": "13-quality-ehs-and-compliance/assess-dangerous-goods-for-a-product-3fc-ae-test-script-933.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3FC_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Assess Dangerous Goods for a Product (3FC_AE) - Test Script (3FC_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3FC: classifying products as dangerous goods or not, and applying regulations to countries | keywords: Dangerous Goods Classification and Checks, dangerous goods classification, unpackaged products, packaged products, transport permission, no dangerous goods, country regulations, compliance purposes, business roles, test data, 3FC_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/classification-for-customs-tariff-number-and-commodity-code-2u3-ae-868",
+      "title": "Classification for Customs Tariff Number and Commodity Code (2U3_AE) (2U3_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud 2608 (AE) scope item 2U3_AE: maintaining and classifying commodity codes and customs tariff numbers, incl. AI options.",
+      "keywords": [
+        "Trade Classification and Legal Control",
+        "commodity codes",
+        "customs tariff numbers",
+        "product classification",
+        "product reclassification",
+        "numbering schemes",
+        "data provider content",
+        "trade classification agent",
+        "ai-assisted classification",
+        "fuzzy search proposals"
+      ],
+      "aliases": [
+        "2U3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/trade-classification-and-legal-control"
+      ],
+      "path": "13-quality-ehs-and-compliance/classification-for-customs-tariff-number-and-commodity-code-2u3-ae-868.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2U3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Classification for Customs Tariff Number and Commodity Code (2U3_AE) (2U3_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — Test script for SAP S/4HANA Cloud 2608 (AE) scope item 2U3_AE: maintaining and classifying commodity codes and customs tariff numbers, incl. AI options | keywords: Trade Classification and Legal Control, commodity codes, customs tariff numbers, product classification, product reclassification, numbering schemes, data provider content, trade classification agent, ai-assisted classification, fuzzy search proposals, 2U3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/crear-registro-info-de-calidad-mds-bf5-552",
+      "title": "Crear registro info de calidad - MDS (BF5) (BF5_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish master data script (BF5) for SAP S/4HANA Cloud Public Edition: creating quality info records, QM control keys and first-sample (PAPF) options.",
+      "keywords": [
+        "Quality Info Records in Procurement",
+        "quality info record",
+        "qm control keys",
+        "production part approval",
+        "first sample inspection",
+        "quality planner role",
+        "vendor release",
+        "master data scripts",
+        "goods receipt inspection",
+        "BF5"
+      ],
+      "aliases": [
+        "BF5_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-info-records"
+      ],
+      "path": "13-quality-ehs-and-compliance/crear-registro-info-de-calidad-mds-bf5-552.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF5_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear registro info de calidad - MDS (BF5) (BF5_S4CLD2608_Master_Data_ES_XX) (Quality, EHS and Compliance) — Spanish master data script (BF5) for SAP S/4HANA Cloud Public Edition: creating quality info records, QM control keys and first-sample (PAPF) options | keywords: Quality Info Records in Procurement, quality info record, qm control keys, production part approval, first sample inspection, quality planner role, vendor release, master data scripts, goods receipt inspection, BF5, BF5_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/crear-un-material-de-informacion-de-conformidad-de-producto-quimico-eh",
+      "title": "Crear un material de información de conformidad de producto químico EHS - MDS (65Z) (65Z_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script 65Z: create an EHS chemical compliance information material in app F4864 for waste management.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "chemical compliance material",
+        "material master data",
+        "master data scripts",
+        "ehs waste management",
+        "business roles",
+        "test procedures",
+        "65Z"
+      ],
+      "aliases": [
+        "65Z_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/crear-un-material-de-informacion-de-conformidad-de-producto-quimico-eh.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/65Z_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear un material de información de conformidad de producto químico EHS - MDS (65Z) (65Z_S4CLD2608_Master_Data_ES_XX) (Quality, EHS and Compliance) — Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script 65Z: create an EHS chemical compliance information material in app F4864 for waste management | keywords: EHS Products and Chemical Compliance Materials for Waste, chemical compliance material, material master data, master data scripts, ehs waste management, business roles, test procedures, 65Z, 65Z_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/crear-un-producto-ehs-mds-660-510",
+      "title": "Crear un producto EHS - MDS (660) (660_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for creating an EHS product in Manage Product Master Data (F1602) for waste management.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "ehs products",
+        "product master data",
+        "waste management",
+        "business roles",
+        "master data scripts",
+        "660"
+      ],
+      "aliases": [
+        "660_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/crear-un-producto-ehs-mds-660-510.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/660_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear un producto EHS - MDS (660) (660_S4CLD2608_Master_Data_ES_XX) (Quality, EHS and Compliance) — Spanish (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for creating an EHS product in Manage Product Master Data (F1602) for waste management | keywords: EHS Products and Chemical Compliance Materials for Waste, ehs products, product master data, waste management, business roles, master data scripts, 660, 660_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/create-an-ehs-chemical-compliance-information-material-mds-65z-503",
+      "title": "Create an EHS Chemical Compliance Information Material - MDS (65Z) (65Z_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data script (MDS 65Z) for creating an EHS Chemical Compliance Information material via Manage Material Data (F4864), for later Waste Management use.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "chemical compliance material",
+        "master data script",
+        "ehs waste management",
+        "business roles",
+        "environmental manager",
+        "65Z"
+      ],
+      "aliases": [
+        "65Z_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/create-an-ehs-chemical-compliance-information-material-mds-65z-503.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/65Z_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create an EHS Chemical Compliance Information Material - MDS (65Z) (65Z_S4CLD2608_Master_Data_EN_XX) (Quality, EHS and Compliance) — English master data script (MDS 65Z) for creating an EHS Chemical Compliance Information material via Manage Material Data (F4864), for later Waste Management use | keywords: EHS Products and Chemical Compliance Materials for Waste, chemical compliance material, master data script, ehs waste management, business roles, environmental manager, 65Z, 65Z_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/create-ehs-location-mds-3sr-359",
+      "title": "Create EHS Location - MDS (3SR) (3SR_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition master data script for creating an EHS Location and assigning it to the location structure in Manage Locations.",
+      "keywords": [
+        "EHS Locations",
+        "ehs location",
+        "location structure",
+        "master data scripts",
+        "business roles",
+        "fiori launchpad access",
+        "location activation",
+        "3SR"
+      ],
+      "aliases": [
+        "3SR_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-locations"
+      ],
+      "path": "13-quality-ehs-and-compliance/create-ehs-location-mds-3sr-359.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3SR_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create EHS Location - MDS (3SR) (3SR_S4CLD2608_Master_Data_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition master data script for creating an EHS Location and assigning it to the location structure in Manage Locations | keywords: EHS Locations, ehs location, location structure, master data scripts, business roles, fiori launchpad access, location activation, 3SR, 3SR_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/create-quality-info-record-mds-bf5-551",
+      "title": "Create Quality Info Record - MDS (BF5) (BF5_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (BF5): creating quality info records, QM control keys and PPAP settings in procurement.",
+      "keywords": [
+        "Quality Info Records in Procurement",
+        "quality info record",
+        "qm control keys",
+        "production part approval",
+        "first article inspection",
+        "quality planner role",
+        "master data prerequisites",
+        "goods receipt inspection",
+        "supplier release",
+        "BF5"
+      ],
+      "aliases": [
+        "BF5_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-info-records"
+      ],
+      "path": "13-quality-ehs-and-compliance/create-quality-info-record-mds-bf5-551.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF5_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Quality Info Record - MDS (BF5) (BF5_S4CLD2608_Master_Data_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 master data script (BF5): creating quality info records, QM control keys and PPAP settings in procurement | keywords: Quality Info Records in Procurement, quality info record, qm control keys, production part approval, first article inspection, quality planner role, master data prerequisites, goods receipt inspection, supplier release, BF5, BF5_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/create-quality-management-attributes-for-material-product-master-mds-b",
+      "title": "Create Quality Management Attributes for Material/Product Master - MDS (BNY) (BNY_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition master data script (BNY) for maintaining the Quality Management view of a material via Create Material (MM01).",
+      "keywords": [
+        "Quality Management View of the Material Master",
+        "quality management view",
+        "material master",
+        "inspection setup",
+        "master data scripts",
+        "business roles",
+        "automatic usage decision",
+        "qm procurement data",
+        "BNY"
+      ],
+      "aliases": [
+        "BNY_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/qm-material-master-attributes"
+      ],
+      "path": "13-quality-ehs-and-compliance/create-quality-management-attributes-for-material-product-master-mds-b.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNY_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Quality Management Attributes for Material/Product Master - MDS (BNY) (BNY_S4CLD2608_Master_Data_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition master data script (BNY) for maintaining the Quality Management view of a material via Create Material (MM01) | keywords: Quality Management View of the Material Master, quality management view, material master, inspection setup, master data scripts, business roles, automatic usage decision, qm procurement data, BNY, BNY_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/criar-atributos-de-administracao-de-qualidade-para-mestre-de-materiais",
+      "title": "Criar atributos de administração de qualidade para mestre de materiais/produtos – MDS (BNY) (BNY_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP master data script BNY for creating quality management attributes in the material/product master (MM01), with test steps.",
+      "keywords": [
+        "Quality Management View of the Material Master",
+        "quality management",
+        "material master",
+        "inspection types",
+        "automatic usage decision",
+        "plant data",
+        "master data scripts",
+        "BNY"
+      ],
+      "aliases": [
+        "BNY_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/qm-material-master-attributes"
+      ],
+      "path": "13-quality-ehs-and-compliance/criar-atributos-de-administracao-de-qualidade-para-mestre-de-materiais.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNY_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar atributos de administração de qualidade para mestre de materiais/produtos – MDS (BNY) (BNY_S4CLD2608_Master_Data_PT_XX) (Quality, EHS and Compliance) — Portuguese SAP master data script BNY for creating quality management attributes in the material/product master (MM01), with test steps | keywords: Quality Management View of the Material Master, quality management, material master, inspection types, automatic usage decision, plant data, master data scripts, BNY, BNY_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/criar-registro-info-de-qualidade-mds-bf5-554",
+      "title": "Criar registro info de qualidade – MDS (BF5) (BF5_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data test script (BF5) for creating quality info records, QM control keys and first-sample (PAPP) settings in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Quality Info Records in Procurement",
+        "quality info record",
+        "qm procurement control key",
+        "production part approval",
+        "first sample inspection",
+        "vendor release",
+        "business roles",
+        "master data scripts",
+        "goods receipt inspection",
+        "BF5"
+      ],
+      "aliases": [
+        "BF5_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-info-records"
+      ],
+      "path": "13-quality-ehs-and-compliance/criar-registro-info-de-qualidade-mds-bf5-554.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF5_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar registro info de qualidade – MDS (BF5) (BF5_S4CLD2608_Master_Data_PT_XX) (Quality, EHS and Compliance) — Portuguese master data test script (BF5) for creating quality info records, QM control keys and first-sample (PAPP) settings in SAP S/4HANA Cloud Public Edition 2608 | keywords: Quality Info Records in Procurement, quality info record, qm procurement control key, production part approval, first sample inspection, vendor release, business roles, master data scripts, goods receipt inspection, BF5, BF5_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/criar-um-material-de-informacoes-de-conformidade-quimica-ehs-mds-65z-5",
+      "title": "Criar um material de informações de conformidade química EHS – MDS (65Z) (65Z_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (65Z) for creating an EHS chemical compliance information material via Manage Material Data (F4864) in SAP S/4HANA Cloud Public Ed",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "chemical compliance material",
+        "master data script",
+        "waste management",
+        "business roles",
+        "environmental manager",
+        "65Z"
+      ],
+      "aliases": [
+        "65Z_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/criar-um-material-de-informacoes-de-conformidade-quimica-ehs-mds-65z-5.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/65Z_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar um material de informações de conformidade química EHS – MDS (65Z) (65Z_S4CLD2608_Master_Data_PT_XX) (Quality, EHS and Compliance) — Portuguese master data script (65Z) for creating an EHS chemical compliance information material via Manage Material Data (F4864) in SAP S/4HANA Cloud Public Ed | keywords: EHS Products and Chemical Compliance Materials for Waste, chemical compliance material, master data script, waste management, business roles, environmental manager, 65Z, 65Z_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/criar-um-produto-ehs-mds-660-512",
+      "title": "Criar um produto EHS – MDS (660) (660_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script 660: create an EHS product master record via Administrar dados mestre do produto (F1602) in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "ehs product",
+        "product master data",
+        "waste management",
+        "business roles",
+        "test scripts",
+        "660"
+      ],
+      "aliases": [
+        "660_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/criar-um-produto-ehs-mds-660-512.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/660_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar um produto EHS – MDS (660) (660_S4CLD2608_Master_Data_PT_XX) (Quality, EHS and Compliance) — Portuguese master data script 660: create an EHS product master record via Administrar dados mestre do produto (F1602) in SAP S/4HANA Cloud Public Edition 2608 | keywords: EHS Products and Chemical Compliance Materials for Waste, ehs product, product master data, waste management, business roles, test scripts, 660, 660_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/customs-management-with-sap-global-trade-services-2u1-ae-test-script-s",
+      "title": "Customs Management with SAP Global Trade Services (2U1_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2U1_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 2U1: integrating SAP S/4HANA Cloud Public Edition with SAP GTS for export management and import declaration before goods receipt.",
+      "keywords": [
+        "Customs Management with SAP GTS",
+        "customs management",
+        "document transfer settings",
+        "export management",
+        "import management",
+        "customs offices",
+        "gts configuration",
+        "business roles",
+        "foreign trade organization",
+        "message monitoring"
+      ],
+      "aliases": [
+        "2U1_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/gts-customs-management"
+      ],
+      "path": "13-quality-ehs-and-compliance/customs-management-with-sap-global-trade-services-2u1-ae-test-script-s.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2U1_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Customs Management with SAP Global Trade Services (2U1_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2U1_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — Test script for scope item 2U1: integrating SAP S/4HANA Cloud Public Edition with SAP GTS for export management and import declaration before goods receipt | keywords: Customs Management with SAP GTS, customs management, document transfer settings, export management, import management, customs offices, gts configuration, business roles, foreign trade organization, message monitoring, 2U1_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-lokation-anlegen-sds-3sr-358",
+      "title": "EHS-Lokation anlegen – SDS (3SR) (3SR_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud master data script (3SR): create an EHS location in the location structure using Manage Locations (EHFND_UI_LOC_ENTRY).",
+      "keywords": [
+        "EHS Locations",
+        "ehs location",
+        "location structure",
+        "environment health and safety",
+        "business roles",
+        "responsible persons",
+        "location activation",
+        "3SR"
+      ],
+      "aliases": [
+        "3SR_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-locations"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-lokation-anlegen-sds-3sr-358.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3SR_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "EHS-Lokation anlegen – SDS (3SR) (3SR_S4CLD2608_Master_Data_DE_XX) (Quality, EHS and Compliance) — German SAP S/4HANA Cloud master data script (3SR): create an EHS location in the location structure using Manage Locations (EHFND_UI_LOC_ENTRY) | keywords: EHS Locations, ehs location, location structure, environment health and safety, business roles, responsible persons, location activation, 3SR, 3SR_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-mds-3sr-361",
+      "title": "EHS ロケーション登録 - MDS (3SR) (3SR_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (MDS 3SR) for creating EHS locations in a location structure via EHFND_UI_LOC_ENTRY in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "EHS Locations",
+        "ehs location",
+        "location structure",
+        "master data script",
+        "business roles",
+        "location responsibles",
+        "location activation",
+        "3SR"
+      ],
+      "aliases": [
+        "3SR_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-locations"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-mds-3sr-361.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3SR_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "EHS ロケーション登録 - MDS (3SR) (3SR_S4CLD2608_Master_Data_JA_XX) (Quality, EHS and Compliance) — Japanese master data script (MDS 3SR) for creating EHS locations in a location structure via EHFND_UI_LOC_ENTRY in SAP S/4HANA Cloud Public Edition 2608 | keywords: EHS Locations, ehs location, location structure, master data script, business roles, location responsibles, location activation, 3SR, 3SR_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-mds-3sr-363",
+      "title": "创建 EHS 位置 - MDS (3SR) (3SR_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Master data script (Chinese, machine-translated) for creating EHS locations and assigning them to the location structure via Manage Locations (EHFND_UI_LOC_ENTR",
+      "keywords": [
+        "EHS Locations",
+        "location structure",
+        "business roles",
+        "master data scripts",
+        "3SR"
+      ],
+      "aliases": [
+        "3SR_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-locations"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-mds-3sr-363.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3SR_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建 EHS 位置 - MDS (3SR) (3SR_S4CLD2608_Master_Data_ZH_XX) (Quality, EHS and Compliance) — Master data script (Chinese, machine-translated) for creating EHS locations and assigning them to the location structure via Manage Locations (EHFND_UI_LOC_ENTR | keywords: EHS Locations, location structure, business roles, master data scripts, 3SR, 3SR_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-mds-65z-chinese-507",
+      "title": "创建 EHS 化学品合规性信息材料 - MDS (65Z) (Chinese) (65Z_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated master data script for creating an EHS Chemical Compliance Information (CCI) material in SAP S/4HANA Cloud Public Edition via app F4864.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "master data scripts",
+        "ehs cci items",
+        "ehs waste management",
+        "business roles",
+        "65Z"
+      ],
+      "aliases": [
+        "65Z_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-mds-65z-chinese-507.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/65Z_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建 EHS 化学品合规性信息材料 - MDS (65Z) (Chinese) (65Z_S4CLD2608_Master_Data_ZH_XX) (Quality, EHS and Compliance) — Chinese machine-translated master data script for creating an EHS Chemical Compliance Information (CCI) material in SAP S/4HANA Cloud Public Edition via app F4864 | keywords: EHS Products and Chemical Compliance Materials for Waste, master data scripts, ehs cci items, ehs waste management, business roles, 65Z, 65Z_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-mds-65z-japanese-505",
+      "title": "EHS 化学物質コンプライアンス情報品目の登録 - MDS (65Z) (Japanese) (65Z_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script for creating an EHS Chemical Compliance Information (CCI) item in SAP S/4HANA Cloud Public Edition via app F4864.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "master data scripts",
+        "ehs cci items",
+        "ehs waste management",
+        "business roles",
+        "65Z"
+      ],
+      "aliases": [
+        "65Z_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-mds-65z-japanese-505.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/65Z_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "EHS 化学物質コンプライアンス情報品目の登録 - MDS (65Z) (Japanese) (65Z_S4CLD2608_Master_Data_JA_XX) (Quality, EHS and Compliance) — Japanese master data script for creating an EHS Chemical Compliance Information (CCI) item in SAP S/4HANA Cloud Public Edition via app F4864 | keywords: EHS Products and Chemical Compliance Materials for Waste, master data scripts, ehs cci items, ehs waste management, business roles, 65Z, 65Z_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-mds-660-511",
+      "title": "EHS 製品の登録 - MDS (660) (660_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script 660: register an EHS product master data record, usable later in EHS waste management, with app F1602.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "ehs product master data",
+        "master data scripts",
+        "waste management",
+        "product master data",
+        "business role templates",
+        "fiori launchpad access",
+        "660"
+      ],
+      "aliases": [
+        "660_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-mds-660-511.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/660_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "EHS 製品の登録 - MDS (660) (660_S4CLD2608_Master_Data_JA_XX) (Quality, EHS and Compliance) — Japanese master data script 660: register an EHS product master data record, usable later in EHS waste management, with app F1602 | keywords: EHS Products and Chemical Compliance Materials for Waste, ehs product master data, master data scripts, waste management, product master data, business role templates, fiori launchpad access, 660, 660_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-mds-660-chinese-513",
+      "title": "创建 EHS 产品 - MDS (660) (Chinese) (660_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated master data script for creating an EHS product master record in SAP S/4HANA Cloud Public Edition via app F1602.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "master data scripts",
+        "ehs products",
+        "ehs waste management",
+        "business roles",
+        "660"
+      ],
+      "aliases": [
+        "660_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-mds-660-chinese-513.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/660_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建 EHS 产品 - MDS (660) (Chinese) (660_S4CLD2608_Master_Data_ZH_XX) (Quality, EHS and Compliance) — Chinese machine-translated master data script for creating an EHS product master record in SAP S/4HANA Cloud Public Edition via app F1602 | keywords: EHS Products and Chemical Compliance Materials for Waste, master data scripts, ehs products, ehs waste management, business roles, 660, 660_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/ehs-produkt-anlegen-sds-660-508",
+      "title": "EHS-Produkt anlegen – SDS (660) (660_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script 660: create an EHS product master record via Manage Product Master Data (F1602) in SAP S/4HANA Cloud Public Edition 2608, for waste management.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "ehs product",
+        "product master data",
+        "waste management",
+        "business roles",
+        "test scripts",
+        "660"
+      ],
+      "aliases": [
+        "660_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/ehs-produkt-anlegen-sds-660-508.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/660_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "EHS-Produkt anlegen – SDS (660) (660_S4CLD2608_Master_Data_DE_XX) (Quality, EHS and Compliance) — German master data script 660: create an EHS product master record via Manage Product Master Data (F1602) in SAP S/4HANA Cloud Public Edition 2608, for waste management | keywords: EHS Products and Chemical Compliance Materials for Waste, ehs product, product master data, waste management, business roles, test scripts, 660, 660_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/health-and-safety-management-54a-ae-test-script-sap-s-4hana-cloud-publ",
+      "title": "Health and Safety Management (54A_AE) - Test Script, SAP S/4HANA Cloud Public Edition (54A_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 54A_AE Health and Safety Management: roles, sample data, and tests for chemical approvals, risk assessments, safety instructions.",
+      "keywords": [
+        "Health and Safety Management and Occupational Health",
+        "health and safety management",
+        "chemical approvals",
+        "manage use of chemicals",
+        "risk assessments",
+        "job hazard analysis",
+        "equipment safety instructions",
+        "substance safety instructions",
+        "hazardous substance inventory",
+        "hazardous substance overview"
+      ],
+      "aliases": [
+        "54A_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/health-and-safety-and-occupational-health"
+      ],
+      "path": "13-quality-ehs-and-compliance/health-and-safety-management-54a-ae-test-script-sap-s-4hana-cloud-publ.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/54A_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Health and Safety Management (54A_AE) - Test Script, SAP S/4HANA Cloud Public Edition (54A_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP test script for scope item 54A_AE Health and Safety Management: roles, sample data, and tests for chemical approvals, risk assessments, safety instructions | keywords: Health and Safety Management and Occupational Health, health and safety management, chemical approvals, manage use of chemicals, risk assessments, job hazard analysis, equipment safety instructions, substance safety instructions, hazardous substance inventory, hazardous substance overview, 54A_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/master-data-script-create-an-ehs-product-mds-660-509",
+      "title": "Master Data Script: Create an EHS Product - MDS (660) (660_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data script (660) for creating an EHS product master record for waste management in SAP S/4HANA Cloud Public Edition 2608 via Manage Product Master Data (F1602).",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "ehs product",
+        "product master data",
+        "master data scripts",
+        "waste management",
+        "business roles",
+        "660"
+      ],
+      "aliases": [
+        "660_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/master-data-script-create-an-ehs-product-mds-660-509.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/660_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create an EHS Product - MDS (660) (660_S4CLD2608_Master_Data_EN_XX) (Quality, EHS and Compliance) — English master data script (660) for creating an EHS product master record for waste management in SAP S/4HANA Cloud Public Edition 2608 via Manage Product Master Data (F1602) | keywords: EHS Products and Chemical Compliance Materials for Waste, ehs product, product master data, master data scripts, waste management, business roles, 660, 660_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/master-data-script-create-quality-inspection-plan-mds-bnq-653",
+      "title": "Master Data Script: Create Quality Inspection Plan - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (BNQ): prerequisites and Fiori test steps to create and manage quality inspection plans and their master data.",
+      "keywords": [
+        "Quality Inspection Plans",
+        "quality inspection plan",
+        "master inspection characteristics",
+        "sampling scheme",
+        "sampling procedure",
+        "dynamic modification rule",
+        "code groups",
+        "manage inspection plans",
+        "selected sets",
+        "inspection methods"
+      ],
+      "aliases": [
+        "BNQ_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/inspection-plans"
+      ],
+      "path": "13-quality-ehs-and-compliance/master-data-script-create-quality-inspection-plan-mds-bnq-653.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNQ_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Quality Inspection Plan - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 master data script (BNQ): prerequisites and Fiori test steps to create and manage quality inspection plans and their master data | keywords: Quality Inspection Plans, quality inspection plan, master inspection characteristics, sampling scheme, sampling procedure, dynamic modification rule, code groups, manage inspection plans, selected sets, inspection methods, BNQ_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/mds-bf5-553",
+      "title": "マスタデータスクリプト: 品質管理情報の登録 - MDS (BF5) (BF5_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script BF5 for creating quality info records (procurement), QM control key assignment (QI05) and PPAP setup in SAP S/4HANA Cloud Public.",
+      "keywords": [
+        "Quality Info Records in Procurement",
+        "quality info records",
+        "qm control key",
+        "ppap",
+        "first article inspection",
+        "supplier release",
+        "master data scripts",
+        "business roles",
+        "BF5"
+      ],
+      "aliases": [
+        "BF5_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-info-records"
+      ],
+      "path": "13-quality-ehs-and-compliance/mds-bf5-553.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF5_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: 品質管理情報の登録 - MDS (BF5) (BF5_S4CLD2608_Master_Data_JA_XX) (Quality, EHS and Compliance) — Japanese master data script BF5 for creating quality info records (procurement), QM control key assignment (QI05) and PPAP setup in SAP S/4HANA Cloud Public | keywords: Quality Info Records in Procurement, quality info records, qm control key, ppap, first article inspection, supplier release, master data scripts, business roles, BF5, BF5_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/mds-bf5-555",
+      "title": "创建质量信息记录 - MDS (BF5) (BF5_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script (ZH, machine-translated) for creating quality info records, QM control keys and PPAP setup as quality planner.",
+      "keywords": [
+        "Quality Info Records in Procurement",
+        "quality info records",
+        "ppap",
+        "qm control keys",
+        "master data script",
+        "first article inspection",
+        "supplier approval",
+        "goods receipt inspection",
+        "quality planner role",
+        "BF5"
+      ],
+      "aliases": [
+        "BF5_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-info-records"
+      ],
+      "path": "13-quality-ehs-and-compliance/mds-bf5-555.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF5_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建质量信息记录 - MDS (BF5) (BF5_S4CLD2608_Master_Data_ZH_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud 2608 master data script (ZH, machine-translated) for creating quality info records, QM control keys and PPAP setup as quality planner | keywords: Quality Info Records in Procurement, quality info records, ppap, qm control keys, master data script, first article inspection, supplier approval, goods receipt inspection, quality planner role, BF5, BF5_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/mds-bny-691",
+      "title": "品目/製品マスタの品質管理属性の登録 - MDS (BNY) (BNY_S4CLD2608_Master_Data_JA_XX)",
+      "description": "マスタデータスクリプト（日本語）：MM01 で品目マスタの品質管理ビュー（検査タイプ等）をプラント別に登録する手順。",
+      "keywords": [
+        "Quality Management View of the Material Master",
+        "quality management view",
+        "inspection type",
+        "material master",
+        "automatic usage decision",
+        "quality info record",
+        "business roles",
+        "master data scripts",
+        "BNY"
+      ],
+      "aliases": [
+        "BNY_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/qm-material-master-attributes"
+      ],
+      "path": "13-quality-ehs-and-compliance/mds-bny-691.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNY_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "品目/製品マスタの品質管理属性の登録 - MDS (BNY) (BNY_S4CLD2608_Master_Data_JA_XX) (Quality, EHS and Compliance) — マスタデータスクリプト（日本語）：MM01 で品目マスタの品質管理ビュー（検査タイプ等）をプラント別に登録する手順。 | keywords: Quality Management View of the Material Master, quality management view, inspection type, material master, automatic usage decision, quality info record, business roles, master data scripts, BNY, BNY_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/mds-bny-693",
+      "title": "创建物料/产品主数据的质量管理属性 - MDS (BNY) (BNY_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Master data script (Chinese, machine-translated) for maintaining Quality Management views of material master data via MM01, incl. inspection type setup.",
+      "keywords": [
+        "Quality Management View of the Material Master",
+        "quality management data",
+        "inspection types",
+        "material master data",
+        "automatic usage decision",
+        "quality info records",
+        "master data scripts",
+        "BNY"
+      ],
+      "aliases": [
+        "BNY_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/qm-material-master-attributes"
+      ],
+      "path": "13-quality-ehs-and-compliance/mds-bny-693.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNY_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建物料/产品主数据的质量管理属性 - MDS (BNY) (BNY_S4CLD2608_Master_Data_ZH_XX) (Quality, EHS and Compliance) — Master data script (Chinese, machine-translated) for maintaining Quality Management views of material master data via MM01, incl. inspection type setup | keywords: Quality Management View of the Material Master, quality management data, inspection types, material master data, automatic usage decision, quality info records, master data scripts, BNY, BNY_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/nonconformance-management-2qn-ae-test-script-sap-s-4hana-cloud-public",
+      "title": "Nonconformance Management (2QN_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2QN_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud test script for scope item 2QN_AE: record, process (notification/8D), analyze, close defects; manual inspection lots and usage decisions.",
+      "keywords": [
+        "Quality Management of Internal Problems",
+        "nonconformance management",
+        "defect recording",
+        "production defects",
+        "quality notifications",
+        "quality tasks",
+        "8d problem solving",
+        "defect completion",
+        "defect analysis",
+        "manual inspection lots"
+      ],
+      "aliases": [
+        "2QN_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/internal-quality-problems"
+      ],
+      "path": "13-quality-ehs-and-compliance/nonconformance-management-2qn-ae-test-script-sap-s-4hana-cloud-public.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2QN_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Nonconformance Management (2QN_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2QN_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — S/4HANA Cloud test script for scope item 2QN_AE: record, process (notification/8D), analyze, close defects; manual inspection lots and usage decisions | keywords: Quality Management of Internal Problems, nonconformance management, defect recording, production defects, quality notifications, quality tasks, 8d problem solving, defect completion, defect analysis, manual inspection lots, 2QN_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/product-compliance-document-authoring-7do-ae-test-script-sap-s-4hana-c",
+      "title": "Product Compliance Document Authoring (7DO_AE) - Test Script, SAP S/4HANA Cloud Public Edition (7DO_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 7DO: step-by-step product compliance data entry through to German safety data sheet generation.",
+      "keywords": [
+        "Safety Data Sheet Authoring, Distribution and Labels",
+        "safety data sheet generation",
+        "product compliance",
+        "unpackaged products",
+        "analytical composition",
+        "product properties",
+        "dangerous goods",
+        "marketability assessments",
+        "compliance assessments",
+        "substance classification"
+      ],
+      "aliases": [
+        "7DO_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/safety-data-sheets-and-labels"
+      ],
+      "path": "13-quality-ehs-and-compliance/product-compliance-document-authoring-7do-ae-test-script-sap-s-4hana-c.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7DO_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Product Compliance Document Authoring (7DO_AE) - Test Script, SAP S/4HANA Cloud Public Edition (7DO_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 7DO: step-by-step product compliance data entry through to German safety data sheet generation | keywords: Safety Data Sheet Authoring, Distribution and Labels, safety data sheet generation, product compliance, unpackaged products, analytical composition, product properties, dangerous goods, marketability assessments, compliance assessments, substance classification, 7DO_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/product-footprint-management-5im-test-script-1104",
+      "title": "Product Footprint Management (5IM) Test Script (5IM_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5IM: viewing product footprints from SAP Sustainability Footprint Management, incl. purchase requisition CO2e.",
+      "keywords": [
+        "Product Footprints and Carbon Emission Quantities",
+        "product footprint management",
+        "view product footprints",
+        "smart link navigation",
+        "purchase requisition footprint",
+        "sustainability footprint management",
+        "business roles",
+        "test procedures",
+        "5IM"
+      ],
+      "aliases": [
+        "5IM_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/product-footprint-and-carbon-emissions"
+      ],
+      "path": "13-quality-ehs-and-compliance/product-footprint-management-5im-test-script-1104.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5IM_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Product Footprint Management (5IM) Test Script (5IM_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5IM: viewing product footprints from SAP Sustainability Footprint Management, incl. purchase requisition CO2e | keywords: Product Footprints and Carbon Emission Quantities, product footprint management, view product footprints, smart link navigation, purchase requisition footprint, sustainability footprint management, business roles, test procedures, 5IM, 5IM_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/product-related-carbon-emission-quantities-6vn-ae-test-script-1192",
+      "title": "Product-Related Carbon Emission Quantities (6VN_AE) Test Script (6VN_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6VN: determining, displaying and releasing CO2e emission quantities in product costing runs.",
+      "keywords": [
+        "Product Footprints and Carbon Emission Quantities",
+        "carbon emission quantities",
+        "product costing",
+        "costing runs",
+        "product footprint management",
+        "activity cost rates",
+        "material cost estimates",
+        "standard cost release",
+        "ledger-specific costing",
+        "sap analytics cloud integration"
+      ],
+      "aliases": [
+        "6VN_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/product-footprint-and-carbon-emissions"
+      ],
+      "path": "13-quality-ehs-and-compliance/product-related-carbon-emission-quantities-6vn-ae-test-script-1192.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6VN_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Product-Related Carbon Emission Quantities (6VN_AE) Test Script (6VN_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 6VN: determining, displaying and releasing CO2e emission quantities in product costing runs | keywords: Product Footprints and Carbon Emission Quantities, carbon emission quantities, product costing, costing runs, product footprint management, activity cost rates, material cost estimates, standard cost release, ledger-specific costing, sap analytics cloud integration, 6VN_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/qualitatsinfosatz-anlegen-sds-bf5-550",
+      "title": "Qualitätsinfosatz anlegen – SDS (BF5) (BF5_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (BF5) for SAP S/4HANA Cloud Public Edition 2608: creating quality info records, QM control keys and PPAP settings in procurement.",
+      "keywords": [
+        "Quality Info Records in Procurement",
+        "quality info record",
+        "qm control key",
+        "ppap",
+        "first article inspection",
+        "supplier release",
+        "goods receipt inspection",
+        "quality planner role",
+        "master data scripts",
+        "BF5"
+      ],
+      "aliases": [
+        "BF5_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-info-records"
+      ],
+      "path": "13-quality-ehs-and-compliance/qualitatsinfosatz-anlegen-sds-bf5-550.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF5_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Qualitätsinfosatz anlegen – SDS (BF5) (BF5_S4CLD2608_Master_Data_DE_XX) (Quality, EHS and Compliance) — German master data script (BF5) for SAP S/4HANA Cloud Public Edition 2608: creating quality info records, QM control keys and PPAP settings in procurement | keywords: Quality Info Records in Procurement, quality info record, qm control key, ppap, first article inspection, supplier release, goods receipt inspection, quality planner role, master data scripts, BF5, BF5_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/quality-management-for-complaints-from-customers-2fa-ae-test-script-sa",
+      "title": "Quality Management for Complaints from Customers (2FA_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2FA_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 2FA: customer complaint quality notifications, root cause, actions, closure.",
+      "keywords": [
+        "Quality Notifications for Customer and Supplier Complaints",
+        "customer complaints",
+        "quality notifications",
+        "root cause analysis",
+        "corrective actions",
+        "preventive actions",
+        "notification tasks",
+        "test scripts",
+        "notification completion",
+        "notification worklists"
+      ],
+      "aliases": [
+        "2FA_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/complaint-quality-notifications"
+      ],
+      "path": "13-quality-ehs-and-compliance/quality-management-for-complaints-from-customers-2fa-ae-test-script-sa.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2FA_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Quality Management for Complaints from Customers (2FA_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2FA_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 2FA: customer complaint quality notifications, root cause, actions, closure | keywords: Quality Notifications for Customer and Supplier Complaints, customer complaints, quality notifications, root cause analysis, corrective actions, preventive actions, notification tasks, test scripts, notification completion, notification worklists, 2FA_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/quality-management-in-procurement-1fm-ae-test-script-sap-s-4hana-cloud",
+      "title": "Quality Management in Procurement (1FM_AE) - Test Script, SAP S/4HANA Cloud Public Edition (1FM_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 1FM_AE (Quality Management in Procurement, UAE, 2608): prerequisites and five inspection test procedures with apps, roles and sample data.",
+      "keywords": [
+        "Quality Inspection in Procurement and Sales",
+        "quality management in procurement",
+        "regular quality inspection",
+        "dynamic modification",
+        "sampling scheme",
+        "quality info record",
+        "quality certificate",
+        "usage decision",
+        "inspection results recording",
+        "test scripts prerequisites"
+      ],
+      "aliases": [
+        "1FM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-inspection-procurement-and-sales"
+      ],
+      "path": "13-quality-ehs-and-compliance/quality-management-in-procurement-1fm-ae-test-script-sap-s-4hana-cloud.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1FM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Quality Management in Procurement (1FM_AE) - Test Script, SAP S/4HANA Cloud Public Edition (1FM_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP test script for scope item 1FM_AE (Quality Management in Procurement, UAE, 2608): prerequisites and five inspection test procedures with apps, roles and sample data | keywords: Quality Inspection in Procurement and Sales, quality management in procurement, regular quality inspection, dynamic modification, sampling scheme, quality info record, quality certificate, usage decision, inspection results recording, test scripts prerequisites, 1FM_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/quality-management-in-stock-handling-1mr-ae-test-script-739",
+      "title": "Quality Management in Stock Handling (1MR_AE) - Test Script (1MR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1MR_AE: posting stock to quality inspection, usage decisions, and storage location changes.",
+      "keywords": [
+        "Quality Management in Stock Handling",
+        "quality inspection stock",
+        "usage decisions",
+        "storage location change",
+        "inspection lots",
+        "test scripts",
+        "business roles",
+        "master data",
+        "inspection type setup",
+        "raw material stock"
+      ],
+      "aliases": [
+        "1MR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-in-stock-handling"
+      ],
+      "path": "13-quality-ehs-and-compliance/quality-management-in-stock-handling-1mr-ae-test-script-739.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1MR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Quality Management in Stock Handling (1MR_AE) - Test Script (1MR_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1MR_AE: posting stock to quality inspection, usage decisions, and storage location changes | keywords: Quality Management in Stock Handling, quality inspection stock, usage decisions, storage location change, inspection lots, test scripts, business roles, master data, inspection type setup, raw material stock, 1MR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/sap-s-4hana-cloud-public-edition-mds-bnq-655",
+      "title": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - 品質検査計画の登録 - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (BNQ) for SAP S/4HANA Cloud Public Edition 2608: prerequisites and test steps to create and manage quality inspection plans.",
+      "keywords": [
+        "Quality Inspection Plans",
+        "inspection plan maintenance",
+        "master inspection characteristics",
+        "class characteristic link",
+        "code groups",
+        "selected sets",
+        "inspection methods",
+        "sampling tables",
+        "sampling procedures",
+        "dynamic modification rules"
+      ],
+      "aliases": [
+        "BNQ_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/inspection-plans"
+      ],
+      "path": "13-quality-ehs-and-compliance/sap-s-4hana-cloud-public-edition-mds-bnq-655.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNQ_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - 品質検査計画の登録 - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_JA_XX) (Quality, EHS and Compliance) — Japanese master data script (BNQ) for SAP S/4HANA Cloud Public Edition 2608: prerequisites and test steps to create and manage quality inspection plans | keywords: Quality Inspection Plans, inspection plan maintenance, master inspection characteristics, class characteristic link, code groups, selected sets, inspection methods, sampling tables, sampling procedures, dynamic modification rules, BNQ_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/sap-s-4hana-cloud-public-edition-mds-bnq-657",
+      "title": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建质量检验计划 - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script BNQ: prerequisites and test steps for creating quality inspection plans and their master data.",
+      "keywords": [
+        "Quality Inspection Plans",
+        "inspection plans",
+        "quality master data",
+        "master inspection characteristics",
+        "sampling schemes",
+        "sampling procedures",
+        "dynamic modification rules",
+        "code groups and selected sets",
+        "inspection methods",
+        "batch classification"
+      ],
+      "aliases": [
+        "BNQ_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/inspection-plans"
+      ],
+      "path": "13-quality-ehs-and-compliance/sap-s-4hana-cloud-public-edition-mds-bnq-657.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNQ_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建质量检验计划 - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_ZH_XX) (Quality, EHS and Compliance) — Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script BNQ: prerequisites and test steps for creating quality inspection plans and their master data | keywords: Quality Inspection Plans, inspection plans, quality master data, master inspection characteristics, sampling schemes, sampling procedures, dynamic modification rules, code groups and selected sets, inspection methods, batch classification, BNQ_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/script-de-dados-mestre-criar-local-ehs-mds-3sr-362",
+      "title": "Script de dados mestre: Criar local EHS – MDS (3SR) (3SR_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (3SR) for creating an EHS location in the location structure in SAP S/4HANA Cloud Public Edition via app EHFND_UI_LOC_ENTRY.",
+      "keywords": [
+        "EHS Locations",
+        "ehs location",
+        "location structure",
+        "master data script",
+        "environment health safety",
+        "user roles",
+        "responsible persons",
+        "test procedure",
+        "3SR"
+      ],
+      "aliases": [
+        "3SR_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-locations"
+      ],
+      "path": "13-quality-ehs-and-compliance/script-de-dados-mestre-criar-local-ehs-mds-3sr-362.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3SR_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar local EHS – MDS (3SR) (3SR_S4CLD2608_Master_Data_PT_XX) (Quality, EHS and Compliance) — Portuguese master data script (3SR) for creating an EHS location in the location structure in SAP S/4HANA Cloud Public Edition via app EHFND_UI_LOC_ENTRY | keywords: EHS Locations, ehs location, location structure, master data script, environment health safety, user roles, responsible persons, test procedure, 3SR, 3SR_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/script-de-dados-mestre-criar-plano-de-controle-de-qualidade-mds-bnq-65",
+      "title": "Script de dados mestre - Criar plano de controle de qualidade - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud Public Edition 2608 master data script (BNQ): prerequisites and step-by-step Fiori test procedures to create quality inspection plans.",
+      "keywords": [
+        "Quality Inspection Plans",
+        "inspection plans",
+        "inspection plan management",
+        "code groups and selected sets",
+        "master inspection characteristics",
+        "sampling plans",
+        "copy inspection plans",
+        "defect code groups",
+        "inspection methods",
+        "class characteristics"
+      ],
+      "aliases": [
+        "BNQ_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/inspection-plans"
+      ],
+      "path": "13-quality-ehs-and-compliance/script-de-dados-mestre-criar-plano-de-controle-de-qualidade-mds-bnq-65.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNQ_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar plano de controle de qualidade - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_PT_XX) (Quality, EHS and Compliance) — Portuguese SAP S/4HANA Cloud Public Edition 2608 master data script (BNQ): prerequisites and step-by-step Fiori test procedures to create quality inspection plans | keywords: Quality Inspection Plans, inspection plans, inspection plan management, code groups and selected sets, master inspection characteristics, sampling plans, copy inspection plans, defect code groups, inspection methods, class characteristics, BNQ_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/script-de-datos-maestros-creacion-de-plan-de-inspeccion-de-calidad-mds",
+      "title": "Script de datos maestros - Creación de plan de inspección de calidad - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_ES_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (ES, machine-translated) for creating quality inspection plans and prerequisites: catalogs, characteristics, sampling, dynamic modification.",
+      "keywords": [
+        "Quality Inspection Plans",
+        "inspection plans",
+        "inspection plan management",
+        "master inspection characteristics",
+        "class characteristic link",
+        "sampling schemes",
+        "sampling procedures",
+        "dynamic modification rules",
+        "code groups",
+        "selected sets"
+      ],
+      "aliases": [
+        "BNQ_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/inspection-plans"
+      ],
+      "path": "13-quality-ehs-and-compliance/script-de-datos-maestros-creacion-de-plan-de-inspeccion-de-calidad-mds.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNQ_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de plan de inspección de calidad - MDS (BNQ) (BNQ_S4CLD2608_Master_Data_ES_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 master data script (ES, machine-translated) for creating quality inspection plans and prerequisites: catalogs, characteristics, sampling, dynamic modification | keywords: Quality Inspection Plans, inspection plans, inspection plan management, master inspection characteristics, class characteristic link, sampling schemes, sampling procedures, dynamic modification rules, code groups, selected sets, BNQ_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/script-de-datos-maestros-crear-atributos-de-gestion-de-calidad-para-ma",
+      "title": "Script de datos maestros: Crear atributos de gestión de calidad para maestro de materiales/productos - MDS (BNY) (BNY_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud master data script BNY: create quality management attributes in the material master via MM01.",
+      "keywords": [
+        "Quality Management View of the Material Master",
+        "quality management",
+        "material master",
+        "inspection setup",
+        "automatic usage decision",
+        "quality info record",
+        "master data scripts",
+        "business roles",
+        "organizational units",
+        "BNY"
+      ],
+      "aliases": [
+        "BNY_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/qm-material-master-attributes"
+      ],
+      "path": "13-quality-ehs-and-compliance/script-de-datos-maestros-crear-atributos-de-gestion-de-calidad-para-ma.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNY_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Crear atributos de gestión de calidad para maestro de materiales/productos - MDS (BNY) (BNY_S4CLD2608_Master_Data_ES_XX) (Quality, EHS and Compliance) — Spanish (machine-translated) SAP S/4HANA Cloud master data script BNY: create quality management attributes in the material master via MM01 | keywords: Quality Management View of the Material Master, quality management, material master, inspection setup, automatic usage decision, quality info record, master data scripts, business roles, organizational units, BNY, BNY_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/script-de-datos-maestros-crear-ubicacion-ehs-mds-3sr-360",
+      "title": "Script de datos maestros: Crear ubicación EHS - MDS (3SR) (3SR_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script 3SR for creating an EHS location and assigning it to the EHS location structure in S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "EHS Locations",
+        "ehs location",
+        "master data scripts",
+        "location structure",
+        "business roles",
+        "fiori launchpad access",
+        "environment health safety",
+        "3SR"
+      ],
+      "aliases": [
+        "3SR_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-locations"
+      ],
+      "path": "13-quality-ehs-and-compliance/script-de-datos-maestros-crear-ubicacion-ehs-mds-3sr-360.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3SR_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Crear ubicación EHS - MDS (3SR) (3SR_S4CLD2608_Master_Data_ES_XX) (Quality, EHS and Compliance) — Spanish (machine-translated) master data script 3SR for creating an EHS location and assigning it to the EHS location structure in S/4HANA Cloud Public Edition | keywords: EHS Locations, ehs location, master data scripts, location structure, business roles, fiori launchpad access, environment health safety, 3SR, 3SR_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/stammdatenskript-informationsmaterial-fur-chemische-compliance-ehs-anl",
+      "title": "Stammdatenskript: Informationsmaterial für chemische Compliance (EHS) anlegen - SDS (65Z) (65Z_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (65Z) for creating a material master for EHS chemical compliance information in SAP S/4HANA Cloud Public Edition 2608 via Fiori app F4864.",
+      "keywords": [
+        "EHS Products and Chemical Compliance Materials for Waste",
+        "ehs chemical compliance",
+        "material master",
+        "master data scripts",
+        "waste management",
+        "business roles",
+        "65Z"
+      ],
+      "aliases": [
+        "65Z_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-waste-management-products"
+      ],
+      "path": "13-quality-ehs-and-compliance/stammdatenskript-informationsmaterial-fur-chemische-compliance-ehs-anl.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/65Z_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Informationsmaterial für chemische Compliance (EHS) anlegen - SDS (65Z) (65Z_S4CLD2608_Master_Data_DE_XX) (Quality, EHS and Compliance) — German master data script (65Z) for creating a material master for EHS chemical compliance information in SAP S/4HANA Cloud Public Edition 2608 via Fiori app F4864 | keywords: EHS Products and Chemical Compliance Materials for Waste, ehs chemical compliance, material master, master data scripts, waste management, business roles, 65Z, 65Z_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/stammdatenskript-qualitatsmanagementattribute-fur-material-produktstam",
+      "title": "Stammdatenskript: Qualitätsmanagementattribute für Material-/Produktstamm anlegen – SDS (BNY) (BNY_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud 2608 master data script (BNY) for creating quality management view data on a material master via MM01 as product data specialist.",
+      "keywords": [
+        "Quality Management View of the Material Master",
+        "quality management data",
+        "material master",
+        "inspection types",
+        "automatic usage decision",
+        "quality info record",
+        "business roles",
+        "required organizational units",
+        "master data scripts",
+        "BNY"
+      ],
+      "aliases": [
+        "BNY_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/qm-material-master-attributes"
+      ],
+      "path": "13-quality-ehs-and-compliance/stammdatenskript-qualitatsmanagementattribute-fur-material-produktstam.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNY_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Qualitätsmanagementattribute für Material-/Produktstamm anlegen – SDS (BNY) (BNY_S4CLD2608_Master_Data_DE_XX) (Quality, EHS and Compliance) — German SAP S/4HANA Cloud 2608 master data script (BNY) for creating quality management view data on a material master via MM01 as product data specialist | keywords: Quality Management View of the Material Master, quality management data, material master, inspection types, automatic usage decision, quality info record, business roles, required organizational units, master data scripts, BNY, BNY_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/stammdatenskript-qualitatsprufplan-anlegen-sds-bnq-652",
+      "title": "Stammdatenskript: Qualitätsprüfplan anlegen – SDS (BNQ) (BNQ_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script (BNQ): step-by-step creation and maintenance of quality inspection plans and their prerequisite QM master data.",
+      "keywords": [
+        "Quality Inspection Plans",
+        "inspection plans",
+        "inspection plan maintenance",
+        "master inspection characteristics",
+        "code groups",
+        "selected sets",
+        "sampling plans",
+        "dynamic modification rules",
+        "copy inspection plan",
+        "class characteristic link"
+      ],
+      "aliases": [
+        "BNQ_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/inspection-plans"
+      ],
+      "path": "13-quality-ehs-and-compliance/stammdatenskript-qualitatsprufplan-anlegen-sds-bnq-652.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNQ_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Qualitätsprüfplan anlegen – SDS (BNQ) (BNQ_S4CLD2608_Master_Data_DE_XX) (Quality, EHS and Compliance) — German SAP S/4HANA Cloud Public Edition 2608 master data script (BNQ): step-by-step creation and maintenance of quality inspection plans and their prerequisite QM master data | keywords: Quality Inspection Plans, inspection plans, inspection plan maintenance, master inspection characteristics, code groups, selected sets, sampling plans, dynamic modification rules, copy inspection plan, class characteristic link, BNQ_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/substance-volume-tracking-4ol-ae-test-script-sap-s-4hana-cloud-public",
+      "title": "Substance Volume Tracking (4OL_AE) - Test Script, SAP S/4HANA Cloud Public Edition (4OL_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 4OL_AE: prerequisites and test steps for substance volume tracking across purchasing, manufacturing and sales.",
+      "keywords": [
+        "Chemical Compliance and Product Marketability",
+        "substance volume tracking",
+        "import responsibility",
+        "compliance requirements",
+        "legal entity mappings",
+        "included movement types",
+        "basic compliance data",
+        "monitor substance volumes",
+        "purchasing process",
+        "process manufacturing"
+      ],
+      "aliases": [
+        "4OL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/chemical-compliance-and-marketability"
+      ],
+      "path": "13-quality-ehs-and-compliance/substance-volume-tracking-4ol-ae-test-script-sap-s-4hana-cloud-public.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4OL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Substance Volume Tracking (4OL_AE) - Test Script, SAP S/4HANA Cloud Public Edition (4OL_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud test script for scope item 4OL_AE: prerequisites and test steps for substance volume tracking across purchasing, manufacturing and sales | keywords: Chemical Compliance and Product Marketability, substance volume tracking, import responsibility, compliance requirements, legal entity mappings, included movement types, basic compliance data, monitor substance volumes, purchasing process, process manufacturing, 4OL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-assess-marketability-of-a-product-31h-ae-sap-s-4hana-cloud",
+      "title": "Test Script: Assess Marketability of a Product (31H_AE) - SAP S/4HANA Cloud Public Edition (31H_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 31H: prerequisites and Fiori app steps to assess product marketability via substance data and supplier disclosures.",
+      "keywords": [
+        "Chemical Compliance and Product Marketability",
+        "product marketability",
+        "market assessment",
+        "substance assessment",
+        "supplier compliance disclosures",
+        "supply chain due diligence",
+        "compliance purposes",
+        "unpackaged products",
+        "analytical composition",
+        "material-based composition"
+      ],
+      "aliases": [
+        "31H_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/chemical-compliance-and-marketability"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-assess-marketability-of-a-product-31h-ae-sap-s-4hana-cloud.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/31H_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Assess Marketability of a Product (31H_AE) - SAP S/4HANA Cloud Public Edition (31H_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 31H: prerequisites and Fiori app steps to assess product marketability via substance data and supplier disclosures | keywords: Chemical Compliance and Product Marketability, product marketability, market assessment, substance assessment, supplier compliance disclosures, supply chain due diligence, compliance purposes, unpackaged products, analytical composition, material-based composition, 31H_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-audit-and-inspection-management-for-ehs-7z7-1241",
+      "title": "Test Script: Audit and Inspection Management for EHS (7Z7) (7Z7_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 7Z7: create EHS checklists, run inspections, and add CAPA tasks to findings.",
+      "keywords": [
+        "EHS Audits and Inspections",
+        "audit and inspection management",
+        "ehs checklists",
+        "inspections",
+        "capa tasks",
+        "findings management",
+        "business roles",
+        "test prerequisites",
+        "demo data",
+        "three-system landscape"
+      ],
+      "aliases": [
+        "7Z7_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-audits-and-inspections"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-audit-and-inspection-management-for-ehs-7z7-1241.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7Z7_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Audit and Inspection Management for EHS (7Z7) (7Z7_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 7Z7: create EHS checklists, run inspections, and add CAPA tasks to findings | keywords: EHS Audits and Inspections, audit and inspection management, ehs checklists, inspections, capa tasks, findings management, business roles, test prerequisites, demo data, three-system landscape, 7Z7_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-chemical-compliance-approval-for-purchased-material-and-su",
+      "title": "Test Script: Chemical Compliance Approval for Purchased Material and Supplier (31G_AE) (31G_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 31G_AE: assess raw material marketability, approve suppliers, process supplier disclosures.",
+      "keywords": [
+        "Chemical Compliance and Product Marketability",
+        "chemical compliance",
+        "supplier approval",
+        "marketability assessment",
+        "raw material composition",
+        "compliance purpose",
+        "compliance disclosure",
+        "supplier assignment",
+        "raw material master data",
+        "test scripts"
+      ],
+      "aliases": [
+        "31G_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/chemical-compliance-and-marketability"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-chemical-compliance-approval-for-purchased-material-and-su.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/31G_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Chemical Compliance Approval for Purchased Material and Supplier (31G_AE) (31G_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 31G_AE: assess raw material marketability, approve suppliers, process supplier disclosures | keywords: Chemical Compliance and Product Marketability, chemical compliance, supplier approval, marketability assessment, raw material composition, compliance purpose, compliance disclosure, supplier assignment, raw material master data, test scripts, 31G_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-chemical-compliance-in-the-value-chain-31j-ae-sap-s-4hana",
+      "title": "Test Script: Chemical Compliance in the Value Chain (31J_AE) - SAP S/4HANA Cloud Public Edition 2608 (31J_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 31J_AE: compliance marketability checks on sales orders, DG classification, market and customer assessments, with prerequisites.",
+      "keywords": [
+        "Chemical Compliance and Product Marketability",
+        "compliance marketability check",
+        "sales order blocking",
+        "product market assessment",
+        "marketability assessment release",
+        "customer compliance check",
+        "dangerous goods classification",
+        "unpackaged products",
+        "compliance purposes",
+        "product master compliance relevance"
+      ],
+      "aliases": [
+        "31J_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/chemical-compliance-and-marketability"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-chemical-compliance-in-the-value-chain-31j-ae-sap-s-4hana.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/31J_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Chemical Compliance in the Value Chain (31J_AE) - SAP S/4HANA Cloud Public Edition 2608 (31J_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP test script for scope item 31J_AE: compliance marketability checks on sales orders, DG classification, market and customer assessments, with prerequisites | keywords: Chemical Compliance and Product Marketability, compliance marketability check, sales order blocking, product market assessment, marketability assessment release, customer compliance check, dangerous goods classification, unpackaged products, compliance purposes, product master compliance relevance, 31J_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-compliance-management-for-environment-health-and-safety-4c",
+      "title": "Test Script: Compliance Management for Environment, Health, and Safety (4C8) - SAP S/4HANA Cloud Public Edition (4C8_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4C8: EHS compliance management (locations, permits, requirements, tasks, deviations) with step tables.",
+      "keywords": [
+        "Environmental Compliance and Emissions Management",
+        "ehs compliance management",
+        "test scripts",
+        "ehs locations",
+        "permits",
+        "compliance requirements",
+        "compliance obligation assignments",
+        "compliance tasks",
+        "task execution",
+        "task monitoring"
+      ],
+      "aliases": [
+        "4C8_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/environmental-compliance-and-emissions"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-compliance-management-for-environment-health-and-safety-4c.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4C8_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Compliance Management for Environment, Health, and Safety (4C8) - SAP S/4HANA Cloud Public Edition (4C8_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4C8: EHS compliance management (locations, permits, requirements, tasks, deviations) with step tables | keywords: Environmental Compliance and Emissions Management, ehs compliance management, test scripts, ehs locations, permits, compliance requirements, compliance obligation assignments, compliance tasks, task execution, task monitoring, 4C8_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-compliance-management-with-sap-global-trade-services-24j-a",
+      "title": "Test Script: Compliance Management with SAP Global Trade Services (24J_AE) (24J_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 24J: GTS document transfer settings, test steps for transferred documents and reprocessing, GTS mapping appendix.",
+      "keywords": [
+        "SAP GTS Compliance and Preference Management Integration",
+        "global trade services integration",
+        "document transfer control settings",
+        "trade compliance checks",
+        "export control statement",
+        "transferred document check",
+        "document reprocessing",
+        "gts configuration mapping",
+        "business roles",
+        "business conditions"
+      ],
+      "aliases": [
+        "24J_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/gts-compliance-and-preference"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-compliance-management-with-sap-global-trade-services-24j-a.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/24J_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Compliance Management with SAP Global Trade Services (24J_AE) (24J_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 24J: GTS document transfer settings, test steps for transferred documents and reprocessing, GTS mapping appendix | keywords: SAP GTS Compliance and Preference Management Integration, global trade services integration, document transfer control settings, trade compliance checks, export control statement, transferred document check, document reprocessing, gts configuration mapping, business roles, business conditions, 24J_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-dangerous-goods-in-the-value-chain-3g8-ae-sap-s-4hana-clou",
+      "title": "Test Script: Dangerous Goods in the Value Chain (3G8_AE) - SAP S/4HANA Cloud Public Edition (3G8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3G8 (AE): dangerous goods transport checks in sales orders and outbound deliveries, with prerequisites and steps.",
+      "keywords": [
+        "Dangerous Goods Classification and Checks",
+        "dangerous goods",
+        "transport permissibility check",
+        "sales order creation",
+        "outbound delivery",
+        "picking and goods issue",
+        "transport restrictions",
+        "dangerous goods status",
+        "sales order fulfillment monitor",
+        "transport check rules"
+      ],
+      "aliases": [
+        "3G8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/dangerous-goods"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-dangerous-goods-in-the-value-chain-3g8-ae-sap-s-4hana-clou.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3G8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Dangerous Goods in the Value Chain (3G8_AE) - SAP S/4HANA Cloud Public Edition (3G8_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 3G8 (AE): dangerous goods transport checks in sales orders and outbound deliveries, with prerequisites and steps | keywords: Dangerous Goods Classification and Checks, dangerous goods, transport permissibility check, sales order creation, outbound delivery, picking and goods issue, transport restrictions, dangerous goods status, sales order fulfillment monitor, transport check rules, 3G8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-embargo-control-1wc-ae-sap-s-4hana-cloud-public-edition-76",
+      "title": "Test Script: Embargo Control (1WC_AE) - SAP S/4HANA Cloud Public Edition (1WC_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 1WC Embargo Control (AE, company code 3310): prerequisites, configuration, and outbound/inbound embargo block, release and analysis steps.",
+      "keywords": [
+        "Embargo Control",
+        "trade compliance",
+        "countries under embargo",
+        "outbound process",
+        "inbound process",
+        "embargo configuration",
+        "blocked documents",
+        "business partner test data",
+        "condition records",
+        "business roles"
+      ],
+      "aliases": [
+        "1WC_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/embargo-control"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-embargo-control-1wc-ae-sap-s-4hana-cloud-public-edition-76.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1WC_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Embargo Control (1WC_AE) - SAP S/4HANA Cloud Public Edition (1WC_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP test script for scope item 1WC Embargo Control (AE, company code 3310): prerequisites, configuration, and outbound/inbound embargo block, release and analysis steps | keywords: Embargo Control, trade compliance, countries under embargo, outbound process, inbound process, embargo configuration, blocked documents, business partner test data, condition records, business roles, 1WC_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-emissions-management-4xd-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: Emissions Management (4XD) - SAP S/4HANA Cloud Public Edition (4XD_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for Emissions Management (4XD): GHG compliance requirement, scenarios, data entry, deviation, annual report.",
+      "keywords": [
+        "Environmental Compliance and Emissions Management",
+        "emissions management",
+        "test scripts",
+        "compliance requirements",
+        "environmental limits",
+        "ghg equations",
+        "compliance scenarios",
+        "scenario activities",
+        "environmental data recording",
+        "environmental data monitoring"
+      ],
+      "aliases": [
+        "4XD_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/environmental-compliance-and-emissions"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-emissions-management-4xd-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4XD_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Emissions Management (4XD) - SAP S/4HANA Cloud Public Edition (4XD_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for Emissions Management (4XD): GHG compliance requirement, scenarios, data entry, deviation, annual report | keywords: Environmental Compliance and Emissions Management, emissions management, test scripts, compliance requirements, environmental limits, ghg equations, compliance scenarios, scenario activities, environmental data recording, environmental data monitoring, 4XD_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-first-article-inspection-consumer-products-7l4-ae-sap-s-4h",
+      "title": "Test Script: First Article Inspection – Consumer Products (7L4_AE), SAP S/4HANA Cloud Public Edition (7L4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 7L4: first article inspection (FAI) and regular goods receipt inspection with PPAP in the quality info record.",
+      "keywords": [
+        "First Article Inspection",
+        "production part approval process",
+        "quality info record",
+        "inspection plans",
+        "goods receipt inspection",
+        "inspection results recording",
+        "usage decision",
+        "rejected FAI reinspection",
+        "business roles",
+        "master data"
+      ],
+      "aliases": [
+        "7L4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/first-article-inspection"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-first-article-inspection-consumer-products-7l4-ae-sap-s-4h.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7L4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: First Article Inspection – Consumer Products (7L4_AE), SAP S/4HANA Cloud Public Edition (7L4_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 7L4: first article inspection (FAI) and regular goods receipt inspection with PPAP in the quality info record | keywords: First Article Inspection, production part approval process, quality info record, inspection plans, goods receipt inspection, inspection results recording, usage decision, rejected FAI reinspection, business roles, master data, 7L4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-label-management-6mt-ae-sap-s-4hana-cloud-public-edition-1",
+      "title": "Test Script: Label Management (6MT_AE) - SAP S/4HANA Cloud Public Edition (6MT_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 6MT Label Management: prerequisites, print queue setup, generic and delivery label test steps.",
+      "keywords": [
+        "Safety Data Sheet Authoring, Distribution and Labels",
+        "label management",
+        "label printing",
+        "compliance requirements",
+        "label configuration",
+        "label assignment",
+        "logistic labels",
+        "print queues",
+        "safety data sheet contacts",
+        "outbound delivery"
+      ],
+      "aliases": [
+        "6MT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/safety-data-sheets-and-labels"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-label-management-6mt-ae-sap-s-4hana-cloud-public-edition-1.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6MT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Label Management (6MT_AE) - SAP S/4HANA Cloud Public Edition (6MT_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 6MT Label Management: prerequisites, print queue setup, generic and delivery label test steps | keywords: Safety Data Sheet Authoring, Distribution and Labels, label management, label printing, compliance requirements, label configuration, label assignment, logistic labels, print queues, safety data sheet contacts, outbound delivery, 6MT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-lean-incident-management-reporting-3fp-ae-sap-s-4hana-clou",
+      "title": "Test Script: Lean Incident Management Reporting (3FP_AE) - SAP S/4HANA Cloud Public Edition (3FP_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script (scope item 3FP, release 2608) for incident, near miss and safety observation reporting, investigations, tasks, OSHA/BG reports and workplace safety.",
+      "keywords": [
+        "EHS Incident Management",
+        "incident reporting",
+        "incident management",
+        "near miss",
+        "safety observation",
+        "incident investigation",
+        "incident tasks",
+        "regulatory reports",
+        "osha electronic submission",
+        "workplace safety overview"
+      ],
+      "aliases": [
+        "3FP_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/ehs-incident-management"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-lean-incident-management-reporting-3fp-ae-sap-s-4hana-clou.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3FP_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lean Incident Management Reporting (3FP_AE) - SAP S/4HANA Cloud Public Edition (3FP_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP test script (scope item 3FP, release 2608) for incident, near miss and safety observation reporting, investigations, tasks, OSHA/BG reports and workplace safety | keywords: EHS Incident Management, incident reporting, incident management, near miss, safety observation, incident investigation, incident tasks, regulatory reports, osha electronic submission, workplace safety overview, 3FP_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-lean-management-of-change-process-4yx-sap-s-4hana-cloud-pu",
+      "title": "Test Script: Lean Management of Change Process (4YX) - SAP S/4HANA Cloud Public Edition (4YX_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4YX, Lean Management of Change: change request lifecycle, analysis apps and change request type configuration.",
+      "keywords": [
+        "Lean Management of Change",
+        "management of change",
+        "change requests",
+        "change request approval",
+        "initial review",
+        "change activities",
+        "activity templates",
+        "change request types",
+        "change request closure",
+        "change analysis dashboards"
+      ],
+      "aliases": [
+        "4YX_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/management-of-change"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-lean-management-of-change-process-4yx-sap-s-4hana-cloud-pu.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4YX_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lean Management of Change Process (4YX) - SAP S/4HANA Cloud Public Edition (4YX_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4YX, Lean Management of Change: change request lifecycle, analysis apps and change request type configuration | keywords: Lean Management of Change, management of change, change requests, change request approval, initial review, change activities, activity templates, change request types, change request closure, change analysis dashboards, 4YX_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-manage-safety-data-sheets-for-products-3vr-ae-sap-s-4hana",
+      "title": "Test Script: Manage Safety Data Sheets for Products (3VR_AE) - SAP S/4HANA Cloud Public Edition (3VR_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition 2608 test script for scope item 3VR (AE): prerequisites and steps to upload, contact-set, ship and monitor safety data sheets.",
+      "keywords": [
+        "Safety Data Sheet Authoring, Distribution and Labels",
+        "safety data sheets",
+        "safety data sheet upload",
+        "safety data sheet shipment",
+        "shipment monitoring",
+        "sds contact data",
+        "unpackaged products",
+        "compliance purposes",
+        "product compliance",
+        "regulation application"
+      ],
+      "aliases": [
+        "3VR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/safety-data-sheets-and-labels"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-manage-safety-data-sheets-for-products-3vr-ae-sap-s-4hana.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3VR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Manage Safety Data Sheets for Products (3VR_AE) - SAP S/4HANA Cloud Public Edition (3VR_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — S/4HANA Cloud Public Edition 2608 test script for scope item 3VR (AE): prerequisites and steps to upload, contact-set, ship and monitor safety data sheets | keywords: Safety Data Sheet Authoring, Distribution and Labels, safety data sheets, safety data sheet upload, safety data sheet shipment, shipment monitoring, sds contact data, unpackaged products, compliance purposes, product compliance, regulation application, 3VR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-occupational-health-for-environment-health-and-safety-7za",
+      "title": "Test Script: Occupational Health for Environment, Health, and Safety (7ZA) - SAP S/4HANA Cloud Public Edition (7ZA_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 7ZA Occupational Health: prerequisite configuration, then health centers, protocols, appointments and health service requests.",
+      "keywords": [
+        "Health and Safety Management and Occupational Health",
+        "occupational health",
+        "number ranges",
+        "location types",
+        "preliminary configuration",
+        "health protocols",
+        "health centers",
+        "health service providers",
+        "health center appointments",
+        "health service requests"
+      ],
+      "aliases": [
+        "7ZA_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/health-and-safety-and-occupational-health"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-occupational-health-for-environment-health-and-safety-7za.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7ZA_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Occupational Health for Environment, Health, and Safety (7ZA) - SAP S/4HANA Cloud Public Edition (7ZA_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — Test script for scope item 7ZA Occupational Health: prerequisite configuration, then health centers, protocols, appointments and health service requests | keywords: Health and Safety Management and Occupational Health, occupational health, number ranges, location types, preliminary configuration, health protocols, health centers, health service providers, health center appointments, health service requests, 7ZA_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-permit-to-work-7z4-ae-sap-s-4hana-cloud-public-edition-123",
+      "title": "Test Script: Permit to Work (7Z4_AE) - SAP S/4HANA Cloud Public Edition (7Z4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 7Z4 (AE) Permit to Work: configuration prerequisites and test steps for work permit templates and work permits, 2608 release.",
+      "keywords": [
+        "Permit to Work",
+        "work permit lifecycle",
+        "work permit templates",
+        "permit types",
+        "work permit approval",
+        "permit template types",
+        "nature of work",
+        "permit to work profile",
+        "teams and responsibilities",
+        "function profiles"
+      ],
+      "aliases": [
+        "7Z4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/permit-to-work"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-permit-to-work-7z4-ae-sap-s-4hana-cloud-public-edition-123.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7Z4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Permit to Work (7Z4_AE) - SAP S/4HANA Cloud Public Edition (7Z4_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP test script for scope item 7Z4 (AE) Permit to Work: configuration prerequisites and test steps for work permit templates and work permits, 2608 release | keywords: Permit to Work, work permit lifecycle, work permit templates, permit types, work permit approval, permit template types, nature of work, permit to work profile, teams and responsibilities, function profiles, 7Z4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-preference-management-with-sap-global-trade-services-3jx-a",
+      "title": "Test Script: Preference Management with SAP Global Trade Services (3JX_AE) (3JX_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 3JX_AE: SAP GTS Preference Management with S/4HANA Cloud Public Edition, covering LTSD worklists and configurable materials.",
+      "keywords": [
+        "SAP GTS Compliance and Preference Management Integration",
+        "preference management",
+        "long-term vendor declarations",
+        "global trade services integration",
+        "preference determination",
+        "configurable materials",
+        "document transfer settings",
+        "master data transfer",
+        "background jobs",
+        "gts configuration"
+      ],
+      "aliases": [
+        "3JX_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/gts-compliance-and-preference"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-preference-management-with-sap-global-trade-services-3jx-a.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3JX_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Preference Management with SAP Global Trade Services (3JX_AE) (3JX_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — Test script for scope item 3JX_AE: SAP GTS Preference Management with S/4HANA Cloud Public Edition, covering LTSD worklists and configurable materials | keywords: SAP GTS Compliance and Preference Management Integration, preference management, long-term vendor declarations, global trade services integration, preference determination, configurable materials, document transfer settings, master data transfer, background jobs, gts configuration, 3JX_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-quality-management-for-complaints-against-suppliers-2f9-ae",
+      "title": "Test Script: Quality Management for Complaints Against Suppliers (2F9_AE) (2F9_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script for scope item 2F9: supplier complaint quality notifications (QM01/QM02/QM12) and optional complaints (F8685).",
+      "keywords": [
+        "Quality Notifications for Customer and Supplier Complaints",
+        "complaints against suppliers",
+        "quality notifications",
+        "defect capture",
+        "quality notification tasks",
+        "supplier root cause analysis",
+        "complaint processing",
+        "return purchase orders",
+        "test scripts",
+        "test prerequisites"
+      ],
+      "aliases": [
+        "2F9_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/complaint-quality-notifications"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-quality-management-for-complaints-against-suppliers-2f9-ae.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2F9_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Quality Management for Complaints Against Suppliers (2F9_AE) (2F9_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud 2608 (AE) test script for scope item 2F9: supplier complaint quality notifications (QM01/QM02/QM12) and optional complaints (F8685) | keywords: Quality Notifications for Customer and Supplier Complaints, complaints against suppliers, quality notifications, defect capture, quality notification tasks, supplier root cause analysis, complaint processing, return purchase orders, test scripts, test prerequisites, 2F9_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-quality-management-in-discrete-and-process-manufacturing-1",
+      "title": "Test Script: Quality Management in Discrete and Process Manufacturing (1E1_AE) (1E1_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1E1 (AE): QM inspections, SPC control charts and usage decisions in discrete and process manufacturing.",
+      "keywords": [
+        "Quality Inspection in Manufacturing",
+        "quality management",
+        "quality inspection",
+        "inspection results recording",
+        "usage decision",
+        "control charts",
+        "inspection plan",
+        "master inspection characteristics",
+        "discrete manufacturing",
+        "process manufacturing"
+      ],
+      "aliases": [
+        "1E1_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-inspection-in-manufacturing"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-quality-management-in-discrete-and-process-manufacturing-1.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1E1_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Quality Management in Discrete and Process Manufacturing (1E1_AE) (1E1_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1E1 (AE): QM inspections, SPC control charts and usage decisions in discrete and process manufacturing | keywords: Quality Inspection in Manufacturing, quality management, quality inspection, inspection results recording, usage decision, control charts, inspection plan, master inspection characteristics, discrete manufacturing, process manufacturing, 1E1_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-quality-management-in-discrete-manufacturing-consumer-prod",
+      "title": "Test Script: Quality Management in Discrete Manufacturing – Consumer Products (5HK_AE) (5HK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5HK_AE: make-to-stock discrete manufacturing of coffee displays with integrated QM, plant 3310.",
+      "keywords": [
+        "Quality Inspection in Manufacturing",
+        "quality management",
+        "discrete manufacturing",
+        "inspection lots",
+        "usage decision",
+        "inspection results recording",
+        "in-process inspection",
+        "early goods receipt inspection",
+        "production orders",
+        "material requirements planning"
+      ],
+      "aliases": [
+        "5HK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-inspection-in-manufacturing"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-quality-management-in-discrete-manufacturing-consumer-prod.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5HK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Quality Management in Discrete Manufacturing – Consumer Products (5HK_AE) (5HK_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5HK_AE: make-to-stock discrete manufacturing of coffee displays with integrated QM, plant 3310 | keywords: Quality Inspection in Manufacturing, quality management, discrete manufacturing, inspection lots, usage decision, inspection results recording, in-process inspection, early goods receipt inspection, production orders, material requirements planning, 5HK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-quality-management-in-sales-1mp-ae-sap-s-4hana-cloud-publi",
+      "title": "Test Script: Quality Management in Sales (1MP_AE) - SAP S/4HANA Cloud Public Edition (1MP_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script, SAP S/4HANA Cloud scope item 1MP_AE (UAE): quality inspection in outbound delivery, sales order to usage decision, goods issue or blocked stock.",
+      "keywords": [
+        "Quality Inspection in Procurement and Sales",
+        "quality inspection in sales",
+        "scope item testing",
+        "inspection lots",
+        "inspection results recording",
+        "usage decision",
+        "rejected material handling",
+        "goods issue posting",
+        "blocked stock transfer",
+        "outbound delivery"
+      ],
+      "aliases": [
+        "1MP_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-inspection-procurement-and-sales"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-quality-management-in-sales-1mp-ae-sap-s-4hana-cloud-publi.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1MP_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Quality Management in Sales (1MP_AE) - SAP S/4HANA Cloud Public Edition (1MP_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — Test script, SAP S/4HANA Cloud scope item 1MP_AE (UAE): quality inspection in outbound delivery, sales order to usage decision, goods issue or blocked stock | keywords: Quality Inspection in Procurement and Sales, quality inspection in sales, scope item testing, inspection lots, inspection results recording, usage decision, rejected material handling, goods issue posting, blocked stock transfer, outbound delivery, 1MP_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-quality-management-of-internal-problems-2qp-ae-sap-s-4hana",
+      "title": "Test Script: Quality Management of Internal Problems (2QP_AE) - SAP S/4HANA Cloud Public Edition (2QP_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2QP_AE: internal quality notifications, root cause analysis, corrective/preventive actions, closure (QM01/QM02/QM12).",
+      "keywords": [
+        "Quality Management of Internal Problems",
+        "quality notifications",
+        "internal problems",
+        "root cause analysis",
+        "corrective actions",
+        "preventive actions",
+        "defect capture",
+        "notification tasks",
+        "notification completion",
+        "notification worklists"
+      ],
+      "aliases": [
+        "2QP_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/internal-quality-problems"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-quality-management-of-internal-problems-2qp-ae-sap-s-4hana.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2QP_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Quality Management of Internal Problems (2QP_AE) - SAP S/4HANA Cloud Public Edition (2QP_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 2QP_AE: internal quality notifications, root cause analysis, corrective/preventive actions, closure (QM01/QM02/QM12) | keywords: Quality Management of Internal Problems, quality notifications, internal problems, root cause analysis, corrective actions, preventive actions, defect capture, notification tasks, notification completion, notification worklists, 2QP_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-request-regulatory-documentation-from-service-provider-6av",
+      "title": "Test Script: Request Regulatory Documentation from Service Provider (6AV) - SAP S/4HANA Cloud Public Edition (6AV_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 6AV: simulating cooperation with a regulatory documentation service provider via substance and product service requests.",
+      "keywords": [
+        "Safety Data Sheet Authoring, Distribution and Labels",
+        "regulatory documentation",
+        "service provider cooperation",
+        "reference service",
+        "private substance request",
+        "product request",
+        "service request status",
+        "substance data checks",
+        "product data entry",
+        "compliance requirement versions"
+      ],
+      "aliases": [
+        "6AV_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/safety-data-sheets-and-labels"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-request-regulatory-documentation-from-service-provider-6av.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6AV_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Request Regulatory Documentation from Service Provider (6AV) - SAP S/4HANA Cloud Public Edition (6AV_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP test script for scope item 6AV: simulating cooperation with a regulatory documentation service provider via substance and product service requests | keywords: Safety Data Sheet Authoring, Distribution and Labels, regulatory documentation, service provider cooperation, reference service, private substance request, product request, service request status, substance data checks, product data entry, compliance requirement versions, 6AV_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-restricted-party-screening-with-sap-watch-list-screening-1",
+      "title": "Test Script: Restricted Party Screening with SAP Watch List Screening (1WE_AE) (1WE_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1WE (AE): configuring and testing sanctioned party screening of BPs, sales and purchasing documents via SAP Watch List Screening.",
+      "keywords": [
+        "Restricted Party Screening with SAP Watch List Screening",
+        "watch list screening",
+        "restricted party screening",
+        "trade compliance configuration",
+        "screening hit resolution",
+        "business partner screening",
+        "sales order screening",
+        "purchase order screening",
+        "postprocessing jobs",
+        "business roles"
+      ],
+      "aliases": [
+        "1WE_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/restricted-party-screening"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-restricted-party-screening-with-sap-watch-list-screening-1.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1WE_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Restricted Party Screening with SAP Watch List Screening (1WE_AE) (1WE_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1WE (AE): configuring and testing sanctioned party screening of BPs, sales and purchasing documents via SAP Watch List Screening | keywords: Restricted Party Screening with SAP Watch List Screening, watch list screening, restricted party screening, trade compliance configuration, screening hit resolution, business partner screening, sales order screening, purchase order screening, postprocessing jobs, business roles, 1WE_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-safety-data-sheets-in-the-value-chain-3vq-ae-974",
+      "title": "Test Script: Safety Data Sheets in the Value Chain (3VQ_AE) (3VQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3VQ_AE: safety data sheet checks blocking sales orders and outbound deliveries, UAE (AE) localization.",
+      "keywords": [
+        "Safety Data Sheets in the Value Chain",
+        "safety data sheets",
+        "product compliance",
+        "sales order fulfillment",
+        "outbound delivery",
+        "compliance requests",
+        "test scripts",
+        "business roles",
+        "master data",
+        "unpackaged products"
+      ],
+      "aliases": [
+        "3VQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/safety-data-sheets"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-safety-data-sheets-in-the-value-chain-3vq-ae-974.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3VQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Safety Data Sheets in the Value Chain (3VQ_AE) (3VQ_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition test script for scope item 3VQ_AE: safety data sheet checks blocking sales orders and outbound deliveries, UAE (AE) localization | keywords: Safety Data Sheets in the Value Chain, safety data sheets, product compliance, sales order fulfillment, outbound delivery, compliance requests, test scripts, business roles, master data, unpackaged products, 3VQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-sap-fiori-analytical-apps-for-quality-management-2v0-875",
+      "title": "Test Script: SAP Fiori Analytical Apps for Quality Management (2V0) (2V0_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for SAP S/4HANA Cloud scope item 2V0: Quality Engineer/Technician overview pages and Fiori quality analytics apps, with roles and prerequisites.",
+      "keywords": [
+        "Quality Management Analytics",
+        "scope item test script",
+        "quality engineer overview",
+        "quality technician overview",
+        "inspection lot analytics",
+        "skip rate analysis",
+        "inspection lot detailed analytics",
+        "characteristic analytics",
+        "nonconformance analytics",
+        "defect management"
+      ],
+      "aliases": [
+        "2V0_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/quality-management-analytics"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-sap-fiori-analytical-apps-for-quality-management-2v0-875.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2V0_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: SAP Fiori Analytical Apps for Quality Management (2V0) (2V0_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — Test script for SAP S/4HANA Cloud scope item 2V0: Quality Engineer/Technician overview pages and Fiori quality analytics apps, with roles and prerequisites | keywords: Quality Management Analytics, scope item test script, quality engineer overview, quality technician overview, inspection lot analytics, skip rate analysis, inspection lot detailed analytics, characteristic analytics, nonconformance analytics, defect management, 2V0_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-sap-s-4hana-cloud-public-edition-legal-control-1w8-ae-767",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Legal Control (1W8_AE) (1W8_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 1W8 Legal Control (UAE, company code 3310): configuration, master data, control classes, licenses, allow/blocklisting rules, inbound and outbound checks.",
+      "keywords": [
+        "Trade Classification and Legal Control",
+        "legal control",
+        "trade compliance",
+        "control classes",
+        "product classification",
+        "trade licenses",
+        "allowlisting rules",
+        "blocklisting rules",
+        "license type rules",
+        "legal control configuration"
+      ],
+      "aliases": [
+        "1W8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/trade-classification-and-legal-control"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-sap-s-4hana-cloud-public-edition-legal-control-1w8-ae-767.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1W8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Legal Control (1W8_AE) (1W8_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — Test script for scope item 1W8 Legal Control (UAE, company code 3310): configuration, master data, control classes, licenses, allow/blocklisting rules, inbound and outbound checks | keywords: Trade Classification and Legal Control, legal control, trade compliance, control classes, product classification, trade licenses, allowlisting rules, blocklisting rules, license type rules, legal control configuration, 1W8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-supplier-compliance-in-the-value-chain-5oj-ae-1115",
+      "title": "Test Script: Supplier Compliance in the Value Chain (5OJ_AE) (5OJ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5OJ (AE) Supplier Compliance in the Value Chain: purchase order blocking by supplier assessment status.",
+      "keywords": [
+        "Supplier Compliance in the Value Chain",
+        "supplier compliance",
+        "purchase order blocking",
+        "supplier assessment",
+        "product compliance",
+        "compliance check configuration",
+        "business roles",
+        "master data",
+        "posting periods",
+        "demo data"
+      ],
+      "aliases": [
+        "5OJ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/supplier-compliance"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-supplier-compliance-in-the-value-chain-5oj-ae-1115.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OJ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Supplier Compliance in the Value Chain (5OJ_AE) (5OJ_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5OJ (AE) Supplier Compliance in the Value Chain: purchase order blocking by supplier assessment status | keywords: Supplier Compliance in the Value Chain, supplier compliance, purchase order blocking, supplier assessment, product compliance, compliance check configuration, business roles, master data, posting periods, demo data, 5OJ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-transfer-of-primary-master-data-for-sap-global-trade-servi",
+      "title": "Test Script: Transfer of Primary Master Data for SAP Global Trade Services (1WA) (1WA_S4CLD2608_BPD_EN_XX)",
+      "description": "S/4HANA Cloud Public Edition 2608 test script (1WA): transfer supplier, customer and product master data to SAP Global Trade Services via SOAP or RFC.",
+      "keywords": [
+        "Transfer of Contact Persons and BOMs to SAP GTS",
+        "global trade services integration",
+        "master data transfer",
+        "supplier master data",
+        "customer master data",
+        "product master data",
+        "changed master data",
+        "business partner replication",
+        "soap services configuration",
+        "filter criteria"
+      ],
+      "aliases": [
+        "1WA_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/gts-master-data-transfer"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-transfer-of-primary-master-data-for-sap-global-trade-servi.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1WA_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Transfer of Primary Master Data for SAP Global Trade Services (1WA) (1WA_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — S/4HANA Cloud Public Edition 2608 test script (1WA): transfer supplier, customer and product master data to SAP Global Trade Services via SOAP or RFC | keywords: Transfer of Contact Persons and BOMs to SAP GTS, global trade services integration, master data transfer, supplier master data, customer master data, product master data, changed master data, business partner replication, soap services configuration, filter criteria, 1WA_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/test-script-waste-management-60h-sap-s-4hana-cloud-public-edition-1139",
+      "title": "Test Script: Waste Management (60H) - SAP S/4HANA Cloud Public Edition (60H_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 60H Waste Management: EHS waste process from material data to transport documents.",
+      "keywords": [
+        "Waste Management",
+        "test scripts",
+        "waste material data",
+        "waste locations",
+        "disposers and transporters",
+        "waste permits",
+        "waste streams",
+        "disposal channels",
+        "waste transfer requests",
+        "waste transportation documents"
+      ],
+      "aliases": [
+        "60H_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/waste-management"
+      ],
+      "path": "13-quality-ehs-and-compliance/test-script-waste-management-60h-sap-s-4hana-cloud-public-edition-1139.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/60H_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Waste Management (60H) - SAP S/4HANA Cloud Public Edition (60H_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 60H Waste Management: EHS waste process from material data to transport documents | keywords: Waste Management, test scripts, waste material data, waste locations, disposers and transporters, waste permits, waste streams, disposal channels, waste transfer requests, waste transportation documents, 60H_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/transfer-of-bill-of-materials-for-sap-global-trade-services-24h-ae-805",
+      "title": "Transfer of Bill of Materials for SAP Global Trade Services (24H_AE) (24H_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script 24H_AE for scheduling BOM transfer to SAP Global Trade Services, plus GTS configuration appendix.",
+      "keywords": [
+        "Transfer of Contact Persons and BOMs to SAP GTS",
+        "bill of materials transfer",
+        "global trade services",
+        "changed master data transfer",
+        "legal units",
+        "plant assignment",
+        "cross-plant bom evaluation",
+        "application jobs",
+        "business roles",
+        "demo data"
+      ],
+      "aliases": [
+        "24H_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/gts-master-data-transfer"
+      ],
+      "path": "13-quality-ehs-and-compliance/transfer-of-bill-of-materials-for-sap-global-trade-services-24h-ae-805.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/24H_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Transfer of Bill of Materials for SAP Global Trade Services (24H_AE) (24H_S4CLD2608_BPD_EN_AE) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script 24H_AE for scheduling BOM transfer to SAP Global Trade Services, plus GTS configuration appendix | keywords: Transfer of Contact Persons and BOMs to SAP GTS, bill of materials transfer, global trade services, changed master data transfer, legal units, plant assignment, cross-plant bom evaluation, application jobs, business roles, demo data, 24H_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "13-quality-ehs-and-compliance/transfer-of-contact-person-for-sap-global-trade-services-24f-test-scri",
+      "title": "Transfer of Contact Person for SAP Global Trade Services (24F) - Test Script (24F_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 24F: transferring customer contact persons to SAP Global Trade Services via SOAP or RFC.",
+      "keywords": [
+        "Transfer of Contact Persons and BOMs to SAP GTS",
+        "contact person transfer",
+        "global trade services",
+        "business partner replication",
+        "soap services",
+        "filter criteria",
+        "value mapping",
+        "code lists",
+        "changed master data transfer",
+        "business roles"
+      ],
+      "aliases": [
+        "24F_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "topic/gts-master-data-transfer"
+      ],
+      "path": "13-quality-ehs-and-compliance/transfer-of-contact-person-for-sap-global-trade-services-24f-test-scri.md",
+      "cluster": "13-quality-ehs-and-compliance",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/24F_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Transfer of Contact Person for SAP Global Trade Services (24F) - Test Script (24F_S4CLD2608_BPD_EN_XX) (Quality, EHS and Compliance) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 24F: transferring customer contact persons to SAP Global Trade Services via SOAP or RFC | keywords: Transfer of Contact Persons and BOMs to SAP GTS, contact person transfer, global trade services, business partner replication, soap services, filter criteria, value mapping, code lists, changed master data transfer, business roles, 24F_S4CLD2608_BPD_EN_XX"
+    }
+  ]
+}

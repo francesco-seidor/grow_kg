@@ -1,0 +1,23 @@
+#
+#Tue Dec 19 04:13:04 UTC 2017
+OPSupplier_Sender_issuerDN=cn\=<issuer>
+S4CEBuyer_Receiver_proxyType_3=sapcc
+S4_host_URL=http\://ccf-715-api.wdf.sap.corp\:443/sap/bc/srt/scs/sap/invoicerequest_in
+HCP_Integration_Service_Error_auth_5=none
+MailUser_HCI_Error=mail_user_credetial
+S4CEBuyer_Receiver_allowChunking_5=1
+Mail_From_CPI_Error=mailfrom@mail.com
+HCP_Integration_Service_Error_ssl_6=off
+OPSupplier_Sender_enableBasicAuthentication_3=true
+Mail_Subject_CPI_Error=SAP CPI process error
+Mail_Body_CPI_Error=${in.body}
+S4CEBuyer_Receiver_cleanupHeaders_4=1
+S4_SOAP_Timeout=6000
+MailNotification=false
+S4CEBuyer_Receiver_authentication_6=Basic
+Mail_To_CPI_Error=mailto@mail.com
+EnableLogging=true
+OPSupplier_Sender_subjectDN=cn\=<sub>
+SMPT_Server_CPI_Error=mail.com\:587
+S4_user_credential=CCF715
+OPSupplier_Sender_address=/EDI/DeliveryRequest/DELVRY07

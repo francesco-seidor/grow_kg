@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(knowledge-base)",
+      "Skill(kb-build)",
+      "Skill(kb-update)",
+      "Skill(kb-ask)",
+      "Skill(kb-audit)",
+      "Skill(kb-export-project)",
+      "Agent",
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit(./.kb/**)",
+      "Edit(./wiki/**)",
+      "Edit(./exports/**)",
+      "Bash",
+      "Bash(python3 /private/tmp/claude-501/-Users-francescocaglianone-Developer-grow-KB/6437ed9a-7d96-45e9-8589-91893c6c6994/scratchpad/next_wave.py .kb/tranche-m.json 8)"
+    ],
+    "deny": [
+      "Edit(./raw_assets/**)",
+      "Bash(rm *)",
+      "Bash(rmdir *)"
+    ]
+  }
+}

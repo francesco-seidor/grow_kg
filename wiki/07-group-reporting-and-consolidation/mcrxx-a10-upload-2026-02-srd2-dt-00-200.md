@@ -1,0 +1,141 @@
+---
+id: 07-group-reporting-and-consolidation/mcrxx-a10-upload-2026-02-srd2-dt-00-200
+title: MCRXX A10 UPLOAD 2026 02 SRD2 DT 00 (MCRXX_A10_UPLOAD_2026_02_SRD2_DT_00)
+description: "Sample consolidation reporting-data upload template (version A10, fiscal year 2026, period 2) with amounts per consolidation unit MCXX00, MCXX01, MCXX02."
+cluster: 07-group-reporting-and-consolidation
+tags: [kb/group-reporting-and-consolidation, topic/matrix-consolidation-samples]
+aliases: [MCRXX_A10_UPLOAD_2026_02_SRD2_DT_00]
+keywords: [Matrix Consolidation Sample Data (MCRXX), consolidation data upload, financial statement items, reported financial data, consolidation units, upload parameters, MCRXX]
+sources: [raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/MCRXX_A10_UPLOAD_2026_02_SRD2_DT_00.xlsx]
+confidence: low
+status: active
+kind: verbatim
+doc_id: sap-best-practices-for-sap-s4hana-cloud-public-edition-2608-200
+topic: 07-group-reporting-and-consolidation/matrix-consolidation-samples
+language: ""
+part: 1/1
+created: 2026-10-12
+updated: 2026-10-12
+---
+
+# MCRXX A10 UPLOAD 2026 02 SRD2 DT 00 (MCRXX_A10_UPLOAD_2026_02_SRD2_DT_00)
+
+*Verbatim text of `raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/MCRXX_A10_UPLOAD_2026_02_SRD2_DT_00.xlsx`, extracted with `xlsx2md`. Grouped under **Matrix Consolidation Sample Data (MCRXX)** in Group Reporting and Consolidation. Nothing below the rule has been rewritten; headings are shifted one level down.*
+
+---
+
+## MCRXX A10 UPLOAD 2026 02 SRD2 DT 00
+
+### Sheet: MCRXX_A10_UPLOAD_2026_02_SRD2_D
+
+| * Parameters |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P | PERIODICAL |  | Input Type | X:periodic | blank: YTD |  |  |  |  |  |  |  |  |
+| P | UPDATEMODE | 1 | Update Mode: | 1: Delete all | 2: Overwrite | 5: Add |  |  |  |  |  |  |  |
+| P | DOCTY | 00 | Document type | 00; 0B… | if empty the first doctype posting level 00 will be taken |  |  |  |  |  |  |  |  |
+| * |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| D | ConsolidationChartOfAccounts | ConsolidationVersion | FiscalYear | FiscalPeriod | ConsolidationUnit | FinancialStatementItem | SubItemCategory | SubItem | PartnerConsolidationUnit | InvesteeConsolidationUnit | BaseUnit | QuantityInBaseUnit | AmountInLocalCurrency |
+| *D | RITCLG | RVERS | RYEAR | POPER | RBUNIT | RITEM | SITYP | SUBIT | RBUPTR | COICU | RUNIT | MSL | HSL |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 111100 | 1 | 915 |  |  |  |  | -9400 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 172100 | 1 | 920 | MCXX01 |  |  |  | 30000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 172100 | 1 | 930 | MCXX02 |  |  |  | -18750 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 211100 | 1 | 915 |  |  |  |  | 400 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 512000 | 2 | YB99 | MCXX01 |  |  |  | -11250 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 560000 | 2 | YB99 |  |  |  |  | 10000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 603000 | 2 | YB99 | MCXX01 |  |  |  | -200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX00 | 603000 | 2 | YB99 | MCXX02 |  |  |  | -800 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 111100 | 1 | 915 |  |  |  |  | 4910 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 121100 | 1 | 915 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 121190 | 1 | 935 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 122100 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 131100 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 141200 | 1 | 920 |  |  |  |  | 40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 141200 | 1 | 930 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 141200 | 1 | 955 |  |  |  |  | 60 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 164500 | 1 | 930 |  |  |  |  | -200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 164590 | 1 | 925 |  |  |  |  | -200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 164590 | 1 | 930 |  |  |  |  | 40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 172200 | 1 | 955 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 181100 | 1 | 930 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 182100 | 1 | 915 |  |  |  |  | -40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 211100 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 214200 | 1 | 915 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 221500 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 242100 | 1 | 925 |  |  |  |  | -140 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 242100 | 1 | 935 |  |  |  |  | 100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 261100 | 1 | 925 |  |  |  |  | -100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 261100 | 1 | 955 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 271100 | 1 | 930 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 314100 | 1 | 955 |  |  |  |  | 100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 314600 | 1 | 955 |  |  |  |  | -50 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 316000 | 1 | 906 |  |  |  |  | 800 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 316000 | 1 | 906 | MCXX00 |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 411100 | 2 | YB99 |  |  |  |  | -20000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 411200 | 2 | YB99 |  |  |  |  | -2000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 412100 | 2 | YB99 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 412200 | 2 | YB99 |  |  |  |  | 6000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 511200 | 2 | YB99 |  |  |  |  | -40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 513000 | 2 | YB99 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 514000 | 2 | YB99 |  |  |  |  | -100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 560000 | 2 | YB99 |  |  |  |  | 6760 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 571000 | 2 | YB99 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 584000 | 2 | YB99 |  |  |  |  | 140 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 602000 | 2 | YB99 |  |  |  |  | -60 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 652000 | 2 | YB99 |  |  |  |  | 100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 721000 | 2 | YB99 |  |  |  |  | 3000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX01 | 722000 | 2 | YB99 |  |  |  |  | 40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 111100 | 1 | 915 |  |  |  |  | 4910 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 121100 | 1 | 915 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 121190 | 1 | 935 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 122100 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 131100 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 141200 | 1 | 920 |  |  |  |  | 40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 141200 | 1 | 930 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 141200 | 1 | 955 |  |  |  |  | 60 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 164500 | 1 | 930 |  |  |  |  | -200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 164590 | 1 | 925 |  |  |  |  | -200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 164590 | 1 | 930 |  |  |  |  | 40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 172200 | 1 | 955 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 181100 | 1 | 930 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 182100 | 1 | 915 |  |  |  |  | -40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 211100 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 214200 | 1 | 915 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 221500 | 1 | 915 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 242100 | 1 | 925 |  |  |  |  | -140 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 242100 | 1 | 935 |  |  |  |  | 100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 261100 | 1 | 925 |  |  |  |  | -100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 261100 | 1 | 955 |  |  |  |  | 20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 271100 | 1 | 930 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 314100 | 1 | 955 |  |  |  |  | 100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 314600 | 1 | 955 |  |  |  |  | -50 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 316000 | 1 | 906 | MCXX00 |  |  |  | 800 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 316000 | 1 | 906 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 411100 | 2 | YB99 |  |  |  |  | -20000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 411200 | 2 | YB99 |  |  |  |  | -2000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 412100 | 2 | YB99 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 412200 | 2 | YB99 |  |  |  |  | 6000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 511200 | 2 | YB99 |  |  |  |  | -40 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 513000 | 2 | YB99 |  |  |  |  | -20 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 514000 | 2 | YB99 |  |  |  |  | -100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 560000 | 2 | YB99 |  |  |  |  | 6760 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 571000 | 2 | YB99 |  |  |  |  | 200 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 584000 | 2 | YB99 |  |  |  |  | 140 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 602000 | 2 | YB99 |  |  |  |  | -60 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 652000 | 2 | YB99 |  |  |  |  | 100 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 721000 | 2 | YB99 |  |  |  |  | 3000 |
+| 2 | Y1 | A10 | 2026 | 2 | MCXX02 | 722000 | 2 | YB99 |  |  |  |  | 40 |
+
+## Suspected conflicts
+
+> [!warning] Conflict
+> Flagged while digesting this document, not verified: Near-duplicate of the other MCRXX A10 upload template (2023 vs 2026); differs in fiscal year and in quantity/base unit on 172100 rows.
+
+## Connections
+- part-of :: [[_cluster]]
+- related-to :: [[07-group-reporting-and-consolidation/mcrxx-a10-mje-2025-12-pl-10-195]]
+- related-to :: [[07-group-reporting-and-consolidation/mcrxx-a10-mje-2026-02-pl-10-196]]
+- related-to :: [[07-group-reporting-and-consolidation/mcrxx-a10-upload-2025-12-srd2-dt-00-197]]
+- related-to :: [[07-group-reporting-and-consolidation/mcrxx-a10-upload-2025-12-srd2-dt-0b-198]]
+
+## Sources
+- `raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/MCRXX_A10_UPLOAD_2026_02_SRD2_DT_00.xlsx` — full document · extracted with `xlsx2md` · 7,570 chars in the whole document

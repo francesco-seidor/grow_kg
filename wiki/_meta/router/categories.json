@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "layer": 1,
+  "generated": "2026-10-12T11:48:15Z",
+  "vault": "wiki",
+  "usage": "Layer 1 of a two-layer router. Score the query against each category's description/keywords/embedding_text, pick the best with a confidence score, then load that category's index_path for layer 2.",
+  "count": 17,
+  "categories": [
+    {
+      "slug": "01-solution-foundation-and-platform",
+      "title": "Solution Foundation and Platform",
+      "description": "SSCUI configuration activity list and process steps, org units, fiscal year variants, scope item links, and platform services: output, events, archiving, data privacy, migration, testing.",
+      "keywords": [
+        "SSCUI",
+        "configuration activities",
+        "process steps",
+        "enterprise structure",
+        "org units",
+        "fiscal year variant",
+        "scope item",
+        "output management",
+        "business events",
+        "ILM",
+        "data privacy",
+        "CDS extraction",
+        "data migration",
+        "test automation",
+        "configuration",
+        "document management"
+      ],
+      "tags": [
+        "kb/solution-foundation-and-platform",
+        "kb/hub"
+      ],
+      "node_count": 119,
+      "deprecated_count": 0,
+      "hub_path": "01-solution-foundation-and-platform/_cluster.md",
+      "index_path": "_meta/router/01-solution-foundation-and-platform.json",
+      "embedding_text": "Solution Foundation and Platform — SSCUI configuration activity list and process steps, org units, fiscal year variants, scope item links, and platform services: output, events, archiving, data privacy, migration, testing | keywords: SSCUI, configuration activities, process steps, enterprise structure, org units, fiscal year variant, scope item, output management, business events, ILM, data privacy, CDS extraction, data migration, test automation, configuration, document management"
+    },
+    {
+      "slug": "02-business-partner-and-product-master-data",
+      "title": "Business Partner and Product Master Data",
+      "description": "Creating product masters by material type, configurable materials, product hierarchies, customer and supplier business partners, and master data consolidation, quality and mass load.",
+      "keywords": [
+        "product master",
+        "material type",
+        "business partner",
+        "customer master",
+        "supplier master",
+        "KMAT",
+        "product hierarchy",
+        "MDG",
+        "consolidation",
+        "mass maintenance",
+        "data quality"
+      ],
+      "tags": [
+        "kb/business-partner-and-product-master-data",
+        "kb/hub"
+      ],
+      "node_count": 99,
+      "deprecated_count": 0,
+      "hub_path": "02-business-partner-and-product-master-data/_cluster.md",
+      "index_path": "_meta/router/02-business-partner-and-product-master-data.json",
+      "embedding_text": "Business Partner and Product Master Data — Creating product masters by material type, configurable materials, product hierarchies, customer and supplier business partners, and master data consolidation, quality and mass load | keywords: product master, material type, business partner, customer master, supplier master, KMAT, product hierarchy, MDG, consolidation, mass maintenance, data quality"
+    },
+    {
+      "slug": "03-financial-accounting-and-close",
+      "title": "Financial Accounting and Close",
+      "description": "G/L accounts and journal entries, receivables, payables, direct debit, credit management, fixed assets, accruals, period-end close, intercompany postings, public sector.",
+      "keywords": [
+        "G/L account",
+        "YCOA",
+        "journal entry",
+        "accounts receivable",
+        "accounts payable",
+        "SEPA",
+        "credit management",
+        "fixed assets",
+        "period-end close",
+        "public sector",
+        "intercompany posting"
+      ],
+      "tags": [
+        "kb/financial-accounting-and-close",
+        "kb/hub"
+      ],
+      "node_count": 86,
+      "deprecated_count": 19,
+      "hub_path": "03-financial-accounting-and-close/_cluster.md",
+      "index_path": "_meta/router/03-financial-accounting-and-close.json",
+      "embedding_text": "Financial Accounting and Close — G/L accounts and journal entries, receivables, payables, direct debit, credit management, fixed assets, accruals, period-end close, intercompany postings, public sector | keywords: G/L account, YCOA, journal entry, accounts receivable, accounts payable, SEPA, credit management, fixed assets, period-end close, public sector, intercompany posting"
+    },
+    {
+      "slug": "04-tax-and-statutory-reporting",
+      "title": "Tax and Statutory Reporting",
+      "description": "Country VAT calculation and returns, Intrastat, EC sales lists and compliance formats, UAE tax codes, purchasing tax conditions, PEPPOL e-invoicing, Brazil Nota Fiscal and excise tax.",
+      "keywords": [
+        "VAT",
+        "tax code",
+        "VAT return",
+        "Intrastat",
+        "EC Sales List",
+        "advanced compliance reporting",
+        "PEPPOL",
+        "eDocument",
+        "Nota Fiscal",
+        "excise tax"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "kb/hub"
+      ],
+      "node_count": 31,
+      "deprecated_count": 0,
+      "hub_path": "04-tax-and-statutory-reporting/_cluster.md",
+      "index_path": "_meta/router/04-tax-and-statutory-reporting.json",
+      "embedding_text": "Tax and Statutory Reporting — Country VAT calculation and returns, Intrastat, EC sales lists and compliance formats, UAE tax codes, purchasing tax conditions, PEPPOL e-invoicing, Brazil Nota Fiscal and excise tax | keywords: VAT, tax code, VAT return, Intrastat, EC Sales List, advanced compliance reporting, PEPPOL, eDocument, Nota Fiscal, excise tax"
+    },
+    {
+      "slug": "05-treasury-and-cash-management",
+      "title": "Treasury and Cash Management",
+      "description": "Treasury instruments (debt, FX, derivatives, bonds, securities, guarantees, letters of credit) with IFRS/US GAAP valuation, market rates, bank fees and statements, cash pooling, liquidity.",
+      "keywords": [
+        "treasury",
+        "TRM",
+        "valuation area",
+        "FX",
+        "derivatives",
+        "bonds",
+        "securities",
+        "letter of credit",
+        "market rates",
+        "bank statement",
+        "bank fees",
+        "cash pooling",
+        "liquidity planning"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "kb/hub"
+      ],
+      "node_count": 82,
+      "deprecated_count": 0,
+      "hub_path": "05-treasury-and-cash-management/_cluster.md",
+      "index_path": "_meta/router/05-treasury-and-cash-management.json",
+      "embedding_text": "Treasury and Cash Management — Treasury instruments (debt, FX, derivatives, bonds, securities, guarantees, letters of credit) with IFRS/US GAAP valuation, market rates, bank fees and statements, cash pooling, liquidity | keywords: treasury, TRM, valuation area, FX, derivatives, bonds, securities, letter of credit, market rates, bank statement, bank fees, cash pooling, liquidity planning"
+    },
+    {
+      "slug": "06-management-accounting",
+      "title": "Management Accounting",
+      "description": "Cost centers, activity types, cost rates, allocations, profit centers, product costing, margin analysis, budgets, predictive accounting and event-based revenue recognition.",
+      "keywords": [
+        "controlling",
+        "cost center",
+        "activity type",
+        "cost rate",
+        "allocation",
+        "profit center",
+        "costing run",
+        "margin analysis",
+        "predictive accounting",
+        "revenue recognition"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "kb/hub"
+      ],
+      "node_count": 94,
+      "deprecated_count": 0,
+      "hub_path": "06-management-accounting/_cluster.md",
+      "index_path": "_meta/router/06-management-accounting.json",
+      "embedding_text": "Management Accounting — Cost centers, activity types, cost rates, allocations, profit centers, product costing, margin analysis, budgets, predictive accounting and event-based revenue recognition | keywords: controlling, cost center, activity type, cost rate, allocation, profit center, costing run, margin analysis, predictive accounting, revenue recognition"
+    },
+    {
+      "slug": "07-group-reporting-and-consolidation",
+      "title": "Group Reporting and Consolidation",
+      "description": "Consolidation units and FS item mapping, reported, investment and intercompany data uploads, group journal entries, matrix consolidation, expected results, ESG and group planning.",
+      "keywords": [
+        "group reporting",
+        "consolidation",
+        "consolidation unit",
+        "FS item",
+        "reported data upload",
+        "group journal entry",
+        "matrix consolidation",
+        "goodwill",
+        "ESG",
+        "group planning"
+      ],
+      "tags": [
+        "kb/group-reporting-and-consolidation",
+        "kb/hub"
+      ],
+      "node_count": 210,
+      "deprecated_count": 0,
+      "hub_path": "07-group-reporting-and-consolidation/_cluster.md",
+      "index_path": "_meta/router/07-group-reporting-and-consolidation.json",
+      "embedding_text": "Group Reporting and Consolidation — Consolidation units and FS item mapping, reported, investment and intercompany data uploads, group journal entries, matrix consolidation, expected results, ESG and group planning | keywords: group reporting, consolidation, consolidation unit, FS item, reported data upload, group journal entry, matrix consolidation, goodwill, ESG, group planning"
+    },
+    {
+      "slug": "08-sales-order-management",
+      "title": "Sales Order Management",
+      "description": "Inquiries, sales orders, pricing, free goods, customer hierarchies, ATP and substitution, third-party and intercompany sales, billing, memos, returns, complaints and card payments.",
+      "keywords": [
+        "sales order",
+        "pricing",
+        "free goods",
+        "customer hierarchy",
+        "ATP",
+        "substitution",
+        "third-party sales",
+        "intercompany sales",
+        "billing",
+        "credit memo",
+        "returns",
+        "complaints"
+      ],
+      "tags": [
+        "kb/sales-order-management",
+        "kb/hub"
+      ],
+      "node_count": 116,
+      "deprecated_count": 0,
+      "hub_path": "08-sales-order-management/_cluster.md",
+      "index_path": "_meta/router/08-sales-order-management.json",
+      "embedding_text": "Sales Order Management — Inquiries, sales orders, pricing, free goods, customer hierarchies, ATP and substitution, third-party and intercompany sales, billing, memos, returns, complaints and card payments | keywords: sales order, pricing, free goods, customer hierarchy, ATP, substitution, third-party sales, intercompany sales, billing, credit memo, returns, complaints"
+    },
+    {
+      "slug": "09-subscription-billing-and-contract-accounting",
+      "title": "Subscription Billing and Contract Accounting",
+      "description": "Subscription products, SAP Subscription Billing, Convergent Invoicing (billable and consumption items, rating, partner settlement) and FI-CA contract accounting integration.",
+      "keywords": [
+        "subscription",
+        "SAP Subscription Billing",
+        "convergent invoicing",
+        "billable items",
+        "consumption items",
+        "rating",
+        "FI-CA",
+        "contract accounting",
+        "provider contract"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "kb/hub"
+      ],
+      "node_count": 50,
+      "deprecated_count": 0,
+      "hub_path": "09-subscription-billing-and-contract-accounting/_cluster.md",
+      "index_path": "_meta/router/09-subscription-billing-and-contract-accounting.json",
+      "embedding_text": "Subscription Billing and Contract Accounting — Subscription products, SAP Subscription Billing, Convergent Invoicing (billable and consumption items, rating, partner settlement) and FI-CA contract accounting integration | keywords: subscription, SAP Subscription Billing, convergent invoicing, billable items, consumption items, rating, FI-CA, contract accounting, provider contract"
+    },
+    {
+      "slug": "10-procurement",
+      "title": "Procurement",
+      "description": "Purchase requisitions and purchase orders through goods receipt, info records, scheduling agreements, RFQs and sourcing, consignment, ERS, supplier evaluation, returns, Ariba and Fieldglass.",
+      "keywords": [
+        "purchase requisition",
+        "purchase order",
+        "goods receipt",
+        "purchasing",
+        "info record",
+        "scheduling agreement",
+        "RFQ",
+        "sourcing",
+        "consignment",
+        "ERS",
+        "supplier evaluation",
+        "SAP Ariba",
+        "guided buying",
+        "Fieldglass",
+        "pipeline"
+      ],
+      "tags": [
+        "kb/procurement",
+        "kb/hub"
+      ],
+      "node_count": 65,
+      "deprecated_count": 0,
+      "hub_path": "10-procurement/_cluster.md",
+      "index_path": "_meta/router/10-procurement.json",
+      "embedding_text": "Procurement — Purchase requisitions and purchase orders through goods receipt, info records, scheduling agreements, RFQs and sourcing, consignment, ERS, supplier evaluation, returns, Ariba and Fieldglass | keywords: purchase requisition, purchase order, goods receipt, purchasing, info record, scheduling agreement, RFQ, sourcing, consignment, ERS, supplier evaluation, SAP Ariba, guided buying, Fieldglass, pipeline"
+    },
+    {
+      "slug": "11-inventory-warehouse-and-transportation",
+      "title": "Inventory, Warehouse and Transportation",
+      "description": "Goods movements, stock transfers, physical inventory, batches and serial numbers, EWM bins, inbound, outbound, waves and RF, plus freight agreements, carriers and freight settlement.",
+      "keywords": [
+        "inventory",
+        "goods movement",
+        "stock transfer",
+        "physical inventory",
+        "batch",
+        "serial number",
+        "EWM",
+        "storage bin",
+        "wave",
+        "RF",
+        "freight agreement",
+        "carrier",
+        "transportation management"
+      ],
+      "tags": [
+        "kb/inventory-warehouse-and-transportation",
+        "kb/hub"
+      ],
+      "node_count": 101,
+      "deprecated_count": 0,
+      "hub_path": "11-inventory-warehouse-and-transportation/_cluster.md",
+      "index_path": "_meta/router/11-inventory-warehouse-and-transportation.json",
+      "embedding_text": "Inventory, Warehouse and Transportation — Goods movements, stock transfers, physical inventory, batches and serial numbers, EWM bins, inbound, outbound, waves and RF, plus freight agreements, carriers and freight settlement | keywords: inventory, goods movement, stock transfer, physical inventory, batch, serial number, EWM, storage bin, wave, RF, freight agreement, carrier, transportation management"
+    },
+    {
+      "slug": "12-production-and-manufacturing",
+      "title": "Production and Manufacturing",
+      "description": "Production master data (work centers, routings, BOMs, versions, PRTs, recipes) and discrete and process manufacturing: MTO, MTS, subcontracting, rework, kanban, MES.",
+      "keywords": [
+        "production",
+        "work center",
+        "routing",
+        "BOM",
+        "production version",
+        "PRT",
+        "master recipe",
+        "process order",
+        "MRP",
+        "subcontracting",
+        "rework",
+        "kanban",
+        "MES"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "kb/hub"
+      ],
+      "node_count": 98,
+      "deprecated_count": 0,
+      "hub_path": "12-production-and-manufacturing/_cluster.md",
+      "index_path": "_meta/router/12-production-and-manufacturing.json",
+      "embedding_text": "Production and Manufacturing — Production master data (work centers, routings, BOMs, versions, PRTs, recipes) and discrete and process manufacturing: MTO, MTS, subcontracting, rework, kanban, MES | keywords: production, work center, routing, BOM, production version, PRT, master recipe, process order, MRP, subcontracting, rework, kanban, MES"
+    },
+    {
+      "slug": "13-quality-ehs-and-compliance",
+      "title": "Quality, EHS and Compliance",
+      "description": "Quality planning, inspections and notifications, EHS locations, waste, audits and permits, dangerous goods, safety data sheets, product footprints, customs (GTS), embargo and sanctioned-party checks.",
+      "keywords": [
+        "quality management",
+        "inspection plan",
+        "quality notification",
+        "EHS",
+        "permit to work",
+        "dangerous goods",
+        "safety data sheet",
+        "carbon footprint",
+        "GTS",
+        "customs",
+        "embargo",
+        "sanctioned party"
+      ],
+      "tags": [
+        "kb/quality-ehs-and-compliance",
+        "kb/hub"
+      ],
+      "node_count": 80,
+      "deprecated_count": 0,
+      "hub_path": "13-quality-ehs-and-compliance/_cluster.md",
+      "index_path": "_meta/router/13-quality-ehs-and-compliance.json",
+      "embedding_text": "Quality, EHS and Compliance — Quality planning, inspections and notifications, EHS locations, waste, audits and permits, dangerous goods, safety data sheets, product footprints, customs (GTS), embargo and sanctioned-party checks | keywords: quality management, inspection plan, quality notification, EHS, permit to work, dangerous goods, safety data sheet, carbon footprint, GTS, customs, embargo, sanctioned party"
+    },
+    {
+      "slug": "14-maintenance-service-and-projects",
+      "title": "Maintenance, Service and Projects",
+      "description": "Technical objects and maintenance orders, service products, quotations, solution orders and analytics, and customer projects: project billing, time recording, staffing and ETO.",
+      "keywords": [
+        "plant maintenance",
+        "functional location",
+        "equipment",
+        "maintenance order",
+        "service product",
+        "service quotation",
+        "solution order",
+        "project billing",
+        "timesheet",
+        "resource management"
+      ],
+      "tags": [
+        "kb/maintenance-service-and-projects",
+        "kb/hub"
+      ],
+      "node_count": 97,
+      "deprecated_count": 0,
+      "hub_path": "14-maintenance-service-and-projects/_cluster.md",
+      "index_path": "_meta/router/14-maintenance-service-and-projects.json",
+      "embedding_text": "Maintenance, Service and Projects — Technical objects and maintenance orders, service products, quotations, solution orders and analytics, and customer projects: project billing, time recording, staffing and ETO | keywords: plant maintenance, functional location, equipment, maintenance order, service product, service quotation, solution order, project billing, timesheet, resource management"
+    },
+    {
+      "slug": "15-retail-operations",
+      "title": "Retail Operations",
+      "description": "Distribution center inbound and outbound, store ordering and returns, in-store inventory, store management, retail price valuation, consignment, DC replenishment and promotions.",
+      "keywords": [
+        "retail",
+        "distribution center",
+        "store",
+        "store ordering",
+        "in-store inventory",
+        "My Store",
+        "sales price valuation",
+        "omnichannel promotion"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "kb/hub"
+      ],
+      "node_count": 40,
+      "deprecated_count": 0,
+      "hub_path": "15-retail-operations/_cluster.md",
+      "index_path": "_meta/router/15-retail-operations.json",
+      "embedding_text": "Retail Operations — Distribution center inbound and outbound, store ordering and returns, in-store inventory, store management, retail price valuation, consignment, DC replenishment and promotions | keywords: retail, distribution center, store, store ordering, in-store inventory, My Store, sales price valuation, omnichannel promotion"
+    },
+    {
+      "slug": "16-two-tier-erp-and-central-finance",
+      "title": "Two-Tier ERP and Central Finance",
+      "description": "Headquarter-subsidiary scenarios between SAP Cloud ERP and ECC/Private Edition: integration setup, master data replication, intercompany supply, projects and Central Finance.",
+      "keywords": [
+        "two-tier ERP",
+        "headquarters",
+        "subsidiary",
+        "ECC",
+        "Private Edition",
+        "DRF",
+        "replication",
+        "IDoc",
+        "Central Finance"
+      ],
+      "tags": [
+        "kb/two-tier-erp-and-central-finance",
+        "kb/hub"
+      ],
+      "node_count": 33,
+      "deprecated_count": 0,
+      "hub_path": "16-two-tier-erp-and-central-finance/_cluster.md",
+      "index_path": "_meta/router/16-two-tier-erp-and-central-finance.json",
+      "embedding_text": "Two-Tier ERP and Central Finance — Headquarter-subsidiary scenarios between SAP Cloud ERP and ECC/Private Edition: integration setup, master data replication, intercompany supply, projects and Central Finance | keywords: two-tier ERP, headquarters, subsidiary, ECC, Private Edition, DRF, replication, IDoc, Central Finance"
+    },
+    {
+      "slug": "17-leasing-and-real-estate",
+      "title": "Leasing and Real Estate",
+      "description": "Real estate rental objects and contracts, lease-in and lease-out/sublease accounting in local, IFRS and US GAAP ledgers, sales-based rent, and earmarked funds from lease-in contracts.",
+      "keywords": [
+        "leasing",
+        "lease-in",
+        "lease-out",
+        "sublease",
+        "real estate",
+        "rental object",
+        "contract management",
+        "lease accounting",
+        "sales-based rent",
+        "earmarked funds"
+      ],
+      "tags": [
+        "kb/leasing-and-real-estate",
+        "kb/hub"
+      ],
+      "node_count": 19,
+      "deprecated_count": 0,
+      "hub_path": "17-leasing-and-real-estate/_cluster.md",
+      "index_path": "_meta/router/17-leasing-and-real-estate.json",
+      "embedding_text": "Leasing and Real Estate — Real estate rental objects and contracts, lease-in and lease-out/sublease accounting in local, IFRS and US GAAP ledgers, sales-based rent, and earmarked funds from lease-in contracts | keywords: leasing, lease-in, lease-out, sublease, real estate, rental object, contract management, lease accounting, sales-based rent, earmarked funds"
+    }
+  ]
+}

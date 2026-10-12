@@ -1,0 +1,1643 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "09-subscription-billing-and-contract-accounting",
+  "cluster_title": "Subscription Billing and Contract Accounting",
+  "cluster_description": "Subscription products, SAP Subscription Billing, Convergent Invoicing (billable and consumption items, rating, partner settlement) and FI-CA contract accounting integration.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 50,
+  "nodes": [
+    {
+      "id": "09-subscription-billing-and-contract-accounting/contract-accounting-company-initiated-payments-2dp-ae-test-script-813",
+      "title": "Contract Accounting – Company Initiated Payments (2DP_AE) Test Script (2DP_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2DP_AE (UAE): FI-CA company-initiated payments, payment runs, card orders, returns, revenue distribution.",
+      "keywords": [
+        "Contract Accounting Incoming and Outgoing Payments",
+        "company initiated payments",
+        "payment run",
+        "payment order with credit card",
+        "returns lot processing",
+        "outgoing payment processing",
+        "revenue distribution",
+        "payment media",
+        "manual returns lot",
+        "payment advice notes"
+      ],
+      "aliases": [
+        "2DP_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-payments"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/contract-accounting-company-initiated-payments-2dp-ae-test-script-813.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2DP_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Contract Accounting – Company Initiated Payments (2DP_AE) Test Script (2DP_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 2DP_AE (UAE): FI-CA company-initiated payments, payment runs, card orders, returns, revenue distribution | keywords: Contract Accounting Incoming and Outgoing Payments, company initiated payments, payment run, payment order with credit card, returns lot processing, outgoing payment processing, revenue distribution, payment media, manual returns lot, payment advice notes, 2DP_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/contract-accounting-enabling-of-products-with-variant-configuration-3l",
+      "title": "Contract Accounting – Enabling of Products with Variant Configuration (3L8_AE) – Test Script (3L8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3L8_AE: variant configuration products in provider contracts, with rating, billing and invoicing.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "variant configuration",
+        "provider contracts",
+        "contract accounting",
+        "variant pricing",
+        "billing and invoicing",
+        "test scripts",
+        "business roles",
+        "business conditions",
+        "demo data"
+      ],
+      "aliases": [
+        "3L8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/contract-accounting-enabling-of-products-with-variant-configuration-3l.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3L8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Contract Accounting – Enabling of Products with Variant Configuration (3L8_AE) – Test Script (3L8_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 3L8_AE: variant configuration products in provider contracts, with rating, billing and invoicing | keywords: Variant-Configured Products in Provider Contracts, variant configuration, provider contracts, contract accounting, variant pricing, billing and invoicing, test scripts, business roles, business conditions, demo data, 3L8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/convergent-invoicing-cost-handling-for-subscriptions-and-usage-6wd-ae",
+      "title": "Convergent Invoicing – Cost Handling for Subscriptions and Usage (6WD_AE) Test Script (6WD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6WD: posting cost of sales via billable items, billing and invoicing in Convergent Invoicing.",
+      "keywords": [
+        "Cost Handling for Subscriptions and Usage",
+        "convergent invoicing",
+        "cost posting",
+        "billable items",
+        "billing process",
+        "invoicing process",
+        "amount calculation key",
+        "test scripts",
+        "business roles",
+        "csv upload template"
+      ],
+      "aliases": [
+        "6WD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/cost-handling-for-subscriptions"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/convergent-invoicing-cost-handling-for-subscriptions-and-usage-6wd-ae.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6WD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Convergent Invoicing – Cost Handling for Subscriptions and Usage (6WD_AE) Test Script (6WD_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 6WD: posting cost of sales via billable items, billing and invoicing in Convergent Invoicing | keywords: Cost Handling for Subscriptions and Usage, convergent invoicing, cost posting, billable items, billing process, invoicing process, amount calculation key, test scripts, business roles, csv upload template, 6WD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/convergent-invoicing-intercompany-settlement-6wc-ae-1197",
+      "title": "Convergent Invoicing – Intercompany Settlement (6WC_AE) (6WC_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition test script (scope item 6WC_AE): configure and test Convergent Invoicing intercompany settlement, from billable items to payment.",
+      "keywords": [
+        "Revenue Sharing, Partner and Intercompany Settlement",
+        "intercompany settlement",
+        "convergent invoicing",
+        "intercompany settlement configuration",
+        "billable items",
+        "billing process",
+        "invoicing process",
+        "amount calculation key",
+        "company code groups",
+        "main and subtransactions"
+      ],
+      "aliases": [
+        "6WC_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/revenue-sharing-and-partner-settlement"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/convergent-invoicing-intercompany-settlement-6wc-ae-1197.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6WC_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Convergent Invoicing – Intercompany Settlement (6WC_AE) (6WC_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — S/4HANA Cloud Public Edition test script (scope item 6WC_AE): configure and test Convergent Invoicing intercompany settlement, from billable items to payment | keywords: Revenue Sharing, Partner and Intercompany Settlement, intercompany settlement, convergent invoicing, intercompany settlement configuration, billable items, billing process, invoicing process, amount calculation key, company code groups, main and subtransactions, 6WC_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/convergent-invoicing-invoice-correction-processing-2be-ae-test-script",
+      "title": "Convergent Invoicing – Invoice Correction Processing (2BE_AE) – Test Script (2BE_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud test script, scope item 2BE_AE: invoice correction via credit/debit memo billing requests, optional approval workflow, billing, invoicing, print.",
+      "keywords": [
+        "Convergent Invoicing: Recurring, One-Off and Usage…",
+        "invoice correction processing",
+        "credit and debit memos",
+        "billing requests",
+        "billing request approval",
+        "flexible workflow",
+        "convergent invoicing",
+        "billing process",
+        "invoicing process",
+        "scope item testing"
+      ],
+      "aliases": [
+        "2BE_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/recurring-and-one-off-billing"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/convergent-invoicing-invoice-correction-processing-2be-ae-test-script.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2BE_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Convergent Invoicing – Invoice Correction Processing (2BE_AE) – Test Script (2BE_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — S/4HANA Cloud test script, scope item 2BE_AE: invoice correction via credit/debit memo billing requests, optional approval workflow, billing, invoicing, print | keywords: Convergent Invoicing: Recurring, One-Off and Usage…, invoice correction processing, credit and debit memos, billing requests, billing request approval, flexible workflow, convergent invoicing, billing process, invoicing process, scope item testing, 2BE_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/convergent-invoicing-recurring-and-one-off-items-2t3-ae-test-script-86",
+      "title": "Convergent Invoicing – Recurring and One-Off Items (2T3_AE) Test Script (2T3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (2T3_AE) for Convergent Invoicing: billing plans, billable items, billing and invoicing runs.",
+      "keywords": [
+        "Convergent Invoicing: Recurring, One-Off and Usage…",
+        "convergent invoicing",
+        "billing plans",
+        "billing plan items",
+        "billing process",
+        "invoicing process",
+        "test scripts",
+        "business roles",
+        "prerequisites",
+        "billing documents"
+      ],
+      "aliases": [
+        "2T3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/recurring-and-one-off-billing"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/convergent-invoicing-recurring-and-one-off-items-2t3-ae-test-script-86.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2T3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Convergent Invoicing – Recurring and One-Off Items (2T3_AE) Test Script (2T3_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script (2T3_AE) for Convergent Invoicing: billing plans, billable items, billing and invoicing runs | keywords: Convergent Invoicing: Recurring, One-Off and Usage…, convergent invoicing, billing plans, billing plan items, billing process, invoicing process, test scripts, business roles, prerequisites, billing documents, 2T3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/criar-condicao-de-determinacao-de-precos-baseada-em-tipo-de-servico-md",
+      "title": "Criar condição de determinação de preços baseada em tipo de serviço – MDS (3GD) (3GD_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP master data script 3GD: creating service-type-based pricing conditions PST0, PST1, PST2 in VK12 as Pricing Specialist (convergent billing).",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "service-based pricing conditions",
+        "master data scripts",
+        "pricing condition types",
+        "condition records",
+        "convergent billing",
+        "pricing specialist role",
+        "sales organization",
+        "3GD"
+      ],
+      "aliases": [
+        "3GD_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/criar-condicao-de-determinacao-de-precos-baseada-em-tipo-de-servico-md.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3GD_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar condição de determinação de preços baseada em tipo de serviço – MDS (3GD) (3GD_S4CLD2608_Master_Data_PT_XX) (Subscription Billing and Contract Accounting) — Portuguese SAP master data script 3GD: creating service-type-based pricing conditions PST0, PST1, PST2 in VK12 as Pricing Specialist (convergent billing) | keywords: Consumption Items and Service-Type-Based Rating, service-based pricing conditions, master data scripts, pricing condition types, condition records, convergent billing, pricing specialist role, sales organization, 3GD, 3GD_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/master-data-script-create-product-master-for-consumption-based-billing",
+      "title": "Master Data Script: Create Product Master for Consumption Based Billing - MDS (3JA) (3JA_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (3JA) for creating a configurable product master with variant pricing for consumption-based billing.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "product master",
+        "consumption based billing",
+        "variant pricing",
+        "configurable material",
+        "characteristics and classes",
+        "configuration profile",
+        "material classification",
+        "sales data",
+        "business roles"
+      ],
+      "aliases": [
+        "3JA_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/master-data-script-create-product-master-for-consumption-based-billing.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3JA_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Product Master for Consumption Based Billing - MDS (3JA) (3JA_S4CLD2608_Master_Data_EN_XX) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition 2608 master data script (3JA) for creating a configurable product master with variant pricing for consumption-based billing | keywords: Variant-Configured Products in Provider Contracts, product master, consumption based billing, variant pricing, configurable material, characteristics and classes, configuration profile, material classification, sales data, business roles, 3JA_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/master-data-script-create-service-type-based-pricing-condition-mds-3gd",
+      "title": "Master Data Script - Create Service Type Based Pricing Condition - MDS (3GD) (3GD_S4CLD2608_Master_Data_EN_XX)",
+      "description": "Master data script (3GD) for creating service-type-based pricing conditions PST0, PST1, PST2 via Set Material Prices - Sales (VK12) for Convergent Invoicing rating.",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "pricing conditions",
+        "service type based pricing",
+        "master data scripts",
+        "condition types",
+        "convergent invoicing",
+        "business roles",
+        "sales organization",
+        "3GD"
+      ],
+      "aliases": [
+        "3GD_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/master-data-script-create-service-type-based-pricing-condition-mds-3gd.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3GD_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script - Create Service Type Based Pricing Condition - MDS (3GD) (3GD_S4CLD2608_Master_Data_EN_XX) (Subscription Billing and Contract Accounting) — Master data script (3GD) for creating service-type-based pricing conditions PST0, PST1, PST2 via Set Material Prices - Sales (VK12) for Convergent Invoicing rating | keywords: Consumption Items and Service-Type-Based Rating, pricing conditions, service type based pricing, master data scripts, condition types, convergent invoicing, business roles, sales organization, 3GD, 3GD_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/master-data-script-create-subscription-product-convergent-invoicing-md",
+      "title": "Master Data Script: Create Subscription Product Convergent Invoicing - MDS (5LP) (5LP_S4CLD2608_Master_Data_EN_XX)",
+      "description": "Step-by-step master data script (5LP) for S/4HANA Cloud Public Edition 2608: FI-CA business partner, contract account, SAP Subscription Billing products and SBPD/SBRE enrichment.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "business partner",
+        "customer master data",
+        "contract account",
+        "rate elements",
+        "rate plan templates",
+        "price calculation",
+        "lookup tables",
+        "product master data"
+      ],
+      "aliases": [
+        "5LP_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/master-data-script-create-subscription-product-convergent-invoicing-md.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LP_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Subscription Product Convergent Invoicing - MDS (5LP) (5LP_S4CLD2608_Master_Data_EN_XX) (Subscription Billing and Contract Accounting) — Step-by-step master data script (5LP) for S/4HANA Cloud Public Edition 2608: FI-CA business partner, contract account, SAP Subscription Billing products and SBPD/SBRE enrichment | keywords: Subscription Products and Rate Plans, subscription products, business partner, customer master data, contract account, rate elements, rate plan templates, price calculation, lookup tables, product master data, 5LP_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/master-data-script-create-subscription-product-sales-billing-mds-5bd-4",
+      "title": "Master Data Script: Create Subscription Product Sales Billing - MDS (5BD) (5BD_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (5BD): create subscription products and rate elements in SAP Subscription Billing, then enrich them in S/4HANA.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "rate elements",
+        "rate plan templates",
+        "pricing schemes",
+        "lookup tables",
+        "product master data",
+        "sbpd products",
+        "sbre products",
+        "organizational units"
+      ],
+      "aliases": [
+        "5BD_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/master-data-script-create-subscription-product-sales-billing-mds-5bd-4.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BD_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Subscription Product Sales Billing - MDS (5BD) (5BD_S4CLD2608_Master_Data_EN_XX) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition 2608 master data script (5BD): create subscription products and rate elements in SAP Subscription Billing, then enrich them in S/4HANA | keywords: Subscription Products and Rate Plans, subscription products, rate elements, rate plan templates, pricing schemes, lookup tables, product master data, sbpd products, sbre products, organizational units, 5BD_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/mds-3gd-319",
+      "title": "サービスタイプに基づく価格設定条件の登録 - MDS (3GD) (3GD_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script 3GD: maintaining service-type based pricing conditions PST0, PST1, PST2 via app VK12 for consolidated billing in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "service pricing conditions",
+        "condition type pst0",
+        "condition type pst1",
+        "condition type pst2",
+        "consolidated billing",
+        "business roles",
+        "sales organization",
+        "3GD"
+      ],
+      "aliases": [
+        "3GD_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/mds-3gd-319.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3GD_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "サービスタイプに基づく価格設定条件の登録 - MDS (3GD) (3GD_S4CLD2608_Master_Data_JA_XX) (Subscription Billing and Contract Accounting) — Japanese master data script 3GD: maintaining service-type based pricing conditions PST0, PST1, PST2 via app VK12 for consolidated billing in S/4HANA Cloud Public Edition 2608 | keywords: Consumption Items and Service-Type-Based Rating, service pricing conditions, condition type pst0, condition type pst1, condition type pst2, consolidated billing, business roles, sales organization, 3GD, 3GD_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/mds-3gd-321",
+      "title": "创建基于服务类型的定价条件 - MDS (3GD) (3GD_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 3GD for creating service-type-based pricing conditions PST0, PST1, PST2 via Manage Material Prices - Sales (VK12",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "pricing conditions",
+        "service-based pricing",
+        "master data script",
+        "convergent invoicing",
+        "condition types",
+        "business roles",
+        "3GD"
+      ],
+      "aliases": [
+        "3GD_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/mds-3gd-321.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3GD_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建基于服务类型的定价条件 - MDS (3GD) (3GD_S4CLD2608_Master_Data_ZH_XX) (Subscription Billing and Contract Accounting) — Chinese (machine-translated) master data script 3GD for creating service-type-based pricing conditions PST0, PST1, PST2 via Manage Material Prices - Sales (VK12 | keywords: Consumption Items and Service-Type-Based Rating, pricing conditions, service-based pricing, master data script, convergent invoicing, condition types, business roles, 3GD, 3GD_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/mds-3ja-325",
+      "title": "使用量基準料金計算の製品マスタ登録 - MDS (3JA) (3JA_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud Public Edition 2608 master data script (3JA): create configurable product master with characteristics, class, variant pricing for usage-based billing.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "product master",
+        "configurable material",
+        "characteristics",
+        "classes",
+        "configuration profile",
+        "variant pricing",
+        "usage-based billing",
+        "sales data",
+        "business roles"
+      ],
+      "aliases": [
+        "3JA_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/mds-3ja-325.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3JA_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "使用量基準料金計算の製品マスタ登録 - MDS (3JA) (3JA_S4CLD2608_Master_Data_JA_XX) (Subscription Billing and Contract Accounting) — Japanese SAP S/4HANA Cloud Public Edition 2608 master data script (3JA): create configurable product master with characteristics, class, variant pricing for usage-based billing | keywords: Variant-Configured Products in Provider Contracts, product master, configurable material, characteristics, classes, configuration profile, variant pricing, usage-based billing, sales data, business roles, 3JA_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/mds-3ja-327",
+      "title": "为基于消耗的开票创建产品主数据 - MDS (3JA) (3JA_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated SAP S/4HANA Cloud 2608 master data script (3JA): create configurable product master with characteristics, class, variant pricing for consumption-based billing.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "product master data",
+        "consumption-based billing",
+        "configurable material",
+        "characteristics",
+        "classes",
+        "configuration profile",
+        "variant pricing",
+        "sales data",
+        "material classification"
+      ],
+      "aliases": [
+        "3JA_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/mds-3ja-327.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3JA_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "为基于消耗的开票创建产品主数据 - MDS (3JA) (3JA_S4CLD2608_Master_Data_ZH_XX) (Subscription Billing and Contract Accounting) — Chinese machine-translated SAP S/4HANA Cloud 2608 master data script (3JA): create configurable product master with characteristics, class, variant pricing for consumption-based billing | keywords: Variant-Configured Products in Provider Contracts, product master data, consumption-based billing, configurable material, characteristics, classes, configuration profile, variant pricing, sales data, material classification, 3JA_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/mds-5bd-429",
+      "title": "创建订阅产品销售开票 - MDS (5BD) (5BD_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 5BD for SAP S/4HANA Cloud 2608: creating subscription billing products, rate elements, pricing lookup tables and S/4HANA product enrichment.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "rate elements",
+        "billing plan templates",
+        "pricing lookup tables",
+        "price calculation service",
+        "product master enrichment",
+        "sbpd and sbre product types",
+        "distribution chain",
+        "country versions"
+      ],
+      "aliases": [
+        "5BD_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/mds-5bd-429.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BD_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建订阅产品销售开票 - MDS (5BD) (5BD_S4CLD2608_Master_Data_ZH_XX) (Subscription Billing and Contract Accounting) — Chinese (machine-translated) master data script 5BD for SAP S/4HANA Cloud 2608: creating subscription billing products, rate elements, pricing lookup tables and S/4HANA product enrichment | keywords: Subscription Products and Rate Plans, subscription products, rate elements, billing plan templates, pricing lookup tables, price calculation service, product master enrichment, sbpd and sbre product types, distribution chain, country versions, 5BD_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/mds-5lp-451",
+      "title": "サブスクリプション製品統合請求の登録 - MDS (5LP) (5LP_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (5LP) for SAP S/4HANA Cloud Public Edition 2608: creating BPs, contract accounts, and subscription products in SAP Subscription Billing and S/4HANA.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "subscription billing",
+        "master data script",
+        "business partner",
+        "contract accounts",
+        "rate elements",
+        "rate plan templates",
+        "price calculation",
+        "lookup tables"
+      ],
+      "aliases": [
+        "5LP_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/mds-5lp-451.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LP_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "サブスクリプション製品統合請求の登録 - MDS (5LP) (5LP_S4CLD2608_Master_Data_JA_XX) (Subscription Billing and Contract Accounting) — Japanese master data script (5LP) for SAP S/4HANA Cloud Public Edition 2608: creating BPs, contract accounts, and subscription products in SAP Subscription Billing and S/4HANA | keywords: Subscription Products and Rate Plans, subscription products, subscription billing, master data script, business partner, contract accounts, rate elements, rate plan templates, price calculation, lookup tables, 5LP_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/sap-s-4hana-cloud-public-edition-convergent-invoicing-mds-5lp-453",
+      "title": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建订阅产品 Convergent Invoicing - MDS (5LP) (5LP_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 5LP: create business partners, contract accounts and subscription products in SAP Subscription Billing and enrich them in S/4HANA.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "business partner creation",
+        "customer master data",
+        "contract accounts",
+        "rate elements",
+        "billing plan templates",
+        "price calculation service",
+        "pricing lookup tables",
+        "product master enrichment"
+      ],
+      "aliases": [
+        "5LP_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/sap-s-4hana-cloud-public-edition-convergent-invoicing-mds-5lp-453.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LP_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 SAP S/4HANA Cloud Public Edition - 创建订阅产品 Convergent Invoicing - MDS (5LP) (5LP_S4CLD2608_Master_Data_ZH_XX) (Subscription Billing and Contract Accounting) — Chinese (machine-translated) master data script 5LP: create business partners, contract accounts and subscription products in SAP Subscription Billing and enrich them in S/4HANA | keywords: Subscription Products and Rate Plans, subscription products, business partner creation, customer master data, contract accounts, rate elements, billing plan templates, price calculation service, pricing lookup tables, product master enrichment, 5LP_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/sap-s-4hana-cloud-public-edition-mds-5bd-427",
+      "title": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - サブスクリプション製品販売請求の登録 - MDS (5BD) (5BD_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (5BD) for creating subscription products in SAP Subscription Billing, Price Calculation lookup tables, and extending SBPD/SBRE products in S/4HANA.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "rate elements",
+        "rate plan templates",
+        "pricing schemes",
+        "price lookup tables",
+        "product master data",
+        "subscription billing",
+        "sbpd product type",
+        "sbre product type"
+      ],
+      "aliases": [
+        "5BD_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/sap-s-4hana-cloud-public-edition-mds-5bd-427.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BD_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト SAP S/4HANA Cloud Public Edition - サブスクリプション製品販売請求の登録 - MDS (5BD) (5BD_S4CLD2608_Master_Data_JA_XX) (Subscription Billing and Contract Accounting) — Japanese master data script (5BD) for creating subscription products in SAP Subscription Billing, Price Calculation lookup tables, and extending SBPD/SBRE products in S/4HANA | keywords: Subscription Products and Rate Plans, subscription products, rate elements, rate plan templates, pricing schemes, price lookup tables, product master data, subscription billing, sbpd product type, sbre product type, 5BD_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-dados-mestre-criar-dados-mestre-do-produto-para-faturamento",
+      "title": "Script de dados mestre - Criar dados mestre do produto para faturamento baseado em consumo (3JA) (3JA_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (3JA) for SAP S/4HANA Cloud Public Edition: create configurable material with variant pricing for consumption-based billing.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "product master data",
+        "consumption-based billing",
+        "configurable material",
+        "characteristics",
+        "classes",
+        "configuration profile",
+        "material classification",
+        "variant pricing",
+        "sales data"
+      ],
+      "aliases": [
+        "3JA_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-dados-mestre-criar-dados-mestre-do-produto-para-faturamento.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3JA_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar dados mestre do produto para faturamento baseado em consumo (3JA) (3JA_S4CLD2608_Master_Data_PT_XX) (Subscription Billing and Contract Accounting) — Portuguese master data script (3JA) for SAP S/4HANA Cloud Public Edition: create configurable material with variant pricing for consumption-based billing | keywords: Variant-Configured Products in Provider Contracts, product master data, consumption-based billing, configurable material, characteristics, classes, configuration profile, material classification, variant pricing, sales data, 3JA_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-dados-mestre-criar-faturamento-convergente-de-produto-de-ass",
+      "title": "Script de dados mestre - Criar faturamento convergente de produto de assinatura - MDS (5LP) (5LP_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Master data script (PT) for SAP S/4HANA Cloud Public Edition 2608: create subscription products, rate elements, price lookup tables and enrich SBPD/SBRE products (5LP).",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "convergent billing",
+        "rate elements",
+        "rate plan templates",
+        "price calculation",
+        "lookup tables",
+        "product master enrichment",
+        "business partners",
+        "contract accounts"
+      ],
+      "aliases": [
+        "5LP_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-dados-mestre-criar-faturamento-convergente-de-produto-de-ass.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LP_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar faturamento convergente de produto de assinatura - MDS (5LP) (5LP_S4CLD2608_Master_Data_PT_XX) (Subscription Billing and Contract Accounting) — Master data script (PT) for SAP S/4HANA Cloud Public Edition 2608: create subscription products, rate elements, price lookup tables and enrich SBPD/SBRE products (5LP) | keywords: Subscription Products and Rate Plans, subscription products, convergent billing, rate elements, rate plan templates, price calculation, lookup tables, product master enrichment, business partners, contract accounts, 5LP_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-dados-mestre-criar-faturamento-de-vendas-de-produto-de-assin",
+      "title": "Script de dados mestre - Criar faturamento de vendas de produto de assinatura - MDS (5BD) (5BD_S4CLD2608_Master_Data_PT_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (PT, 5BD): create subscription products in SAP Subscription Billing and extend them in S/4HANA.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "rate elements",
+        "rate plan templates",
+        "pricing schemes",
+        "lookup tables",
+        "product master data",
+        "sbpd products",
+        "sbre products",
+        "distribution chains"
+      ],
+      "aliases": [
+        "5BD_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-dados-mestre-criar-faturamento-de-vendas-de-produto-de-assin.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BD_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar faturamento de vendas de produto de assinatura - MDS (5BD) (5BD_S4CLD2608_Master_Data_PT_XX) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition 2608 master data script (PT, 5BD): create subscription products in SAP Subscription Billing and extend them in S/4HANA | keywords: Subscription Products and Rate Plans, subscription products, rate elements, rate plan templates, pricing schemes, lookup tables, product master data, sbpd products, sbre products, distribution chains, 5BD_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-creacion-de-facturacion-convergente-de-produc",
+      "title": "Script de datos maestros - Creación de facturación convergente de productos de suscripción (5LP) (5LP_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish master data script (5LP, S/4HANA Cloud Public Edition 2608): create business partner, contract account, subscription products, price tables and extend SBPD/SBRE products.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "business partner",
+        "contract accounts",
+        "rate elements",
+        "rate plan templates",
+        "price calculation",
+        "lookup tables",
+        "product master extension",
+        "subscription billing"
+      ],
+      "aliases": [
+        "5LP_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-creacion-de-facturacion-convergente-de-produc.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LP_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de facturación convergente de productos de suscripción (5LP) (5LP_S4CLD2608_Master_Data_ES_XX) (Subscription Billing and Contract Accounting) — Spanish master data script (5LP, S/4HANA Cloud Public Edition 2608): create business partner, contract account, subscription products, price tables and extend SBPD/SBRE products | keywords: Subscription Products and Rate Plans, subscription products, business partner, contract accounts, rate elements, rate plan templates, price calculation, lookup tables, product master extension, subscription billing, 5LP_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-creacion-de-maestro-de-productos-para-factura",
+      "title": "Script de datos maestros - Creación de maestro de productos para facturación basada en consumo (3JA) (3JA_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish SAP S/4HANA Cloud 2608 master data script (3JA): create configurable material with variant pricing for consumption-based billing, step by step.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "master data script",
+        "configurable material",
+        "characteristics",
+        "classes",
+        "configuration profile",
+        "variant pricing",
+        "material classification",
+        "sales data",
+        "business roles"
+      ],
+      "aliases": [
+        "3JA_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-creacion-de-maestro-de-productos-para-factura.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3JA_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de maestro de productos para facturación basada en consumo (3JA) (3JA_S4CLD2608_Master_Data_ES_XX) (Subscription Billing and Contract Accounting) — Spanish SAP S/4HANA Cloud 2608 master data script (3JA): create configurable material with variant pricing for consumption-based billing, step by step | keywords: Variant-Configured Products in Provider Contracts, master data script, configurable material, characteristics, classes, configuration profile, variant pricing, material classification, sales data, business roles, 3JA_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-crear-condicion-de-determinacion-de-precios-b",
+      "title": "Script de datos maestros - Crear condición de determinación de precios basada en clase de servicio – MDS (3GD) (3GD_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script (3GD) for SAP S/4HANA Cloud: creating service-class-based pricing conditions PST0, PST1, PST2 via VK12.",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "pricing conditions",
+        "service class pricing",
+        "master data scripts",
+        "condition records",
+        "convergent billing",
+        "business roles",
+        "sales organization",
+        "3GD"
+      ],
+      "aliases": [
+        "3GD_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-crear-condicion-de-determinacion-de-precios-b.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3GD_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear condición de determinación de precios basada en clase de servicio – MDS (3GD) (3GD_S4CLD2608_Master_Data_ES_XX) (Subscription Billing and Contract Accounting) — Spanish (machine-translated) master data script (3GD) for SAP S/4HANA Cloud: creating service-class-based pricing conditions PST0, PST1, PST2 via VK12 | keywords: Consumption Items and Service-Type-Based Rating, pricing conditions, service class pricing, master data scripts, condition records, convergent billing, business roles, sales organization, 3GD, 3GD_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-crear-facturacion-de-ventas-de-productos-de-s",
+      "title": "Script de datos maestros: Crear facturación de ventas de productos de suscripción - MDS (5BD) (5BD_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish SAP S/4HANA Cloud Public Edition 2608 master data script (5BD): create subscription products, rate elements, rate plan templates and pricing lookup tables.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "rate elements",
+        "rate plan templates",
+        "pricing schemes",
+        "pricing lookup tables",
+        "product master extension",
+        "subscription billing",
+        "master data scripts",
+        "organizational units"
+      ],
+      "aliases": [
+        "5BD_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/script-de-datos-maestros-crear-facturacion-de-ventas-de-productos-de-s.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BD_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Crear facturación de ventas de productos de suscripción - MDS (5BD) (5BD_S4CLD2608_Master_Data_ES_XX) (Subscription Billing and Contract Accounting) — Spanish SAP S/4HANA Cloud Public Edition 2608 master data script (5BD): create subscription products, rate elements, rate plan templates and pricing lookup tables | keywords: Subscription Products and Rate Plans, subscription products, rate elements, rate plan templates, pricing schemes, pricing lookup tables, product master extension, subscription billing, master data scripts, organizational units, 5BD_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/serviceartbasierte-preiskondition-anlegen-sds-3gd-316",
+      "title": "Serviceartbasierte Preiskondition anlegen – SDS (3GD) (3GD_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script 3GD: create service-type-based sales price conditions PST0, PST1, PST2 via Set Material Prices - Sales (VK12) for convergent billing rating.",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "service type pricing",
+        "price conditions",
+        "material prices",
+        "condition types",
+        "convergent billing",
+        "sales organization",
+        "business roles",
+        "3GD"
+      ],
+      "aliases": [
+        "3GD_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/serviceartbasierte-preiskondition-anlegen-sds-3gd-316.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3GD_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Serviceartbasierte Preiskondition anlegen – SDS (3GD) (3GD_S4CLD2608_Master_Data_DE_XX) (Subscription Billing and Contract Accounting) — German master data script 3GD: create service-type-based sales price conditions PST0, PST1, PST2 via Set Material Prices - Sales (VK12) for convergent billing rating | keywords: Consumption Items and Service-Type-Based Rating, service type pricing, price conditions, material prices, condition types, convergent billing, sales organization, business roles, 3GD, 3GD_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/stammdatenskript-abonnementprodukt-anlegen-convergent-invoicing-sds-5l",
+      "title": "Stammdatenskript: Abonnementprodukt anlegen (Convergent Invoicing) – SDS (5LP) (5LP_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script (5LP): create business partner, contract account, Subscription Billing products, rate plans, price lookup tables.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "business partner",
+        "customer master data",
+        "contract account",
+        "rate plan elements",
+        "rate plan templates",
+        "price calculation services",
+        "price lookup tables",
+        "product master enrichment"
+      ],
+      "aliases": [
+        "5LP_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/stammdatenskript-abonnementprodukt-anlegen-convergent-invoicing-sds-5l.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5LP_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Abonnementprodukt anlegen (Convergent Invoicing) – SDS (5LP) (5LP_S4CLD2608_Master_Data_DE_XX) (Subscription Billing and Contract Accounting) — German SAP S/4HANA Cloud Public Edition 2608 master data script (5LP): create business partner, contract account, Subscription Billing products, rate plans, price lookup tables | keywords: Subscription Products and Rate Plans, subscription products, business partner, customer master data, contract account, rate plan elements, rate plan templates, price calculation services, price lookup tables, product master enrichment, 5LP_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/stammdatenskript-abonnementprodukt-anlegen-sales-billing-sds-5bd-424",
+      "title": "Stammdatenskript: Abonnementprodukt anlegen (Sales Billing) – SDS (5BD) (5BD_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (5BD) for creating subscription products in SAP Subscription Billing, Price Calculation Service and S/4HANA Cloud Public Edition 2608, US and DE variants.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription products",
+        "rate elements",
+        "rate plan templates",
+        "pricing schemes",
+        "lookup tables",
+        "product master enrichment",
+        "sbpd products",
+        "sbre products",
+        "price calculation service"
+      ],
+      "aliases": [
+        "5BD_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/stammdatenskript-abonnementprodukt-anlegen-sales-billing-sds-5bd-424.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5BD_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Abonnementprodukt anlegen (Sales Billing) – SDS (5BD) (5BD_S4CLD2608_Master_Data_DE_XX) (Subscription Billing and Contract Accounting) — German master data script (5BD) for creating subscription products in SAP Subscription Billing, Price Calculation Service and S/4HANA Cloud Public Edition 2608, US and DE variants | keywords: Subscription Products and Rate Plans, subscription products, rate elements, rate plan templates, pricing schemes, lookup tables, product master enrichment, sbpd products, sbre products, price calculation service, 5BD_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/stammdatenskript-produktstamm-fur-verbrauchsbasierte-abrechnung-anlege",
+      "title": "Stammdatenskript - Produktstamm für verbrauchsbasierte Abrechnung anlegen (3JA) (3JA_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (3JA) for SAP S/4HANA Cloud Public Edition: create configurable material with variant pricing for consumption-based billing.",
+      "keywords": [
+        "Variant-Configured Products in Provider Contracts",
+        "product master data",
+        "consumption-based billing",
+        "configurable material",
+        "characteristics",
+        "classes",
+        "configuration profile",
+        "material classification",
+        "variant pricing",
+        "sales data"
+      ],
+      "aliases": [
+        "3JA_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/variant-configured-products-in-provider-contracts"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/stammdatenskript-produktstamm-fur-verbrauchsbasierte-abrechnung-anlege.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3JA_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Produktstamm für verbrauchsbasierte Abrechnung anlegen (3JA) (3JA_S4CLD2608_Master_Data_DE_XX) (Subscription Billing and Contract Accounting) — German master data script (3JA) for SAP S/4HANA Cloud Public Edition: create configurable material with variant pricing for consumption-based billing | keywords: Variant-Configured Products in Provider Contracts, product master data, consumption-based billing, configurable material, characteristics, classes, configuration profile, material classification, variant pricing, sales data, 3JA_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-cash-application-47i-ae-1001",
+      "title": "Test Script - Contract Accounting – Cash Application (47I_AE) (47I_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 47I: ML-based cash application in FI-CA, transferring and processing clarification cases and posting ML proposals.",
+      "keywords": [
+        "Contract Accounting Cash Application",
+        "cash application",
+        "machine learning clearing",
+        "clarification cases",
+        "inference jobs",
+        "payment lots",
+        "confidence rating",
+        "contract accounting",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "47I_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-cash-application"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-cash-application-47i-ae-1001.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/47I_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Contract Accounting – Cash Application (47I_AE) (47I_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud 2608 test script for scope item 47I: ML-based cash application in FI-CA, transferring and processing clarification cases and posting ML proposals | keywords: Contract Accounting Cash Application, cash application, machine learning clearing, clarification cases, inference jobs, payment lots, confidence rating, contract accounting, business roles, test scripts, 47I_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-contract-based-revenue-recognition-3l3",
+      "title": "Test Script: Contract Accounting – Contract-Based Revenue Recognition (3L3_AE) (3L3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3L3 (AE): integrating contract accounting with contract-based revenue recognition, with prerequisites and steps.",
+      "keywords": [
+        "Contract Accounting with Contract-Based Revenue Recognition",
+        "contract-based revenue recognition",
+        "contract accounting",
+        "provider contracts",
+        "revenue accounting transfer",
+        "account determination",
+        "contract attributes",
+        "business roles",
+        "convergent invoicing",
+        "contract change scenarios"
+      ],
+      "aliases": [
+        "3L3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-contract-based-revenue-recognition"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-contract-based-revenue-recognition-3l3.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3L3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Contract-Based Revenue Recognition (3L3_AE) (3L3_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3L3 (AE): integrating contract accounting with contract-based revenue recognition, with prerequisites and steps | keywords: Contract Accounting with Contract-Based Revenue Recognition, contract-based revenue recognition, contract accounting, provider contracts, revenue accounting transfer, account determination, contract attributes, business roles, convergent invoicing, contract change scenarios, 3L3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-daily-and-monthly-closing-2bk-ae-812",
+      "title": "Test Script: Contract Accounting – Daily and Monthly Closing (2BK_AE) (2BK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 2BK, UAE/AED) for FI-CA day-end and month-end closing: value adjustments, write-offs, FX valuation, reclassification, G/L reconciliation.",
+      "keywords": [
+        "Contract Accounting Closing and Valuation",
+        "doubtful receivables",
+        "value adjustments",
+        "write-offs",
+        "foreign currency valuation",
+        "reclassifications",
+        "day-end closing",
+        "month-end closing",
+        "reconciliation keys",
+        "general ledger transfer"
+      ],
+      "aliases": [
+        "2BK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-closing-and-valuation"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-daily-and-monthly-closing-2bk-ae-812.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2BK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Daily and Monthly Closing (2BK_AE) (2BK_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script (scope item 2BK, UAE/AED) for FI-CA day-end and month-end closing: value adjustments, write-offs, FX valuation, reclassification, G/L reconciliation | keywords: Contract Accounting Closing and Valuation, doubtful receivables, value adjustments, write-offs, foreign currency valuation, reclassifications, day-end closing, month-end closing, reconciliation keys, general ledger transfer, 2BK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-group-ledger-ifrs-33x-ae-905",
+      "title": "Test Script: Contract Accounting – Group Ledger IFRS (33X_AE) (33X_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 33X_AE: IFRS ledger doubtful receivables, FX valuation, reclassifications and closing in FI-CA.",
+      "keywords": [
+        "Contract Accounting Closing and Valuation",
+        "doubtful receivables",
+        "value adjustments",
+        "expected credit loss",
+        "foreign currency valuation",
+        "deferred inverse posting",
+        "reclassifications",
+        "group ledger ifrs",
+        "contract accounting",
+        "day-end closing"
+      ],
+      "aliases": [
+        "33X_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-closing-and-valuation"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-group-ledger-ifrs-33x-ae-905.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33X_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Group Ledger IFRS (33X_AE) (33X_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud test script for scope item 33X_AE: IFRS ledger doubtful receivables, FX valuation, reclassifications and closing in FI-CA | keywords: Contract Accounting Closing and Valuation, doubtful receivables, value adjustments, expected credit loss, foreign currency valuation, deferred inverse posting, reclassifications, group ledger ifrs, contract accounting, day-end closing, 33X_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-group-ledger-us-gaap-33v-ae-904",
+      "title": "Test Script: Contract Accounting – Group Ledger US GAAP (33V_AE) (33V_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script (33V_AE, company code 3310): US GAAP ledger FI-CA steps for doubtful receivables, FX valuation, reclassification, closing.",
+      "keywords": [
+        "Contract Accounting Closing and Valuation",
+        "doubtful receivables",
+        "value adjustments",
+        "credit loss allowances",
+        "foreign currency valuation",
+        "deferred inverse posting",
+        "reclassifications",
+        "group ledger us gaap",
+        "contract accounting",
+        "day-end closing"
+      ],
+      "aliases": [
+        "33V_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-closing-and-valuation"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-group-ledger-us-gaap-33v-ae-904.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33V_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Group Ledger US GAAP (33V_AE) (33V_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud test script (33V_AE, company code 3310): US GAAP ledger FI-CA steps for doubtful receivables, FX valuation, reclassification, closing | keywords: Contract Accounting Closing and Valuation, doubtful receivables, value adjustments, credit loss allowances, foreign currency valuation, deferred inverse posting, reclassifications, group ledger us gaap, contract accounting, day-end closing, 33V_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-integration-with-sales-documents-43y-a",
+      "title": "Test Script: Contract Accounting - Integration with Sales Documents (43Y_AE) - SAP S/4HANA Cloud Public Edition (43Y_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 43Y_AE: SD billing posted to FI-CA (lean scenario), with configuration, test steps and reconciliation.",
+      "keywords": [
+        "Contract Accounting Integration with Sales Documents",
+        "contract accounting",
+        "sd fi-ca integration",
+        "billing documents",
+        "billing reconciliation",
+        "sales orders",
+        "billing cancellation",
+        "fi-ca documents",
+        "manual configuration",
+        "business roles"
+      ],
+      "aliases": [
+        "43Y_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-sd-integration"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-integration-with-sales-documents-43y-a.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/43Y_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting - Integration with Sales Documents (43Y_AE) - SAP S/4HANA Cloud Public Edition (43Y_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 43Y_AE: SD billing posted to FI-CA (lean scenario), with configuration, test steps and reconciliation | keywords: Contract Accounting Integration with Sales Documents, contract accounting, sd fi-ca integration, billing documents, billing reconciliation, sales orders, billing cancellation, fi-ca documents, manual configuration, business roles, 43Y_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-master-data-and-basic-functions-2ar-ae",
+      "title": "Test Script: Contract Accounting – Master Data and Basic Functions (2AR_AE) (2AR_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition test script for scope item 2AR (FI-CA, AE): business partner, contract account, provider contract, correspondence, privacy.",
+      "keywords": [
+        "Contract Accounting Master Data and Basic Functions",
+        "business partner",
+        "customer master data",
+        "contract accounts",
+        "provider contracts",
+        "account statements",
+        "correspondence printing",
+        "balance notifications",
+        "contract confirmation letters",
+        "external output management"
+      ],
+      "aliases": [
+        "2AR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-master-data-and-basic-functions"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-master-data-and-basic-functions-2ar-ae.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2AR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Master Data and Basic Functions (2AR_AE) (2AR_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — S/4HANA Cloud Public Edition test script for scope item 2AR (FI-CA, AE): business partner, contract account, provider contract, correspondence, privacy | keywords: Contract Accounting Master Data and Basic Functions, business partner, customer master data, contract accounts, provider contracts, account statements, correspondence printing, balance notifications, contract confirmation letters, external output management, 2AR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-open-item-management-2uj-ae-872-part-01",
+      "title": "Test Script: Contract Accounting – Open Item Management (2UJ_AE) (2UJ_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "S/4HANA Cloud test script, Contract Accounting Open Item Management (2UJ_AE): dunning, installment plans, interest, credits, deposits, disputes, collections.",
+      "keywords": [
+        "Contract Accounting Open Item Management and Collections",
+        "contract accounting",
+        "dunning",
+        "installment plans",
+        "flexible workflow",
+        "interest calculation",
+        "interest calculation on clearing",
+        "credit clarification",
+        "creditworthiness",
+        "security deposit"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-open-item-management"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-open-item-management-2uj-ae-872-part-01.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UJ_S4CLD2608_BPD_EN_AE.docx#lines-1-3545"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Open Item Management (2UJ_AE) (2UJ_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Subscription Billing and Contract Accounting) — S/4HANA Cloud test script, Contract Accounting Open Item Management (2UJ_AE): dunning, installment plans, interest, credits, deposits, disputes, collections | keywords: Contract Accounting Open Item Management and Collections, contract accounting, dunning, installment plans, flexible workflow, interest calculation, interest calculation on clearing, credit clarification, creditworthiness, security deposit"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-open-item-management-2uj-ae-872-part-02",
+      "title": "Test Script: Contract Accounting – Open Item Management (2UJ_AE) (2UJ_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Step-by-step test script (AE, company code 3310) for SAP S/4HANA Cloud 2608 Contract Accounting 2UJ: factoring, promise to pay, dunning, transfers, APIs.",
+      "keywords": [
+        "Contract Accounting Open Item Management and Collections",
+        "factoring",
+        "promise to pay",
+        "creditworthiness",
+        "information container",
+        "external system postings",
+        "subledger document transfer",
+        "dunning",
+        "collection strategy",
+        "api services"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-open-item-management"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-contract-accounting-open-item-management-2uj-ae-872-part-02.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UJ_S4CLD2608_BPD_EN_AE.docx#lines-3546-5367"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – Open Item Management (2UJ_AE) (2UJ_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Subscription Billing and Contract Accounting) — Step-by-step test script (AE, company code 3310) for SAP S/4HANA Cloud 2608 Contract Accounting 2UJ: factoring, promise to pay, dunning, transfers, APIs | keywords: Contract Accounting Open Item Management and Collections, factoring, promise to pay, creditworthiness, information container, external system postings, subledger document transfer, dunning, collection strategy, api services"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-convergent-invoicing-invoice-creation-for-usage-and-servic",
+      "title": "Test Script: Convergent Invoicing – Invoice Creation for Usage and Service (2BG_AE) (2BG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 2BG, AE) for Convergent Invoicing: billable items, billing, invoicing, clarification, reversal, with preliminary config steps.",
+      "keywords": [
+        "Convergent Invoicing: Recurring, One-Off and Usage…",
+        "convergent invoicing",
+        "billable items",
+        "billing process",
+        "invoicing process",
+        "clarification cases",
+        "discounting",
+        "accrual deferral postings",
+        "invoice reversal",
+        "invoice printing"
+      ],
+      "aliases": [
+        "2BG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/recurring-and-one-off-billing"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-convergent-invoicing-invoice-creation-for-usage-and-servic.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2BG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Convergent Invoicing – Invoice Creation for Usage and Service (2BG_AE) (2BG_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script (scope item 2BG, AE) for Convergent Invoicing: billable items, billing, invoicing, clarification, reversal, with preliminary config steps | keywords: Convergent Invoicing: Recurring, One-Off and Usage…, convergent invoicing, billable items, billing process, invoicing process, clarification cases, discounting, accrual deferral postings, invoice reversal, invoice printing, 2BG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-convergent-invoicing-management-and-rating-of-consumption",
+      "title": "Test Script - Convergent Invoicing – Management and Rating of Consumption Items (3DX_AE) (3DX_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3DX: uploading, displaying and rating consumption items to create billable items in Convergent Invoicing.",
+      "keywords": [
+        "Consumption Items and Service-Type-Based Rating",
+        "consumption items",
+        "rating",
+        "billable items",
+        "convergent invoicing",
+        "mass run rating",
+        "business roles",
+        "business conditions",
+        "process integration",
+        "demo data"
+      ],
+      "aliases": [
+        "3DX_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/consumption-items-and-rating"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-convergent-invoicing-management-and-rating-of-consumption.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3DX_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Convergent Invoicing – Management and Rating of Consumption Items (3DX_AE) (3DX_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 3DX: uploading, displaying and rating consumption items to create billable items in Convergent Invoicing | keywords: Consumption Items and Service-Type-Based Rating, consumption items, rating, billable items, convergent invoicing, mass run rating, business roles, business conditions, process integration, demo data, 3DX_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-convergent-invoicing-revenue-sharing-and-partner-settlemen",
+      "title": "Test Script: Convergent Invoicing – Revenue Sharing and Partner Settlement (42L_AE) (42L_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 42L: revenue sharing and partner settlement in Convergent Invoicing, from billable items to partner invoicing.",
+      "keywords": [
+        "Revenue Sharing, Partner and Intercompany Settlement",
+        "partner settlement",
+        "revenue sharing",
+        "billable items",
+        "convergent invoicing",
+        "partner settlement rule",
+        "billing process",
+        "invoicing process",
+        "release partner items",
+        "billable item reversal"
+      ],
+      "aliases": [
+        "42L_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/revenue-sharing-and-partner-settlement"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-convergent-invoicing-revenue-sharing-and-partner-settlemen.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/42L_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Convergent Invoicing – Revenue Sharing and Partner Settlement (42L_AE) (42L_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 42L: revenue sharing and partner settlement in Convergent Invoicing, from billable items to partner invoicing | keywords: Revenue Sharing, Partner and Intercompany Settlement, partner settlement, revenue sharing, billable items, convergent invoicing, partner settlement rule, billing process, invoicing process, release partner items, billable item reversal, 42L_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-sap-fiori-analytical-apps-for-convergent-invoicing-special",
+      "title": "Test Script: SAP Fiori Analytical Apps for Convergent Invoicing Specialist (2KF) (2KF_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 2KF: analyzing unbilled items (F1427) and unrated items (F1977) as Convergent Invoicing Specialist.",
+      "keywords": [
+        "Convergent Invoicing Analytical Apps",
+        "convergent invoicing",
+        "unbilled items analysis",
+        "unrated items analysis",
+        "preliminary steps",
+        "business conditions",
+        "billable items",
+        "consumption items",
+        "invoicing specialist role",
+        "2KF"
+      ],
+      "aliases": [
+        "2KF_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/convergent-invoicing-analytics"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-sap-fiori-analytical-apps-for-convergent-invoicing-special.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2KF_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: SAP Fiori Analytical Apps for Convergent Invoicing Specialist (2KF) (2KF_S4CLD2608_BPD_EN_XX) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud 2608 test script for scope item 2KF: analyzing unbilled items (F1427) and unrated items (F1977) as Convergent Invoicing Specialist | keywords: Convergent Invoicing Analytical Apps, convergent invoicing, unbilled items analysis, unrated items analysis, preliminary steps, business conditions, billable items, consumption items, invoicing specialist role, 2KF, 2KF_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-sap-s-4hana-cloud-public-edition-contract-accounting-custo-part-01",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Contract Accounting – Customer Initiated Payments (2BI_AE) (2BI_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Test script for scope item 2BI_AE (FI-CA customer-initiated payments, AED): payment cards, PSP, pay-by-link, payment/check lots, returns, workflows.",
+      "keywords": [
+        "Contract Accounting Incoming and Outgoing Payments",
+        "fi-ca document posting",
+        "payment card processing",
+        "payment service provider",
+        "payment by link",
+        "payment lot processing",
+        "check lot processing",
+        "payment clarification",
+        "returns processing",
+        "bank statement import"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-payments"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-sap-s-4hana-cloud-public-edition-contract-accounting-custo-part-01.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2BI_S4CLD2608_BPD_EN_AE.docx#lines-1-2972"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Contract Accounting – Customer Initiated Payments (2BI_AE) (2BI_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Subscription Billing and Contract Accounting) — Test script for scope item 2BI_AE (FI-CA customer-initiated payments, AED): payment cards, PSP, pay-by-link, payment/check lots, returns, workflows | keywords: Contract Accounting Incoming and Outgoing Payments, fi-ca document posting, payment card processing, payment service provider, payment by link, payment lot processing, check lot processing, payment clarification, returns processing, bank statement import"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-sap-s-4hana-cloud-public-edition-contract-accounting-custo-part-02",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Contract Accounting – Customer Initiated Payments (2BI_AE) (2BI_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Test script for FI-CA customer-initiated payments (S/4HANA Cloud 2608); this part: External Cash Desk setup and APIs, intraday bank statement posting.",
+      "keywords": [
+        "Contract Accounting Incoming and Outgoing Payments",
+        "external cash desk",
+        "cash desk configuration",
+        "external cash point api",
+        "payment group closing",
+        "intraday bank statements",
+        "bank statement transfer",
+        "payment lots",
+        "payment reversal",
+        "open item summary"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-payments"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-sap-s-4hana-cloud-public-edition-contract-accounting-custo-part-02.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2BI_S4CLD2608_BPD_EN_AE.docx#lines-2973-3152"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Contract Accounting – Customer Initiated Payments (2BI_AE) (2BI_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Subscription Billing and Contract Accounting) — Test script for FI-CA customer-initiated payments (S/4HANA Cloud 2608); this part: External Cash Desk setup and APIs, intraday bank statement posting | keywords: Contract Accounting Incoming and Outgoing Payments, external cash desk, cash desk configuration, external cash point api, payment group closing, intraday bank statements, bank statement transfer, payment lots, payment reversal, open item summary"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-sap-s-4hana-cloud-public-edition-sap-fiori-analytical-apps",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - SAP Fiori Analytical Apps for Contract Accounting Manager (2KH) (2KH_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 2KH: Fiori analytical apps for FI-CA (overdue items, locks, dunning, collections, returns, incoming payments) and My Open Worklists, release 2608.",
+      "keywords": [
+        "Contract Accounting Open Item Management and Collections",
+        "contract accounting analytics",
+        "overdue items analysis",
+        "open credits",
+        "write-offs",
+        "clearing reasons",
+        "payment run exceptions",
+        "returns analysis",
+        "dunning analysis",
+        "dunning run exceptions"
+      ],
+      "aliases": [
+        "2KH_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/fi-ca-open-item-management"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-sap-s-4hana-cloud-public-edition-sap-fiori-analytical-apps.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2KH_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - SAP Fiori Analytical Apps for Contract Accounting Manager (2KH) (2KH_S4CLD2608_BPD_EN_XX) (Subscription Billing and Contract Accounting) — Test script for scope item 2KH: Fiori analytical apps for FI-CA (overdue items, locks, dunning, collections, returns, incoming payments) and My Open Worklists, release 2608 | keywords: Contract Accounting Open Item Management and Collections, contract accounting analytics, overdue items analysis, open credits, write-offs, clearing reasons, payment run exceptions, returns analysis, dunning analysis, dunning run exceptions, 2KH_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-for-software-5sw-ae-sap-s-4hana-cl-part-01",
+      "title": "Test Script: Subscription Management for Software (5SW_AE) - SAP S/4HANA Cloud Public Edition 2608 (5SW_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Test script for scope item 5SW_AE: software subscription master data, solution orders, entitlements, provisioning, billing, revenue recognition, changes.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "subscription billing master data",
+        "rate elements",
+        "rate plan templates",
+        "subscription products",
+        "lookup tables",
+        "entitlement management setup",
+        "offering entitlement mapping",
+        "solution orders",
+        "provisioning responses"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-for-software-5sw-ae-sap-s-4hana-cl-part-01.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5SW_S4CLD2608_BPD_EN_AE.docx#lines-1-3326"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subscription Management for Software (5SW_AE) - SAP S/4HANA Cloud Public Edition 2608 (5SW_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Subscription Billing and Contract Accounting) — Test script for scope item 5SW_AE: software subscription master data, solution orders, entitlements, provisioning, billing, revenue recognition, changes | keywords: Subscription Products and Rate Plans, subscription billing master data, rate elements, rate plan templates, subscription products, lookup tables, entitlement management setup, offering entitlement mapping, solution orders, provisioning responses"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-for-software-5sw-ae-sap-s-4hana-cl-part-02",
+      "title": "Test Script: Subscription Management for Software (5SW_AE) - SAP S/4HANA Cloud Public Edition 2608 (5SW_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Test script (part 2 of 2): SAP Entitlement Management jobs, provisioning/decommissioning responses via SoapUI, Subscription Billing checks, end-of-contract.",
+      "keywords": [
+        "Subscription Products and Rate Plans",
+        "entitlement management",
+        "license decommissioning",
+        "tenant decommissioning",
+        "provisioning requests",
+        "provisioning response testing",
+        "tenant provisioning",
+        "license provisioning",
+        "subscription billing",
+        "subscription termination"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-product-master-data"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-for-software-5sw-ae-sap-s-4hana-cl-part-02.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5SW_S4CLD2608_BPD_EN_AE.docx#lines-3327-3917"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subscription Management for Software (5SW_AE) - SAP S/4HANA Cloud Public Edition 2608 (5SW_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Subscription Billing and Contract Accounting) — Test script (part 2 of 2): SAP Entitlement Management jobs, provisioning/decommissioning responses via SoapUI, Subscription Billing checks, end-of-contract | keywords: Subscription Products and Rate Plans, entitlement management, license decommissioning, tenant decommissioning, provisioning requests, provisioning response testing, tenant provisioning, license provisioning, subscription billing, subscription termination"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-with-convergent-invoicing-5ik-ae-1",
+      "title": "Test Script: Subscription Management with Convergent Invoicing (5IK_AE) (5IK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5IK (AE): subscriptions in SAP Subscription Billing, provider contract, pre-bill and convergent invoicing.",
+      "keywords": [
+        "Subscription Management with Convergent Invoicing",
+        "subscription billing",
+        "convergent invoicing",
+        "create subscriptions",
+        "provider contract",
+        "pre-bill",
+        "test scripts",
+        "billable items",
+        "test prerequisites",
+        "business roles"
+      ],
+      "aliases": [
+        "5IK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-management-convergent-invoicing"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-with-convergent-invoicing-5ik-ae-1.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5IK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subscription Management with Convergent Invoicing (5IK_AE) (5IK_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5IK (AE): subscriptions in SAP Subscription Billing, provider contract, pre-bill and convergent invoicing | keywords: Subscription Management with Convergent Invoicing, subscription billing, convergent invoicing, create subscriptions, provider contract, pre-bill, test scripts, billable items, test prerequisites, business roles, 5IK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-with-sales-billing-57z-ae-1072",
+      "title": "Test Script: Subscription Management with Sales Billing (57Z_AE) (57Z_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 57Z: subscriptions in SAP Subscription Billing, pre-bill, billing document, credit and debit memos.",
+      "keywords": [
+        "Subscription Management with Sales Billing",
+        "subscription billing",
+        "subscription management",
+        "provider contract",
+        "pre-bill",
+        "billing documents",
+        "credit memos",
+        "debit memos",
+        "solution orders",
+        "business roles"
+      ],
+      "aliases": [
+        "57Z_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/subscription-billing-and-contract-accounting",
+        "topic/subscription-management-sales-billing"
+      ],
+      "path": "09-subscription-billing-and-contract-accounting/test-script-subscription-management-with-sales-billing-57z-ae-1072.md",
+      "cluster": "09-subscription-billing-and-contract-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/57Z_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subscription Management with Sales Billing (57Z_AE) (57Z_S4CLD2608_BPD_EN_AE) (Subscription Billing and Contract Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 57Z: subscriptions in SAP Subscription Billing, pre-bill, billing document, credit and debit memos | keywords: Subscription Management with Sales Billing, subscription billing, subscription management, provider contract, pre-bill, billing documents, credit memos, debit memos, solution orders, business roles, 57Z_S4CLD2608_BPD_EN_AE"
+    }
+  ]
+}

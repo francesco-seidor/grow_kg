@@ -1,0 +1,3090 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "06-management-accounting",
+  "cluster_title": "Management Accounting",
+  "cluster_description": "Cost centers, activity types, cost rates, allocations, profit centers, product costing, margin analysis, budgets, predictive accounting and event-based revenue recognition.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 94,
+  "nodes": [
+    {
+      "id": "06-management-accounting/2608-master-data-co-en-xx-118",
+      "title": "2608 Master Data CO EN XX (2608_Master_Data_CO_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 Best Practices controlling master data workbook: cost centers, activity types, secondary cost elements, groups, statistical key figures.",
+      "keywords": [
+        "Best Practice CO and FI Master Data Values",
+        "cost centers",
+        "cost center groups",
+        "cost center id convention",
+        "activity types",
+        "activity type groups",
+        "secondary cost elements",
+        "cost element groups",
+        "statistical key figures",
+        "controlling master data"
+      ],
+      "aliases": [
+        "2608_Master_Data_CO_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/controlling-master-data-workbook"
+      ],
+      "path": "06-management-accounting/2608-master-data-co-en-xx-118.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/2608_Master_Data_CO_EN_XX.xlsx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "2608 Master Data CO EN XX (2608_Master_Data_CO_EN_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 Best Practices controlling master data workbook: cost centers, activity types, secondary cost elements, groups, statistical key figures | keywords: Best Practice CO and FI Master Data Values, cost centers, cost center groups, cost center id convention, activity types, activity type groups, secondary cost elements, cost element groups, statistical key figures, controlling master data, 2608_Master_Data_CO_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/2608-master-data-fi-en-xx-119",
+      "title": "2608 Master Data FI EN XX (2608_Master_Data_FI_EN_XX)",
+      "description": "SAP Best Practices 2608 FI master data workbook: profit center hierarchy (YBPH), 21 functional areas (YB10-YB99) and 3 segments; YCOA sheet empty.",
+      "keywords": [
+        "Best Practice CO and FI Master Data Values",
+        "profit center hierarchy",
+        "functional areas",
+        "segments",
+        "financial accounting master data",
+        "profit centers",
+        "chart of accounts",
+        "2608"
+      ],
+      "aliases": [
+        "2608_Master_Data_FI_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/controlling-master-data-workbook",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/2608-master-data-fi-en-xx-119.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/2608_Master_Data_FI_EN_XX.xlsx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "2608 Master Data FI EN XX (2608_Master_Data_FI_EN_XX) (Management Accounting) — SAP Best Practices 2608 FI master data workbook: profit center hierarchy (YBPH), 21 functional areas (YB10-YB99) and 3 segments; YCOA sheet empty | keywords: Best Practice CO and FI Master Data Values, profit center hierarchy, functional areas, segments, financial accounting master data, profit centers, chart of accounts, 2608, 2608_Master_Data_FI_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/7r8-537",
+      "title": "创建统一收入确认的物料主数据 (7R8) (7R8_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese master data script (7R8) for creating URR test materials and their sales prices for unified revenue recognition scenarios in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "unified revenue recognition",
+        "material master data",
+        "sales from stock",
+        "fixed-price customer project",
+        "service contract material",
+        "material pricing",
+        "service products",
+        "business roles",
+        "organizational units"
+      ],
+      "aliases": [
+        "7R8_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/7r8-537.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7R8_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建统一收入确认的物料主数据 (7R8) (7R8_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese master data script (7R8) for creating URR test materials and their sales prices for unified revenue recognition scenarios in SAP S/4HANA Cloud Public Edition | keywords: Event-Based Revenue Recognition for Sell from Stock, unified revenue recognition, material master data, sales from stock, fixed-price customer project, service contract material, material pricing, service products, business roles, organizational units, 7R8_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/budgetupload-xx-3",
+      "title": "Budgetupload XX (budgetupload_XX)",
+      "description": "Budget upload CSV template for S/4HANA Cloud 2608 with sample rows: process ENTR, subcategory S_SCAT1, plan category BUDGET03, account 61002000, by cost center",
+      "keywords": [
+        "Budgets and Commitment Management",
+        "budget upload",
+        "cost centers",
+        "funds management",
+        "general ledger accounts",
+        "sample data"
+      ],
+      "aliases": [
+        "budgetupload_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/budgets-and-commitments"
+      ],
+      "path": "06-management-accounting/budgetupload-xx-3.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Configuration/budgetupload_XX.csv"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Budgetupload XX (budgetupload_XX) (Management Accounting) — Budget upload CSV template for S/4HANA Cloud 2608 with sample rows: process ENTR, subcategory S_SCAT1, plan category BUDGET03, account 61002000, by cost center | keywords: Budgets and Commitment Management, budget upload, cost centers, funds management, general ledger accounts, sample data, budgetupload_XX"
+    },
+    {
+      "id": "06-management-accounting/co-mds-3kw-355",
+      "title": "CO 原価率の登録 - MDS (3KW) (3KW_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (3KW) for maintaining CO cost rates (activity prices) via Manage Cost Rates apps for service, plan and actual, plus ICO account setup and cost rate query.",
+      "keywords": [
+        "CO Cost Rates (Service, Plan and Actual)",
+        "cost rates",
+        "activity prices",
+        "service cost rates",
+        "plan cost rates",
+        "actual cost rates",
+        "cost rate query",
+        "intercompany reconciliation accounts",
+        "intercompany profit accounts",
+        "master data script"
+      ],
+      "aliases": [
+        "3KW_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-rates"
+      ],
+      "path": "06-management-accounting/co-mds-3kw-355.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KW_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "CO 原価率の登録 - MDS (3KW) (3KW_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — Japanese master data script (3KW) for maintaining CO cost rates (activity prices) via Manage Cost Rates apps for service, plan and actual, plus ICO account setup and cost rate query | keywords: CO Cost Rates (Service, Plan and Actual), cost rates, activity prices, service cost rates, plan cost rates, actual cost rates, cost rate query, intercompany reconciliation accounts, intercompany profit accounts, master data script, 3KW_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/co-mds-3kw-357",
+      "title": "主数据脚本 - 创建 CO 成本率 - MDS (3KW) (3KW_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script 3KW: maintain CO cost rates (service, plan, actual) and ICO account prerequisites.",
+      "keywords": [
+        "CO Cost Rates (Service, Plan and Actual)",
+        "cost rates",
+        "service cost rates",
+        "plan cost rates",
+        "actual cost rates",
+        "intercompany accounts",
+        "automatic account determination",
+        "activity allocation",
+        "display cost rates",
+        "business roles"
+      ],
+      "aliases": [
+        "3KW_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-rates"
+      ],
+      "path": "06-management-accounting/co-mds-3kw-357.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KW_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 - 创建 CO 成本率 - MDS (3KW) (3KW_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script 3KW: maintain CO cost rates (service, plan, actual) and ICO account prerequisites | keywords: CO Cost Rates (Service, Plan and Actual), cost rates, service cost rates, plan cost rates, actual cost rates, intercompany accounts, automatic account determination, activity allocation, display cost rates, business roles, 3KW_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/crear-ejecucion-del-calculo-del-coste-mds-bnu-678",
+      "title": "Crear ejecución del cálculo del coste - MDS (BNU) (BNU_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script BNU: creating and executing a product cost estimate run with variant PYC1.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "costing run",
+        "product cost estimate",
+        "costing variant",
+        "price update",
+        "organizational units",
+        "master data prerequisites",
+        "inventory accountant role",
+        "BNU"
+      ],
+      "aliases": [
+        "BNU_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/crear-ejecucion-del-calculo-del-coste-mds-bnu-678.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNU_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear ejecución del cálculo del coste - MDS (BNU) (BNU_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script BNU: creating and executing a product cost estimate run with variant PYC1 | keywords: Product Costing Runs and Standard Cost Updates, costing run, product cost estimate, costing variant, price update, organizational units, master data prerequisites, inventory accountant role, BNU, BNU_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/crear-tasas-de-coste-co-mds-3kw-354",
+      "title": "Crear tasas de coste CO - MDS (3KW) (3KW_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script 3KW: creating CO cost rates (services, plan, actual) with test steps and display report.",
+      "keywords": [
+        "CO Cost Rates (Service, Plan and Actual)",
+        "cost rates",
+        "service cost rates",
+        "plan cost rates",
+        "actual cost rates",
+        "display cost rates",
+        "intercompany offsetting accounts",
+        "intercompany margin accounts",
+        "business roles",
+        "activity allocation"
+      ],
+      "aliases": [
+        "3KW_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-rates"
+      ],
+      "path": "06-management-accounting/crear-tasas-de-coste-co-mds-3kw-354.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KW_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear tasas de coste CO - MDS (3KW) (3KW_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script 3KW: creating CO cost rates (services, plan, actual) with test steps and display report | keywords: CO Cost Rates (Service, Plan and Actual), cost rates, service cost rates, plan cost rates, actual cost rates, display cost rates, intercompany offsetting accounts, intercompany margin accounts, business roles, activity allocation, 3KW_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/create-cost-center-and-cost-center-group-mds-bnm-635",
+      "title": "Create Cost Center and Cost Center Group - MDS (BNM) (BNM_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script for creating cost centers and cost center groups (global hierarchy or set-based), plus where-used analytics.",
+      "keywords": [
+        "Cost Centers and Cost Center Groups",
+        "cost centers",
+        "cost center groups",
+        "standard hierarchy",
+        "global hierarchies",
+        "where-used list",
+        "business roles",
+        "master data prerequisites",
+        "master data integration",
+        "public sector management"
+      ],
+      "aliases": [
+        "BNM_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-centers-and-groups"
+      ],
+      "path": "06-management-accounting/create-cost-center-and-cost-center-group-mds-bnm-635.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNM_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Cost Center and Cost Center Group - MDS (BNM) (BNM_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — SAP S/4HANA Cloud 2608 master data script for creating cost centers and cost center groups (global hierarchy or set-based), plus where-used analytics | keywords: Cost Centers and Cost Center Groups, cost centers, cost center groups, standard hierarchy, global hierarchies, where-used list, business roles, master data prerequisites, master data integration, public sector management, BNM_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/create-cost-element-group-mds-bnp-647",
+      "title": "Create Cost Element Group - MDS (BNP) (BNP_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition master data script (EN) for creating cost element groups via Manage Cost Element Groups (F5373) as Cost Accountant - Overhead.",
+      "keywords": [
+        "Cost Element Groups",
+        "master data script",
+        "cost accounting roles",
+        "controlling area",
+        "fiori launchpad access",
+        "chart of accounts",
+        "BNP"
+      ],
+      "aliases": [
+        "BNP_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-element-groups"
+      ],
+      "path": "06-management-accounting/create-cost-element-group-mds-bnp-647.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNP_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Cost Element Group - MDS (BNP) (BNP_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition master data script (EN) for creating cost element groups via Manage Cost Element Groups (F5373) as Cost Accountant - Overhead | keywords: Cost Element Groups, master data script, cost accounting roles, controlling area, fiori launchpad access, chart of accounts, BNP, BNP_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/create-profit-center-mds-bnh-605",
+      "title": "Create Profit Center - MDS (BNH) (BNH_S4CLD2608_Master_Data_EN_XX)",
+      "description": "Master data script (BNH) for creating profit center master data with Manage Profit Centers - Old Version (F3516) in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "profit center master data",
+        "profit center validity period",
+        "profit center group",
+        "segment reporting",
+        "company code assignment",
+        "controlling area",
+        "business roles",
+        "master data scripts",
+        "BNH"
+      ],
+      "aliases": [
+        "BNH_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/create-profit-center-mds-bnh-605.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNH_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Profit Center - MDS (BNH) (BNH_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — Master data script (BNH) for creating profit center master data with Manage Profit Centers - Old Version (F3516) in SAP S/4HANA Cloud Public Edition 2608 | keywords: Profit Centers and Profit Center Reorganization, profit center master data, profit center validity period, profit center group, segment reporting, company code assignment, controlling area, business roles, master data scripts, BNH, BNH_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/create-universal-allocation-master-data-mds-2us-287",
+      "title": "Create Universal Allocation Master Data - MDS (2US) (2US_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (2US) for creating plan/actual overhead assessment and profit center distribution cycles in Manage Allocations (F3338A).",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "overhead assessment cycles",
+        "profit center distribution",
+        "plan allocations",
+        "actual allocations",
+        "allocation template upload",
+        "business roles",
+        "master data prerequisites",
+        "allocation clearing account"
+      ],
+      "aliases": [
+        "2US_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/create-universal-allocation-master-data-mds-2us-287.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2US_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Universal Allocation Master Data - MDS (2US) (2US_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 master data script (2US) for creating plan/actual overhead assessment and profit center distribution cycles in Manage Allocations (F3338A) | keywords: Universal Allocation Cycles, universal allocation, overhead assessment cycles, profit center distribution, plan allocations, actual allocations, allocation template upload, business roles, master data prerequisites, allocation clearing account, 2US_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/criar-execucao-de-calculo-de-custos-mds-bnu-680",
+      "title": "Criar execução de cálculo de custos – MDS (BNU) (BNU_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (BNU) for creating and executing a product cost estimate run in SAP S/4HANA Cloud Public Edition 2608, with prerequisites and test steps.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "cost estimate run",
+        "product costing",
+        "costing variant",
+        "test procedures",
+        "business roles",
+        "organizational units",
+        "master data prerequisites",
+        "price update",
+        "BNU"
+      ],
+      "aliases": [
+        "BNU_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/criar-execucao-de-calculo-de-custos-mds-bnu-680.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNU_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar execução de cálculo de custos – MDS (BNU) (BNU_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese master data script (BNU) for creating and executing a product cost estimate run in SAP S/4HANA Cloud Public Edition 2608, with prerequisites and test steps | keywords: Product Costing Runs and Standard Cost Updates, cost estimate run, product costing, costing variant, test procedures, business roles, organizational units, master data prerequisites, price update, BNU, BNU_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/criar-grupo-de-classes-de-custo-mds-bnp-650",
+      "title": "Criar grupo de classes de custo – MDS (BNP) (BNP_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script BNP: create a cost element group with Administrar grupos de classes de custo (F5373) as Controlador - custos indiretos, S/4HANA Cl",
+      "keywords": [
+        "Cost Element Groups",
+        "cost element group creation",
+        "cost accounting master data",
+        "business roles",
+        "controlling area",
+        "chart of accounts",
+        "test procedures",
+        "BNP"
+      ],
+      "aliases": [
+        "BNP_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-element-groups"
+      ],
+      "path": "06-management-accounting/criar-grupo-de-classes-de-custo-mds-bnp-650.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNP_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar grupo de classes de custo – MDS (BNP) (BNP_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese master data script BNP: create a cost element group with Administrar grupos de classes de custo (F5373) as Controlador - custos indiretos, S/4HANA Cl | keywords: Cost Element Groups, cost element group creation, cost accounting master data, business roles, controlling area, chart of accounts, test procedures, BNP, BNP_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/criar-tipo-de-atividade-e-hierarquia-de-tipo-de-atividade-mds-bnn-644",
+      "title": "Criar tipo de atividade e hierarquia de tipo de atividade – MDS (BNN) (BNN_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (BNN) for SAP S/4HANA Cloud Public Edition: create activity types and activity type hierarchies, change log and where-used list.",
+      "keywords": [
+        "Activity Types and Activity Type Hierarchies",
+        "activity types",
+        "activity type hierarchies",
+        "master data scripts",
+        "cost accounting",
+        "cost accounting area",
+        "secondary cost elements",
+        "change log",
+        "where-used list",
+        "business roles"
+      ],
+      "aliases": [
+        "BNN_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/activity-types"
+      ],
+      "path": "06-management-accounting/criar-tipo-de-atividade-e-hierarquia-de-tipo-de-atividade-mds-bnn-644.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNN_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar tipo de atividade e hierarquia de tipo de atividade – MDS (BNN) (BNN_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese master data script (BNN) for SAP S/4HANA Cloud Public Edition: create activity types and activity type hierarchies, change log and where-used list | keywords: Activity Types and Activity Type Hierarchies, activity types, activity type hierarchies, master data scripts, cost accounting, cost accounting area, secondary cost elements, change log, where-used list, business roles, BNN_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/event-based-revenue-recognition-project-based-sales-4gq-ae-1024",
+      "title": "Event-Based Revenue Recognition – Project-Based Sales (4GQ_AE) (4GQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (4GQ_AE): prerequisites, configuration and test steps for event-based revenue recognition on project-based sales.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Projects",
+        "event-based revenue recognition",
+        "project-based sales",
+        "revenue recognition testing",
+        "project profitability report",
+        "financial statement versions",
+        "recognition key derivation",
+        "revenue recognition settings",
+        "revenue recognition issues",
+        "revenue recognition reversal"
+      ],
+      "aliases": [
+        "4GQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/event-based-revenue-recognition-project-based-sales-4gq-ae-1024.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4GQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Event-Based Revenue Recognition – Project-Based Sales (4GQ_AE) (4GQ_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script (4GQ_AE): prerequisites, configuration and test steps for event-based revenue recognition on project-based sales | keywords: Event-Based Revenue Recognition for Projects, event-based revenue recognition, project-based sales, revenue recognition testing, project profitability report, financial statement versions, recognition key derivation, revenue recognition settings, revenue recognition issues, revenue recognition reversal, 4GQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/event-based-revenue-recognition-project-based-services-us-gaap-33o-ae",
+      "title": "Event-Based Revenue Recognition – Project-Based Services – US GAAP (33O_AE) (33O_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 33O_AE: event-based revenue recognition for project-based services (US GAAP), setup and test steps.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Projects",
+        "event-based revenue recognition",
+        "project-based services",
+        "recognition key derivation",
+        "financial statement versions",
+        "project profitability report",
+        "revenue recognition run",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "project wip reporting"
+      ],
+      "aliases": [
+        "33O_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/event-based-revenue-recognition-project-based-services-us-gaap-33o-ae.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33O_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Event-Based Revenue Recognition – Project-Based Services – US GAAP (33O_AE) (33O_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 33O_AE: event-based revenue recognition for project-based services (US GAAP), setup and test steps | keywords: Event-Based Revenue Recognition for Projects, event-based revenue recognition, project-based services, recognition key derivation, financial statement versions, project profitability report, revenue recognition run, revenue recognition issues, revenue recognition reversal, project wip reporting, 33O_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/event-based-revenue-recognition-sell-from-stock-1k2-ae-test-script-731",
+      "title": "Event-Based Revenue Recognition – Sell from Stock (1K2_AE) Test Script (1K2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for event-based revenue recognition, sell from stock (1K2_AE): prerequisites, config steps, Fiori app test procedures, reversal.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "event-based revenue recognition",
+        "recognition key derivation",
+        "revenue recognition settings",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "run revenue recognition",
+        "sales order actuals reporting",
+        "runtime hierarchy replication",
+        "report relevancy"
+      ],
+      "aliases": [
+        "1K2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/event-based-revenue-recognition-sell-from-stock-1k2-ae-test-script-731.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1K2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Event-Based Revenue Recognition – Sell from Stock (1K2_AE) Test Script (1K2_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for event-based revenue recognition, sell from stock (1K2_AE): prerequisites, config steps, Fiori app test procedures, reversal | keywords: Event-Based Revenue Recognition for Sell from Stock, event-based revenue recognition, recognition key derivation, revenue recognition settings, revenue recognition issues, revenue recognition reversal, run revenue recognition, sales order actuals reporting, runtime hierarchy replication, report relevancy, 1K2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/event-based-revenue-recognition-service-documents-us-gaap-3m5-ae-960",
+      "title": "Event-Based Revenue Recognition – Service Documents – US GAAP (3M5_AE) (3M5_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3M5_AE: event-based revenue recognition on service contracts and orders (US GAAP), with prerequisites and test steps.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Service Documents",
+        "event-based revenue recognition",
+        "service contracts",
+        "recognition key derivation",
+        "substitution and validation rules",
+        "period-end revenue recognition",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "service settlement",
+        "service orders"
+      ],
+      "aliases": [
+        "3M5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-service-documents"
+      ],
+      "path": "06-management-accounting/event-based-revenue-recognition-service-documents-us-gaap-3m5-ae-960.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3M5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Event-Based Revenue Recognition – Service Documents – US GAAP (3M5_AE) (3M5_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3M5_AE: event-based revenue recognition on service contracts and orders (US GAAP), with prerequisites and test steps | keywords: Event-Based Revenue Recognition for Service Documents, event-based revenue recognition, service contracts, recognition key derivation, substitution and validation rules, period-end revenue recognition, revenue recognition issues, revenue recognition reversal, service settlement, service orders, 3M5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/event-based-revenue-recognition-subscription-billing-5dq-ae-test-scrip",
+      "title": "Event-Based Revenue Recognition – Subscription Billing (5DQ_AE) Test Script (5DQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5DQ: event-based revenue recognition of subscription provider contracts, with prerequisites, steps and reversal.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Subscriptions",
+        "event-based revenue recognition",
+        "provider contracts",
+        "subscription billing",
+        "recognition key derivation",
+        "period-end revenue recognition",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "product and service margins",
+        "report relevancy"
+      ],
+      "aliases": [
+        "5DQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-subscriptions"
+      ],
+      "path": "06-management-accounting/event-based-revenue-recognition-subscription-billing-5dq-ae-test-scrip.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5DQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Event-Based Revenue Recognition – Subscription Billing (5DQ_AE) Test Script (5DQ_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 5DQ: event-based revenue recognition of subscription provider contracts, with prerequisites, steps and reversal | keywords: Event-Based Revenue Recognition for Subscriptions, event-based revenue recognition, provider contracts, subscription billing, recognition key derivation, period-end revenue recognition, revenue recognition issues, revenue recognition reversal, product and service margins, report relevancy, 5DQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/event-based-revenue-recognition-subscription-billing-us-gaap-5ds-ae-te",
+      "title": "Event-Based Revenue Recognition – Subscription Billing – US GAAP (5DS_AE) Test Script (5DS_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5DS: event-based revenue recognition of subscription provider contracts under US GAAP, with prerequisites and steps.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Subscriptions",
+        "event-based revenue recognition",
+        "provider contracts",
+        "subscription billing",
+        "recognition key derivation",
+        "revenue recognition settings",
+        "period-end revenue run",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "product and service margins"
+      ],
+      "aliases": [
+        "5DS_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-subscriptions"
+      ],
+      "path": "06-management-accounting/event-based-revenue-recognition-subscription-billing-us-gaap-5ds-ae-te.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5DS_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Event-Based Revenue Recognition – Subscription Billing – US GAAP (5DS_AE) Test Script (5DS_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 5DS: event-based revenue recognition of subscription provider contracts under US GAAP, with prerequisites and steps | keywords: Event-Based Revenue Recognition for Subscriptions, event-based revenue recognition, provider contracts, subscription billing, recognition key derivation, revenue recognition settings, period-end revenue run, revenue recognition issues, revenue recognition reversal, product and service margins, 5DS_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/kalkulationslauf-anlegen-sds-bnu-676",
+      "title": "Kalkulationslauf anlegen – SDS (BNU) (BNU_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data test script (BNU) for SAP S/4HANA Cloud Public Edition 2608: creating and executing a product costing run (F1865) as a prerequisite for logistics scenarios.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "costing run",
+        "costing run execution",
+        "product cost planning",
+        "master data scripts",
+        "costing variant",
+        "business roles",
+        "organizational units",
+        "material price update",
+        "BNU"
+      ],
+      "aliases": [
+        "BNU_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/kalkulationslauf-anlegen-sds-bnu-676.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNU_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Kalkulationslauf anlegen – SDS (BNU) (BNU_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German master data test script (BNU) for SAP S/4HANA Cloud Public Edition 2608: creating and executing a product costing run (F1865) as a prerequisite for logistics scenarios | keywords: Product Costing Runs and Standard Cost Updates, costing run, costing run execution, product cost planning, master data scripts, costing variant, business roles, organizational units, material price update, BNU, BNU_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/kostenartengruppe-anlegen-sds-bnp-646",
+      "title": "Kostenartengruppe anlegen - SDS (BNP) (BNP_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script for creating a cost element group in SAP S/4HANA Cloud Public Edition via Kostenartengruppen verwalten (F5373).",
+      "keywords": [
+        "Cost Element Groups",
+        "master data scripts",
+        "business roles",
+        "controlling area",
+        "chart of accounts",
+        "overhead cost reporting",
+        "BNP"
+      ],
+      "aliases": [
+        "BNP_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-element-groups"
+      ],
+      "path": "06-management-accounting/kostenartengruppe-anlegen-sds-bnp-646.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNP_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Kostenartengruppe anlegen - SDS (BNP) (BNP_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German master data script for creating a cost element group in SAP S/4HANA Cloud Public Edition via Kostenartengruppen verwalten (F5373) | keywords: Cost Element Groups, master data scripts, business roles, controlling area, chart of accounts, overhead cost reporting, BNP, BNP_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/leistungsart-und-leistungsartenhierarchie-anlegen-sds-bnn-640",
+      "title": "Leistungsart und Leistungsartenhierarchie anlegen – SDS (BNN) (BNN_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud 2608 master data script (BNN): activity types and activity type hierarchies, change log and where-used analyses. Gemeinkostencontroller.",
+      "keywords": [
+        "Activity Types and Activity Type Hierarchies",
+        "activity types",
+        "activity type hierarchies",
+        "master data scripts",
+        "activity type change log",
+        "where-used analysis",
+        "controlling area",
+        "secondary cost elements",
+        "cost center planning",
+        "BNN"
+      ],
+      "aliases": [
+        "BNN_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/activity-types"
+      ],
+      "path": "06-management-accounting/leistungsart-und-leistungsartenhierarchie-anlegen-sds-bnn-640.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNN_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Leistungsart und Leistungsartenhierarchie anlegen – SDS (BNN) (BNN_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German SAP S/4HANA Cloud 2608 master data script (BNN): activity types and activity type hierarchies, change log and where-used analyses. Gemeinkostencontroller | keywords: Activity Types and Activity Type Hierarchies, activity types, activity type hierarchies, master data scripts, activity type change log, where-used analysis, controlling area, secondary cost elements, cost center planning, BNN, BNN_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/managing-material-price-changes-and-inventory-values-1zt-ae-test-scrip",
+      "title": "Managing Material Price Changes and Inventory Values (1ZT_AE) - Test Script (1ZT_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud scope item 1ZT_AE: immediate and future material price changes, stock-value adjustments, inventory value analysis.",
+      "keywords": [
+        "Inventory Valuation and Actual Costing",
+        "material price changes",
+        "immediate price change",
+        "future price change",
+        "stock value adjustment",
+        "material inventory values",
+        "material valuation",
+        "test scripts",
+        "mass price upload",
+        "price monitoring"
+      ],
+      "aliases": [
+        "1ZT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/inventory-valuation-and-actual-costing"
+      ],
+      "path": "06-management-accounting/managing-material-price-changes-and-inventory-values-1zt-ae-test-scrip.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1ZT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Managing Material Price Changes and Inventory Values (1ZT_AE) - Test Script (1ZT_S4CLD2608_BPD_EN_AE) (Management Accounting) — Test script for SAP S/4HANA Cloud scope item 1ZT_AE: immediate and future material price changes, stock-value adjustments, inventory value analysis | keywords: Inventory Valuation and Actual Costing, material price changes, immediate price change, future price change, stock value adjustment, material inventory values, material valuation, test scripts, mass price upload, price monitoring, 1ZT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/margin-analysis-j55-ae-test-script-sap-s-4hana-cloud-public-edition-13",
+      "title": "Margin Analysis (J55_AE) Test Script - SAP S/4HANA Cloud Public Edition (J55_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script for scope item J55 Margin Analysis (AE): prerequisites, CO-PA allocations, top-down distribution, realignment and profitability reports.",
+      "keywords": [
+        "Margin Analysis (CO-PA)",
+        "margin analysis",
+        "test prerequisites",
+        "product profitability kpis",
+        "assessment cycle",
+        "top-down distribution",
+        "profitability realignment",
+        "project profitability",
+        "market segment reporting",
+        "business roles"
+      ],
+      "aliases": [
+        "J55_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/margin-analysis"
+      ],
+      "path": "06-management-accounting/margin-analysis-j55-ae-test-script-sap-s-4hana-cloud-public-edition-13.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J55_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Margin Analysis (J55_AE) Test Script - SAP S/4HANA Cloud Public Edition (J55_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP Best Practices test script for scope item J55 Margin Analysis (AE): prerequisites, CO-PA allocations, top-down distribution, realignment and profitability reports | keywords: Margin Analysis (CO-PA), margin analysis, test prerequisites, product profitability kpis, assessment cycle, top-down distribution, profitability realignment, project profitability, market segment reporting, business roles, J55_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/master-data-script-create-activity-type-and-activity-type-hierarchy-bn",
+      "title": "Master Data Script - Create Activity Type and Activity Type Hierarchy (BNN) (BNN_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English SAP master data script BNN for creating activity types and activity type hierarchies in Controlling, with change log and where-used analytics, release 2608.",
+      "keywords": [
+        "Activity Types and Activity Type Hierarchies",
+        "activity types",
+        "activity type hierarchy",
+        "cost center planning",
+        "change log",
+        "where-used list",
+        "master data scripts",
+        "controlling area",
+        "secondary cost elements",
+        "business roles"
+      ],
+      "aliases": [
+        "BNN_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/activity-types"
+      ],
+      "path": "06-management-accounting/master-data-script-create-activity-type-and-activity-type-hierarchy-bn.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNN_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script - Create Activity Type and Activity Type Hierarchy (BNN) (BNN_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — English SAP master data script BNN for creating activity types and activity type hierarchies in Controlling, with change log and where-used analytics, release 2608 | keywords: Activity Types and Activity Type Hierarchies, activity types, activity type hierarchy, cost center planning, change log, where-used list, master data scripts, controlling area, secondary cost elements, business roles, BNN_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/master-data-script-create-co-cost-rates-mds-3kw-353",
+      "title": "Master Data Script: Create CO Cost Rates - MDS (3KW) (3KW_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script for creating CO cost rates (services, plan, actual) via Fiori apps F3161, F3162, F3422, plus display report.",
+      "keywords": [
+        "CO Cost Rates (Service, Plan and Actual)",
+        "cost rates",
+        "service cost rates",
+        "plan cost rates",
+        "actual cost rates",
+        "intercompany clearing accounts",
+        "intercompany margin accounts",
+        "display cost rates",
+        "business roles",
+        "activity allocation"
+      ],
+      "aliases": [
+        "3KW_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-rates"
+      ],
+      "path": "06-management-accounting/master-data-script-create-co-cost-rates-mds-3kw-353.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KW_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create CO Cost Rates - MDS (3KW) (3KW_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 master data script for creating CO cost rates (services, plan, actual) via Fiori apps F3161, F3162, F3422, plus display report | keywords: CO Cost Rates (Service, Plan and Actual), cost rates, service cost rates, plan cost rates, actual cost rates, intercompany clearing accounts, intercompany margin accounts, display cost rates, business roles, activity allocation, 3KW_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/master-data-script-create-costing-run-mds-bnu-677",
+      "title": "Master Data Script - Create Costing Run – MDS (BNU) (BNU_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data script (BNU) for SAP S/4HANA Cloud Public Edition: creating and executing a product costing run with app F1865 as logistics test prerequisite.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "costing run",
+        "product cost planning",
+        "cost estimates",
+        "master data scripts",
+        "costing variant",
+        "business roles",
+        "organizational units",
+        "price update",
+        "BNU"
+      ],
+      "aliases": [
+        "BNU_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/master-data-script-create-costing-run-mds-bnu-677.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNU_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script - Create Costing Run – MDS (BNU) (BNU_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — English master data script (BNU) for SAP S/4HANA Cloud Public Edition: creating and executing a product costing run with app F1865 as logistics test prerequisite | keywords: Product Costing Runs and Standard Cost Updates, costing run, product cost planning, cost estimates, master data scripts, costing variant, business roles, organizational units, price update, BNU, BNU_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/master-data-script-create-material-master-for-universal-revenue-recogn",
+      "title": "Master Data Script: Create Material Master for Universal Revenue Recognition (7R8) (7R8_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for creating URR test materials and their sales prices for Sell from Stock, fixed price project and service contract scenarios.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "material master",
+        "universal revenue recognition",
+        "sell from stock",
+        "service products",
+        "fixed price projects",
+        "service contracts",
+        "material prices",
+        "business roles",
+        "organizational units"
+      ],
+      "aliases": [
+        "7R8_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/master-data-script-create-material-master-for-universal-revenue-recogn.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7R8_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Material Master for Universal Revenue Recognition (7R8) (7R8_S4CLD2608_Master_Data_EN_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for creating URR test materials and their sales prices for Sell from Stock, fixed price project and service contract scenarios | keywords: Event-Based Revenue Recognition for Sell from Stock, material master, universal revenue recognition, sell from stock, service products, fixed price projects, service contracts, material prices, business roles, organizational units, 7R8_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/master-data-script-item-master-for-universal-revenue-recognition-7r8-j",
+      "title": "目的 (Master Data Script: Item Master for Universal Revenue Recognition, 7R8, Japanese) (7R8_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (7R8) for creating URR test product master records and condition-record prices for stock-sales, fixed-price project and service contract scenarios.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "universal revenue recognition",
+        "product master data",
+        "item pricing",
+        "service contract items",
+        "fixed-price project items",
+        "sell from stock",
+        "organizational units",
+        "business roles",
+        "master data scripts"
+      ],
+      "aliases": [
+        "7R8_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/master-data-script-item-master-for-universal-revenue-recognition-7r8-j.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7R8_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "目的 (Master Data Script: Item Master for Universal Revenue Recognition, 7R8, Japanese) (7R8_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — Japanese master data script (7R8) for creating URR test product master records and condition-record prices for stock-sales, fixed-price project and service contract scenarios | keywords: Event-Based Revenue Recognition for Sell from Stock, universal revenue recognition, product master data, item pricing, service contract items, fixed-price project items, sell from stock, organizational units, business roles, master data scripts, 7R8_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-2us-289",
+      "title": "マスタデータスクリプト: ユニバーサルアロケーションマスタデータの登録 - MDS (2US) (2US_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (2US) for SAP S/4HANA Cloud Public Edition 2608: creating universal allocation cycles (planned/actual overhead and profit center) in app F3338A.",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "planned overhead allocation",
+        "actual overhead allocation",
+        "profit center assessment",
+        "manage allocations app",
+        "allocation cycle upload",
+        "cost centers",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "2US_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/mds-2us-289.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2US_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: ユニバーサルアロケーションマスタデータの登録 - MDS (2US) (2US_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — Japanese master data script (2US) for SAP S/4HANA Cloud Public Edition 2608: creating universal allocation cycles (planned/actual overhead and profit center) in app F3338A | keywords: Universal Allocation Cycles, universal allocation, planned overhead allocation, actual overhead allocation, profit center assessment, manage allocations app, allocation cycle upload, cost centers, business roles, test scripts, 2US_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-2us-291",
+      "title": "主数据脚本 - 创建通用分配主数据 - MDS (2US) (2US_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese master data script (MDS 2US) for testing universal allocation cycles (plan/actual overhead and profit center allocations) in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "overhead allocation cycles",
+        "actual allocation",
+        "planned allocation",
+        "profit center allocation",
+        "manage allocations app",
+        "business roles",
+        "cost centers",
+        "allocation template upload"
+      ],
+      "aliases": [
+        "2US_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/mds-2us-291.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2US_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本 - 创建通用分配主数据 - MDS (2US) (2US_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese master data script (MDS 2US) for testing universal allocation cycles (plan/actual overhead and profit center allocations) in SAP S/4HANA Cloud Public Edition | keywords: Universal Allocation Cycles, universal allocation, overhead allocation cycles, actual allocation, planned allocation, profit center allocation, manage allocations app, business roles, cost centers, allocation template upload, 2US_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnh-607",
+      "title": "利益センタの登録 - MDS (BNH) (BNH_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script BNH: creating profit center master data via app F3516 (legacy) in S/4HANA Cloud Public Edition 2608, with mandatory fields and validity periods.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "profit centers",
+        "validity periods",
+        "controlling area",
+        "profit center groups",
+        "segment reporting",
+        "business roles",
+        "company code assignment",
+        "BNH"
+      ],
+      "aliases": [
+        "BNH_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/mds-bnh-607.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNH_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "利益センタの登録 - MDS (BNH) (BNH_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — Japanese master data script BNH: creating profit center master data via app F3516 (legacy) in S/4HANA Cloud Public Edition 2608, with mandatory fields and validity periods | keywords: Profit Centers and Profit Center Reorganization, profit centers, validity periods, controlling area, profit center groups, segment reporting, business roles, company code assignment, BNH, BNH_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnh-609",
+      "title": "创建利润中心 - MDS (BNH) (BNH_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script (MDS BNH) for creating a profit center via Manage Profit Centers - Old Version (F3516) in SAP S/4HANA Cloud 2608.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "profit center",
+        "master data script",
+        "controlling area",
+        "profit center group",
+        "segment reporting",
+        "validity periods",
+        "business roles",
+        "BNH"
+      ],
+      "aliases": [
+        "BNH_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/mds-bnh-609.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNH_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建利润中心 - MDS (BNH) (BNH_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese (machine-translated) master data script (MDS BNH) for creating a profit center via Manage Profit Centers - Old Version (F3516) in SAP S/4HANA Cloud 2608 | keywords: Profit Centers and Profit Center Reorganization, profit center, master data script, controlling area, profit center group, segment reporting, validity periods, business roles, BNH, BNH_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnm-637",
+      "title": "原価センタおよび原価センタグループの登録 - MDS (BNM) (BNM_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (BNM) for SAP S/4HANA Cloud Public Edition 2608: creating cost centers and cost center groups, and where-used analysis.",
+      "keywords": [
+        "Cost Centers and Cost Center Groups",
+        "cost center master data",
+        "cost center groups",
+        "standard hierarchy",
+        "global hierarchy management",
+        "where-used analysis",
+        "business roles",
+        "master data integration",
+        "master data scripts",
+        "BNM"
+      ],
+      "aliases": [
+        "BNM_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-centers-and-groups"
+      ],
+      "path": "06-management-accounting/mds-bnm-637.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNM_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "原価センタおよび原価センタグループの登録 - MDS (BNM) (BNM_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — Japanese master data script (BNM) for SAP S/4HANA Cloud Public Edition 2608: creating cost centers and cost center groups, and where-used analysis | keywords: Cost Centers and Cost Center Groups, cost center master data, cost center groups, standard hierarchy, global hierarchy management, where-used analysis, business roles, master data integration, master data scripts, BNM, BNM_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnm-639",
+      "title": "创建成本中心和成本中心组 - MDS (BNM) (BNM_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP master data script BNM for creating cost centers and cost center groups, with test steps and where-used analysis.",
+      "keywords": [
+        "Cost Centers and Cost Center Groups",
+        "cost centers",
+        "cost center groups",
+        "standard hierarchy",
+        "global hierarchies",
+        "where-used analysis",
+        "master data scripts",
+        "master data integration",
+        "BNM"
+      ],
+      "aliases": [
+        "BNM_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-centers-and-groups"
+      ],
+      "path": "06-management-accounting/mds-bnm-639.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNM_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建成本中心和成本中心组 - MDS (BNM) (BNM_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese (machine-translated) SAP master data script BNM for creating cost centers and cost center groups, with test steps and where-used analysis | keywords: Cost Centers and Cost Center Groups, cost centers, cost center groups, standard hierarchy, global hierarchies, where-used analysis, master data scripts, master data integration, BNM, BNM_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnn-643",
+      "title": "活動タイプおよび活動タイプ階層の登録 - MDS (BNN) (BNN_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP master data script BNN for creating activity types and activity type hierarchies, with change log and where-used test steps.",
+      "keywords": [
+        "Activity Types and Activity Type Hierarchies",
+        "activity types",
+        "activity type hierarchy",
+        "controlling area settings",
+        "secondary cost elements",
+        "change log",
+        "where-used analysis",
+        "master data scripts",
+        "BNN"
+      ],
+      "aliases": [
+        "BNN_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/activity-types"
+      ],
+      "path": "06-management-accounting/mds-bnn-643.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNN_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "活動タイプおよび活動タイプ階層の登録 - MDS (BNN) (BNN_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — Japanese SAP master data script BNN for creating activity types and activity type hierarchies, with change log and where-used test steps | keywords: Activity Types and Activity Type Hierarchies, activity types, activity type hierarchy, controlling area settings, secondary cost elements, change log, where-used analysis, master data scripts, BNN, BNN_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnn-645",
+      "title": "创建活动类型和活动类型层次结构 - MDS (BNN) (BNN_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script (ZH, machine-translated) for creating activity types and hierarchies, change log and where-used list in Controlling.",
+      "keywords": [
+        "Activity Types and Activity Type Hierarchies",
+        "activity types",
+        "activity type hierarchy",
+        "master data script",
+        "cost centers",
+        "secondary cost elements",
+        "change log",
+        "where-used list",
+        "controlling area",
+        "BNN"
+      ],
+      "aliases": [
+        "BNN_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/activity-types"
+      ],
+      "path": "06-management-accounting/mds-bnn-645.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNN_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建活动类型和活动类型层次结构 - MDS (BNN) (BNN_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — SAP S/4HANA Cloud 2608 master data script (ZH, machine-translated) for creating activity types and hierarchies, change log and where-used list in Controlling | keywords: Activity Types and Activity Type Hierarchies, activity types, activity type hierarchy, master data script, cost centers, secondary cost elements, change log, where-used list, controlling area, BNN, BNN_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnp-649",
+      "title": "原価要素グループの登録 - MDS (BNP) (BNP_S4CLD2608_Master_Data_JA_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 マスタデータスクリプト (BNP): 管理会計担当者が原価要素グループ管理 (F5373) で原価要素グループを登録する手順 (日本語)。",
+      "keywords": [
+        "Cost Element Groups",
+        "master data scripts",
+        "reporting row structures",
+        "business roles",
+        "fiori launchpad access",
+        "controlling area",
+        "chart of accounts",
+        "BNP"
+      ],
+      "aliases": [
+        "BNP_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-element-groups"
+      ],
+      "path": "06-management-accounting/mds-bnp-649.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNP_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "原価要素グループの登録 - MDS (BNP) (BNP_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 マスタデータスクリプト (BNP): 管理会計担当者が原価要素グループ管理 (F5373) で原価要素グループを登録する手順 (日本語)。 | keywords: Cost Element Groups, master data scripts, reporting row structures, business roles, fiori launchpad access, controlling area, chart of accounts, BNP, BNP_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnp-651",
+      "title": "创建成本要素组 - MDS (BNP) (BNP_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script BNP: create a cost element group with Manage Cost Element Groups app F5373 as overhead cost accountant.",
+      "keywords": [
+        "Cost Element Groups",
+        "master data scripts",
+        "cost accounting",
+        "controlling area",
+        "chart of accounts",
+        "business role templates",
+        "report structures",
+        "fiori launchpad access",
+        "BNP"
+      ],
+      "aliases": [
+        "BNP_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-element-groups"
+      ],
+      "path": "06-management-accounting/mds-bnp-651.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNP_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建成本要素组 - MDS (BNP) (BNP_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese (machine-translated) master data script BNP: create a cost element group with Manage Cost Element Groups app F5373 as overhead cost accountant | keywords: Cost Element Groups, master data scripts, cost accounting, controlling area, chart of accounts, business role templates, report structures, fiori launchpad access, BNP, BNP_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnu-679",
+      "title": "原価積上実行の登録 - MDS (BNU) (BNU_S4CLD2608_Master_Data_JA_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script (JA) for registering and executing cost estimate runs (product costing) with app F1865 as Inventory Accountant.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "cost estimate runs",
+        "product costing",
+        "master data script",
+        "costing variant",
+        "inventory accountant role",
+        "organizational units",
+        "price update",
+        "bill of materials",
+        "BNU"
+      ],
+      "aliases": [
+        "BNU_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/mds-bnu-679.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNU_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "原価積上実行の登録 - MDS (BNU) (BNU_S4CLD2608_Master_Data_JA_XX) (Management Accounting) — SAP S/4HANA Cloud 2608 master data script (JA) for registering and executing cost estimate runs (product costing) with app F1865 as Inventory Accountant | keywords: Product Costing Runs and Standard Cost Updates, cost estimate runs, product costing, master data script, costing variant, inventory accountant role, organizational units, price update, bill of materials, BNU, BNU_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "06-management-accounting/mds-bnu-681",
+      "title": "创建成本核算运行 - MDS (BNU) (BNU_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script BNU: create and execute a product costing run in app F1865 as Inventory Accountant.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "costing run",
+        "product cost estimate",
+        "master data scripts",
+        "costing variant",
+        "business roles",
+        "organizational units",
+        "test procedures",
+        "price update",
+        "BNU"
+      ],
+      "aliases": [
+        "BNU_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/mds-bnu-681.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNU_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建成本核算运行 - MDS (BNU) (BNU_S4CLD2608_Master_Data_ZH_XX) (Management Accounting) — Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script BNU: create and execute a product costing run in app F1865 as Inventory Accountant | keywords: Product Costing Runs and Standard Cost Updates, costing run, product cost estimate, master data scripts, costing variant, business roles, organizational units, test procedures, price update, BNU, BNU_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "06-management-accounting/period-end-closing-projects-bna-ae-test-script-sap-s-4hana-cloud-publi",
+      "title": "Period-End Closing – Projects (BNA_AE) – Test Script, SAP S/4HANA Cloud Public Edition 2608 (BNA_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script for project period-end closing: overhead, project and AuC settlement, final settlement, reports, config prerequisites.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "project period-end closing",
+        "project settlement",
+        "assets under construction",
+        "overhead calculation",
+        "settlement rules",
+        "final settlement",
+        "settlement profiles",
+        "event-based settlement",
+        "investment profiles"
+      ],
+      "aliases": [
+        "BNA_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects"
+      ],
+      "path": "06-management-accounting/period-end-closing-projects-bna-ae-test-script-sap-s-4hana-cloud-publi.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BNA_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Period-End Closing – Projects (BNA_AE) – Test Script, SAP S/4HANA Cloud Public Edition 2608 (BNA_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud 2608 (AE) test script for project period-end closing: overhead, project and AuC settlement, final settlement, reports, config prerequisites | keywords: Project Control for Finance, Capital, R&D and Sales Projects, project period-end closing, project settlement, assets under construction, overhead calculation, settlement rules, final settlement, settlement profiles, event-based settlement, investment profiles, BNA_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/predictive-accounting-for-sales-orders-2fd-ae-test-script-824",
+      "title": "Predictive Accounting for Sales Orders (2FD_AE) - Test Script (2FD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2FD: sales accounting overview, incoming sales orders and presumed/actual gross margin reports.",
+      "keywords": [
+        "Predictive Accounting for Sales Orders, Service Contracts…",
+        "predictive accounting",
+        "incoming sales orders",
+        "gross margin",
+        "sales accounting overview",
+        "test scripts",
+        "situation handling",
+        "business roles",
+        "business conditions",
+        "demo data"
+      ],
+      "aliases": [
+        "2FD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/predictive-accounting"
+      ],
+      "path": "06-management-accounting/predictive-accounting-for-sales-orders-2fd-ae-test-script-824.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2FD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Predictive Accounting for Sales Orders (2FD_AE) - Test Script (2FD_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2FD: sales accounting overview, incoming sales orders and presumed/actual gross margin reports | keywords: Predictive Accounting for Sales Orders, Service Contracts…, predictive accounting, incoming sales orders, gross margin, sales accounting overview, test scripts, situation handling, business roles, business conditions, demo data, 2FD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/predictive-accounting-for-service-contract-management-4v7-ae-test-scri",
+      "title": "Predictive Accounting for Service Contract Management (4V7_AE) - Test Script (4V7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 4V7_AE: predictive accounting for service contracts, margin analysis line items and revenue recognition run.",
+      "keywords": [
+        "Predictive Accounting for Sales Orders, Service Contracts…",
+        "predictive accounting",
+        "service contract management",
+        "margin analysis",
+        "revenue recognition",
+        "test scripts",
+        "business roles",
+        "sample master data",
+        "business conditions",
+        "predictive quality monitor"
+      ],
+      "aliases": [
+        "4V7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/predictive-accounting"
+      ],
+      "path": "06-management-accounting/predictive-accounting-for-service-contract-management-4v7-ae-test-scri.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4V7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Predictive Accounting for Service Contract Management (4V7_AE) - Test Script (4V7_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 4V7_AE: predictive accounting for service contracts, margin analysis line items and revenue recognition run | keywords: Predictive Accounting for Sales Orders, Service Contracts…, predictive accounting, service contract management, margin analysis, revenue recognition, test scripts, business roles, sample master data, business conditions, predictive quality monitor, 4V7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/predictive-accounting-for-travel-and-expense-management-4q0-ae-1042",
+      "title": "Predictive Accounting for Travel and Expense Management (4Q0_AE) (4Q0_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 4Q0: commitments by cost center and project budget reporting from SAP Concur travel and expense, in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Predictive Accounting for Sales Orders, Service Contracts…",
+        "predictive accounting",
+        "travel and expense",
+        "commitment management",
+        "project budget report",
+        "budget availability control",
+        "business roles",
+        "demo data",
+        "business conditions",
+        "test procedures"
+      ],
+      "aliases": [
+        "4Q0_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/predictive-accounting"
+      ],
+      "path": "06-management-accounting/predictive-accounting-for-travel-and-expense-management-4q0-ae-1042.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4Q0_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Predictive Accounting for Travel and Expense Management (4Q0_AE) (4Q0_S4CLD2608_BPD_EN_AE) (Management Accounting) — Test script for scope item 4Q0: commitments by cost center and project budget reporting from SAP Concur travel and expense, in S/4HANA Cloud Public Edition 2608 | keywords: Predictive Accounting for Sales Orders, Service Contracts…, predictive accounting, travel and expense, commitment management, project budget report, budget availability control, business roles, demo data, business conditions, test procedures, 4Q0_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/product-cost-related-master-data-changes-consumer-products-61w-ae-test",
+      "title": "Product Cost Related Master Data Changes – Consumer Products (61W_AE) Test Script (61W_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (scope item 61W, AE) for off-cycle standard cost updates: BOM change, price change, costing run, analytics.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "product cost master data changes",
+        "bom change with change master",
+        "change master",
+        "material price change",
+        "future prices",
+        "costing run",
+        "info record condition",
+        "costing variants",
+        "material price analysis"
+      ],
+      "aliases": [
+        "61W_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/product-cost-related-master-data-changes-consumer-products-61w-ae-test.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/61W_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Product Cost Related Master Data Changes – Consumer Products (61W_AE) Test Script (61W_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script (scope item 61W, AE) for off-cycle standard cost updates: BOM change, price change, costing run, analytics | keywords: Product Costing Runs and Standard Cost Updates, product cost master data changes, bom change with change master, change master, material price change, future prices, costing run, info record condition, costing variants, material price analysis, 61W_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/profitcenter-anlegen-sds-bnh-604",
+      "title": "Profitcenter anlegen – SDS (BNH) (BNH_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud master data script (BNH) for creating profit center master data with app F3516 as Divisional Accountant, incl. validity periods.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "profit center master data",
+        "profit center creation",
+        "validity periods",
+        "master data scripts",
+        "controlling area",
+        "profit center groups",
+        "company code assignment",
+        "segment reporting",
+        "business roles"
+      ],
+      "aliases": [
+        "BNH_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/profitcenter-anlegen-sds-bnh-604.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNH_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Profitcenter anlegen – SDS (BNH) (BNH_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German SAP S/4HANA Cloud master data script (BNH) for creating profit center master data with app F3516 as Divisional Accountant, incl. validity periods | keywords: Profit Centers and Profit Center Reorganization, profit center master data, profit center creation, validity periods, master data scripts, controlling area, profit center groups, company code assignment, segment reporting, business roles, BNH_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-dados-mestre-criar-centro-de-custo-e-grupo-de-centros-de-cus",
+      "title": "Script de dados mestre - Criar centro de custo e grupo de centros de custo (MDS BNM) (BNM_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud Public Edition master data script (BNM): create cost centers and cost center groups, plus where-used analysis, dated 02-07-26.",
+      "keywords": [
+        "Cost Centers and Cost Center Groups",
+        "cost center master data",
+        "cost center groups",
+        "standard hierarchy",
+        "cost accounting",
+        "global hierarchies",
+        "cost center where-used list",
+        "business roles",
+        "organizational units",
+        "master data integration"
+      ],
+      "aliases": [
+        "BNM_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-centers-and-groups"
+      ],
+      "path": "06-management-accounting/script-de-dados-mestre-criar-centro-de-custo-e-grupo-de-centros-de-cus.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNM_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar centro de custo e grupo de centros de custo (MDS BNM) (BNM_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese SAP S/4HANA Cloud Public Edition master data script (BNM): create cost centers and cost center groups, plus where-used analysis, dated 02-07-26 | keywords: Cost Centers and Cost Center Groups, cost center master data, cost center groups, standard hierarchy, cost accounting, global hierarchies, cost center where-used list, business roles, organizational units, master data integration, BNM_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-dados-mestre-criar-centro-de-lucro-mds-bnh-608",
+      "title": "Script de dados mestre - Criar centro de lucro (MDS, BNH) (BNH_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (scope BNH) for creating a profit center in SAP S/4HANA Cloud Public Edition: prerequisites, mandatory fields and test steps.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "profit center master data",
+        "profit center creation",
+        "business roles",
+        "controlling area",
+        "validity periods",
+        "mandatory master data fields",
+        "master data scripts",
+        "BNH"
+      ],
+      "aliases": [
+        "BNH_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/script-de-dados-mestre-criar-centro-de-lucro-mds-bnh-608.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNH_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar centro de lucro (MDS, BNH) (BNH_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese master data script (scope BNH) for creating a profit center in SAP S/4HANA Cloud Public Edition: prerequisites, mandatory fields and test steps | keywords: Profit Centers and Profit Center Reorganization, profit center master data, profit center creation, business roles, controlling area, validity periods, mandatory master data fields, master data scripts, BNH, BNH_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-dados-mestre-criar-dados-mestre-de-alocacao-universal-mds-2u",
+      "title": "Script de dados mestre: Criar dados mestre de alocação universal - MDS (2US) (2US_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud Public Edition 2608 master data script (2US) for creating planned/actual universal allocation cycles for cost centers and profit centers.",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "planned cost allocation",
+        "actual cost allocation",
+        "profit center distribution",
+        "allocation cycle upload",
+        "master data",
+        "business roles",
+        "overhead cost controlling",
+        "2US"
+      ],
+      "aliases": [
+        "2US_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/script-de-dados-mestre-criar-dados-mestre-de-alocacao-universal-mds-2u.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2US_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar dados mestre de alocação universal - MDS (2US) (2US_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese SAP S/4HANA Cloud Public Edition 2608 master data script (2US) for creating planned/actual universal allocation cycles for cost centers and profit centers | keywords: Universal Allocation Cycles, universal allocation, planned cost allocation, actual cost allocation, profit center distribution, allocation cycle upload, master data, business roles, overhead cost controlling, 2US, 2US_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-dados-mestre-criar-mestre-de-materiais-para-realizacao-de-re",
+      "title": "Script de dados mestre - Criar mestre de materiais para realização de receita universal (7R8) (7R8_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud Public Edition 2608 script for creating URR test material master data and condition prices for SFS, fixed-price project and service contract scenarios.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "material master data",
+        "universal revenue recognition",
+        "stock-based sales scenario",
+        "fixed-price customer project",
+        "service contract",
+        "material pricing",
+        "business roles",
+        "organizational units",
+        "price condition types"
+      ],
+      "aliases": [
+        "7R8_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/script-de-dados-mestre-criar-mestre-de-materiais-para-realizacao-de-re.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7R8_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar mestre de materiais para realização de receita universal (7R8) (7R8_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese SAP S/4HANA Cloud Public Edition 2608 script for creating URR test material master data and condition prices for SFS, fixed-price project and service contract scenarios | keywords: Event-Based Revenue Recognition for Sell from Stock, material master data, universal revenue recognition, stock-based sales scenario, fixed-price customer project, service contract, material pricing, business roles, organizational units, price condition types, 7R8_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-dados-mestre-criar-taxas-de-custo-co-mds-3kw-356",
+      "title": "Script de dados mestre - Criar taxas de custo CO – MDS (3KW) (3KW_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud Public Edition master data test script (3KW) for creating service, planned and actual cost rates in Controlling, plus the display report.",
+      "keywords": [
+        "CO Cost Rates (Service, Plan and Actual)",
+        "cost rates",
+        "service cost rates",
+        "planned cost rates",
+        "actual cost rates",
+        "cost rate display",
+        "intercompany offsetting accounts",
+        "intercompany margin accounts",
+        "business roles",
+        "master data scripts"
+      ],
+      "aliases": [
+        "3KW_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-rates"
+      ],
+      "path": "06-management-accounting/script-de-dados-mestre-criar-taxas-de-custo-co-mds-3kw-356.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KW_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar taxas de custo CO – MDS (3KW) (3KW_S4CLD2608_Master_Data_PT_XX) (Management Accounting) — Portuguese SAP S/4HANA Cloud Public Edition master data test script (3KW) for creating service, planned and actual cost rates in Controlling, plus the display report | keywords: CO Cost Rates (Service, Plan and Actual), cost rates, service cost rates, planned cost rates, actual cost rates, cost rate display, intercompany offsetting accounts, intercompany margin accounts, business roles, master data scripts, 3KW_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-datos-maestros-crear-centro-de-beneficio-mds-bnh-606",
+      "title": "Script de datos maestros - Crear centro de beneficio - MDS (BNH) (BNH_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish master data script (MDS BNH) with prerequisites and test steps to create and maintain profit center master data in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "profit center master data",
+        "profit centers",
+        "validity periods",
+        "mandatory master data",
+        "business roles",
+        "organizational units",
+        "segment reporting",
+        "BNH"
+      ],
+      "aliases": [
+        "BNH_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/script-de-datos-maestros-crear-centro-de-beneficio-mds-bnh-606.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNH_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear centro de beneficio - MDS (BNH) (BNH_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish master data script (MDS BNH) with prerequisites and test steps to create and maintain profit center master data in SAP S/4HANA Cloud Public Edition | keywords: Profit Centers and Profit Center Reorganization, profit center master data, profit centers, validity periods, mandatory master data, business roles, organizational units, segment reporting, BNH, BNH_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-datos-maestros-crear-centro-de-coste-y-grupo-de-centros-de-c",
+      "title": "Script de datos maestros - Crear centro de coste y grupo de centros de coste (BNM) (BNM_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script for creating cost centers and cost center groups, with usage analysis; dated 02-07-26.",
+      "keywords": [
+        "Cost Centers and Cost Center Groups",
+        "cost centers",
+        "cost center groups",
+        "standard hierarchy",
+        "global hierarchies",
+        "cost center usage analysis",
+        "business roles",
+        "master data prerequisites",
+        "master data replication",
+        "test scripts"
+      ],
+      "aliases": [
+        "BNM_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-centers-and-groups"
+      ],
+      "path": "06-management-accounting/script-de-datos-maestros-crear-centro-de-coste-y-grupo-de-centros-de-c.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNM_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear centro de coste y grupo de centros de coste (BNM) (BNM_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script for creating cost centers and cost center groups, with usage analysis; dated 02-07-26 | keywords: Cost Centers and Cost Center Groups, cost centers, cost center groups, standard hierarchy, global hierarchies, cost center usage analysis, business roles, master data prerequisites, master data replication, test scripts, BNM_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-datos-maestros-crear-clase-de-actividad-y-jerarquia-de-clase",
+      "title": "Script de datos maestros: Crear clase de actividad y jerarquía de clases de actividad - MDS (BNN) (BNN_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script BNN for creating activity types and activity type hierarchies, with change log and usage analysis.",
+      "keywords": [
+        "Activity Types and Activity Type Hierarchies",
+        "activity types",
+        "activity type hierarchies",
+        "activity type change log",
+        "activity type usage",
+        "controlling area",
+        "cost elements",
+        "overhead cost accounting",
+        "business roles",
+        "BNN"
+      ],
+      "aliases": [
+        "BNN_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/activity-types"
+      ],
+      "path": "06-management-accounting/script-de-datos-maestros-crear-clase-de-actividad-y-jerarquia-de-clase.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNN_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Crear clase de actividad y jerarquía de clases de actividad - MDS (BNN) (BNN_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script BNN for creating activity types and activity type hierarchies, with change log and usage analysis | keywords: Activity Types and Activity Type Hierarchies, activity types, activity type hierarchies, activity type change log, activity type usage, controlling area, cost elements, overhead cost accounting, business roles, BNN, BNN_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-datos-maestros-crear-datos-maestros-de-asignacion-universal",
+      "title": "Script de datos maestros - Crear datos maestros de asignación universal - MDS (2US) (2US_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for universal allocation: plan/actual overhead and profit center cycles via Fiori F3338A.",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "plan overhead allocation",
+        "actual overhead allocation",
+        "profit center distribution",
+        "allocation cycle upload",
+        "business roles",
+        "required master data",
+        "cost centers",
+        "test procedures"
+      ],
+      "aliases": [
+        "2US_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/script-de-datos-maestros-crear-datos-maestros-de-asignacion-universal.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2US_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear datos maestros de asignación universal - MDS (2US) (2US_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for universal allocation: plan/actual overhead and profit center cycles via Fiori F3338A | keywords: Universal Allocation Cycles, universal allocation, plan overhead allocation, actual overhead allocation, profit center distribution, allocation cycle upload, business roles, required master data, cost centers, test procedures, 2US_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-datos-maestros-crear-grupo-de-clases-de-coste-mds-bnp-648",
+      "title": "Script de datos maestros: Crear grupo de clases de coste - MDS (BNP) (BNP_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script BNP for creating cost element groups in SAP S/4HANA Cloud Public via app Gestionar grupos de clases de coste (F5373).",
+      "keywords": [
+        "Cost Element Groups",
+        "master data scripts",
+        "overhead cost accounting",
+        "business roles",
+        "test scripts",
+        "cost reporting",
+        "BNP"
+      ],
+      "aliases": [
+        "BNP_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-element-groups"
+      ],
+      "path": "06-management-accounting/script-de-datos-maestros-crear-grupo-de-clases-de-coste-mds-bnp-648.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNP_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Crear grupo de clases de coste - MDS (BNP) (BNP_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — Spanish (machine-translated) master data script BNP for creating cost element groups in SAP S/4HANA Cloud Public via app Gestionar grupos de clases de coste (F5373) | keywords: Cost Element Groups, master data scripts, overhead cost accounting, business roles, test scripts, cost reporting, BNP, BNP_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/script-de-datos-maestros-crear-maestro-de-materiales-para-el-reconocim",
+      "title": "Script de datos maestros - Crear maestro de materiales para el reconocimiento universal de ingresos (7R8) (7R8_S4CLD2608_Master_Data_ES_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (ES, machine-translated): create URR test materials and condition prices for SFS, fixed-price project and service contract scenarios.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "material master data",
+        "universal revenue recognition",
+        "sales from stock",
+        "service products",
+        "fixed-price customer project",
+        "service contract",
+        "material pricing",
+        "business roles",
+        "organizational units"
+      ],
+      "aliases": [
+        "7R8_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/script-de-datos-maestros-crear-maestro-de-materiales-para-el-reconocim.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7R8_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear maestro de materiales para el reconocimiento universal de ingresos (7R8) (7R8_S4CLD2608_Master_Data_ES_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 master data script (ES, machine-translated): create URR test materials and condition prices for SFS, fixed-price project and service contract scenarios | keywords: Event-Based Revenue Recognition for Sell from Stock, material master data, universal revenue recognition, sales from stock, service products, fixed-price customer project, service contract, material pricing, business roles, organizational units, 7R8_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "06-management-accounting/stammdaten-fur-universelle-verrechnung-anlegen-sds-2us-286",
+      "title": "Stammdaten für universelle Verrechnung anlegen – SDS (2US) (2US_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script: test steps for plan/actual allocation and profit center distribution cycles in app Verrechnungen verwalten (F3338A).",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "plan allocation cycles",
+        "actual allocation cycles",
+        "profit center distribution",
+        "actual profit center distribution",
+        "allocation cycle upload",
+        "overhead cost controlling",
+        "user roles",
+        "master data prerequisites"
+      ],
+      "aliases": [
+        "2US_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/stammdaten-fur-universelle-verrechnung-anlegen-sds-2us-286.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2US_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdaten für universelle Verrechnung anlegen – SDS (2US) (2US_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German SAP S/4HANA Cloud Public Edition 2608 master data script: test steps for plan/actual allocation and profit center distribution cycles in app Verrechnungen verwalten (F3338A) | keywords: Universal Allocation Cycles, universal allocation, plan allocation cycles, actual allocation cycles, profit center distribution, actual profit center distribution, allocation cycle upload, overhead cost controlling, user roles, master data prerequisites, 2US_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/stammdatenskript-kostenstelle-und-kostenstellengruppe-anlegen-bnm-634",
+      "title": "Stammdatenskript: Kostenstelle und Kostenstellengruppe anlegen (BNM) (BNM_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition master data script (BNM) for creating cost centers and cost center groups, with test steps and where-used analysis; dated 02-07-26.",
+      "keywords": [
+        "Cost Centers and Cost Center Groups",
+        "cost centers",
+        "cost center groups",
+        "standard hierarchy",
+        "global hierarchies",
+        "where-used analysis",
+        "master data scripts",
+        "business roles",
+        "master data replication",
+        "overhead cost accounting"
+      ],
+      "aliases": [
+        "BNM_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-centers-and-groups"
+      ],
+      "path": "06-management-accounting/stammdatenskript-kostenstelle-und-kostenstellengruppe-anlegen-bnm-634.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNM_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Kostenstelle und Kostenstellengruppe anlegen (BNM) (BNM_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German SAP S/4HANA Cloud Public Edition master data script (BNM) for creating cost centers and cost center groups, with test steps and where-used analysis; dated 02-07-26 | keywords: Cost Centers and Cost Center Groups, cost centers, cost center groups, standard hierarchy, global hierarchies, where-used analysis, master data scripts, business roles, master data replication, overhead cost accounting, BNM_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/stammdatenskript-leistungstarife-anlegen-sds-3kw-352",
+      "title": "Stammdatenskript: Leistungstarife anlegen – SDS (3KW) (3KW_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data/test script (3KW) for SAP S/4HANA Cloud Public Edition: maintaining activity-type rates (Leistungstarife) via Services, Plan and Actual apps, plus display report.",
+      "keywords": [
+        "CO Cost Rates (Service, Plan and Actual)",
+        "activity rates",
+        "service rates",
+        "plan rates",
+        "actual rates",
+        "intercompany postings",
+        "margin accounts",
+        "automatic account determination",
+        "rate display report",
+        "business roles"
+      ],
+      "aliases": [
+        "3KW_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/cost-rates"
+      ],
+      "path": "06-management-accounting/stammdatenskript-leistungstarife-anlegen-sds-3kw-352.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3KW_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Leistungstarife anlegen – SDS (3KW) (3KW_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German master data/test script (3KW) for SAP S/4HANA Cloud Public Edition: maintaining activity-type rates (Leistungstarife) via Services, Plan and Actual apps, plus display report | keywords: CO Cost Rates (Service, Plan and Actual), activity rates, service rates, plan rates, actual rates, intercompany postings, margin accounts, automatic account determination, rate display report, business roles, 3KW_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/stammdatenskript-materialstamm-fur-universelle-erlosrealisierung-anleg",
+      "title": "Stammdatenskript: Materialstamm für universelle Erlösrealisierung anlegen (7R8) (7R8_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script (7R8): create UER test materials and sales prices for stock sales, fixed-price project and service contract.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "material master",
+        "universal revenue recognition",
+        "trading goods material",
+        "service product material",
+        "fixed-price project material",
+        "service contract material",
+        "material pricing",
+        "condition records",
+        "user roles"
+      ],
+      "aliases": [
+        "7R8_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/stammdatenskript-materialstamm-fur-universelle-erlosrealisierung-anleg.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/7R8_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Materialstamm für universelle Erlösrealisierung anlegen (7R8) (7R8_S4CLD2608_Master_Data_DE_XX) (Management Accounting) — German SAP S/4HANA Cloud Public Edition 2608 master data script (7R8): create UER test materials and sales prices for stock sales, fixed-price project and service contract | keywords: Event-Based Revenue Recognition for Sell from Stock, material master, universal revenue recognition, trading goods material, service product material, fixed-price project material, service contract material, material pricing, condition records, user roles, 7R8_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "06-management-accounting/test-script-actual-costing-33q-ae-sap-s-4hana-cloud-public-edition-903",
+      "title": "Test Script: Actual Costing (33Q_AE) - SAP S/4HANA Cloud Public Edition (33Q_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for Actual Costing (scope item 33Q_AE): prerequisites, preliminary config and step-by-step test procedures.",
+      "keywords": [
+        "Inventory Valuation and Actual Costing",
+        "actual costing",
+        "actual cost rates",
+        "actual costing runs",
+        "material ledger",
+        "price determination",
+        "splitting structure",
+        "activity types",
+        "wip quantity",
+        "event-based production cost posting"
+      ],
+      "aliases": [
+        "33Q_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/inventory-valuation-and-actual-costing"
+      ],
+      "path": "06-management-accounting/test-script-actual-costing-33q-ae-sap-s-4hana-cloud-public-edition-903.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33Q_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Actual Costing (33Q_AE) - SAP S/4HANA Cloud Public Edition (33Q_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for Actual Costing (scope item 33Q_AE): prerequisites, preliminary config and step-by-step test procedures | keywords: Inventory Valuation and Actual Costing, actual costing, actual cost rates, actual costing runs, material ledger, price determination, splitting structure, activity types, wip quantity, event-based production cost posting, 33Q_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-contract-based-revenue-recognition-ifrs-3kk-ae-949",
+      "title": "Test Script: Contract-Based Revenue Recognition – IFRS (3KK_AE) (3KK_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud 2608 (AE) test script, scope item 3KK: Universal and Contract-Based Revenue Recognition (IFRS 15), prerequisites and Fiori test steps.",
+      "keywords": [
+        "Contract-Based Revenue Recognition (Universal Revenue…",
+        "revenue recognition",
+        "universal revenue recognition",
+        "contract-based revenue recognition",
+        "event-based revenue recognition",
+        "revenue accounting items",
+        "revenue contracts",
+        "account determination",
+        "contract attributes",
+        "scope item prerequisites"
+      ],
+      "aliases": [
+        "3KK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/contract-based-revenue-recognition"
+      ],
+      "path": "06-management-accounting/test-script-contract-based-revenue-recognition-ifrs-3kk-ae-949.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3KK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract-Based Revenue Recognition – IFRS (3KK_AE) (3KK_S4CLD2608_BPD_EN_AE) (Management Accounting) — S/4HANA Cloud 2608 (AE) test script, scope item 3KK: Universal and Contract-Based Revenue Recognition (IFRS 15), prerequisites and Fiori test steps | keywords: Contract-Based Revenue Recognition (Universal Revenue…, revenue recognition, universal revenue recognition, contract-based revenue recognition, event-based revenue recognition, revenue accounting items, revenue contracts, account determination, contract attributes, scope item prerequisites, 3KK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-contract-based-revenue-recognition-us-gaap-3vs-ae-976",
+      "title": "Test Script: Contract-Based Revenue Recognition – US GAAP (3VS_AE) (3VS_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script 3VS_AE (US GAAP, company 3310): prerequisites, configuration and test steps for Universal and Contract-Based Revenue Recognition.",
+      "keywords": [
+        "Contract-Based Revenue Recognition (Universal Revenue…",
+        "test scripts",
+        "contract-based revenue recognition",
+        "universal revenue recognition",
+        "event-based revenue recognition",
+        "revenue contracts",
+        "revenue accounting items",
+        "contract attributes configuration",
+        "account determination",
+        "error handling"
+      ],
+      "aliases": [
+        "3VS_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/contract-based-revenue-recognition"
+      ],
+      "path": "06-management-accounting/test-script-contract-based-revenue-recognition-us-gaap-3vs-ae-976.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3VS_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract-Based Revenue Recognition – US GAAP (3VS_AE) (3VS_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud test script 3VS_AE (US GAAP, company 3310): prerequisites, configuration and test steps for Universal and Contract-Based Revenue Recognition | keywords: Contract-Based Revenue Recognition (Universal Revenue…, test scripts, contract-based revenue recognition, universal revenue recognition, event-based revenue recognition, revenue contracts, revenue accounting items, contract attributes configuration, account determination, error handling, 3VS_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-production-cost-posting-3f0-ae-sap-s-4hana-clo",
+      "title": "Test Script: Event-Based Production Cost Posting (3F0_AE) - SAP S/4HANA Cloud Public Edition (3F0_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 3F0_AE: set up and test event-based WIP, variance and overhead posting, manual settlement and cost analytics.",
+      "keywords": [
+        "Event-Based Production Cost Posting",
+        "event-based wip and variance",
+        "costing sheets",
+        "results analysis keys",
+        "product cost collector",
+        "manual settlement",
+        "event-based posting errors",
+        "production cost analytics",
+        "non-material settlement",
+        "posting rules"
+      ],
+      "aliases": [
+        "3F0_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-production-cost-posting"
+      ],
+      "path": "06-management-accounting/test-script-event-based-production-cost-posting-3f0-ae-sap-s-4hana-clo.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3F0_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Production Cost Posting (3F0_AE) - SAP S/4HANA Cloud Public Edition (3F0_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud test script for scope item 3F0_AE: set up and test event-based WIP, variance and overhead posting, manual settlement and cost analytics | keywords: Event-Based Production Cost Posting, event-based wip and variance, costing sheets, results analysis keys, product cost collector, manual settlement, event-based posting errors, production cost analytics, non-material settlement, posting rules, 3F0_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-sales-ifrs-4",
+      "title": "Test Script: Event-Based Revenue Recognition – Project-Based Sales – IFRS (4GR_AE) (4GR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (scope item 4GR_AE): prerequisites and step-by-step tests for event-based revenue recognition on project-based sales under IFRS.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Projects",
+        "event-based revenue recognition",
+        "project-based sales",
+        "test scripts",
+        "recognition key derivation",
+        "financial statement versions",
+        "project profitability report",
+        "revenue recognition settings",
+        "revenue recognition issues",
+        "semantic tags"
+      ],
+      "aliases": [
+        "4GR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-sales-ifrs-4.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4GR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Project-Based Sales – IFRS (4GR_AE) (4GR_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script (scope item 4GR_AE): prerequisites and step-by-step tests for event-based revenue recognition on project-based sales under IFRS | keywords: Event-Based Revenue Recognition for Projects, event-based revenue recognition, project-based sales, test scripts, recognition key derivation, financial statement versions, project profitability report, revenue recognition settings, revenue recognition issues, semantic tags, 4GR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-sales-us-gaa",
+      "title": "Test Script: Event-Based Revenue Recognition – Project-Based Sales – US GAAP (4GS_AE), SAP S/4HANA Cloud Public Edition (4GS_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (4GS_AE): prerequisites, config and test steps for event-based revenue recognition, project sales, US GAAP.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Projects",
+        "event-based revenue recognition",
+        "project-based sales",
+        "test procedures",
+        "financial statement versions",
+        "semantic tags",
+        "project profitability report",
+        "recognition key derivation",
+        "imminent loss handling",
+        "revenue recognition reversal"
+      ],
+      "aliases": [
+        "4GS_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-sales-us-gaa.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4GS_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Project-Based Sales – US GAAP (4GS_AE), SAP S/4HANA Cloud Public Edition (4GS_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script (4GS_AE): prerequisites, config and test steps for event-based revenue recognition, project sales, US GAAP | keywords: Event-Based Revenue Recognition for Projects, event-based revenue recognition, project-based sales, test procedures, financial statement versions, semantic tags, project profitability report, recognition key derivation, imminent loss handling, revenue recognition reversal, 4GS_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-services-1il",
+      "title": "Test Script: Event-Based Revenue Recognition – Project-Based Services (1IL_AE) (1IL_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (1IL_AE) for event-based revenue recognition in project-based services: prerequisites, setup, test steps.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Projects",
+        "event-based revenue recognition",
+        "project-based services",
+        "recognition keys",
+        "financial statement versions",
+        "semantic tags",
+        "project profitability",
+        "revenue recognition issues",
+        "revenue recognition run",
+        "imminent loss handling"
+      ],
+      "aliases": [
+        "1IL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-services-1il.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1IL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Project-Based Services (1IL_AE) (1IL_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script (1IL_AE) for event-based revenue recognition in project-based services: prerequisites, setup, test steps | keywords: Event-Based Revenue Recognition for Projects, event-based revenue recognition, project-based services, recognition keys, financial statement versions, semantic tags, project profitability, revenue recognition issues, revenue recognition run, imminent loss handling, 1IL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-services-ifr",
+      "title": "Test Script: Event-Based Revenue Recognition – Project-Based Services – IFRS (1P0_AE) (1P0_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud scope item 1P0_AE: FSV YPS2, recognition key and hierarchy setup, then event-based project revenue recognition tests.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Projects",
+        "event-based revenue recognition",
+        "revenue recognition testing",
+        "financial statement versions",
+        "semantic tags",
+        "project profitability report",
+        "recognition keys",
+        "usage-based billing",
+        "revenue recognition issues",
+        "revenue recognition reversal"
+      ],
+      "aliases": [
+        "1P0_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-project-based-services-ifr.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1P0_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Project-Based Services – IFRS (1P0_AE) (1P0_S4CLD2608_BPD_EN_AE) (Management Accounting) — Test script for SAP S/4HANA Cloud scope item 1P0_AE: FSV YPS2, recognition key and hierarchy setup, then event-based project revenue recognition tests | keywords: Event-Based Revenue Recognition for Projects, event-based revenue recognition, revenue recognition testing, financial statement versions, semantic tags, project profitability report, recognition keys, usage-based billing, revenue recognition issues, revenue recognition reversal, 1P0_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-sell-from-stock-ifrs-33m-a",
+      "title": "Test Script: Event-Based Revenue Recognition – Sell from Stock – IFRS (33M_AE) (33M_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script 33M_AE: event-based revenue recognition, sell from stock, IFRS; prerequisites, config, run, issues, reversal.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "event-based revenue recognition",
+        "sell from stock",
+        "recognition key derivation",
+        "revenue recognition configuration",
+        "revenue recognition run",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "ifrs 15 bundling",
+        "sales order actuals"
+      ],
+      "aliases": [
+        "33M_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-sell-from-stock-ifrs-33m-a.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33M_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Sell from Stock – IFRS (33M_AE) (33M_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script 33M_AE: event-based revenue recognition, sell from stock, IFRS; prerequisites, config, run, issues, reversal | keywords: Event-Based Revenue Recognition for Sell from Stock, event-based revenue recognition, sell from stock, recognition key derivation, revenue recognition configuration, revenue recognition run, revenue recognition issues, revenue recognition reversal, ifrs 15 bundling, sales order actuals, 33M_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-sell-from-stock-us-gaap-33",
+      "title": "Test Script: Event-Based Revenue Recognition – Sell from Stock – US GAAP (33J_AE) (33J_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for event-based revenue recognition, sell from stock, US GAAP (33J_AE): prerequisites, config and test steps.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Sell from Stock",
+        "event-based revenue recognition",
+        "sell from stock",
+        "recognition key derivation",
+        "revenue recognition settings",
+        "test procedures",
+        "revenue recognition issues",
+        "business roles",
+        "business conditions",
+        "report relevancy"
+      ],
+      "aliases": [
+        "33J_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-sell-from-stock"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-sell-from-stock-us-gaap-33.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33J_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Sell from Stock – US GAAP (33J_AE) (33J_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for event-based revenue recognition, sell from stock, US GAAP (33J_AE): prerequisites, config and test steps | keywords: Event-Based Revenue Recognition for Sell from Stock, event-based revenue recognition, sell from stock, recognition key derivation, revenue recognition settings, test procedures, revenue recognition issues, business roles, business conditions, report relevancy, 33J_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-service-documents-3m3-ae-9",
+      "title": "Test Script: Event-Based Revenue Recognition – Service Documents (3M3_AE) (3M3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 3M3, AE): configure and test event-based revenue recognition for service contracts and orders.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Service Documents",
+        "event-based revenue recognition",
+        "service documents",
+        "test scripts",
+        "recognition key derivation",
+        "substitution and validation rules",
+        "period-end revenue recognition",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "service order settlement"
+      ],
+      "aliases": [
+        "3M3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-service-documents"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-service-documents-3m3-ae-9.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3M3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Service Documents (3M3_AE) (3M3_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script (scope item 3M3, AE): configure and test event-based revenue recognition for service contracts and orders | keywords: Event-Based Revenue Recognition for Service Documents, event-based revenue recognition, service documents, test scripts, recognition key derivation, substitution and validation rules, period-end revenue recognition, revenue recognition issues, revenue recognition reversal, service order settlement, 3M3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-service-documents-ifrs-3m4",
+      "title": "Test Script: Event-Based Revenue Recognition – Service Documents – IFRS (3M4_AE) (3M4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3M4_AE: event-based revenue recognition on service contracts/orders (IFRS), prerequisites, steps, settlement.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Service Documents",
+        "event-based revenue recognition",
+        "service documents",
+        "test scripts",
+        "revenue recognition run",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "settlement rules",
+        "recognition key derivation",
+        "substitution and validation rules"
+      ],
+      "aliases": [
+        "3M4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/ebrr-for-service-documents"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-service-documents-ifrs-3m4.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3M4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Service Documents – IFRS (3M4_AE) (3M4_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 3M4_AE: event-based revenue recognition on service contracts/orders (IFRS), prerequisites, steps, settlement | keywords: Event-Based Revenue Recognition for Service Documents, event-based revenue recognition, service documents, test scripts, revenue recognition run, revenue recognition issues, revenue recognition reversal, settlement rules, recognition key derivation, substitution and validation rules, 3M4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-event-based-revenue-recognition-subscription-billing-ifrs",
+      "title": "Test Script: Event-Based Revenue Recognition – Subscription Billing – IFRS (5DR_AE) (5DR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5DR: event-based revenue recognition of subscription provider contracts under IFRS, with prerequisites and steps.",
+      "keywords": [
+        "Event-Based Revenue Recognition for Subscriptions",
+        "event-based revenue recognition",
+        "provider contracts",
+        "subscription billing",
+        "recognition key derivation",
+        "period-end revenue recognition",
+        "revenue recognition issues",
+        "revenue recognition reversal",
+        "product and service margins",
+        "report relevancy"
+      ],
+      "aliases": [
+        "5DR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/event-based-revenue-recognition-subscriptions"
+      ],
+      "path": "06-management-accounting/test-script-event-based-revenue-recognition-subscription-billing-ifrs.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5DR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Event-Based Revenue Recognition – Subscription Billing – IFRS (5DR_AE) (5DR_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5DR: event-based revenue recognition of subscription provider contracts under IFRS, with prerequisites and steps | keywords: Event-Based Revenue Recognition for Subscriptions, event-based revenue recognition, provider contracts, subscription billing, recognition key derivation, period-end revenue recognition, revenue recognition issues, revenue recognition reversal, product and service margins, report relevancy, 5DR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-financial-plan-data-upload-from-file-1hb-ae-sap-s-4hana-cl",
+      "title": "Test Script: Financial Plan Data Upload from File (1HB_AE) - SAP S/4HANA Cloud Public Edition (1HB_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script (scope item 1HB_AE, release 2608): uploading, updating, copying, deleting and compressing financial plan data via CSV in Fiori.",
+      "keywords": [
+        "Financial Plan Data Upload and Integrated Financial Planning",
+        "financial plan data upload",
+        "plan data file format",
+        "plan data scope",
+        "statistical key figures",
+        "actual versus plan reporting",
+        "copy plan data",
+        "delete plan data",
+        "compress plan data",
+        "sap analytics cloud integration"
+      ],
+      "aliases": [
+        "1HB_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/financial-plan-data-and-integrated-planning"
+      ],
+      "path": "06-management-accounting/test-script-financial-plan-data-upload-from-file-1hb-ae-sap-s-4hana-cl.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1HB_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Financial Plan Data Upload from File (1HB_AE) - SAP S/4HANA Cloud Public Edition (1HB_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP Best Practices test script (scope item 1HB_AE, release 2608): uploading, updating, copying, deleting and compressing financial plan data via CSV in Fiori | keywords: Financial Plan Data Upload and Integrated Financial Planning, financial plan data upload, plan data file format, plan data scope, statistical key figures, actual versus plan reporting, copy plan data, delete plan data, compress plan data, sap analytics cloud integration, 1HB_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-financial-planning-and-analysis-2fm-ae-825",
+      "title": "Test Script: Financial Planning and Analysis (2FM_AE) (2FM_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2FM (AE): maintaining the predefined Financial Statement Version FPA1 and its semantic tags.",
+      "keywords": [
+        "Financial Planning and Analysis Statement Version",
+        "financial statement version",
+        "semantic tags",
+        "financial planning and analysis",
+        "test scripts",
+        "business roles",
+        "master data",
+        "demo data",
+        "q system restrictions",
+        "2FM"
+      ],
+      "aliases": [
+        "2FM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/financial-planning-statement-version"
+      ],
+      "path": "06-management-accounting/test-script-financial-planning-and-analysis-2fm-ae-825.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2FM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Financial Planning and Analysis (2FM_AE) (2FM_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2FM (AE): maintaining the predefined Financial Statement Version FPA1 and its semantic tags | keywords: Financial Planning and Analysis Statement Version, financial statement version, semantic tags, financial planning and analysis, test scripts, business roles, master data, demo data, q system restrictions, 2FM, 2FM_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-group-valuation-5w2-ae-1123",
+      "title": "Test Script: Group Valuation (5W2_AE) (5W2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5W2 Group Valuation: prerequisites, configuration, costing run, cost estimates, actual costing for ledger 4G.",
+      "keywords": [
+        "Group Valuation",
+        "costing run",
+        "execute costing run",
+        "material cost estimates",
+        "group valuation ledger",
+        "actual costing",
+        "costing variants",
+        "intercompany clearing",
+        "intercompany sales",
+        "scope item activation"
+      ],
+      "aliases": [
+        "5W2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/group-valuation"
+      ],
+      "path": "06-management-accounting/test-script-group-valuation-5w2-ae-1123.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5W2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Group Valuation (5W2_AE) (5W2_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 5W2 Group Valuation: prerequisites, configuration, costing run, cost estimates, actual costing for ledger 4G | keywords: Group Valuation, costing run, execute costing run, material cost estimates, group valuation ledger, actual costing, costing variants, intercompany clearing, intercompany sales, scope item activation, 5W2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-inventory-valuation-for-year-end-closing-bej-ae-1260",
+      "title": "Test Script: Inventory Valuation for Year-End Closing (BEJ_AE) (BEJ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item BEJ_AE: FIFO, lowest-value determination, balance sheet value and adjustment for year-end inventory valuation.",
+      "keywords": [
+        "Inventory Valuation and Actual Costing",
+        "inventory valuation",
+        "year-end closing",
+        "fifo valuation",
+        "lowest value determination",
+        "range of coverage",
+        "movement rate",
+        "inventory costing",
+        "inventory balance sheet valuation",
+        "balance sheet value adjustment"
+      ],
+      "aliases": [
+        "BEJ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/inventory-valuation-and-actual-costing"
+      ],
+      "path": "06-management-accounting/test-script-inventory-valuation-for-year-end-closing-bej-ae-1260.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BEJ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Inventory Valuation for Year-End Closing (BEJ_AE) (BEJ_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item BEJ_AE: FIFO, lowest-value determination, balance sheet value and adjustment for year-end inventory valuation | keywords: Inventory Valuation and Actual Costing, inventory valuation, year-end closing, fifo valuation, lowest value determination, range of coverage, movement rate, inventory costing, inventory balance sheet valuation, balance sheet value adjustment, BEJ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-organizational-flexibility-in-financial-accounting-4pg-sap",
+      "title": "Test Script: Organizational Flexibility in Financial Accounting (4PG) - SAP S/4HANA Cloud Public Edition (4PG_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 4PG: create, simulate, activate and process a profit center organizational change.",
+      "keywords": [
+        "Profit Centers and Profit Center Reorganization",
+        "organizational change",
+        "profit center reassignment",
+        "organizational change simulation",
+        "organizational change activation",
+        "organizational change processing",
+        "organizational change reporting",
+        "extension ledger",
+        "data source extension",
+        "wbs elements"
+      ],
+      "aliases": [
+        "4PG_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/profit-centers"
+      ],
+      "path": "06-management-accounting/test-script-organizational-flexibility-in-financial-accounting-4pg-sap.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4PG_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Organizational Flexibility in Financial Accounting (4PG) - SAP S/4HANA Cloud Public Edition (4PG_S4CLD2608_BPD_EN_XX) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 4PG: create, simulate, activate and process a profit center organizational change | keywords: Profit Centers and Profit Center Reorganization, organizational change, profit center reassignment, organizational change simulation, organizational change activation, organizational change processing, organizational change reporting, extension ledger, data source extension, wbs elements, 4PG_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/test-script-overhead-cost-accounting-j54-ae-sap-s-4hana-cloud-public-e",
+      "title": "Test Script: Overhead Cost Accounting (J54_AE) - SAP S/4HANA Cloud Public Edition (J54_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud scope item J54 Overhead Cost Accounting (AE, 2608): prerequisites, cost center postings, allocations, reports, budgeting.",
+      "keywords": [
+        "Overhead Cost Accounting",
+        "cost centers",
+        "overhead allocation",
+        "direct activity allocation",
+        "statistical key figures",
+        "profit center distribution",
+        "cost reassignment",
+        "cost center reporting",
+        "commitment management",
+        "cost center budgeting"
+      ],
+      "aliases": [
+        "J54_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/overhead-cost-accounting"
+      ],
+      "path": "06-management-accounting/test-script-overhead-cost-accounting-j54-ae-sap-s-4hana-cloud-public-e.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J54_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Overhead Cost Accounting (J54_AE) - SAP S/4HANA Cloud Public Edition (J54_S4CLD2608_BPD_EN_AE) (Management Accounting) — Test script for SAP S/4HANA Cloud scope item J54 Overhead Cost Accounting (AE, 2608): prerequisites, cost center postings, allocations, reports, budgeting | keywords: Overhead Cost Accounting, cost centers, overhead allocation, direct activity allocation, statistical key figures, profit center distribution, cost reassignment, cost center reporting, commitment management, cost center budgeting, J54_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-predictive-commitments-management-2i3-ae-sap-s-4hana-cloud",
+      "title": "Test Script: Predictive Commitments Management (2I3_AE) - SAP S/4HANA Cloud Public Edition (2I3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2I3 Predictive Commitments Management (AE): commitment reporting, cost center and project budgeting, with prerequisites and step tables.",
+      "keywords": [
+        "Budgets and Commitment Management",
+        "commitment management",
+        "cost center budgeting",
+        "project budget report",
+        "budget availability control",
+        "purchase order commitments",
+        "budget transfer",
+        "financial plan import",
+        "currency exchange rates",
+        "business roles"
+      ],
+      "aliases": [
+        "2I3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/budgets-and-commitments"
+      ],
+      "path": "06-management-accounting/test-script-predictive-commitments-management-2i3-ae-sap-s-4hana-cloud.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2I3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Predictive Commitments Management (2I3_AE) - SAP S/4HANA Cloud Public Edition (2I3_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP test script for scope item 2I3 Predictive Commitments Management (AE): commitment reporting, cost center and project budgeting, with prerequisites and step tables | keywords: Budgets and Commitment Management, commitment management, cost center budgeting, project budget report, budget availability control, purchase order commitments, budget transfer, financial plan import, currency exchange rates, business roles, 2I3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-product-cost-breakdown-in-plan-actual-value-flow-7nh-ae-sa",
+      "title": "Test Script: Product Cost Breakdown in Plan/Actual Value Flow (7NH_AE) - SAP S/4HANA Cloud Public Edition (7NH_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7NH: plan/actual product cost breakdown, prerequisites, configuration and Fiori test steps.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "product cost breakdown",
+        "origin cost breakdown",
+        "universal component breakdown",
+        "costing runs",
+        "origin groups",
+        "product cost planning configuration",
+        "cost of goods manufactured",
+        "product profitability analysis",
+        "scope item testing"
+      ],
+      "aliases": [
+        "7NH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/test-script-product-cost-breakdown-in-plan-actual-value-flow-7nh-ae-sa.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7NH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Product Cost Breakdown in Plan/Actual Value Flow (7NH_AE) - SAP S/4HANA Cloud Public Edition (7NH_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7NH: plan/actual product cost breakdown, prerequisites, configuration and Fiori test steps | keywords: Product Costing Runs and Standard Cost Updates, product cost breakdown, origin cost breakdown, universal component breakdown, costing runs, origin groups, product cost planning configuration, cost of goods manufactured, product profitability analysis, scope item testing, 7NH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-project-control-capital-projects-35f-ae-sap-s-4hana-cloud",
+      "title": "Test Script: Project Control – Capital Projects (35F_AE), SAP S/4HANA Cloud Public Edition (35F_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 35F (AE): prerequisites and test steps to create, budget, release, monitor, settle and close capital investment projects.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "capital investment projects",
+        "project creation",
+        "project budget",
+        "budget availability control",
+        "planned costs",
+        "project monitoring",
+        "assets under construction",
+        "project settlement",
+        "project status management"
+      ],
+      "aliases": [
+        "35F_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects"
+      ],
+      "path": "06-management-accounting/test-script-project-control-capital-projects-35f-ae-sap-s-4hana-cloud.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/35F_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Control – Capital Projects (35F_AE), SAP S/4HANA Cloud Public Edition (35F_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP test script for scope item 35F (AE): prerequisites and test steps to create, budget, release, monitor, settle and close capital investment projects | keywords: Project Control for Finance, Capital, R&D and Sales Projects, capital investment projects, project creation, project budget, budget availability control, planned costs, project monitoring, assets under construction, project settlement, project status management, 35F_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-project-control-finance-1nt-ae-sap-s-4hana-cloud-public-ed",
+      "title": "Test Script: Project Control – Finance (1NT_AE), SAP S/4HANA Cloud Public Edition (1NT_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 1NT (Project Control – Finance, AE): create, budget, monitor, settle, complete and close projects.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "project control finance",
+        "project creation",
+        "project budget",
+        "budget availability control",
+        "planned costs",
+        "project monitoring",
+        "project settlement",
+        "period-end closing",
+        "project release"
+      ],
+      "aliases": [
+        "1NT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects"
+      ],
+      "path": "06-management-accounting/test-script-project-control-finance-1nt-ae-sap-s-4hana-cloud-public-ed.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1NT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Control – Finance (1NT_AE), SAP S/4HANA Cloud Public Edition (1NT_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 1NT (Project Control – Finance, AE): create, budget, monitor, settle, complete and close projects | keywords: Project Control for Finance, Capital, R&D and Sales Projects, project control finance, project creation, project budget, budget availability control, planned costs, project monitoring, project settlement, period-end closing, project release, 1NT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-project-control-research-and-development-projects-35e-ae-9",
+      "title": "Test Script: Project Control – Research and Development Projects (35E_AE) (35E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 35E (AE): create, budget, release, monitor, close R&D projects, with prerequisites and Fiori app steps.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "research and development projects",
+        "project control",
+        "project creation",
+        "project budget",
+        "planned costs",
+        "budget availability control",
+        "project monitoring",
+        "project coding mask",
+        "cost rates"
+      ],
+      "aliases": [
+        "35E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects"
+      ],
+      "path": "06-management-accounting/test-script-project-control-research-and-development-projects-35e-ae-9.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/35E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Control – Research and Development Projects (35E_AE) (35E_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 35E (AE): create, budget, release, monitor, close R&D projects, with prerequisites and Fiori app steps | keywords: Project Control for Finance, Capital, R&D and Sales Projects, research and development projects, project control, project creation, project budget, planned costs, budget availability control, project monitoring, project coding mask, cost rates, 35E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-project-control-resourcing-and-procurement-4rf-ae-1049",
+      "title": "Test Script: Project Control – Resourcing and Procurement (4RF_AE) (4RF_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 4RF_AE: project demands for materials, services and resources, with roles, apps and sample data.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "project demand",
+        "non-stock material demand",
+        "project stock procurement",
+        "preliminary procurement",
+        "project stock reservation",
+        "service demand",
+        "resource demand",
+        "demand request",
+        "demand monitoring"
+      ],
+      "aliases": [
+        "4RF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects"
+      ],
+      "path": "06-management-accounting/test-script-project-control-resourcing-and-procurement-4rf-ae-1049.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4RF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Control – Resourcing and Procurement (4RF_AE) (4RF_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition test script for scope item 4RF_AE: project demands for materials, services and resources, with roles, apps and sample data | keywords: Project Control for Finance, Capital, R&D and Sales Projects, project demand, non-stock material demand, project stock procurement, preliminary procurement, project stock reservation, service demand, resource demand, demand request, demand monitoring, 4RF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-project-control-sales-4i9-ae-sap-s-4hana-cloud-public-edit",
+      "title": "Test Script: Project Control – Sales (4I9_AE), SAP S/4HANA Cloud Public Edition (4I9_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 4I9_AE: fixed-price projects with revenue, from project creation and sales order billing plan to revenue recognition and closure.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "project with revenue",
+        "fixed-price project billing",
+        "sales order billing plan",
+        "customer down payment",
+        "event-based revenue recognition",
+        "free of charge sales order",
+        "budget availability control",
+        "planned costs upload",
+        "project milestones"
+      ],
+      "aliases": [
+        "4I9_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects",
+        "topic/ebrr-for-projects"
+      ],
+      "path": "06-management-accounting/test-script-project-control-sales-4i9-ae-sap-s-4hana-cloud-public-edit.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4I9_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Control – Sales (4I9_AE), SAP S/4HANA Cloud Public Edition (4I9_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP test script for scope item 4I9_AE: fixed-price projects with revenue, from project creation and sales order billing plan to revenue recognition and closure | keywords: Project Control for Finance, Capital, R&D and Sales Projects, project with revenue, fixed-price project billing, sales order billing plan, customer down payment, event-based revenue recognition, free of charge sales order, budget availability control, planned costs upload, project milestones, 4I9_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-project-review-1yf-ae-sap-s-4hana-cloud-public-edition-787",
+      "title": "Test Script: Project Review (1YF_AE) - SAP S/4HANA Cloud Public Edition (1YF_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud test script for scope item 1YF Project Review: roles, apps and test steps for project setup, release workflow and milestone review.",
+      "keywords": [
+        "Project Control for Finance, Capital, R&D and Sales Projects",
+        "project review",
+        "test script",
+        "project milestones",
+        "project setup",
+        "project release workflow",
+        "project status",
+        "steering committee review",
+        "business roles",
+        "team responsibility"
+      ],
+      "aliases": [
+        "1YF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/project-control-enterprise-projects"
+      ],
+      "path": "06-management-accounting/test-script-project-review-1yf-ae-sap-s-4hana-cloud-public-edition-787.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1YF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Project Review (1YF_AE) - SAP S/4HANA Cloud Public Edition (1YF_S4CLD2608_BPD_EN_AE) (Management Accounting) — S/4HANA Cloud test script for scope item 1YF Project Review: roles, apps and test steps for project setup, release workflow and milestone review | keywords: Project Control for Finance, Capital, R&D and Sales Projects, project review, test script, project milestones, project setup, project release workflow, project status, steering committee review, business roles, team responsibility, 1YF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-sap-s-4hana-cloud-public-edition-integrated-financial-plan",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Integrated Financial Planning (4RC) (4RC_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 4RC Integrated Financial Planning in SAP Analytics Cloud: OPEX, product cost, profitability, CAPEX, financial statement, GHG, add-ons, S/4HANA integration.",
+      "keywords": [
+        "Financial Plan Data Upload and Integrated Financial Planning",
+        "integrated financial planning",
+        "operating expense planning",
+        "product cost planning",
+        "sales and profitability planning",
+        "capital expense planning",
+        "financial statement planning",
+        "simulation cockpit",
+        "greenhouse gas emission planning",
+        "ifp add-on package"
+      ],
+      "aliases": [
+        "4RC_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/financial-plan-data-and-integrated-planning",
+        "topic/group-financial-planning"
+      ],
+      "path": "06-management-accounting/test-script-sap-s-4hana-cloud-public-edition-integrated-financial-plan.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4RC_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Integrated Financial Planning (4RC) (4RC_S4CLD2608_BPD_EN_XX) (Management Accounting) — Test script for scope item 4RC Integrated Financial Planning in SAP Analytics Cloud: OPEX, product cost, profitability, CAPEX, financial statement, GHG, add-ons, S/4HANA integration | keywords: Financial Plan Data Upload and Integrated Financial Planning, integrated financial planning, operating expense planning, product cost planning, sales and profitability planning, capital expense planning, financial statement planning, simulation cockpit, greenhouse gas emission planning, ifp add-on package, 4RC_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "06-management-accounting/test-script-standard-cost-calculation-beg-ae-sap-s-4hana-cloud-public",
+      "title": "Test Script: Standard Cost Calculation (BEG_AE) - SAP S/4HANA Cloud Public Edition (BEG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for standard cost calculation (BEG_AE): prerequisites, setup, costing run steps, analytics.",
+      "keywords": [
+        "Product Costing Runs and Standard Cost Updates",
+        "standard cost calculation",
+        "costing run",
+        "costing run execution",
+        "activity prices",
+        "additive costs",
+        "origin groups",
+        "parallel valuation",
+        "material cost estimates",
+        "sales order costing"
+      ],
+      "aliases": [
+        "BEG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/product-costing-and-standard-cost-updates"
+      ],
+      "path": "06-management-accounting/test-script-standard-cost-calculation-beg-ae-sap-s-4hana-cloud-public.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BEG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Standard Cost Calculation (BEG_AE) - SAP S/4HANA Cloud Public Edition (BEG_S4CLD2608_BPD_EN_AE) (Management Accounting) — SAP S/4HANA Cloud Public Edition 2608 test script for standard cost calculation (BEG_AE): prerequisites, setup, costing run steps, analytics | keywords: Product Costing Runs and Standard Cost Updates, standard cost calculation, costing run, costing run execution, activity prices, additive costs, origin groups, parallel valuation, material cost estimates, sales order costing, BEG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "06-management-accounting/test-script-universal-allocation-2ql-ae-sap-s-4hana-cloud-public-editi",
+      "title": "Test Script: Universal Allocation (2QL_AE) - SAP S/4HANA Cloud Public Edition (2QL_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition 2608 test script for Universal Allocation (2QL_AE): plan data upload, allocation cycles and runs, profit center, intercompany.",
+      "keywords": [
+        "Universal Allocation Cycles",
+        "universal allocation",
+        "test scripts",
+        "plan data import",
+        "statistical key figures",
+        "plan allocation cycles",
+        "plan profit center distribution",
+        "intercompany allocation",
+        "allocation scheduling",
+        "allocation groups"
+      ],
+      "aliases": [
+        "2QL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/management-accounting",
+        "topic/universal-allocation"
+      ],
+      "path": "06-management-accounting/test-script-universal-allocation-2ql-ae-sap-s-4hana-cloud-public-editi.md",
+      "cluster": "06-management-accounting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2QL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Universal Allocation (2QL_AE) - SAP S/4HANA Cloud Public Edition (2QL_S4CLD2608_BPD_EN_AE) (Management Accounting) — S/4HANA Cloud Public Edition 2608 test script for Universal Allocation (2QL_AE): plan data upload, allocation cycles and runs, profit center, intercompany | keywords: Universal Allocation Cycles, universal allocation, test scripts, plan data import, statistical key figures, plan allocation cycles, plan profit center distribution, intercompany allocation, allocation scheduling, allocation groups, 2QL_S4CLD2608_BPD_EN_AE"
+    }
+  ]
+}

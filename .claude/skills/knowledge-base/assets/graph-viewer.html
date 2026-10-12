@@ -1,0 +1,2923 @@
+<meta charset="utf-8">
+<title>Knowledge graph</title>
+<style>
+/* ==========================================================================
+   Tokens. Light on bare :root; dark declared under BOTH the media query
+   (guarded so an explicit light choice wins) and [data-theme="dark"], so the
+   in-page toggle beats the OS setting in both directions.
+   ========================================================================== */
+:root{
+  color-scheme: light;
+  --surface-1:#fcfcfb; --surface-2:#f6f6f3; --surface-3:#eeede8;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#8b8983;
+  --hairline:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,.10);
+  --focus:#2a78d6;
+  --seq-150:#b7d3f6; --seq-450:#2a78d6;
+  --good:#0ca30c; --warning:#c98500; --serious:#d2691e; --critical:#d03b3b;
+  --edge-structure:#c3c2b7; --edge-dim:rgba(11,11,11,.07);
+  --shadow-1:0 1px 2px rgba(11,11,11,.06),0 1px 8px rgba(11,11,11,.04);
+  --shadow-2:0 10px 40px rgba(11,11,11,.16),0 2px 8px rgba(11,11,11,.08);
+  --radius-1:6px; --radius-2:10px;
+  --dur:180ms; --ease:cubic-bezier(.2,.7,.2,1);
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --rail-w:310px; --ins-w:420px;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  color-scheme: dark;
+  --surface-1:#1a1a19; --surface-2:#131312; --surface-3:#252523;
+  --text-primary:#f7f7f5; --text-secondary:#c3c2b7; --text-muted:#8b8983;
+  --hairline:#2c2c2a; --baseline:#3d3d3a; --border:rgba(255,255,255,.12);
+  --focus:#3987e5;
+  --seq-150:#1d4a86; --seq-450:#3987e5;
+  --good:#3ec73e; --warning:#e0a92b; --serious:#e8895a; --critical:#e66767;
+  --edge-structure:#4a4a46; --edge-dim:rgba(255,255,255,.08);
+  --shadow-1:0 1px 2px rgba(0,0,0,.4); --shadow-2:0 10px 40px rgba(0,0,0,.6);
+}}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --surface-1:#1a1a19; --surface-2:#131312; --surface-3:#252523;
+  --text-primary:#f7f7f5; --text-secondary:#c3c2b7; --text-muted:#8b8983;
+  --hairline:#2c2c2a; --baseline:#3d3d3a; --border:rgba(255,255,255,.12);
+  --focus:#3987e5;
+  --seq-150:#1d4a86; --seq-450:#3987e5;
+  --good:#3ec73e; --warning:#e0a92b; --serious:#e8895a; --critical:#e66767;
+  --edge-structure:#4a4a46; --edge-dim:rgba(255,255,255,.08);
+  --shadow-1:0 1px 2px rgba(0,0,0,.4); --shadow-2:0 10px 40px rgba(0,0,0,.6);
+}
+@media (prefers-reduced-motion:reduce){ :root{ --dur:0ms; } }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-2);color:var(--text-primary);
+  font:14px/1.5 var(--sans);-webkit-font-smoothing:antialiased;
+  height:100vh;display:flex;flex-direction:column;overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+code{font-family:var(--mono);font-size:.92em}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;z-index:100;padding:10px 14px;
+  background:var(--surface-1);box-shadow:var(--shadow-2);border-radius:var(--radius-1)}
+.skip:focus{left:8px;top:8px}
+
+/* ---------- header ---------- */
+.topbar{display:flex;align-items:center;gap:22px;padding:12px 18px;
+  background:var(--surface-1);border-bottom:1px solid var(--hairline);flex:0 0 auto;
+  flex-wrap:wrap}
+.topbar h1{margin:0;font-size:15px;font-weight:650;letter-spacing:-.01em}
+.topbar__meta{margin:2px 0 0;font-size:11.5px;color:var(--text-muted)}
+.topbar__id{min-width:150px}
+.hero{display:flex;flex-direction:column;line-height:1.1;padding-left:22px;
+  border-left:1px solid var(--hairline)}
+.hero__value{font-size:44px;font-weight:600;letter-spacing:-.02em;
+  font-variant-numeric:proportional-nums}
+.hero__label{font-size:12.5px;color:var(--text-secondary);margin-top:3px}
+.hero__break{font-size:11.5px;color:var(--text-muted);margin-top:3px}
+.hero.is-good .hero__value{color:var(--good)}
+.tiles{display:flex;gap:8px;flex-wrap:wrap}
+.tile{display:flex;align-items:center;gap:7px;padding:8px 11px;text-align:left;
+  background:var(--surface-2);border:1px solid var(--hairline);
+  border-radius:var(--radius-1);transition:background var(--dur) var(--ease)}
+.tile:hover{background:var(--surface-3)}
+.tile__label{font-size:11.5px;color:var(--text-secondary)}
+.tile__value{font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
+.tile svg{width:14px;height:14px;flex:0 0 auto}
+.tile--critical svg{color:var(--critical)} .tile--critical .tile__value{color:var(--critical)}
+.tile--serious svg{color:var(--serious)}   .tile--serious .tile__value{color:var(--serious)}
+.tile--warning svg{color:var(--warning)}   .tile--warning .tile__value{color:var(--warning)}
+.tile.is-zero .tile__value,.tile.is-zero svg{color:var(--text-muted)}
+.tile--meter{flex-direction:column;align-items:stretch;gap:4px;min-width:172px;cursor:default}
+.tile--meter .tile__top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.meter{height:5px;background:var(--seq-150);border-radius:3px;overflow:hidden}
+.meter__fill{height:100%;background:var(--seq-450)}
+.tile__foot{font-size:10.5px;color:var(--text-muted)}
+.tile--unknown{border-style:dashed}
+.topbar__inv{font-size:11.5px;color:var(--text-secondary);display:flex;gap:12px;flex-wrap:wrap}
+.topbar__tools{margin-left:auto;display:flex;gap:4px}
+.topbar__tools button{width:30px;height:30px;border-radius:var(--radius-1);
+  border:1px solid var(--hairline);display:grid;place-items:center;font-size:13px}
+.topbar__tools button:hover{background:var(--surface-3)}
+.badge-cdn{font-size:10.5px;color:var(--warning);border:1px solid currentColor;
+  padding:2px 6px;border-radius:20px}
+
+/* ---------- filter bar ---------- */
+.filterbar{display:flex;align-items:center;gap:8px;padding:9px 18px;flex-wrap:wrap;
+  background:var(--surface-1);border-bottom:1px solid var(--hairline);flex:0 0 auto}
+.field{display:flex;align-items:center;gap:7px;background:var(--surface-2);
+  border:1px solid var(--hairline);border-radius:var(--radius-1);padding:0 9px;height:31px}
+.field svg{width:13px;height:13px;color:var(--text-muted)}
+.field input{border:0;background:none;outline:none;font:inherit;color:inherit;
+  width:290px;height:100%}
+.field kbd{font:11px var(--mono);color:var(--text-muted);border:1px solid var(--hairline);
+  border-radius:3px;padding:1px 4px}
+.dropdown{position:relative}
+.dropdown>summary{list-style:none;cursor:pointer;height:31px;display:flex;align-items:center;
+  gap:6px;padding:0 10px;background:var(--surface-2);border:1px solid var(--hairline);
+  border-radius:var(--radius-1);font-size:12.5px;color:var(--text-secondary);white-space:nowrap}
+.dropdown>summary::-webkit-details-marker{display:none}
+.dropdown>summary::after{content:"▾";font-size:10px;color:var(--text-muted)}
+.dropdown>summary b{color:var(--text-primary);font-weight:600}
+.dropdown__body{position:absolute;z-index:30;top:35px;left:0;min-width:250px;max-height:60vh;
+  overflow:auto;background:var(--surface-1);border:1px solid var(--hairline);
+  border-radius:var(--radius-2);box-shadow:var(--shadow-2);padding:7px}
+.dropdown__body label{display:flex;align-items:center;gap:8px;padding:5px 7px;
+  border-radius:var(--radius-1);cursor:pointer;font-size:12.5px}
+.dropdown__body label:hover{background:var(--surface-3)}
+.dropdown__body--wide{min-width:336px}
+.etopt{align-items:flex-start!important}
+.etopt input{margin-top:3px}
+.etopt__main{flex:1;min-width:0}
+.etopt__top{display:flex;align-items:center;gap:7px}
+.etopt__n{margin-left:auto;color:var(--text-muted);font-variant-numeric:tabular-nums}
+.etopt__dir{font-size:10px;color:var(--text-muted);text-transform:uppercase;
+  letter-spacing:.04em}
+.etopt__mean{display:block;margin-top:2px;font-size:11px;line-height:1.45;
+  color:var(--text-muted)}
+.dropdown__acts{display:flex;gap:6px;padding:5px 7px;border-top:1px solid var(--hairline);
+  margin-top:5px}
+.dropdown__acts button{font-size:11.5px;color:var(--focus)}
+.swatch{width:11px;height:11px;border-radius:50%;flex:0 0 auto}
+.swatch--hollow{background:var(--surface-1)!important;border-width:3px;border-style:solid}
+.switch{display:flex;align-items:center;gap:6px;font-size:12.5px;
+  color:var(--text-secondary);cursor:pointer;white-space:nowrap}
+.switch svg{width:13px;height:13px;color:var(--warning)}
+.btn--ghost{font-size:12.5px;color:var(--focus);padding:0 6px}
+.filterbar__count{margin-left:auto;font-size:11.5px;color:var(--text-muted);
+  font-variant-numeric:tabular-nums}
+.typeahead{position:absolute;z-index:40;top:74px;left:18px;width:340px;max-height:44vh;
+  overflow:auto;background:var(--surface-1);border:1px solid var(--hairline);
+  border-radius:var(--radius-2);box-shadow:var(--shadow-2);padding:5px}
+.typeahead button{display:block;width:100%;text-align:left;padding:6px 9px;
+  border-radius:var(--radius-1);font-size:12.5px}
+.typeahead button:hover,.typeahead button.is-active{background:var(--surface-3)}
+.typeahead .ta__sub{font-size:11px;color:var(--text-muted);margin-top:1px}
+
+/* ---------- shell ---------- */
+.shell{flex:1 1 auto;display:grid;grid-template-columns:var(--rail-w) 1fr;min-height:0}
+.shell[data-inspector="open"]{grid-template-columns:var(--rail-w) 1fr var(--ins-w)}
+.rail{border-right:1px solid var(--hairline);background:var(--surface-1);
+  display:flex;flex-direction:column;min-height:0}
+.rail__tabs{display:flex;gap:2px;padding:7px;border-bottom:1px solid var(--hairline);
+  flex:0 0 auto}
+.rail__tabs button[role=tab]{flex:1;padding:6px 4px;border-radius:var(--radius-1);
+  font-size:12px;color:var(--text-secondary);display:flex;align-items:center;
+  justify-content:center;gap:5px}
+.rail__tabs button[role=tab]:hover{background:var(--surface-3)}
+.rail__tabs button[aria-selected=true]{background:var(--surface-3);color:var(--text-primary);
+  font-weight:600}
+.rail__report{width:30px;flex:0 0 auto;border:1px solid var(--hairline);
+  border-radius:var(--radius-1)}
+.badge{font-size:10.5px;padding:1px 6px;border-radius:20px;background:var(--surface-2);
+  border:1px solid var(--hairline);font-variant-numeric:tabular-nums}
+.badge--critical{background:var(--critical);color:#fff;border-color:transparent}
+.badge--good{background:var(--good);color:#fff;border-color:transparent}
+.rail section[role=tabpanel]{flex:1 1 auto;overflow:auto;min-height:0}
+.rail__filters{display:flex;gap:5px;flex-wrap:wrap;padding:8px 10px;
+  border-bottom:1px solid var(--hairline);position:sticky;top:0;
+  background:var(--surface-1);z-index:2}
+.chip{font-size:11px;padding:3px 8px;border-radius:20px;border:1px solid var(--hairline);
+  color:var(--text-secondary)}
+.chip[aria-pressed=true]{background:var(--text-primary);color:var(--surface-1);
+  border-color:transparent}
+.plist,.clist,.slist{list-style:none;margin:0;padding:6px}
+.pitem{display:block;width:100%;text-align:left;padding:8px 10px;border-radius:var(--radius-1);
+  border-left:3px solid transparent;margin-bottom:2px}
+.pitem:hover{background:var(--surface-3)}
+.pitem.is-active{background:var(--surface-3);border-left-color:var(--focus)}
+.pitem--error{border-left-color:var(--critical)}
+.pitem--conflict{border-left-color:var(--serious)}
+.pitem--warning{border-left-color:var(--warning)}
+.pitem--info{border-left-color:var(--baseline)}
+.pitem__head{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-muted);
+  margin-bottom:2px}
+.pitem__head svg{width:11px;height:11px}
+.pitem--error .pitem__head svg{color:var(--critical)}
+.pitem--conflict .pitem__head svg{color:var(--serious)}
+.pitem--warning .pitem__head svg{color:var(--warning)}
+.pitem__txt{font-size:12.5px;line-height:1.45}
+.pitem__where{font-size:11px;color:var(--text-muted);margin-top:3px;
+  font-family:var(--mono);word-break:break-all}
+.citem,.sitem{display:block;width:100%;text-align:left;padding:8px 10px;
+  border-radius:var(--radius-1);margin-bottom:2px}
+.citem:hover,.sitem:hover{background:var(--surface-3)}
+.citem__top,.sitem__top{display:flex;align-items:center;gap:8px}
+.citem__title{font-size:12.5px;font-weight:600;flex:1}
+.citem__n,.sitem__n{font-size:11px;color:var(--text-muted);font-variant-numeric:tabular-nums}
+.citem__desc{font-size:11.5px;color:var(--text-muted);margin-top:3px;line-height:1.4}
+.bar{height:4px;background:var(--surface-3);border-radius:2px;margin-top:6px;overflow:hidden}
+.bar__fill{height:100%;background:var(--seq-450)}
+.sitem__path{font-size:11.5px;font-family:var(--mono);word-break:break-all}
+.sitem__meta{font-size:11px;color:var(--text-muted);margin-top:2px}
+.sitem--gap .sitem__path{color:var(--warning)}
+.notice{margin:9px 10px;padding:9px 11px;border-radius:var(--radius-1);font-size:11.5px;
+  line-height:1.5;background:var(--surface-2);border:1px dashed var(--hairline);
+  color:var(--text-secondary)}
+.notice code{display:block;margin-top:5px;color:var(--text-primary);font-size:11px}
+.empty{padding:34px 22px;text-align:center;color:var(--text-muted);font-size:12.5px;
+  line-height:1.6}
+.empty svg{width:26px;height:26px;margin-bottom:9px;color:var(--good)}
+.empty h3{margin:0 0 5px;font-size:13.5px;color:var(--text-primary)}
+.empty details{margin-top:13px;text-align:left;font-size:11.5px}
+.empty summary{cursor:pointer;color:var(--focus)}
+.srcConflicts{margin:6px;border-top:1px solid var(--hairline);padding-top:6px}
+.srcConflicts>summary{cursor:pointer;font-size:12px;padding:6px 10px;
+  color:var(--text-secondary);border-radius:var(--radius-1)}
+.srcConflicts>summary:hover{background:var(--surface-3)}
+.srcConflicts b{color:var(--serious)}
+.scitem{display:block;width:100%;text-align:left;padding:7px 10px;font-size:11.5px;
+  border-radius:var(--radius-1);line-height:1.5}
+.scitem:hover{background:var(--surface-3)}
+.scitem code{color:var(--text-primary)}
+
+/* Shared shell for the two in-panel explainers (severity levels, the source
+   conflict count). Same dashed hairline and surface as .notice / .srcConflicts,
+   collapsed by default so they never push the findings down. */
+.explain{margin:8px 10px;border:1px dashed var(--hairline);border-radius:var(--radius-1);
+  background:var(--surface-2)}
+.explain>summary{cursor:pointer;list-style:none;padding:7px 10px;font-size:11.5px;
+  color:var(--text-secondary)}
+.explain>summary::-webkit-details-marker{display:none}
+.explain>summary::before{content:"▸";color:var(--text-muted);margin-right:6px}
+.explain[open]>summary::before{content:"▾"}
+.explain>summary:hover{background:var(--surface-3)}
+.explain__body{padding:0 11px 10px;font-size:11.5px;line-height:1.55;
+  color:var(--text-secondary)}
+.explain__body p{margin:0 0 8px}
+.explain__body p:last-child{margin-bottom:0}
+.explain__body dl{margin:0 0 8px}
+.explain__body dt{font-weight:650;color:var(--text-primary);margin-top:8px}
+.explain__body dd{margin:2px 0 0}
+.explain__body ul{margin:0;padding-left:16px}
+.explain__body li{margin-bottom:7px}
+.explain__body li:last-child{margin-bottom:0}
+.explain__body code{color:var(--text-primary)}
+.srcConflicts .explain{margin:2px 4px 6px}
+
+/* ---------- stage ---------- */
+.stage{position:relative;min-width:0;background:var(--surface-2);overflow:hidden}
+#edgeLayer{position:absolute;inset:0;width:100%;height:100%}
+#nodeLayer{position:absolute;inset:0;width:100%;height:100%;cursor:grab}
+#nodeLayer.is-panning{cursor:grabbing}
+.node{cursor:pointer}
+.node__label{font-size:10.5px;fill:var(--text-primary);paint-order:stroke fill;
+  stroke:var(--surface-2);stroke-width:3px;pointer-events:none;user-select:none}
+.node__label--muted{fill:var(--text-muted);text-decoration:line-through}
+.hull{opacity:.07;pointer-events:none}
+.hullLabel{font-size:12px;font-weight:650;fill:var(--text-secondary);
+  paint-order:stroke fill;stroke:var(--surface-2);stroke-width:4px;
+  pointer-events:none;user-select:none;letter-spacing:.01em}
+.stage__hud{position:absolute;right:12px;bottom:12px;display:flex;gap:4px;
+  background:var(--surface-1);border:1px solid var(--hairline);border-radius:var(--radius-1);
+  padding:3px;box-shadow:var(--shadow-1);align-items:center}
+.stage__hud button{width:26px;height:26px;border-radius:4px;display:grid;place-items:center}
+.stage__hud button:hover{background:var(--surface-3)}
+.stage__hud output{font-size:11px;color:var(--text-muted);padding:0 6px;
+  font-variant-numeric:tabular-nums;min-width:44px;text-align:center}
+.legend{position:absolute;left:12px;bottom:12px;background:var(--surface-1);
+  border:1px solid var(--hairline);border-radius:var(--radius-2);box-shadow:var(--shadow-1);
+  max-width:370px;max-height:56vh;overflow:auto;font-size:11.5px}
+.legend>summary{cursor:pointer;padding:7px 11px;color:var(--text-secondary);
+  list-style:none;font-weight:600}
+.legend>summary::-webkit-details-marker{display:none}
+.legend__grid{padding:0 11px 10px;display:grid;gap:11px}
+.legend h4{margin:0 0 5px;font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.05em;color:var(--text-muted);font-weight:600}
+.legend__row{display:flex;align-items:center;gap:7px;padding:2px 0;line-height:1.4}
+.legend__row svg{flex:0 0 auto}
+.legend__lead{margin:0 0 8px;font-size:11px;color:var(--text-secondary);line-height:1.5}
+.legend__rel{margin-bottom:7px}
+.legend__rel:last-child{margin-bottom:0}
+.legend__dir{font-size:10px;color:var(--text-muted);text-transform:uppercase;
+  letter-spacing:.04em}
+.legend__mean{margin:1px 0 0 33px;font-size:11px;line-height:1.45;color:var(--text-muted)}
+.stage__progress{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:210px;text-align:center;color:var(--text-muted);font-size:12px}
+.stage__progress .bar{margin-top:8px}
+.stage__empty{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:min(430px,86%);background:var(--surface-1);border:1px solid var(--hairline);
+  border-radius:var(--radius-2);box-shadow:var(--shadow-2);padding:20px 22px}
+.stage__empty h3{margin:0 0 7px;font-size:14px}
+.stage__empty p{margin:0 0 12px;font-size:12.5px;color:var(--text-secondary);line-height:1.55}
+.stage__empty .why{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:5px}
+.stage__empty .why button{width:100%;text-align:left;font-size:12px;padding:7px 9px;
+  border:1px solid var(--hairline);border-radius:var(--radius-1)}
+.stage__empty .why button:hover{background:var(--surface-3)}
+.stage__toast{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);
+  background:var(--text-primary);color:var(--surface-1);padding:8px 14px;
+  border-radius:20px;font-size:12px;box-shadow:var(--shadow-2);pointer-events:none;
+  opacity:0;transition:opacity var(--dur) var(--ease);max-width:80%}
+.stage__toast.is-on{opacity:1}
+
+/* ---------- inspector ---------- */
+.inspector{border-left:1px solid var(--hairline);background:var(--surface-1);
+  display:flex;flex-direction:column;min-height:0;min-width:0}
+.ins__nav{display:flex;align-items:center;gap:7px;padding:8px 10px;
+  border-bottom:1px solid var(--hairline);flex:0 0 auto}
+.ins__nav button{width:27px;height:27px;border-radius:var(--radius-1);display:grid;
+  place-items:center}
+.ins__nav button:hover{background:var(--surface-3)}
+.crumbs{flex:1;list-style:none;display:flex;gap:4px;margin:0;padding:0;overflow:hidden;
+  font-size:11px;color:var(--text-muted);white-space:nowrap}
+.crumbs button{font-size:11px;color:var(--text-muted);max-width:110px;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+.crumbs button:hover{color:var(--text-primary);text-decoration:underline}
+.crumbs li:not(:last-child)::after{content:"›";margin-left:4px;color:var(--baseline)}
+.ins__scroll{flex:1 1 auto;overflow:auto;min-height:0;padding:14px 18px 30px}
+.ins__scroll h2{margin:0 0 7px;font-size:19px;line-height:1.25;letter-spacing:-.01em}
+.chips{display:flex;gap:5px;flex-wrap:wrap;margin:0 0 10px;padding:0;list-style:none}
+.chips li{font-size:10.5px;padding:2px 7px;border-radius:20px;background:var(--surface-3);
+  color:var(--text-secondary)}
+.chips li.is-cluster{display:flex;align-items:center;gap:5px}
+.chips li.is-deprecated{background:var(--serious);color:#fff}
+.chips li.is-low{background:var(--warning);color:#fff}
+.ins__desc{margin:0 0 13px;font-size:13px;color:var(--text-secondary);line-height:1.55}
+.ins__flags{display:grid;gap:6px;margin:0 0 15px}
+.flag{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;border-radius:var(--radius-1);
+  font-size:11.5px;line-height:1.5;border-left:3px solid var(--baseline);
+  background:var(--surface-2)}
+.flag svg{width:12px;height:12px;flex:0 0 auto;margin-top:2px}
+.flag--error{border-left-color:var(--critical)} .flag--error svg{color:var(--critical)}
+.flag--conflict{border-left-color:var(--serious)} .flag--conflict svg{color:var(--serious)}
+.flag--warning{border-left-color:var(--warning)} .flag--warning svg{color:var(--warning)}
+.ins__sec{margin-top:20px;padding-top:15px;border-top:1px solid var(--hairline)}
+.ins__sec h3{margin:0 0 9px;font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.05em;color:var(--text-muted);font-weight:600}
+.conn__group{margin-bottom:11px}
+.conn__type{display:flex;align-items:center;gap:7px;font-size:11px;
+  color:var(--text-secondary);margin-bottom:4px}
+.conn__dir{font-size:10px;color:var(--text-muted);margin-left:auto;
+  text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.conn__mean{margin:0 0 4px 29px;font-size:11px;line-height:1.45;color:var(--text-muted)}
+.conn__link{display:block;width:100%;text-align:left;padding:5px 9px;border-radius:var(--radius-1);
+  font-size:12.5px;color:var(--focus)}
+.conn__link:hover{background:var(--surface-3)}
+.conn__link .cl__cluster{color:var(--text-muted);font-size:11px}
+.srclist{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.srclist button{text-align:left;font-size:11.5px;font-family:var(--mono);
+  word-break:break-all;color:var(--focus);padding:4px 7px;border-radius:var(--radius-1);
+  width:100%}
+.srclist button:hover{background:var(--surface-3)}
+.ins__foot{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:8px 14px;
+  border-top:1px solid var(--hairline);font-size:11px;color:var(--text-muted)}
+.ins__foot code{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ins__foot button{font-size:11px;color:var(--focus);white-space:nowrap}
+
+/* ---------- markdown ---------- */
+.md{font-size:13.5px;line-height:1.65;color:var(--text-primary);overflow-wrap:break-word}
+.md h2{font-size:14.5px;margin:22px 0 8px;letter-spacing:-.005em}
+.md h3{font-size:13px;margin:18px 0 7px;color:var(--text-secondary)}
+.md h4{font-size:12.5px;margin:15px 0 6px;color:var(--text-secondary)}
+.md p{margin:0 0 11px}
+.md ul,.md ol{margin:0 0 11px;padding-left:21px}
+.md li{margin-bottom:4px}
+.md li>ul,.md li>ol{margin:4px 0 0}
+.md code{background:var(--surface-3);padding:1px 4px;border-radius:3px}
+.md pre{background:var(--surface-3);padding:11px 13px;border-radius:var(--radius-1);
+  overflow-x:auto;margin:0 0 11px}
+.md pre code{background:none;padding:0;font-size:11.5px;line-height:1.55}
+.md blockquote{margin:0 0 11px;padding:2px 0 2px 13px;border-left:3px solid var(--hairline);
+  color:var(--text-secondary)}
+.md hr{border:0;border-top:1px solid var(--hairline);margin:17px 0}
+.md table{border-collapse:collapse;width:100%;margin:0 0 11px;font-size:12px;display:block;
+  overflow-x:auto}
+.md th,.md td{border:1px solid var(--hairline);padding:5px 9px;text-align:left;
+  vertical-align:top}
+.md th{background:var(--surface-3);font-weight:600}
+.md a{color:var(--focus);text-decoration:none;border-bottom:1px solid transparent}
+.md a:hover{border-bottom-color:currentColor}
+.md .wl{cursor:pointer}
+.md .wl--broken{color:var(--critical);border-bottom:1px dotted var(--critical);cursor:help}
+.md .md-link--blocked{color:var(--text-muted);text-decoration:line-through;cursor:not-allowed}
+.callout{margin:0 0 13px;padding:10px 13px;border-radius:var(--radius-1);
+  border-left:3px solid var(--baseline);background:var(--surface-2);font-size:12.5px}
+.callout__head{display:flex;align-items:center;gap:6px;margin:0 0 5px;font-weight:650;
+  font-size:11.5px}
+.callout__head svg{width:13px;height:13px}
+.callout p:last-child{margin-bottom:0}
+.callout--conflict{border-left-color:var(--serious);
+  background:color-mix(in oklab,var(--serious) 8%,var(--surface-1))}
+.callout--conflict .callout__head{color:var(--serious)}
+.callout--danger{border-left-color:var(--critical);
+  background:color-mix(in oklab,var(--critical) 8%,var(--surface-1))}
+.callout--danger .callout__head{color:var(--critical)}
+.callout--info,.callout--note{border-left-color:var(--focus)}
+.callout--info .callout__head,.callout--note .callout__head{color:var(--focus)}
+.callout--tip{border-left-color:var(--good)}
+.callout--tip .callout__head{color:var(--good)}
+.callout__open{font-size:11px;color:var(--serious);margin-top:7px;
+  border-bottom:1px solid currentColor}
+.body-omitted{font-size:12px;color:var(--text-muted);font-style:italic;
+  padding:11px 13px;background:var(--surface-2);border-radius:var(--radius-1)}
+
+/* ---------- report ---------- */
+.report{position:fixed;inset:0;z-index:60;background:var(--surface-1);overflow:auto;
+  padding:34px 6vw 70px}
+.report__close{position:fixed;right:20px;top:20px;width:32px;height:32px;
+  border:1px solid var(--hairline);border-radius:var(--radius-1);background:var(--surface-1);
+  display:grid;place-items:center}
+.report h1{font-size:22px;margin:0 0 5px}
+.report h2{font-size:15px;margin:30px 0 10px;padding-bottom:6px;
+  border-bottom:1px solid var(--hairline)}
+.report .sub{color:var(--text-muted);font-size:12px;margin:0 0 6px}
+.report table{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:12px}
+.report th,.report td{border:1px solid var(--hairline);padding:5px 8px;text-align:left;
+  vertical-align:top}
+.report th{background:var(--surface-3)}
+.report ol{font-size:12.5px;line-height:1.6}
+.report .lvl{font-weight:600;text-transform:uppercase;font-size:10px}
+.report .lvl--error{color:var(--critical)} .report .lvl--warning{color:var(--warning)}
+.report .lvl--info{color:var(--text-muted)}
+
+/* The hidden attribute only works through the browser's own display:none, which
+   any author display rule (.modal's grid, the inspector's flex…) silently beats —
+   leaving "closed" panels on screen. Make it win everywhere. */
+[hidden]{display:none !important}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;inset:0;z-index:70;display:grid;place-items:center;
+  background:rgba(0,0,0,.4)}
+.modal__box{background:var(--surface-1);border-radius:var(--radius-2);
+  box-shadow:var(--shadow-2);padding:22px 26px;max-width:520px;width:90%;
+  max-height:80vh;overflow:auto}
+.modal h2{margin:0 0 14px;font-size:16px}
+.modal__head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px}
+.modal__head h2{margin:0}
+.modal__close{width:27px;height:27px;border-radius:var(--radius-1);display:grid;
+  place-items:center;color:var(--text-muted)}
+.modal__close:hover{background:var(--surface-3);color:var(--text-primary)}
+.modal__hint{margin:14px 0 0;font-size:11.5px;color:var(--text-muted)}
+.modal table{width:100%;font-size:12.5px;border-collapse:collapse}
+.modal td{padding:4px 0}
+.modal td:first-child{width:110px}
+.modal kbd{font:11px var(--mono);border:1px solid var(--hairline);border-radius:3px;
+  padding:1px 5px;background:var(--surface-2)}
+
+/* ---------- no-JS / no-d3 fallback ---------- */
+.fallback{padding:26px 6vw 60px;overflow:auto;flex:1}
+.fallback h1{font-size:19px;margin:0 0 4px}
+.fallback>p{color:var(--text-secondary);font-size:13px;margin:0 0 18px}
+.fallback details{margin-bottom:7px;border:1px solid var(--hairline);
+  border-radius:var(--radius-1);padding:8px 12px}
+.fallback summary{cursor:pointer}
+.fallback ul{font-size:12.5px;line-height:1.7}
+.fallback code{color:var(--text-muted)}
+body.js-ready .fallback{display:none}
+body:not(.js-ready) .topbar,body:not(.js-ready) .filterbar,
+body:not(.js-ready) .shell{display:none}
+
+@media (max-width:1400px){
+  .shell[data-inspector="open"]{grid-template-columns:var(--rail-w) 1fr}
+  .shell[data-inspector="open"] .inspector{position:fixed;right:0;top:0;bottom:0;
+    width:min(var(--ins-w),94vw);z-index:50;box-shadow:var(--shadow-2)}
+}
+@media (max-width:1100px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:fixed;left:0;right:0;bottom:0;height:44vh;z-index:45;
+    border-right:0;border-top:1px solid var(--hairline);box-shadow:var(--shadow-2)}
+  .hero{padding-left:0;border-left:0}
+}
+@media print{
+  body{height:auto;overflow:visible;display:block}
+  .topbar__tools,.filterbar,.rail,.stage,.inspector,.report__close,.legend{display:none!important}
+  .report{position:static;padding:0}
+}
+</style>
+
+<a class="skip" href="#stage">Skip to graph</a>
+
+<header class="topbar" role="banner">
+  <div class="topbar__id">
+    <h1>Knowledge graph</h1>
+    <p class="topbar__meta">
+      Compiled <time id="genTime"></time><span id="genHash"></span>
+    </p>
+  </div>
+
+  <div class="hero" id="hero" role="group" aria-labelledby="heroLabel">
+    <span class="hero__value" id="heroValue">–</span>
+    <span class="hero__label" id="heroLabel">things to fix</span>
+    <span class="hero__break" id="heroBreak"></span>
+  </div>
+
+  <div class="tiles" id="tiles" role="list"></div>
+
+  <div class="topbar__inv" id="inventory" aria-label="Inventory"></div>
+
+  <div class="topbar__tools">
+    <span id="cdnBadge"></span>
+    <button id="themeBtn" title="Toggle theme (d)" aria-label="Toggle theme">☾</button>
+    <button id="reportBtn2" title="Audit report (r)" aria-label="Audit report">▤</button>
+    <button id="helpBtn" title="Keyboard shortcuts (?)" aria-label="Shortcuts">?</button>
+  </div>
+</header>
+
+<div class="filterbar" role="search">
+  <label class="field field--search">
+    <svg aria-hidden="true"><use href="#i-search"/></svg>
+    <input id="q" type="search" placeholder="Search titles, descriptions, keywords…"
+           autocomplete="off" role="combobox" aria-expanded="false" aria-controls="qResults"
+           aria-label="Search nodes">
+    <kbd>/</kbd>
+  </label>
+  <div id="qResults" class="typeahead" role="listbox" aria-label="Search results" hidden></div>
+
+  <details class="dropdown" id="fClusters">
+    <summary>Clusters <b>All</b></summary>
+    <div class="dropdown__body" id="fClustersBody" role="group"></div>
+  </details>
+  <details class="dropdown" id="fEdges">
+    <summary>Relations <b>All</b></summary>
+    <div class="dropdown__body dropdown__body--wide" id="fEdgesBody" role="group"></div>
+  </details>
+  <details class="dropdown" id="fStatus">
+    <summary>Status <b>Active</b></summary>
+    <div class="dropdown__body" id="fStatusBody" role="group"></div>
+  </details>
+
+  <label class="switch"><input type="checkbox" id="fProblems">
+    <svg aria-hidden="true"><use href="#i-warn"/></svg> Only problems</label>
+  <label class="switch"><input type="checkbox" id="fCollapse"> Collapse to subgraph</label>
+  <button id="resetBtn" class="btn--ghost">Reset</button>
+  <output id="filterCount" class="filterbar__count" aria-live="polite"></output>
+</div>
+
+<main class="shell" id="shell" data-inspector="closed">
+  <aside class="rail" id="rail" aria-label="Findings">
+    <div class="rail__tabs" role="tablist">
+      <button role="tab" id="tab-problems" aria-selected="true" aria-controls="p-problems">
+        Problems <span class="badge" id="badgeProblems">0</span></button>
+      <button role="tab" id="tab-clusters" aria-selected="false" aria-controls="p-clusters">
+        Clusters <span class="badge" id="badgeClusters">0</span></button>
+      <button role="tab" id="tab-sources" aria-selected="false" aria-controls="p-sources">
+        Sources <span class="badge" id="badgeSources">0</span></button>
+      <button class="rail__report" id="reportBtn" title="Audit report (r)"
+              aria-label="Audit report">▤</button>
+    </div>
+
+    <section role="tabpanel" id="p-problems" aria-labelledby="tab-problems">
+      <div class="rail__filters" id="sevChips" role="group" aria-label="Severity"></div>
+      <!-- Static, not rendered: every innerHTML write in this panel targets a
+           sibling (sevChips, problemNotice, problemList, problemEmpty). -->
+      <details class="explain" id="sevExplain">
+        <summary>What these four levels mean</summary>
+        <div class="explain__body">
+          <p>Errors and warnings are about the <strong>wiki as a structure</strong> —
+            whether it holds together and can be navigated. They say nothing about
+            whether the content is <em>true</em>.</p>
+          <dl>
+            <dt>Errors</dt>
+            <dd>The build is broken: a dead <code>[[wikilink]]</code>, a missing
+              frontmatter field, a duplicate <code>id</code>, a cluster with no hub,
+              or a router index / this viewer out of sync with the markdown.
+              <code>validate.py</code> exits 1.</dd>
+            <dt>Warnings</dt>
+            <dd>Intact but degraded: an orphan nothing links to, a description too
+              thin to route on, an ambiguous link, a document that reached no node.
+              Fails the gate only under <code>--strict</code>.</dd>
+            <dt>Conflicts</dt>
+            <dd>Two sources disagree, or one source contradicts itself. Recorded,
+              never resolved — the compiler may not pick a winner, average two
+              numbers, or prefer the newer file.</dd>
+            <dt>Notes</dt>
+            <dd>Everything else worth knowing: an unsupported document, a check that
+              could not run.</dd>
+          </dl>
+          <p>Conflicts are filed by <code>validate.py</code> at <em>info</em> severity
+            and promoted to their own level here. That is deliberate: a conflict is a
+            fact about your source documents, not a defect in the wiki. Capturing one
+            is the compiler working correctly, so it can never be an error.</p>
+          <p><strong>Zero errors and zero warnings is not a clean bill of health.</strong>
+            Open conflicts, low-confidence nodes and images dropped during extraction
+            all sit underneath a passing gate — those are reported by the audit, not
+            by validation.</p>
+        </div>
+      </details>
+      <div id="problemNotice"></div>
+      <ol class="plist" id="problemList"></ol>
+      <div id="problemEmpty"></div>
+    </section>
+
+    <section role="tabpanel" id="p-clusters" aria-labelledby="tab-clusters" hidden>
+      <ol class="clist" id="clusterList"></ol>
+    </section>
+
+    <section role="tabpanel" id="p-sources" aria-labelledby="tab-sources" hidden>
+      <div id="sourceNotice"></div>
+      <ol class="slist" id="sourceList"></ol>
+      <details class="srcConflicts" id="srcConflictsBox">
+        <summary>Pairs of documents that disagree <b id="scCount">0</b></summary>
+        <!-- Static, not rendered: renderSources_rail writes into scCount and
+             srcConflictList, both siblings of this block. -->
+        <details class="explain" id="srcConflictExplain">
+          <summary>Why this is not the number of conflicts</summary>
+          <div class="explain__body">
+            <ul>
+              <li>It counts <strong>pairs of source documents</strong>, not conflicts
+                and not lines on the graph. One pair is listed once however many
+                times those two documents disagree.</li>
+              <li>A conflict where a single document contradicts <strong>itself</strong>
+                has no second document to pair with, so it appears in Problems and
+                contributes nothing here.</li>
+              <li>Smaller again is the number of <code>contradicts</code> lines on the
+                graph. That is an edge between two <strong>nodes</strong>, so it exists
+                only when each side was written up on its own page. Most conflicts are
+                documented on one page describing both sides — those carry a conflict
+                flag, not a line.</li>
+            </ul>
+          </div>
+        </details>
+        <ol class="plist" id="srcConflictList"></ol>
+      </details>
+    </section>
+  </aside>
+
+  <section class="stage" id="stage" tabindex="-1">
+    <canvas id="edgeLayer" aria-hidden="true"></canvas>
+    <svg id="nodeLayer" role="application" aria-describedby="stageHelp"
+         aria-label="Force-directed knowledge graph">
+      <defs id="svgDefs"></defs>
+      <g class="viewport" id="viewport">
+        <g id="hulls" aria-hidden="true"></g>
+        <g id="hullLabels" aria-hidden="true"></g>
+        <g id="edgesFg"></g>
+        <g id="nodes"></g>
+        <g id="labels" aria-hidden="true"></g>
+      </g>
+    </svg>
+    <p id="stageHelp" class="sr-only">
+      Tab moves between nodes, Enter opens the selected node's detail panel.
+      Use the Clusters tab in the findings rail for a text outline of the same graph.
+    </p>
+    <div class="stage__progress" id="stageProgress" hidden>
+      Laying out the graph…
+      <div class="bar"><div class="bar__fill" id="progressFill" style="width:0%"></div></div>
+    </div>
+    <div class="stage__hud">
+      <button id="fitBtn" title="Fit to view (f)" aria-label="Fit">⤢</button>
+      <button id="zoutBtn" title="Zoom out" aria-label="Zoom out">−</button>
+      <output id="zoomOut">100%</output>
+      <button id="zinBtn" title="Zoom in" aria-label="Zoom in">+</button>
+    </div>
+    <details class="legend" id="legend">
+      <summary>Legend</summary>
+      <div class="legend__grid" id="legendGrid"></div>
+    </details>
+    <div class="stage__empty" id="stageEmpty" hidden></div>
+    <div class="stage__toast" id="toast" role="status" aria-live="polite"></div>
+  </section>
+
+  <aside class="inspector" id="inspector" aria-labelledby="insTitle" tabindex="-1" hidden>
+    <nav class="ins__nav">
+      <button id="insBack" title="Back ([)" aria-label="Back">←</button>
+      <ol class="crumbs" id="insCrumbs" aria-label="Visited nodes"></ol>
+      <button id="insClose" title="Close (Esc)" aria-label="Close">✕</button>
+    </nav>
+    <div class="ins__scroll" id="insScroll">
+      <h2 id="insTitle"></h2>
+      <ul class="chips" id="insChips"></ul>
+      <p class="ins__desc" id="insDesc"></p>
+      <div class="ins__flags" id="insFlags"></div>
+      <div class="md" id="insBody"></div>
+      <section class="ins__sec" id="insConnSec">
+        <h3>Connections</h3><div id="insConn"></div>
+      </section>
+      <section class="ins__sec" id="insSrcSec">
+        <h3>Sources</h3><ul class="srclist" id="insSrc"></ul>
+      </section>
+    </div>
+    <footer class="ins__foot">
+      <code id="insPath"></code>
+      <button id="copyIdBtn">Copy id</button>
+    </footer>
+  </aside>
+</main>
+
+<div class="report" id="report" hidden>
+  <button class="report__close" id="reportClose" aria-label="Close report">✕</button>
+  <div id="reportBody"></div>
+</div>
+
+<div class="modal" id="helpModal" role="dialog" aria-modal="true"
+     aria-labelledby="helpTitle" hidden>
+  <div class="modal__box">
+    <div class="modal__head">
+      <h2 id="helpTitle">Keyboard shortcuts</h2>
+      <button class="modal__close" id="helpClose" title="Close (Esc)" aria-label="Close">✕</button>
+    </div>
+    <table><tbody>
+      <tr><td><kbd>/</kbd></td><td>Focus search</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>Close panel, then clear search, then clear filters</td></tr>
+      <tr><td><kbd>f</kbd></td><td>Fit graph to view</td></tr>
+      <tr><td><kbd>1</kbd>–<kbd>9</kbd></td><td>Toggle that cluster</td></tr>
+      <tr><td><kbd>p</kbd> <kbd>c</kbd> <kbd>s</kbd></td><td>Problems / Clusters / Sources tab</td></tr>
+      <tr><td><kbd>r</kbd></td><td>Audit report</td></tr>
+      <tr><td><kbd>d</kbd></td><td>Toggle dark mode</td></tr>
+      <tr><td><kbd>x</kbd></td><td>Only nodes with problems</td></tr>
+      <tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>Back / forward through visited nodes</td></tr>
+      <tr><td><kbd>n</kbd> <kbd>N</kbd></td><td>Next / previous search hit</td></tr>
+      <tr><td><kbd>Tab</kbd></td><td>Move between nodes; <kbd>Enter</kbd> opens one</td></tr>
+      <tr><td><kbd>?</kbd></td><td>This dialog</td></tr>
+    </tbody></table>
+    <p class="modal__hint">Press <kbd>Esc</kbd> or click outside to close.</p>
+  </div>
+</div>
+
+<!-- Visible until the app boots (body.js-ready hides it), so it is also what a
+     reader sees when there is no data yet or d3 never loaded. Filled in below
+     from the payload; the wording here is the no-JavaScript case. -->
+<div class="fallback" id="fallback">
+  <h1 id="fb-title">Knowledge graph</h1>
+  <p id="fb-lead">
+    This page needs JavaScript to draw the graph.
+  </p>
+  <div id="fb-list"></div>
+</div>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.7"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></symbol>
+  <symbol id="i-error" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.7"><circle cx="8" cy="8" r="6.2"/><path d="M8 5v4M8 11h.01"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.7"><path d="M8 2.2 14.5 13.5h-13z"/><path d="M8 6.5v3M8 11.6h.01"/></symbol>
+  <symbol id="i-conflict" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.7"><path d="M2.5 4.5h11M2.5 11.5h11M11 2 5 14"/></symbol>
+  <symbol id="i-info" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.7"><circle cx="8" cy="8" r="6.2"/><path d="M8 7.4v3.4M8 5.2h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.8"><circle cx="8" cy="8" r="6.4"/><path d="M5.2 8.3l2 2 3.6-4"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    stroke-width="1.6"><path d="M4 1.8h5l3 3v9.4H4z"/><path d="M9 1.8v3h3"/></symbol>
+</svg>
+
+<!-- The compiled graph. Written by build_graph_data.py, and the only part of
+     this page that changes between builds. It is a .js assigning a global
+     rather than a .json fetched at runtime because browsers block fetch() of a
+     sibling file on file:// — a plain script tag loads, so double-clicking
+     graph.html works with no server. Missing file, undefined global, banner. -->
+<script src="_meta/graph-data.js"></script>
+<script src="_meta/vendor/d3.v7.min.js"></script>
+<script>
+// The vendored copy is what makes this page work offline. If it is absent —
+// the page was copied out of wiki/ without _meta/vendor/ — reach for the CDN.
+// document.write runs while the parser is still ahead of the app script below,
+// so d3 is in place by the time the app looks for it.
+window.d3 || document.write(
+  '<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"><\/script>');
+</script>
+<script>
+"use strict";
+(function () {
+// ===== 01. data =========================================================
+var DATA = window.__KB_GRAPH__;
+var fbTitle = document.getElementById("fb-title");
+var fbLead = document.getElementById("fb-lead");
+var fbList = document.getElementById("fb-list");
+
+// No payload is not a failure — it is the state of a wiki nobody has compiled
+// yet. The viewer ships before the data does, so say what to run.
+if (!DATA || typeof DATA !== "object" || !DATA.nodes) {
+  fbTitle.textContent = "Nothing compiled here yet";
+  fbLead.innerHTML =
+    "This viewer reads <code>_meta/graph-data.js</code>, and that file is not " +
+    "beside it yet. Put your documents in <code>raw_assets/</code> and run " +
+    "<code>/kb-build</code> in this folder, then reload this page.";
+  console.warn("no window.__KB_GRAPH__ — _meta/graph-data.js is missing or failed to load");
+  return; // leave the banner visible
+}
+
+var SCHEMA_EXPECTED = 1;
+
+// Ported from the generator so the outline reflects whatever payload is on
+// disk, rather than a caption baked in at build time.
+function summaryLine(d) {
+  var t = d.totals || {};
+  var fix = (t.errors || 0) + (t.warnings || 0) + (t.open_conflicts || 0);
+  return [t.nodes + " nodes", t.clusters + " clusters", t.edges + " edges",
+          fix + " thing" + (fix === 1 ? "" : "s") + " to fix"].join(" · ");
+}
+
+function renderOutline(d, host) {
+  var byCluster = {};
+  (d.nodes || []).forEach(function (n) {
+    if (n.kind !== "node") return;
+    (byCluster[n.cluster] = byCluster[n.cluster] || []).push(n);
+  });
+  (d.clusters || []).forEach(function (c) {
+    var members = (byCluster[c.slug] || []).slice()
+      .sort(function (a, b) { return a.title < b.title ? -1 : 1; });
+    var det = document.createElement("details");
+    var sum = document.createElement("summary");
+    var strong = document.createElement("strong");
+    strong.textContent = c.title;
+    sum.appendChild(strong);
+    sum.appendChild(document.createTextNode(" (" + members.length + ")"));
+    det.appendChild(sum);
+    if (c.description) {
+      var p = document.createElement("p");
+      p.textContent = c.description;
+      det.appendChild(p);
+    }
+    var ul = document.createElement("ul");
+    members.forEach(function (n) {
+      var li = document.createElement("li");
+      var code = document.createElement("code");
+      code.textContent = n.path;
+      var nameEl = document.createElement("strong");
+      nameEl.textContent = n.title;
+      li.appendChild(code);
+      li.appendChild(document.createTextNode(" — "));
+      li.appendChild(nameEl);
+      if (n.description) li.appendChild(document.createTextNode(" " + n.description));
+      ul.appendChild(li);
+    });
+    det.appendChild(ul);
+    host.appendChild(det);
+  });
+  if (!host.children.length) host.textContent = "No clusters compiled yet.";
+}
+
+document.title = "Knowledge graph — " + summaryLine(DATA);
+fbTitle.textContent = "Knowledge graph";
+fbLead.textContent =
+  summaryLine(DATA) + " — generated " + (DATA.generated || "unknown") + ". " +
+  "This static outline appears because the interactive graph could not start " +
+  "(JavaScript is disabled, or d3 did not load). Every node below is a real " +
+  "file in wiki/.";
+renderOutline(DATA, fbList);
+
+if (!window.d3) {
+  console.warn("d3 did not load — showing the static outline instead");
+  return;
+}
+
+var nodes = DATA.nodes || [];
+var edges = DATA.edges || [];
+var clusters = DATA.clusters || [];
+var problems = DATA.problems || [];
+var conflicts = DATA.conflicts || [];
+var palette = DATA.cluster_palette || ["#4c78a8"];
+var edgeColors = DATA.edge_colors || {};
+var EDGE_TYPES = DATA.edge_types || Object.keys(edgeColors);
+
+var byKey = {};
+nodes.forEach(function (n) { byKey[n.key] = n; });
+var clusterBySlug = {};
+clusters.forEach(function (c) { clusterBySlug[c.slug] = c; });
+
+// Cluster hue is a grouping aid, not the identification channel: 13 clusters
+// cannot be told apart by hue alone. Identity comes from position plus the
+// persistent hull label; hue composites with a solid/hollow tier so more
+// clusters than hues never forces a generated colour.
+function clusterMark(idx) {
+  var i = idx == null ? 0 : idx;
+  return { fill: palette[i % palette.length], tier: Math.floor(i / palette.length) };
+}
+function markOf(node) {
+  var c = clusterBySlug[node.cluster];
+  return clusterMark(c ? c.color_index : 0);
+}
+
+// Wire graph structure onto the node objects the simulation mutates.
+nodes.forEach(function (n) {
+  n.isHub = n.kind === "hub";
+  n.degree = (n.in_degree || 0) + (n.out_degree || 0);
+  var m = markOf(n);
+  n._fill = m.fill;
+  n._tier = m.tier;
+  n.r = n.isHub
+    ? 13 + 0.35 * Math.sqrt((clusterBySlug[n.cluster] || {}).total_count || 1)
+    : Math.max(4.5, Math.min(11, 4.5 + 2.1 * Math.sqrt(n.in_degree || 0)));
+  n._sev = null;
+  n._problemCount = (n.problems || []).length + (n.conflicts || []).length;
+});
+
+// Severity per node drives the unmissable outer ring. Conflicts rank above
+// warnings because they are the thing a human must actually decide.
+var SEV_RANK = { error: 3, conflict: 2, warning: 1, info: 0 };
+nodes.forEach(function (n) {
+  var best = null;
+  (n.problems || []).forEach(function (i) {
+    var lvl = (problems[i] || {}).level;
+    if (lvl && (best === null || SEV_RANK[lvl] > SEV_RANK[best])) best = lvl;
+  });
+  if ((n.conflicts || []).length && (best === null || SEV_RANK.conflict > SEV_RANK[best])) {
+    best = "conflict";
+  }
+  n._sev = best;
+});
+
+var links = [];
+edges.forEach(function (e) {
+  if (byKey[e.source] && byKey[e.target]) {
+    links.push({ source: e.source, target: e.target, type: e.type,
+                 both: !!e.both, cross: !!e.cross_cluster, inferred: !!e.inferred });
+  }
+});
+
+var neighbors = {};
+nodes.forEach(function (n) { neighbors[n.key] = {}; });
+links.forEach(function (l) {
+  neighbors[l.source][l.target] = true;
+  neighbors[l.target][l.source] = true;
+});
+
+// ===== 02. tokens =======================================================
+var TOKENS = {};
+function readTokens() {
+  var cs = getComputedStyle(document.documentElement);
+  ["--surface-1","--surface-2","--surface-3","--text-primary","--text-secondary",
+   "--text-muted","--hairline","--baseline","--focus","--good","--warning",
+   "--serious","--critical","--edge-structure","--edge-dim"].forEach(function (k) {
+    TOKENS[k] = cs.getPropertyValue(k).trim();
+  });
+}
+function sevColor(sev) {
+  if (sev === "error") return TOKENS["--critical"];
+  if (sev === "conflict") return TOKENS["--serious"];
+  if (sev === "warning") return TOKENS["--warning"];
+  return TOKENS["--baseline"];
+}
+
+// Hue does only 4-way work here (directed / lateral / conflict / chrome). The
+// 7-way distinction is carried by width, dash and arrowhead, all of which
+// survive colour-blindness, greyscale and forced-colors.
+var EDGE_SPEC = {
+  "part-of":       { w: 1,    dash: null,   arrow: null,     alpha: 0.45, layer: 0 },
+  "depends-on":    { w: 1.75, dash: null,   arrow: "solid",  alpha: 0.85, layer: 1 },
+  "supersedes":    { w: 2.25, dash: [10,4], arrow: "hollow", alpha: 0.9,  layer: 1 },
+  "superseded-by": { w: 2.25, dash: [10,4], arrow: "hollow", alpha: 0.9,  layer: 1 },
+  "related-to":    { w: 1.5,  dash: [6,4],  arrow: null,     alpha: 0.6,  layer: 1 },
+  "see-also":      { w: 1.25, dash: [2,4],  arrow: null,     alpha: 0.5,  layer: 1 },
+  "contradicts":   { w: 2.25, dash: [3,3],  arrow: "double", alpha: 1,    layer: 2 }
+};
+function edgeSpec(t) { return EDGE_SPEC[t] || EDGE_SPEC["related-to"]; }
+function edgeColor(t) {
+  if (t === "part-of") return TOKENS["--edge-structure"];
+  return edgeColors[t] || TOKENS["--text-muted"];
+}
+
+// The relation vocabulary in words. One map, three renderings — the legend, the
+// Relations filter and the group headings in the inspector — so they can never
+// drift apart. `text` reads source → target; `inbound` is the same relation seen
+// from the target end, which a directed type needs or the sentence reads
+// backwards. Wording is the closed vocabulary of references/node-format.md
+// §Edge vocabulary: these seven are the only types the writer agent may emit.
+var EDGE_MEANING = {
+  "part-of": { directed: true,
+    text: "This node is a component of the target — usually its cluster. " +
+          "The graph's skeleton.",
+    inbound: "Each of these is a component of this node — usually this node is " +
+             "their cluster." },
+  "depends-on": { directed: true,
+    text: "Understanding this node requires the target first. Read the target " +
+          "for background.",
+    inbound: "Understanding each of these requires this node first. They read " +
+             "this node for background." },
+  "supersedes": { directed: true,
+    text: "This node replaces the target. The target is out of date.",
+    inbound: "Each of these replaces this node. This node is out of date." },
+  "superseded-by": { directed: true,
+    text: "The target replaces this node. Read the target instead — this one " +
+          "is deprecated.",
+    inbound: "This node replaces each of these. Read this node instead — those " +
+             "are deprecated." },
+  "contradicts": { directed: false,
+    text: "The two nodes make incompatible claims, never silently resolved. " +
+          "Rare: most conflicts sit on one page describing both sides — " +
+          "flagged there, not linked." },
+  "related-to": { directed: false,
+    text: "Same subject area, with no dependency in either direction." },
+  "see-also": { directed: false,
+    text: "A useful next read — a looser pointer than related-to." }
+};
+function edgeMeaning(t) { return EDGE_MEANING[t] || null; }
+function edgeIsDirected(t) {
+  var m = EDGE_MEANING[t];
+  // An unknown type cannot be assumed mutual: fall back to the drawn arrowhead.
+  return m ? m.directed : !!edgeSpec(t).arrow;
+}
+
+// One swatch for all three renderings, drawn from the same EDGE_SPEC the canvas
+// uses — line width, dash and arrowhead. `part-of` is directed but deliberately
+// carries no arrowhead on the graph (it is chrome, not a claim), so the swatch
+// stays honest and the word "directed" does that work instead.
+function edgeSwatch(type, width) {
+  var s = edgeSpec(type), col = edgeColor(type);
+  var w = width || 26, mid = 5.5, head = 5, half = 3.2;
+  var x1 = 1, x2 = w - 1;
+  if (s.arrow) x2 -= head;
+  if (s.arrow === "double") x1 += head;
+  var g = '<line x1="' + x1 + '" y1="' + mid + '" x2="' + x2 + '" y2="' + mid +
+    '" stroke="' + col + '" stroke-width="' + s.w + '"' +
+    (s.dash ? ' stroke-dasharray="' + s.dash.join(" ") + '"' : "") + "/>";
+  function tri(tipX, baseX) {
+    return '<polygon points="' + tipX + "," + mid + " " + baseX + "," + (mid - half) +
+      " " + baseX + "," + (mid + half) + '" fill="' +
+      // "none", not a surface token: the filter dropdown is not re-rendered on a
+      // theme toggle, so a baked-in background colour would go stale there.
+      (s.arrow === "hollow" ? "none" : col) + '" stroke="' + col +
+      '" stroke-width="1"/>';
+  }
+  if (s.arrow) g += tri(x2 + head, x2);
+  if (s.arrow === "double") g += tri(x1 - head, x1);
+  return '<svg width="' + w + '" height="11" aria-hidden="true">' + g + "</svg>";
+}
+
+// ===== 03. state ========================================================
+var state = {
+  q: "", clusters: null, edgeTypes: null, status: "active",
+  onlyProblems: false, collapse: false,
+  selected: null, hovered: null, railTab: "problems",
+  sevFilter: null, theme: "auto",
+  history: [], histPos: -1, searchHits: [], searchPos: -1
+};
+
+var visible = { nodes: {}, links: [] };
+
+// ===== 04. dom refs =====================================================
+function $(id) { return document.getElementById(id); }
+var elStage = $("stage"), elCanvas = $("edgeLayer"), elSvg = $("nodeLayer");
+var gViewport = d3.select("#viewport"), gNodes = d3.select("#nodes"),
+    gLabels = d3.select("#labels"), gHulls = d3.select("#hulls"),
+    gHullLabels = d3.select("#hullLabels"), gEdgesFg = d3.select("#edgesFg");
+// A null 2D context (canvas disabled, or under memory pressure) must not take
+// the whole page down with it — the rail, header and SVG node layer are still
+// perfectly useful, so fall back to a no-op recorder and warn once.
+var ctx = null;
+try { ctx = elCanvas.getContext("2d"); } catch (e) { ctx = null; }
+var CANVAS_OK = !!ctx;
+if (!CANVAS_OK) {
+  console.warn("no 2D canvas context — edges will not be drawn");
+  ctx = new Proxy({}, { get: function () { return function () {}; },
+                        set: function () { return true; } });
+}
+
+// ===== 05. utilities ====================================================
+function esc(s) {
+  return String(s == null ? "" : s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
+// A link endpoint is a key string before the simulation is built and a node
+// object afterwards; every lookup has to tolerate both.
+function endKey(v) { return (v && typeof v === "object") ? v.key : v; }
+function endNode(v) { return (v && typeof v === "object") ? v : byKey[v]; }
+function icon(name, cls) {
+  return '<svg class="' + (cls || "") + '" aria-hidden="true"><use href="#i-' +
+    name + '"/></svg>';
+}
+function plural(n, one, many) { return n + " " + (n === 1 ? one : (many || one + "s")); }
+function announce(msg) {
+  var t = $("toast");
+  t.textContent = msg;
+  t.classList.add("is-on");
+  clearTimeout(announce._t);
+  announce._t = setTimeout(function () { t.classList.remove("is-on"); }, 2600);
+}
+
+// ===== 06. markdown =====================================================
+// Deliberately hand-rolled and tiny: it covers exactly the subset the pipeline
+// emits. escapeHtml runs on every raw span BEFORE any inline rule, so no
+// author-supplied "<" ever reaches innerHTML — raw HTML in a node body shows
+// as visible text, which is the correct behaviour for a compiler-output viewer.
+var SAFE_HREF = /^(https?:|mailto:|#|\.{0,2}\/)/i;
+var mdCache = {};
+
+function renderMarkdown(md, fromKey) {
+  if (mdCache[fromKey]) return mdCache[fromKey];
+  var fences = [];
+  // Pull fenced code out first so nothing inside it is ever parsed.
+  // Strip the placeholder sentinels from the input first, so author text
+  // can never forge one and smuggle content past the escaper.
+  var text = String(md || "").replace(/[\x01\x02]/g, "")
+    .replace(/```[\s\S]*?```/g, function (block) {
+    fences.push(block);
+    return "FENCE" + (fences.length - 1) + "";
+  });
+  var lines = text.split("\n");
+  var out = [], i = 0;
+
+  function inline(raw) {
+    var codes = [];
+    var s = esc(raw).replace(/`([^`]+)`/g, function (_m, c) {
+      codes.push(c);
+      return "C" + (codes.length - 1) + "";
+    });
+    // Wikilinks before markdown links, so [[x]] never parses as a link label.
+    s = s.replace(/\[\[([^\[\]|#\\]+)(?:\\?#([^\[\]|\\]+))?(?:\\?\|([^\[\]]+))?\]\]/g,
+      function (_m, target, heading, alias) {
+        var t = String(target).trim();
+        var label = (alias || "").trim() || t.split("/").pop();
+        var hit = resolveWikilink(t, fromKey);
+        if (!hit) {
+          return '<span class="wl wl--broken" title="unresolved wikilink">' +
+            esc(label) + "</span>";
+        }
+        return '<a class="wl" role="link" tabindex="0" data-target="' + esc(hit) +
+          '">' + esc(label) + "</a>";
+      });
+    s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (_m, label, url) {
+      if (!SAFE_HREF.test(url)) {
+        return '<span class="md-link--blocked" title="blocked link scheme">' +
+          label + "</span>";
+      }
+      return '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' +
+        label + "</a>";
+    });
+    s = s.replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>")
+         .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+         .replace(/__([^_]+)__/g, "<strong>$1</strong>")
+         .replace(/(^|[\s(])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>")
+         .replace(/(^|[\s(])_([^_\s][^_]*)_(?=[\s.,;:)!?]|$)/g, "$1<em>$2</em>")
+         .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+    return s.replace(/C(\d+)/g, function (_m, n) {
+      // Already escaped: the capture ran on esc(raw), so escaping again here
+      // would render `<b>` as "&lt;b&gt;" inside the code span.
+      return "<code>" + codes[+n] + "</code>";
+    });
+  }
+
+  var CALLOUT_LABEL = { warning: "Warning", conflict: "Conflict", info: "Note",
+                        note: "Note", tip: "Tip", danger: "Danger" };
+  var CALLOUT_ICON = { conflict: "conflict", warning: "warn", danger: "error",
+                       info: "info", note: "info", tip: "check" };
+
+  while (i < lines.length) {
+    var line = lines[i];
+
+    var fence = line.match(/^FENCE(\d+)$/);
+    if (fence) {
+      var block = fences[+fence[1]].replace(/^```[^\n]*\n?/, "").replace(/```$/, "");
+      out.push("<pre><code>" + esc(block.replace(/\n$/, "")) + "</code></pre>");
+      i++; continue;
+    }
+
+    // Callout: "> [!kind] Title" plus the following "> " lines.
+    var callout = line.match(/^>\s*\[!(\w+)\]\s*(.*)$/);
+    if (callout) {
+      var kindRaw = callout[1].toLowerCase();
+      var titleRaw = callout[2].trim();
+      // "> [!warning] Conflict" is the pipeline's conflict marker — the thing
+      // this whole viewer exists to surface, so it gets its own treatment.
+      var kind = (titleRaw.toLowerCase() === "conflict") ? "conflict" : kindRaw;
+      var buf = [];
+      i++;
+      while (i < lines.length && /^>/.test(lines[i])) {
+        buf.push(lines[i].replace(/^>\s?/, ""));
+        i++;
+      }
+      var label = titleRaw || CALLOUT_LABEL[kind] || kindRaw;
+      var inner = buf.join("\n").split(/\n{2,}/)
+        .filter(function (p) { return p.trim(); })
+        .map(function (p) { return "<p>" + inline(p.replace(/\n/g, " ")) + "</p>"; })
+        .join("");
+      out.push('<aside class="callout callout--' + esc(kind) + '" role="note">' +
+        '<p class="callout__head">' + icon(CALLOUT_ICON[kind] || "info") +
+        esc(label) + "</p>" + inner +
+        (kind === "conflict"
+          ? '<button class="callout__open" data-open-problems="1">' +
+            "Open in Problems →</button>"
+          : "") +
+        "</aside>");
+      continue;
+    }
+
+    var heading = line.match(/^(#{1,6})\s+(.+)$/);
+    if (heading) {
+      // h1 is demoted: the inspector panel already owns the page's h1.
+      var lvl = Math.min(6, Math.max(2, heading[1].length === 1 ? 2 : heading[1].length));
+      out.push("<h" + lvl + ">" + inline(heading[2]) + "</h" + lvl + ">");
+      i++; continue;
+    }
+
+    if (/^\s*(-{3,}|\*{3,})\s*$/.test(line)) { out.push("<hr>"); i++; continue; }
+
+    // Table: a pipe row followed by a delimiter row.
+    if (/^\s*\|/.test(line) && i + 1 < lines.length &&
+        /^\s*\|[\s:|-]+\|?\s*$/.test(lines[i + 1])) {
+      var cells = function (row) {
+        return row.trim().replace(/^\|/, "").replace(/\|$/, "")
+          .split(/(?<!\\)\|/).map(function (c) { return c.trim(); });
+      };
+      var head = cells(line);
+      i += 2;
+      var rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(cells(lines[i])); i++; }
+      out.push("<table><thead><tr>" +
+        head.map(function (h) { return "<th>" + inline(h) + "</th>"; }).join("") +
+        "</tr></thead><tbody>" +
+        rows.map(function (r) {
+          return "<tr>" + r.map(function (c) { return "<td>" + inline(c) + "</td>"; })
+            .join("") + "</tr>";
+        }).join("") + "</tbody></table>");
+      continue;
+    }
+
+    var listItem = line.match(/^(\s*)([-*+]|\d+[.)])\s+(.*)$/);
+    if (listItem) {
+      var ordered = /\d/.test(listItem[2]);
+      var items = [];
+      while (i < lines.length) {
+        var m2 = lines[i].match(/^(\s*)([-*+]|\d+[.)])\s+(.*)$/);
+        if (!m2) break;
+        items.push({ indent: m2[1].length, text: m2[3] });
+        i++;
+      }
+      var html = "", open = 0;
+      items.forEach(function (it) {
+        var depth = it.indent >= 2 ? 1 : 0;
+        while (open < depth) { html += ordered ? "<ol>" : "<ul>"; open++; }
+        while (open > depth) { html += open > 0 && ordered ? "</ol>" : "</ul>"; open--; }
+        html += "<li>" + inline(it.text) + "</li>";
+      });
+      while (open > 0) { html += ordered ? "</ol>" : "</ul>"; open--; }
+      out.push((ordered ? "<ol>" : "<ul>") + html + (ordered ? "</ol>" : "</ul>"));
+      continue;
+    }
+
+    if (/^>/.test(line)) {
+      var quote = [];
+      while (i < lines.length && /^>/.test(lines[i])) {
+        quote.push(lines[i].replace(/^>\s?/, "")); i++;
+      }
+      out.push("<blockquote>" + inline(quote.join(" ")) + "</blockquote>");
+      continue;
+    }
+
+    if (!line.trim()) { i++; continue; }
+
+    var para = [];
+    while (i < lines.length && lines[i].trim() &&
+           !/^(#{1,6}\s|>|\s*\||\s*(-{3,}|\*{3,})\s*$|FENCE)/.test(lines[i]) &&
+           !/^(\s*)([-*+]|\d+[.)])\s+/.test(lines[i])) {
+      para.push(lines[i]); i++;
+    }
+    if (para.length) out.push("<p>" + inline(para.join(" ")) + "</p>");
+    else i++;
+  }
+  var result = out.join("\n");
+  mdCache[fromKey] = result;
+  return result;
+}
+
+// Mirrors kblib.build_link_resolver so the viewer agrees with validate.py
+// about what is and is not a broken link.
+var byBasename = {};
+nodes.forEach(function (n) {
+  var base = n.key.split("/").pop();
+  (byBasename[base] = byBasename[base] || []).push(n.key);
+});
+function resolveWikilink(target, fromKey) {
+  var t = String(target || "").trim().replace(/^\.\//, "");
+  if (!t) return null;
+  if (byKey[t]) return t;
+  var cluster = fromKey && byKey[fromKey] ? byKey[fromKey].cluster : null;
+  if (cluster && byKey[cluster + "/" + t]) return cluster + "/" + t;
+  var base = t.split("/").pop();
+  if (cluster && byKey[cluster + "/" + base]) return cluster + "/" + base;
+  var hits = byBasename[base] || [];
+  return hits.length === 1 ? hits[0] : null;
+}
+
+// ===== 07. search =======================================================
+var searchIndex = [];
+nodes.forEach(function (n) {
+  searchIndex.push({
+    key: n.key,
+    hay: [n.title, n.description, (n.keywords || []).join(" "),
+          (n.aliases || []).join(" "), (n.tags || []).join(" "),
+          (clusterBySlug[n.cluster] || {}).title || "", n.key].join(" ").toLowerCase(),
+    title: n.title.toLowerCase(),
+    aliases: (n.aliases || []).join(" ").toLowerCase(),
+    keywords: (n.keywords || []).join(" ").toLowerCase()
+  });
+});
+function queryNodes(q) {
+  var terms = String(q || "").toLowerCase().split(/\s+/).filter(Boolean);
+  if (!terms.length) return null;
+  var hits = [];
+  searchIndex.forEach(function (rec) {
+    var score = 0;
+    for (var i = 0; i < terms.length; i++) {
+      if (rec.hay.indexOf(terms[i]) === -1) return;
+      if (rec.title.indexOf(terms[i]) !== -1) score += 5;
+      else if (rec.aliases.indexOf(terms[i]) !== -1) score += 4;
+      else if (rec.keywords.indexOf(terms[i]) !== -1) score += 3;
+      else score += 1;
+    }
+    hits.push({ key: rec.key, score: score });
+  });
+  hits.sort(function (a, b) { return b.score - a.score; });
+  return hits.map(function (h) { return h.key; });
+}
+
+// ===== 08. filters ======================================================
+function activeClusters() { return state.clusters; }
+function activeEdgeTypes() { return state.edgeTypes; }
+
+function predicates() {
+  var hits = queryNodes(state.q);
+  var hitSet = hits ? hits.reduce(function (a, k) { a[k] = true; return a; }, {}) : null;
+  return {
+    search: function (n) { return !hitSet || hitSet[n.key]; },
+    cluster: function (n) { return !state.clusters || state.clusters[n.cluster]; },
+    status: function (n) {
+      if (state.status === "all") return true;
+      if (state.status === "deprecated") return n.status === "deprecated";
+      return n.status !== "deprecated";
+    },
+    problems: function (n) { return !state.onlyProblems || n._problemCount > 0; }
+  };
+}
+
+function computeVisible(skip) {
+  var p = predicates();
+  var keep = {};
+  nodes.forEach(function (n) {
+    var ok = true;
+    Object.keys(p).forEach(function (name) {
+      if (name !== skip && !p[name](n)) ok = false;
+    });
+    if (ok) keep[n.key] = true;
+  });
+  // A hub stays whenever any of its members do, so a cluster never loses its
+  // anchor and its label.
+  nodes.forEach(function (n) {
+    if (!n.isHub) return;
+    var slug = n.cluster;
+    var anyMember = nodes.some(function (m) {
+      return !m.isHub && m.cluster === slug && keep[m.key];
+    });
+    if (anyMember) keep[n.key] = true;
+  });
+  var vlinks = links.filter(function (l) {
+    if (state.edgeTypes && !state.edgeTypes[l.type]) return false;
+    // d3.forceLink rewrites source/target from key strings to node objects in
+    // place, so this runs against both shapes depending on whether the
+    // simulation has been built yet. Indexing with the raw value would
+    // stringify an object to "[object Object]" and silently drop every edge.
+    return keep[endKey(l.source)] && keep[endKey(l.target)];
+  });
+  return { nodes: keep, links: vlinks };
+}
+
+function applyFilters() {
+  visible = computeVisible(null);
+  var shown = Object.keys(visible.nodes).length;
+  $("filterCount").textContent = shown + " of " + nodes.length + " shown";
+  renderStageEmpty(shown);
+  redraw();
+  renderSummaries();
+}
+
+function renderStageEmpty(shown) {
+  var box = $("stageEmpty");
+  if (shown > 0) { box.hidden = true; return; }
+  // Diagnose which predicate is responsible rather than showing a blank canvas.
+  var names = { search: "the search term", cluster: "the cluster filter",
+                status: "the status filter", problems: "“only problems”" };
+  var rows = Object.keys(names).map(function (k) {
+    var n = Object.keys(computeVisible(k).nodes).length;
+    return { k: k, n: n };
+  }).filter(function (r) { return r.n > 0; }).sort(function (a, b) { return b.n - a.n; });
+  box.innerHTML = "<h3>No nodes match</h3><p>" +
+    (rows.length
+      ? "Every node is filtered out by the combination below."
+      : "Nothing in this build matches; try Reset.") + "</p>" +
+    "<ul class='why'>" + rows.map(function (r) {
+      return "<li><button data-drop='" + r.k + "'>Remove " + names[r.k] +
+        " → shows " + r.n + "</button></li>";
+    }).join("") + "</ul>" +
+    "<button class='btn--ghost' data-drop='all'>Reset all filters</button>";
+  box.hidden = false;
+}
+
+// ===== 09. force layout =================================================
+// Clusters separate through three cooperating mechanisms, in order of weight:
+//   1. short, strong part-of links (every node has one to its hub), which turn
+//      each cluster into a tight rosette with no per-node positional force;
+//   2. hub anchors at deterministic centroids, applied mostly to hubs so leaves
+//      inherit position organically through the link force;
+//   3. cross-cluster damping — the single most effective anti-hairball knob.
+var LINK_CFG = {
+  "part-of":       { d: 55,  s: 0.90 },
+  "depends-on":    { d: 90,  s: 0.35 },
+  "supersedes":    { d: 70,  s: 0.50 },
+  "superseded-by": { d: 70,  s: 0.50 },
+  "related-to":    { d: 120, s: 0.20 },
+  "see-also":      { d: 150, s: 0.08 },
+  // Near-zero on purpose: a contradiction means "far apart", not "near", and a
+  // strong pull here knots the graph at exactly the places worth inspecting.
+  "contradicts":   { d: 160, s: 0.06 }
+};
+var CROSS_DAMP = 0.35;
+
+var sim = null, anchors = {}, W = 0, H = 0;
+
+function computeAnchors() {
+  var n = clusters.length || 1;
+  var R = 0.36 * Math.min(W, H);
+  clusters.forEach(function (c, i) {
+    var t, rr;
+    if (n <= 8) {
+      t = (2 * Math.PI * i) / n - Math.PI / 2;
+      rr = R;
+    } else {
+      // Sunflower placement: a 13-point ring is too thin at laptop height.
+      t = i * 2.399963;
+      rr = R * Math.sqrt((i + 0.5) / n);
+    }
+    anchors[c.slug] = { x: rr * Math.cos(t), y: rr * Math.sin(t) };
+  });
+}
+function anchorOf(d) { return anchors[d.cluster] || { x: 0, y: 0 }; }
+
+function buildSimulation() {
+  computeAnchors();
+  nodes.forEach(function (d, i) {
+    if (d.x == null) {
+      var a = anchorOf(d);
+      d.x = a.x + (Math.random() - 0.5) * 60;
+      d.y = a.y + (Math.random() - 0.5) * 60;
+    }
+  });
+  sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(function (d) { return d.key; })
+      .distance(function (l) { return (LINK_CFG[l.type] || LINK_CFG["related-to"]).d; })
+      .strength(function (l) {
+        var base = (LINK_CFG[l.type] || LINK_CFG["related-to"]).s;
+        var sa = endNode(l.source), sb = endNode(l.target);
+        var cross = l.type !== "part-of" && sa && sb &&
+          sa.cluster !== sb.cluster;
+        return base * (cross ? CROSS_DAMP : 1);
+      }))
+    .force("charge", d3.forceManyBody()
+      .strength(function (d) {
+        return Math.max(-900, Math.min(-120, -180 - 22 * d.degree));
+      }).distanceMax(400).theta(0.9))
+    .force("collide", d3.forceCollide(function (d) { return d.r + 4; })
+      .iterations(2).strength(0.85))
+    .force("hubX", d3.forceX(function (d) { return anchorOf(d).x; })
+      .strength(function (d) { return d.isHub ? 0.35 : 0.03; }))
+    .force("hubY", d3.forceY(function (d) { return anchorOf(d).y; })
+      .strength(function (d) { return d.isHub ? 0.35 : 0.03; }))
+    .velocityDecay(0.35)
+    .alphaMin(0.02)
+    .alphaDecay(1 - Math.pow(0.02, 1 / 320))
+    .stop();
+}
+
+// Warm the layout headless, then hand over a short animated tail. Ticking in
+// rAF slices keeps the header interactive on big graphs instead of freezing
+// the tab for a second and a half.
+function warmStart(done) {
+  var total = nodes.length <= 250 ? 250 : (nodes.length <= 600 ? 180 : 120);
+  var ticked = 0;
+  var prog = $("stageProgress"), fill = $("progressFill");
+  if (nodes.length > 300) prog.hidden = false;
+  (function step() {
+    var slice = 0;
+    while (ticked < total && slice < 25) { sim.tick(); ticked++; slice++; }
+    fill.style.width = Math.round((ticked / total) * 100) + "%";
+    if (ticked < total) { requestAnimationFrame(step); return; }
+    prog.hidden = true;
+    done();
+  })();
+}
+
+// ===== 10. rendering ====================================================
+var transform = d3.zoomIdentity;
+var zoom = d3.zoom().scaleExtent([0.15, 6]).on("zoom", function (ev) {
+  transform = ev.transform;
+  gViewport.attr("transform", transform);
+  $("zoomOut").textContent = Math.round(transform.k * 100) + "%";
+  redrawCanvas();
+  updateLabelVisibility();
+});
+
+function resize() {
+  var rect = elStage.getBoundingClientRect();
+  W = Math.max(320, rect.width);
+  H = Math.max(240, rect.height);
+  var dpr = window.devicePixelRatio || 1;
+  elCanvas.width = Math.floor(W * dpr);
+  elCanvas.height = Math.floor(H * dpr);
+  elCanvas.style.width = W + "px";
+  elCanvas.style.height = H + "px";
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.save();
+  redrawCanvas();
+}
+
+function drawArrow(x1, y1, x2, y2, r, kind, color, width) {
+  var dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy) || 1;
+  var ux = dx / len, uy = dy / len;
+  var tipX = x2 - ux * (r + 1.5), tipY = y2 - uy * (r + 1.5);
+  var size = Math.max(5, width * 3);
+  var ax = tipX - ux * size, ay = tipY - uy * size;
+  var px = -uy * size * 0.42, py = ux * size * 0.42;
+  ctx.beginPath();
+  ctx.moveTo(tipX, tipY);
+  ctx.lineTo(ax + px, ay + py);
+  ctx.lineTo(ax - px, ay - py);
+  ctx.closePath();
+  if (kind === "hollow") {
+    ctx.fillStyle = TOKENS["--surface-2"];
+    ctx.fill();
+    ctx.strokeStyle = color; ctx.lineWidth = width * 0.8; ctx.setLineDash([]);
+    ctx.stroke();
+  } else {
+    ctx.fillStyle = color;
+    ctx.fill();
+  }
+}
+
+function redrawCanvas() {
+  ctx.save();
+  ctx.setTransform(window.devicePixelRatio || 1, 0, 0, window.devicePixelRatio || 1, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  ctx.translate(transform.x, transform.y);
+  ctx.scale(transform.k, transform.k);
+
+  var dimmed = state.hovered || state.selected;
+  var focusKey = state.hovered || state.selected;
+  var vis = visible.nodes;
+
+  // Batch by (colour, width, dash) so a 500-edge graph costs a handful of
+  // context state changes instead of one per edge.
+  var buckets = {};
+  visible.links.forEach(function (l) {
+    var a = endNode(l.source), b = endNode(l.target);
+    if (!a || !b || a.x == null || b.x == null) return; // not laid out yet
+    var spec = edgeSpec(l.type);
+    var near = !dimmed || a.key === focusKey || b.key === focusKey;
+    var id = l.type + "|" + (near ? 1 : 0);
+    (buckets[id] = buckets[id] || { spec: spec, type: l.type, near: near, list: [] })
+      .list.push({ a: a, b: b });
+  });
+
+  Object.keys(buckets).sort(function (a, b) {
+    return edgeSpec(buckets[a].type).layer - edgeSpec(buckets[b].type).layer;
+  }).forEach(function (id) {
+    var b = buckets[id];
+    ctx.beginPath();
+    ctx.lineWidth = b.spec.w / Math.max(0.6, Math.min(1.6, transform.k));
+    ctx.setLineDash(b.spec.dash ? b.spec.dash.map(function (v) { return v; }) : []);
+    ctx.strokeStyle = b.near ? edgeColor(b.type) : TOKENS["--edge-dim"];
+    ctx.globalAlpha = b.near ? b.spec.alpha : 0.5;
+    b.list.forEach(function (l) {
+      ctx.moveTo(l.a.x, l.a.y);
+      ctx.lineTo(l.b.x, l.b.y);
+    });
+    ctx.stroke();
+    if (b.spec.arrow && b.near && transform.k > 0.5) {
+      b.list.forEach(function (l) {
+        drawArrow(l.a.x, l.a.y, l.b.x, l.b.y,
+          l.b.r, b.spec.arrow, edgeColor(b.type), b.spec.w);
+        if (b.spec.arrow === "double") {
+          drawArrow(l.b.x, l.b.y, l.a.x, l.a.y,
+            l.a.r, "double", edgeColor(b.type), b.spec.w);
+        }
+      });
+    }
+  });
+  ctx.globalAlpha = 1;
+  ctx.setLineDash([]);
+  ctx.restore();
+}
+
+function joinNodes() {
+  var data = nodes.filter(function (d) { return visible.nodes[d.key]; });
+  var sel = gNodes.selectAll("g.node").data(data, function (d) { return d.key; });
+  sel.exit().remove();
+  var enter = sel.enter().append("g").attr("class", "node")
+    .attr("tabindex", 0).attr("role", "button")
+    .on("click", function (ev, d) { ev.stopPropagation(); selectNode(d.key, "graph"); })
+    .on("keydown", function (ev, d) {
+      if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); selectNode(d.key, "kbd"); }
+    })
+    .on("mouseenter", function (ev, d) { setHover(d.key); })
+    .on("mouseleave", function () { setHover(null); })
+    .on("focus", function (ev, d) { setHover(d.key); });
+  enter.each(function (d) {
+    var g = d3.select(this);
+    if (d.isHub) {
+      g.append("rect").attr("class", "shape").attr("rx", 4);
+    } else {
+      g.append("circle").attr("class", "shape");
+    }
+    g.append("circle").attr("class", "sev");   // outer severity ring
+    g.append("circle").attr("class", "badge"); // severity badge disc
+    g.append("text").attr("class", "glyph");
+  });
+  enter.merge(sel).call(styleNodes).call(d3.drag()
+    .on("start", function (ev, d) {
+      if (!ev.active) sim.alphaTarget(0.25).restart();
+      d.fx = d.x; d.fy = d.y;
+    })
+    .on("drag", function (ev, d) { d.fx = ev.x; d.fy = ev.y; })
+    .on("end", function (ev, d) {
+      if (!ev.active) sim.alphaTarget(0);
+      if (ev.sourceEvent && ev.sourceEvent.altKey) { d.fx = null; d.fy = null; }
+    }));
+  joinLabels(data);
+  return data;
+}
+
+function styleNodes(sel) {
+  sel.each(function (d) {
+    var g = d3.select(this);
+    var deprecated = d.status === "deprecated";
+    var hollow = d._tier > 0;
+    var fill = hollow || deprecated ? TOKENS["--surface-1"] : d._fill;
+    var shape = g.select(".shape");
+    if (d.isHub) {
+      shape.attr("x", -d.r).attr("y", -d.r).attr("width", d.r * 2).attr("height", d.r * 2);
+    } else {
+      shape.attr("r", d.r);
+    }
+    shape
+      .attr("fill", fill)
+      .attr("stroke", deprecated || hollow ? d._fill : TOKENS["--surface-1"])
+      .attr("stroke-width", deprecated ? 1.5 : (hollow ? 3 : 4))
+      .attr("stroke-dasharray", deprecated ? "4 3" : null)
+      .style("paint-order", "stroke fill");
+    g.attr("opacity", deprecated ? 0.55 : 1)
+      .attr("aria-label", ariaFor(d));
+    // A node with problems must be unmissable: a status ring outside the mark,
+    // plus a badge disc, plus a glyph once there is room for one.
+    g.select(".sev")
+      .attr("r", d._sev ? d.r + 3.5 : 0)
+      .attr("fill", "none")
+      .attr("stroke", d._sev ? sevColor(d._sev) : "none")
+      .attr("stroke-width", 2);
+    var showBadge = !!d._sev;
+    var bx = d.r * 0.75, by = -d.r * 0.75;
+    g.select(".badge")
+      .attr("r", showBadge ? 5 : 0)
+      .attr("cx", bx).attr("cy", by)
+      .attr("fill", showBadge ? sevColor(d._sev) : "none")
+      .attr("stroke", TOKENS["--surface-1"]).attr("stroke-width", 1);
+    g.select(".glyph")
+      .attr("x", bx).attr("y", by + 2.6)
+      .attr("text-anchor", "middle")
+      .style("font-size", "7px").style("font-weight", "700")
+      .style("pointer-events", "none")
+      .attr("fill", "#fff")
+      .text(showBadge && transform.k > 1.1
+        ? (d._sev === "error" ? "!" : d._sev === "conflict" ? "≠" : "?")
+        : "");
+  });
+}
+
+function ariaFor(d) {
+  var parts = [d.title, "cluster " + ((clusterBySlug[d.cluster] || {}).title || d.cluster)];
+  if (d.isHub) parts.push("cluster hub");
+  parts.push(d.status);
+  if (d.confidence) parts.push(d.confidence + " confidence");
+  parts.push(plural(d.in_degree || 0, "inbound link"));
+  if ((d.conflicts || []).length) parts.push(plural(d.conflicts.length, "open conflict"));
+  var probs = (d.problems || []).length;
+  if (probs) parts.push(plural(probs, "validation note"));
+  return parts.join(", ");
+}
+
+function joinLabels(data) {
+  var showAll = data.length <= 120;
+  var withLabels = data.filter(function (d) {
+    return d.isHub || showAll || d.key === state.selected || d.key === state.hovered;
+  });
+  var sel = gLabels.selectAll("text.node__label").data(withLabels,
+    function (d) { return d.key; });
+  sel.exit().remove();
+  sel.enter().append("text").attr("class", "node__label")
+    .attr("text-anchor", "middle")
+    .merge(sel)
+    .attr("class", function (d) {
+      return "node__label" + (d.status === "deprecated" ? " node__label--muted" : "");
+    })
+    .style("font-weight", function (d) { return d.isHub ? 650 : 400; })
+    .text(function (d) {
+      var t = d.isHub ? ((clusterBySlug[d.cluster] || {}).title || d.title) : d.title;
+      return t.length > 34 ? t.slice(0, 32) + "…" : t;
+    });
+}
+
+function updateLabelVisibility() {
+  gLabels.attr("opacity", transform.k < 0.6 ? 0 : 1);
+  gHullLabels.attr("opacity", transform.k < 0.35 ? 0 : 1);
+}
+
+function computeHulls() {
+  var groups = {};
+  nodes.forEach(function (d) {
+    if (!visible.nodes[d.key]) return;
+    (groups[d.cluster] = groups[d.cluster] || []).push(d);
+  });
+  var hulls = [];
+  Object.keys(groups).forEach(function (slug) {
+    var pts = groups[slug];
+    if (pts.length < 3) return;
+    var raw = [];
+    pts.forEach(function (p) {
+      var pad = p.r + 22;
+      raw.push([p.x - pad, p.y - pad], [p.x + pad, p.y - pad],
+               [p.x + pad, p.y + pad], [p.x - pad, p.y + pad]);
+    });
+    var hull = d3.polygonHull(raw);
+    if (!hull) return;
+    var cx = d3.mean(pts, function (p) { return p.x; });
+    var cy = d3.mean(pts, function (p) { return p.y; });
+    hulls.push({ slug: slug, hull: hull, cx: cx, cy: cy,
+                 top: d3.min(pts, function (p) { return p.y - p.r; }) });
+  });
+  return hulls;
+}
+
+var lineHull = d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5));
+
+function joinHulls() {
+  var hulls = computeHulls();
+  var sel = gHulls.selectAll("path.hull").data(hulls, function (d) { return d.slug; });
+  sel.exit().remove();
+  sel.enter().append("path").attr("class", "hull").merge(sel)
+    .attr("fill", function (d) { return clusterMark((clusterBySlug[d.slug] || {}).color_index).fill; })
+    .attr("d", function (d) { return lineHull(d.hull); });
+
+  var labels = gHullLabels.selectAll("text.hullLabel").data(hulls,
+    function (d) { return d.slug; });
+  labels.exit().remove();
+  labels.enter().append("text").attr("class", "hullLabel")
+    .attr("text-anchor", "middle").merge(labels)
+    .attr("x", function (d) { return d.cx; })
+    .attr("y", function (d) { return d.top - 12; })
+    .text(function (d) { return (clusterBySlug[d.slug] || {}).title || d.slug; });
+}
+
+function redraw() {
+  joinNodes();
+  joinHulls();
+  positionAll();
+  redrawCanvas();
+  updateLabelVisibility();
+}
+
+function positionAll() {
+  gNodes.selectAll("g.node").attr("transform", function (d) {
+    return "translate(" + d.x + "," + d.y + ")";
+  }).attr("opacity", function (d) {
+    var focusKey = state.hovered || state.selected;
+    if (!focusKey) return d.status === "deprecated" ? 0.55 : 1;
+    if (d.key === focusKey || neighbors[focusKey][d.key]) return 1;
+    return 0.22;
+  });
+  gLabels.selectAll("text.node__label")
+    .attr("x", function (d) { return d.x; })
+    .attr("y", function (d) { return d.y - d.r - 5; });
+}
+
+function onTick() { positionAll(); joinHulls(); redrawCanvas(); }
+
+// ===== 11. hover & selection ============================================
+function setHover(key) {
+  if (state.hovered === key) return;
+  state.hovered = key;
+  joinLabels(nodes.filter(function (d) { return visible.nodes[d.key]; }));
+  positionAll();
+  redrawCanvas();
+}
+
+function focusNodes(keys, opts) {
+  opts = opts || {};
+  var pts = keys.map(function (k) { return byKey[k]; })
+    .filter(function (d) { return d && d.x != null; });
+  if (!pts.length) { announce("Not in this build"); return; }
+  var xs = pts.map(function (p) { return p.x; });
+  var ys = pts.map(function (p) { return p.y; });
+  var pad = 90;
+  var x0 = Math.min.apply(null, xs) - pad, x1 = Math.max.apply(null, xs) + pad;
+  var y0 = Math.min.apply(null, ys) - pad, y1 = Math.max.apply(null, ys) + pad;
+  var k = Math.min(2.5, 0.9 / Math.max((x1 - x0) / W, (y1 - y0) / H));
+  var t = d3.zoomIdentity.translate(W / 2, H / 2).scale(k)
+    .translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
+  d3.select(elSvg).transition().duration(420).call(zoom.transform, t);
+  flashNodes(keys);
+  if (keys.length === 1 && opts.open !== false) selectNode(keys[0], "rail");
+}
+
+function flashNodes(keys) {
+  var set = keys.reduce(function (a, k) { a[k] = true; return a; }, {});
+  var n = 0;
+  var iv = setInterval(function () {
+    n++;
+    gNodes.selectAll("g.node").filter(function (d) { return set[d.key]; })
+      .select(".sev")
+      .attr("stroke-width", n % 2 ? 4.5 : 2)
+      .attr("r", function (d) { return (d._sev ? d.r + 3.5 : d.r + 3.5) + (n % 2 ? 2 : 0); })
+      .attr("stroke", function (d) { return sevColor(d._sev || "info"); });
+    if (n >= 6) { clearInterval(iv); styleNodes(gNodes.selectAll("g.node")); }
+  }, 190);
+}
+
+function selectNode(key, via) {
+  if (!byKey[key]) { announce("`" + key + "` is not in this build"); return; }
+  if (state.selected !== key) {
+    state.history = state.history.slice(0, state.histPos + 1);
+    state.history.push(key);
+    state.histPos = state.history.length - 1;
+  }
+  state.selected = key;
+  renderInspector(key);
+  positionAll();
+  redrawCanvas();
+  writeHash();
+  announce("Selected " + byKey[key].title);
+}
+
+function closeInspector() {
+  state.selected = null;
+  $("shell").dataset.inspector = "closed";
+  $("inspector").hidden = true;
+  positionAll(); redrawCanvas(); writeHash();
+}
+
+// ===== 12. inspector ====================================================
+function renderInspector(key) {
+  var d = byKey[key];
+  if (!d) return;
+  $("shell").dataset.inspector = "open";
+  $("inspector").hidden = false;
+  $("insTitle").textContent = d.title;
+  $("insPath").textContent = d.path;
+
+  var cm = clusterMark((clusterBySlug[d.cluster] || {}).color_index);
+  var chips = ['<li class="is-cluster"><span class="swatch" style="background:' +
+    cm.fill + '"></span>' + esc((clusterBySlug[d.cluster] || {}).title || d.cluster) + "</li>"];
+  if (d.isHub) chips.push("<li>cluster hub</li>");
+  if (d.status === "deprecated") chips.push('<li class="is-deprecated">deprecated</li>');
+  if (d.confidence) {
+    chips.push('<li class="' + (d.confidence === "low" ? "is-low" : "") + '">' +
+      esc(d.confidence) + " confidence</li>");
+  }
+  if (d.updated) chips.push("<li>updated " + esc(d.updated) + "</li>");
+  chips.push("<li>" + plural(d.in_degree || 0, "inbound link") + "</li>");
+  $("insChips").innerHTML = chips.join("");
+  $("insDesc").textContent = d.description || "";
+
+  // Per-node problems, restated here so a node's page is self-contained.
+  var flags = [];
+  (d.conflicts || []).forEach(function (ci) {
+    var c = conflicts[ci];
+    if (!c) return;
+    flags.push('<div class="flag flag--conflict">' + icon("conflict") +
+      "<div><strong>Open conflict</strong> — " +
+      esc((c.detail || "").slice(0, 300)) +
+      (c.sources && c.sources.length
+        ? "<br><em>" + esc(c.sources.join(" vs ")) + "</em>"
+        : "") + "</div></div>");
+  });
+  (d.problems || []).forEach(function (pi) {
+    var p = problems[pi];
+    if (!p) return;
+    var cls = p.level === "error" ? "error" : p.level === "warning" ? "warning" : "";
+    var ico = p.level === "error" ? "error" : p.level === "warning" ? "warn" : "info";
+    flags.push('<div class="flag' + (cls ? " flag--" + cls : "") + '">' + icon(ico) +
+      "<div><strong>" + esc(p.check) + "</strong> — " + esc(p.issue) +
+      (p.hint ? "<br><em>" + esc(p.hint) + "</em>" : "") + "</div></div>");
+  });
+  if (d.id_mismatch) {
+    flags.push('<div class="flag flag--warning">' + icon("warn") +
+      "<div><strong>id mismatch</strong> — frontmatter <code>id: " + esc(d.fm_id) +
+      "</code> disagrees with the file path</div></div>");
+  }
+  $("insFlags").innerHTML = flags.join("");
+
+  var bodyEl = $("insBody");
+  if (d.body_omitted) {
+    bodyEl.innerHTML = '<p class="body-omitted">This node’s text was omitted to ' +
+      "keep the file openable. Read it in <code>" + esc(d.path) + "</code>.</p>";
+  } else if (!d.body) {
+    bodyEl.innerHTML = '<p class="body-omitted">No body content.</p>';
+  } else {
+    bodyEl.innerHTML = renderMarkdown(d.body, d.key) +
+      (d.truncated
+        ? '<p class="body-omitted">Body truncated at ' + d.body_chars +
+          " characters — full text in <code>" + esc(d.path) + "</code>.</p>"
+        : "");
+  }
+
+  renderConnections(d);
+  renderSources(d);
+  renderCrumbs();
+  $("insScroll").scrollTop = 0;
+}
+
+function renderConnections(d) {
+  var out = [], any = false;
+  EDGE_TYPES.forEach(function (type) {
+    var outgoing = links.filter(function (l) {
+      return endKey(l.source) === d.key && l.type === type;
+    });
+    // No `!l.both` here: build_edges collapses a reciprocal pair into a single
+    // edge, so the node at the target end is the only place that edge can be
+    // listed from. Excluding it hid every mutual `contradicts` and every
+    // `supersedes`/`superseded-by` pair from one of its two nodes. Nothing is
+    // double-listed — an edge never has source === target.
+    var incoming = links.filter(function (l) {
+      return endKey(l.target) === d.key && l.type === type;
+    });
+    if (!outgoing.length && !incoming.length) return;
+    any = true;
+    var m = edgeMeaning(type) || {};
+    if (!edgeIsDirected(type)) {
+      // Mutual: the sentence reads the same from either end, so one group and
+      // no per-row direction — which end stored the edge means nothing here.
+      out.push(connGroup(type, "mutual", m.text,
+        outgoing.map(function (l) { return connRow(endNode(l.target)); })
+          .concat(incoming.map(function (l) { return connRow(endNode(l.source)); }))
+          .join("")));
+      return;
+    }
+    // Directed: an inbound edge has to be labelled and re-worded, or the
+    // meaning above it describes the relation the wrong way round.
+    if (outgoing.length) {
+      out.push(connGroup(type, "this node →", m.text,
+        outgoing.map(function (l) { return connRow(endNode(l.target)); }).join("")));
+    }
+    if (incoming.length) {
+      out.push(connGroup(type, "→ this node", m.inbound || m.text,
+        incoming.map(function (l) { return connRow(endNode(l.source)); }).join("")));
+    }
+  });
+  $("insConnSec").hidden = !any;
+  $("insConn").innerHTML = out.join("");
+}
+
+function connGroup(type, dirLabel, meaning, rows) {
+  return '<div class="conn__group"><div class="conn__type">' + edgeSwatch(type, 22) +
+    "<span>" + esc(type) + '</span><span class="conn__dir">' + esc(dirLabel) +
+    "</span></div>" +
+    (meaning ? '<p class="conn__mean">' + esc(meaning) + "</p>" : "") +
+    rows + "</div>";
+}
+
+function connRow(target) {
+  if (!target) return "";
+  var cm = clusterMark((clusterBySlug[target.cluster] || {}).color_index);
+  return '<button class="conn__link" data-target="' + esc(target.key) + '">' +
+    '<span class="swatch" style="display:inline-block;background:' + cm.fill +
+    ';vertical-align:middle;margin-right:6px"></span>' +
+    esc(target.title) +
+    (target.cluster !== (byKey[state.selected] || {}).cluster
+      ? ' <span class="cl__cluster">' +
+        esc((clusterBySlug[target.cluster] || {}).title || target.cluster) + "</span>"
+      : "") + "</button>";
+}
+
+function renderSources(d) {
+  var srcs = d.sources || [];
+  $("insSrcSec").hidden = !srcs.length;
+  $("insSrc").innerHTML = srcs.map(function (s) {
+    return '<li><button data-source="' + esc(String(s).split("#")[0]) + '">' +
+      esc(s) + "</button></li>";
+  }).join("");
+}
+
+function renderCrumbs() {
+  var list = state.history.slice(-5);
+  $("insCrumbs").innerHTML = list.map(function (k, i) {
+    var n = byKey[k];
+    return "<li><button data-target=" + JSON.stringify(k) + ">" +
+      esc(n ? n.title : k) + "</button></li>";
+  }).join("");
+}
+
+// ===== 13. rail: problems ===============================================
+function problemRows() {
+  var rows = [];
+  conflicts.forEach(function (c, i) {
+    rows.push({ kind: "conflict", level: "conflict", check: "conflict",
+      title: c.node_title || c.node, text: c.detail || "(no detail recorded)",
+      where: c.where, nodes: [c.node], idx: i });
+  });
+  problems.forEach(function (p, i) {
+    if (p.check === "conflicts") return; // already listed, with better detail
+    rows.push({ kind: "issue", level: p.level, check: p.check,
+      title: p.check, text: p.issue + (p.hint ? " — " + p.hint : ""),
+      where: p.where, nodes: p.nodes || [], idx: i });
+  });
+  var cov = DATA.coverage || {};
+  (cov.uncovered || []).forEach(function (u) {
+    rows.push({ kind: "gap", level: "warning", check: "coverage",
+      title: "uncovered document", text: u.rel_path +
+      " reached no node" + (u.title ? " (" + u.title + ")" : ""),
+      where: u.rel_path, nodes: [] });
+  });
+  (cov.failed || []).forEach(function (f) {
+    rows.push({ kind: "gap", level: "error", check: "coverage",
+      title: "failed document", text: f.rel_path + " — " + f.error,
+      where: f.rel_path, nodes: [] });
+  });
+  (cov.unsupported || []).forEach(function (u) {
+    rows.push({ kind: "gap", level: "info", check: "coverage",
+      title: "unsupported document", text: u.rel_path + " — " + u.reason,
+      where: u.rel_path, nodes: [] });
+  });
+  var order = { error: 0, conflict: 1, warning: 2, info: 3 };
+  rows.sort(function (a, b) { return (order[a.level] || 9) - (order[b.level] || 9); });
+  return rows;
+}
+
+var allProblemRows = [];
+
+function renderProblems() {
+  allProblemRows = problemRows();
+  var counts = {};
+  allProblemRows.forEach(function (r) { counts[r.level] = (counts[r.level] || 0) + 1; });
+
+  var chipDefs = [["error", "Errors"], ["conflict", "Conflicts"],
+                  ["warning", "Warnings"], ["info", "Notes"]];
+  $("sevChips").innerHTML = chipDefs.map(function (c) {
+    return '<button class="chip" data-sev="' + c[0] + '" aria-pressed="' +
+      (state.sevFilter === c[0]) + '">' + c[1] + " " + (counts[c[0]] || 0) + "</button>";
+  }).join("");
+
+  var rows = state.sevFilter
+    ? allProblemRows.filter(function (r) { return r.level === state.sevFilter; })
+    : allProblemRows;
+
+  // Degraded-mode honesty: say which checks did not run rather than implying a
+  // clean bill of health.
+  var v = DATA.validation || {};
+  var notice = "";
+  if (!v.available) {
+    notice = '<div class="notice">' + esc(v.reason || "validation report unavailable") +
+      "<br>Only " + (v.derived || []).join(" and ") + " could be derived from " +
+      "<code>wiki/</code> alone" +
+      ((v.not_checked || []).length
+        ? "; " + (v.not_checked || []).length + " of 8 check families were not run (" +
+          (v.not_checked || []).join(", ") + ")"
+        : "") + ".<code>python3 validate.py</code></div>";
+  }
+  $("problemNotice").innerHTML = notice;
+
+  $("problemList").innerHTML = rows.map(function (r, i) {
+    var cls = r.level === "error" ? "error" : r.level === "conflict" ? "conflict"
+      : r.level === "warning" ? "warning" : "info";
+    var ico = r.level === "error" ? "error" : r.level === "conflict" ? "conflict"
+      : r.level === "warning" ? "warn" : "info";
+    return '<li><button class="pitem pitem--' + cls + '" data-prow="' + i + '">' +
+      '<span class="pitem__head">' + icon(ico) + esc(r.check) + "</span>" +
+      '<span class="pitem__txt">' + esc(r.text.slice(0, 260)) +
+      (r.text.length > 260 ? "…" : "") + "</span>" +
+      '<span class="pitem__where">' + esc(r.where || "") + "</span></button></li>";
+  }).join("");
+  $("problemList")._rows = rows;
+
+  var total = allProblemRows.length;
+  $("problemEmpty").innerHTML = total ? "" : emptyProblemsHtml();
+  var badge = $("badgeProblems");
+  badge.textContent = total;
+  badge.className = "badge" + (total ? (counts.error ? " badge--critical" : "") : " badge--good");
+}
+
+function emptyProblemsHtml() {
+  var v = DATA.validation || {};
+  var cov = DATA.coverage || {};
+  var lines = [];
+  if (v.available) lines.push("validation clean");
+  if (cov.available) {
+    lines.push(cov.compiled + " of " + cov.documents_total + " documents compiled");
+  }
+  lines.push("no open conflicts");
+  return '<div class="empty">' + icon("check") +
+    "<h3>Nothing to fix</h3>" + esc(lines.join(" · ")) +
+    "<details><summary>What was checked</summary>" +
+    "<p>schema, links, graph, clusters, coverage, router, viewer, conflicts — the " +
+    "eight families <code>validate.py</code> runs." +
+    (v.available ? "" : " This build has no validation report, so most of these " +
+      "were <strong>not</strong> run.") + "</p></details></div>";
+}
+
+// ===== 14. rail: clusters ===============================================
+function renderClusters() {
+  var max = Math.max.apply(null, clusters.map(function (c) { return c.total_count || 0; }).concat([1]));
+  $("clusterList").innerHTML = clusters.map(function (c) {
+    var m = clusterMark(c.color_index);
+    var probs = nodes.filter(function (n) {
+      return n.cluster === c.slug && n._problemCount > 0;
+    }).length;
+    return '<li><button class="citem" data-cluster="' + esc(c.slug) + '">' +
+      '<span class="citem__top">' +
+      '<span class="swatch' + (m.tier > 0 ? " swatch--hollow" : "") +
+      '" style="' + (m.tier > 0 ? "border-color:" + m.fill : "background:" + m.fill) + '"></span>' +
+      '<span class="citem__title">' + esc(c.title) + "</span>" +
+      '<span class="citem__n">' + (c.total_count || 0) + "</span></span>" +
+      (c.description ? '<span class="citem__desc">' + esc(c.description) + "</span>" : "") +
+      '<span class="bar"><span class="bar__fill" style="width:' +
+      Math.round(((c.total_count || 0) / max) * 100) + '%"></span></span>' +
+      (probs ? '<span class="citem__desc" style="color:var(--serious)">' +
+        plural(probs, "node") + " with problems</span>" : "") +
+      (!c.has_hub ? '<span class="citem__desc" style="color:var(--critical)">' +
+        "no _cluster.md hub</span>" : "") +
+      "</button></li>";
+  }).join("");
+  $("badgeClusters").textContent = clusters.length;
+}
+
+// ===== 15. rail: sources ================================================
+function renderSources_rail() {
+  var prov = DATA.provenance || {};
+  var docs = prov.documents || [];
+  var cov = DATA.coverage || {};
+  var max = Math.max.apply(null, docs.map(function (d) { return d.node_count || 0; }).concat([1]));
+
+  var notice = "";
+  if (prov.derived_from === "frontmatter") {
+    notice = '<div class="notice">Derived from node <code>sources:</code> only — ' +
+      "the extraction manifest was unavailable, so extraction method and any " +
+      "document that reached no node cannot be shown." +
+      "<code>python3 extract.py</code></div>";
+  } else if (!cov.available) {
+    notice = '<div class="notice">' + esc(cov.reason || "coverage unavailable") +
+      "</div>";
+  }
+  $("sourceNotice").innerHTML = notice;
+
+  var rows = docs.map(function (d) {
+    var gap = (d.node_count || 0) === 0;
+    return '<li><button class="sitem' + (gap ? " sitem--gap" : "") +
+      '" data-doc="' + esc(d.rel_path) + '">' +
+      '<span class="sitem__top">' + icon("doc") +
+      '<span class="sitem__path">' + esc(d.rel_path) + "</span>" +
+      '<span class="sitem__n">' + (d.node_count || 0) + "</span></span>" +
+      '<span class="sitem__meta">' +
+      (d.method ? esc(d.method) : "method unknown") +
+      (d.status ? " · " + esc(d.status) : "") +
+      (gap ? " · reached no node" : "") + "</span>" +
+      '<span class="bar"><span class="bar__fill" style="width:' +
+      Math.round(((d.node_count || 0) / max) * 100) + '%"></span></span>' +
+      "</button></li>";
+  });
+  // Unsupported files are listed too: nothing is silently dropped.
+  (cov.unsupported || []).forEach(function (u) {
+    rows.push('<li><button class="sitem sitem--gap">' + icon("doc") +
+      '<span class="sitem__path">' + esc(u.rel_path) + "</span>" +
+      '<span class="sitem__meta">unsupported — ' + esc(u.reason) + "</span></button></li>");
+  });
+  $("sourceList").innerHTML = rows.join("");
+  $("badgeSources").textContent = docs.length;
+
+  var sc = prov.source_conflicts || [];
+  $("scCount").textContent = sc.length;
+  $("srcConflictsBox").hidden = !sc.length;
+  $("srcConflictList").innerHTML = sc.map(function (p, i) {
+    return '<li><button class="scitem" data-scpair="' + i + '">' +
+      "<code>" + esc(p.a) + "</code> vs <code>" + esc(p.b) + "</code><br>" +
+      '<span class="pitem__head">' + esc(p.kind) + " · via " +
+      plural((p.via_nodes || []).length, "node") + "</span></button></li>";
+  }).join("");
+}
+
+// ===== 16. header summaries =============================================
+function renderSummaries() {
+  var t = DATA.totals || {};
+  var cov = DATA.coverage || {};
+  var errors = t.errors || 0, warnings = t.warnings || 0, confl = t.open_conflicts || 0;
+  var gaps = cov.available ? (cov.uncovered || []).length + (cov.failed || []).length : 0;
+  var fix = errors + warnings + confl + gaps;
+
+  $("heroValue").textContent = fix;
+  $("hero").classList.toggle("is-good", fix === 0);
+  $("heroLabel").textContent = fix === 1 ? "thing to fix" : "things to fix";
+  var bits = [];
+  if (errors) bits.push(plural(errors, "error"));
+  if (confl) bits.push(confl + " open conflict" + (confl === 1 ? "" : "s"));
+  if (warnings) bits.push(plural(warnings, "warning"));
+  if (gaps) bits.push(plural(gaps, "coverage gap"));
+  if (!cov.available) bits.push("coverage not measured");
+  $("heroBreak").textContent = bits.join(" · ") ||
+    (cov.available ? "validation clean · every document compiled" : "validation clean");
+
+  var tiles = [
+    tileHtml("critical", "error", "Errors", errors, "error"),
+    tileHtml("serious", "conflict", "Open conflicts", confl, "conflict"),
+    tileHtml("warning", "warn", "Warnings", warnings, "warning")
+  ];
+  if (cov.available && cov.documents_total) {
+    var pct = Math.round((cov.compiled / cov.documents_total) * 100);
+    tiles.push('<div class="tile tile--meter" role="listitem">' +
+      '<span class="tile__top"><span class="tile__label">Source coverage</span>' +
+      '<span class="tile__value">' + pct + "%</span></span>" +
+      '<span class="meter"><span class="meter__fill" style="width:' + pct + '%"></span></span>' +
+      '<span class="tile__foot">' + cov.compiled + " of " + cov.documents_total +
+      " documents reached a node" +
+      (gaps ? " · " + gaps + " gap" + (gaps === 1 ? "" : "s") : "") + "</span></div>");
+  } else {
+    // Never render this as 0% — the evidence is missing, not the coverage.
+    tiles.push('<div class="tile tile--meter tile--unknown" role="listitem">' +
+      '<span class="tile__top"><span class="tile__label">Source coverage</span>' +
+      '<span class="tile__value" style="color:var(--text-muted)">?</span></span>' +
+      '<span class="tile__foot">Unknown — <code>.kb/</code> was not present ' +
+      "when this file was generated</span></div>");
+  }
+  $("tiles").innerHTML = tiles.join("");
+
+  $("inventory").innerHTML = [
+    "<span>" + plural(t.nodes || 0, "node") + "</span>",
+    "<span>" + plural(t.clusters || 0, "cluster") + "</span>",
+    "<span>" + plural(t.edges || 0, "edge") + "</span>",
+    t.deprecated ? "<span>" + t.deprecated + " deprecated</span>" : "",
+    (DATA.provenance && DATA.provenance.documents)
+      ? "<span>" + plural(DATA.provenance.documents.length, "source") + "</span>" : ""
+  ].join("");
+}
+
+function tileHtml(tone, ico, label, value, sev) {
+  return '<button class="tile tile--' + tone + (value ? "" : " is-zero") +
+    '" role="listitem" data-sev="' + sev + '">' + icon(ico) +
+    '<span class="tile__label">' + label + "</span>" +
+    '<span class="tile__value">' + value + "</span></button>";
+}
+
+// ===== 17. legend =======================================================
+function renderLegend() {
+  var cl = clusters.map(function (c) {
+    var m = clusterMark(c.color_index);
+    return '<div class="legend__row"><span class="swatch' +
+      (m.tier > 0 ? " swatch--hollow" : "") + '" style="' +
+      (m.tier > 0 ? "border-color:" + m.fill : "background:" + m.fill) + '"></span>' +
+      esc(c.title) + "</div>";
+  }).join("");
+  var ed = '<p class="legend__lead">Every line is one of seven typed relations. ' +
+    "A directed one reads source → target; the rest are mutual.</p>" +
+    EDGE_TYPES.map(function (t) {
+      var m = edgeMeaning(t);
+      return '<div class="legend__rel"><div class="legend__row">' + edgeSwatch(t) +
+        "<span>" + esc(t) + "</span>" +
+        '<span class="legend__dir">' + (edgeIsDirected(t) ? "directed" : "mutual") +
+        "</span></div>" +
+        (m ? '<p class="legend__mean">' + esc(m.text) + "</p>" : "") + "</div>";
+    }).join("");
+  var marks =
+    '<div class="legend__row"><svg width="18" height="18"><circle cx="9" cy="9" r="6" ' +
+      'fill="' + TOKENS["--text-muted"] + '"/></svg>node — size by inbound links</div>' +
+    '<div class="legend__row"><svg width="18" height="18"><rect x="3" y="3" width="12" ' +
+      'height="12" rx="3" fill="' + TOKENS["--text-muted"] + '"/></svg>cluster hub</div>' +
+    '<div class="legend__row"><svg width="18" height="18"><circle cx="9" cy="9" r="6" ' +
+      'fill="none" stroke="' + TOKENS["--text-muted"] +
+      '" stroke-width="1.5" stroke-dasharray="3 2"/></svg>deprecated</div>' +
+    '<div class="legend__row"><svg width="18" height="18"><circle cx="9" cy="9" r="4.5" ' +
+      'fill="' + TOKENS["--text-muted"] + '"/><circle cx="9" cy="9" r="7.2" fill="none" ' +
+      'stroke="' + TOKENS["--critical"] + '" stroke-width="1.8"/></svg>has a problem</div>';
+  $("legendGrid").innerHTML =
+    "<div><h4>Clusters</h4>" + cl + "</div>" +
+    "<div><h4>Relations</h4>" + ed + "</div>" +
+    "<div><h4>Marks</h4>" + marks + "</div>";
+}
+
+// ===== 18. filter controls ==============================================
+function renderFilterControls() {
+  $("fClustersBody").innerHTML = clusters.map(function (c, i) {
+    var m = clusterMark(c.color_index);
+    return '<label><input type="checkbox" data-cl="' + esc(c.slug) + '" checked>' +
+      '<span class="swatch' + (m.tier > 0 ? " swatch--hollow" : "") + '" style="' +
+      (m.tier > 0 ? "border-color:" + m.fill : "background:" + m.fill) + '"></span>' +
+      esc(c.title) + " <span style='color:var(--text-muted)'>" +
+      (c.total_count || 0) + "</span></label>";
+  }).join("") +
+    '<div class="dropdown__acts"><button data-cl-all="1">All</button>' +
+    '<button data-cl-none="1">None</button></div>';
+
+  $("fEdgesBody").innerHTML = EDGE_TYPES.map(function (t) {
+    var m = edgeMeaning(t);
+    var n = links.filter(function (l) { return l.type === t; }).length;
+    return '<label class="etopt"><input type="checkbox" data-et="' + esc(t) + '" checked>' +
+      '<span class="etopt__main"><span class="etopt__top">' + edgeSwatch(t, 24) +
+      "<span>" + esc(t) + "</span>" +
+      '<span class="etopt__dir">' + (edgeIsDirected(t) ? "directed" : "mutual") +
+      '</span><span class="etopt__n">' + n + "</span></span>" +
+      (m ? '<span class="etopt__mean">' + esc(m.text) + "</span>" : "") +
+      "</span></label>";
+  }).join("") +
+    '<div class="dropdown__acts"><button data-et-all="1">All</button>' +
+    '<button data-et-none="1">None</button></div>';
+
+  $("fStatusBody").innerHTML =
+    ['<label><input type="radio" name="st" value="active" checked> Active only</label>',
+     '<label><input type="radio" name="st" value="all"> Active and deprecated</label>',
+     '<label><input type="radio" name="st" value="deprecated"> Deprecated only</label>'
+    ].join("");
+}
+
+function summarizeFilters() {
+  var cl = state.clusters;
+  var nCl = cl ? Object.keys(cl).filter(function (k) { return cl[k]; }).length : clusters.length;
+  $("fClusters").querySelector("b").textContent =
+    nCl === clusters.length ? "All" : nCl + " of " + clusters.length;
+  var et = state.edgeTypes;
+  var nEt = et ? Object.keys(et).filter(function (k) { return et[k]; }).length : EDGE_TYPES.length;
+  $("fEdges").querySelector("b").textContent =
+    nEt === EDGE_TYPES.length ? "All" : nEt + " of " + EDGE_TYPES.length;
+  $("fStatus").querySelector("b").textContent =
+    state.status === "active" ? "Active" : state.status === "all" ? "All" : "Deprecated";
+}
+
+// ===== 19. report =======================================================
+function renderReport() {
+  var t = DATA.totals || {}, cov = DATA.coverage || {}, prov = DATA.provenance || {};
+  var rows = problemRows();
+  var byCheck = {};
+  rows.forEach(function (r) { (byCheck[r.check] = byCheck[r.check] || []).push(r); });
+
+  var html = "<h1>Audit report</h1>" +
+    '<p class="sub">' + esc(DATA.generated) + " · " +
+    plural(t.nodes || 0, "node") + " in " + plural(t.clusters || 0, "cluster") +
+    " · " + plural(t.edges || 0, "edge") +
+    (DATA.content_hash ? " · router hash " + esc(DATA.content_hash) : "") + "</p>";
+
+  html += "<h2>Things to fix (" + rows.length + ")</h2>";
+  if (!rows.length) html += "<p>Nothing outstanding.</p>";
+  Object.keys(byCheck).sort().forEach(function (check) {
+    html += "<h3>" + esc(check) + " (" + byCheck[check].length + ")</h3><ol>";
+    byCheck[check].forEach(function (r) {
+      html += '<li><span class="lvl lvl--' +
+        (r.level === "conflict" ? "warning" : esc(r.level)) + '">' + esc(r.level) +
+        "</span> " + esc(r.text) +
+        (r.where ? " <code>" + esc(r.where) + "</code>" : "") + "</li>";
+    });
+    html += "</ol>";
+  });
+
+  html += "<h2>Clusters</h2><table><thead><tr><th>Cluster</th><th>Nodes</th>" +
+    "<th>Deprecated</th><th>Hub</th><th>Description</th></tr></thead><tbody>" +
+    clusters.map(function (c) {
+      return "<tr><td>" + esc(c.title) + "</td><td>" + (c.total_count || 0) +
+        "</td><td>" + (c.deprecated_count || 0) + "</td><td>" +
+        (c.has_hub ? "yes" : "MISSING") + "</td><td>" + esc(c.description) + "</td></tr>";
+    }).join("") + "</tbody></table>";
+
+  html += "<h2>Provenance</h2>";
+  if (prov.derived_from === "frontmatter") {
+    html += "<p><em>Derived from node <code>sources:</code> only — no extraction " +
+      "manifest was available.</em></p>";
+  }
+  html += "<table><thead><tr><th>Source document</th><th>Nodes</th><th>Method</th>" +
+    "</tr></thead><tbody>" + (prov.documents || []).map(function (d) {
+      return "<tr><td><code>" + esc(d.rel_path) + "</code></td><td>" +
+        (d.node_count || 0) + "</td><td>" + esc(d.method || "unknown") + "</td></tr>";
+    }).join("") + "</tbody></table>";
+
+  if (!cov.available) {
+    html += "<h2>Coverage</h2><p><em>" + esc(cov.reason || "unavailable") + "</em></p>";
+  }
+
+  var sc = prov.source_conflicts || [];
+  if (sc.length) {
+    // Same count, same name as the Sources rail — and for the same reason: this
+    // is pairs of documents, not conflicts and not `contradicts` edges.
+    html += "<h2>Pairs of documents that disagree (" + sc.length + ")</h2>" +
+      '<p class="sub">Pairs of source documents, listed once however many times ' +
+      "they disagree — not the number of conflicts, and not the number of " +
+      "<code>contradicts</code> lines on the graph.</p><ol>" +
+      sc.map(function (p) {
+        return "<li><code>" + esc(p.a) + "</code> vs <code>" + esc(p.b) +
+          "</code> — " + esc(p.kind) + ", via " +
+          (p.via_nodes || []).map(function (k) { return esc(k); }).join(", ") + "</li>";
+      }).join("") + "</ol>";
+  }
+  $("reportBody").innerHTML = html;
+}
+
+function openReport() { renderReport(); $("report").hidden = false; }
+function closeReport() { $("report").hidden = true; }
+
+// ===== 20. hash routing =================================================
+// location.hash is the ONLY persistence: localStorage throws on file:// in some
+// browsers and silently no-ops in others, so depending on it would be a bug.
+var hashTimer = null;
+function writeHash() {
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(function () {
+    var parts = [];
+    if (state.q) parts.push("q=" + encodeURIComponent(state.q));
+    if (state.clusters) {
+      var on = Object.keys(state.clusters).filter(function (k) { return state.clusters[k]; });
+      if (on.length !== clusters.length) parts.push("cl=" + on.map(encodeURIComponent).join(","));
+    }
+    if (state.edgeTypes) {
+      var et = Object.keys(state.edgeTypes).filter(function (k) { return state.edgeTypes[k]; });
+      if (et.length !== EDGE_TYPES.length) parts.push("et=" + et.join(","));
+    }
+    if (state.status !== "active") parts.push("st=" + state.status);
+    if (state.onlyProblems) parts.push("p=1");
+    if (state.railTab !== "problems") parts.push("tab=" + state.railTab);
+    if (state.theme !== "auto") parts.push("theme=" + state.theme);
+    var base = state.selected ? "#/node/" + state.selected : "#/";
+    var url = base + (parts.length ? "?" + parts.join("&") : "");
+    if (location.hash === url) return;
+    // Some browsers refuse history.replaceState on a file:// document, so fall
+    // back to assigning the hash directly rather than losing deep links.
+    try {
+      history.replaceState(null, "", url);
+    } catch (e) {
+      try { location.hash = url.replace(/^#/, ""); } catch (e2) { /* give up */ }
+    }
+  }, 250);
+}
+
+function readHash() {
+  var raw = location.hash.replace(/^#/, "");
+  if (!raw) return null;
+  var qs = raw.indexOf("?");
+  var path = qs === -1 ? raw : raw.slice(0, qs);
+  var params = new URLSearchParams(qs === -1 ? "" : raw.slice(qs + 1));
+  var out = { node: null };
+  var m = path.match(/^\/node\/(.+)$/);
+  if (m) out.node = decodeURIComponent(m[1]);
+  if (params.get("q")) state.q = params.get("q");
+  if (params.get("cl")) {
+    state.clusters = {};
+    params.get("cl").split(",").forEach(function (s) {
+      state.clusters[decodeURIComponent(s)] = true;
+    });
+  }
+  if (params.get("et")) {
+    state.edgeTypes = {};
+    params.get("et").split(",").forEach(function (s) { state.edgeTypes[s] = true; });
+  }
+  if (params.get("st")) state.status = params.get("st");
+  if (params.get("p")) state.onlyProblems = true;
+  if (params.get("tab")) state.railTab = params.get("tab");
+  if (params.get("theme")) state.theme = params.get("theme");
+  return out;
+}
+
+// ===== 21. theme ========================================================
+function setTheme(mode) {
+  state.theme = mode;
+  if (mode === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", mode);
+  readTokens();
+  renderLegend();
+  styleNodes(gNodes.selectAll("g.node"));
+  redrawCanvas();
+  writeHash();
+}
+function toggleTheme() {
+  var dark = document.documentElement.getAttribute("data-theme") === "dark" ||
+    (state.theme === "auto" &&
+     window.matchMedia("(prefers-color-scheme: dark)").matches);
+  setTheme(dark ? "light" : "dark");
+}
+
+// ===== 22. rail tabs ====================================================
+function selectTab(name) {
+  state.railTab = name;
+  ["problems", "clusters", "sources"].forEach(function (t) {
+    $("tab-" + t).setAttribute("aria-selected", String(t === name));
+    $("p-" + t).hidden = t !== name;
+  });
+  writeHash();
+}
+
+// ===== 23. events =======================================================
+function bindEvents() {
+  d3.select(elSvg).call(zoom).on("dblclick.zoom", null)
+    .on("click", function () { setHover(null); });
+
+  $("themeBtn").addEventListener("click", toggleTheme);
+  $("helpBtn").addEventListener("click", openHelp);
+  $("helpClose").addEventListener("click", function () { $("helpModal").hidden = true; });
+  $("helpModal").addEventListener("click", function (e) {
+    if (e.target === this) this.hidden = true;
+  });
+  $("reportBtn").addEventListener("click", openReport);
+  $("reportBtn2").addEventListener("click", openReport);
+  $("reportClose").addEventListener("click", closeReport);
+  $("fitBtn").addEventListener("click", fitAll);
+  $("zinBtn").addEventListener("click", function () {
+    d3.select(elSvg).transition().duration(200).call(zoom.scaleBy, 1.4);
+  });
+  $("zoutBtn").addEventListener("click", function () {
+    d3.select(elSvg).transition().duration(200).call(zoom.scaleBy, 1 / 1.4);
+  });
+  $("insClose").addEventListener("click", closeInspector);
+  $("insBack").addEventListener("click", historyBack);
+  $("copyIdBtn").addEventListener("click", function () {
+    var text = state.selected || "";
+    // file:// is not a secure context, so the async clipboard API is often
+    // unavailable — fall back rather than failing silently.
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { announce("Copied " + text); },
+        legacyCopy);
+    } else legacyCopy();
+    function legacyCopy() {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); announce("Copied " + text); }
+      catch (e) { announce("Could not copy"); }
+      document.body.removeChild(ta);
+    }
+  });
+
+  ["tab-problems", "tab-clusters", "tab-sources"].forEach(function (id) {
+    $(id).addEventListener("click", function () { selectTab(id.replace("tab-", "")); });
+  });
+
+  var q = $("q");
+  q.addEventListener("input", function () {
+    state.q = q.value;
+    state.searchHits = queryNodes(state.q) || [];
+    state.searchPos = -1;
+    renderTypeahead();
+    applyFilters();
+    writeHash();
+  });
+  q.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && state.searchHits.length) {
+      e.preventDefault();
+      focusNodes([state.searchHits[0]]);
+      $("qResults").hidden = true;
+    } else if (e.key === "Escape") { q.value = ""; state.q = ""; applyFilters(); }
+  });
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".field--search") && !e.target.closest("#qResults")) {
+      $("qResults").hidden = true;
+    }
+  });
+
+  $("fClustersBody").addEventListener("change", function (e) {
+    if (!e.target.dataset.cl) return;
+    if (!state.clusters) {
+      state.clusters = {};
+      clusters.forEach(function (c) { state.clusters[c.slug] = true; });
+    }
+    state.clusters[e.target.dataset.cl] = e.target.checked;
+    summarizeFilters(); applyFilters(); writeHash();
+  });
+  $("fClustersBody").addEventListener("click", function (e) {
+    var all = e.target.dataset.clAll, none = e.target.dataset.clNone;
+    if (!all && !none) return;
+    state.clusters = {};
+    clusters.forEach(function (c) { state.clusters[c.slug] = !!all; });
+    syncFilterInputs(); summarizeFilters(); applyFilters(); writeHash();
+  });
+  $("fEdgesBody").addEventListener("change", function (e) {
+    if (!e.target.dataset.et) return;
+    if (!state.edgeTypes) {
+      state.edgeTypes = {};
+      EDGE_TYPES.forEach(function (t) { state.edgeTypes[t] = true; });
+    }
+    state.edgeTypes[e.target.dataset.et] = e.target.checked;
+    summarizeFilters(); applyFilters(); writeHash();
+  });
+  $("fEdgesBody").addEventListener("click", function (e) {
+    var all = e.target.dataset.etAll, none = e.target.dataset.etNone;
+    if (!all && !none) return;
+    state.edgeTypes = {};
+    EDGE_TYPES.forEach(function (t) { state.edgeTypes[t] = !!all; });
+    syncFilterInputs(); summarizeFilters(); applyFilters(); writeHash();
+  });
+  $("fStatusBody").addEventListener("change", function (e) {
+    if (e.target.name !== "st") return;
+    state.status = e.target.value;
+    summarizeFilters(); applyFilters(); writeHash();
+  });
+  $("fProblems").addEventListener("change", function () {
+    state.onlyProblems = $("fProblems").checked;
+    applyFilters(); writeHash();
+  });
+  $("fCollapse").addEventListener("change", function () {
+    state.collapse = $("fCollapse").checked;
+    if (state.collapse) relayoutSubgraph();
+    else { buildSimulation(); warmStart(function () { startTail(); }); }
+  });
+  $("resetBtn").addEventListener("click", resetFilters);
+
+  $("sevChips").addEventListener("click", function (e) {
+    var sev = e.target.closest("[data-sev]");
+    if (!sev) return;
+    state.sevFilter = state.sevFilter === sev.dataset.sev ? null : sev.dataset.sev;
+    renderProblems();
+  });
+  $("tiles").addEventListener("click", function (e) {
+    var t = e.target.closest("[data-sev]");
+    if (!t) return;
+    selectTab("problems");
+    state.sevFilter = t.dataset.sev;
+    renderProblems();
+    $("rail").scrollIntoView({ block: "nearest" });
+  });
+
+  $("problemList").addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-prow]");
+    if (!btn) return;
+    var row = ($("problemList")._rows || [])[+btn.dataset.prow];
+    if (!row) return;
+    $("problemList").querySelectorAll(".pitem").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+    btn.classList.add("is-active");
+    if (row.nodes && row.nodes.length) focusNodes(row.nodes);
+    else announce(row.where ? row.where + " — not a node in the graph" : "No node to show");
+  });
+
+  $("clusterList").addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-cluster]");
+    if (!btn) return;
+    var slug = btn.dataset.cluster;
+    state.clusters = {};
+    clusters.forEach(function (c) { state.clusters[c.slug] = c.slug === slug; });
+    syncFilterInputs(); summarizeFilters(); applyFilters();
+    var keys = nodes.filter(function (n) { return n.cluster === slug; })
+      .map(function (n) { return n.key; });
+    focusNodes(keys, { open: false });
+    announce("Filtered to " + slug);
+    writeHash();
+  });
+
+  $("sourceList").addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-doc]");
+    if (!btn) return;
+    var doc = (DATA.provenance.documents || []).filter(function (d) {
+      return d.rel_path === btn.dataset.doc;
+    })[0];
+    if (!doc || !doc.nodes.length) { announce(btn.dataset.doc + " reached no node"); return; }
+    focusNodes(doc.nodes, { open: doc.nodes.length === 1 });
+    announce(btn.dataset.doc + " fed " + plural(doc.nodes.length, "node"));
+  });
+
+  $("srcConflictList").addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-scpair]");
+    if (!btn) return;
+    var pair = (DATA.provenance.source_conflicts || [])[+btn.dataset.scpair];
+    if (pair && pair.via_nodes.length) focusNodes(pair.via_nodes, { open: false });
+  });
+
+  // Delegated navigation for wikilinks, connection rows and breadcrumbs.
+  document.addEventListener("click", function (e) {
+    var nav = e.target.closest("[data-target]");
+    if (nav) { e.preventDefault(); selectNode(nav.dataset.target, "link"); focusNodes([nav.dataset.target], { open: false }); return; }
+    var src = e.target.closest("[data-source]");
+    if (src) { selectTab("sources"); announce("Source: " + src.dataset.source); return; }
+    if (e.target.closest("[data-open-problems]")) {
+      selectTab("problems"); state.sevFilter = "conflict"; renderProblems();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    var wl = e.target.closest && e.target.closest("a.wl");
+    if (wl && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault(); selectNode(wl.dataset.target, "link");
+    }
+  });
+
+  $("stageEmpty").addEventListener("click", function (e) {
+    var drop = e.target.closest("[data-drop]");
+    if (!drop) return;
+    var k = drop.dataset.drop;
+    if (k === "all") { resetFilters(); return; }
+    if (k === "search") { state.q = ""; $("q").value = ""; }
+    if (k === "cluster") state.clusters = null;
+    if (k === "status") state.status = "all";
+    if (k === "problems") { state.onlyProblems = false; $("fProblems").checked = false; }
+    syncFilterInputs(); summarizeFilters(); applyFilters(); writeHash();
+  });
+
+  window.addEventListener("resize", function () {
+    resize(); computeAnchors(); redraw();
+  });
+  window.addEventListener("hashchange", function () {
+    var h = readHash();
+    if (h && h.node && h.node !== state.selected) selectNode(h.node, "hash");
+  });
+  bindKeys();
+}
+
+function renderTypeahead() {
+  var box = $("qResults");
+  if (!state.q || !state.searchHits.length) {
+    box.hidden = true;
+    $("q").setAttribute("aria-expanded", "false");
+    if (state.q) {
+      // Offer near-misses rather than an empty void.
+      var near = searchIndex.filter(function (r) {
+        return r.title.indexOf(state.q.toLowerCase().slice(0, 3)) !== -1;
+      }).slice(0, 5);
+      if (near.length) {
+        box.innerHTML = "<div style='padding:6px 9px;color:var(--text-muted);" +
+          "font-size:11.5px'>No exact match. Did you mean:</div>" +
+          near.map(function (r) {
+            return '<button data-target="' + esc(r.key) + '">' +
+              esc(byKey[r.key].title) + "</button>";
+          }).join("");
+        box.hidden = false;
+      }
+    }
+    return;
+  }
+  box.innerHTML = state.searchHits.slice(0, 12).map(function (k) {
+    var n = byKey[k];
+    return '<button data-target="' + esc(k) + '"><div>' + esc(n.title) + "</div>" +
+      '<div class="ta__sub">' + esc((clusterBySlug[n.cluster] || {}).title || n.cluster) +
+      (n._problemCount ? " · " + plural(n._problemCount, "problem") : "") +
+      "</div></button>";
+  }).join("");
+  box.hidden = false;
+  $("q").setAttribute("aria-expanded", "true");
+}
+
+function syncFilterInputs() {
+  $("fClustersBody").querySelectorAll("[data-cl]").forEach(function (el) {
+    el.checked = !state.clusters || !!state.clusters[el.dataset.cl];
+  });
+  $("fEdgesBody").querySelectorAll("[data-et]").forEach(function (el) {
+    el.checked = !state.edgeTypes || !!state.edgeTypes[el.dataset.et];
+  });
+  $("fStatusBody").querySelectorAll("[name=st]").forEach(function (el) {
+    el.checked = el.value === state.status;
+  });
+  $("fProblems").checked = state.onlyProblems;
+  $("q").value = state.q;
+}
+
+function resetFilters() {
+  state.q = ""; state.clusters = null; state.edgeTypes = null;
+  state.status = "active"; state.onlyProblems = false; state.sevFilter = null;
+  syncFilterInputs(); summarizeFilters(); renderProblems(); applyFilters();
+  fitAll(); writeHash();
+}
+
+function historyBack() {
+  if (state.histPos > 0) {
+    state.histPos--;
+    var key = state.history[state.histPos];
+    state.selected = key;
+    renderInspector(key);
+    focusNodes([key], { open: false });
+  } else closeInspector();
+}
+function historyForward() {
+  if (state.histPos < state.history.length - 1) {
+    state.histPos++;
+    var key = state.history[state.histPos];
+    state.selected = key;
+    renderInspector(key);
+    focusNodes([key], { open: false });
+  }
+}
+
+function openHelp() {
+  $("helpModal").hidden = false;
+  $("helpClose").focus();
+}
+
+function bindKeys() {
+  document.addEventListener("keydown", function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName || ""));
+    if (e.key === "Escape") {
+      if (!$("helpModal").hidden) { $("helpModal").hidden = true; return; }
+      if (!$("report").hidden) { closeReport(); return; }
+      if (state.selected) { closeInspector(); return; }
+      if (state.q) { state.q = ""; $("q").value = ""; applyFilters(); return; }
+      resetFilters(); return;
+    }
+    if (typing) return;
+    if (e.key === "/") { e.preventDefault(); $("q").focus(); return; }
+    if (e.key === "?") { openHelp(); return; }
+    if (e.key === "f") { fitAll(); return; }
+    if (e.key === "d") { toggleTheme(); return; }
+    if (e.key === "r") { $("report").hidden ? openReport() : closeReport(); return; }
+    if (e.key === "p") { selectTab("problems"); return; }
+    if (e.key === "c") { selectTab("clusters"); return; }
+    if (e.key === "s") { selectTab("sources"); return; }
+    if (e.key === "x") {
+      state.onlyProblems = !state.onlyProblems;
+      $("fProblems").checked = state.onlyProblems; applyFilters(); writeHash(); return;
+    }
+    if (e.key === "[") { historyBack(); return; }
+    if (e.key === "]") { historyForward(); return; }
+    if (e.key === "n" || e.key === "N") {
+      if (!state.searchHits.length) return;
+      state.searchPos += (e.key === "n" ? 1 : -1);
+      if (state.searchPos < 0) state.searchPos = state.searchHits.length - 1;
+      if (state.searchPos >= state.searchHits.length) state.searchPos = 0;
+      focusNodes([state.searchHits[state.searchPos]]);
+      return;
+    }
+    if (/^[1-9]$/.test(e.key)) {
+      var idx = +e.key - 1;
+      if (idx >= clusters.length) return;
+      if (!state.clusters) {
+        state.clusters = {};
+        clusters.forEach(function (c) { state.clusters[c.slug] = true; });
+      }
+      var slug = clusters[idx].slug;
+      state.clusters[slug] = !state.clusters[slug];
+      syncFilterInputs(); summarizeFilters(); applyFilters(); writeHash();
+    }
+  });
+}
+
+// ===== 24. subgraph collapse ============================================
+// Opt-in only. Filtering never restarts the simulation otherwise: repainting
+// the layout on every keystroke is the fastest way to make a tool like this
+// unusable, because the reader loses their mental map.
+function relayoutSubgraph() {
+  var keep = visible.nodes;
+  var sub = nodes.filter(function (n) { return keep[n.key]; });
+  var subLinks = visible.links.map(function (l) {
+    return { source: endKey(l.source), target: endKey(l.target), type: l.type };
+  });
+  var s = d3.forceSimulation(sub)
+    .force("link", d3.forceLink(subLinks).id(function (d) { return d.key; })
+      .distance(function (l) { return (LINK_CFG[l.type] || LINK_CFG["related-to"]).d; })
+      .strength(function (l) { return (LINK_CFG[l.type] || LINK_CFG["related-to"]).s; }))
+    .force("charge", d3.forceManyBody().strength(-220).distanceMax(400))
+    .force("collide", d3.forceCollide(function (d) { return d.r + 4; }))
+    .force("x", d3.forceX(function (d) { return anchorOf(d).x; }).strength(0.06))
+    .force("y", d3.forceY(function (d) { return anchorOf(d).y; }).strength(0.06))
+    .stop();
+  for (var i = 0; i < 150; i++) s.tick();
+  redraw();
+  fitAll();
+}
+
+// ===== 25. zoom helpers =================================================
+function fitAll() {
+  var pts = nodes.filter(function (d) { return visible.nodes[d.key] && d.x != null; });
+  if (!pts.length) return;
+  var xs = pts.map(function (p) { return p.x; }), ys = pts.map(function (p) { return p.y; });
+  var pad = 70;
+  var x0 = Math.min.apply(null, xs) - pad, x1 = Math.max.apply(null, xs) + pad;
+  var y0 = Math.min.apply(null, ys) - pad, y1 = Math.max.apply(null, ys) + pad;
+  var k = Math.min(2, 0.95 / Math.max((x1 - x0) / W, (y1 - y0) / H));
+  var t = d3.zoomIdentity.translate(W / 2, H / 2).scale(k)
+    .translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
+  d3.select(elSvg).transition().duration(400).call(zoom.transform, t);
+}
+
+function startTail() {
+  sim.on("tick", onTick).on("end", function () { sim.stop(); });
+  sim.alpha(0.28).restart();
+  setTimeout(function () { sim.stop(); }, 4000);
+}
+
+// ===== 26. boot =========================================================
+function main() {
+  if (DATA.schema !== SCHEMA_EXPECTED) {
+    console.warn("payload schema " + DATA.schema + " but this page expects " +
+      SCHEMA_EXPECTED);
+  }
+  document.body.classList.add("js-ready");
+  readTokens();
+
+  var hash = readHash();
+  if (state.theme !== "auto") setTheme(state.theme);
+
+  $("genTime").textContent = DATA.generated || "unknown";
+  $("genTime").setAttribute("datetime", DATA.generated || "");
+  $("genHash").textContent = DATA.content_hash
+    ? " · router hash " + DATA.content_hash : "";
+  if ((DATA.d3 || {}).mode && DATA.d3.mode.indexOf("cdn") === 0) {
+    $("cdnBadge").innerHTML = '<span class="badge-cdn" title="d3 was loaded from a ' +
+      'CDN, so this file is not fully self-contained">d3 via CDN</span>';
+  }
+  var trunc = DATA.truncation || {};
+  if (trunc.bodies_omitted) {
+    announce(trunc.bodies_omitted + " node bodies were omitted to keep this file openable");
+  }
+
+  renderFilterControls();
+  syncFilterInputs();
+  summarizeFilters();
+  renderLegend();
+  renderProblems();
+  renderClusters();
+  renderSources_rail();
+  renderSummaries();
+  selectTab(state.railTab);
+  bindEvents();
+
+  resize();
+  buildSimulation();
+  visible = computeVisible(null);
+  warmStart(function () {
+    applyFilters();
+    fitAll();
+    startTail();
+    if (hash && hash.node) selectNode(hash.node, "hash");
+  });
+}
+
+main();
+})();
+</script>
+<!-- Keep the closing body tag below. Dev servers such as VS Code Live Server inject
+     their reload script before the first closing body tag in the file and, without
+     one, before the first closing svg tag, which here sits inside a JavaScript
+     string and would break the viewer. Never write either tag literally in a
+     comment or string above it: the injection would land there instead. -->
+</body>
+</html>

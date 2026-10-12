@@ -1,0 +1,136 @@
+---
+id: 07-group-reporting-and-consolidation/2308-cgaxx-j1s-upload-2019-01-srd2-dt-0b-30
+title: 2308 CGAXX J1S UPLOAD 2019 01 SRD2 DT 0B (2308_CGAXX_J1S_UPLOAD_2019_01_SRD2_DT_0B)
+description: "Spreadsheet of sample consolidation upload data (version J1S, FY2019 period 1, doc type 0B) with consolidation units MXX00-MXX08, financial statement items and amounts."
+cluster: 07-group-reporting-and-consolidation
+tags: [kb/group-reporting-and-consolidation, topic/investment-and-quantity-data-uploads]
+aliases: [2308_CGAXX_J1S_UPLOAD_2019_01_SRD2_DT_0B]
+keywords: [Investment and Equity Data Uploads (Doc Type 0B), consolidation upload, consolidation units, financial statement items, investment activity, upload parameters, group currency amounts, 2308]
+sources: [raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/2308_CGAXX_J1S_UPLOAD_2019_01_SRD2_DT_0B.xlsx]
+confidence: high
+status: active
+kind: verbatim
+doc_id: sap-best-practices-for-sap-s4hana-cloud-public-edition-2608-30
+topic: 07-group-reporting-and-consolidation/investment-and-quantity-data-uploads
+language: ""
+part: 1/1
+created: 2026-10-12
+updated: 2026-10-12
+---
+
+# 2308 CGAXX J1S UPLOAD 2019 01 SRD2 DT 0B (2308_CGAXX_J1S_UPLOAD_2019_01_SRD2_DT_0B)
+
+*Verbatim text of `raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/2308_CGAXX_J1S_UPLOAD_2019_01_SRD2_DT_0B.xlsx`, extracted with `xlsx2md`. Grouped under **Investment and Equity Data Uploads (Doc Type 0B)** in Group Reporting and Consolidation. Nothing below the rule has been rewritten; headings are shifted one level down.*
+
+---
+
+## 2308 CGAXX J1S UPLOAD 2019 01 SRD2 DT 0B
+
+### Sheet: CGAXX_J1S_UPLOAD_2019_01_
+
+| * Parameters |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P | PERIODICAL | X | Input Type |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| P | UPDATEMODE | 2 | Update Mode |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| P | DELTAMODE | 3 | Keep |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| P | DOCTY | 0B |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| * |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| D | ConsolidationChartOfAccounts | ConsolidationVersion | FiscalYear | FiscalPeriod | ConsolidationUnit | FinancialStatementItem | PartnerConsolidationUnit | BaseUnit | QuantityInBaseUnit | InvestmentActivityType | InvestmentActivity | InvesteeConsolidationUnit | AmountInLocalCurrency | AmountInGroupCurrency | SubItem | Segment | SubItemCategory | ProfitCenter | PartnerProfitCenter | PartnerSegment | ControllingArea |
+| *D | RITCLG | RVERS | RYEAR | POPER | RBUNIT | RITEM | RBUPTR | RUNIT | MSL | COIAC | COINR | COICU | HSL | KSL | SUBIT | SEGMENT | SITYP | PRCTR | PPRCTR | PSEGMENT | KOKRS |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX04 | PRC | 60 | 01 |  | MXX04 | 952000 | 952000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX01 | PRC | 60 | 01 |  | MXX01 | 952000 | 952000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX05 | PRC | 22 | 07 |  | MXX05 | 150000 | 150000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX05 | PRC |  |  |  |  | -150000 | -150000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX02 | PRC |  | 05 |  | MXX02 | 800 | 800 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX08 | PRC | 30 | 07 |  | MXX08 | 100000 | 100000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX07 | PRC | -10 | 10 |  | MXX07 | -53333 | -53333 | 930 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX06 | PRC |  | 11 |  | MXX06 | -360000 | -360000 | 930 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX06 | PRC |  |  |  |  | 360000 | 360000 | 930 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX04 | PRC |  |  |  |  | -952000 | -952000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX01 | PRC |  |  |  |  | -952000 | -952000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX02 | PRC |  |  |  |  | -800 | -800 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX08 | PRC |  |  |  |  | -100000 | -100000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 172100 | MXX07 | PRC |  |  |  |  | 53333 | 53333 | 930 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 311000 |  |  |  | 05 |  |  | -50000 | -50000 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 311000 |  |  |  |  |  |  | 50000 | 50000 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 312000 |  |  |  | 05 |  |  | -150000 | -150000 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 312000 |  |  |  |  |  |  | 150000 | 150000 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 313000 |  |  |  | 02 |  |  | 25000 | 25000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 313000 |  |  |  |  |  |  | -25000 | -25000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314200 |  |  |  | 02 |  |  | 3876 | 3876 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314200 |  |  |  | 02 |  |  | 4230 | 4230 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314200 |  |  |  |  |  |  | -3876 | -3876 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314200 |  |  |  |  |  |  | -4230 | -4230 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314250 |  |  |  | 02 |  |  | -1269 | -1269 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314250 |  |  |  | 02 |  |  | -1163 | -1163 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314250 |  |  |  |  |  |  | 1269 | 1269 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 314250 |  |  |  |  |  |  | 1163 | 1163 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 316000 |  |  |  | 02 |  |  | 1502000 | 1502000 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 316000 |  |  |  | 02 |  |  | -225000 | -225000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 316000 |  |  |  |  |  |  | -1502000 | -1502000 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX00 | 316000 |  |  |  |  |  |  | 225000 | 225000 | 920 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 311000 |  |  |  | 05 |  |  | -1000 | -1000 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 311000 |  |  |  |  |  |  | 1000 | 1000 | 940 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314200 |  |  |  | 02 |  |  | -1681 | -1681 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314200 |  |  |  | 02 |  |  | 2800 | 2800 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314200 |  |  |  |  |  |  | 1681 | 1681 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314200 |  |  |  |  |  |  | -2800 | -2800 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314250 |  |  |  | 02 |  |  | 504 | 504 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314250 |  |  |  | 02 |  |  | 840 | 840 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314250 |  |  |  |  |  |  | -504 | -504 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 314250 |  |  |  |  |  |  | -840 | -840 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 316000 |  |  |  | 02 |  |  | 100000 | 100000 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 316000 | MXX00 |  |  | 02 |  |  | 400000 | 400000 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 316000 |  |  |  |  |  |  | -100000 | -100000 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX02 | 316000 | MXX00 |  |  |  |  |  | -400000 | -400000 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX03 | 316000 | MXX02 |  |  | 02 |  |  | 1000000 | 717720 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX03 | 316000 | MXX02 |  |  |  |  |  | -1000000 |  | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX04 | 311000 |  |  |  | 01 |  |  | -150000 | -107781 | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX04 | 311000 |  |  |  | 01 |  |  | -1145440 | -823051 | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX04 | 311000 |  |  |  | 01 |  |  | 799081 | 574175 | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX04 | 311000 |  |  |  |  |  |  | 150000 |  | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX04 | 311000 |  |  |  |  |  |  | 1145440 |  | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX04 | 311000 |  |  |  |  |  |  | -799081 |  | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX05 | 316000 |  |  |  | 02 |  |  | 43500 | 43500 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX05 | 316000 | MXX00 |  |  | 02 |  |  | 6500 | 6500 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX05 | 316000 |  |  |  |  |  |  | -43500 | -43500 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX05 | 316000 | MXX00 |  |  |  |  |  | -6500 | -6500 | 906 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314000 |  |  |  | 02 |  |  | -500 | -500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314000 |  |  |  |  |  |  | 500 | 500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314050 |  |  |  | 02 |  |  | 200 | 200 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314050 |  |  |  |  |  |  | -200 | -200 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314100 |  |  |  | 02 |  |  | 3000 | 3000 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314100 |  |  |  |  |  |  | -3000 | -3000 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314150 |  |  |  | 02 |  |  | -2000 | -2000 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314150 |  |  |  |  |  |  | 2000 | 2000 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314600 |  |  |  | 02 |  |  | 500 | 500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314600 |  |  |  | 02 |  |  | 1000 | 1000 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314600 |  |  |  |  |  |  | -500 | -500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314600 |  |  |  |  |  |  | -1000 | -1000 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314700 |  |  |  | 02 |  |  | -1000 | -1000 | 950 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314700 |  |  |  | 02 |  |  | -500 | -500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314700 |  |  |  | 02 |  |  | 500 | 500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314700 |  |  |  |  |  |  | 1000 | 1000 | 950 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314700 |  |  |  |  |  |  | 500 | 500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 314700 |  |  |  |  |  |  | -500 | -500 | 955 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 315000 |  |  |  | 02 |  |  | 1000 | 1000 | 950 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | 315000 |  |  |  |  |  |  | -1000 | -1000 | 950 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | 311000 |  |  |  | 01 |  |  | -150000 | -107781 | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | 311000 |  |  |  | 01 |  |  | -1145440 | -823051 | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | 311000 |  |  |  | 01 |  |  | 799081 | 574175 | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | 311000 |  |  |  |  |  |  | 150000 |  | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | 311000 |  |  |  |  |  |  | 1145440 |  | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | 311000 |  |  |  |  |  |  | -799081 |  | 901 |  | 1 |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX01 | $INV_LC | MXX00 |  |  | 01 |  | MXX01 | 1324898 |  |  |  |  |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX05 | $INV_LC | MXX00 |  |  | 07 |  | MXX05 | 150000 |  |  |  |  |  |  |  |  |
+| 2 | Y1 | J1S | 2019 | 1 | MXX07 | $INV_LC | MXX00 |  |  | 10 |  | MXX07 | -53333 |  |  |  |  |  |  |  |  |
+
+## Connections
+- part-of :: [[_cluster]]
+- related-to :: [[07-group-reporting-and-consolidation/2308-cgaxx-a10-upload-2018-12-srd2-dt-0b-14]]
+- related-to :: [[07-group-reporting-and-consolidation/2308-cgaxx-a10-upload-2019-01-srd2-dt-0b-16]]
+- related-to :: [[07-group-reporting-and-consolidation/2308-cgaxx-a10-upload-2019-02-srd2-dt-0b-18]]
+- related-to :: [[07-group-reporting-and-consolidation/2308-cgaxx-j10-j20-j1r-j2r-upload-2018-12-srd2-dt-0b-21]]
+
+## Sources
+- `raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/2308_CGAXX_J1S_UPLOAD_2019_01_SRD2_DT_0B.xlsx` — full document · extracted with `xlsx2md` · 10,643 chars in the whole document

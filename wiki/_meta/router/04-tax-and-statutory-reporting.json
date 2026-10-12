@@ -1,0 +1,1031 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "04-tax-and-statutory-reporting",
+  "cluster_title": "Tax and Statutory Reporting",
+  "cluster_description": "Country VAT calculation and returns, Intrastat, EC sales lists and compliance formats, UAE tax codes, purchasing tax conditions, PEPPOL e-invoicing, Brazil Nota Fiscal and excise tax.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 31,
+  "nodes": [
+    {
+      "id": "04-tax-and-statutory-reporting/2608-pre-configured-tax-codes-en-ae-702",
+      "title": "2608 Pre configured Tax Codes EN AE (2608_Pre-configured_Tax_Codes_EN_AE)",
+      "description": "Pre-delivered United Arab Emirates (AE) VAT tax codes in S/4HANA Cloud content 2608: rates, EU codes, and tax box/tax group mappings, plus glossary of tax terms.",
+      "keywords": [
+        "Preconfigured UAE VAT Tax Codes",
+        "tax codes",
+        "uae vat",
+        "time-dependent tax rates",
+        "tax box mapping",
+        "tax groups",
+        "reverse charge",
+        "eu codes",
+        "tax condition types",
+        "input and output tax"
+      ],
+      "aliases": [
+        "2608_Pre-configured_Tax_Codes_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/uae-tax-codes"
+      ],
+      "path": "04-tax-and-statutory-reporting/2608-pre-configured-tax-codes-en-ae-702.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Setup/2608_Pre-configured_Tax_Codes_EN_AE.xlsx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "2608 Pre configured Tax Codes EN AE (2608_Pre-configured_Tax_Codes_EN_AE) (Tax and Statutory Reporting) — Pre-delivered United Arab Emirates (AE) VAT tax codes in S/4HANA Cloud content 2608: rates, EU codes, and tax box/tax group mappings, plus glossary of tax terms | keywords: Preconfigured UAE VAT Tax Codes, tax codes, uae vat, time-dependent tax rates, tax box mapping, tax groups, reverse charge, eu codes, tax condition types, input and output tax, 2608_Pre-configured_Tax_Codes_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/compliance-formats-support-preparation-for-belgium-5p9-test-script-111",
+      "title": "Compliance Formats – Support Preparation for Belgium (5P9) Test Script (5P9_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5P9: Belgium statutory reports (VAT return, VAT unit declaration, EC Sales List) for foreign company codes via RITA.",
+      "keywords": [
+        "Belgium VAT, Intrastat and Compliance Formats",
+        "belgium vat return",
+        "vat unit declaration",
+        "ec sales list",
+        "advanced compliance reporting",
+        "registration for indirect taxation abroad",
+        "statutory reports",
+        "company code assignment",
+        "non-deductible vat",
+        "tax balance grouping"
+      ],
+      "aliases": [
+        "5P9_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/belgium-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/compliance-formats-support-preparation-for-belgium-5p9-test-script-111.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5P9_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Compliance Formats – Support Preparation for Belgium (5P9) Test Script (5P9_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5P9: Belgium statutory reports (VAT return, VAT unit declaration, EC Sales List) for foreign company codes via RITA | keywords: Belgium VAT, Intrastat and Compliance Formats, belgium vat return, vat unit declaration, ec sales list, advanced compliance reporting, registration for indirect taxation abroad, statutory reports, company code assignment, non-deductible vat, tax balance grouping, 5P9_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/compliance-formats-support-preparation-for-czech-republic-5z7-test-scr",
+      "title": "Compliance Formats – Support Preparation for Czech Republic (5Z7) Test Script (5Z7_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5Z7: Czech Republic statutory reports (VAT return, EC Sales List, financial statement, cash flow) via F1515_CZ.",
+      "keywords": [
+        "Czech Republic VAT, Intrastat and Compliance Formats",
+        "czech republic vat return",
+        "ec sales list",
+        "financial statement",
+        "cash flow statement",
+        "advanced compliance reporting",
+        "statutory reporting",
+        "registration for indirect taxation abroad",
+        "company code assignment",
+        "financial statement versions"
+      ],
+      "aliases": [
+        "5Z7_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/czech-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/compliance-formats-support-preparation-for-czech-republic-5z7-test-scr.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z7_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Compliance Formats – Support Preparation for Czech Republic (5Z7) Test Script (5Z7_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5Z7: Czech Republic statutory reports (VAT return, EC Sales List, financial statement, cash flow) via F1515_CZ | keywords: Czech Republic VAT, Intrastat and Compliance Formats, czech republic vat return, ec sales list, financial statement, cash flow statement, advanced compliance reporting, statutory reporting, registration for indirect taxation abroad, company code assignment, financial statement versions, 5Z7_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/compliance-formats-support-preparation-for-south-africa-5z5-test-scrip",
+      "title": "Compliance Formats – Support Preparation for South Africa (5Z5) – Test Script (5Z5_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5Z5: South Africa VAT201, BBBEE AP analytics and cash flow statutory reports, with setup steps.",
+      "keywords": [
+        "South Africa VAT Calculation and Reporting",
+        "vat201 declaration",
+        "vat201 supporting data file",
+        "south africa cash flow report",
+        "south africa ap analytics",
+        "bbbee vendor classification",
+        "statutory reports",
+        "advanced compliance reporting",
+        "cash flow report hierarchies",
+        "statutory report parameters"
+      ],
+      "aliases": [
+        "5Z5_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/south-africa-vat"
+      ],
+      "path": "04-tax-and-statutory-reporting/compliance-formats-support-preparation-for-south-africa-5z5-test-scrip.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z5_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Compliance Formats – Support Preparation for South Africa (5Z5) – Test Script (5Z5_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5Z5: South Africa VAT201, BBBEE AP analytics and cash flow statutory reports, with setup steps | keywords: South Africa VAT Calculation and Reporting, vat201 declaration, vat201 supporting data file, south africa cash flow report, south africa ap analytics, bbbee vendor classification, statutory reports, advanced compliance reporting, cash flow report hierarchies, statutory report parameters, 5Z5_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/crear-condicion-para-determinacion-de-impuestos-mds-2sw-276",
+      "title": "Crear condición para determinación de impuestos - MDS (2SW) (2SW_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish master data test script (2SW) for SAP S/4HANA Cloud Public Edition 2608: tax determination condition records and purchasing price conditions via Fiori apps.",
+      "keywords": [
+        "Tax Condition Records and Purchasing Price Conditions",
+        "tax determination conditions",
+        "purchasing price conditions",
+        "price condition changes",
+        "master data scripts",
+        "business roles",
+        "test procedures",
+        "fiori launchpad access",
+        "2SW"
+      ],
+      "aliases": [
+        "2SW_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/purchasing-tax-condition-records"
+      ],
+      "path": "04-tax-and-statutory-reporting/crear-condicion-para-determinacion-de-impuestos-mds-2sw-276.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2SW_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear condición para determinación de impuestos - MDS (2SW) (2SW_S4CLD2608_Master_Data_ES_XX) (Tax and Statutory Reporting) — Spanish master data test script (2SW) for SAP S/4HANA Cloud Public Edition 2608: tax determination condition records and purchasing price conditions via Fiori apps | keywords: Tax Condition Records and Purchasing Price Conditions, tax determination conditions, purchasing price conditions, price condition changes, master data scripts, business roles, test procedures, fiori launchpad access, 2SW, 2SW_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/document-and-reporting-compliance-5xu-test-script-sap-s-4hana-cloud-pu",
+      "title": "Document and Reporting Compliance (5XU) - Test Script, SAP S/4HANA Cloud Public Edition (5XU_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 5XU Document and Reporting Compliance (S/4HANA Cloud 2608): eDocuments, statutory reports, email, approval workflow, consistency.",
+      "keywords": [
+        "Document and Reporting Compliance Framework",
+        "document and reporting compliance",
+        "electronic documents",
+        "edocument cockpit",
+        "statutory reports",
+        "tax items",
+        "business partner email",
+        "approval workflow",
+        "draft report reconciliation",
+        "electronic document consistency"
+      ],
+      "aliases": [
+        "5XU_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/document-and-reporting-compliance-framework"
+      ],
+      "path": "04-tax-and-statutory-reporting/document-and-reporting-compliance-5xu-test-script-sap-s-4hana-cloud-pu.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5XU_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Document and Reporting Compliance (5XU) - Test Script, SAP S/4HANA Cloud Public Edition (5XU_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — Test script for scope item 5XU Document and Reporting Compliance (S/4HANA Cloud 2608): eDocuments, statutory reports, email, approval workflow, consistency | keywords: Document and Reporting Compliance Framework, document and reporting compliance, electronic documents, edocument cockpit, statutory reports, tax items, business partner email, approval workflow, draft report reconciliation, electronic document consistency, 5XU_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/intrastat-processing-for-belgium-5pa-test-script-1120",
+      "title": "Intrastat Processing for Belgium (5PA) - Test Script (5PA_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5PA: Belgian Intrastat declarations, with prerequisites, configuration, roles, apps and test steps.",
+      "keywords": [
+        "Belgium VAT, Intrastat and Compliance Formats",
+        "intrastat declarations",
+        "intrastat configuration",
+        "commodity codes",
+        "product classification",
+        "providers of information",
+        "declaration release",
+        "customs units of measure",
+        "business roles",
+        "background job declarations"
+      ],
+      "aliases": [
+        "5PA_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/belgium-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/intrastat-processing-for-belgium-5pa-test-script-1120.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5PA_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Intrastat Processing for Belgium (5PA) - Test Script (5PA_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5PA: Belgian Intrastat declarations, with prerequisites, configuration, roles, apps and test steps | keywords: Belgium VAT, Intrastat and Compliance Formats, intrastat declarations, intrastat configuration, commodity codes, product classification, providers of information, declaration release, customs units of measure, business roles, background job declarations, 5PA_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/master-data-script-create-tax-condition-2sw-275",
+      "title": "Master Data Script: Create Tax Condition (2SW) (2SW_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script 2SW: creating purchasing tax condition records (MEK2) and creating/changing price conditions (MEK1/MEK2).",
+      "keywords": [
+        "Tax Condition Records and Purchasing Price Conditions",
+        "tax conditions",
+        "purchasing price conditions",
+        "change price conditions",
+        "tax codes",
+        "condition types",
+        "business roles",
+        "master data",
+        "2SW"
+      ],
+      "aliases": [
+        "2SW_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/purchasing-tax-condition-records"
+      ],
+      "path": "04-tax-and-statutory-reporting/master-data-script-create-tax-condition-2sw-275.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2SW_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Tax Condition (2SW) (2SW_S4CLD2608_Master_Data_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud 2608 master data script 2SW: creating purchasing tax condition records (MEK2) and creating/changing price conditions (MEK1/MEK2) | keywords: Tax Condition Records and Purchasing Price Conditions, tax conditions, purchasing price conditions, change price conditions, tax codes, condition types, business roles, master data, 2SW, 2SW_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/master-data-script-sap-s-4hana-cloud-public-edition-nota-fiscal-brazil",
+      "title": "Master Data Script - SAP S/4HANA Cloud Public Edition - Nota Fiscal Brazil (JD0_BR) (JD0_S4CLD2608_Master_Data_EN_BR)",
+      "description": "SAP Best Practices 2608 test script for Brazil master data and tax configuration (business place, BP, material, tax laws, CNAE, CFOP, SUFRAMA, CPRB, ICMS-ST, jurisdictions).",
+      "keywords": [
+        "Brazil Nota Fiscal Master Data and Tax Configuration",
+        "brazil master data",
+        "business place",
+        "customer master data",
+        "supplier master data",
+        "material master data",
+        "tax laws",
+        "withholding tax",
+        "service types",
+        "cfop determination"
+      ],
+      "aliases": [
+        "JD0_S4CLD2608_Master_Data_EN_BR"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/brazil-nota-fiscal"
+      ],
+      "path": "04-tax-and-statutory-reporting/master-data-script-sap-s-4hana-cloud-public-edition-nota-fiscal-brazil.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/JD0_S4CLD2608_Master_Data_EN_BR.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script - SAP S/4HANA Cloud Public Edition - Nota Fiscal Brazil (JD0_BR) (JD0_S4CLD2608_Master_Data_EN_BR) (Tax and Statutory Reporting) — SAP Best Practices 2608 test script for Brazil master data and tax configuration (business place, BP, material, tax laws, CNAE, CFOP, SUFRAMA, CPRB, ICMS-ST, jurisdictions) | keywords: Brazil Nota Fiscal Master Data and Tax Configuration, brazil master data, business place, customer master data, supplier master data, material master data, tax laws, withholding tax, service types, cfop determination, JD0_S4CLD2608_Master_Data_EN_BR"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/mds-2sw-277",
+      "title": "税条件の登録 - MDS (2SW) (2SW_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud Public Edition 2608 master data script for maintaining tax condition records (MEK2) and purchasing price conditions PPR0 (MEK1/MEK2).",
+      "keywords": [
+        "Tax Condition Records and Purchasing Price Conditions",
+        "tax conditions",
+        "purchasing price conditions",
+        "price condition changes",
+        "tax codes",
+        "business roles",
+        "master data scripts",
+        "2SW"
+      ],
+      "aliases": [
+        "2SW_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/purchasing-tax-condition-records"
+      ],
+      "path": "04-tax-and-statutory-reporting/mds-2sw-277.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2SW_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "税条件の登録 - MDS (2SW) (2SW_S4CLD2608_Master_Data_JA_XX) (Tax and Statutory Reporting) — Japanese SAP S/4HANA Cloud Public Edition 2608 master data script for maintaining tax condition records (MEK2) and purchasing price conditions PPR0 (MEK1/MEK2) | keywords: Tax Condition Records and Purchasing Price Conditions, tax conditions, purchasing price conditions, price condition changes, tax codes, business roles, master data scripts, 2SW, 2SW_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/mds-2sw-279",
+      "title": "创建税收条件 - MDS (2SW) (2SW_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script 2SW: create tax condition records (MEK2) and create/change purchasing price conditions (MEK1, MEK2).",
+      "keywords": [
+        "Tax Condition Records and Purchasing Price Conditions",
+        "tax condition records",
+        "purchasing price conditions",
+        "master data scripts",
+        "condition types",
+        "business roles",
+        "test procedures",
+        "tax codes",
+        "2SW"
+      ],
+      "aliases": [
+        "2SW_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/purchasing-tax-condition-records"
+      ],
+      "path": "04-tax-and-statutory-reporting/mds-2sw-279.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2SW_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建税收条件 - MDS (2SW) (2SW_S4CLD2608_Master_Data_ZH_XX) (Tax and Statutory Reporting) — Chinese (machine-translated) SAP S/4HANA Cloud 2608 master data script 2SW: create tax condition records (MEK2) and create/change purchasing price conditions (MEK1, MEK2) | keywords: Tax Condition Records and Purchasing Price Conditions, tax condition records, purchasing price conditions, master data scripts, condition types, business roles, test procedures, tax codes, 2SW, 2SW_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/objetivo-script-de-dados-mestre-criar-condicao-de-imposto-mds-2sw-port",
+      "title": "Objetivo (Script de dados mestre: Criar condição de imposto - MDS 2SW, Portuguese) (2SW_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (2SW) for SAP S/4HANA Cloud 2608: creating tax condition records and creating/modifying purchasing price conditions (MEK1/MEK2).",
+      "keywords": [
+        "Tax Condition Records and Purchasing Price Conditions",
+        "tax condition records",
+        "purchasing price conditions",
+        "price condition changes",
+        "tax codes",
+        "business roles",
+        "master data scripts",
+        "condition types",
+        "2SW"
+      ],
+      "aliases": [
+        "2SW_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/purchasing-tax-condition-records"
+      ],
+      "path": "04-tax-and-statutory-reporting/objetivo-script-de-dados-mestre-criar-condicao-de-imposto-mds-2sw-port.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2SW_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Objetivo (Script de dados mestre: Criar condição de imposto - MDS 2SW, Portuguese) (2SW_S4CLD2608_Master_Data_PT_XX) (Tax and Statutory Reporting) — Portuguese master data script (2SW) for SAP S/4HANA Cloud 2608: creating tax condition records and creating/modifying purchasing price conditions (MEK1/MEK2) | keywords: Tax Condition Records and Purchasing Price Conditions, tax condition records, purchasing price conditions, price condition changes, tax codes, business roles, master data scripts, condition types, 2SW, 2SW_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/sale-of-services-2eq-ae-test-script-sap-s-4hana-cloud-public-edition-8",
+      "title": "Sale of Services (2EQ_AE) Test Script - SAP S/4HANA Cloud Public Edition (2EQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2EQ_AE Sale of Services (UAE): prerequisites, PEPPOL e-invoicing setup, sales order to billing, eDocument Cockpit, billing jobs.",
+      "keywords": [
+        "PEPPOL Electronic Invoicing",
+        "sale of services",
+        "test script",
+        "electronic invoicing",
+        "peppol configuration",
+        "sales orders",
+        "billing documents",
+        "edocument cockpit",
+        "value mapping",
+        "credit management"
+      ],
+      "aliases": [
+        "2EQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/peppol-e-invoicing",
+        "topic/sale-of-services"
+      ],
+      "path": "04-tax-and-statutory-reporting/sale-of-services-2eq-ae-test-script-sap-s-4hana-cloud-public-edition-8.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2EQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Sale of Services (2EQ_AE) Test Script - SAP S/4HANA Cloud Public Edition (2EQ_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP test script for scope item 2EQ_AE Sale of Services (UAE): prerequisites, PEPPOL e-invoicing setup, sales order to billing, eDocument Cockpit, billing jobs | keywords: PEPPOL Electronic Invoicing, sale of services, test script, electronic invoicing, peppol configuration, sales orders, billing documents, edocument cockpit, value mapping, credit management, 2EQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/stammdatenskript-steuerkondition-anlegen-mds-2sw-274",
+      "title": "Stammdatenskript - Steuerkondition anlegen – MDS (2SW) (2SW_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (2SW) for SAP S/4HANA Cloud Public Edition: creating tax condition records (MEK2) and creating/changing purchasing price conditions (MEK1/MEK2).",
+      "keywords": [
+        "Tax Condition Records and Purchasing Price Conditions",
+        "tax conditions",
+        "purchasing price conditions",
+        "condition records",
+        "master data scripts",
+        "tax codes",
+        "business roles",
+        "price condition changes",
+        "2SW"
+      ],
+      "aliases": [
+        "2SW_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/purchasing-tax-condition-records"
+      ],
+      "path": "04-tax-and-statutory-reporting/stammdatenskript-steuerkondition-anlegen-mds-2sw-274.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/2SW_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Steuerkondition anlegen – MDS (2SW) (2SW_S4CLD2608_Master_Data_DE_XX) (Tax and Statutory Reporting) — German master data script (2SW) for SAP S/4HANA Cloud Public Edition: creating tax condition records (MEK2) and creating/changing purchasing price conditions (MEK1/MEK2) | keywords: Tax Condition Records and Purchasing Price Conditions, tax conditions, purchasing price conditions, condition records, master data scripts, tax codes, business roles, price condition changes, 2SW, 2SW_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-compliance-formats-support-preparation-1j2-ae-sap-s-4hana",
+      "title": "Test Script: Compliance Formats – Support Preparation (1J2_AE) – SAP S/4HANA Cloud Public Edition 2608 (1J2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for UAE statutory reporting (scope 1J2_AE): config prerequisites, VAT return, FAF audit file, cash flow statement.",
+      "keywords": [
+        "UAE VAT Return and Statutory Reports",
+        "uae statutory reporting",
+        "uae vat return",
+        "faf audit file",
+        "cash flow statement",
+        "document and reporting compliance",
+        "statutory reporting setup",
+        "scope item testing",
+        "financial statement hierarchy",
+        "reporting entity"
+      ],
+      "aliases": [
+        "1J2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/uae-vat-return-and-statutory-reports"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-compliance-formats-support-preparation-1j2-ae-sap-s-4hana.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1J2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Compliance Formats – Support Preparation (1J2_AE) – SAP S/4HANA Cloud Public Edition 2608 (1J2_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition 2608 test script for UAE statutory reporting (scope 1J2_AE): config prerequisites, VAT return, FAF audit file, cash flow statement | keywords: UAE VAT Return and Statutory Reports, uae statutory reporting, uae vat return, faf audit file, cash flow statement, document and reporting compliance, statutory reporting setup, scope item testing, financial statement hierarchy, reporting entity, 1J2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-compliance-formats-support-preparation-for-germany-5o6-sap",
+      "title": "Test Script: Compliance Formats – Support Preparation for Germany (5O6), SAP S/4HANA Cloud Public Edition (5O6_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud test script for scope item 5O6: German statutory reporting (Audit Z3, EC Sales List, Advance VAT Return, extensions, euBP) via Advanced Compliance Reporting.",
+      "keywords": [
+        "Germany VAT Returns and Intrastat",
+        "advanced compliance reporting",
+        "germany statutory reporting",
+        "advance vat return",
+        "ec sales list",
+        "audit z3 data extraction",
+        "electronic tax audit euBP",
+        "permanent vat extension",
+        "special advance payment",
+        "post tax payable"
+      ],
+      "aliases": [
+        "5O6_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/germany-vat-and-intrastat"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-compliance-formats-support-preparation-for-germany-5o6-sap.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5O6_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Compliance Formats – Support Preparation for Germany (5O6), SAP S/4HANA Cloud Public Edition (5O6_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud test script for scope item 5O6: German statutory reporting (Audit Z3, EC Sales List, Advance VAT Return, extensions, euBP) via Advanced Compliance Reporting | keywords: Germany VAT Returns and Intrastat, advanced compliance reporting, germany statutory reporting, advance vat return, ec sales list, audit z3 data extraction, electronic tax audit euBP, permanent vat extension, special advance payment, post tax payable, 5O6_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-compliance-formats-support-preparation-for-sweden-5z6-1137",
+      "title": "Test Script: Compliance Formats – Support Preparation for Sweden (5Z6) (5Z6_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (5Z6) for Sweden advanced compliance reporting: setup, RITA, running the EC Sales List and VAT Return via Run Statutory Reports (F1515).",
+      "keywords": [
+        "Sweden VAT, Intrastat and Compliance Formats",
+        "advanced compliance reporting",
+        "sweden vat return",
+        "ec sales list",
+        "registration for indirect taxation abroad",
+        "reporting entity setup",
+        "business role templates",
+        "business conditions",
+        "master data scripts",
+        "test scripts"
+      ],
+      "aliases": [
+        "5Z6_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/sweden-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-compliance-formats-support-preparation-for-sweden-5z6-1137.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z6_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Compliance Formats – Support Preparation for Sweden (5Z6) (5Z6_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script (5Z6) for Sweden advanced compliance reporting: setup, RITA, running the EC Sales List and VAT Return via Run Statutory Reports (F1515) | keywords: Sweden VAT, Intrastat and Compliance Formats, advanced compliance reporting, sweden vat return, ec sales list, registration for indirect taxation abroad, reporting entity setup, business role templates, business conditions, master data scripts, test scripts, 5Z6_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-contract-accounting-external-tax-audit-and-compliance-repo",
+      "title": "Test Script: Contract Accounting – External Tax Audit and Compliance Reporting (2SJ_AE) (2SJ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2SJ_AE: FI-CA external auditor access (direct, indirect, file), data extracts, and tax report steps.",
+      "keywords": [
+        "External Tax Audit and Auditor Access",
+        "external tax audit",
+        "auditor system access",
+        "data extracts",
+        "tax reporting",
+        "contract accounting",
+        "test scripts",
+        "general ledger reconciliation",
+        "business roles",
+        "test prerequisites"
+      ],
+      "aliases": [
+        "2SJ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/external-tax-audit-and-auditor-access"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-contract-accounting-external-tax-audit-and-compliance-repo.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2SJ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Accounting – External Tax Audit and Compliance Reporting (2SJ_AE) (2SJ_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 2SJ_AE: FI-CA external auditor access (direct, indirect, file), data extracts, and tax report steps | keywords: External Tax Audit and Auditor Access, external tax audit, auditor system access, data extracts, tax reporting, contract accounting, test scripts, general ledger reconciliation, business roles, test prerequisites, 2SJ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-debit-memo-processing-1f1-ae-sap-s-4hana-cloud-public-edit",
+      "title": "Test Script: Debit Memo Processing (1F1_AE) - SAP S/4HANA Cloud Public Edition (1F1_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 1F1 (UAE): debit memo request, billing block removal, debit memo creation, PEPPOL eDocument cockpit, plus PEPPOL setup and billing job scheduling.",
+      "keywords": [
+        "PEPPOL Electronic Invoicing",
+        "debit memo processing",
+        "debit memo request",
+        "billing block",
+        "billing documents",
+        "edocument cockpit",
+        "electronic invoicing peppol",
+        "value mapping",
+        "business partner master data",
+        "business roles"
+      ],
+      "aliases": [
+        "1F1_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/peppol-e-invoicing",
+        "topic/debit-and-credit-memo-processing"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-debit-memo-processing-1f1-ae-sap-s-4hana-cloud-public-edit.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1F1_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Debit Memo Processing (1F1_AE) - SAP S/4HANA Cloud Public Edition (1F1_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP test script for scope item 1F1 (UAE): debit memo request, billing block removal, debit memo creation, PEPPOL eDocument cockpit, plus PEPPOL setup and billing job scheduling | keywords: PEPPOL Electronic Invoicing, debit memo processing, debit memo request, billing block, billing documents, edocument cockpit, electronic invoicing peppol, value mapping, business partner master data, business roles, 1F1_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-enablement-of-sap-excise-tax-management-4lo-1033",
+      "title": "Test Script: Enablement of SAP Excise Tax Management (4LO) (4LO_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 4LO: testing S/4HANA Cloud APIs integrating with SAP Excise Tax Management (BTP): org data, master data, material documents.",
+      "keywords": [
+        "SAP Excise Tax Management by Vistex",
+        "excise tax management",
+        "excise tax integration",
+        "organizational data replication",
+        "master data replication",
+        "material document replication",
+        "warehouse assignments",
+        "business roles",
+        "odata api services",
+        "test scripts"
+      ],
+      "aliases": [
+        "4LO_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/excise-tax-vistex"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-enablement-of-sap-excise-tax-management-4lo-1033.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4LO_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Enablement of SAP Excise Tax Management (4LO) (4LO_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — Test script for scope item 4LO: testing S/4HANA Cloud APIs integrating with SAP Excise Tax Management (BTP): org data, master data, material documents | keywords: SAP Excise Tax Management by Vistex, excise tax management, excise tax integration, organizational data replication, master data replication, material document replication, warehouse assignments, business roles, odata api services, test scripts, 4LO_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-enablement-of-sap-excise-tax-management-by-vistex-7z8-ae-s",
+      "title": "Test Script: Enablement of SAP Excise Tax Management by Vistex (7Z8_AE), SAP S/4HANA Cloud Public Edition (7Z8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script (scope item 7Z8, AE, dated 19-06-26) for SAP Excise Tax Management by Vistex: prerequisites, preliminary setup and order-to-excise-posting test steps.",
+      "keywords": [
+        "SAP Excise Tax Management by Vistex",
+        "excise tax management",
+        "test script",
+        "preliminary steps",
+        "field values setup",
+        "tax rate document",
+        "stock ledger",
+        "excise tax posting",
+        "tax rate template",
+        "business roles"
+      ],
+      "aliases": [
+        "7Z8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/excise-tax-vistex"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-enablement-of-sap-excise-tax-management-by-vistex-7z8-ae-s.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7Z8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Enablement of SAP Excise Tax Management by Vistex (7Z8_AE), SAP S/4HANA Cloud Public Edition (7Z8_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP test script (scope item 7Z8, AE, dated 19-06-26) for SAP Excise Tax Management by Vistex: prerequisites, preliminary setup and order-to-excise-posting test steps | keywords: SAP Excise Tax Management by Vistex, excise tax management, test script, preliminary steps, field values setup, tax rate document, stock ledger, excise tax posting, tax rate template, business roles, 7Z8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-external-tax-audit-2oo-ae-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: External Tax Audit (2OO_AE) - SAP S/4HANA Cloud Public Edition (2OO_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2OO_AE External Tax Audit: auditor roles, time restrictions, audit filters, Auditor Direct Access, tax reconciliation reports.",
+      "keywords": [
+        "External Tax Audit and Auditor Access",
+        "external tax audit",
+        "auditor direct access",
+        "external auditor role",
+        "time restrictions",
+        "generic audit filter",
+        "audit structures",
+        "professional service audit",
+        "sox compliance audit",
+        "audit journal"
+      ],
+      "aliases": [
+        "2OO_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/external-tax-audit-and-auditor-access"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-external-tax-audit-2oo-ae-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2OO_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: External Tax Audit (2OO_AE) - SAP S/4HANA Cloud Public Edition (2OO_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP test script for scope item 2OO_AE External Tax Audit: auditor roles, time restrictions, audit filters, Auditor Direct Access, tax reconciliation reports | keywords: External Tax Audit and Auditor Access, external tax audit, auditor direct access, external auditor role, time restrictions, generic audit filter, audit structures, professional service audit, sox compliance audit, audit journal, 2OO_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-intrastat-processing-for-czech-republic-5z4-1135",
+      "title": "Test Script: Intrastat Processing for Czech Republic (5Z4) (5Z4_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5Z4: Intrastat declarations for Czech Republic, with prerequisites, configuration and test procedures.",
+      "keywords": [
+        "Czech Republic VAT, Intrastat and Compliance Formats",
+        "intrastat declarations",
+        "intrastat configuration",
+        "commodity codes",
+        "product classification",
+        "providers of information",
+        "declaration release",
+        "background job declarations",
+        "customs units of measure",
+        "business roles"
+      ],
+      "aliases": [
+        "5Z4_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/czech-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-intrastat-processing-for-czech-republic-5z4-1135.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z4_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intrastat Processing for Czech Republic (5Z4) (5Z4_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5Z4: Intrastat declarations for Czech Republic, with prerequisites, configuration and test procedures | keywords: Czech Republic VAT, Intrastat and Compliance Formats, intrastat declarations, intrastat configuration, commodity codes, product classification, providers of information, declaration release, background job declarations, customs units of measure, business roles, 5Z4_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-intrastat-processing-for-germany-5ol-sap-s-4hana-cloud-pub",
+      "title": "Test Script: Intrastat Processing for Germany (5OL) - SAP S/4HANA Cloud Public Edition (5OL_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 5OL: Intrastat declarations for Germany (RITA) in S/4HANA Cloud Public Edition 2608 - prerequisites, configuration, commodity codes, POI, declarations.",
+      "keywords": [
+        "Germany VAT Returns and Intrastat",
+        "intrastat declarations",
+        "intrastat configuration",
+        "commodity codes",
+        "product classification",
+        "providers of information",
+        "intrastat background jobs",
+        "declaration release",
+        "customs units of measure",
+        "business roles"
+      ],
+      "aliases": [
+        "5OL_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/germany-vat-and-intrastat"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-intrastat-processing-for-germany-5ol-sap-s-4hana-cloud-pub.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OL_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intrastat Processing for Germany (5OL) - SAP S/4HANA Cloud Public Edition (5OL_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP test script for scope item 5OL: Intrastat declarations for Germany (RITA) in S/4HANA Cloud Public Edition 2608 - prerequisites, configuration, commodity codes, POI, declarations | keywords: Germany VAT Returns and Intrastat, intrastat declarations, intrastat configuration, commodity codes, product classification, providers of information, intrastat background jobs, declaration release, customs units of measure, business roles, 5OL_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-intrastat-processing-for-sweden-5z3-1134",
+      "title": "Test Script: Intrastat Processing for Sweden (5Z3) (5Z3_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5Z3: Intrastat declarations for Sweden, covering prerequisites, configuration, and step-by-step test procedures.",
+      "keywords": [
+        "Sweden VAT, Intrastat and Compliance Formats",
+        "intrastat declarations",
+        "intrastat configuration",
+        "commodity codes",
+        "product classification",
+        "providers of information",
+        "declaration release",
+        "customs units of measure",
+        "business roles",
+        "prerequisite scope items"
+      ],
+      "aliases": [
+        "5Z3_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/sweden-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-intrastat-processing-for-sweden-5z3-1134.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z3_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intrastat Processing for Sweden (5Z3) (5Z3_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5Z3: Intrastat declarations for Sweden, covering prerequisites, configuration, and step-by-step test procedures | keywords: Sweden VAT, Intrastat and Compliance Formats, intrastat declarations, intrastat configuration, commodity codes, product classification, providers of information, declaration release, customs units of measure, business roles, prerequisite scope items, 5Z3_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-invoice-correction-process-with-debit-memo-bdq-ae-1257",
+      "title": "Test Script: Invoice Correction Process with Debit Memo (BDQ_AE) (BDQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item BDQ (UAE): debit memo request, billing, eDocument PEPPOL submission, plus prerequisites and job scheduling.",
+      "keywords": [
+        "PEPPOL Electronic Invoicing",
+        "debit memo request",
+        "invoice correction",
+        "billing block",
+        "debit memo creation",
+        "edocument cockpit",
+        "electronic invoicing peppol",
+        "value mapping",
+        "business roles",
+        "master data"
+      ],
+      "aliases": [
+        "BDQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/peppol-e-invoicing",
+        "topic/debit-and-credit-memo-processing"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-invoice-correction-process-with-debit-memo-bdq-ae-1257.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BDQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Invoice Correction Process with Debit Memo (BDQ_AE) (BDQ_S4CLD2608_BPD_EN_AE) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item BDQ (UAE): debit memo request, billing, eDocument PEPPOL submission, plus prerequisites and job scheduling | keywords: PEPPOL Electronic Invoicing, debit memo request, invoice correction, billing block, debit memo creation, edocument cockpit, electronic invoicing peppol, value mapping, business roles, master data, BDQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-vat-tax-calculation-and-reporting-for-belgium-5is-1105",
+      "title": "Test Script: VAT Tax Calculation and Reporting for Belgium (5IS) (5IS_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5IS: Belgium VAT calculation and reporting, with prerequisites, tax code setup and test steps.",
+      "keywords": [
+        "Belgium VAT, Intrastat and Compliance Formats",
+        "belgium vat reporting",
+        "tax code assignment",
+        "general journal entries",
+        "advance return sales/purchase tax",
+        "electronic tax return",
+        "indirect taxation abroad",
+        "contract tax defaults",
+        "business roles",
+        "demo data"
+      ],
+      "aliases": [
+        "5IS_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/belgium-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-vat-tax-calculation-and-reporting-for-belgium-5is-1105.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5IS_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: VAT Tax Calculation and Reporting for Belgium (5IS) (5IS_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5IS: Belgium VAT calculation and reporting, with prerequisites, tax code setup and test steps | keywords: Belgium VAT, Intrastat and Compliance Formats, belgium vat reporting, tax code assignment, general journal entries, advance return sales/purchase tax, electronic tax return, indirect taxation abroad, contract tax defaults, business roles, demo data, 5IS_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-vat-tax-calculation-and-reporting-for-south-africa-5z0-113",
+      "title": "Test Script: VAT Tax Calculation and Reporting for South Africa (5Z0) (5Z0_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5Z0: South Africa VAT calculation and reporting, covering prerequisites, journal entries, advance return and electronic tax return.",
+      "keywords": [
+        "South Africa VAT Calculation and Reporting",
+        "south africa vat",
+        "tax code assignment",
+        "general journal entries",
+        "advance return sales/purchase tax",
+        "electronic tax return",
+        "registration for indirect taxation abroad",
+        "default tax rate per contract type",
+        "business roles",
+        "demo data"
+      ],
+      "aliases": [
+        "5Z0_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/south-africa-vat"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-vat-tax-calculation-and-reporting-for-south-africa-5z0-113.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z0_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: VAT Tax Calculation and Reporting for South Africa (5Z0) (5Z0_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5Z0: South Africa VAT calculation and reporting, covering prerequisites, journal entries, advance return and electronic tax return | keywords: South Africa VAT Calculation and Reporting, south africa vat, tax code assignment, general journal entries, advance return sales/purchase tax, electronic tax return, registration for indirect taxation abroad, default tax rate per contract type, business roles, demo data, 5Z0_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/test-script-vat-tax-calculation-and-reporting-for-sweden-5z1-1132",
+      "title": "Test Script: VAT Tax Calculation and Reporting for Sweden (5Z1) (5Z1_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5Z1: Swedish VAT tax code setup, journal entry posting and advance return on sales/purchase tax.",
+      "keywords": [
+        "Sweden VAT, Intrastat and Compliance Formats",
+        "sweden vat reporting",
+        "tax code assignment",
+        "advance tax return",
+        "general journal entries",
+        "registration for indirect taxation abroad",
+        "tax rate per contract type",
+        "business roles",
+        "demo data",
+        "test scripts"
+      ],
+      "aliases": [
+        "5Z1_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/sweden-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/test-script-vat-tax-calculation-and-reporting-for-sweden-5z1-1132.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z1_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: VAT Tax Calculation and Reporting for Sweden (5Z1) (5Z1_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5Z1: Swedish VAT tax code setup, journal entry posting and advance return on sales/purchase tax | keywords: Sweden VAT, Intrastat and Compliance Formats, sweden vat reporting, tax code assignment, advance tax return, general journal entries, registration for indirect taxation abroad, tax rate per contract type, business roles, demo data, test scripts, 5Z1_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/vat-tax-calculation-and-reporting-for-czech-republic-5z2-test-script-1",
+      "title": "VAT Tax Calculation and Reporting for Czech Republic (5Z2) - Test Script (5Z2_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5Z2: Czech VAT calculation and reporting, prerequisites, tax code setup, journal entries, advance return, e-tax return.",
+      "keywords": [
+        "Czech Republic VAT, Intrastat and Compliance Formats",
+        "czech vat reporting",
+        "tax code assignment",
+        "fi document tax codes",
+        "general journal entries",
+        "advance return sales/purchase tax",
+        "electronic tax return",
+        "registration for indirect taxation abroad",
+        "default tax rate per contract type",
+        "business roles"
+      ],
+      "aliases": [
+        "5Z2_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/czech-vat-intrastat-and-compliance-formats"
+      ],
+      "path": "04-tax-and-statutory-reporting/vat-tax-calculation-and-reporting-for-czech-republic-5z2-test-script-1.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5Z2_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "VAT Tax Calculation and Reporting for Czech Republic (5Z2) - Test Script (5Z2_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 5Z2: Czech VAT calculation and reporting, prerequisites, tax code setup, journal entries, advance return, e-tax return | keywords: Czech Republic VAT, Intrastat and Compliance Formats, czech vat reporting, tax code assignment, fi document tax codes, general journal entries, advance return sales/purchase tax, electronic tax return, registration for indirect taxation abroad, default tax rate per contract type, business roles, 5Z2_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "04-tax-and-statutory-reporting/vat-tax-calculation-and-reporting-for-germany-55u-test-script-1071",
+      "title": "VAT Tax Calculation and Reporting for Germany (55U) - Test Script (55U_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 55U: German VAT calculation and reporting (journal entries, advance return, electronic tax return).",
+      "keywords": [
+        "Germany VAT Returns and Intrastat",
+        "german vat reporting",
+        "advance return sales/purchase tax",
+        "electronic tax return",
+        "general journal entries",
+        "indirect taxation abroad",
+        "tax code assignment",
+        "tax rate per contract type",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "55U_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/tax-and-statutory-reporting",
+        "topic/germany-vat-and-intrastat"
+      ],
+      "path": "04-tax-and-statutory-reporting/vat-tax-calculation-and-reporting-for-germany-55u-test-script-1071.md",
+      "cluster": "04-tax-and-statutory-reporting",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/55U_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "VAT Tax Calculation and Reporting for Germany (55U) - Test Script (55U_S4CLD2608_BPD_EN_XX) (Tax and Statutory Reporting) — SAP S/4HANA Cloud Public Edition test script for scope item 55U: German VAT calculation and reporting (journal entries, advance return, electronic tax return) | keywords: Germany VAT Returns and Intrastat, german vat reporting, advance return sales/purchase tax, electronic tax return, general journal entries, indirect taxation abroad, tax code assignment, tax rate per contract type, business roles, test scripts, 55U_S4CLD2608_BPD_EN_XX"
+    }
+  ]
+}

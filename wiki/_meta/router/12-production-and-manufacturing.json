@@ -1,0 +1,3216 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "12-production-and-manufacturing",
+  "cluster_title": "Production and Manufacturing",
+  "cluster_description": "Production master data (work centers, routings, BOMs, versions, PRTs, recipes) and discrete and process manufacturing: MTO, MTS, subcontracting, rework, kanban, MES.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 98,
+  "nodes": [
+    {
+      "id": "12-production-and-manufacturing/arbeitsplan-anlegen-sds-bnl-628",
+      "title": "Arbeitsplan anlegen – SDS (BNL) (BNL_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script BNL for SAP S/4HANA Cloud Public Edition 2608: creating a manufacturing routing (Arbeitsplan) with operations and component allocation in app F5425.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "routings",
+        "routing operations",
+        "control keys",
+        "component allocation",
+        "external processing",
+        "business roles",
+        "master data prerequisites",
+        "master data scripts",
+        "BNL"
+      ],
+      "aliases": [
+        "BNL_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/arbeitsplan-anlegen-sds-bnl-628.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNL_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Arbeitsplan anlegen – SDS (BNL) (BNL_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German master data script BNL for SAP S/4HANA Cloud Public Edition 2608: creating a manufacturing routing (Arbeitsplan) with operations and component allocation in app F5425 | keywords: Routings and Reference Operation Sets, routings, routing operations, control keys, component allocation, external processing, business roles, master data prerequisites, master data scripts, BNL, BNL_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/bom-mds-bnk-625",
+      "title": "マスタデータスクリプト: 製造および販売向けの品目 BOM の登録 - MDS (BNK) (BNK_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud 2608 master data script (BNK) for creating change numbers, production BOMs and sales BOMs (F1813A, F1813, CC01).",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "material bom",
+        "production bom",
+        "sales bom",
+        "change numbers",
+        "bom usage",
+        "item categories",
+        "business roles",
+        "master data scripts",
+        "routing"
+      ],
+      "aliases": [
+        "BNK_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/bom-mds-bnk-625.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNK_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: 製造および販売向けの品目 BOM の登録 - MDS (BNK) (BNK_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese SAP S/4HANA Cloud 2608 master data script (BNK) for creating change numbers, production BOMs and sales BOMs (F1813A, F1813, CC01) | keywords: Material BOMs for Production and Sales, material bom, production bom, sales bom, change numbers, bom usage, item categories, business roles, master data scripts, routing, BNK_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/creacion-de-area-de-suministro-de-produccion-mds-40d-402",
+      "title": "Creación de área de suministro de producción - MDS (40D) (40D_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP master data script for creating a production supply area via PK05S or F6935 in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Production Supply Areas",
+        "production supply area",
+        "master data creation",
+        "business roles",
+        "mrp controller",
+        "plant and storage location",
+        "test procedures",
+        "40D"
+      ],
+      "aliases": [
+        "40D_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-supply-areas"
+      ],
+      "path": "12-production-and-manufacturing/creacion-de-area-de-suministro-de-produccion-mds-40d-402.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/40D_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Creación de área de suministro de producción - MDS (40D) (40D_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish (machine-translated) SAP master data script for creating a production supply area via PK05S or F6935 in S/4HANA Cloud Public Edition 2608 | keywords: Production Supply Areas, production supply area, master data creation, business roles, mrp controller, plant and storage location, test procedures, 40D, 40D_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/creacion-de-hoja-de-ruta-mds-bnl-630",
+      "title": "Creación de hoja de ruta - MDS (BNL) (BNL_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish machine-translated SAP S/4HANA Cloud 2608 master data script (BNL) for creating a production routing (hoja de ruta) with operations and component assignment in discrete manufacturing.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "routing",
+        "production operations",
+        "control keys",
+        "component assignment",
+        "work centers",
+        "external processing",
+        "task list usage",
+        "business roles",
+        "master data scripts"
+      ],
+      "aliases": [
+        "BNL_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/creacion-de-hoja-de-ruta-mds-bnl-630.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNL_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Creación de hoja de ruta - MDS (BNL) (BNL_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish machine-translated SAP S/4HANA Cloud 2608 master data script (BNL) for creating a production routing (hoja de ruta) with operations and component assignment in discrete manufacturing | keywords: Routings and Reference Operation Sets, routing, production operations, control keys, component assignment, work centers, external processing, task list usage, business roles, master data scripts, BNL_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/crear-lista-de-materiales-para-material-para-produccion-y-ventas-mds-b",
+      "title": "Crear lista de materiales para material para producción y ventas - MDS (BNK) (BNK_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data test script (BNK) for creating change numbers, production BOMs and sales BOMs in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "bill of materials",
+        "production bom",
+        "sales bom",
+        "change number",
+        "bom usage",
+        "bom item categories",
+        "business roles",
+        "master data scripts",
+        "routing"
+      ],
+      "aliases": [
+        "BNK_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/crear-lista-de-materiales-para-material-para-produccion-y-ventas-mds-b.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNK_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear lista de materiales para material para producción y ventas - MDS (BNK) (BNK_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish (machine-translated) master data test script (BNK) for creating change numbers, production BOMs and sales BOMs in SAP S/4HANA Cloud Public Edition 2608 | keywords: Material BOMs for Production and Sales, bill of materials, production bom, sales bom, change number, bom usage, bom item categories, business roles, master data scripts, routing, BNK_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/crear-recurso-mds-3x8-378",
+      "title": "Crear recurso - MDS (3X8) (3X8_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script 3X8 for creating a production resource (app F6176) in SAP S/4HANA Cloud 2608, with a pointer to script 3X9.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "resource master data",
+        "resource category",
+        "standard value key",
+        "capacity planning",
+        "cost center",
+        "master recipe",
+        "business roles",
+        "master data scripts",
+        "3X8"
+      ],
+      "aliases": [
+        "3X8_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/crear-recurso-mds-3x8-378.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X8_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Crear recurso - MDS (3X8) (3X8_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish (machine-translated) master data script 3X8 for creating a production resource (app F6176) in SAP S/4HANA Cloud 2608, with a pointer to script 3X9 | keywords: Process Manufacturing Resources and Master Recipes, resource master data, resource category, standard value key, capacity planning, cost center, master recipe, business roles, master data scripts, 3X8, 3X8_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/create-master-recipe-mds-3x9-383",
+      "title": "Create Master Recipe - MDS (3X9) (3X9_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud master data script (3X9, EN): creating a master recipe for process manufacturing in the Manage Master Recipes app (F5426).",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "master recipe",
+        "process manufacturing",
+        "master data scripts",
+        "test procedures",
+        "business roles",
+        "organizational units",
+        "mandatory master data",
+        "task list usage",
+        "production version"
+      ],
+      "aliases": [
+        "3X9_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/create-master-recipe-mds-3x9-383.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X9_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Master Recipe - MDS (3X9) (3X9_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud master data script (3X9, EN): creating a master recipe for process manufacturing in the Manage Master Recipes app (F5426) | keywords: Process Manufacturing Resources and Master Recipes, master recipe, process manufacturing, master data scripts, test procedures, business roles, organizational units, mandatory master data, task list usage, production version, 3X9_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/create-material-bom-for-production-and-sales-mds-bnk-623",
+      "title": "Create Material BOM for Production and Sales - MDS (BNK) (BNK_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (BNK): create change number, production BOM (usage 1) and sales BOM (usage 5) with item categories.",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "material bom",
+        "sales bill of material",
+        "change master",
+        "bom usage",
+        "bom item categories",
+        "business roles",
+        "routing",
+        "master data scripts",
+        "product master"
+      ],
+      "aliases": [
+        "BNK_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/create-material-bom-for-production-and-sales-mds-bnk-623.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNK_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Material BOM for Production and Sales - MDS (BNK) (BNK_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 master data script (BNK): create change number, production BOM (usage 1) and sales BOM (usage 5) with item categories | keywords: Material BOMs for Production and Sales, material bom, sales bill of material, change master, bom usage, bom item categories, business roles, routing, master data scripts, product master, BNK_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/create-production-supply-area-mds-40d-401",
+      "title": "Create Production Supply Area - MDS (40D) (40D_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data script 40D: create a production supply area via PK05S or Manage Production Supply Areas (F6935) as Production Planner - Lean Manufacturing,",
+      "keywords": [
+        "Production Supply Areas",
+        "production supply area",
+        "lean manufacturing",
+        "mrp controller",
+        "plant and storage location",
+        "business roles",
+        "test procedures",
+        "40D"
+      ],
+      "aliases": [
+        "40D_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-supply-areas"
+      ],
+      "path": "12-production-and-manufacturing/create-production-supply-area-mds-40d-401.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/40D_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Production Supply Area - MDS (40D) (40D_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — English master data script 40D: create a production supply area via PK05S or Manage Production Supply Areas (F6935) as Production Planner - Lean Manufacturing, | keywords: Production Supply Areas, production supply area, lean manufacturing, mrp controller, plant and storage location, business roles, test procedures, 40D, 40D_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/create-production-work-center-mds-bnj-617",
+      "title": "Create Production Work Center - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script BNJ: create a production work center (F6175) and optionally work center groups (F4044), with test steps.",
+      "keywords": [
+        "Production Work Centers and Work Center Groups",
+        "production work center",
+        "work center groups",
+        "work center category",
+        "capacity planning",
+        "work center costing",
+        "standard value key",
+        "routing",
+        "business roles",
+        "test procedures"
+      ],
+      "aliases": [
+        "BNJ_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-work-centers"
+      ],
+      "path": "12-production-and-manufacturing/create-production-work-center-mds-bnj-617.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNJ_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Production Work Center - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud 2608 master data script BNJ: create a production work center (F6175) and optionally work center groups (F4044), with test steps | keywords: Production Work Centers and Work Center Groups, production work center, work center groups, work center category, capacity planning, work center costing, standard value key, routing, business roles, test procedures, BNJ_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/criar-area-de-abastecimento-da-producao-mds-40d-404",
+      "title": "Criar área de abastecimento da produção – MDS (40D) (40D_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud master data script (40D): create a production supply area via PK05S (quick entry) or F6935 (manage), by plant and storage location.",
+      "keywords": [
+        "Production Supply Areas",
+        "production supply area",
+        "plant and storage location",
+        "lean manufacturing",
+        "mrp controller",
+        "business roles",
+        "master data scripts",
+        "40D"
+      ],
+      "aliases": [
+        "40D_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-supply-areas"
+      ],
+      "path": "12-production-and-manufacturing/criar-area-de-abastecimento-da-producao-mds-40d-404.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/40D_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar área de abastecimento da produção – MDS (40D) (40D_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese SAP S/4HANA Cloud master data script (40D): create a production supply area via PK05S (quick entry) or F6935 (manage), by plant and storage location | keywords: Production Supply Areas, production supply area, plant and storage location, lean manufacturing, mrp controller, business roles, master data scripts, 40D, 40D_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/criar-receita-mestre-mds-3x9-386",
+      "title": "Criar receita mestre - MDS (3X9) (3X9_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud 2608 master data script (3X9) for creating a master recipe for process manufacturing, with phases, production version and component assignment.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "master recipe",
+        "process manufacturing",
+        "production operations",
+        "production version",
+        "component assignment",
+        "change management",
+        "task list usage",
+        "business roles",
+        "master data scripts"
+      ],
+      "aliases": [
+        "3X9_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/criar-receita-mestre-mds-3x9-386.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X9_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar receita mestre - MDS (3X9) (3X9_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese SAP S/4HANA Cloud 2608 master data script (3X9) for creating a master recipe for process manufacturing, with phases, production version and component assignment | keywords: Process Manufacturing Resources and Master Recipes, master recipe, process manufacturing, production operations, production version, component assignment, change management, task list usage, business roles, master data scripts, 3X9_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/criar-roteiro-mds-bnl-632",
+      "title": "Criar roteiro - MDS (BNL) (BNL_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud master data script (BNL): creating a production routing (roteiro) for discrete manufacturing in Administrar itinerários (F5425).",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "routing",
+        "discrete manufacturing",
+        "master data scripts",
+        "test procedures",
+        "operation control keys",
+        "external operations",
+        "business roles",
+        "organizational units",
+        "mandatory master data"
+      ],
+      "aliases": [
+        "BNL_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/criar-roteiro-mds-bnl-632.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNL_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar roteiro - MDS (BNL) (BNL_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese SAP S/4HANA Cloud master data script (BNL): creating a production routing (roteiro) for discrete manufacturing in Administrar itinerários (F5425) | keywords: Routings and Reference Operation Sets, routing, discrete manufacturing, master data scripts, test procedures, operation control keys, external operations, business roles, organizational units, mandatory master data, BNL_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/fertigungsversion-anlegen-sds-bld-568",
+      "title": "Fertigungsversion anlegen – SDS (BLD) (BLD_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (BLD) for SAP S/4HANA Cloud Public Edition: create and edit production versions via Fiori apps F6400 and F2568.",
+      "keywords": [
+        "Production Versions",
+        "production version editing",
+        "master data scripts",
+        "bills of material",
+        "routings",
+        "business roles",
+        "production version proposals",
+        "mass editing",
+        "BLD"
+      ],
+      "aliases": [
+        "BLD_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-versions"
+      ],
+      "path": "12-production-and-manufacturing/fertigungsversion-anlegen-sds-bld-568.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLD_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Fertigungsversion anlegen – SDS (BLD) (BLD_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German master data script (BLD) for SAP S/4HANA Cloud Public Edition: create and edit production versions via Fiori apps F6400 and F2568 | keywords: Production Versions, production version editing, master data scripts, bills of material, routings, business roles, production version proposals, mass editing, BLD, BLD_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/inbound-storage-tank-management-process-manufacturing-3uk-ae-971",
+      "title": "Inbound Storage Tank Management – Process Manufacturing (3UK_AE) (3UK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3UK_AE: receive a batch into a day tank, mix with main tank batch via process order, with QM.",
+      "keywords": [
+        "Storage Tank Management and Tank Trailer Filling",
+        "storage tank management",
+        "batch mixing",
+        "process orders",
+        "batch determination",
+        "goods receipt",
+        "quality inspection",
+        "usage decision",
+        "purchase orders",
+        "goods issue"
+      ],
+      "aliases": [
+        "3UK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/storage-tank-management"
+      ],
+      "path": "12-production-and-manufacturing/inbound-storage-tank-management-process-manufacturing-3uk-ae-971.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3UK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Inbound Storage Tank Management – Process Manufacturing (3UK_AE) (3UK_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3UK_AE: receive a batch into a day tank, mix with main tank batch via process order, with QM | keywords: Storage Tank Management and Tank Trailer Filling, storage tank management, batch mixing, process orders, batch determination, goods receipt, quality inspection, usage decision, purchase orders, goods issue, 3UK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/make-to-order-production-semifinished-goods-planning-and-assembly-1bm",
+      "title": "Make-to-Order Production – Semifinished Goods Planning and Assembly (1BM_AE) Test Script (1BM_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1BM_AE: MTO semifinished goods planning via PIRs, MRP, production orders and sales order consumption (plant 3310).",
+      "keywords": [
+        "Make-to-Order with Semi-Finished Goods Planning",
+        "make-to-order production",
+        "planned independent requirements",
+        "material requirements planning",
+        "material coverage monitoring",
+        "production order processing",
+        "production order output",
+        "production order confirmation",
+        "sales order processing",
+        "business roles"
+      ],
+      "aliases": [
+        "1BM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-order-semifinished-planning"
+      ],
+      "path": "12-production-and-manufacturing/make-to-order-production-semifinished-goods-planning-and-assembly-1bm.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1BM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Make-to-Order Production – Semifinished Goods Planning and Assembly (1BM_AE) Test Script (1BM_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1BM_AE: MTO semifinished goods planning via PIRs, MRP, production orders and sales order consumption (plant 3310) | keywords: Make-to-Order with Semi-Finished Goods Planning, make-to-order production, planned independent requirements, material requirements planning, material coverage monitoring, production order processing, production order output, production order confirmation, sales order processing, business roles, 1BM_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/make-to-stock-process-manufacturing-based-on-process-order-bj8-ae-test",
+      "title": "Make-to-Stock – Process Manufacturing Based on Process Order (BJ8_AE) – Test Script (BJ8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item BJ8_AE: make-to-stock process manufacturing via PIRs, MRP, process orders, goods issue, confirmation and goods receipt.",
+      "keywords": [
+        "Make-to-Stock Process Manufacturing",
+        "process manufacturing",
+        "make-to-stock",
+        "process orders",
+        "planned independent requirements",
+        "material requirements planning",
+        "goods issue",
+        "production confirmation",
+        "goods receipt",
+        "test scripts"
+      ],
+      "aliases": [
+        "BJ8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-stock-process-manufacturing"
+      ],
+      "path": "12-production-and-manufacturing/make-to-stock-process-manufacturing-based-on-process-order-bj8-ae-test.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJ8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Make-to-Stock – Process Manufacturing Based on Process Order (BJ8_AE) – Test Script (BJ8_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item BJ8_AE: make-to-stock process manufacturing via PIRs, MRP, process orders, goods issue, confirmation and goods receipt | keywords: Make-to-Stock Process Manufacturing, process manufacturing, make-to-stock, process orders, planned independent requirements, material requirements planning, goods issue, production confirmation, goods receipt, test scripts, BJ8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/make-to-stock-with-silo-material-process-manufacturing-3ul-ae-test-scr",
+      "title": "Make-to-Stock with Silo Material – Process Manufacturing (3UL_AE) – Test Script (3UL_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3UL_AE: PIRs, MRP, process orders, goods issue, backflush confirmation, goods receipt (silo).",
+      "keywords": [
+        "Make-to-Stock Process Manufacturing",
+        "scope item testing",
+        "process manufacturing",
+        "silo materials",
+        "planned independent requirements",
+        "material requirements planning",
+        "process order processing",
+        "goods issue",
+        "production confirmation",
+        "goods receipt"
+      ],
+      "aliases": [
+        "3UL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-stock-process-manufacturing"
+      ],
+      "path": "12-production-and-manufacturing/make-to-stock-with-silo-material-process-manufacturing-3ul-ae-test-scr.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3UL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Make-to-Stock with Silo Material – Process Manufacturing (3UL_AE) – Test Script (3UL_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item 3UL_AE: PIRs, MRP, process orders, goods issue, backflush confirmation, goods receipt (silo) | keywords: Make-to-Stock Process Manufacturing, scope item testing, process manufacturing, silo materials, planned independent requirements, material requirements planning, process order processing, goods issue, production confirmation, goods receipt, 3UL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/master-data-script-create-production-resources-tools-mds-5cp-437",
+      "title": "Master Data Script: Create Production Resources/Tools - MDS (5CP) (5CP_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition master data script (5CP, 02-07-26) for creating material, miscellaneous, document and equipment PRTs and assigning them to routings and production orders.",
+      "keywords": [
+        "Production Resources/Tools (PRTs)",
+        "production resources tools",
+        "material prt",
+        "miscellaneous prt",
+        "document prt",
+        "equipment prt",
+        "prt assignment in routing",
+        "prt assignment in production order",
+        "prt status",
+        "prt control key"
+      ],
+      "aliases": [
+        "5CP_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-resources-tools"
+      ],
+      "path": "12-production-and-manufacturing/master-data-script-create-production-resources-tools-mds-5cp-437.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5CP_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Production Resources/Tools - MDS (5CP) (5CP_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition master data script (5CP, 02-07-26) for creating material, miscellaneous, document and equipment PRTs and assigning them to routings and production orders | keywords: Production Resources/Tools (PRTs), production resources tools, material prt, miscellaneous prt, document prt, equipment prt, prt assignment in routing, prt assignment in production order, prt status, prt control key, 5CP_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/master-data-script-create-production-version-mds-bld-569",
+      "title": "Master Data Script: Create Production Version - MDS (BLD) (BLD_S4CLD2608_Master_Data_EN_XX)",
+      "description": "Master data script BLD for creating and editing production versions in S/4HANA Cloud Public Edition 2608 using Fiori apps F6400 and F2568.",
+      "keywords": [
+        "Production Versions",
+        "production version",
+        "production version editing",
+        "master data prerequisites",
+        "business roles",
+        "bill of materials",
+        "task list",
+        "production engineering",
+        "production version proposals",
+        "BLD"
+      ],
+      "aliases": [
+        "BLD_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-versions"
+      ],
+      "path": "12-production-and-manufacturing/master-data-script-create-production-version-mds-bld-569.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLD_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Production Version - MDS (BLD) (BLD_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — Master data script BLD for creating and editing production versions in S/4HANA Cloud Public Edition 2608 using Fiori apps F6400 and F2568 | keywords: Production Versions, production version, production version editing, master data prerequisites, business roles, bill of materials, task list, production engineering, production version proposals, BLD, BLD_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/master-data-script-create-reference-operation-set-mds-ble-575",
+      "title": "Master Data Script: Create Reference Operation Set - MDS (BLE) (BLE_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 master data script (BLE) for creating a reference operation set (reference routing) via CA11 as Production Engineer - Discrete Manufacturing.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "reference operation set",
+        "routing",
+        "work centers",
+        "control keys",
+        "routing usage",
+        "discrete manufacturing",
+        "business roles",
+        "master data scripts",
+        "BLE"
+      ],
+      "aliases": [
+        "BLE_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/master-data-script-create-reference-operation-set-mds-ble-575.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLE_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Reference Operation Set - MDS (BLE) (BLE_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud 2608 master data script (BLE) for creating a reference operation set (reference routing) via CA11 as Production Engineer - Discrete Manufacturing | keywords: Routings and Reference Operation Sets, reference operation set, routing, work centers, control keys, routing usage, discrete manufacturing, business roles, master data scripts, BLE, BLE_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/master-data-script-create-resource-mds-3x8-377",
+      "title": "Master Data Script: Create Resource - MDS (3X8) (3X8_S4CLD2608_Master_Data_EN_XX)",
+      "description": "English master data test script (3X8): create a process manufacturing resource (processing unit 0008) in Manage Resources (F6176), with capacity and costing.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "production resources",
+        "resource category",
+        "master data scripts",
+        "capacity planning",
+        "standard value key",
+        "process manufacturing",
+        "resource costing",
+        "scheduling data",
+        "master recipe"
+      ],
+      "aliases": [
+        "3X8_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/master-data-script-create-resource-mds-3x8-377.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X8_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Resource - MDS (3X8) (3X8_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — English master data test script (3X8): create a process manufacturing resource (processing unit 0008) in Manage Resources (F6176), with capacity and costing | keywords: Process Manufacturing Resources and Master Recipes, production resources, resource category, master data scripts, capacity planning, standard value key, process manufacturing, resource costing, scheduling data, master recipe, 3X8_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/master-data-script-create-routing-mds-bnl-629",
+      "title": "Master Data Script: Create Routing - MDS (BNL) (BNL_S4CLD2608_Master_Data_EN_XX)",
+      "description": "Master data script BNL for creating a production routing in SAP S/4HANA Cloud Public Edition with Manage Routings (F5425) as Production Engineer.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "production routing",
+        "master data scripts",
+        "work centers",
+        "operations control key",
+        "component allocation",
+        "external operations",
+        "business roles",
+        "required master data",
+        "BNL"
+      ],
+      "aliases": [
+        "BNL_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/master-data-script-create-routing-mds-bnl-629.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNL_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Routing - MDS (BNL) (BNL_S4CLD2608_Master_Data_EN_XX) (Production and Manufacturing) — Master data script BNL for creating a production routing in SAP S/4HANA Cloud Public Edition with Manage Routings (F5425) as Production Engineer | keywords: Routings and Reference Operation Sets, production routing, master data scripts, work centers, operations control key, component allocation, external operations, business roles, required master data, BNL, BNL_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/master-data-script-mds-5cp-japanese-439",
+      "title": "目的 (Master Data Script: 生産資源/治工具の登録 - MDS 5CP, Japanese) (5CP_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (5CP) for SAP S/4HANA Cloud 2608: creating production resources/tools (PRT) as material, other, document and equipment PRTs and assigning them to routings and orders.",
+      "keywords": [
+        "Production Resources/Tools (PRTs)",
+        "production resources and tools",
+        "prt master data",
+        "prt status",
+        "prt control key",
+        "routing prt assignment",
+        "production order prt assignment",
+        "document prt",
+        "equipment prt",
+        "business roles"
+      ],
+      "aliases": [
+        "5CP_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-resources-tools"
+      ],
+      "path": "12-production-and-manufacturing/master-data-script-mds-5cp-japanese-439.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5CP_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "目的 (Master Data Script: 生産資源/治工具の登録 - MDS 5CP, Japanese) (5CP_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese master data script (5CP) for SAP S/4HANA Cloud 2608: creating production resources/tools (PRT) as material, other, document and equipment PRTs and assigning them to routings and orders | keywords: Production Resources/Tools (PRTs), production resources and tools, prt master data, prt status, prt control key, routing prt assignment, production order prt assignment, document prt, equipment prt, business roles, 5CP_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/material-replenishment-with-kanban-external-procurement-1e3-ae-test-sc",
+      "title": "Material Replenishment with Kanban – External Procurement (1E3_AE) – Test Script, SAP S/4HANA Cloud Public Edition (1E3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 1E3_AE (UAE): Kanban external procurement, event-driven Kanban and procurement to cost center, with master data, roles and steps.",
+      "keywords": [
+        "Kanban Replenishment (In-House Production, External…",
+        "kanban replenishment",
+        "classic kanban",
+        "event-driven kanban",
+        "kanban control cycles",
+        "external procurement",
+        "procurement to cost center",
+        "kanban container status",
+        "scheduling agreements",
+        "summarized jit call"
+      ],
+      "aliases": [
+        "1E3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/kanban-in-house-production"
+      ],
+      "path": "12-production-and-manufacturing/material-replenishment-with-kanban-external-procurement-1e3-ae-test-sc.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1E3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Material Replenishment with Kanban – External Procurement (1E3_AE) – Test Script, SAP S/4HANA Cloud Public Edition (1E3_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP test script for scope item 1E3_AE (UAE): Kanban external procurement, event-driven Kanban and procurement to cost center, with master data, roles and steps | keywords: Kanban Replenishment (In-House Production, External…, kanban replenishment, classic kanban, event-driven kanban, kanban control cycles, external procurement, procurement to cost center, kanban container status, scheduling agreements, summarized jit call, 1E3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-3x8-379",
+      "title": "マスタデータスクリプト: リソースの登録 - MDS (3X8) (3X8_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (MDS 3X8) for creating process-manufacturing resources via Fiori app F6176 in SAP S/4HANA Cloud Public Edition 2608, with capacity, scheduling and costing data.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "resource master data",
+        "resource category",
+        "master data scripts",
+        "capacity planning",
+        "standard value keys",
+        "process manufacturing",
+        "activity costing",
+        "master recipe",
+        "business roles"
+      ],
+      "aliases": [
+        "3X8_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/mds-3x8-379.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X8_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: リソースの登録 - MDS (3X8) (3X8_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese master data script (MDS 3X8) for creating process-manufacturing resources via Fiori app F6176 in SAP S/4HANA Cloud Public Edition 2608, with capacity, scheduling and costing data | keywords: Process Manufacturing Resources and Master Recipes, resource master data, resource category, master data scripts, capacity planning, standard value keys, process manufacturing, activity costing, master recipe, business roles, 3X8_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-3x8-381",
+      "title": "创建资源 - MDS (3X8) (3X8_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "主数据脚本（中文机器翻译）：通过管理资源 (F6176) 为流程制造创建资源（处理单元），含产能、公式和成本核算。",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "resource master data",
+        "resource category",
+        "master data scripts",
+        "capacity and formulas",
+        "standard value key",
+        "process manufacturing",
+        "master recipe",
+        "3X8"
+      ],
+      "aliases": [
+        "3X8_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/mds-3x8-381.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X8_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建资源 - MDS (3X8) (3X8_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — 主数据脚本（中文机器翻译）：通过管理资源 (F6176) 为流程制造创建资源（处理单元），含产能、公式和成本核算。 | keywords: Process Manufacturing Resources and Master Recipes, resource master data, resource category, master data scripts, capacity and formulas, standard value key, process manufacturing, master recipe, 3X8, 3X8_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-3x9-385",
+      "title": "マスタレシピの登録 - MDS (3X9) (3X9_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script 3X9: creating master recipes (process industry) via app F5426 in SAP S/4HANA Cloud Public Edition 2608, with prerequisites and test steps.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "master recipes",
+        "process manufacturing",
+        "production versions",
+        "task list usage",
+        "change management",
+        "business roles",
+        "product master",
+        "3X9"
+      ],
+      "aliases": [
+        "3X9_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/mds-3x9-385.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X9_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタレシピの登録 - MDS (3X9) (3X9_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese master data script 3X9: creating master recipes (process industry) via app F5426 in SAP S/4HANA Cloud Public Edition 2608, with prerequisites and test steps | keywords: Process Manufacturing Resources and Master Recipes, master recipes, process manufacturing, production versions, task list usage, change management, business roles, product master, 3X9, 3X9_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-3x9-387",
+      "title": "创建主配方 - MDS (3X9) (3X9_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 3X9 for creating a master recipe in process manufacturing via Manage Master Recipes (F5426) in S/4HANA Cloud 260",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "master recipes",
+        "process manufacturing",
+        "master data script",
+        "production versions",
+        "bill of materials",
+        "change management",
+        "task list usage",
+        "business roles",
+        "3X9"
+      ],
+      "aliases": [
+        "3X9_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/mds-3x9-387.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X9_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建主配方 - MDS (3X9) (3X9_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — Chinese (machine-translated) master data script 3X9 for creating a master recipe in process manufacturing via Manage Master Recipes (F5426) in S/4HANA Cloud 260 | keywords: Process Manufacturing Resources and Master Recipes, master recipes, process manufacturing, master data script, production versions, bill of materials, change management, task list usage, business roles, 3X9, 3X9_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-40d-403",
+      "title": "供給場所の登録 - MDS (40D) (40D_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data test script (MDS 40D) for creating a production supply area in SAP S/4HANA Cloud Public Edition 2608 via PK05S or F6935.",
+      "keywords": [
+        "Production Supply Areas",
+        "supply area",
+        "master data script",
+        "production planning",
+        "business roles",
+        "plant and storage location",
+        "mrp controller",
+        "40D"
+      ],
+      "aliases": [
+        "40D_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-supply-areas"
+      ],
+      "path": "12-production-and-manufacturing/mds-40d-403.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/40D_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "供給場所の登録 - MDS (40D) (40D_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese master data test script (MDS 40D) for creating a production supply area in SAP S/4HANA Cloud Public Edition 2608 via PK05S or F6935 | keywords: Production Supply Areas, supply area, master data script, production planning, business roles, plant and storage location, mrp controller, 40D, 40D_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-40d-405",
+      "title": "创建生产供应区 - MDS (40D) (40D_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 主数据脚本 (40D): 通过 PK05S 或 F6935 创建生产供应区的步骤 (中文机器翻译)。",
+      "keywords": [
+        "Production Supply Areas",
+        "master data scripts",
+        "mrp controller",
+        "plant and storage location",
+        "business roles",
+        "lean manufacturing",
+        "40D"
+      ],
+      "aliases": [
+        "40D_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-supply-areas"
+      ],
+      "path": "12-production-and-manufacturing/mds-40d-405.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/40D_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建生产供应区 - MDS (40D) (40D_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 主数据脚本 (40D): 通过 PK05S 或 F6935 创建生产供应区的步骤 (中文机器翻译)。 | keywords: Production Supply Areas, master data scripts, mrp controller, plant and storage location, business roles, lean manufacturing, 40D, 40D_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-5cp-441",
+      "title": "创建生产资源/工具 - MDS (5CP) (5CP_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 5CP for SAP S/4HANA Cloud Public Edition 2608: creating production resources/tools (PRTs) and assigning them to routings and production orders.",
+      "keywords": [
+        "Production Resources/Tools (PRTs)",
+        "production resources tools",
+        "material prt",
+        "document prt",
+        "equipment prt",
+        "miscellaneous prt",
+        "prt status and control key",
+        "routing prt assignment",
+        "production order prt assignment",
+        "business roles"
+      ],
+      "aliases": [
+        "5CP_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-resources-tools"
+      ],
+      "path": "12-production-and-manufacturing/mds-5cp-441.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5CP_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建生产资源/工具 - MDS (5CP) (5CP_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — Chinese (machine-translated) master data script 5CP for SAP S/4HANA Cloud Public Edition 2608: creating production resources/tools (PRTs) and assigning them to routings and production orders | keywords: Production Resources/Tools (PRTs), production resources tools, material prt, document prt, equipment prt, miscellaneous prt, prt status and control key, routing prt assignment, production order prt assignment, business roles, 5CP_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bld-571",
+      "title": "製造バージョンの登録 - MDS (BLD) (BLD_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud Public Edition master data script (BLD) for creating and editing production versions via F6400 or F2568.",
+      "keywords": [
+        "Production Versions",
+        "production version editing",
+        "production version proposals",
+        "bill of materials",
+        "task lists",
+        "business roles",
+        "master data scripts",
+        "BLD"
+      ],
+      "aliases": [
+        "BLD_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-versions"
+      ],
+      "path": "12-production-and-manufacturing/mds-bld-571.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLD_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "製造バージョンの登録 - MDS (BLD) (BLD_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese SAP S/4HANA Cloud Public Edition master data script (BLD) for creating and editing production versions via F6400 or F2568 | keywords: Production Versions, production version editing, production version proposals, bill of materials, task lists, business roles, master data scripts, BLD, BLD_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bld-573",
+      "title": "创建生产版本 - MDS (BLD) (BLD_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated master data script (BLD) for creating and editing production versions via F6400 or F2568 in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Production Versions",
+        "production version proposals",
+        "bill of materials",
+        "routings",
+        "master recipes",
+        "mass editing",
+        "business roles",
+        "BLD"
+      ],
+      "aliases": [
+        "BLD_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-versions"
+      ],
+      "path": "12-production-and-manufacturing/mds-bld-573.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLD_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建生产版本 - MDS (BLD) (BLD_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — Chinese machine-translated master data script (BLD) for creating and editing production versions via F6400 or F2568 in SAP S/4HANA Cloud Public Edition | keywords: Production Versions, production version proposals, bill of materials, routings, master recipes, mass editing, business roles, BLD, BLD_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-ble-577",
+      "title": "参照作業セットの登録 - MDS (BLE) (BLE_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data test script (MDS BLE) for creating a reference operation set in SAP S/4HANA Cloud Public Edition 2608 via CA11, Production Engineer role.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "reference operation set",
+        "master data script",
+        "routing master data",
+        "work center",
+        "business roles",
+        "control keys",
+        "plant organizational data",
+        "BLE"
+      ],
+      "aliases": [
+        "BLE_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/mds-ble-577.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLE_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "参照作業セットの登録 - MDS (BLE) (BLE_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese master data test script (MDS BLE) for creating a reference operation set in SAP S/4HANA Cloud Public Edition 2608 via CA11, Production Engineer role | keywords: Routings and Reference Operation Sets, reference operation set, master data script, routing master data, work center, business roles, control keys, plant organizational data, BLE, BLE_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-ble-579",
+      "title": "创建参考工序集 - MDS (BLE) (BLE_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 主数据脚本 (BLE): 通过 CA11 创建参考工序集 (参考工艺路线) 的步骤 (中文机器翻译)。",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "reference operation sets",
+        "master data scripts",
+        "work centers",
+        "control keys",
+        "bill of materials",
+        "purchasing info records",
+        "business roles",
+        "BLE"
+      ],
+      "aliases": [
+        "BLE_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/mds-ble-579.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLE_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建参考工序集 - MDS (BLE) (BLE_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 主数据脚本 (BLE): 通过 CA11 创建参考工序集 (参考工艺路线) 的步骤 (中文机器翻译)。 | keywords: Routings and Reference Operation Sets, reference operation sets, master data scripts, work centers, control keys, bill of materials, purchasing info records, business roles, BLE, BLE_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bnj-619",
+      "title": "製造作業区の登録 - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese SAP S/4HANA Cloud Public Edition master data script (BNJ) for creating production work centers and work center groups with F6175 and F4044.",
+      "keywords": [
+        "Production Work Centers and Work Center Groups",
+        "work centers",
+        "work center groups",
+        "work center categories",
+        "capacity planning",
+        "scheduling and costing",
+        "standard value keys",
+        "business roles",
+        "master data scripts",
+        "routings"
+      ],
+      "aliases": [
+        "BNJ_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-work-centers"
+      ],
+      "path": "12-production-and-manufacturing/mds-bnj-619.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNJ_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "製造作業区の登録 - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese SAP S/4HANA Cloud Public Edition master data script (BNJ) for creating production work centers and work center groups with F6175 and F4044 | keywords: Production Work Centers and Work Center Groups, work centers, work center groups, work center categories, capacity planning, scheduling and costing, standard value keys, business roles, master data scripts, routings, BNJ_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bnj-621",
+      "title": "创建生产工作中心 - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese machine-translated master data script (BNJ) for creating production work centers, work center groups and assignments in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Production Work Centers and Work Center Groups",
+        "work centers",
+        "work center categories",
+        "work center groups",
+        "capacity planning",
+        "costing data",
+        "standard value key",
+        "routings",
+        "business roles",
+        "BNJ"
+      ],
+      "aliases": [
+        "BNJ_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-work-centers"
+      ],
+      "path": "12-production-and-manufacturing/mds-bnj-621.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNJ_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建生产工作中心 - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — Chinese machine-translated master data script (BNJ) for creating production work centers, work center groups and assignments in SAP S/4HANA Cloud Public Edition | keywords: Production Work Centers and Work Center Groups, work centers, work center categories, work center groups, capacity planning, costing data, standard value key, routings, business roles, BNJ, BNJ_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bnk-627",
+      "title": "创建生产和销售物料清单 - MDS (BNK) (BNK_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for creating production (usage 1) and sales (usage 5) BOMs with change number.",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "bill of materials",
+        "production bom",
+        "sales bom",
+        "change numbers",
+        "bom usage",
+        "bom item categories",
+        "business roles",
+        "master data scripts",
+        "routings"
+      ],
+      "aliases": [
+        "BNK_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/mds-bnk-627.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNK_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建生产和销售物料清单 - MDS (BNK) (BNK_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — Chinese (machine-translated) SAP S/4HANA Cloud Public Edition 2608 master data script for creating production (usage 1) and sales (usage 5) BOMs with change number | keywords: Material BOMs for Production and Sales, bill of materials, production bom, sales bom, change numbers, bom usage, bom item categories, business roles, master data scripts, routings, BNK_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bnl-631",
+      "title": "マスタデータスクリプト: 作業手順の登録 - MDS (BNL) (BNL_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (MDS BNL) for creating production routings in SAP S/4HANA Cloud Public Edition 2608 via Fiori app F5425, with prerequisites and test steps.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "production routing",
+        "routing master data",
+        "master data scripts",
+        "business roles",
+        "work centers",
+        "control keys",
+        "external processing",
+        "bill of materials",
+        "plant data"
+      ],
+      "aliases": [
+        "BNL_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/mds-bnl-631.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNL_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: 作業手順の登録 - MDS (BNL) (BNL_S4CLD2608_Master_Data_JA_XX) (Production and Manufacturing) — Japanese master data script (MDS BNL) for creating production routings in SAP S/4HANA Cloud Public Edition 2608 via Fiori app F5425, with prerequisites and test steps | keywords: Routings and Reference Operation Sets, production routing, routing master data, master data scripts, business roles, work centers, control keys, external processing, bill of materials, plant data, BNL_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/mds-bnl-633",
+      "title": "创建工艺路线 - MDS (BNL) (BNL_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "主数据脚本（中文机器翻译）：通过管理工艺路线 (F5425) 为成品/半成品创建生产工艺路线，含工序、组件分配。",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "production routing",
+        "routing operations",
+        "work center usage",
+        "control keys",
+        "external processing",
+        "component assignment",
+        "master data prerequisites",
+        "business roles",
+        "BNL"
+      ],
+      "aliases": [
+        "BNL_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/mds-bnl-633.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNL_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建工艺路线 - MDS (BNL) (BNL_S4CLD2608_Master_Data_ZH_XX) (Production and Manufacturing) — 主数据脚本（中文机器翻译）：通过管理工艺路线 (F5425) 为成品/半成品创建生产工艺路线，含工序、组件分配。 | keywords: Routings and Reference Operation Sets, production routing, routing operations, work center usage, control keys, external processing, component assignment, master data prerequisites, business roles, BNL, BNL_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/produce-and-sell-standard-products-warehouse-managed-54v-ae-test-scrip",
+      "title": "Produce and Sell Standard Products – Warehouse Managed (54V_AE) – Test Script, SAP S/4HANA Cloud Public Edition (54V_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 54V_AE (UAE, plant 3310): MTS planning, repetitive and discrete production, WM-managed warehouse, QM, sales, billing and AP/AR posting.",
+      "keywords": [
+        "End-to-End Produce-and-Sell Scenarios",
+        "make-to-stock production",
+        "planned independent requirements",
+        "material requirements planning",
+        "repetitive manufacturing",
+        "production orders",
+        "warehouse tasks",
+        "production supply area",
+        "material staging",
+        "quality inspection"
+      ],
+      "aliases": [
+        "54V_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/produce-and-sell-standard-products-warehouse-managed-54v-ae-test-scrip.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/54V_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Produce and Sell Standard Products – Warehouse Managed (54V_AE) – Test Script, SAP S/4HANA Cloud Public Edition (54V_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — Test script for scope item 54V_AE (UAE, plant 3310): MTS planning, repetitive and discrete production, WM-managed warehouse, QM, sales, billing and AP/AR posting | keywords: End-to-End Produce-and-Sell Scenarios, make-to-stock production, planned independent requirements, material requirements planning, repetitive manufacturing, production orders, warehouse tasks, production supply area, material staging, quality inspection, 54V_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/production-capacity-evaluation-and-leveling-consumer-products-5oi-ae-t",
+      "title": "Production Capacity Evaluation and Leveling – Consumer Products (5OI_AE) – Test Script (5OI_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5OI_AE: PIRs, pMRP simulations, MRP, capacity evaluation and leveling for a coffee MTS process.",
+      "keywords": [
+        "Capacity Evaluation and Leveling",
+        "production capacity leveling",
+        "capacity evaluation",
+        "planned independent requirements",
+        "pmrp simulations",
+        "material requirements planning",
+        "work center capacity",
+        "production scheduling",
+        "make-to-stock production",
+        "work center schedules"
+      ],
+      "aliases": [
+        "5OI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/capacity-evaluation-and-leveling",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/production-capacity-evaluation-and-leveling-consumer-products-5oi-ae-t.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Production Capacity Evaluation and Leveling – Consumer Products (5OI_AE) – Test Script (5OI_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item 5OI_AE: PIRs, pMRP simulations, MRP, capacity evaluation and leveling for a coffee MTS process | keywords: Capacity Evaluation and Leveling, production capacity leveling, capacity evaluation, planned independent requirements, pmrp simulations, material requirements planning, work center capacity, production scheduling, make-to-stock production, work center schedules, 5OI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/production-subcontracting-external-processing-bjk-ae-1274",
+      "title": "Production Subcontracting – External Processing (BJK_AE) (BJK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (BJK_AE, UAE) for production subcontracting: external-operation production order, PO, goods receipt, supplier invoice, payment.",
+      "keywords": [
+        "Production Subcontracting and External Processing",
+        "production subcontracting",
+        "external processing",
+        "production orders",
+        "subcontract purchase orders",
+        "goods receipt",
+        "supplier invoices",
+        "purchasing info records",
+        "periodic payment",
+        "business roles"
+      ],
+      "aliases": [
+        "BJK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/subcontracting-external-processing"
+      ],
+      "path": "12-production-and-manufacturing/production-subcontracting-external-processing-bjk-ae-1274.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Production Subcontracting – External Processing (BJK_AE) (BJK_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script (BJK_AE, UAE) for production subcontracting: external-operation production order, PO, goods receipt, supplier invoice, payment | keywords: Production Subcontracting and External Processing, production subcontracting, external processing, production orders, subcontract purchase orders, goods receipt, supplier invoices, purchasing info records, periodic payment, business roles, BJK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/rework-processing-stock-manufactured-material-bjn-ae-test-script-1275",
+      "title": "Rework Processing – Stock-Manufactured Material (BJN_AE) Test Script (BJN_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item BJN (AE): rework production order for stock-manufactured material, from order creation to goods receipt.",
+      "keywords": [
+        "Rework Processing",
+        "rework production order",
+        "goods issue",
+        "goods receipt",
+        "production confirmation",
+        "test scripts",
+        "production order release",
+        "manage production operations",
+        "goods movement slips",
+        "business roles"
+      ],
+      "aliases": [
+        "BJN_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/rework-processing"
+      ],
+      "path": "12-production-and-manufacturing/rework-processing-stock-manufactured-material-bjn-ae-test-script-1275.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJN_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Rework Processing – Stock-Manufactured Material (BJN_AE) Test Script (BJN_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item BJN (AE): rework production order for stock-manufactured material, from order creation to goods receipt | keywords: Rework Processing, rework production order, goods issue, goods receipt, production confirmation, test scripts, production order release, manage production operations, goods movement slips, business roles, BJN_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-dados-mestre-criar-centro-de-trabalho-da-producao-mds-bnj-62",
+      "title": "Script de dados mestre - Criar centro de trabalho da produção – MDS (BNJ) (BNJ_S4CLD2608_Master_Data_PT_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (Portuguese) for creating production work centers and optional work center groups via Fiori apps.",
+      "keywords": [
+        "Production Work Centers and Work Center Groups",
+        "work centers",
+        "work center groups",
+        "work center category",
+        "master data scripts",
+        "business roles",
+        "standard value keys",
+        "capacity planning",
+        "routings",
+        "production costing"
+      ],
+      "aliases": [
+        "BNJ_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-work-centers"
+      ],
+      "path": "12-production-and-manufacturing/script-de-dados-mestre-criar-centro-de-trabalho-da-producao-mds-bnj-62.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNJ_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar centro de trabalho da produção – MDS (BNJ) (BNJ_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 master data script (Portuguese) for creating production work centers and optional work center groups via Fiori apps | keywords: Production Work Centers and Work Center Groups, work centers, work center groups, work center category, master data scripts, business roles, standard value keys, capacity planning, routings, production costing, BNJ_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-dados-mestre-criar-conjunto-de-operacoes-de-referencia-mds-b",
+      "title": "Script de dados mestre: Criar conjunto de operações de referência – MDS (BLE) (BLE_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud master data script BLE: create a reference operation set (standard task list) in transaction CA11 for discrete production.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "reference operation set",
+        "task lists",
+        "routing operations",
+        "work centers",
+        "control keys",
+        "master data scripts",
+        "business roles",
+        "organizational units",
+        "bill of materials"
+      ],
+      "aliases": [
+        "BLE_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/script-de-dados-mestre-criar-conjunto-de-operacoes-de-referencia-mds-b.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLE_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar conjunto de operações de referência – MDS (BLE) (BLE_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese SAP S/4HANA Cloud master data script BLE: create a reference operation set (standard task list) in transaction CA11 for discrete production | keywords: Routings and Reference Operation Sets, reference operation set, task lists, routing operations, work centers, control keys, master data scripts, business roles, organizational units, bill of materials, BLE_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-dados-mestre-criar-lista-tecnica-de-materiais-para-producao",
+      "title": "Script de dados mestre - Criar lista técnica de materiais para produção e vendas (BNK), PT (BNK_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese SAP S/4HANA Cloud Public Edition 2608 master data script (BNK): create material BOMs for production and sales, with test steps.",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "bill of materials",
+        "production bom",
+        "sales bom",
+        "change number",
+        "business roles",
+        "bom usage",
+        "bom item categories",
+        "master data scripts",
+        "routing"
+      ],
+      "aliases": [
+        "BNK_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/script-de-dados-mestre-criar-lista-tecnica-de-materiais-para-producao.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNK_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar lista técnica de materiais para produção e vendas (BNK), PT (BNK_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese SAP S/4HANA Cloud Public Edition 2608 master data script (BNK): create material BOMs for production and sales, with test steps | keywords: Material BOMs for Production and Sales, bill of materials, production bom, sales bom, change number, business roles, bom usage, bom item categories, master data scripts, routing, BNK_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-dados-mestre-criar-meio-auxiliar-de-producao-mds-5cp-440",
+      "title": "Script de dados mestre - Criar meio auxiliar de produção - MDS (5CP) (5CP_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (5CP) for SAP S/4HANA Cloud: creating production resources/tools (MAP/PRT) and assigning them to routings and production orders.",
+      "keywords": [
+        "Production Resources/Tools (PRTs)",
+        "production resources tools",
+        "master data script",
+        "material PRT creation",
+        "equipment PRT creation",
+        "document PRT creation",
+        "routing assignment",
+        "production order assignment",
+        "business roles",
+        "prt status"
+      ],
+      "aliases": [
+        "5CP_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-resources-tools"
+      ],
+      "path": "12-production-and-manufacturing/script-de-dados-mestre-criar-meio-auxiliar-de-producao-mds-5cp-440.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5CP_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar meio auxiliar de produção - MDS (5CP) (5CP_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese master data script (5CP) for SAP S/4HANA Cloud: creating production resources/tools (MAP/PRT) and assigning them to routings and production orders | keywords: Production Resources/Tools (PRTs), production resources tools, master data script, material PRT creation, equipment PRT creation, document PRT creation, routing assignment, production order assignment, business roles, prt status, 5CP_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-dados-mestre-criar-recurso-mds-3x8-380",
+      "title": "Script de dados mestre: Criar recurso - MDS (3X8) (3X8_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data/test script (3X8) for creating a resource (category 0008 processing unit) with app F6176 in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "resources",
+        "resource creation",
+        "resource types",
+        "capacity planning",
+        "default value keys",
+        "business roles",
+        "master recipes",
+        "process manufacturing",
+        "3X8"
+      ],
+      "aliases": [
+        "3X8_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/script-de-dados-mestre-criar-recurso-mds-3x8-380.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X8_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar recurso - MDS (3X8) (3X8_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese master data/test script (3X8) for creating a resource (category 0008 processing unit) with app F6176 in SAP S/4HANA Cloud Public Edition 2608 | keywords: Process Manufacturing Resources and Master Recipes, resources, resource creation, resource types, capacity planning, default value keys, business roles, master recipes, process manufacturing, 3X8, 3X8_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-dados-mestre-criar-versao-de-producao-mds-bld-572",
+      "title": "Script de dados mestre: Criar versão de produção - MDS (BLD) (BLD_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script for SAP S/4HANA Cloud Public Edition: creating and editing a production version (F6400, F2568), with roles and required master data.",
+      "keywords": [
+        "Production Versions",
+        "master data scripts",
+        "editing production versions",
+        "bill of materials",
+        "task lists",
+        "material master",
+        "business roles",
+        "plant organizational data",
+        "production engineering",
+        "BLD"
+      ],
+      "aliases": [
+        "BLD_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-versions"
+      ],
+      "path": "12-production-and-manufacturing/script-de-dados-mestre-criar-versao-de-producao-mds-bld-572.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLD_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre: Criar versão de produção - MDS (BLD) (BLD_S4CLD2608_Master_Data_PT_XX) (Production and Manufacturing) — Portuguese master data script for SAP S/4HANA Cloud Public Edition: creating and editing a production version (F6400, F2568), with roles and required master data | keywords: Production Versions, master data scripts, editing production versions, bill of materials, task lists, material master, business roles, plant organizational data, production engineering, BLD, BLD_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-datos-maestros-creacion-de-medios-auxiliares-de-fabricacion",
+      "title": "Script de datos maestros - Creación de medios auxiliares de fabricación - MDS (5CP) (5CP_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish SAP S/4HANA Cloud Public Edition 2608 master data script (5CP) for creating production resources/tools (MAF) and assigning them to routings and production orders.",
+      "keywords": [
+        "Production Resources/Tools (PRTs)",
+        "production resources tools",
+        "material prt creation",
+        "miscellaneous prt creation",
+        "document prt creation",
+        "equipment prt creation",
+        "prt assignment to routing",
+        "prt assignment to production order",
+        "prt status",
+        "prt control key"
+      ],
+      "aliases": [
+        "5CP_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-resources-tools"
+      ],
+      "path": "12-production-and-manufacturing/script-de-datos-maestros-creacion-de-medios-auxiliares-de-fabricacion.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5CP_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de medios auxiliares de fabricación - MDS (5CP) (5CP_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish SAP S/4HANA Cloud Public Edition 2608 master data script (5CP) for creating production resources/tools (MAF) and assigning them to routings and production orders | keywords: Production Resources/Tools (PRTs), production resources tools, material prt creation, miscellaneous prt creation, document prt creation, equipment prt creation, prt assignment to routing, prt assignment to production order, prt status, prt control key, 5CP_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-datos-maestros-creacion-de-receta-de-planificacion-mds-3x9-3",
+      "title": "Script de datos maestros: Creación de receta de planificación - MDS (3X9) (3X9_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script for scope item 3X9: creating a master recipe in SAP S/4HANA Cloud Public Edition via Fiori app F5426.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "master recipe",
+        "master recipe creation",
+        "process manufacturing",
+        "business roles",
+        "master data prerequisites",
+        "recipe usage key",
+        "change management",
+        "production version",
+        "3X9"
+      ],
+      "aliases": [
+        "3X9_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/script-de-datos-maestros-creacion-de-receta-de-planificacion-mds-3x9-3.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X9_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Creación de receta de planificación - MDS (3X9) (3X9_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish (machine-translated) master data script for scope item 3X9: creating a master recipe in SAP S/4HANA Cloud Public Edition via Fiori app F5426 | keywords: Process Manufacturing Resources and Master Recipes, master recipe, master recipe creation, process manufacturing, business roles, master data prerequisites, recipe usage key, change management, production version, 3X9, 3X9_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-datos-maestros-creacion-de-version-de-produccion-mds-bld-570",
+      "title": "Script de datos maestros: Creación de versión de producción - MDS (BLD) (BLD_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) master data script for creating and editing production versions in SAP S/4HANA Cloud Public Edition via Fiori apps F6400 and F2568.",
+      "keywords": [
+        "Production Versions",
+        "create production version",
+        "edit production version",
+        "bill of materials",
+        "routings",
+        "material master",
+        "business roles",
+        "master data scripts",
+        "plant organizational unit",
+        "BLD"
+      ],
+      "aliases": [
+        "BLD_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-versions"
+      ],
+      "path": "12-production-and-manufacturing/script-de-datos-maestros-creacion-de-version-de-produccion-mds-bld-570.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLD_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Creación de versión de producción - MDS (BLD) (BLD_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish (machine-translated) master data script for creating and editing production versions in SAP S/4HANA Cloud Public Edition via Fiori apps F6400 and F2568 | keywords: Production Versions, create production version, edit production version, bill of materials, routings, material master, business roles, master data scripts, plant organizational unit, BLD, BLD_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-datos-maestros-crear-hoja-de-ruta-estandar-mds-ble-576",
+      "title": "Script de datos maestros - Crear hoja de ruta estándar - MDS (BLE) (BLE_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script BLE: create a reference (standard) routing with transaction CA11.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "reference routing",
+        "routing operations",
+        "work centers",
+        "control keys",
+        "work center usage",
+        "plant organizational data",
+        "business roles",
+        "master data scripts",
+        "BLE"
+      ],
+      "aliases": [
+        "BLE_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/script-de-datos-maestros-crear-hoja-de-ruta-estandar-mds-ble-576.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLE_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear hoja de ruta estándar - MDS (BLE) (BLE_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish (machine-translated) SAP S/4HANA Cloud 2608 master data script BLE: create a reference (standard) routing with transaction CA11 | keywords: Routings and Reference Operation Sets, reference routing, routing operations, work centers, control keys, work center usage, plant organizational data, business roles, master data scripts, BLE, BLE_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/script-de-datos-maestros-crear-puesto-de-trabajo-de-produccion-mds-bnj",
+      "title": "Script de datos maestros - Crear puesto de trabajo de producción - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish SAP S/4HANA Cloud Public Edition 2608 master data test script BNJ: create a production work center (F6175) and optionally work center groups (F4044).",
+      "keywords": [
+        "Production Work Centers and Work Center Groups",
+        "work centers",
+        "work center groups",
+        "capacity planning",
+        "standard value keys",
+        "work center categories",
+        "cost calculation",
+        "routings",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "BNJ_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-work-centers"
+      ],
+      "path": "12-production-and-manufacturing/script-de-datos-maestros-crear-puesto-de-trabajo-de-produccion-mds-bnj.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNJ_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Crear puesto de trabajo de producción - MDS (BNJ) (BNJ_S4CLD2608_Master_Data_ES_XX) (Production and Manufacturing) — Spanish SAP S/4HANA Cloud Public Edition 2608 master data test script BNJ: create a production work center (F6175) and optionally work center groups (F4044) | keywords: Production Work Centers and Work Center Groups, work centers, work center groups, capacity planning, standard value keys, work center categories, cost calculation, routings, business roles, test scripts, BNJ_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/stammdatenskript-fertigungshilfsmittel-anlegen-sds-5cp-436",
+      "title": "Stammdatenskript - Fertigungshilfsmittel anlegen - SDS (5CP) (5CP_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (5CP) for SAP S/4HANA Cloud 2608: creating production resources/tools (FHM) of four types and assigning them to routings and production orders.",
+      "keywords": [
+        "Production Resources/Tools (PRTs)",
+        "production resources tools",
+        "material prt",
+        "other prt",
+        "document prt",
+        "equipment prt",
+        "routing assignment",
+        "production order assignment",
+        "prt status",
+        "prt control key"
+      ],
+      "aliases": [
+        "5CP_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-resources-tools"
+      ],
+      "path": "12-production-and-manufacturing/stammdatenskript-fertigungshilfsmittel-anlegen-sds-5cp-436.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/5CP_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Fertigungshilfsmittel anlegen - SDS (5CP) (5CP_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German master data script (5CP) for SAP S/4HANA Cloud 2608: creating production resources/tools (FHM) of four types and assigning them to routings and production orders | keywords: Production Resources/Tools (PRTs), production resources tools, material prt, other prt, document prt, equipment prt, routing assignment, production order assignment, prt status, prt control key, 5CP_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/stammdatenskript-materialstuckliste-fur-produktion-und-vertrieb-anlege",
+      "title": "Stammdatenskript - Materialstückliste für Produktion und Vertrieb anlegen (BNK), DE (BNK_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition 2608 master data script (BNK): create material BOMs for production and sales, with test steps.",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "bill of materials",
+        "production bom",
+        "sales bom",
+        "change number",
+        "business roles",
+        "bom usage",
+        "bom item categories",
+        "master data scripts",
+        "routing"
+      ],
+      "aliases": [
+        "BNK_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/stammdatenskript-materialstuckliste-fur-produktion-und-vertrieb-anlege.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNK_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Materialstückliste für Produktion und Vertrieb anlegen (BNK), DE (BNK_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German SAP S/4HANA Cloud Public Edition 2608 master data script (BNK): create material BOMs for production and sales, with test steps | keywords: Material BOMs for Production and Sales, bill of materials, production bom, sales bom, change number, business roles, bom usage, bom item categories, master data scripts, routing, BNK_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/stammdatenskript-planungsrezept-anlegen-sds-3x9-382",
+      "title": "Stammdatenskript - Planungsrezept anlegen (SDS, 3X9) (3X9_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (scope 3X9) for creating a planning recipe in process industry in SAP S/4HANA Cloud Public Edition, with prerequisites and 18 test steps.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "planning recipe",
+        "process manufacturing",
+        "recipe operations and phases",
+        "production versions",
+        "plan usage",
+        "change management",
+        "mandatory master data",
+        "master data scripts",
+        "3X9"
+      ],
+      "aliases": [
+        "3X9_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/stammdatenskript-planungsrezept-anlegen-sds-3x9-382.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X9_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript - Planungsrezept anlegen (SDS, 3X9) (3X9_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German master data script (scope 3X9) for creating a planning recipe in process industry in SAP S/4HANA Cloud Public Edition, with prerequisites and 18 test steps | keywords: Process Manufacturing Resources and Master Recipes, planning recipe, process manufacturing, recipe operations and phases, production versions, plan usage, change management, mandatory master data, master data scripts, 3X9, 3X9_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/stammdatenskript-produktionsarbeitsplatz-anlegen-sds-bnj-616",
+      "title": "Stammdatenskript: Produktionsarbeitsplatz anlegen – SDS (BNJ) (BNJ_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud Public Edition test script (BNJ) for creating a production work center and optionally work center groups; lists roles, parameters and steps.",
+      "keywords": [
+        "Production Work Centers and Work Center Groups",
+        "work centers",
+        "work center groups",
+        "work center category",
+        "capacity planning",
+        "default value keys",
+        "business roles",
+        "master data scripts",
+        "routings",
+        "BNJ"
+      ],
+      "aliases": [
+        "BNJ_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-work-centers"
+      ],
+      "path": "12-production-and-manufacturing/stammdatenskript-produktionsarbeitsplatz-anlegen-sds-bnj-616.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BNJ_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Produktionsarbeitsplatz anlegen – SDS (BNJ) (BNJ_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German SAP S/4HANA Cloud Public Edition test script (BNJ) for creating a production work center and optionally work center groups; lists roles, parameters and steps | keywords: Production Work Centers and Work Center Groups, work centers, work center groups, work center category, capacity planning, default value keys, business roles, master data scripts, routings, BNJ, BNJ_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/stammdatenskript-produktionsversorgungsbereich-anlegen-sds-40d-400",
+      "title": "Stammdatenskript: Produktionsversorgungsbereich anlegen – SDS (40D) (40D_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (40D) for creating a production supply area (PVB) in SAP S/4HANA Cloud Public Edition via Fiori apps PK05S or F6935.",
+      "keywords": [
+        "Production Supply Areas",
+        "production supply area",
+        "master data script",
+        "test procedure",
+        "lean manufacturing",
+        "user roles",
+        "organizational units",
+        "fiori launchpad",
+        "40D"
+      ],
+      "aliases": [
+        "40D_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-supply-areas"
+      ],
+      "path": "12-production-and-manufacturing/stammdatenskript-produktionsversorgungsbereich-anlegen-sds-40d-400.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/40D_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Produktionsversorgungsbereich anlegen – SDS (40D) (40D_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German master data script (40D) for creating a production supply area (PVB) in SAP S/4HANA Cloud Public Edition via Fiori apps PK05S or F6935 | keywords: Production Supply Areas, production supply area, master data script, test procedure, lean manufacturing, user roles, organizational units, fiori launchpad, 40D, 40D_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/stammdatenskript-ressource-anlegen-sds-3x8-376",
+      "title": "Stammdatenskript: Ressource anlegen - SDS (3X8) (3X8_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data/test script (3X8) for creating a resource (type 0008 processing unit) with app F6176 in SAP S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Process Manufacturing Resources and Master Recipes",
+        "resources",
+        "resource creation",
+        "resource types",
+        "capacity planning",
+        "default value keys",
+        "business roles",
+        "master recipes",
+        "process manufacturing",
+        "3X8"
+      ],
+      "aliases": [
+        "3X8_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/process-resources-and-master-recipes"
+      ],
+      "path": "12-production-and-manufacturing/stammdatenskript-ressource-anlegen-sds-3x8-376.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/3X8_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Ressource anlegen - SDS (3X8) (3X8_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German master data/test script (3X8) for creating a resource (type 0008 processing unit) with app F6176 in SAP S/4HANA Cloud Public Edition 2608 | keywords: Process Manufacturing Resources and Master Recipes, resources, resource creation, resource types, capacity planning, default value keys, business roles, master recipes, process manufacturing, 3X8, 3X8_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/standardarbeitsplan-anlegen-sds-ble-574",
+      "title": "Standardarbeitsplan anlegen – SDS (BLE) (BLE_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud master data script (BLE): create a standard routing (reference operation set) with CA11, including prerequisites and test steps.",
+      "keywords": [
+        "Routings and Reference Operation Sets",
+        "standard routing",
+        "routing master data",
+        "control keys",
+        "work center",
+        "plant dependency",
+        "bill of materials",
+        "business roles",
+        "work center usage",
+        "BLE"
+      ],
+      "aliases": [
+        "BLE_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/routings-and-reference-operation-sets"
+      ],
+      "path": "12-production-and-manufacturing/standardarbeitsplan-anlegen-sds-ble-574.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BLE_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Standardarbeitsplan anlegen – SDS (BLE) (BLE_S4CLD2608_Master_Data_DE_XX) (Production and Manufacturing) — German SAP S/4HANA Cloud master data script (BLE): create a standard routing (reference operation set) with CA11, including prerequisites and test steps | keywords: Routings and Reference Operation Sets, standard routing, routing master data, control keys, work center, plant dependency, bill of materials, business roles, work center usage, BLE, BLE_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-bill-of-material-management-64f-ae-sap-s-4hana-cloud-publi",
+      "title": "Test Script: Bill of Material Management (64F_AE) - SAP S/4HANA Cloud Public Edition (64F_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 64F: BOM creation, major/minor change, handover to manufacturing, where-used and mass maintenance.",
+      "keywords": [
+        "Material BOMs for Production and Sales",
+        "bill of material management",
+        "bill of material creation",
+        "change masters",
+        "bom changes",
+        "preliminary bom items",
+        "bom groupings",
+        "where-used mass replacement",
+        "engineering to manufacturing bom",
+        "bom mass maintenance"
+      ],
+      "aliases": [
+        "64F_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/material-boms"
+      ],
+      "path": "12-production-and-manufacturing/test-script-bill-of-material-management-64f-ae-sap-s-4hana-cloud-publi.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/64F_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Bill of Material Management (64F_AE) - SAP S/4HANA Cloud Public Edition (64F_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 64F: BOM creation, major/minor change, handover to manufacturing, where-used and mass maintenance | keywords: Material BOMs for Production and Sales, bill of material management, bill of material creation, change masters, bom changes, preliminary bom items, bom groupings, where-used mass replacement, engineering to manufacturing bom, bom mass maintenance, 64F_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-capacity-planning-evaluation-scope-item-31l-sap-s-4hana-cl",
+      "title": "Test Script - Capacity Planning Evaluation (scope item 31L), SAP S/4HANA Cloud Public Edition 2608 (31L_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for capacity evaluation in make-to-stock Discrete and Process Manufacturing: PIRs, MRP, bottleneck check, shift changes, order conversion.",
+      "keywords": [
+        "Capacity Evaluation and Leveling",
+        "capacity planning evaluation",
+        "planned independent requirements",
+        "material requirements planning",
+        "work center capacity",
+        "capacity bottlenecks",
+        "planned order conversion",
+        "work center groups",
+        "discrete manufacturing",
+        "process manufacturing"
+      ],
+      "aliases": [
+        "31L_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/capacity-evaluation-and-leveling"
+      ],
+      "path": "12-production-and-manufacturing/test-script-capacity-planning-evaluation-scope-item-31l-sap-s-4hana-cl.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/31L_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Capacity Planning Evaluation (scope item 31L), SAP S/4HANA Cloud Public Edition 2608 (31L_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP test script for capacity evaluation in make-to-stock Discrete and Process Manufacturing: PIRs, MRP, bottleneck check, shift changes, order conversion | keywords: Capacity Evaluation and Leveling, capacity planning evaluation, planned independent requirements, material requirements planning, work center capacity, capacity bottlenecks, planned order conversion, work center groups, discrete manufacturing, process manufacturing, 31L_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-demand-driven-buffer-level-management-1y2-ae-sap-s-4hana-c",
+      "title": "Test Script: Demand-Driven Buffer Level Management (1Y2_AE) - SAP S/4HANA Cloud Public Edition (1Y2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 1Y2 (AE): demand-driven buffer positioning, buffer sizing and buffer level management, plus pMRP use cases.",
+      "keywords": [
+        "Demand-Driven Replenishment (DDMRP)",
+        "demand-driven replenishment",
+        "buffer positioning",
+        "product classification",
+        "decoupled lead time",
+        "buffer sizing",
+        "buffer proposal calculation",
+        "buffer levels",
+        "buffer profiles",
+        "predictive mrp"
+      ],
+      "aliases": [
+        "1Y2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/demand-driven-replenishment"
+      ],
+      "path": "12-production-and-manufacturing/test-script-demand-driven-buffer-level-management-1y2-ae-sap-s-4hana-c.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1Y2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Demand-Driven Buffer Level Management (1Y2_AE) - SAP S/4HANA Cloud Public Edition (1Y2_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud 2608 test script for scope item 1Y2 (AE): demand-driven buffer positioning, buffer sizing and buffer level management, plus pMRP use cases | keywords: Demand-Driven Replenishment (DDMRP), demand-driven replenishment, buffer positioning, product classification, decoupled lead time, buffer sizing, buffer proposal calculation, buffer levels, buffer profiles, predictive mrp, 1Y2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-demand-driven-replenishment-planning-and-execution-2qi-ae",
+      "title": "Test Script: Demand-Driven Replenishment Planning and Execution (2QI_AE) (2QI_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud test script for scope item 2QI_AE: demand-driven replenishment planning, execution, projected on-hand alerts and buffer performance (plant 3310).",
+      "keywords": [
+        "Demand-Driven Replenishment (DDMRP)",
+        "demand-driven replenishment",
+        "replenishment planning",
+        "replenishment execution",
+        "projected on-hand alerts",
+        "historical buffer performance",
+        "net flow position",
+        "mrp type",
+        "planner overview",
+        "mrp runs"
+      ],
+      "aliases": [
+        "2QI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/demand-driven-replenishment"
+      ],
+      "path": "12-production-and-manufacturing/test-script-demand-driven-replenishment-planning-and-execution-2qi-ae.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2QI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Demand-Driven Replenishment Planning and Execution (2QI_AE) (2QI_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — S/4HANA Cloud test script for scope item 2QI_AE: demand-driven replenishment planning, execution, projected on-hand alerts and buffer performance (plant 3310) | keywords: Demand-Driven Replenishment (DDMRP), demand-driven replenishment, replenishment planning, replenishment execution, projected on-hand alerts, historical buffer performance, net flow position, mrp type, planner overview, mrp runs, 2QI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-engineer-to-order-production-with-variant-configuration-4r",
+      "title": "Test Script: Engineer-to-Order Production with Variant Configuration (4R8_AE) (4R8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4R8 (AE): ETO sales order, Order BOM creation and acceptance of engineering changes.",
+      "keywords": [
+        "Engineer-to-Order with Variant Configuration",
+        "engineer-to-order",
+        "variant configuration",
+        "order bom",
+        "sales order creation",
+        "engineering changes acceptance",
+        "configuration profile",
+        "sample master data",
+        "business roles",
+        "demo data update behavior"
+      ],
+      "aliases": [
+        "4R8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/engineer-to-order-variant-configuration"
+      ],
+      "path": "12-production-and-manufacturing/test-script-engineer-to-order-production-with-variant-configuration-4r.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4R8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Engineer-to-Order Production with Variant Configuration (4R8_AE) (4R8_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4R8 (AE): ETO sales order, Order BOM creation and acceptance of engineering changes | keywords: Engineer-to-Order with Variant Configuration, engineer-to-order, variant configuration, order bom, sales order creation, engineering changes acceptance, configuration profile, sample master data, business roles, demo data update behavior, 4R8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-lot-size-of-one-based-on-make-to-order-7dw-ae-sap-s-4hana",
+      "title": "Test Script: Lot Size of One based on Make to Order (7DW_AE) - SAP S/4HANA Cloud Public Edition (7DW_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7DW (AE): make-to-order lot size one, from sales order and down payment through production, QM, delivery, billing, payments.",
+      "keywords": [
+        "Make-to-Order Production",
+        "make to order",
+        "sales orders",
+        "milestone billing plan",
+        "down payments",
+        "mrp run",
+        "production orders",
+        "batch management",
+        "quality inspection",
+        "outbound delivery"
+      ],
+      "aliases": [
+        "7DW_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-order-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-lot-size-of-one-based-on-make-to-order-7dw-ae-sap-s-4hana.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7DW_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lot Size of One based on Make to Order (7DW_AE) - SAP S/4HANA Cloud Public Edition (7DW_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7DW (AE): make-to-order lot size one, from sales order and down payment through production, QM, delivery, billing, payments | keywords: Make-to-Order Production, make to order, sales orders, milestone billing plan, down payments, mrp run, production orders, batch management, quality inspection, outbound delivery, 7DW_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-lot-size-of-one-with-advanced-variant-configuration-55e-ae",
+      "title": "Test Script: Lot Size of One with Advanced Variant Configuration (55E_AE) (55E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 55E (AE): make-to-order robot with advanced variant configuration, from inquiry to payments.",
+      "keywords": [
+        "Production of Variant-Configured Products",
+        "lot size of one",
+        "advanced variant configuration",
+        "make-to-order production",
+        "test scripts",
+        "sales inquiry and quotation",
+        "material requirements planning",
+        "component procurement",
+        "stock transport orders",
+        "production orders"
+      ],
+      "aliases": [
+        "55E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/variant-configured-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-lot-size-of-one-with-advanced-variant-configuration-55e-ae.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/55E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Lot Size of One with Advanced Variant Configuration (55E_AE) (55E_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 55E (AE): make-to-order robot with advanced variant configuration, from inquiry to payments | keywords: Production of Variant-Configured Products, lot size of one, advanced variant configuration, make-to-order production, test scripts, sales inquiry and quotation, material requirements planning, component procurement, stock transport orders, production orders, 55E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-order-production-finished-goods-sales-and-final-as",
+      "title": "Test Script: Make-to-Order Production – Finished Goods Sales and Final Assembly (BJE_AE) (BJE_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item BJE: make-to-order quotation, sales order, MRP, production, delivery and billing steps.",
+      "keywords": [
+        "Make-to-Order Production",
+        "sales quotation",
+        "sales order processing",
+        "order bom",
+        "material requirements planning",
+        "production orders",
+        "production confirmation",
+        "goods receipt",
+        "delivery processing",
+        "billing"
+      ],
+      "aliases": [
+        "BJE_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-order-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-order-production-finished-goods-sales-and-final-as.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJE_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Order Production – Finished Goods Sales and Final Assembly (BJE_AE) (BJE_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item BJE: make-to-order quotation, sales order, MRP, production, delivery and billing steps | keywords: Make-to-Order Production, sales quotation, sales order processing, order bom, material requirements planning, production orders, production confirmation, goods receipt, delivery processing, billing, BJE_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-order-production-process-manufacturing-3ok-ae-966",
+      "title": "Test Script: Make-to-Order Production – Process Manufacturing (3OK_AE) (3OK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 3OK: make-to-order process manufacturing from sales order/quotation through MRP, process order, delivery and billing.",
+      "keywords": [
+        "Make-to-Order Production",
+        "process manufacturing",
+        "sales order processing",
+        "sales quotations",
+        "material requirements planning",
+        "process order processing",
+        "goods issue",
+        "process order confirmation",
+        "delivery processing",
+        "billing documents"
+      ],
+      "aliases": [
+        "3OK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-order-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-order-production-process-manufacturing-3ok-ae-966.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3OK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Order Production – Process Manufacturing (3OK_AE) (3OK_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 3OK: make-to-order process manufacturing from sales order/quotation through MRP, process order, delivery and billing | keywords: Make-to-Order Production, process manufacturing, sales order processing, sales quotations, material requirements planning, process order processing, goods issue, process order confirmation, delivery processing, billing documents, 3OK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-order-production-with-variant-configuration-1yt-ae",
+      "title": "Test Script: Make-to-Order Production with Variant Configuration (1YT_AE) - SAP S/4HANA Cloud Public Edition (1YT_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script for scope item 1YT_AE: make-to-order production of configurable fork lifters, from quotation to billing.",
+      "keywords": [
+        "Production of Variant-Configured Products",
+        "make-to-order production",
+        "variant configuration",
+        "test scripts",
+        "sales order creation",
+        "sales quotation",
+        "multilevel configurable material",
+        "production order processing",
+        "down payment",
+        "billing plan"
+      ],
+      "aliases": [
+        "1YT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/variant-configured-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-order-production-with-variant-configuration-1yt-ae.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1YT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Order Production with Variant Configuration (1YT_AE) - SAP S/4HANA Cloud Public Edition (1YT_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud 2608 (AE) test script for scope item 1YT_AE: make-to-order production of configurable fork lifters, from quotation to billing | keywords: Production of Variant-Configured Products, make-to-order production, variant configuration, test scripts, sales order creation, sales quotation, multilevel configurable material, production order processing, down payment, billing plan, 1YT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-stock-process-manufacturing-based-on-production-or",
+      "title": "Test Script: Make-to-Stock – Process Manufacturing Based on Production Order (2UG_AE) (2UG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2UG_AE: MTS process manufacturing via production orders, from PIRs and MRP to confirmation and scrap review.",
+      "keywords": [
+        "Make-to-Stock Process Manufacturing",
+        "make-to-stock production",
+        "process manufacturing",
+        "production orders",
+        "planned independent requirements",
+        "material requirements planning",
+        "goods issue",
+        "production confirmation",
+        "test scripts",
+        "stock requirements evaluation"
+      ],
+      "aliases": [
+        "2UG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-stock-process-manufacturing"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-stock-process-manufacturing-based-on-production-or.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Stock – Process Manufacturing Based on Production Order (2UG_AE) (2UG_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item 2UG_AE: MTS process manufacturing via production orders, from PIRs and MRP to confirmation and scrap review | keywords: Make-to-Stock Process Manufacturing, make-to-stock production, process manufacturing, production orders, planned independent requirements, material requirements planning, goods issue, production confirmation, test scripts, stock requirements evaluation, 2UG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-stock-production-discrete-manufacturing-bj5-ae-sap",
+      "title": "Test Script: Make-to-Stock Production – Discrete Manufacturing (BJ5_AE), SAP S/4HANA Cloud Public Edition (BJ5_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item BJ5_AE: MTS discrete manufacturing from PIRs and MRP to production orders and goods receipt.",
+      "keywords": [
+        "Make-to-Stock Discrete and Repetitive Manufacturing",
+        "make-to-stock production",
+        "planned independent requirements",
+        "material requirements planning",
+        "planned order conversion",
+        "material availability status",
+        "material staging",
+        "production order release",
+        "production order confirmation",
+        "goods receipt posting"
+      ],
+      "aliases": [
+        "BJ5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-stock-discrete-and-repetitive"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-stock-production-discrete-manufacturing-bj5-ae-sap.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJ5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Stock Production – Discrete Manufacturing (BJ5_AE), SAP S/4HANA Cloud Public Edition (BJ5_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item BJ5_AE: MTS discrete manufacturing from PIRs and MRP to production orders and goods receipt | keywords: Make-to-Stock Discrete and Repetitive Manufacturing, make-to-stock production, planned independent requirements, material requirements planning, planned order conversion, material availability status, material staging, production order release, production order confirmation, goods receipt posting, BJ5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-stock-production-repetitive-manufacturing-bjh-ae-s",
+      "title": "Test Script: Make-to-Stock Production – Repetitive Manufacturing (BJH_AE), SAP S/4HANA Cloud Public Edition (BJH_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script for scope item BJH_AE: repetitive manufacturing from PIRs and MRP to planning table, staging, REM backflush, error handling.",
+      "keywords": [
+        "Make-to-Stock Discrete and Repetitive Manufacturing",
+        "repetitive manufacturing",
+        "make-to-stock production",
+        "planned independent requirements",
+        "material requirements planning",
+        "planning table",
+        "stock coverage",
+        "atp check",
+        "material staging",
+        "backflush confirmation"
+      ],
+      "aliases": [
+        "BJH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-stock-discrete-and-repetitive"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-stock-production-repetitive-manufacturing-bjh-ae-s.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Stock Production – Repetitive Manufacturing (BJH_AE), SAP S/4HANA Cloud Public Edition (BJH_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP Best Practices test script for scope item BJH_AE: repetitive manufacturing from PIRs and MRP to planning table, staging, REM backflush, error handling | keywords: Make-to-Stock Discrete and Repetitive Manufacturing, repetitive manufacturing, make-to-stock production, planned independent requirements, material requirements planning, planning table, stock coverage, atp check, material staging, backflush confirmation, BJH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-stock-production-with-variant-configuration-21d-ae",
+      "title": "Test Script: Make-to-Stock Production with Variant Configuration (21D_AE) (21D_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 21D_AE: prerequisites and steps to produce, stock, sell and bill forklifter material variants.",
+      "keywords": [
+        "Production of Variant-Configured Products",
+        "make-to-stock production",
+        "variant configuration",
+        "material variants",
+        "variant matching",
+        "sales order processing",
+        "test procedures",
+        "preliminary steps",
+        "initial stock posting",
+        "configurable bill of material"
+      ],
+      "aliases": [
+        "21D_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/variant-configured-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-stock-production-with-variant-configuration-21d-ae.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/21D_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Stock Production with Variant Configuration (21D_AE) (21D_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item 21D_AE: prerequisites and steps to produce, stock, sell and bill forklifter material variants | keywords: Production of Variant-Configured Products, make-to-stock production, variant configuration, material variants, variant matching, sales order processing, test procedures, preliminary steps, initial stock posting, configurable bill of material, 21D_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-make-to-stock-with-co-and-by-products-process-manufacturin",
+      "title": "Test Script: Make-to-Stock with Co- and By-Products – Process Manufacturing (3L7_AE) (3L7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 3L7 (AE): make-to-stock process manufacturing with co- and by-products, from PIRs and MRP to goods receipt.",
+      "keywords": [
+        "Make-to-Stock Process Manufacturing",
+        "process manufacturing",
+        "co-products and by-products",
+        "process orders",
+        "planned independent requirements",
+        "material requirements planning",
+        "goods issue",
+        "goods receipt",
+        "production confirmation",
+        "stock requirements analysis"
+      ],
+      "aliases": [
+        "3L7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/make-to-stock-process-manufacturing"
+      ],
+      "path": "12-production-and-manufacturing/test-script-make-to-stock-with-co-and-by-products-process-manufacturin.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3L7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Make-to-Stock with Co- and By-Products – Process Manufacturing (3L7_AE) (3L7_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud test script for scope item 3L7 (AE): make-to-stock process manufacturing with co- and by-products, from PIRs and MRP to goods receipt | keywords: Make-to-Stock Process Manufacturing, process manufacturing, co-products and by-products, process orders, planned independent requirements, material requirements planning, goods issue, goods receipt, production confirmation, stock requirements analysis, 3L7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-material-replenishment-with-kanban-in-house-production-4b3",
+      "title": "Test Script: Material Replenishment with Kanban – In-House Production (4B3_AE) (4B3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 4B3: Kanban replenishment with in-house production, covering prerequisites, MRP, Kanban status and backflush.",
+      "keywords": [
+        "Kanban Replenishment (In-House Production, External…",
+        "kanban replenishment",
+        "kanban control cycles",
+        "kanban container status",
+        "in-house production",
+        "repetitive manufacturing backflush",
+        "material requirements planning",
+        "planned independent requirements",
+        "production orders",
+        "kanban board"
+      ],
+      "aliases": [
+        "4B3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/kanban-in-house-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-material-replenishment-with-kanban-in-house-production-4b3.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4B3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Material Replenishment with Kanban – In-House Production (4B3_AE) (4B3_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 4B3: Kanban replenishment with in-house production, covering prerequisites, MRP, Kanban status and backflush | keywords: Kanban Replenishment (In-House Production, External…, kanban replenishment, kanban control cycles, kanban container status, in-house production, repetitive manufacturing backflush, material requirements planning, planned independent requirements, production orders, kanban board, 4B3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-material-replenishment-with-kanban-stock-transfer-4b4-ae-s",
+      "title": "Test Script: Material Replenishment with Kanban – Stock Transfer (4B4_AE), SAP S/4HANA Cloud Public Edition (4B4_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud 2608 (AE) test script for scope item 4B4: classic and one-card Kanban stock-transfer replenishment, roles, master data, control cycles.",
+      "keywords": [
+        "Kanban Replenishment (In-House Production, External…",
+        "kanban replenishment",
+        "kanban control cycles",
+        "classic kanban",
+        "one-card kanban",
+        "kanban container status",
+        "kanban board",
+        "stock transfer strategies",
+        "kanban analysis",
+        "business roles"
+      ],
+      "aliases": [
+        "4B4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/kanban-in-house-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-material-replenishment-with-kanban-stock-transfer-4b4-ae-s.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4B4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Material Replenishment with Kanban – Stock Transfer (4B4_AE), SAP S/4HANA Cloud Public Edition (4B4_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — S/4HANA Cloud 2608 (AE) test script for scope item 4B4: classic and one-card Kanban stock-transfer replenishment, roles, master data, control cycles | keywords: Kanban Replenishment (In-House Production, External…, kanban replenishment, kanban control cycles, classic kanban, one-card kanban, kanban container status, kanban board, stock transfer strategies, kanban analysis, business roles, 4B4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-material-requirements-planning-j44-ae-sap-s-4hana-cloud-pu",
+      "title": "Test Script: Material Requirements Planning (J44_AE) - SAP S/4HANA Cloud Public Edition (J44_S4CLD2608_BPD_EN_AE)",
+      "description": "Step-by-step Fiori test script for scope item J44_AE (MRP, UAE plant 3310): PIRs, MRP run, safety stock/days of supply, material exceptions, MRP change requests",
+      "keywords": [
+        "Material Requirements Planning and Predictive MRP",
+        "material requirements planning",
+        "mrp run",
+        "planned independent requirements",
+        "purchase requisitions",
+        "scheduling agreements",
+        "material coverage",
+        "time-dependent safety stock",
+        "days of supply",
+        "material exceptions"
+      ],
+      "aliases": [
+        "J44_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/mrp-and-predictive-mrp"
+      ],
+      "path": "12-production-and-manufacturing/test-script-material-requirements-planning-j44-ae-sap-s-4hana-cloud-pu.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J44_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Material Requirements Planning (J44_AE) - SAP S/4HANA Cloud Public Edition (J44_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — Step-by-step Fiori test script for scope item J44_AE (MRP, UAE plant 3310): PIRs, MRP run, safety stock/days of supply, material exceptions, MRP change requests | keywords: Material Requirements Planning and Predictive MRP, material requirements planning, mrp run, planned independent requirements, purchase requisitions, scheduling agreements, material coverage, time-dependent safety stock, days of supply, material exceptions, J44_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-planning-and-production-in-other-plant-consumer-products-7",
+      "title": "Test Script: Planning and Production in Other Plant – Consumer Products (7DN_AE), SAP S/4HANA Cloud Public Edition (7DN_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script, scope item 7DN_AE: cross-plant MRP, process/production orders, sales order, delivery and billing for Consumer Products (plants 3310, 3320).",
+      "keywords": [
+        "Material Requirements Planning and Predictive MRP",
+        "cross-plant production planning",
+        "planned independent requirements",
+        "material requirements planning",
+        "process orders",
+        "production orders",
+        "production confirmation",
+        "goods receipt",
+        "pick list goods issue",
+        "sales order processing"
+      ],
+      "aliases": [
+        "7DN_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/mrp-and-predictive-mrp"
+      ],
+      "path": "12-production-and-manufacturing/test-script-planning-and-production-in-other-plant-consumer-products-7.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7DN_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Planning and Production in Other Plant – Consumer Products (7DN_AE), SAP S/4HANA Cloud Public Edition (7DN_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP test script, scope item 7DN_AE: cross-plant MRP, process/production orders, sales order, delivery and billing for Consumer Products (plants 3310, 3320) | keywords: Material Requirements Planning and Predictive MRP, cross-plant production planning, planned independent requirements, material requirements planning, process orders, production orders, production confirmation, goods receipt, pick list goods issue, sales order processing, 7DN_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-produce-and-sell-standard-products-inventory-management-54-part-01",
+      "title": "Test Script: Produce and Sell Standard Products – Inventory Management (54U_AE), SAP S/4HANA Cloud Public Edition (54U_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "S/4HANA Cloud Public Edition test script, scope item 54U_AE (UAE, plant 3310): make-to-stock production of a serial-numbered product, planning to payment.",
+      "keywords": [
+        "End-to-End Produce-and-Sell Scenarios",
+        "production planning",
+        "predictive mrp",
+        "material requirements planning",
+        "kanban",
+        "subcontracting",
+        "repetitive manufacturing",
+        "production order execution",
+        "quality inspection",
+        "capacity leveling"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/test-script-produce-and-sell-standard-products-inventory-management-54-part-01.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/54U_S4CLD2608_BPD_EN_AE.docx#lines-1-3191"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Produce and Sell Standard Products – Inventory Management (54U_AE), SAP S/4HANA Cloud Public Edition (54U_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Production and Manufacturing) — S/4HANA Cloud Public Edition test script, scope item 54U_AE (UAE, plant 3310): make-to-stock production of a serial-numbered product, planning to payment | keywords: End-to-End Produce-and-Sell Scenarios, production planning, predictive mrp, material requirements planning, kanban, subcontracting, repetitive manufacturing, production order execution, quality inspection, capacity leveling"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-produce-and-sell-standard-products-inventory-management-54-part-02",
+      "title": "Test Script: Produce and Sell Standard Products – Inventory Management (54U_AE), SAP S/4HANA Cloud Public Edition (54U_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "SAP S/4HANA Cloud 2608 test script 54U (AE), part 2: usage decision, outbound delivery, rejected stock, billing, customer/supplier payments.",
+      "keywords": [
+        "End-to-End Produce-and-Sell Scenarios",
+        "usage decision",
+        "outbound delivery",
+        "goods issue",
+        "proof of delivery",
+        "rejected material handling",
+        "blocked stock posting",
+        "delivery update",
+        "billing documents",
+        "incoming payments"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/test-script-produce-and-sell-standard-products-inventory-management-54-part-02.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/54U_S4CLD2608_BPD_EN_AE.docx#lines-3192-3552"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Produce and Sell Standard Products – Inventory Management (54U_AE), SAP S/4HANA Cloud Public Edition (54U_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Production and Manufacturing) — SAP S/4HANA Cloud 2608 test script 54U (AE), part 2: usage decision, outbound delivery, rejected stock, billing, customer/supplier payments | keywords: End-to-End Produce-and-Sell Scenarios, usage decision, outbound delivery, goods issue, proof of delivery, rejected material handling, blocked stock posting, delivery update, billing documents, incoming payments"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-product-change-management-with-change-records-64e-ae-sap-s",
+      "title": "Test Script: Product Change Management with Change Records (64E_AE) - SAP S/4HANA Cloud Public Edition 2608 (64E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 64E: change record lifecycle (create, assign BOM, submit, approve, implement, close, release) in S/4HANA Cloud 2608.",
+      "keywords": [
+        "Product Change Management with Change Records",
+        "change records",
+        "product change management",
+        "change record status flow",
+        "bill of material changes",
+        "change request approval",
+        "change record profile",
+        "classification setup",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "64E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/change-records"
+      ],
+      "path": "12-production-and-manufacturing/test-script-product-change-management-with-change-records-64e-ae-sap-s.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/64E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Product Change Management with Change Records (64E_AE) - SAP S/4HANA Cloud Public Edition 2608 (64E_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP test script for scope item 64E: change record lifecycle (create, assign BOM, submit, approve, implement, close, release) in S/4HANA Cloud 2608 | keywords: Product Change Management with Change Records, change records, product change management, change record status flow, bill of material changes, change request approval, change record profile, classification setup, business roles, test scripts, 64E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-production-capacity-leveling-3lq-ae-sap-s-4hana-cloud-publ",
+      "title": "Test Script: Production Capacity Leveling (3LQ_AE) - SAP S/4HANA Cloud Public Edition (3LQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3LQ_AE: prerequisites, sample data and steps for production capacity leveling, discrete and process manufacturing.",
+      "keywords": [
+        "Capacity Evaluation and Leveling",
+        "production capacity leveling",
+        "capacity scheduling table",
+        "capacity scheduling board",
+        "discrete manufacturing",
+        "process manufacturing",
+        "test scripts",
+        "business roles",
+        "master data",
+        "demo data"
+      ],
+      "aliases": [
+        "3LQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/capacity-evaluation-and-leveling"
+      ],
+      "path": "12-production-and-manufacturing/test-script-production-capacity-leveling-3lq-ae-sap-s-4hana-cloud-publ.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3LQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Production Capacity Leveling (3LQ_AE) - SAP S/4HANA Cloud Public Edition (3LQ_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3LQ_AE: prerequisites, sample data and steps for production capacity leveling, discrete and process manufacturing | keywords: Capacity Evaluation and Leveling, production capacity leveling, capacity scheduling table, capacity scheduling board, discrete manufacturing, process manufacturing, test scripts, business roles, master data, demo data, 3LQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-production-operations-with-manufacturing-execution-system",
+      "title": "Test Script: Production Operations with Manufacturing Execution System (1Y5) (1Y5_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1Y5: MES integration with final assembly production order processing, roles, apps and steps.",
+      "keywords": [
+        "Manufacturing Execution System and Third-Party Shop Floor…",
+        "manufacturing execution system",
+        "mes integration",
+        "production order processing",
+        "material staging",
+        "production order release",
+        "component picking",
+        "production confirmation",
+        "goods receipt",
+        "serial numbers"
+      ],
+      "aliases": [
+        "1Y5_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/mes-and-shop-floor-integration"
+      ],
+      "path": "12-production-and-manufacturing/test-script-production-operations-with-manufacturing-execution-system.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1Y5_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Production Operations with Manufacturing Execution System (1Y5) (1Y5_S4CLD2608_BPD_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1Y5: MES integration with final assembly production order processing, roles, apps and steps | keywords: Manufacturing Execution System and Third-Party Shop Floor…, manufacturing execution system, mes integration, production order processing, material staging, production order release, component picking, production confirmation, goods receipt, serial numbers, 1Y5_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-production-order-combination-7to-ae-sap-s-4hana-cloud-publ",
+      "title": "Test Script: Production Order Combination (7TO_AE) - SAP S/4HANA Cloud Public Edition 2608 (7TO_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script (UAE localization) for scope item 7TO: combining MTS/MTO production orders into a combined order, executing it and reviewing original orders.",
+      "keywords": [
+        "Production Order Combination",
+        "combine production orders",
+        "review combined orders",
+        "posting rules",
+        "release production orders",
+        "production order confirmation",
+        "material staging",
+        "component picking",
+        "production goods receipt",
+        "maintain combined orders"
+      ],
+      "aliases": [
+        "7TO_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/production-order-combination"
+      ],
+      "path": "12-production-and-manufacturing/test-script-production-order-combination-7to-ae-sap-s-4hana-cloud-publ.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7TO_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Production Order Combination (7TO_AE) - SAP S/4HANA Cloud Public Edition 2608 (7TO_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP Best Practices test script (UAE localization) for scope item 7TO: combining MTS/MTO production orders into a combined order, executing it and reviewing original orders | keywords: Production Order Combination, combine production orders, review combined orders, posting rules, release production orders, production order confirmation, material staging, component picking, production goods receipt, maintain combined orders, 7TO_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-production-order-processing-with-third-party-warehouse-man",
+      "title": "Test Script: Production Order Processing with Third-Party Warehouse Management (2RU_AE) (2RU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2RU_AE: production/process order processing with a third-party WMS, with prerequisites and test steps.",
+      "keywords": [
+        "Production with Third-Party Warehouse Management",
+        "production order processing",
+        "third-party warehouse management",
+        "material staging",
+        "process order processing",
+        "automatic backflush",
+        "production order confirmation",
+        "business roles",
+        "master data",
+        "initial material stock"
+      ],
+      "aliases": [
+        "2RU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/third-party-wms-production"
+      ],
+      "path": "12-production-and-manufacturing/test-script-production-order-processing-with-third-party-warehouse-man.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2RU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Production Order Processing with Third-Party Warehouse Management (2RU_AE) (2RU_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2RU_AE: production/process order processing with a third-party WMS, with prerequisites and test steps | keywords: Production with Third-Party Warehouse Management, production order processing, third-party warehouse management, material staging, process order processing, automatic backflush, production order confirmation, business roles, master data, initial material stock, 2RU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-rework-processing-work-in-process-bjq-ae-1276",
+      "title": "Test Script: Rework Processing - Work-in-Process (BJQ_AE) (BJQ_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item BJQ (AE): rework operation inserted within a production order, confirmed and settled in S/4HANA Cloud Public Edition 2608, plant 3310.",
+      "keywords": [
+        "Rework Processing",
+        "production order confirmation",
+        "rework operation",
+        "reference operation set",
+        "routing",
+        "manage production operations",
+        "manufacturing object pages",
+        "master data scripts",
+        "business roles",
+        "demo data"
+      ],
+      "aliases": [
+        "BJQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/rework-processing"
+      ],
+      "path": "12-production-and-manufacturing/test-script-rework-processing-work-in-process-bjq-ae-1276.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BJQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Rework Processing - Work-in-Process (BJQ_AE) (BJQ_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — Test script for scope item BJQ (AE): rework operation inserted within a production order, confirmed and settled in S/4HANA Cloud Public Edition 2608, plant 3310 | keywords: Rework Processing, production order confirmation, rework operation, reference operation set, routing, manage production operations, manufacturing object pages, master data scripts, business roles, demo data, BJQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-rework-with-quality-management-consumer-products-6a9-ae-11",
+      "title": "Test Script: Rework with Quality Management – Consumer Products (6A9_AE) (6A9_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 6A9 (AE): rework of production orders with QM, covering in-production and post-goods-receipt rework.",
+      "keywords": [
+        "Rework Processing",
+        "rework production orders",
+        "quality inspection",
+        "usage decision",
+        "inspection lots",
+        "partial confirmation",
+        "blocked stock",
+        "production order confirmation",
+        "event-based production costs",
+        "batch traceability"
+      ],
+      "aliases": [
+        "6A9_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/rework-processing"
+      ],
+      "path": "12-production-and-manufacturing/test-script-rework-with-quality-management-consumer-products-6a9-ae-11.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6A9_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Rework with Quality Management – Consumer Products (6A9_AE) (6A9_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 6A9 (AE): rework of production orders with QM, covering in-production and post-goods-receipt rework | keywords: Rework Processing, rework production orders, quality inspection, usage decision, inspection lots, partial confirmation, blocked stock, production order confirmation, event-based production costs, batch traceability, 6A9_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-from-planning-to-fulfillm-part-01",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - From Planning to Fulfillment - Consumer Products (6AA_AE) (6AA_S4CLD2608_BPD_EN_AE) — part 1 of 3",
+      "description": "SAP Best Practices test script for the AE Consumer Products planning-to-fulfillment scenario (5OI, 5W3, 5HK, 5W4, 5HL, 61V): prerequisites, setup, step-by-step Fiori test procedures.",
+      "keywords": [
+        "End-to-End Produce-and-Sell Scenarios",
+        "consumer products scenario",
+        "business roles",
+        "master data",
+        "production capacity leveling",
+        "planned independent requirements",
+        "pmrp simulation",
+        "work center capacity",
+        "procurement of production components",
+        "purchase orders"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-from-planning-to-fulfillm-part-01.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6AA_S4CLD2608_BPD_EN_AE.docx#lines-1-3041"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - From Planning to Fulfillment - Consumer Products (6AA_AE) (6AA_S4CLD2608_BPD_EN_AE) — part 1 of 3 (Production and Manufacturing) — SAP Best Practices test script for the AE Consumer Products planning-to-fulfillment scenario (5OI, 5W3, 5HK, 5W4, 5HL, 61V): prerequisites, setup, step-by-step Fiori test procedures | keywords: End-to-End Produce-and-Sell Scenarios, consumer products scenario, business roles, master data, production capacity leveling, planned independent requirements, pmrp simulation, work center capacity, procurement of production components, purchase orders"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-from-planning-to-fulfillm-part-02",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - From Planning to Fulfillment - Consumer Products (6AA_AE) (6AA_S4CLD2608_BPD_EN_AE) — part 2 of 3",
+      "description": "SAP S/4HANA Cloud 6AA_AE Consumer Products test script, part 2: raw-material QM, 5HK QM in discrete manufacturing, start of 5W4 subcontracting; Fiori steps.",
+      "keywords": [
+        "End-to-End Produce-and-Sell Scenarios",
+        "quality inspection",
+        "inspection results recording",
+        "usage decision",
+        "in-process quality control",
+        "early goods receipt inspection",
+        "production order processing",
+        "production order confirmation",
+        "material requirements planning",
+        "subcontracting"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-from-planning-to-fulfillm-part-02.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6AA_S4CLD2608_BPD_EN_AE.docx#lines-3042-6068"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - From Planning to Fulfillment - Consumer Products (6AA_AE) (6AA_S4CLD2608_BPD_EN_AE) — part 2 of 3 (Production and Manufacturing) — SAP S/4HANA Cloud 6AA_AE Consumer Products test script, part 2: raw-material QM, 5HK QM in discrete manufacturing, start of 5W4 subcontracting; Fiori steps | keywords: End-to-End Produce-and-Sell Scenarios, quality inspection, inspection results recording, usage decision, in-process quality control, early goods receipt inspection, production order processing, production order confirmation, material requirements planning, subcontracting"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-from-planning-to-fulfillm-part-03",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - From Planning to Fulfillment - Consumer Products (6AA_AE) (6AA_S4CLD2608_BPD_EN_AE) — part 3 of 3",
+      "description": "SAP Fiori test script 6AA_AE (UAE); this part: subcontracting inspection and invoicing, sell from stock/in transit, customer returns, billing jobs.",
+      "keywords": [
+        "End-to-End Produce-and-Sell Scenarios",
+        "quality inspection",
+        "usage decision",
+        "supplier invoice",
+        "batch traceability",
+        "sell from stock",
+        "sales orders",
+        "outbound delivery",
+        "picking and goods issue",
+        "billing documents"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-from-planning-to-fulfillm-part-03.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6AA_S4CLD2608_BPD_EN_AE.docx#lines-6069-7533"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - From Planning to Fulfillment - Consumer Products (6AA_AE) (6AA_S4CLD2608_BPD_EN_AE) — part 3 of 3 (Production and Manufacturing) — SAP Fiori test script 6AA_AE (UAE); this part: subcontracting inspection and invoicing, sell from stock/in transit, customer returns, billing jobs | keywords: End-to-End Produce-and-Sell Scenarios, quality inspection, usage decision, supplier invoice, batch traceability, sell from stock, sales orders, outbound delivery, picking and goods issue, billing documents"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-predictive-material-and-r",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Predictive Material and Resource Planning (4B5_AE) (4B5_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 4B5 (AE, 2608): predictive MRP simulations, PIR release, plus supplier and production-line constraint use cases.",
+      "keywords": [
+        "Material Requirements Planning and Predictive MRP",
+        "predictive material and resource planning",
+        "pmrp simulation",
+        "planned independent requirements",
+        "simulation scheduling",
+        "flexible constraints",
+        "supplier constraints",
+        "production line constraints",
+        "test script",
+        "supplier collaboration"
+      ],
+      "aliases": [
+        "4B5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/mrp-and-predictive-mrp"
+      ],
+      "path": "12-production-and-manufacturing/test-script-sap-s-4hana-cloud-public-edition-predictive-material-and-r.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4B5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Predictive Material and Resource Planning (4B5_AE) (4B5_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP test script for scope item 4B5 (AE, 2608): predictive MRP simulations, PIR release, plus supplier and production-line constraint use cases | keywords: Material Requirements Planning and Predictive MRP, predictive material and resource planning, pmrp simulation, planned independent requirements, simulation scheduling, flexible constraints, supplier constraints, production line constraints, test script, supplier collaboration, 4B5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-tank-trailer-filling-with-residuals-42n-ae-997",
+      "title": "Test Script: Tank Trailer Filling with Residuals (42N_AE) (42N_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 42N_AE): fill tank trailers from a process order, netting residual stock via container ID and MQC.",
+      "keywords": [
+        "Storage Tank Management and Tank Trailer Filling",
+        "tank trailer filling",
+        "residual stock",
+        "container id",
+        "batch determination",
+        "material quantity calculation",
+        "process order",
+        "goods issue",
+        "process order confirmation",
+        "goods receipt"
+      ],
+      "aliases": [
+        "42N_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/storage-tank-management"
+      ],
+      "path": "12-production-and-manufacturing/test-script-tank-trailer-filling-with-residuals-42n-ae-997.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/42N_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Tank Trailer Filling with Residuals (42N_AE) (42N_S4CLD2608_BPD_EN_AE) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script (scope item 42N_AE): fill tank trailers from a process order, netting residual stock via container ID and MQC | keywords: Storage Tank Management and Tank Trailer Filling, tank trailer filling, residual stock, container id, batch determination, material quantity calculation, process order, goods issue, process order confirmation, goods receipt, 42N_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-third-party-shop-floor-execution-discrete-industry-3w4-980",
+      "title": "Test Script: Third-Party Shop Floor Execution – Discrete Industry (3W4) (3W4_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3W4: MES/third-party shop floor integration, from PIRs and MRP to capacity check and production orders.",
+      "keywords": [
+        "Manufacturing Execution System and Third-Party Shop Floor…",
+        "third-party shop floor execution",
+        "mes integration",
+        "planned independent requirements",
+        "material requirements planning",
+        "capacity evaluation",
+        "work center capacity",
+        "production orders",
+        "test prerequisites",
+        "business roles"
+      ],
+      "aliases": [
+        "3W4_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/mes-and-shop-floor-integration"
+      ],
+      "path": "12-production-and-manufacturing/test-script-third-party-shop-floor-execution-discrete-industry-3w4-980.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3W4_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Third-Party Shop Floor Execution – Discrete Industry (3W4) (3W4_S4CLD2608_BPD_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3W4: MES/third-party shop floor integration, from PIRs and MRP to capacity check and production orders | keywords: Manufacturing Execution System and Third-Party Shop Floor…, third-party shop floor execution, mes integration, planned independent requirements, material requirements planning, capacity evaluation, work center capacity, production orders, test prerequisites, business roles, 3W4_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "12-production-and-manufacturing/test-script-third-party-shop-floor-execution-process-industry-3w3-979",
+      "title": "Test Script - Third-Party Shop Floor Execution – Process Industry (3W3) (3W3_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3W3: integrating a third-party MES with process orders, from order creation to goods receipt and scrap review.",
+      "keywords": [
+        "Manufacturing Execution System and Third-Party Shop Floor…",
+        "mes integration",
+        "process orders",
+        "goods issue",
+        "production confirmation",
+        "goods receipt",
+        "order progress monitoring",
+        "scrap reporting",
+        "business roles",
+        "business conditions"
+      ],
+      "aliases": [
+        "3W3_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/production-and-manufacturing",
+        "topic/mes-and-shop-floor-integration"
+      ],
+      "path": "12-production-and-manufacturing/test-script-third-party-shop-floor-execution-process-industry-3w3-979.md",
+      "cluster": "12-production-and-manufacturing",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3W3_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Third-Party Shop Floor Execution – Process Industry (3W3) (3W3_S4CLD2608_BPD_EN_XX) (Production and Manufacturing) — SAP S/4HANA Cloud Public Edition test script for scope item 3W3: integrating a third-party MES with process orders, from order creation to goods receipt and scrap review | keywords: Manufacturing Execution System and Third-Party Shop Floor…, mes integration, process orders, goods issue, production confirmation, goods receipt, order progress monitoring, scrap reporting, business roles, business conditions, 3W3_S4CLD2608_BPD_EN_XX"
+    }
+  ]
+}

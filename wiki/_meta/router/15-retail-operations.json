@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "15-retail-operations",
+  "cluster_title": "Retail Operations",
+  "cluster_description": "Distribution center inbound and outbound, store ordering and returns, in-store inventory, store management, retail price valuation, consignment, DC replenishment and promotions.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 40,
+  "nodes": [
+    {
+      "id": "15-retail-operations/empties-for-retail-5fk-ae-test-script-sap-s-4hana-cloud-public-edition-part-01",
+      "title": "Empties for Retail (5FK_AE) - Test Script, SAP S/4HANA Cloud Public Edition (5FK_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Test script for SAP S/4HANA Cloud scope item 5FK_AE Empties for Retail: prerequisites, master data, procurement, returns, inventory, store order fulfillment.",
+      "keywords": [
+        "Empties Management for Retail",
+        "empties handling",
+        "empties bill of material",
+        "article master data",
+        "price conditions",
+        "procurement from supplier",
+        "stock transfer orders",
+        "returns processing",
+        "physical inventory",
+        "stock adjustment"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/retail-operations",
+        "topic/empties-management-retail"
+      ],
+      "path": "15-retail-operations/empties-for-retail-5fk-ae-test-script-sap-s-4hana-cloud-public-edition-part-01.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FK_S4CLD2608_BPD_EN_AE.docx#lines-1-3124"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Empties for Retail (5FK_AE) - Test Script, SAP S/4HANA Cloud Public Edition (5FK_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Retail Operations) — Test script for SAP S/4HANA Cloud scope item 5FK_AE Empties for Retail: prerequisites, master data, procurement, returns, inventory, store order fulfillment | keywords: Empties Management for Retail, empties handling, empties bill of material, article master data, price conditions, procurement from supplier, stock transfer orders, returns processing, physical inventory, stock adjustment"
+    },
+    {
+      "id": "15-retail-operations/empties-for-retail-5fk-ae-test-script-sap-s-4hana-cloud-public-edition-part-02",
+      "title": "Empties for Retail (5FK_AE) - Test Script, SAP S/4HANA Cloud Public Edition (5FK_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "SAP S/4HANA Cloud Public Edition test script for Empties for Retail (5FK_AE): prerequisites, master data, procurement and store/online sales flows with step-by-step test procedures.",
+      "keywords": [
+        "Empties Management for Retail",
+        "click and collect",
+        "order handover",
+        "picking request withdrawal",
+        "reservation hand over",
+        "sales order document flow",
+        "manage sales orders",
+        "retail store associate",
+        "test script conventions",
+        "5FK"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/retail-operations",
+        "topic/empties-management-retail"
+      ],
+      "path": "15-retail-operations/empties-for-retail-5fk-ae-test-script-sap-s-4hana-cloud-public-edition-part-02.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FK_S4CLD2608_BPD_EN_AE.docx#lines-3125-3173"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Empties for Retail (5FK_AE) - Test Script, SAP S/4HANA Cloud Public Edition (5FK_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for Empties for Retail (5FK_AE): prerequisites, master data, procurement and store/online sales flows with step-by-step test procedures | keywords: Empties Management for Retail, click and collect, order handover, picking request withdrawal, reservation hand over, sales order document flow, manage sales orders, retail store associate, test script conventions, 5FK"
+    },
+    {
+      "id": "15-retail-operations/in-store-customer-order-management-3hu-ae-test-script-sap-s-4hana-clou",
+      "title": "In-Store Customer Order Management (3HU_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3HU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 3HU_AE: in-store customer orders with immediate or later pickup, replenishment, picking, handover; prerequisites and sample data.",
+      "keywords": [
+        "Omnichannel and In-Store Customer Order Fulfillment",
+        "in-store customer order management",
+        "immediate pickup",
+        "pickup at later date",
+        "in-store sales orders",
+        "serial number management",
+        "store picking requests",
+        "order handover",
+        "stock transport orders",
+        "goods receipt"
+      ],
+      "aliases": [
+        "3HU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/omnichannel-order-fulfillment"
+      ],
+      "path": "15-retail-operations/in-store-customer-order-management-3hu-ae-test-script-sap-s-4hana-clou.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3HU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "In-Store Customer Order Management (3HU_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3HU_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP test script for scope item 3HU_AE: in-store customer orders with immediate or later pickup, replenishment, picking, handover; prerequisites and sample data | keywords: Omnichannel and In-Store Customer Order Fulfillment, in-store customer order management, immediate pickup, pickup at later date, in-store sales orders, serial number management, store picking requests, order handover, stock transport orders, goods receipt, 3HU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/invoice-verification-for-retail-5fn-ae-test-script-sap-s-4hana-cloud-p",
+      "title": "Invoice Verification for Retail (5FN_AE) - Test Script, SAP S/4HANA Cloud Public Edition (5FN_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud scope item 5FN_AE: retail supplier invoice verification (three-way matching), incl. blocked, freight, background, API cases.",
+      "keywords": [
+        "Retail Procurement, Invoice Verification and Supplier…",
+        "supplier invoice verification",
+        "three-way matching",
+        "test procedures",
+        "blocked invoices",
+        "freight condition",
+        "background invoice verification",
+        "supplier invoice api",
+        "purchase order creation",
+        "inbound delivery"
+      ],
+      "aliases": [
+        "5FN_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-procurement-and-invoice-verification"
+      ],
+      "path": "15-retail-operations/invoice-verification-for-retail-5fn-ae-test-script-sap-s-4hana-cloud-p.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FN_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Invoice Verification for Retail (5FN_AE) - Test Script, SAP S/4HANA Cloud Public Edition (5FN_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for SAP S/4HANA Cloud scope item 5FN_AE: retail supplier invoice verification (three-way matching), incl. blocked, freight, background, API cases | keywords: Retail Procurement, Invoice Verification and Supplier…, supplier invoice verification, three-way matching, test procedures, blocked invoices, freight condition, background invoice verification, supplier invoice api, purchase order creation, inbound delivery, 5FN_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/merchandise-distribution-and-collective-purchase-order-71o-ae-test-scr",
+      "title": "Merchandise Distribution and Collective Purchase Order (71O_AE) - Test Script, SAP S/4HANA Cloud Public Edition 2608 (71O_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 71O_AE: collective purchase orders and merchandise distribution by cross-docking, flow-through and put-away, with prerequisites.",
+      "keywords": [
+        "Merchandise Distribution and Allocation",
+        "merchandise distribution",
+        "collective purchase order",
+        "cross docking",
+        "flow-through process",
+        "put away process",
+        "distribution profiles",
+        "stock transfer orders",
+        "inbound delivery",
+        "goods receipt"
+      ],
+      "aliases": [
+        "71O_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/merchandise-distribution-and-allocation"
+      ],
+      "path": "15-retail-operations/merchandise-distribution-and-collective-purchase-order-71o-ae-test-scr.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/71O_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Merchandise Distribution and Collective Purchase Order (71O_AE) - Test Script, SAP S/4HANA Cloud Public Edition 2608 (71O_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP test script for scope item 71O_AE: collective purchase orders and merchandise distribution by cross-docking, flow-through and put-away, with prerequisites | keywords: Merchandise Distribution and Allocation, merchandise distribution, collective purchase order, cross docking, flow-through process, put away process, distribution profiles, stock transfer orders, inbound delivery, goods receipt, 71O_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/omnichannel-sales-promotions-for-sales-orders-in-retail-7z6-ae-test-sc",
+      "title": "Omnichannel Sales Promotions for Sales Orders in Retail (7Z6_AE) - Test Script (7Z6_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7Z6: applying SAP Omnichannel Promotion Pricing promotions to in-store sales orders and POS payments.",
+      "keywords": [
+        "Omnichannel Promotion Pricing for Sales Orders",
+        "omnichannel promotion pricing",
+        "sales promotions",
+        "in-store sales orders",
+        "pos payment",
+        "initial stock",
+        "business partner settings",
+        "retail terminology",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "7Z6_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/omnichannel-promotions"
+      ],
+      "path": "15-retail-operations/omnichannel-sales-promotions-for-sales-orders-in-retail-7z6-ae-test-sc.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7Z6_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Omnichannel Sales Promotions for Sales Orders in Retail (7Z6_AE) - Test Script (7Z6_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 7Z6: applying SAP Omnichannel Promotion Pricing promotions to in-store sales orders and POS payments | keywords: Omnichannel Promotion Pricing for Sales Orders, omnichannel promotion pricing, sales promotions, in-store sales orders, pos payment, initial stock, business partner settings, retail terminology, business roles, test scripts, 7Z6_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/outbound-logistics-for-distribution-centers-5fv-ae-test-script-1090",
+      "title": "Outbound Logistics for Distribution Centers (5FV_AE) - Test Script (5FV_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (19-06-26) for scope item 5FV_AE: stock transfer order, outbound delivery, pick/pack, goods issue and store goods receipt.",
+      "keywords": [
+        "Outbound Logistics for Distribution Centers",
+        "outbound logistics",
+        "stock transfer order",
+        "outbound delivery",
+        "pick pack goods issue",
+        "goods receipt",
+        "delivery note printing",
+        "output parameter determination",
+        "initial stock",
+        "business roles"
+      ],
+      "aliases": [
+        "5FV_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/dc-outbound-logistics"
+      ],
+      "path": "15-retail-operations/outbound-logistics-for-distribution-centers-5fv-ae-test-script-1090.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FV_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Outbound Logistics for Distribution Centers (5FV_AE) - Test Script (5FV_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script (19-06-26) for scope item 5FV_AE: stock transfer order, outbound delivery, pick/pack, goods issue and store goods receipt | keywords: Outbound Logistics for Distribution Centers, outbound logistics, stock transfer order, outbound delivery, pick pack goods issue, goods receipt, delivery note printing, output parameter determination, initial stock, business roles, 5FV_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/product-taxonomies-for-retail-5fj-ae-test-script-1079",
+      "title": "Product Taxonomies for Retail (5FJ_AE) - Test Script (5FJ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (AE, 19-06-26) for scope item 5FJ: merchandise categories, hierarchies, reclassification, with article, assortment, PO and allocation prerequisites.",
+      "keywords": [
+        "Retail Articles, Merchandise Categories and Seasons",
+        "merchandise categories",
+        "merchandise category hierarchy",
+        "article reclassification",
+        "reclassification versions",
+        "single article creation",
+        "generic articles variants",
+        "characteristics",
+        "assortment modules",
+        "purchasing info records"
+      ],
+      "aliases": [
+        "5FJ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-articles-and-merchandise-categories"
+      ],
+      "path": "15-retail-operations/product-taxonomies-for-retail-5fj-ae-test-script-1079.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FJ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Product Taxonomies for Retail (5FJ_AE) - Test Script (5FJ_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script (AE, 19-06-26) for scope item 5FJ: merchandise categories, hierarchies, reclassification, with article, assortment, PO and allocation prerequisites | keywords: Retail Articles, Merchandise Categories and Seasons, merchandise categories, merchandise category hierarchy, article reclassification, reclassification versions, single article creation, generic articles variants, characteristics, assortment modules, purchasing info records, 5FJ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/products-for-retail-3i1-ae-test-script-sap-s-4hana-cloud-public-editio",
+      "title": "Products for Retail (3I1_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3I1_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 3I1 Products for Retail (AE): creating retail article master data of all article types, info records, interfaces, discontinuation.",
+      "keywords": [
+        "Retail Articles, Merchandise Categories and Seasons",
+        "retail article master",
+        "single article",
+        "generic article variants",
+        "sales set",
+        "display article",
+        "product group reference article",
+        "packaging article",
+        "service article",
+        "purchasing info records"
+      ],
+      "aliases": [
+        "3I1_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-articles-and-merchandise-categories"
+      ],
+      "path": "15-retail-operations/products-for-retail-3i1-ae-test-script-sap-s-4hana-cloud-public-editio.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I1_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Products for Retail (3I1_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3I1_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for scope item 3I1 Products for Retail (AE): creating retail article master data of all article types, info records, interfaces, discontinuation | keywords: Retail Articles, Merchandise Categories and Seasons, retail article master, single article, generic article variants, sales set, display article, product group reference article, packaging article, service article, purchasing info records, 3I1_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/replenishment-planning-for-distribution-centers-3i8-ae-test-script-947",
+      "title": "Replenishment Planning for Distribution Centers (3I8_AE) - Test Script (3I8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3I8_AE: DC replenishment via forecast, PIR, MRP runs, background jobs and purchase requisition checks.",
+      "keywords": [
+        "Replenishment Planning for Distribution Centers",
+        "replenishment planning",
+        "distribution center replenishment",
+        "forecast run",
+        "planned independent requirements",
+        "mrp run",
+        "material coverage",
+        "purchase requisitions",
+        "periodic background jobs",
+        "article master data"
+      ],
+      "aliases": [
+        "3I8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/dc-replenishment-planning"
+      ],
+      "path": "15-retail-operations/replenishment-planning-for-distribution-centers-3i8-ae-test-script-947.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Replenishment Planning for Distribution Centers (3I8_AE) - Test Script (3I8_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 3I8_AE: DC replenishment via forecast, PIR, MRP runs, background jobs and purchase requisition checks | keywords: Replenishment Planning for Distribution Centers, replenishment planning, distribution center replenishment, forecast run, planned independent requirements, mrp run, material coverage, purchase requisitions, periodic background jobs, article master data, 3I8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/retail-logistics-with-third-party-warehouse-management-69m-ae-test-scr",
+      "title": "Retail Logistics with Third-Party Warehouse Management (69M_AE) - Test Script (69M_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 69M_AE: retail DC logistics integrated with a third-party WMS via SOAP web services.",
+      "keywords": [
+        "Retail DC Warehouse Execution (Embedded EWM or Third-Party…",
+        "third-party wms integration",
+        "soap web services",
+        "stock transfers",
+        "two-step stock transfer",
+        "inbound delivery",
+        "outbound delivery",
+        "purchase orders",
+        "sales orders",
+        "customer returns"
+      ],
+      "aliases": [
+        "69M_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-dc-warehouse-execution"
+      ],
+      "path": "15-retail-operations/retail-logistics-with-third-party-warehouse-management-69m-ae-test-scr.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/69M_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Retail Logistics with Third-Party Warehouse Management (69M_AE) - Test Script (69M_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 69M_AE: retail DC logistics integrated with a third-party WMS via SOAP web services | keywords: Retail DC Warehouse Execution (Embedded EWM or Third-Party…, third-party wms integration, soap web services, stock transfers, two-step stock transfer, inbound delivery, outbound delivery, purchase orders, sales orders, customer returns, 69M_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/returns-from-store-5fr-ae-1086",
+      "title": "Returns from Store (5FR_AE) (5FR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5FR_AE: returning merchandise from a store to a distribution center via returns stock transport order.",
+      "keywords": [
+        "Returns from Store",
+        "store returns",
+        "test script",
+        "returns stock transport order",
+        "outbound delivery",
+        "inbound delivery",
+        "material inspection",
+        "goods issue",
+        "goods receipt",
+        "stock status"
+      ],
+      "aliases": [
+        "5FR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/store-returns"
+      ],
+      "path": "15-retail-operations/returns-from-store-5fr-ae-1086.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Returns from Store (5FR_AE) (5FR_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 5FR_AE: returning merchandise from a store to a distribution center via returns stock transport order | keywords: Returns from Store, store returns, test script, returns stock transport order, outbound delivery, inbound delivery, material inspection, goods issue, goods receipt, stock status, 5FR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/sales-from-distribution-center-3hs-ae-test-script-sap-s-4hana-cloud-pu",
+      "title": "Sales from Distribution Center (3HS_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3HS_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 3HS_AE (UAE): sales from distribution center, debit memos, consignment, advanced intercompany sales; roles, apps, sample data, postings.",
+      "keywords": [
+        "Sales from Distribution Centers",
+        "sales from distribution center",
+        "sales order processing",
+        "outbound delivery",
+        "picking and goods issue",
+        "billing documents",
+        "debit memos",
+        "consignment processing",
+        "consignment returns",
+        "advanced intercompany sales"
+      ],
+      "aliases": [
+        "3HS_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/sales-from-distribution-center"
+      ],
+      "path": "15-retail-operations/sales-from-distribution-center-3hs-ae-test-script-sap-s-4hana-cloud-pu.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3HS_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Sales from Distribution Center (3HS_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3HS_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for scope item 3HS_AE (UAE): sales from distribution center, debit memos, consignment, advanced intercompany sales; roles, apps, sample data, postings | keywords: Sales from Distribution Centers, sales from distribution center, sales order processing, outbound delivery, picking and goods issue, billing documents, debit memos, consignment processing, consignment returns, advanced intercompany sales, 3HS_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/sites-for-retail-3i3-ae-test-script-sap-s-4hana-cloud-public-edition-9",
+      "title": "Sites for Retail (3I3_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3I3_S4CLD2608_BPD_EN_AE)",
+      "description": "AE-localized test script for scope item 3I3 Sites for Retail in S/4HANA Cloud Public Edition 2608: creating DC/store sites, business partners, site groups, copy and blocking.",
+      "keywords": [
+        "Retail Sites, Business Partners and Assortments",
+        "retail site master data",
+        "retail site creation",
+        "site business partner",
+        "business partner roles",
+        "merchandise categories",
+        "site groups",
+        "copy master data",
+        "test scripts",
+        "supplier master data"
+      ],
+      "aliases": [
+        "3I3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-sites-partners-and-assortments"
+      ],
+      "path": "15-retail-operations/sites-for-retail-3i3-ae-test-script-sap-s-4hana-cloud-public-edition-9.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Sites for Retail (3I3_AE) - Test Script, SAP S/4HANA Cloud Public Edition (3I3_S4CLD2608_BPD_EN_AE) (Retail Operations) — AE-localized test script for scope item 3I3 Sites for Retail in S/4HANA Cloud Public Edition 2608: creating DC/store sites, business partners, site groups, copy and blocking | keywords: Retail Sites, Business Partners and Assortments, retail site master data, retail site creation, site business partner, business partner roles, merchandise categories, site groups, copy master data, test scripts, supplier master data, 3I3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/store-connectivity-inbound-3hv-ae-test-script-sap-s-4hana-cloud-public",
+      "title": "Store Connectivity – Inbound (3HV_AE) Test Script, SAP S/4HANA Cloud Public Edition (3HV_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 3HV: receiving POS sales, returns, payments and finance data via SOAP, scheduling posting jobs, AIF monitoring, sample payloads.",
+      "keywords": [
+        "Store Connectivity (POS Inbound and Outbound)",
+        "store connectivity inbound",
+        "aggregated sales",
+        "sales per receipt",
+        "sales returns",
+        "aggregated payment list",
+        "customer order payment",
+        "pos financial transactions",
+        "pos inbound job scheduling",
+        "message monitoring"
+      ],
+      "aliases": [
+        "3HV_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/store-connectivity"
+      ],
+      "path": "15-retail-operations/store-connectivity-inbound-3hv-ae-test-script-sap-s-4hana-cloud-public.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3HV_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Store Connectivity – Inbound (3HV_AE) Test Script, SAP S/4HANA Cloud Public Edition (3HV_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for scope item 3HV: receiving POS sales, returns, payments and finance data via SOAP, scheduling posting jobs, AIF monitoring, sample payloads | keywords: Store Connectivity (POS Inbound and Outbound), store connectivity inbound, aggregated sales, sales per receipt, sales returns, aggregated payment list, customer order payment, pos financial transactions, pos inbound job scheduling, message monitoring, 3HV_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-business-partners-for-retail-5fh-ae-sap-s-4hana-cloud-publ",
+      "title": "Test Script: Business Partners for Retail (5FH_AE) - SAP S/4HANA Cloud Public Edition (5FH_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for Business Partners for Retail (5FH_AE): creating, extending and blocking supplier and customer master data in S/4HANA Cloud (UAE sample data).",
+      "keywords": [
+        "Retail Sites, Business Partners and Assortments",
+        "business partner master data",
+        "supplier master data",
+        "customer master data",
+        "supplier blocking",
+        "wholesale customer",
+        "one-time customer",
+        "b2c customer",
+        "template customer",
+        "partner schemas"
+      ],
+      "aliases": [
+        "5FH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-sites-partners-and-assortments"
+      ],
+      "path": "15-retail-operations/test-script-business-partners-for-retail-5fh-ae-sap-s-4hana-cloud-publ.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Business Partners for Retail (5FH_AE) - SAP S/4HANA Cloud Public Edition (5FH_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for Business Partners for Retail (5FH_AE): creating, extending and blocking supplier and customer master data in S/4HANA Cloud (UAE sample data) | keywords: Retail Sites, Business Partners and Assortments, business partner master data, supplier master data, customer master data, supplier blocking, wholesale customer, one-time customer, b2c customer, template customer, partner schemas, 5FH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-characteristic-value-conversion-for-retail-7dl-ae-sap-s-4h",
+      "title": "Test Script: Characteristic Value Conversion for Retail (7DL_AE) - SAP S/4HANA Cloud Public Edition (7DL_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 7DL_AE: converting article characteristic values across sales, purchase and STO documents.",
+      "keywords": [
+        "Retail Articles, Merchandise Categories and Seasons",
+        "characteristic value conversion",
+        "conversion types",
+        "conversion values maintenance",
+        "sales order processing",
+        "outbound delivery",
+        "purchase order processing",
+        "inbound delivery",
+        "stock transfer order",
+        "billing documents"
+      ],
+      "aliases": [
+        "7DL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-articles-and-merchandise-categories"
+      ],
+      "path": "15-retail-operations/test-script-characteristic-value-conversion-for-retail-7dl-ae-sap-s-4h.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7DL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Characteristic Value Conversion for Retail (7DL_AE) - SAP S/4HANA Cloud Public Edition (7DL_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 7DL_AE: converting article characteristic values across sales, purchase and STO documents | keywords: Retail Articles, Merchandise Categories and Seasons, characteristic value conversion, conversion types, conversion values maintenance, sales order processing, outbound delivery, purchase order processing, inbound delivery, stock transfer order, billing documents, 7DL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-in-store-inventory-management-3hr-ae-sap-s-4hana-cloud-pub",
+      "title": "Test Script: In-Store Inventory Management (3HR_AE) - SAP S/4HANA Cloud Public Edition (3HR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (3HR_AE, dated 19-06-26) for in-store inventory: physical inventory, ad hoc count, mass stock adjustment, transfers, clean-up.",
+      "keywords": [
+        "In-Store Inventory Management",
+        "physical inventory",
+        "count stock ad hoc",
+        "adjust mass stock",
+        "product transfer",
+        "in-store data clean-up",
+        "cycle counting",
+        "business roles",
+        "test master data",
+        "stock overview"
+      ],
+      "aliases": [
+        "3HR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/in-store-inventory"
+      ],
+      "path": "15-retail-operations/test-script-in-store-inventory-management-3hr-ae-sap-s-4hana-cloud-pub.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3HR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: In-Store Inventory Management (3HR_AE) - SAP S/4HANA Cloud Public Edition (3HR_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script (3HR_AE, dated 19-06-26) for in-store inventory: physical inventory, ad hoc count, mass stock adjustment, transfers, clean-up | keywords: In-Store Inventory Management, physical inventory, count stock ad hoc, adjust mass stock, product transfer, in-store data clean-up, cycle counting, business roles, test master data, stock overview, 3HR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-in-store-merchandise-management-3hq-ae-sap-s-4hana-cloud-p",
+      "title": "Test Script: In-Store Merchandise Management (3HQ_AE), SAP S/4HANA Cloud Public Edition (3HQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3HQ_AE: store associates look up retail products and print labels; prerequisites and steps.",
+      "keywords": [
+        "My Store Management",
+        "in-store merchandise management",
+        "look up retail products",
+        "print labels",
+        "product variants",
+        "delivery information",
+        "print queue",
+        "test procedures",
+        "store assignment",
+        "initial stock"
+      ],
+      "aliases": [
+        "3HQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/my-store-management"
+      ],
+      "path": "15-retail-operations/test-script-in-store-merchandise-management-3hq-ae-sap-s-4hana-cloud-p.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3HQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: In-Store Merchandise Management (3HQ_AE), SAP S/4HANA Cloud Public Edition (3HQ_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 3HQ_AE: store associates look up retail products and print labels; prerequisites and steps | keywords: My Store Management, in-store merchandise management, look up retail products, print labels, product variants, delivery information, print queue, test procedures, store assignment, initial stock, 3HQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-in-store-purchase-order-management-5fy-ae-sap-s-4hana-clou",
+      "title": "Test Script: In-Store Purchase Order Management (5FY_AE) - SAP S/4HANA Cloud Public Edition (5FY_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5FY_AE: store order proposals plus standard, customer-order-based and trusted receiving.",
+      "keywords": [
+        "Store Ordering from Distribution Centers",
+        "in-store purchase order management",
+        "order proposals",
+        "standard receiving",
+        "trusted receiving",
+        "customer order-based receiving",
+        "inbound delivery",
+        "handling units",
+        "purchase requisition",
+        "purchase order"
+      ],
+      "aliases": [
+        "5FY_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/store-ordering-from-dc"
+      ],
+      "path": "15-retail-operations/test-script-in-store-purchase-order-management-5fy-ae-sap-s-4hana-clou.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FY_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: In-Store Purchase Order Management (5FY_AE) - SAP S/4HANA Cloud Public Edition (5FY_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 5FY_AE: store order proposals plus standard, customer-order-based and trusted receiving | keywords: Store Ordering from Distribution Centers, in-store purchase order management, order proposals, standard receiving, trusted receiving, customer order-based receiving, inbound delivery, handling units, purchase requisition, purchase order, 5FY_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-inbound-logistics-for-distribution-centers-5fu-ae-1089",
+      "title": "Test Script: Inbound Logistics for Distribution Centers (5FU_AE) (5FU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5FU_AE: inbound delivery, putaway confirmation and goods receipt posting at a distribution center.",
+      "keywords": [
+        "Inbound Logistics for Distribution Centers",
+        "inbound logistics",
+        "inbound delivery",
+        "inbound delivery mass processing",
+        "putaway confirmation",
+        "goods receipt",
+        "purchase orders",
+        "supplier confirmations",
+        "business roles",
+        "sample master data"
+      ],
+      "aliases": [
+        "5FU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/dc-inbound-logistics"
+      ],
+      "path": "15-retail-operations/test-script-inbound-logistics-for-distribution-centers-5fu-ae-1089.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Inbound Logistics for Distribution Centers (5FU_AE) (5FU_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 5FU_AE: inbound delivery, putaway confirmation and goods receipt posting at a distribution center | keywords: Inbound Logistics for Distribution Centers, inbound logistics, inbound delivery, inbound delivery mass processing, putaway confirmation, goods receipt, purchase orders, supplier confirmations, business roles, sample master data, 5FU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-inventory-management-for-distribution-centers-5fq-ae-sap-s",
+      "title": "Test Script: Inventory Management for Distribution Centers (5FQ_AE) - SAP S/4HANA Cloud Public Edition (5FQ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5FQ_AE: DC inventory goods receipt, scrapping, stock transfers, blocking and stock/material document display.",
+      "keywords": [
+        "Inventory Management and Physical Inventory for…",
+        "inventory management",
+        "goods receipt without reference",
+        "stock scrapping",
+        "stock transfer",
+        "two-step stock transfer",
+        "blocked stock",
+        "quality inspection stock",
+        "stock overview",
+        "material document overview"
+      ],
+      "aliases": [
+        "5FQ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/dc-inventory-and-physical-inventory"
+      ],
+      "path": "15-retail-operations/test-script-inventory-management-for-distribution-centers-5fq-ae-sap-s.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FQ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Inventory Management for Distribution Centers (5FQ_AE) - SAP S/4HANA Cloud Public Edition (5FQ_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 5FQ_AE: DC inventory goods receipt, scrapping, stock transfers, blocking and stock/material document display | keywords: Inventory Management and Physical Inventory for…, inventory management, goods receipt without reference, stock scrapping, stock transfer, two-step stock transfer, blocked stock, quality inspection stock, stock overview, material document overview, 5FQ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-merchandise-allocation-5fl-ae-sap-s-4hana-cloud-public-edi",
+      "title": "Test Script: Merchandise Allocation (5FL_AE) - SAP S/4HANA Cloud Public Edition (5FL_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition retail test script, scope item 5FL: create, change, follow on and delete allocation tables to push merchandise to stores.",
+      "keywords": [
+        "Merchandise Distribution and Allocation",
+        "allocation tables",
+        "merchandise distribution",
+        "recall allocation",
+        "follow-on documents",
+        "allocation table deletion",
+        "returns purchase orders",
+        "scope item testing",
+        "purchase orders",
+        "job scheduling"
+      ],
+      "aliases": [
+        "5FL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/merchandise-distribution-and-allocation"
+      ],
+      "path": "15-retail-operations/test-script-merchandise-allocation-5fl-ae-sap-s-4hana-cloud-public-edi.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Merchandise Allocation (5FL_AE) - SAP S/4HANA Cloud Public Edition (5FL_S4CLD2608_BPD_EN_AE) (Retail Operations) — S/4HANA Cloud Public Edition retail test script, scope item 5FL: create, change, follow on and delete allocation tables to push merchandise to stores | keywords: Merchandise Distribution and Allocation, allocation tables, merchandise distribution, recall allocation, follow-on documents, allocation table deletion, returns purchase orders, scope item testing, purchase orders, job scheduling, 5FL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-my-store-management-5fw-ae-sap-s-4hana-cloud-public-editio",
+      "title": "Test Script: My Store Management (5FW_AE) - SAP S/4HANA Cloud Public Edition (5FW_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 5FW My Store Management (AE): store associate assignment, picking sequence and My Store Overview app, with prerequisites and sample data.",
+      "keywords": [
+        "My Store Management",
+        "store associate assignment",
+        "store assignment change",
+        "picking sequence",
+        "my store overview",
+        "test prerequisites",
+        "business roles",
+        "sample data",
+        "purchase orders",
+        "inbound delivery"
+      ],
+      "aliases": [
+        "5FW_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/my-store-management"
+      ],
+      "path": "15-retail-operations/test-script-my-store-management-5fw-ae-sap-s-4hana-cloud-public-editio.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FW_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: My Store Management (5FW_AE) - SAP S/4HANA Cloud Public Edition (5FW_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP test script for scope item 5FW My Store Management (AE): store associate assignment, picking sequence and My Store Overview app, with prerequisites and sample data | keywords: My Store Management, store associate assignment, store assignment change, picking sequence, my store overview, test prerequisites, business roles, sample data, purchase orders, inbound delivery, 5FW_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-omnichannel-order-fulfillment-for-retail-5fz-ae-sap-s-4han",
+      "title": "Test Script: Omnichannel Order Fulfillment for Retail (5FZ_AE) - SAP S/4HANA Cloud Public Edition (5FZ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5FZ_AE: click-and-collect, click-and-reserve and DC-to-customer retail order fulfillment steps.",
+      "keywords": [
+        "Omnichannel and In-Store Customer Order Fulfillment",
+        "omnichannel order fulfillment",
+        "click and collect",
+        "click and reserve",
+        "store picking",
+        "order handover",
+        "sales order creation",
+        "stock transport orders",
+        "outbound delivery",
+        "billing documents"
+      ],
+      "aliases": [
+        "5FZ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/omnichannel-order-fulfillment"
+      ],
+      "path": "15-retail-operations/test-script-omnichannel-order-fulfillment-for-retail-5fz-ae-sap-s-4han.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FZ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Omnichannel Order Fulfillment for Retail (5FZ_AE) - SAP S/4HANA Cloud Public Edition (5FZ_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 5FZ_AE: click-and-collect, click-and-reserve and DC-to-customer retail order fulfillment steps | keywords: Omnichannel and In-Store Customer Order Fulfillment, omnichannel order fulfillment, click and collect, click and reserve, store picking, order handover, sales order creation, stock transport orders, outbound delivery, billing documents, 5FZ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-omnichannel-sales-promotion-opps-consumer-products-7t7-ae",
+      "title": "Test Script: Omnichannel Sales Promotion (OPPS) – Consumer Products (7T7_AE) (7T7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script, scope item 7T7_AE: OPPS promotion rules (free item, discount, combined), prerequisites and sales order tests, AE/AED.",
+      "keywords": [
+        "Omnichannel Promotion Pricing for Sales Orders",
+        "omnichannel promotion pricing",
+        "promotion rules",
+        "free item promotions",
+        "special discount promotions",
+        "combined promotion rules",
+        "sales order creation",
+        "scope item testing",
+        "opps configuration",
+        "pricing procedure configuration"
+      ],
+      "aliases": [
+        "7T7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/omnichannel-promotions"
+      ],
+      "path": "15-retail-operations/test-script-omnichannel-sales-promotion-opps-consumer-products-7t7-ae.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7T7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Omnichannel Sales Promotion (OPPS) – Consumer Products (7T7_AE) (7T7_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud 2608 test script, scope item 7T7_AE: OPPS promotion rules (free item, discount, combined), prerequisites and sales order tests, AE/AED | keywords: Omnichannel Promotion Pricing for Sales Orders, omnichannel promotion pricing, promotion rules, free item promotions, special discount promotions, combined promotion rules, sales order creation, scope item testing, opps configuration, pricing procedure configuration, 7T7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-physical-inventory-for-distribution-centers-5fs-ae-sap-s-4",
+      "title": "Test Script: Physical Inventory for Distribution Centers (5FS_AE) - SAP S/4HANA Cloud Public Edition (5FS_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition 2608 test script for scope item 5FS_AE: prerequisites and steps for physical inventory and cycle counting in distribution centers.",
+      "keywords": [
+        "Inventory Management and Physical Inventory for…",
+        "physical inventory",
+        "cycle counting",
+        "cycle counting classification",
+        "physical inventory documents",
+        "inventory count entry",
+        "count differences",
+        "inventory difference posting",
+        "test scripts",
+        "recount"
+      ],
+      "aliases": [
+        "5FS_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/dc-inventory-and-physical-inventory"
+      ],
+      "path": "15-retail-operations/test-script-physical-inventory-for-distribution-centers-5fs-ae-sap-s-4.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FS_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Physical Inventory for Distribution Centers (5FS_AE) - SAP S/4HANA Cloud Public Edition (5FS_S4CLD2608_BPD_EN_AE) (Retail Operations) — S/4HANA Cloud Public Edition 2608 test script for scope item 5FS_AE: prerequisites and steps for physical inventory and cycle counting in distribution centers | keywords: Inventory Management and Physical Inventory for…, physical inventory, cycle counting, cycle counting classification, physical inventory documents, inventory count entry, count differences, inventory difference posting, test scripts, recount, 5FS_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-procurement-for-retail-5fm-ae-sap-s-4hana-cloud-public-edi",
+      "title": "Test Script: Procurement for Retail (5FM_AE) - SAP S/4HANA Cloud Public Edition (5FM_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition test script, scope item 5FM_AE Procurement for Retail: PO creation, PR conversion, monitoring, EDI output, quantity optimization.",
+      "keywords": [
+        "Retail Procurement, Invoice Verification and Supplier…",
+        "procurement for retail",
+        "purchase order creation",
+        "purchase requisition conversion",
+        "automatic purchase orders",
+        "purchase order monitoring",
+        "purchase order output",
+        "edi output",
+        "quantity optimization",
+        "rounding profiles"
+      ],
+      "aliases": [
+        "5FM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-procurement-and-invoice-verification"
+      ],
+      "path": "15-retail-operations/test-script-procurement-for-retail-5fm-ae-sap-s-4hana-cloud-public-edi.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Procurement for Retail (5FM_AE) - SAP S/4HANA Cloud Public Edition (5FM_S4CLD2608_BPD_EN_AE) (Retail Operations) — S/4HANA Cloud Public Edition test script, scope item 5FM_AE Procurement for Retail: PO creation, PR conversion, monitoring, EDI output, quantity optimization | keywords: Retail Procurement, Invoice Verification and Supplier…, procurement for retail, purchase order creation, purchase requisition conversion, automatic purchase orders, purchase order monitoring, purchase order output, edi output, quantity optimization, rounding profiles, 5FM_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-replenishment-planning-for-stores-3i7-ae-946",
+      "title": "Test Script: Replenishment Planning for Stores (3I7_AE) (3I7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3I7_AE: store replenishment (forecast run, rapid replenishment run, scheduled jobs).",
+      "keywords": [
+        "Replenishment Planning for Stores",
+        "store replenishment",
+        "rapid replenishment",
+        "demand forecasting",
+        "scheduled replenishment jobs",
+        "article master data",
+        "planned independent requirements",
+        "consumption values",
+        "dynamic target stock",
+        "stock transport requisitions"
+      ],
+      "aliases": [
+        "3I7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/store-replenishment-planning"
+      ],
+      "path": "15-retail-operations/test-script-replenishment-planning-for-stores-3i7-ae-946.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Replenishment Planning for Stores (3I7_AE) (3I7_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 3I7_AE: store replenishment (forecast run, rapid replenishment run, scheduled jobs) | keywords: Replenishment Planning for Stores, store replenishment, rapid replenishment, demand forecasting, scheduled replenishment jobs, article master data, planned independent requirements, consumption values, dynamic target stock, stock transport requisitions, 3I7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-retail-logistics-with-embedded-warehouse-management-69l-ae",
+      "title": "Test Script - Retail Logistics with Embedded Warehouse Management (69L_AE) (69L_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud test script for scope item 69L_AE: embedded EWM inbound, outbound, physical inventory, posting changes, replenishment, prerequisites.",
+      "keywords": [
+        "Retail DC Warehouse Execution (Embedded EWM or Third-Party…",
+        "embedded warehouse management",
+        "warehouse inbound processing",
+        "warehouse outbound processing",
+        "physical inventory",
+        "posting changes",
+        "stock replenishment",
+        "warehouse configuration",
+        "cycle counting",
+        "business roles"
+      ],
+      "aliases": [
+        "69L_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-dc-warehouse-execution"
+      ],
+      "path": "15-retail-operations/test-script-retail-logistics-with-embedded-warehouse-management-69l-ae.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/69L_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Retail Logistics with Embedded Warehouse Management (69L_AE) (69L_S4CLD2608_BPD_EN_AE) (Retail Operations) — S/4HANA Cloud test script for scope item 69L_AE: embedded EWM inbound, outbound, physical inventory, posting changes, replenishment, prerequisites | keywords: Retail DC Warehouse Execution (Embedded EWM or Third-Party…, embedded warehouse management, warehouse inbound processing, warehouse outbound processing, physical inventory, posting changes, stock replenishment, warehouse configuration, cycle counting, business roles, 69L_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-retail-promotions-637-ae-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: Retail Promotions (637_AE) - SAP S/4HANA Cloud Public Edition (637_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud Public Edition scope item Retail Promotions (637_AE): create promotion, supply source, prices, listing, allocation, jobs.",
+      "keywords": [
+        "Retail Sales Pricing and Promotions",
+        "retail promotions",
+        "promotion creation",
+        "supply source determination",
+        "promotion price activation",
+        "promotion sales price",
+        "article listing",
+        "allocation tables",
+        "allocation distribution",
+        "follow-on documents"
+      ],
+      "aliases": [
+        "637_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-sales-pricing-and-promotions"
+      ],
+      "path": "15-retail-operations/test-script-retail-promotions-637-ae-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/637_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Retail Promotions (637_AE) - SAP S/4HANA Cloud Public Edition (637_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for SAP S/4HANA Cloud Public Edition scope item Retail Promotions (637_AE): create promotion, supply source, prices, listing, allocation, jobs | keywords: Retail Sales Pricing and Promotions, retail promotions, promotion creation, supply source determination, promotion price activation, promotion sales price, article listing, allocation tables, allocation distribution, follow-on documents, 637_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-returns-to-supplier-for-retail-5fo-ae-sap-s-4hana-cloud-pu",
+      "title": "Test Script: Returns to Supplier for Retail (5FO_AE) - SAP S/4HANA Cloud Public Edition (5FO_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 5FO_AE: retail returns to supplier, from returns PO to delivery, goods issue, then credit memo or replacement.",
+      "keywords": [
+        "Retail Procurement, Invoice Verification and Supplier…",
+        "returns to supplier",
+        "returns purchase order",
+        "outbound delivery",
+        "goods issue",
+        "credit memo",
+        "replacement material",
+        "goods receipt",
+        "invoice verification",
+        "return reasons"
+      ],
+      "aliases": [
+        "5FO_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-procurement-and-invoice-verification"
+      ],
+      "path": "15-retail-operations/test-script-returns-to-supplier-for-retail-5fo-ae-sap-s-4hana-cloud-pu.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FO_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Returns to Supplier for Retail (5FO_AE) - SAP S/4HANA Cloud Public Edition (5FO_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud test script for scope item 5FO_AE: retail returns to supplier, from returns PO to delivery, goods issue, then credit memo or replacement | keywords: Retail Procurement, Invoice Verification and Supplier…, returns to supplier, returns purchase order, outbound delivery, goods issue, credit memo, replacement material, goods receipt, invoice verification, return reasons, 5FO_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-sales-price-valuation-for-retail-5ft-ae-sap-s-4hana-cloud",
+      "title": "Test Script: Sales Price Valuation for Retail (5FT_AE) - SAP S/4HANA Cloud Public Edition (5FT_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 5FT, AE) for sales price valuation and revaluation in retail, with roles, sample data and step-by-step Fiori test procedures.",
+      "keywords": [
+        "Sales Price Valuation for Retail",
+        "sales price revaluation",
+        "valuation at retail",
+        "initialize valuation",
+        "sales price calculation",
+        "stock overview",
+        "business roles",
+        "master data",
+        "purchase orders",
+        "inbound delivery"
+      ],
+      "aliases": [
+        "5FT_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-sales-price-valuation"
+      ],
+      "path": "15-retail-operations/test-script-sales-price-valuation-for-retail-5ft-ae-sap-s-4hana-cloud.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FT_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Sales Price Valuation for Retail (5FT_AE) - SAP S/4HANA Cloud Public Edition (5FT_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script (scope item 5FT, AE) for sales price valuation and revaluation in retail, with roles, sample data and step-by-step Fiori test procedures | keywords: Sales Price Valuation for Retail, sales price revaluation, valuation at retail, initialize valuation, sales price calculation, stock overview, business roles, master data, purchase orders, inbound delivery, 5FT_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-sales-pricing-for-retail-3i4-ae-sap-s-4hana-cloud-public-e",
+      "title": "Test Script: Sales Pricing for Retail (3I4_AE) - SAP S/4HANA Cloud Public Edition (3I4_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition test script for scope item 3I4_AE Sales Pricing for Retail: prerequisites, configuration and 38 pricing test procedures.",
+      "keywords": [
+        "Retail Sales Pricing and Promotions",
+        "sales pricing for retail",
+        "sales price calculation",
+        "planned markup",
+        "pricing documents",
+        "pricing worklist",
+        "generic articles",
+        "price points",
+        "purchasing conditions",
+        "two-step pricing"
+      ],
+      "aliases": [
+        "3I4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-sales-pricing-and-promotions"
+      ],
+      "path": "15-retail-operations/test-script-sales-pricing-for-retail-3i4-ae-sap-s-4hana-cloud-public-e.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Sales Pricing for Retail (3I4_AE) - SAP S/4HANA Cloud Public Edition (3I4_S4CLD2608_BPD_EN_AE) (Retail Operations) — S/4HANA Cloud Public Edition test script for scope item 3I4_AE Sales Pricing for Retail: prerequisites, configuration and 38 pricing test procedures | keywords: Retail Sales Pricing and Promotions, sales pricing for retail, sales price calculation, planned markup, pricing documents, pricing worklist, generic articles, price points, purchasing conditions, two-step pricing, 3I4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-sap-s-4hana-cloud-public-edition-assortments-3i5-ae-945",
+      "title": "Test Script: SAP S/4HANA Cloud Public Edition - Assortments (3I5_AE) (3I5_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for SAP S/4HANA Cloud scope item Assortments (3I5, AE): assortment modules, versions, product/store/DC assignment, plus optional steps.",
+      "keywords": [
+        "Retail Sites, Business Partners and Assortments",
+        "assortments",
+        "assortment modules",
+        "assortment module versions",
+        "product assignment",
+        "store assignment",
+        "distribution center assignment",
+        "listing conditions",
+        "test scripts",
+        "product replacement"
+      ],
+      "aliases": [
+        "3I5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-sites-partners-and-assortments"
+      ],
+      "path": "15-retail-operations/test-script-sap-s-4hana-cloud-public-edition-assortments-3i5-ae-945.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: SAP S/4HANA Cloud Public Edition - Assortments (3I5_AE) (3I5_S4CLD2608_BPD_EN_AE) (Retail Operations) — Test script for SAP S/4HANA Cloud scope item Assortments (3I5, AE): assortment modules, versions, product/store/DC assignment, plus optional steps | keywords: Retail Sites, Business Partners and Assortments, assortments, assortment modules, assortment module versions, product assignment, store assignment, distribution center assignment, listing conditions, test scripts, product replacement, 3I5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-seasons-for-retail-6di-ae-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: Seasons for Retail (6DI_AE) - SAP S/4HANA Cloud Public Edition (6DI_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for Seasons for Retail (6DI_AE): create season master data, assign it to products, verify season copy across sales, purchase and STO documents.",
+      "keywords": [
+        "Retail Articles, Merchandise Categories and Seasons",
+        "season management",
+        "season master data",
+        "season assignment",
+        "season determination",
+        "sales order processing",
+        "purchase order processing",
+        "stock transfer orders",
+        "outbound delivery",
+        "inbound delivery"
+      ],
+      "aliases": [
+        "6DI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-articles-and-merchandise-categories"
+      ],
+      "path": "15-retail-operations/test-script-seasons-for-retail-6di-ae-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6DI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Seasons for Retail (6DI_AE) - SAP S/4HANA Cloud Public Edition (6DI_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP test script for Seasons for Retail (6DI_AE): create season master data, assign it to products, verify season copy across sales, purchase and STO documents | keywords: Retail Articles, Merchandise Categories and Seasons, season management, season master data, season assignment, season determination, sales order processing, purchase order processing, stock transfer orders, outbound delivery, inbound delivery, 6DI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-store-connectivity-outbound-3i2-ae-sap-s-4hana-cloud-publi",
+      "title": "Test Script: Store Connectivity – Outbound (3I2_AE), SAP S/4HANA Cloud Public Edition (3I2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3I2 (AE): replicating retail article master data and sales prices to store POS, initial and delta, with monitoring.",
+      "keywords": [
+        "Store Connectivity (POS Inbound and Outbound)",
+        "store connectivity outbound",
+        "pos master data replication",
+        "initial replication",
+        "delta replication",
+        "communication arrangements",
+        "replication logs",
+        "application interface framework",
+        "manual replication",
+        "replication filters"
+      ],
+      "aliases": [
+        "3I2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/store-connectivity"
+      ],
+      "path": "15-retail-operations/test-script-store-connectivity-outbound-3i2-ae-sap-s-4hana-cloud-publi.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3I2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Store Connectivity – Outbound (3I2_AE), SAP S/4HANA Cloud Public Edition (3I2_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition test script for scope item 3I2 (AE): replicating retail article master data and sales prices to store POS, initial and delta, with monitoring | keywords: Store Connectivity (POS Inbound and Outbound), store connectivity outbound, pos master data replication, initial replication, delta replication, communication arrangements, replication logs, application interface framework, manual replication, replication filters, 3I2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-store-ordering-from-distribution-center-5fx-ae-1092",
+      "title": "Test Script: Store Ordering from Distribution Center (5FX_AE) (5FX_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5FX: stores ordering from distribution centers via stock transport orders and advanced intercompany stock transfer.",
+      "keywords": [
+        "Store Ordering from Distribution Centers",
+        "stock transport order",
+        "stock transport requisition",
+        "automatic order conversion",
+        "intercompany stock transfer",
+        "outbound delivery",
+        "goods in transit",
+        "intercompany billing",
+        "pro forma invoice",
+        "goods issue"
+      ],
+      "aliases": [
+        "5FX_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/store-ordering-from-dc"
+      ],
+      "path": "15-retail-operations/test-script-store-ordering-from-distribution-center-5fx-ae-1092.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5FX_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Store Ordering from Distribution Center (5FX_AE) (5FX_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5FX: stores ordering from distribution centers via stock transport orders and advanced intercompany stock transfer | keywords: Store Ordering from Distribution Centers, stock transport order, stock transport requisition, automatic order conversion, intercompany stock transfer, outbound delivery, goods in transit, intercompany billing, pro forma invoice, goods issue, 5FX_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-supplier-consignment-for-retail-71p-ae-sap-s-4hana-cloud-p",
+      "title": "Test Script: Supplier Consignment for Retail (71P_AE) - SAP S/4HANA Cloud Public Edition (71P_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 71P_AE (AE localization): supplier consignment retail processes, roles, sample data, Fiori apps and step-by-step test procedures.",
+      "keywords": [
+        "Supplier Consignment for Retail",
+        "supplier consignment",
+        "consignment settlement",
+        "article master data",
+        "purchase orders",
+        "stock transport orders",
+        "returns",
+        "return to supplier",
+        "store picking",
+        "in-store customer orders"
+      ],
+      "aliases": [
+        "71P_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/retail-supplier-consignment"
+      ],
+      "path": "15-retail-operations/test-script-supplier-consignment-for-retail-71p-ae-sap-s-4hana-cloud-p.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/71P_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Supplier Consignment for Retail (71P_AE) - SAP S/4HANA Cloud Public Edition (71P_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP test script for scope item 71P_AE (AE localization): supplier consignment retail processes, roles, sample data, Fiori apps and step-by-step test procedures | keywords: Supplier Consignment for Retail, supplier consignment, consignment settlement, article master data, purchase orders, stock transport orders, returns, return to supplier, store picking, in-store customer orders, 71P_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "15-retail-operations/test-script-value-added-services-for-retail-6nm-ae-sap-s-4hana-cloud-p",
+      "title": "Test Script: Value-Added Services for Retail (6NM_AE), SAP S/4HANA Cloud Public Edition (6NM_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 6NM_AE: configuring and testing retail value-added services (VAS) across sales, purchasing and stock transfer, with sample data and roles.",
+      "keywords": [
+        "Value-Added Services for Retail",
+        "value-added services",
+        "vas service types",
+        "charge codes",
+        "pricing procedures",
+        "vas characteristic combinations",
+        "sales order processing",
+        "purchase order processing",
+        "stock transfer orders",
+        "vas quantity correlation"
+      ],
+      "aliases": [
+        "6NM_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/retail-operations",
+        "topic/value-added-services-retail"
+      ],
+      "path": "15-retail-operations/test-script-value-added-services-for-retail-6nm-ae-sap-s-4hana-cloud-p.md",
+      "cluster": "15-retail-operations",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6NM_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Value-Added Services for Retail (6NM_AE), SAP S/4HANA Cloud Public Edition (6NM_S4CLD2608_BPD_EN_AE) (Retail Operations) — SAP test script for scope item 6NM_AE: configuring and testing retail value-added services (VAS) across sales, purchasing and stock transfer, with sample data and roles | keywords: Value-Added Services for Retail, value-added services, vas service types, charge codes, pricing procedures, vas characteristic combinations, sales order processing, purchase order processing, stock transfer orders, vas quantity correlation, 6NM_S4CLD2608_BPD_EN_AE"
+    }
+  ]
+}

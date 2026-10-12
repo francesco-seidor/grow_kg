@@ -1,0 +1,2681 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "05-treasury-and-cash-management",
+  "cluster_title": "Treasury and Cash Management",
+  "cluster_description": "Treasury instruments (debt, FX, derivatives, bonds, securities, guarantees, letters of credit) with IFRS/US GAAP valuation, market rates, bank fees and statements, cash pooling, liquidity.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 82,
+  "nodes": [
+    {
+      "id": "05-treasury-and-cash-management/advanced-cash-operations-j78-ae-test-script-sap-s-4hana-cloud-public-e-part-01",
+      "title": "Advanced Cash Operations (J78_AE) Test Script - SAP S/4HANA Cloud Public Edition (J78_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Test script for SAP scope item J78 Advanced Cash Operations (AE, co. code 3310): cash config, BCM payment approval, bank transfers, cash trade requests.",
+      "keywords": [
+        "Cash Operations and Cash Positioning",
+        "cash management full scope",
+        "liquidity items",
+        "liquidity item derivation",
+        "flow builder",
+        "payment approval",
+        "bcm payment batches",
+        "bank transfers",
+        "cash position profile",
+        "cash flow reconciliation"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/cash-operations"
+      ],
+      "path": "05-treasury-and-cash-management/advanced-cash-operations-j78-ae-test-script-sap-s-4hana-cloud-public-e-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J78_S4CLD2608_BPD_EN_AE.docx#lines-1-3312"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Advanced Cash Operations (J78_AE) Test Script - SAP S/4HANA Cloud Public Edition (J78_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — Test script for SAP scope item J78 Advanced Cash Operations (AE, co. code 3310): cash config, BCM payment approval, bank transfers, cash trade requests | keywords: Cash Operations and Cash Positioning, cash management full scope, liquidity items, liquidity item derivation, flow builder, payment approval, bcm payment batches, bank transfers, cash position profile, cash flow reconciliation"
+    },
+    {
+      "id": "05-treasury-and-cash-management/advanced-cash-operations-j78-ae-test-script-sap-s-4hana-cloud-public-e-part-02",
+      "title": "Advanced Cash Operations (J78_AE) Test Script - SAP S/4HANA Cloud Public Edition (J78_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script J78, part 2: step-by-step Fiori tests for bank balances, reconciliation, snapshots, monitors and cash reports.",
+      "keywords": [
+        "Cash Operations and Cash Positioning",
+        "bank account balances",
+        "cash flow reconciliation",
+        "cash snapshots",
+        "instant balances",
+        "liquidity item transfer",
+        "situation handling",
+        "bank statement monitor",
+        "intraday bank statements",
+        "short-term cash positioning"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/cash-operations"
+      ],
+      "path": "05-treasury-and-cash-management/advanced-cash-operations-j78-ae-test-script-sap-s-4hana-cloud-public-e-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J78_S4CLD2608_BPD_EN_AE.docx#lines-3313-4596"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Advanced Cash Operations (J78_AE) Test Script - SAP S/4HANA Cloud Public Edition (J78_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 (AE) test script J78, part 2: step-by-step Fiori tests for bank balances, reconciliation, snapshots, monitors and cash reports | keywords: Cash Operations and Cash Positioning, bank account balances, cash flow reconciliation, cash snapshots, instant balances, liquidity item transfer, situation handling, bank statement monitor, intraday bank statements, short-term cash positioning"
+    },
+    {
+      "id": "05-treasury-and-cash-management/asset-backed-securities-management-group-ledger-us-gaap-6b7-ae-1160",
+      "title": "Asset-Backed Securities Management – Group Ledger US GAAP (6B7_AE) (6B7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script 6B7: posting ABS investment flows and key date valuation in parallel valuation area 003 for the US GAAP ledger.",
+      "keywords": [
+        "Asset-Backed Securities Management",
+        "asset-backed securities",
+        "parallel valuation",
+        "us gaap ledger",
+        "general ledger posting",
+        "key date valuation",
+        "period-end closing",
+        "treasury accounting",
+        "business conditions",
+        "test scripts"
+      ],
+      "aliases": [
+        "6B7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/asset-backed-securities"
+      ],
+      "path": "05-treasury-and-cash-management/asset-backed-securities-management-group-ledger-us-gaap-6b7-ae-1160.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6B7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Asset-Backed Securities Management – Group Ledger US GAAP (6B7_AE) (6B7_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script 6B7: posting ABS investment flows and key date valuation in parallel valuation area 003 for the US GAAP ledger | keywords: Asset-Backed Securities Management, asset-backed securities, parallel valuation, us gaap ledger, general ledger posting, key date valuation, period-end closing, treasury accounting, business conditions, test scripts, 6B7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/automatic-market-rates-management-1s4-ae-test-script-762",
+      "title": "Automatic Market Rates Management (1S4_AE) - Test Script (1S4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (1S4_AE, UAE) for automatic market rates import via Refinitiv or BYOR: translation tables, retrieval, jobs, notifications.",
+      "keywords": [
+        "Market Rates Management (Automatic Import and Manual Upload)",
+        "market rates management",
+        "datafeed translation tables",
+        "currency spot rates",
+        "retrieve market data",
+        "bring your own rates",
+        "job scheduling",
+        "job notifications",
+        "date deviation check",
+        "message control"
+      ],
+      "aliases": [
+        "1S4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/market-rates-management"
+      ],
+      "path": "05-treasury-and-cash-management/automatic-market-rates-management-1s4-ae-test-script-762.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1S4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Automatic Market Rates Management (1S4_AE) - Test Script (1S4_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script (1S4_AE, UAE) for automatic market rates import via Refinitiv or BYOR: translation tables, retrieval, jobs, notifications | keywords: Market Rates Management (Automatic Import and Manual Upload), market rates management, datafeed translation tables, currency spot rates, retrieve market data, bring your own rates, job scheduling, job notifications, date deviation check, message control, 1S4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/bank-guarantee-management-group-ledger-ifrs-2o2-ae-test-script-841",
+      "title": "Bank Guarantee Management - Group Ledger IFRS (2O2_AE) - Test Script (2O2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2O2_AE: posting bank guarantee flows to the IFRS ledger in parallel valuation area 002 via TPM10, Treasury Accountant role.",
+      "keywords": [
+        "Bank Guarantee Management",
+        "parallel valuation",
+        "ifrs ledger",
+        "posting flows to general ledger",
+        "test script",
+        "treasury accounting",
+        "business conditions",
+        "master data scripts",
+        "demo data",
+        "business roles"
+      ],
+      "aliases": [
+        "2O2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-guarantees"
+      ],
+      "path": "05-treasury-and-cash-management/bank-guarantee-management-group-ledger-ifrs-2o2-ae-test-script-841.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2O2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Bank Guarantee Management - Group Ledger IFRS (2O2_AE) - Test Script (2O2_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP test script for scope item 2O2_AE: posting bank guarantee flows to the IFRS ledger in parallel valuation area 002 via TPM10, Treasury Accountant role | keywords: Bank Guarantee Management, parallel valuation, ifrs ledger, posting flows to general ledger, test script, treasury accounting, business conditions, master data scripts, demo data, business roles, 2O2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/bank-guarantee-management-group-ledger-us-gaap-34f-ae-test-script-910",
+      "title": "Bank Guarantee Management - Group Ledger US GAAP (34F_AE) - Test Script (34F_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 34F_AE: posting bank guarantee flows to the US GAAP ledger in parallel valuation area 003 via TPM10, Treasury Accountant role.",
+      "keywords": [
+        "Bank Guarantee Management",
+        "parallel valuation",
+        "us gaap ledger",
+        "posting flows to general ledger",
+        "test script",
+        "treasury accounting",
+        "business conditions",
+        "master data scripts",
+        "demo data",
+        "business roles"
+      ],
+      "aliases": [
+        "34F_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-guarantees"
+      ],
+      "path": "05-treasury-and-cash-management/bank-guarantee-management-group-ledger-us-gaap-34f-ae-test-script-910.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34F_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Bank Guarantee Management - Group Ledger US GAAP (34F_AE) - Test Script (34F_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP test script for scope item 34F_AE: posting bank guarantee flows to the US GAAP ledger in parallel valuation area 003 via TPM10, Treasury Accountant role | keywords: Bank Guarantee Management, parallel valuation, us gaap ledger, posting flows to general ledger, test script, treasury accounting, business conditions, master data scripts, demo data, business roles, 34F_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/bank-integration-with-sap-multi-bank-connectivity-16r-ae-703",
+      "title": "Bank Integration with SAP Multi-Bank Connectivity (16R_AE) (16R_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud 2608 test script (16R_AE): simulating MBC outgoing payments, CAMT.053/MT940 bank statements, fee files, situations and message monitoring.",
+      "keywords": [
+        "Bank Integration via Multi-Bank Connectivity and File…",
+        "multi-bank connectivity",
+        "bank integration",
+        "bank statements",
+        "camt.053 format",
+        "mt940 format",
+        "electronic bank statement import",
+        "payment instructions",
+        "situation handling",
+        "mbc message monitor"
+      ],
+      "aliases": [
+        "16R_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-integration-mbc-and-file-interface"
+      ],
+      "path": "05-treasury-and-cash-management/bank-integration-with-sap-multi-bank-connectivity-16r-ae-703.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/16R_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Bank Integration with SAP Multi-Bank Connectivity (16R_AE) (16R_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — S/4HANA Cloud 2608 test script (16R_AE): simulating MBC outgoing payments, CAMT.053/MT940 bank statements, fee files, situations and message monitoring | keywords: Bank Integration via Multi-Bank Connectivity and File…, multi-bank connectivity, bank integration, bank statements, camt.053 format, mt940 format, electronic bank statement import, payment instructions, situation handling, mbc message monitor, 16R_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/basic-cash-operations-bfb-ae-test-script-sap-s-4hana-cloud-public-edit",
+      "title": "Basic Cash Operations (BFB_AE) Test Script, SAP S/4HANA Cloud Public Edition (BFB_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item BFB (UAE/AE, company code 3310, AED): cash operations setup, bank statements, memo records, cash reports, One Exposure and Flow Builder jobs.",
+      "keywords": [
+        "Cash Operations and Cash Positioning",
+        "cash operations",
+        "manual bank statement",
+        "memo records",
+        "memo records 2.0",
+        "cash flow analyzer",
+        "cash register",
+        "one exposure",
+        "flow builder",
+        "value date correction"
+      ],
+      "aliases": [
+        "BFB_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/cash-operations"
+      ],
+      "path": "05-treasury-and-cash-management/basic-cash-operations-bfb-ae-test-script-sap-s-4hana-cloud-public-edit.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BFB_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Basic Cash Operations (BFB_AE) Test Script, SAP S/4HANA Cloud Public Edition (BFB_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — Test script for scope item BFB (UAE/AE, company code 3310, AED): cash operations setup, bank statements, memo records, cash reports, One Exposure and Flow Builder jobs | keywords: Cash Operations and Cash Positioning, cash operations, manual bank statement, memo records, memo records 2.0, cash flow analyzer, cash register, one exposure, flow builder, value date correction, BFB_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/bond-management-3wy-ae-test-script-sap-s-4hana-cloud-public-edition-26-part-01",
+      "title": "Bond Management (3WY_AE) Test Script - SAP S/4HANA Cloud Public Edition 2608 (3WY_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "SAP test script for Bond Management (3WY_AE, UAE/AED, company code 3310): bond issuance and investment, payments, correspondence, postings, period-end, in Fiori apps.",
+      "keywords": [
+        "Bond Management",
+        "bond issuance",
+        "bond investment",
+        "security classes",
+        "securities accounts",
+        "securities transactions",
+        "business partner setup",
+        "correspondence processing",
+        "payment requests",
+        "general ledger posting"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bond-management"
+      ],
+      "path": "05-treasury-and-cash-management/bond-management-3wy-ae-test-script-sap-s-4hana-cloud-public-edition-26-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3WY_S4CLD2608_BPD_EN_AE.docx#lines-1-2911"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Bond Management (3WY_AE) Test Script - SAP S/4HANA Cloud Public Edition 2608 (3WY_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — SAP test script for Bond Management (3WY_AE, UAE/AED, company code 3310): bond issuance and investment, payments, correspondence, postings, period-end, in Fiori apps | keywords: Bond Management, bond issuance, bond investment, security classes, securities accounts, securities transactions, business partner setup, correspondence processing, payment requests, general ledger posting"
+    },
+    {
+      "id": "05-treasury-and-cash-management/bond-management-3wy-ae-test-script-sap-s-4hana-cloud-public-edition-26-part-02",
+      "title": "Bond Management (3WY_AE) Test Script - SAP S/4HANA Cloud Public Edition 2608 (3WY_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "SAP Best Practices 2608 (AE) TRM test script, second part: bond payment, period-end, repayment, reports, and appendix job scheduling, output management, market risk and credit risk steps.",
+      "keywords": [
+        "Bond Management",
+        "payment requests",
+        "automatic payment run",
+        "post to general ledger",
+        "key date valuation",
+        "coupon interest",
+        "valuation class transfer",
+        "bond sale",
+        "bond repayment",
+        "treasury reports"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bond-management"
+      ],
+      "path": "05-treasury-and-cash-management/bond-management-3wy-ae-test-script-sap-s-4hana-cloud-public-edition-26-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3WY_S4CLD2608_BPD_EN_AE.docx#lines-2912-4949"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Bond Management (3WY_AE) Test Script - SAP S/4HANA Cloud Public Edition 2608 (3WY_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — SAP Best Practices 2608 (AE) TRM test script, second part: bond payment, period-end, repayment, reports, and appendix job scheduling, output management, market risk and credit risk steps | keywords: Bond Management, payment requests, automatic payment run, post to general ledger, key date valuation, coupon interest, valuation class transfer, bond sale, bond repayment, treasury reports"
+    },
+    {
+      "id": "05-treasury-and-cash-management/bond-management-group-ledger-ifrs-3wz-ae-test-script-982",
+      "title": "Bond Management – Group Ledger IFRS (3WZ_AE) Test Script (3WZ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3WZ: parallel valuation area 002 (IFRS) postings, key date valuation and class transfer for bond issuance/investment.",
+      "keywords": [
+        "Bond Management",
+        "group ledger ifrs",
+        "parallel valuation",
+        "key date valuation",
+        "bond investment",
+        "valuation class transfer",
+        "test scripts",
+        "business roles",
+        "demo data",
+        "period-end closing"
+      ],
+      "aliases": [
+        "3WZ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bond-management"
+      ],
+      "path": "05-treasury-and-cash-management/bond-management-group-ledger-ifrs-3wz-ae-test-script-982.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3WZ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Bond Management – Group Ledger IFRS (3WZ_AE) Test Script (3WZ_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 3WZ: parallel valuation area 002 (IFRS) postings, key date valuation and class transfer for bond issuance/investment | keywords: Bond Management, group ledger ifrs, parallel valuation, key date valuation, bond investment, valuation class transfer, test scripts, business roles, demo data, period-end closing, 3WZ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/create-business-partner-for-treasury-and-risk-management-mds-22g-257",
+      "title": "Create Business Partner for Treasury and Risk Management - MDS (22G) (22G_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition master data script (22G): manual test steps to create treasury business partners, roles, payment, correspondence data.",
+      "keywords": [
+        "Business Partners for Treasury and Risk Management",
+        "treasury business partner",
+        "business partner general data",
+        "payment details",
+        "business partner authorizations",
+        "treasury correspondence",
+        "securities partner roles",
+        "derived flows",
+        "company code reporting data",
+        "letter of credit bank role"
+      ],
+      "aliases": [
+        "22G_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-business-partners"
+      ],
+      "path": "05-treasury-and-cash-management/create-business-partner-for-treasury-and-risk-management-mds-22g-257.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/22G_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Business Partner for Treasury and Risk Management - MDS (22G) (22G_S4CLD2608_Master_Data_EN_XX) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition master data script (22G): manual test steps to create treasury business partners, roles, payment, correspondence data | keywords: Business Partners for Treasury and Risk Management, treasury business partner, business partner general data, payment details, business partner authorizations, treasury correspondence, securities partner roles, derived flows, company code reporting data, letter of credit bank role, 22G_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/foreign-currency-risk-management-group-ledger-ifrs-1x9-ae-777",
+      "title": "Foreign Currency Risk Management – Group Ledger IFRS (1X9_AE) (1X9_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for parallel valuation (IFRS 9, valuation area 002) of foreign currency risk: flow posting, key date valuation, realized P&L.",
+      "keywords": [
+        "Foreign Currency Risk Management (FX Deals)",
+        "foreign currency risk management",
+        "parallel valuation",
+        "ifrs ledger",
+        "key date valuation",
+        "flow posting",
+        "realized profit and loss",
+        "hedge accounting",
+        "demo data",
+        "business roles"
+      ],
+      "aliases": [
+        "1X9_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/foreign-currency-risk-management"
+      ],
+      "path": "05-treasury-and-cash-management/foreign-currency-risk-management-group-ledger-ifrs-1x9-ae-777.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1X9_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Foreign Currency Risk Management – Group Ledger IFRS (1X9_AE) (1X9_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script for parallel valuation (IFRS 9, valuation area 002) of foreign currency risk: flow posting, key date valuation, realized P&L | keywords: Foreign Currency Risk Management (FX Deals), foreign currency risk management, parallel valuation, ifrs ledger, key date valuation, flow posting, realized profit and loss, hedge accounting, demo data, business roles, 1X9_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/foreign-currency-risk-management-group-ledger-us-gaap-34d-ae-908",
+      "title": "Foreign Currency Risk Management – Group Ledger US GAAP (34D_AE) (34D_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for parallel valuation (US GAAP, valuation area 003) of foreign currency risk: flow posting, key date valuation, realized P&L.",
+      "keywords": [
+        "Foreign Currency Risk Management (FX Deals)",
+        "foreign currency risk management",
+        "parallel valuation",
+        "us gaap ledger",
+        "key date valuation",
+        "flow posting",
+        "realized profit and loss",
+        "demo data",
+        "business roles",
+        "treasury accounting"
+      ],
+      "aliases": [
+        "34D_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/foreign-currency-risk-management"
+      ],
+      "path": "05-treasury-and-cash-management/foreign-currency-risk-management-group-ledger-us-gaap-34d-ae-908.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34D_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Foreign Currency Risk Management – Group Ledger US GAAP (34D_AE) (34D_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script for parallel valuation (US GAAP, valuation area 003) of foreign currency risk: flow posting, key date valuation, realized P&L | keywords: Foreign Currency Risk Management (FX Deals), foreign currency risk management, parallel valuation, us gaap ledger, key date valuation, flow posting, realized profit and loss, demo data, business roles, treasury accounting, 34D_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/geschaftspartner-fur-treasury-and-risk-management-anlegen-mds-22g-256",
+      "title": "Geschäftspartner für Treasury and Risk Management anlegen - MDS (22G) (22G_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (22G) for SAP S/4HANA Cloud Public Edition 2608: manual test steps to create business partners for Treasury and Risk Management.",
+      "keywords": [
+        "Business Partners for Treasury and Risk Management",
+        "business partner creation",
+        "treasury risk management",
+        "payment connections",
+        "business partner authorizations",
+        "treasury correspondence",
+        "business partner profiles",
+        "issuer and custodian roles",
+        "derived transactions",
+        "reporting data"
+      ],
+      "aliases": [
+        "22G_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-business-partners"
+      ],
+      "path": "05-treasury-and-cash-management/geschaftspartner-fur-treasury-and-risk-management-anlegen-mds-22g-256.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/22G_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Geschäftspartner für Treasury and Risk Management anlegen - MDS (22G) (22G_S4CLD2608_Master_Data_DE_XX) (Treasury and Cash Management) — German master data script (22G) for SAP S/4HANA Cloud Public Edition 2608: manual test steps to create business partners for Treasury and Risk Management | keywords: Business Partners for Treasury and Risk Management, business partner creation, treasury risk management, payment connections, business partner authorizations, treasury correspondence, business partner profiles, issuer and custodian roles, derived transactions, reporting data, 22G_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/hedge-accounting-for-fx-forward-group-ledger-us-gaap-3x3-ae-986",
+      "title": "Hedge Accounting for FX Forward – Group Ledger US GAAP (3X3_AE) (3X3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3X3_AE: US GAAP cash flow hedge accounting with FX forwards/NDFs, from hedging area to reclassification.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "hedging area",
+        "raw exposure",
+        "hedge management cockpit",
+        "fx forward transactions",
+        "hedging relationship designation",
+        "hedging relationship release",
+        "period end closing",
+        "key date valuation"
+      ],
+      "aliases": [
+        "3X3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/hedge-accounting-for-fx-forward-group-ledger-us-gaap-3x3-ae-986.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3X3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Hedge Accounting for FX Forward – Group Ledger US GAAP (3X3_AE) (3X3_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3X3_AE: US GAAP cash flow hedge accounting with FX forwards/NDFs, from hedging area to reclassification | keywords: Hedge Accounting for FX Exposures, hedge accounting, hedging area, raw exposure, hedge management cockpit, fx forward transactions, hedging relationship designation, hedging relationship release, period end closing, key date valuation, 3X3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/hedge-accounting-for-fx-option-group-ledger-ifrs-2rw-ae-test-script-85",
+      "title": "Hedge Accounting for FX Option – Group Ledger IFRS (2RW_AE) – Test Script (2RW_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 2RW_AE, 2608): IFRS 9 cash flow hedge accounting with European FX options, from hedging area to reclassification.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "hedging area",
+        "fx options",
+        "hedging classification",
+        "hedging relationship",
+        "period end closing",
+        "reclassification",
+        "hedge management cockpit",
+        "raw exposure"
+      ],
+      "aliases": [
+        "2RW_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/hedge-accounting-for-fx-option-group-ledger-ifrs-2rw-ae-test-script-85.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2RW_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Hedge Accounting for FX Option – Group Ledger IFRS (2RW_AE) – Test Script (2RW_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script (scope item 2RW_AE, 2608): IFRS 9 cash flow hedge accounting with European FX options, from hedging area to reclassification | keywords: Hedge Accounting for FX Exposures, hedge accounting, hedging area, fx options, hedging classification, hedging relationship, period end closing, reclassification, hedge management cockpit, raw exposure, 2RW_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/hedge-accounting-for-fx-option-group-ledger-us-gaap-3x4-ae-test-script",
+      "title": "Hedge Accounting for FX Option – Group Ledger US GAAP (3X4_AE) – Test Script (3X4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3X4: US GAAP cash flow hedge accounting with European FX options (vanilla and collar), incl. dedesignation, termination.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "fx options",
+        "hedging area",
+        "zero cost collar",
+        "hedging relationship",
+        "exposure management",
+        "period end closing",
+        "dedesignation",
+        "hedging instrument termination"
+      ],
+      "aliases": [
+        "3X4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/hedge-accounting-for-fx-option-group-ledger-us-gaap-3x4-ae-test-script.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3X4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Hedge Accounting for FX Option – Group Ledger US GAAP (3X4_AE) – Test Script (3X4_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3X4: US GAAP cash flow hedge accounting with European FX options (vanilla and collar), incl. dedesignation, termination | keywords: Hedge Accounting for FX Exposures, hedge accounting, fx options, hedging area, zero cost collar, hedging relationship, exposure management, period end closing, dedesignation, hedging instrument termination, 3X4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/hedge-accounting-for-fx-option-local-gaap-3x2-ae-985",
+      "title": "Hedge Accounting for FX Option – Local GAAP (3X2_AE) (3X2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script 3X2_AE: cash flow hedge accounting with European FX options (vanilla and collar) under local GAAP, valuation area AE0.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "fx options",
+        "hedging area",
+        "hedging classification",
+        "collar fx option",
+        "hedging relationship",
+        "period end closing",
+        "dedesignation",
+        "exposure management"
+      ],
+      "aliases": [
+        "3X2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/hedge-accounting-for-fx-option-local-gaap-3x2-ae-985.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3X2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Hedge Accounting for FX Option – Local GAAP (3X2_AE) (3X2_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script 3X2_AE: cash flow hedge accounting with European FX options (vanilla and collar) under local GAAP, valuation area AE0 | keywords: Hedge Accounting for FX Exposures, hedge accounting, fx options, hedging area, hedging classification, collar fx option, hedging relationship, period end closing, dedesignation, exposure management, 3X2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/hedge-accounting-for-fx-swap-group-ledger-ifrs-2uf-ae-870",
+      "title": "Hedge Accounting for FX Swap – Group Ledger IFRS (2UF_AE) (2UF_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script 2UF (AE): IFRS 9 cash flow hedge accounting with FX swap overhedge processing, from hedging area to period-end, maturity and termination.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "overhedge processing",
+        "fx swap transactions",
+        "hedging area",
+        "hedging relationships",
+        "period-end closing",
+        "hedging reserve reclassification",
+        "hedging classifications",
+        "raw exposure"
+      ],
+      "aliases": [
+        "2UF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/hedge-accounting-for-fx-swap-group-ledger-ifrs-2uf-ae-870.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Hedge Accounting for FX Swap – Group Ledger IFRS (2UF_AE) (2UF_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script 2UF (AE): IFRS 9 cash flow hedge accounting with FX swap overhedge processing, from hedging area to period-end, maturity and termination | keywords: Hedge Accounting for FX Exposures, hedge accounting, overhedge processing, fx swap transactions, hedging area, hedging relationships, period-end closing, hedging reserve reclassification, hedging classifications, raw exposure, 2UF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/intercompany-foreign-exchange-group-ledger-ifrs-2hu-ae-test-script-826",
+      "title": "Intercompany Foreign Exchange – Group Ledger IFRS (2HU_AE) – Test Script (2HU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2HU_AE: intercompany FX deals, mirror deals and IFRS parallel valuation postings (AE sample data).",
+      "keywords": [
+        "Intercompany Foreign Exchange Deals",
+        "intercompany foreign exchange",
+        "group ledger ifrs",
+        "fx spot forward",
+        "fx swap",
+        "non-deliverable forward",
+        "mirror deals",
+        "parallel valuation",
+        "key date valuation",
+        "realized profit and loss"
+      ],
+      "aliases": [
+        "2HU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/intercompany-fx-deals"
+      ],
+      "path": "05-treasury-and-cash-management/intercompany-foreign-exchange-group-ledger-ifrs-2hu-ae-test-script-826.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2HU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Intercompany Foreign Exchange – Group Ledger IFRS (2HU_AE) – Test Script (2HU_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 2HU_AE: intercompany FX deals, mirror deals and IFRS parallel valuation postings (AE sample data) | keywords: Intercompany Foreign Exchange Deals, intercompany foreign exchange, group ledger ifrs, fx spot forward, fx swap, non-deliverable forward, mirror deals, parallel valuation, key date valuation, realized profit and loss, 2HU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/intercompany-foreign-exchange-management-2f2-ae-test-script-819",
+      "title": "Intercompany Foreign Exchange Management (2F2_AE) Test Script (2F2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2F2_AE: intercompany FX spot/forward, swap, NDF creation and mirror deal checks (AE).",
+      "keywords": [
+        "Intercompany Foreign Exchange Deals",
+        "intercompany foreign exchange",
+        "fx spot forward",
+        "fx swap",
+        "non-deliverable forward",
+        "mirror deal",
+        "intercompany business partner",
+        "cash position analysis",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "2F2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/intercompany-fx-deals"
+      ],
+      "path": "05-treasury-and-cash-management/intercompany-foreign-exchange-management-2f2-ae-test-script-819.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2F2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Intercompany Foreign Exchange Management (2F2_AE) Test Script (2F2_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2F2_AE: intercompany FX spot/forward, swap, NDF creation and mirror deal checks (AE) | keywords: Intercompany Foreign Exchange Deals, intercompany foreign exchange, fx spot forward, fx swap, non-deliverable forward, mirror deal, intercompany business partner, cash position analysis, business roles, test scripts, 2F2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/interest-rate-derivatives-management-group-ledger-ifrs-1xb-ae-test-scr",
+      "title": "Interest Rate Derivatives Management – Group Ledger IFRS (1XB_AE) Test Script (1XB_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 1XB_AE: parallel IFRS valuation area 002 for interest rate derivatives (flows, accrual, valuation, realized P&L).",
+      "keywords": [
+        "Interest Rate Derivatives Management",
+        "interest rate derivatives",
+        "parallel valuation",
+        "ifrs group ledger",
+        "post flows to general ledger",
+        "accrual run",
+        "key date valuation",
+        "realized profit and loss",
+        "period-end closing",
+        "business roles"
+      ],
+      "aliases": [
+        "1XB_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/interest-rate-derivatives"
+      ],
+      "path": "05-treasury-and-cash-management/interest-rate-derivatives-management-group-ledger-ifrs-1xb-ae-test-scr.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1XB_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Interest Rate Derivatives Management – Group Ledger IFRS (1XB_AE) Test Script (1XB_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 1XB_AE: parallel IFRS valuation area 002 for interest rate derivatives (flows, accrual, valuation, realized P&L) | keywords: Interest Rate Derivatives Management, interest rate derivatives, parallel valuation, ifrs group ledger, post flows to general ledger, accrual run, key date valuation, realized profit and loss, period-end closing, business roles, 1XB_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/interest-rate-derivatives-management-group-ledger-us-gaap-34e-ae-test",
+      "title": "Interest Rate Derivatives Management – Group Ledger US GAAP (34E_AE) Test Script (34E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 34E_AE: posting flows, accrual, key date valuation and realized P&L in valuation area 003 for US GAAP.",
+      "keywords": [
+        "Interest Rate Derivatives Management",
+        "parallel valuation",
+        "us gaap ledger",
+        "interest rate derivatives",
+        "flow posting",
+        "accrual run",
+        "key date valuation",
+        "realized profit and loss",
+        "period-end closing",
+        "test scripts"
+      ],
+      "aliases": [
+        "34E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/interest-rate-derivatives"
+      ],
+      "path": "05-treasury-and-cash-management/interest-rate-derivatives-management-group-ledger-us-gaap-34e-ae-test.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Interest Rate Derivatives Management – Group Ledger US GAAP (34E_AE) Test Script (34E_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 34E_AE: posting flows, accrual, key date valuation and realized P&L in valuation area 003 for US GAAP | keywords: Interest Rate Derivatives Management, parallel valuation, us gaap ledger, interest rate derivatives, flow posting, accrual run, key date valuation, realized profit and loss, period-end closing, test scripts, 34E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/letter-of-credit-management-group-ledger-ifrs-49e-ae-1003",
+      "title": "Letter of Credit Management – Group Ledger IFRS (49E_AE) (49E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script 49E_AE for letter of credit management with IFRS parallel valuation: posting flows and key date valuation in valuation area 002.",
+      "keywords": [
+        "Letter of Credit Management",
+        "parallel valuation",
+        "ifrs ledger",
+        "general ledger posting",
+        "key date valuation",
+        "period-end closing",
+        "treasury accounting",
+        "business roles",
+        "demo data",
+        "test scripts"
+      ],
+      "aliases": [
+        "49E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/letters-of-credit",
+        "topic/treasury-parallel-valuation-areas"
+      ],
+      "path": "05-treasury-and-cash-management/letter-of-credit-management-group-ledger-ifrs-49e-ae-1003.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/49E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Letter of Credit Management – Group Ledger IFRS (49E_AE) (49E_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script 49E_AE for letter of credit management with IFRS parallel valuation: posting flows and key date valuation in valuation area 002 | keywords: Letter of Credit Management, parallel valuation, ifrs ledger, general ledger posting, key date valuation, period-end closing, treasury accounting, business roles, demo data, test scripts, 49E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/letter-of-credit-management-group-ledger-us-gaap-49f-ae-1004",
+      "title": "Letter of Credit Management – Group Ledger US GAAP (49F_AE) (49F_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script 49F_AE: parallel valuation area postings and key date valuation for letter of credit management under US GAAP group ledger.",
+      "keywords": [
+        "Letter of Credit Management",
+        "parallel valuation",
+        "general ledger posting",
+        "key date valuation",
+        "group ledger us gaap",
+        "period-end closing",
+        "treasury accountant role",
+        "business conditions",
+        "demo data",
+        "test scripts"
+      ],
+      "aliases": [
+        "49F_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/letters-of-credit",
+        "topic/treasury-parallel-valuation-areas"
+      ],
+      "path": "05-treasury-and-cash-management/letter-of-credit-management-group-ledger-us-gaap-49f-ae-1004.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/49F_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Letter of Credit Management – Group Ledger US GAAP (49F_AE) (49F_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script 49F_AE: parallel valuation area postings and key date valuation for letter of credit management under US GAAP group ledger | keywords: Letter of Credit Management, parallel valuation, general ledger posting, key date valuation, group ledger us gaap, period-end closing, treasury accountant role, business conditions, demo data, test scripts, 49F_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/mds-22g-259",
+      "title": "マスタデータスクリプト 財務/リスク管理向けビジネスパートナ登録 - MDS (22G) (22G_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (22G) for creating and maintaining Treasury and Risk Management business partners in SAP S/4HANA Cloud Public Edition 2608, with test steps.",
+      "keywords": [
+        "Business Partners for Treasury and Risk Management",
+        "business partner maintenance",
+        "treasury business partners",
+        "payment details",
+        "treasury authorizations",
+        "correspondence profiles",
+        "securities business partner roles",
+        "derived flows",
+        "intercompany relationship",
+        "letters of credit"
+      ],
+      "aliases": [
+        "22G_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-business-partners"
+      ],
+      "path": "05-treasury-and-cash-management/mds-22g-259.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/22G_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト 財務/リスク管理向けビジネスパートナ登録 - MDS (22G) (22G_S4CLD2608_Master_Data_JA_XX) (Treasury and Cash Management) — Japanese master data script (22G) for creating and maintaining Treasury and Risk Management business partners in SAP S/4HANA Cloud Public Edition 2608, with test steps | keywords: Business Partners for Treasury and Risk Management, business partner maintenance, treasury business partners, payment details, treasury authorizations, correspondence profiles, securities business partner roles, derived flows, intercompany relationship, letters of credit, 22G_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/mds-22g-261",
+      "title": "创建资金和风险管理的业务伙伴 - MDS (22G) (22G_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script 22G: manual test steps to create and maintain business partners for Treasury and Risk Management in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "Business Partners for Treasury and Risk Management",
+        "business partner",
+        "treasury risk management",
+        "payment details",
+        "treasury correspondence",
+        "bp parameter profiles",
+        "business partner authorizations",
+        "derived flows",
+        "reporting data",
+        "securities partner roles"
+      ],
+      "aliases": [
+        "22G_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-business-partners"
+      ],
+      "path": "05-treasury-and-cash-management/mds-22g-261.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/22G_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建资金和风险管理的业务伙伴 - MDS (22G) (22G_S4CLD2608_Master_Data_ZH_XX) (Treasury and Cash Management) — Chinese (machine-translated) master data script 22G: manual test steps to create and maintain business partners for Treasury and Risk Management in S/4HANA Cloud Public Edition 2608 | keywords: Business Partners for Treasury and Risk Management, business partner, treasury risk management, payment details, treasury correspondence, bp parameter profiles, business partner authorizations, derived flows, reporting data, securities partner roles, 22G_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/money-market-mutual-fund-management-group-ledger-ifrs-2uo-ae-874",
+      "title": "Money Market Mutual Fund Management – Group Ledger IFRS (2UO_AE) (2UO_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 2UO_AE: parallel valuation (IFRS 9, area 002) posting, accrual and key date valuation for money market funds.",
+      "keywords": [
+        "Money Market Mutual Fund Management",
+        "money market mutual funds",
+        "parallel valuation",
+        "ifrs group ledger",
+        "post to general ledger",
+        "accrual run",
+        "key date valuation",
+        "treasury roles",
+        "business conditions",
+        "demo data update behavior"
+      ],
+      "aliases": [
+        "2UO_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/money-market-mutual-funds"
+      ],
+      "path": "05-treasury-and-cash-management/money-market-mutual-fund-management-group-ledger-ifrs-2uo-ae-874.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UO_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Money Market Mutual Fund Management – Group Ledger IFRS (2UO_AE) (2UO_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script for scope item 2UO_AE: parallel valuation (IFRS 9, area 002) posting, accrual and key date valuation for money market funds | keywords: Money Market Mutual Fund Management, money market mutual funds, parallel valuation, ifrs group ledger, post to general ledger, accrual run, key date valuation, treasury roles, business conditions, demo data update behavior, 2UO_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/money-market-mutual-fund-management-group-ledger-us-gaap-34g-ae-911",
+      "title": "Money Market Mutual Fund Management – Group Ledger US GAAP (34G_AE) (34G_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 34G (AE): parallel valuation area 003 for US GAAP in money market mutual fund management: posting, accrual, key date valuation.",
+      "keywords": [
+        "Money Market Mutual Fund Management",
+        "parallel valuation",
+        "money market mutual funds",
+        "us gaap ledger",
+        "general ledger posting",
+        "accrual run",
+        "key date valuation",
+        "treasury accounting",
+        "test scripts",
+        "demo data"
+      ],
+      "aliases": [
+        "34G_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/money-market-mutual-funds"
+      ],
+      "path": "05-treasury-and-cash-management/money-market-mutual-fund-management-group-ledger-us-gaap-34g-ae-911.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34G_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Money Market Mutual Fund Management – Group Ledger US GAAP (34G_AE) (34G_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud test script for scope item 34G (AE): parallel valuation area 003 for US GAAP in money market mutual fund management: posting, accrual, key date valuation | keywords: Money Market Mutual Fund Management, parallel valuation, money market mutual funds, us gaap ledger, general ledger posting, accrual run, key date valuation, treasury accounting, test scripts, demo data, 34G_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/script-de-dados-mestre-criar-parceiro-de-negocios-para-o-treasury-and",
+      "title": "Script de dados mestre - Criar parceiro de negócios para o Treasury and Risk Management – MDS (22G) (22G_S4CLD2608_Master_Data_PT_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script (PT) with manual test steps to create and maintain business partners for Treasury and Risk Management (22G).",
+      "keywords": [
+        "Business Partners for Treasury and Risk Management",
+        "business partner creation",
+        "treasury risk management",
+        "payment details",
+        "correspondence profiles",
+        "securities partner roles",
+        "business partner authorizations",
+        "derived flows",
+        "external recipients",
+        "internal recipients"
+      ],
+      "aliases": [
+        "22G_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-business-partners"
+      ],
+      "path": "05-treasury-and-cash-management/script-de-dados-mestre-criar-parceiro-de-negocios-para-o-treasury-and.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/22G_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar parceiro de negócios para o Treasury and Risk Management – MDS (22G) (22G_S4CLD2608_Master_Data_PT_XX) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 master data script (PT) with manual test steps to create and maintain business partners for Treasury and Risk Management (22G) | keywords: Business Partners for Treasury and Risk Management, business partner creation, treasury risk management, payment details, correspondence profiles, securities partner roles, business partner authorizations, derived flows, external recipients, internal recipients, 22G_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/script-de-datos-maestros-crear-socio-comercial-para-treasury-and-risk",
+      "title": "Script de datos maestros: Crear socio comercial para Treasury and Risk Management - MDS (22G) (22G_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish master data test script (22G) for SAP S/4HANA Cloud Public Edition 2608: creating and maintaining business partners for Treasury and Risk Management.",
+      "keywords": [
+        "Business Partners for Treasury and Risk Management",
+        "business partner creation",
+        "treasury risk management",
+        "payment details",
+        "correspondence profiles",
+        "business partner roles",
+        "business partner authorizations",
+        "derived flows",
+        "company code reporting data",
+        "letter of credit"
+      ],
+      "aliases": [
+        "22G_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-business-partners"
+      ],
+      "path": "05-treasury-and-cash-management/script-de-datos-maestros-crear-socio-comercial-para-treasury-and-risk.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/22G_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros: Crear socio comercial para Treasury and Risk Management - MDS (22G) (22G_S4CLD2608_Master_Data_ES_XX) (Treasury and Cash Management) — Spanish master data test script (22G) for SAP S/4HANA Cloud Public Edition 2608: creating and maintaining business partners for Treasury and Risk Management | keywords: Business Partners for Treasury and Risk Management, business partner creation, treasury risk management, payment details, correspondence profiles, business partner roles, business partner authorizations, derived flows, company code reporting data, letter of credit, 22G_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/securities-option-management-group-ledger-us-gaap-6nf-ae-test-script-1",
+      "title": "Securities Option Management – Group Ledger US GAAP (6NF_AE) Test Script (6NF_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script 6NF (AE) for posting flows, key date valuation and realized P&L in parallel valuation area 003 for US GAAP.",
+      "keywords": [
+        "Securities Option Management",
+        "parallel valuation",
+        "group ledger us gaap",
+        "post flows to general ledger",
+        "key date valuation",
+        "realized profit and loss",
+        "business conditions",
+        "demo data",
+        "business roles",
+        "6NF"
+      ],
+      "aliases": [
+        "6NF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/securities-options"
+      ],
+      "path": "05-treasury-and-cash-management/securities-option-management-group-ledger-us-gaap-6nf-ae-test-script-1.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6NF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Securities Option Management – Group Ledger US GAAP (6NF_AE) Test Script (6NF_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script 6NF (AE) for posting flows, key date valuation and realized P&L in parallel valuation area 003 for US GAAP | keywords: Securities Option Management, parallel valuation, group ledger us gaap, post flows to general ledger, key date valuation, realized profit and loss, business conditions, demo data, business roles, 6NF, 6NF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/shareholding-management-group-ledger-ifrs-5wg-ae-test-script-1127",
+      "title": "Shareholding Management - Group Ledger IFRS (5WG_AE) Test Script (5WG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5WG_AE: IFRS 9 parallel valuation postings for shareholdings, dividends, key date valuation, equity pickup (AE).",
+      "keywords": [
+        "Shareholding Management",
+        "group ledger ifrs",
+        "parallel valuation",
+        "cash dividend posting",
+        "key date valuation",
+        "equity pickup",
+        "general ledger posting",
+        "test scripts",
+        "period-end closing",
+        "securities redemption payment"
+      ],
+      "aliases": [
+        "5WG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/shareholding-management"
+      ],
+      "path": "05-treasury-and-cash-management/shareholding-management-group-ledger-ifrs-5wg-ae-test-script-1127.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5WG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Shareholding Management - Group Ledger IFRS (5WG_AE) Test Script (5WG_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 5WG_AE: IFRS 9 parallel valuation postings for shareholdings, dividends, key date valuation, equity pickup (AE) | keywords: Shareholding Management, group ledger ifrs, parallel valuation, cash dividend posting, key date valuation, equity pickup, general ledger posting, test scripts, period-end closing, securities redemption payment, 5WG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/stock-management-group-ledger-ifrs-5oe-ae-test-script-1112",
+      "title": "Stock Management – Group Ledger IFRS (5OE_AE) Test Script (5OE_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 5OE_AE: parallel valuation area 002 for IFRS in stock (securities) management, dated 19-06-26.",
+      "keywords": [
+        "Stock (Equity Securities) Management",
+        "parallel valuation",
+        "key date valuation",
+        "group ledger ifrs",
+        "stock management",
+        "subscription rights",
+        "period-end closing",
+        "business roles",
+        "business conditions",
+        "demo data"
+      ],
+      "aliases": [
+        "5OE_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/stock-securities-management"
+      ],
+      "path": "05-treasury-and-cash-management/stock-management-group-ledger-ifrs-5oe-ae-test-script-1112.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OE_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stock Management – Group Ledger IFRS (5OE_AE) Test Script (5OE_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 5OE_AE: parallel valuation area 002 for IFRS in stock (securities) management, dated 19-06-26 | keywords: Stock (Equity Securities) Management, parallel valuation, key date valuation, group ledger ifrs, stock management, subscription rights, period-end closing, business roles, business conditions, demo data, 5OE_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/stock-management-group-ledger-us-gaap-5of-ae-test-script-1113",
+      "title": "Stock Management – Group Ledger US GAAP (5OF_AE) Test Script (5OF_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5OF_AE: posting stock flows and key date valuation in valuation area 003 for US GAAP, plus subscription rights appendix.",
+      "keywords": [
+        "Stock (Equity Securities) Management",
+        "parallel valuation",
+        "us gaap ledger",
+        "stock management",
+        "flow posting",
+        "key date valuation",
+        "subscription rights",
+        "period-end closing",
+        "test scripts",
+        "business roles"
+      ],
+      "aliases": [
+        "5OF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/stock-securities-management"
+      ],
+      "path": "05-treasury-and-cash-management/stock-management-group-ledger-us-gaap-5of-ae-test-script-1113.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stock Management – Group Ledger US GAAP (5OF_AE) Test Script (5OF_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5OF_AE: posting stock flows and key date valuation in valuation area 003 for US GAAP, plus subscription rights appendix | keywords: Stock (Equity Securities) Management, parallel valuation, us gaap ledger, stock management, flow posting, key date valuation, subscription rights, period-end closing, test scripts, business roles, 5OF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/swift-sample-data-206",
+      "title": "SWIFT Sample Data (SWIFT_Sample_Data)",
+      "description": "Tab-separated sample SWIFT bank directory records (BIC, IBAN, institution name, address, connectivity) with modification flags.",
+      "keywords": [
+        "SWIFT Bank Directory Sample Data",
+        "swift bank directory",
+        "bic codes",
+        "bank master data",
+        "sample data",
+        "SWIFT"
+      ],
+      "aliases": [
+        "SWIFT_Sample_Data"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-directory-swift-data"
+      ],
+      "path": "05-treasury-and-cash-management/swift-sample-data-206.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/General/SWIFT_Sample_Data.txt"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "SWIFT Sample Data (SWIFT_Sample_Data) (Treasury and Cash Management) — Tab-separated sample SWIFT bank directory records (BIC, IBAN, institution name, address, connectivity) with modification flags | keywords: SWIFT Bank Directory Sample Data, swift bank directory, bic codes, bank master data, sample data, SWIFT, SWIFT_Sample_Data"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-advanced-bank-account-management-j77-ae-sap-s-4hana-cloud-part-01",
+      "title": "Test Script: Advanced Bank Account Management (J77_AE), SAP S/4HANA Cloud Public Edition (J77_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "SAP test script for J77_AE Advanced Bank Account Management: prerequisites, configuration and test steps for bank accounts, approvals and powers of attorney.",
+      "keywords": [
+        "Bank Account Management",
+        "advanced bank account management",
+        "bank account revision activation",
+        "bank account master data",
+        "payment approvers",
+        "powers of attorney",
+        "bank account contract types",
+        "bank account lifecycle",
+        "bank account closing",
+        "bank account applications"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-account-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-advanced-bank-account-management-j77-ae-sap-s-4hana-cloud-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J77_S4CLD2608_BPD_EN_AE.docx#lines-1-2888"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Advanced Bank Account Management (J77_AE), SAP S/4HANA Cloud Public Edition (J77_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — SAP test script for J77_AE Advanced Bank Account Management: prerequisites, configuration and test steps for bank accounts, approvals and powers of attorney | keywords: Bank Account Management, advanced bank account management, bank account revision activation, bank account master data, payment approvers, powers of attorney, bank account contract types, bank account lifecycle, bank account closing, bank account applications"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-advanced-bank-account-management-j77-ae-sap-s-4hana-cloud-part-02",
+      "title": "Test Script: Advanced Bank Account Management (J77_AE), SAP S/4HANA Cloud Public Edition (J77_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "J77 Advanced Bank Account Management test script, part 2: two-person and workflow bank account lifecycles, payment approvers, powers of attorney, reviews.",
+      "keywords": [
+        "Bank Account Management",
+        "two-person verification",
+        "workflow revision activation",
+        "bank account creation",
+        "bank account closing",
+        "payment approvers",
+        "powers of attorney",
+        "bank account reviews",
+        "bank account hierarchies",
+        "in-house bank accounts"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-account-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-advanced-bank-account-management-j77-ae-sap-s-4hana-cloud-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J77_S4CLD2608_BPD_EN_AE.docx#lines-2889-5542"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Advanced Bank Account Management (J77_AE), SAP S/4HANA Cloud Public Edition (J77_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — J77 Advanced Bank Account Management test script, part 2: two-person and workflow bank account lifecycles, payment approvers, powers of attorney, reviews | keywords: Bank Account Management, two-person verification, workflow revision activation, bank account creation, bank account closing, payment approvers, powers of attorney, bank account reviews, bank account hierarchies, in-house bank accounts"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-advanced-bank-statement-automation-4x8-1056",
+      "title": "Test Script: Advanced Bank Statement Automation (4X8) (4X8_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4X8: authorizing the cash specialist role and scheduling jobs that create bank statement reprocessing rule templates.",
+      "keywords": [
+        "Advanced Bank Statement Automation",
+        "bank statement automation",
+        "reprocessing rules",
+        "rule templates",
+        "bank statement items",
+        "cash specialist role",
+        "business roles",
+        "accounts receivable jobs",
+        "test scripts",
+        "4X8"
+      ],
+      "aliases": [
+        "4X8_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-statement-automation"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-advanced-bank-statement-automation-4x8-1056.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4X8_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Advanced Bank Statement Automation (4X8) (4X8_S4CLD2608_BPD_EN_XX) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4X8: authorizing the cash specialist role and scheduling jobs that create bank statement reprocessing rule templates | keywords: Advanced Bank Statement Automation, bank statement automation, reprocessing rules, rule templates, bank statement items, cash specialist role, business roles, accounts receivable jobs, test scripts, 4X8, 4X8_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-asset-backed-securities-management-6b5-ae-sap-s-4hana-clou",
+      "title": "Test Script: Asset-Backed Securities Management (6B5_AE) - SAP S/4HANA Cloud Public Edition (6B5_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 6B5 (AE localization): ABS/MBS purchase, payment, valuation, repayment, sale, reports, plus appendix jobs, output and risk setup.",
+      "keywords": [
+        "Asset-Backed Securities Management",
+        "asset-backed securities",
+        "business partner creation",
+        "securities accounts",
+        "security class",
+        "securities purchase",
+        "payment requests",
+        "general ledger posting",
+        "key date valuation",
+        "installment repayment"
+      ],
+      "aliases": [
+        "6B5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/asset-backed-securities"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-asset-backed-securities-management-6b5-ae-sap-s-4hana-clou.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6B5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Asset-Backed Securities Management (6B5_AE) - SAP S/4HANA Cloud Public Edition (6B5_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP test script for scope item 6B5 (AE localization): ABS/MBS purchase, payment, valuation, repayment, sale, reports, plus appendix jobs, output and risk setup | keywords: Asset-Backed Securities Management, asset-backed securities, business partner creation, securities accounts, security class, securities purchase, payment requests, general ledger posting, key date valuation, installment repayment, 6B5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-asset-backed-securities-management-group-ledger-ifrs-6b6-a",
+      "title": "Test Script: Asset-Backed Securities Management – Group Ledger IFRS (6B6_AE) (6B6_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script 6B6_AE: posting ABS flows and period-end valuation in parallel valuation area 002 for the IFRS group ledger.",
+      "keywords": [
+        "Asset-Backed Securities Management",
+        "asset-backed securities",
+        "parallel valuation",
+        "ifrs group ledger",
+        "general ledger posting",
+        "period-end closing",
+        "treasury accounting",
+        "business conditions",
+        "three-system landscape",
+        "demo data"
+      ],
+      "aliases": [
+        "6B6_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/asset-backed-securities"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-asset-backed-securities-management-group-ledger-ifrs-6b6-a.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6B6_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Asset-Backed Securities Management – Group Ledger IFRS (6B6_AE) (6B6_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script 6B6_AE: posting ABS flows and period-end valuation in parallel valuation area 002 for the IFRS group ledger | keywords: Asset-Backed Securities Management, asset-backed securities, parallel valuation, ifrs group ledger, general ledger posting, period-end closing, treasury accounting, business conditions, three-system landscape, demo data, 6B6_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-bank-fee-management-2o0-ae-sap-s-4hana-cloud-public-editio",
+      "title": "Test Script: Bank Fee Management (2O0_AE), SAP S/4HANA Cloud Public Edition (2O0_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2O0 (AE): importing bank billing files, managing bank fee and interest conditions, monitoring and validating bank fees; dated 19-06-26.",
+      "keywords": [
+        "Bank Fee Management",
+        "bank services billing files",
+        "bank fee conditions",
+        "bank fee monitoring",
+        "pricing validation status",
+        "bank service mapping",
+        "bank account interest",
+        "camt.086 xml mapping",
+        "field value codes",
+        "business roles"
+      ],
+      "aliases": [
+        "2O0_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-fee-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-bank-fee-management-2o0-ae-sap-s-4hana-cloud-public-editio.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2O0_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Bank Fee Management (2O0_AE), SAP S/4HANA Cloud Public Edition (2O0_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP test script for scope item 2O0 (AE): importing bank billing files, managing bank fee and interest conditions, monitoring and validating bank fees; dated 19-06-26 | keywords: Bank Fee Management, bank services billing files, bank fee conditions, bank fee monitoring, pricing validation status, bank service mapping, bank account interest, camt.086 xml mapping, field value codes, business roles, 2O0_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-bank-guarantee-management-2nz-ae-839",
+      "title": "Test Script: Bank Guarantee Management (2NZ_AE) (2NZ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2NZ (UAE, company code 3310): issuing/receiving bank guarantees, rollover, termination, fees, collateral, reports.",
+      "keywords": [
+        "Bank Guarantee Management",
+        "issue bank guarantee",
+        "receive bank guarantee",
+        "bank guarantee rollover",
+        "bank guarantee termination",
+        "cash collateral",
+        "payment requests",
+        "facility management",
+        "treasury posting",
+        "limit utilization"
+      ],
+      "aliases": [
+        "2NZ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-guarantees"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-bank-guarantee-management-2nz-ae-839.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2NZ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Bank Guarantee Management (2NZ_AE) (2NZ_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2NZ (UAE, company code 3310): issuing/receiving bank guarantees, rollover, termination, fees, collateral, reports | keywords: Bank Guarantee Management, issue bank guarantee, receive bank guarantee, bank guarantee rollover, bank guarantee termination, cash collateral, payment requests, facility management, treasury posting, limit utilization, 2NZ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-bank-integration-with-file-interface-1eg-ae-sap-s-4hana-cl",
+      "title": "Test Script: Bank Integration with File Interface (1EG_AE) - SAP S/4HANA Cloud Public Edition (1EG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for 1EG_AE: download payment files, upload MT942/camt.052/MT940/camt.053/pain.002 bank files, with AE sample data.",
+      "keywords": [
+        "Bank Integration via Multi-Bank Connectivity and File…",
+        "bank integration file interface",
+        "bank statement upload",
+        "mt940 format",
+        "camt.053 format",
+        "intraday bank statements",
+        "mt942 format",
+        "camt.052 format",
+        "pain.002 payment rejection",
+        "payment medium file"
+      ],
+      "aliases": [
+        "1EG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-integration-mbc-and-file-interface"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-bank-integration-with-file-interface-1eg-ae-sap-s-4hana-cl.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1EG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Bank Integration with File Interface (1EG_AE) - SAP S/4HANA Cloud Public Edition (1EG_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script for 1EG_AE: download payment files, upload MT942/camt.052/MT940/camt.053/pain.002 bank files, with AE sample data | keywords: Bank Integration via Multi-Bank Connectivity and File…, bank integration file interface, bank statement upload, mt940 format, camt.053 format, intraday bank statements, mt942 format, camt.052 format, pain.002 payment rejection, payment medium file, 1EG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-basic-bank-account-management-bfa-ae-sap-s-4hana-cloud-pub",
+      "title": "Test Script: Basic Bank Account Management (BFA_AE) - SAP S/4HANA Cloud Public Edition (BFA_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for Basic Bank Account Management: prerequisites, config, bank account lifecycle, bank chains.",
+      "keywords": [
+        "Bank Account Management",
+        "basic bank account management",
+        "bank account master data",
+        "bank account creation",
+        "bank account closing",
+        "bank account status",
+        "bank chains",
+        "bank statement settings",
+        "bank master data",
+        "bank account import export"
+      ],
+      "aliases": [
+        "BFA_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bank-account-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-basic-bank-account-management-bfa-ae-sap-s-4hana-cloud-pub.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BFA_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Basic Bank Account Management (BFA_AE) - SAP S/4HANA Cloud Public Edition (BFA_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for Basic Bank Account Management: prerequisites, config, bank account lifecycle, bank chains | keywords: Bank Account Management, basic bank account management, bank account master data, bank account creation, bank account closing, bank account status, bank chains, bank statement settings, bank master data, bank account import export, BFA_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-bond-management-group-ledger-us-gaap-3x0-ae-983",
+      "title": "Test Script: Bond Management – Group Ledger US GAAP (3X0_AE) (3X0_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script (3X0_AE): bond posting, accruals, key date valuation and class transfer in parallel valuation area 003 for US GAAP.",
+      "keywords": [
+        "Bond Management",
+        "group ledger us gaap",
+        "parallel valuation area",
+        "bond issuance",
+        "bond investment",
+        "general ledger posting",
+        "interest accrual",
+        "key date valuation",
+        "valuation class transfer",
+        "test scripts"
+      ],
+      "aliases": [
+        "3X0_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/bond-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-bond-management-group-ledger-us-gaap-3x0-ae-983.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3X0_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Bond Management – Group Ledger US GAAP (3X0_AE) (3X0_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud test script (3X0_AE): bond posting, accruals, key date valuation and class transfer in parallel valuation area 003 for US GAAP | keywords: Bond Management, group ledger us gaap, parallel valuation area, bond issuance, bond investment, general ledger posting, interest accrual, key date valuation, valuation class transfer, test scripts, 3X0_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-debt-and-investment-management-1wv-ae-sap-s-4hana-cloud-pu-part-01",
+      "title": "Test Script: Debt and Investment Management (1WV_AE) - SAP S/4HANA Cloud Public Edition (1WV_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Test script for SAP S/4HANA Cloud Public Edition 2608 (AE) scope item 1WV Debt and Investment Management: prerequisites, test steps, reports, jobs.",
+      "keywords": [
+        "Debt and Investment Management",
+        "counterparty business partner",
+        "correspondence",
+        "credit limits",
+        "credit facilities",
+        "money market transactions",
+        "interest rate instruments",
+        "payment requests",
+        "general ledger posting",
+        "period-end closing"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/debt-and-investment-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-debt-and-investment-management-1wv-ae-sap-s-4hana-cloud-pu-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1WV_S4CLD2608_BPD_EN_AE.docx#lines-1-3001"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Debt and Investment Management (1WV_AE) - SAP S/4HANA Cloud Public Edition (1WV_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — Test script for SAP S/4HANA Cloud Public Edition 2608 (AE) scope item 1WV Debt and Investment Management: prerequisites, test steps, reports, jobs | keywords: Debt and Investment Management, counterparty business partner, correspondence, credit limits, credit facilities, money market transactions, interest rate instruments, payment requests, general ledger posting, period-end closing"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-debt-and-investment-management-1wv-ae-sap-s-4hana-cloud-pu-part-02",
+      "title": "Test Script: Debt and Investment Management (1WV_AE) - SAP S/4HANA Cloud Public Edition (1WV_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Test script 1WV (S/4HANA Cloud 2608, AE), part 2: TRM payment posting, reports, background jobs, output management, reversals, valuation, notifications.",
+      "keywords": [
+        "Debt and Investment Management",
+        "post to general ledger",
+        "treasury reports",
+        "financial positions",
+        "background job scheduling",
+        "market risk key figures",
+        "value at risk",
+        "output management",
+        "accrual and valuation reversal",
+        "interest rate adjustment"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/debt-and-investment-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-debt-and-investment-management-1wv-ae-sap-s-4hana-cloud-pu-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1WV_S4CLD2608_BPD_EN_AE.docx#lines-3002-4975"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Debt and Investment Management (1WV_AE) - SAP S/4HANA Cloud Public Edition (1WV_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — Test script 1WV (S/4HANA Cloud 2608, AE), part 2: TRM payment posting, reports, background jobs, output management, reversals, valuation, notifications | keywords: Debt and Investment Management, post to general ledger, treasury reports, financial positions, background job scheduling, market risk key figures, value at risk, output management, accrual and valuation reversal, interest rate adjustment"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-debt-and-investment-management-group-ledger-ifrs-1x7-ae-77",
+      "title": "Test Script: Debt and Investment Management – Group Ledger IFRS (1X7_AE) (1X7_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1X7: parallel valuation area 002 (IFRS) postings, accruals, valuation, reclassification and realized P&L.",
+      "keywords": [
+        "Debt and Investment Management",
+        "parallel valuation",
+        "post flows to general ledger",
+        "period-end closing",
+        "accrual run",
+        "key date valuation",
+        "valuation class transfer",
+        "realized profit and loss",
+        "test prerequisites",
+        "business roles"
+      ],
+      "aliases": [
+        "1X7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/debt-and-investment-management",
+        "topic/treasury-parallel-valuation-areas"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-debt-and-investment-management-group-ledger-ifrs-1x7-ae-77.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1X7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Debt and Investment Management – Group Ledger IFRS (1X7_AE) (1X7_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 1X7: parallel valuation area 002 (IFRS) postings, accruals, valuation, reclassification and realized P&L | keywords: Debt and Investment Management, parallel valuation, post flows to general ledger, period-end closing, accrual run, key date valuation, valuation class transfer, realized profit and loss, test prerequisites, business roles, 1X7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-debt-and-investment-management-group-ledger-us-gaap-34c-ae",
+      "title": "Test Script - Debt and Investment Management – Group Ledger US GAAP (34C_AE) (34C_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 34C_AE: parallel valuation area 003 for US GAAP in treasury debt and investment management.",
+      "keywords": [
+        "Debt and Investment Management",
+        "parallel valuation",
+        "us gaap ledger",
+        "flow posting",
+        "period-end closing",
+        "accrual run",
+        "key date valuation",
+        "valuation class transfer",
+        "realized profit and loss",
+        "demo data"
+      ],
+      "aliases": [
+        "34C_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/debt-and-investment-management",
+        "topic/treasury-parallel-valuation-areas"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-debt-and-investment-management-group-ledger-us-gaap-34c-ae.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34C_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Debt and Investment Management – Group Ledger US GAAP (34C_AE) (34C_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 34C_AE: parallel valuation area 003 for US GAAP in treasury debt and investment management | keywords: Debt and Investment Management, parallel valuation, us gaap ledger, flow posting, period-end closing, accrual run, key date valuation, valuation class transfer, realized profit and loss, demo data, 34C_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-foreign-currency-risk-management-1x1-ae-sap-s-4hana-cloud-part-01",
+      "title": "Test Script: Foreign Currency Risk Management (1X1_AE) - SAP S/4HANA Cloud Public Edition 2608 (1X1_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "SAP Best Practices test script for scope item 1X1 (UAE): FX risk management with exposure, hedging, FX forwards/swaps/NDFs/options, settlement, payment and posting.",
+      "keywords": [
+        "Foreign Currency Risk Management (FX Deals)",
+        "foreign currency risk management",
+        "business partner master data",
+        "correspondence",
+        "limit management",
+        "hedge management",
+        "balance sheet fx risk",
+        "cash flow exposure",
+        "trade requests",
+        "fx transactions"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/foreign-currency-risk-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-foreign-currency-risk-management-1x1-ae-sap-s-4hana-cloud-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1X1_S4CLD2608_BPD_EN_AE.docx#lines-1-3641"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Foreign Currency Risk Management (1X1_AE) - SAP S/4HANA Cloud Public Edition 2608 (1X1_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — SAP Best Practices test script for scope item 1X1 (UAE): FX risk management with exposure, hedging, FX forwards/swaps/NDFs/options, settlement, payment and posting | keywords: Foreign Currency Risk Management (FX Deals), foreign currency risk management, business partner master data, correspondence, limit management, hedge management, balance sheet fx risk, cash flow exposure, trade requests, fx transactions"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-foreign-currency-risk-management-1x1-ae-sap-s-4hana-cloud-part-02",
+      "title": "Test Script: Foreign Currency Risk Management (1X1_AE) - SAP S/4HANA Cloud Public Edition 2608 (1X1_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Test script 1X1 Foreign Currency Risk Management, S/4HANA Cloud 2608 (AE), part 2: option maturity, payments, valuation, reporting, jobs, netting, termination.",
+      "keywords": [
+        "Foreign Currency Risk Management (FX Deals)",
+        "fx option maturity",
+        "trm correspondence",
+        "payment requests",
+        "general ledger posting",
+        "net present value",
+        "key date valuation",
+        "treasury reporting",
+        "exposure management",
+        "background job scheduling"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/foreign-currency-risk-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-foreign-currency-risk-management-1x1-ae-sap-s-4hana-cloud-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1X1_S4CLD2608_BPD_EN_AE.docx#lines-3642-6660"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Foreign Currency Risk Management (1X1_AE) - SAP S/4HANA Cloud Public Edition 2608 (1X1_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — Test script 1X1 Foreign Currency Risk Management, S/4HANA Cloud 2608 (AE), part 2: option maturity, payments, valuation, reporting, jobs, netting, termination | keywords: Foreign Currency Risk Management (FX Deals), fx option maturity, trm correspondence, payment requests, general ledger posting, net present value, key date valuation, treasury reporting, exposure management, background job scheduling"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-hedge-accounting-for-fx-forward-group-ledger-ifrs-1xd-ae-7",
+      "title": "Test Script: Hedge Accounting for FX Forward – Group Ledger IFRS (1XD_AE) (1XD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (scope item 1XD, AE) for IFRS 9 cash flow hedge accounting with FX forwards/NDF, from hedging area to reporting.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "hedging area",
+        "hedging classification",
+        "raw exposure",
+        "hedge management cockpit",
+        "fx forward transactions",
+        "hedging relationship designation",
+        "period end closing",
+        "balance sheet reclassification"
+      ],
+      "aliases": [
+        "1XD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-hedge-accounting-for-fx-forward-group-ledger-ifrs-1xd-ae-7.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1XD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Hedge Accounting for FX Forward – Group Ledger IFRS (1XD_AE) (1XD_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script (scope item 1XD, AE) for IFRS 9 cash flow hedge accounting with FX forwards/NDF, from hedging area to reporting | keywords: Hedge Accounting for FX Exposures, hedge accounting, hedging area, hedging classification, raw exposure, hedge management cockpit, fx forward transactions, hedging relationship designation, period end closing, balance sheet reclassification, 1XD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-hedge-accounting-for-fx-forward-local-gaap-3x1-ae-984",
+      "title": "Test Script: Hedge Accounting for FX Forward – Local GAAP (3X1_AE) (3X1_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (3X1, AE) for cash flow hedge accounting with FX forwards/NDF under local GAAP: hedging area to reporting, plus appendices.",
+      "keywords": [
+        "Hedge Accounting for FX Exposures",
+        "hedge accounting",
+        "hedging area",
+        "fx forwards",
+        "raw exposure",
+        "hedge management cockpit",
+        "automatic designation",
+        "hedging relationship release",
+        "period end closing",
+        "reclassification of hedging reserve"
+      ],
+      "aliases": [
+        "3X1_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/hedge-accounting-fx"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-hedge-accounting-for-fx-forward-local-gaap-3x1-ae-984.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3X1_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Hedge Accounting for FX Forward – Local GAAP (3X1_AE) (3X1_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script (3X1, AE) for cash flow hedge accounting with FX forwards/NDF under local GAAP: hedging area to reporting, plus appendices | keywords: Hedge Accounting for FX Exposures, hedge accounting, hedging area, fx forwards, raw exposure, hedge management cockpit, automatic designation, hedging relationship release, period end closing, reclassification of hedging reserve, 3X1_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-ifrs-18-compliance-in-treasury-and-risk-management-83d-124",
+      "title": "Test Script: IFRS 18 Compliance in Treasury and Risk Management (83D) (83D_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for SAP scope item 83D: configure IFRS 18 AAR substitution rules and functional areas in TRM, then check position indicator and posting journal.",
+      "keywords": [
+        "IFRS 18 Presentation in Treasury and Risk Management",
+        "ifrs 18 compliance",
+        "treasury and risk management",
+        "account assignment references",
+        "substitution rules",
+        "functional area",
+        "position indicator",
+        "treasury posting journal",
+        "exposure subitems",
+        "scope item activation"
+      ],
+      "aliases": [
+        "83D_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/ifrs-18-in-treasury"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-ifrs-18-compliance-in-treasury-and-risk-management-83d-124.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/83D_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: IFRS 18 Compliance in Treasury and Risk Management (83D) (83D_S4CLD2608_BPD_EN_XX) (Treasury and Cash Management) — Test script for SAP scope item 83D: configure IFRS 18 AAR substitution rules and functional areas in TRM, then check position indicator and posting journal | keywords: IFRS 18 Presentation in Treasury and Risk Management, ifrs 18 compliance, treasury and risk management, account assignment references, substitution rules, functional area, position indicator, treasury posting journal, exposure subitems, scope item activation, 83D_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-in-house-banking-6bp-ae-sap-s-4hana-cloud-public-edition-2",
+      "title": "Test Script: In-House Banking (6BP_AE) - SAP S/4HANA Cloud Public Edition 2608 (6BP_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script (AE, release 2608) for In-House Banking: prerequisites, setup, payments on behalf, intercompany, central incoming, end of day, reclassification.",
+      "keywords": [
+        "In-House Banking",
+        "in-house bank accounts",
+        "payments on behalf",
+        "intercompany payments",
+        "central incoming payments",
+        "end of day processing",
+        "in-house bank conditions",
+        "in-house bank limits",
+        "multi-bank connectivity",
+        "advanced payment management"
+      ],
+      "aliases": [
+        "6BP_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/in-house-banking"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-in-house-banking-6bp-ae-sap-s-4hana-cloud-public-edition-2.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6BP_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: In-House Banking (6BP_AE) - SAP S/4HANA Cloud Public Edition 2608 (6BP_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP Best Practices test script (AE, release 2608) for In-House Banking: prerequisites, setup, payments on behalf, intercompany, central incoming, end of day, reclassification | keywords: In-House Banking, in-house bank accounts, payments on behalf, intercompany payments, central incoming payments, end of day processing, in-house bank conditions, in-house bank limits, multi-bank connectivity, advanced payment management, 6BP_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-intercompany-debt-and-investment-mgmt-group-ledger-ifrs-2o",
+      "title": "Test Script: Intercompany Debt and Investment Mgmt – Group Ledger IFRS (2OI_AE) (2OI_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2OI_AE: intercompany loans with mirror deals, posted in parallel IFRS valuation area 002.",
+      "keywords": [
+        "Intercompany Debt and Investment (Mirror Loans)",
+        "intercompany debt and investment",
+        "group ledger ifrs",
+        "parallel valuation",
+        "test scripts",
+        "mirror deals",
+        "interest rate instrument",
+        "current account instrument",
+        "period-end closing",
+        "accrual run"
+      ],
+      "aliases": [
+        "2OI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/intercompany-debt-and-investment"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-intercompany-debt-and-investment-mgmt-group-ledger-ifrs-2o.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2OI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intercompany Debt and Investment Mgmt – Group Ledger IFRS (2OI_AE) (2OI_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 2OI_AE: intercompany loans with mirror deals, posted in parallel IFRS valuation area 002 | keywords: Intercompany Debt and Investment (Mirror Loans), intercompany debt and investment, group ledger ifrs, parallel valuation, test scripts, mirror deals, interest rate instrument, current account instrument, period-end closing, accrual run, 2OI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-intercompany-debt-and-investment-mgmt-group-ledger-us-gaap",
+      "title": "Test Script: Intercompany Debt and Investment Mgmt – Group Ledger US GAAP (34L_AE) (34L_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 34L_AE: intercompany loans posted to US GAAP parallel valuation area 003, from deal creation to period-end.",
+      "keywords": [
+        "Intercompany Debt and Investment (Mirror Loans)",
+        "intercompany debt and investment",
+        "parallel valuation",
+        "us gaap ledger",
+        "mirror deals",
+        "interest rate instrument",
+        "current account-style instrument",
+        "period-end closing",
+        "interest accrual",
+        "key date valuation"
+      ],
+      "aliases": [
+        "34L_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/intercompany-debt-and-investment"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-intercompany-debt-and-investment-mgmt-group-ledger-us-gaap.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34L_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intercompany Debt and Investment Mgmt – Group Ledger US GAAP (34L_AE) (34L_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud test script for scope item 34L_AE: intercompany loans posted to US GAAP parallel valuation area 003, from deal creation to period-end | keywords: Intercompany Debt and Investment (Mirror Loans), intercompany debt and investment, parallel valuation, us gaap ledger, mirror deals, interest rate instrument, current account-style instrument, period-end closing, interest accrual, key date valuation, 34L_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-intercompany-foreign-exchange-group-ledger-us-gaap-34m-ae",
+      "title": "Test Script: Intercompany Foreign Exchange – Group Ledger US GAAP (34M_AE) (34M_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 34M: intercompany FX deals, mirror deals and US GAAP parallel valuation postings (area 003).",
+      "keywords": [
+        "Intercompany Foreign Exchange Deals",
+        "intercompany foreign exchange",
+        "group ledger us gaap",
+        "parallel valuation",
+        "fx spot forward",
+        "fx swap",
+        "non-deliverable forward",
+        "mirror deal",
+        "key date valuation",
+        "general ledger posting"
+      ],
+      "aliases": [
+        "34M_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/intercompany-fx-deals"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-intercompany-foreign-exchange-group-ledger-us-gaap-34m-ae.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34M_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intercompany Foreign Exchange – Group Ledger US GAAP (34M_AE) (34M_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 34M: intercompany FX deals, mirror deals and US GAAP parallel valuation postings (area 003) | keywords: Intercompany Foreign Exchange Deals, intercompany foreign exchange, group ledger us gaap, parallel valuation, fx spot forward, fx swap, non-deliverable forward, mirror deal, key date valuation, general ledger posting, 34M_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-intercompany-process-for-cash-concentration-2u8-ae-869",
+      "title": "Test Script: Intercompany Process for Cash Concentration (2U8_AE) (2U8_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (AE) for cash pools and cash concentration under Advanced Cash Operations: prerequisites, config steps, test procedures.",
+      "keywords": [
+        "Cash Pooling and Cash Concentration",
+        "cash concentration",
+        "cash pools",
+        "cash pool hierarchies",
+        "cash concentration jobs",
+        "cash concentration model",
+        "cash pool transfer report",
+        "bank account balance profile",
+        "authorization groups",
+        "concentration groups"
+      ],
+      "aliases": [
+        "2U8_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/cash-pooling-and-concentration"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-intercompany-process-for-cash-concentration-2u8-ae-869.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2U8_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intercompany Process for Cash Concentration (2U8_AE) (2U8_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script (AE) for cash pools and cash concentration under Advanced Cash Operations: prerequisites, config steps, test procedures | keywords: Cash Pooling and Cash Concentration, cash concentration, cash pools, cash pool hierarchies, cash concentration jobs, cash concentration model, cash pool transfer report, bank account balance profile, authorization groups, concentration groups, 2U8_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-intercompany-process-for-debt-and-investment-mgmt-1yi-ae-7",
+      "title": "Test Script: Intercompany Process for Debt and Investment Mgmt (1YI_AE) (1YI_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 1YI (AE): intercompany loans with automatic mirror deals, covering roles, prerequisites and Fiori test steps.",
+      "keywords": [
+        "Intercompany Debt and Investment (Mirror Loans)",
+        "intercompany debt and investment",
+        "mirror transactions",
+        "interest rate instruments",
+        "current account-style instruments",
+        "test scripts",
+        "intercompany business partners",
+        "treasury business roles",
+        "business conditions",
+        "intercompany contract negotiation"
+      ],
+      "aliases": [
+        "1YI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/intercompany-debt-and-investment"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-intercompany-process-for-debt-and-investment-mgmt-1yi-ae-7.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1YI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Intercompany Process for Debt and Investment Mgmt (1YI_AE) (1YI_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for scope item 1YI (AE): intercompany loans with automatic mirror deals, covering roles, prerequisites and Fiori test steps | keywords: Intercompany Debt and Investment (Mirror Loans), intercompany debt and investment, mirror transactions, interest rate instruments, current account-style instruments, test scripts, intercompany business partners, treasury business roles, business conditions, intercompany contract negotiation, 1YI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-interest-rate-derivatives-management-1x3-ae-sap-s-4hana-cl-part-01",
+      "title": "Test Script: Interest Rate Derivatives Management (1X3_AE) - SAP S/4HANA Cloud Public Edition (1X3_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Test script for scope item 1X3_AE (S/4HANA Cloud Public Edition 2608, AE): interest rate swaps, cross-currency swaps, swaptions; prerequisites and step tables.",
+      "keywords": [
+        "Interest Rate Derivatives Management",
+        "interest rate swap",
+        "cross-currency interest rate swap",
+        "business partner master data",
+        "correspondence",
+        "credit limits",
+        "payment requests",
+        "general ledger posting",
+        "period-end closing",
+        "net present value"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/interest-rate-derivatives"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-interest-rate-derivatives-management-1x3-ae-sap-s-4hana-cl-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1X3_S4CLD2608_BPD_EN_AE.docx#lines-1-3127"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Interest Rate Derivatives Management (1X3_AE) - SAP S/4HANA Cloud Public Edition (1X3_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — Test script for scope item 1X3_AE (S/4HANA Cloud Public Edition 2608, AE): interest rate swaps, cross-currency swaps, swaptions; prerequisites and step tables | keywords: Interest Rate Derivatives Management, interest rate swap, cross-currency interest rate swap, business partner master data, correspondence, credit limits, payment requests, general ledger posting, period-end closing, net present value"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-interest-rate-derivatives-management-1x3-ae-sap-s-4hana-cl-part-02",
+      "title": "Test Script: Interest Rate Derivatives Management (1X3_AE) - SAP S/4HANA Cloud Public Edition (1X3_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Treasury test script (S/4HANA Cloud 2608, AE), part 2: swaption lifecycle, reports, and appendices on jobs, output, accounting, market/credit risk, simulation.",
+      "keywords": [
+        "Interest Rate Derivatives Management",
+        "swaption lifecycle",
+        "payment requests",
+        "treasury correspondence",
+        "key date valuation",
+        "net present value",
+        "treasury reports",
+        "background jobs",
+        "output management",
+        "accounting reversals"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/interest-rate-derivatives"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-interest-rate-derivatives-management-1x3-ae-sap-s-4hana-cl-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1X3_S4CLD2608_BPD_EN_AE.docx#lines-3128-5563"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Interest Rate Derivatives Management (1X3_AE) - SAP S/4HANA Cloud Public Edition (1X3_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — Treasury test script (S/4HANA Cloud 2608, AE), part 2: swaption lifecycle, reports, and appendices on jobs, output, accounting, market/credit risk, simulation | keywords: Interest Rate Derivatives Management, swaption lifecycle, payment requests, treasury correspondence, key date valuation, net present value, treasury reports, background jobs, output management, accounting reversals"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-letter-of-credit-management-49d-ae-sap-s-4hana-cloud-publi-part-01",
+      "title": "Test Script: Letter of Credit Management (49D_AE) - SAP S/4HANA Cloud Public Edition (49D_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "SAP test script for scope item 49D (UAE): issuing, receiving, rolling over, presenting, paying and terminating normal and standby letters of credit.",
+      "keywords": [
+        "Letter of Credit Management",
+        "normal letter of credit",
+        "standby letter of credit",
+        "letter of credit rollover",
+        "letter of credit presentation",
+        "standby letter of credit termination",
+        "cash collateral and fees",
+        "payment requests",
+        "general ledger posting",
+        "key date valuation"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/letters-of-credit"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-letter-of-credit-management-49d-ae-sap-s-4hana-cloud-publi-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/49D_S4CLD2608_BPD_EN_AE.docx#lines-1-2870"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Letter of Credit Management (49D_AE) - SAP S/4HANA Cloud Public Edition (49D_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — SAP test script for scope item 49D (UAE): issuing, receiving, rolling over, presenting, paying and terminating normal and standby letters of credit | keywords: Letter of Credit Management, normal letter of credit, standby letter of credit, letter of credit rollover, letter of credit presentation, standby letter of credit termination, cash collateral and fees, payment requests, general ledger posting, key date valuation"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-letter-of-credit-management-49d-ae-sap-s-4hana-cloud-publi-part-02",
+      "title": "Test Script: Letter of Credit Management (49D_AE) - SAP S/4HANA Cloud Public Edition (49D_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "SAP S/4HANA Cloud 2608 (AE) test script, Letter of Credit Management (49D): payments, standby L/C receive/rollover/terminate, treasury reports, alerts.",
+      "keywords": [
+        "Letter of Credit Management",
+        "standby letter of credit",
+        "payment request",
+        "payment medium file",
+        "treasury posting",
+        "settlement status",
+        "letter of credit rollover",
+        "letter of credit termination",
+        "treasury reports",
+        "financial positions"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/letters-of-credit"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-letter-of-credit-management-49d-ae-sap-s-4hana-cloud-publi-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/49D_S4CLD2608_BPD_EN_AE.docx#lines-2871-3595"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Letter of Credit Management (49D_AE) - SAP S/4HANA Cloud Public Edition (49D_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 (AE) test script, Letter of Credit Management (49D): payments, standby L/C receive/rollover/terminate, treasury reports, alerts | keywords: Letter of Credit Management, standby letter of credit, payment request, payment medium file, treasury posting, settlement status, letter of credit rollover, letter of credit termination, treasury reports, financial positions"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-liquidity-planning-3l5-ae-953",
+      "title": "Test Script: Liquidity Planning (3L5_AE) (3L5_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script 3L5_AE: configure and schedule financial plan data jobs importing cash flows from SAP Analytics Cloud for liquidity planning.",
+      "keywords": [
+        "Liquidity Planning",
+        "sap analytics cloud integration",
+        "financial plan data jobs",
+        "plan data mapping",
+        "cash flow analysis",
+        "cash management",
+        "communication arrangement",
+        "succeeding processes",
+        "3L5"
+      ],
+      "aliases": [
+        "3L5_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/liquidity-planning"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-liquidity-planning-3l5-ae-953.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3L5_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Liquidity Planning (3L5_AE) (3L5_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script 3L5_AE: configure and schedule financial plan data jobs importing cash flows from SAP Analytics Cloud for liquidity planning | keywords: Liquidity Planning, sap analytics cloud integration, financial plan data jobs, plan data mapping, cash flow analysis, cash management, communication arrangement, succeeding processes, 3L5, 3L5_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-market-rates-management-manually-via-upload-1xn-ae-782",
+      "title": "Test Script: Market Rates Management – Manually via Upload (1XN_AE) (1XN_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (1XN_AE) for manually entering or uploading Treasury market data and checking the Market Data Overview.",
+      "keywords": [
+        "Market Rates Management (Automatic Import and Manual Upload)",
+        "market data management",
+        "fx spot rates",
+        "fx swap rates",
+        "exchange rate volatilities",
+        "volatilities with moneyness",
+        "interest rates",
+        "credit spreads",
+        "basis spreads",
+        "securities prices"
+      ],
+      "aliases": [
+        "1XN_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/market-rates-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-market-rates-management-manually-via-upload-1xn-ae-782.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1XN_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Market Rates Management – Manually via Upload (1XN_AE) (1XN_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script (1XN_AE) for manually entering or uploading Treasury market data and checking the Market Data Overview | keywords: Market Rates Management (Automatic Import and Manual Upload), market data management, fx spot rates, fx swap rates, exchange rate volatilities, volatilities with moneyness, interest rates, credit spreads, basis spreads, securities prices, 1XN_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-sap-fiori-analytical-apps-for-treasury-and-risk-management",
+      "title": "Test Script: SAP Fiori Analytical Apps for Treasury and Risk Management (1MN) (1MN_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for SAP S/4HANA Cloud scope item 1MN: Foreign Exchange Overview (F2331) and Treasury Executive Dashboard (F4316), eight tabstrips.",
+      "keywords": [
+        "Treasury Analytics and Executive Dashboard",
+        "test scripts",
+        "treasury analytics",
+        "foreign exchange overview",
+        "treasury executive dashboard",
+        "liquidity analytics",
+        "cash management",
+        "bank relationship",
+        "indebtedness",
+        "counterparty risk"
+      ],
+      "aliases": [
+        "1MN_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-analytics"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-sap-fiori-analytical-apps-for-treasury-and-risk-management.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1MN_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: SAP Fiori Analytical Apps for Treasury and Risk Management (1MN) (1MN_S4CLD2608_BPD_EN_XX) (Treasury and Cash Management) — Test script for SAP S/4HANA Cloud scope item 1MN: Foreign Exchange Overview (F2331) and Treasury Executive Dashboard (F4316), eight tabstrips | keywords: Treasury Analytics and Executive Dashboard, test scripts, treasury analytics, foreign exchange overview, treasury executive dashboard, liquidity analytics, cash management, bank relationship, indebtedness, counterparty risk, 1MN_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-money-market-mutual-fund-part-01",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Money Market Mutual Fund Management (2UN_AE) (2UN_S4CLD2608_BPD_EN_AE) — part 1 of 2",
+      "description": "Part 1 of 2: Step-by-step test script for scope item 2UN_AE (Money Market Mutual Fund Management, release 2608, AE localisation): prerequisites, test procedures, job scheduling appendix.",
+      "keywords": [
+        "Money Market Mutual Fund Management",
+        "money market mutual fund",
+        "security class creation",
+        "fund purchase transaction",
+        "fund redemption",
+        "dividend distribution",
+        "dividend capitalization",
+        "period-end closing",
+        "treasury correspondence",
+        "payment processing"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/money-market-mutual-funds"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-money-market-mutual-fund-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UN_S4CLD2608_BPD_EN_AE.docx#lines-1-3335"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Money Market Mutual Fund Management (2UN_AE) (2UN_S4CLD2608_BPD_EN_AE) — part 1 of 2 (Treasury and Cash Management) — Part 1 of 2: Step-by-step test script for scope item 2UN_AE (Money Market Mutual Fund Management, release 2608, AE localisation): prerequisites, test procedures, job scheduling appendix | keywords: Money Market Mutual Fund Management, money market mutual fund, security class creation, fund purchase transaction, fund redemption, dividend distribution, dividend capitalization, period-end closing, treasury correspondence, payment processing"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-money-market-mutual-fund-part-02",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Money Market Mutual Fund Management (2UN_AE) (2UN_S4CLD2608_BPD_EN_AE) — part 2 of 2",
+      "description": "Part 2 of 2: Step-by-step test script for scope item 2UN_AE (Money Market Mutual Fund Management, release 2608, AE localisation): prerequisites, test procedures, job scheduling appendix.",
+      "keywords": [
+        "Money Market Mutual Fund Management",
+        "simulated valuation",
+        "rebate reinvestment",
+        "securities account transfer",
+        "securities transactions",
+        "money market mutual fund",
+        "general valuation class",
+        "period-end closing",
+        "posting logs",
+        "2UN"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/money-market-mutual-funds"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-money-market-mutual-fund-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2UN_S4CLD2608_BPD_EN_AE.docx#lines-3336-3424"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Money Market Mutual Fund Management (2UN_AE) (2UN_S4CLD2608_BPD_EN_AE) — part 2 of 2 (Treasury and Cash Management) — Part 2 of 2: Step-by-step test script for scope item 2UN_AE (Money Market Mutual Fund Management, release 2608, AE localisation): prerequisites, test procedures, job scheduling appendix | keywords: Money Market Mutual Fund Management, simulated valuation, rebate reinvestment, securities account transfer, securities transactions, money market mutual fund, general valuation class, period-end closing, posting logs, 2UN"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-stock-management-5od-ae-1",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Stock Management (5OD_AE) (5OD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script (UAE, 2608) for scope item 5OD Stock Management in Treasury: securities account/class, stock purchase/sale, payments, dividends, corporate actions, valuation.",
+      "keywords": [
+        "Stock (Equity Securities) Management",
+        "stock management",
+        "stock purchase transaction",
+        "stock sale transaction",
+        "security class",
+        "securities account",
+        "business partner setup",
+        "treasury correspondence",
+        "payment requests",
+        "general ledger posting"
+      ],
+      "aliases": [
+        "5OD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/stock-securities-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-stock-management-5od-ae-1.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5OD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Stock Management (5OD_AE) (5OD_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP Best Practices test script (UAE, 2608) for scope item 5OD Stock Management in Treasury: securities account/class, stock purchase/sale, payments, dividends, corporate actions, valuation | keywords: Stock (Equity Securities) Management, stock management, stock purchase transaction, stock sale transaction, security class, securities account, business partner setup, treasury correspondence, payment requests, general ledger posting, 5OD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-treasury-workstation-paym",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Treasury Workstation Payment Integration (3NA) (3NA_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 3NA: Treasury payment requests sent by IDoc to a receiving FI system, with reversal, roles and test steps.",
+      "keywords": [
+        "Treasury Workstation Accounting Integration",
+        "treasury payment integration",
+        "payment request generation",
+        "idoc monitoring",
+        "message dashboard",
+        "payment request reversal",
+        "receiving system mapping",
+        "communication connection setup",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "3NA_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-accounting-integration"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-sap-s-4hana-cloud-public-edition-treasury-workstation-paym.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3NA_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Treasury Workstation Payment Integration (3NA) (3NA_S4CLD2608_BPD_EN_XX) (Treasury and Cash Management) — SAP S/4HANA Cloud 2608 test script for scope item 3NA: Treasury payment requests sent by IDoc to a receiving FI system, with reversal, roles and test steps | keywords: Treasury Workstation Accounting Integration, treasury payment integration, payment request generation, idoc monitoring, message dashboard, payment request reversal, receiving system mapping, communication connection setup, business roles, test scripts, 3NA_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-securities-option-management-6nd-ae-sap-s-4hana-cloud-publ",
+      "title": "Test Script: Securities Option Management (6ND_AE) - SAP S/4HANA Cloud Public Edition (6ND_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 6ND (AE localization): securities option lifecycle in Treasury, from setup to payment, valuation, exercise/expiry, accounting and reports.",
+      "keywords": [
+        "Securities Option Management",
+        "test scripts",
+        "business partner setup",
+        "correspondence",
+        "premium payment",
+        "period-end closing",
+        "net present value",
+        "option exercise and expiry",
+        "credit limits",
+        "trader authorizations"
+      ],
+      "aliases": [
+        "6ND_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/securities-options"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-securities-option-management-6nd-ae-sap-s-4hana-cloud-publ.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6ND_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Securities Option Management (6ND_AE) - SAP S/4HANA Cloud Public Edition (6ND_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — Test script for scope item 6ND (AE localization): securities option lifecycle in Treasury, from setup to payment, valuation, exercise/expiry, accounting and reports | keywords: Securities Option Management, test scripts, business partner setup, correspondence, premium payment, period-end closing, net present value, option exercise and expiry, credit limits, trader authorizations, 6ND_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-securities-option-management-group-ledger-ifrs-6ne-ae-1182",
+      "title": "Test Script - Securities Option Management - Group Ledger IFRS (6NE_AE) (6NE_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (6NE_AE) for posting flows, key date valuation and realized P&L in parallel IFRS valuation area 002.",
+      "keywords": [
+        "Securities Option Management",
+        "parallel valuation",
+        "group ledger ifrs",
+        "key date valuation",
+        "flow posting",
+        "realized profit and loss",
+        "period-end closing",
+        "treasury accounting",
+        "demo data",
+        "test scripts"
+      ],
+      "aliases": [
+        "6NE_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/securities-options"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-securities-option-management-group-ledger-ifrs-6ne-ae-1182.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6NE_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Securities Option Management - Group Ledger IFRS (6NE_AE) (6NE_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script (6NE_AE) for posting flows, key date valuation and realized P&L in parallel IFRS valuation area 002 | keywords: Securities Option Management, parallel valuation, group ledger ifrs, key date valuation, flow posting, realized profit and loss, period-end closing, treasury accounting, demo data, test scripts, 6NE_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-shareholding-management-5wf-ae-sap-s-4hana-cloud-public-ed",
+      "title": "Test Script: Shareholding Management (5WF_AE) - SAP S/4HANA Cloud Public Edition (5WF_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 5WF Shareholding Management: BP setup, security classes, purchase, dividends, valuation, sale, reports.",
+      "keywords": [
+        "Shareholding Management",
+        "business partner setup",
+        "security class",
+        "securities account",
+        "shareholding purchase",
+        "shareholding sale",
+        "cash dividend",
+        "period-end closing",
+        "payment processing",
+        "treasury correspondence"
+      ],
+      "aliases": [
+        "5WF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/shareholding-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-shareholding-management-5wf-ae-sap-s-4hana-cloud-public-ed.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5WF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Shareholding Management (5WF_AE) - SAP S/4HANA Cloud Public Edition (5WF_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 5WF Shareholding Management: BP setup, security classes, purchase, dividends, valuation, sale, reports | keywords: Shareholding Management, business partner setup, security class, securities account, shareholding purchase, shareholding sale, cash dividend, period-end closing, payment processing, treasury correspondence, 5WF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-shareholding-management-group-ledger-us-gaap-5wh-ae-1128",
+      "title": "Test Script: Shareholding Management – Group Ledger US GAAP (5WH_AE) (5WH_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5WH: parallel US GAAP valuation area postings for shareholdings (dividends, equity pickup, reclassification).",
+      "keywords": [
+        "Shareholding Management",
+        "parallel valuation area",
+        "us gaap ledger",
+        "cash dividend posting",
+        "equity pickup",
+        "equity item reclassification",
+        "test scripts",
+        "business roles",
+        "master data scripts",
+        "demo data"
+      ],
+      "aliases": [
+        "5WH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/shareholding-management"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-shareholding-management-group-ledger-us-gaap-5wh-ae-1128.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5WH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Shareholding Management – Group Ledger US GAAP (5WH_AE) (5WH_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5WH: parallel US GAAP valuation area postings for shareholdings (dividends, equity pickup, reclassification) | keywords: Shareholding Management, parallel valuation area, us gaap ledger, cash dividend posting, equity pickup, equity item reclassification, test scripts, business roles, master data scripts, demo data, 5WH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-treasury-trading-via-trading-platforms-2f5-sap-s-4hana-clo-part-01",
+      "title": "Test Script: Treasury Trading via Trading Platforms (2F5) - SAP S/4HANA Cloud Public Edition (2F5_S4CLD2608_BPD_EN_XX) — part 1 of 2",
+      "description": "Test script for SAP S/4HANA Cloud scope item 2F5 (2608): FX, money market and MMF trading via trading platforms, external and intercompany scenarios.",
+      "keywords": [
+        "Treasury Trading Platforms and SWIFT Correspondence",
+        "trading platform integration",
+        "external fx trade requests",
+        "fx inbound trades",
+        "intercompany fx trading",
+        "back-to-back trading",
+        "trade aggregation",
+        "money market trades",
+        "intercompany money market",
+        "cash trade requests"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-trading-platforms-and-swift"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-treasury-trading-via-trading-platforms-2f5-sap-s-4hana-clo-part-01.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2F5_S4CLD2608_BPD_EN_XX.docx#lines-1-3618"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Treasury Trading via Trading Platforms (2F5) - SAP S/4HANA Cloud Public Edition (2F5_S4CLD2608_BPD_EN_XX) — part 1 of 2 (Treasury and Cash Management) — Test script for SAP S/4HANA Cloud scope item 2F5 (2608): FX, money market and MMF trading via trading platforms, external and intercompany scenarios | keywords: Treasury Trading Platforms and SWIFT Correspondence, trading platform integration, external fx trade requests, fx inbound trades, intercompany fx trading, back-to-back trading, trade aggregation, money market trades, intercompany money market, cash trade requests"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-treasury-trading-via-trading-platforms-2f5-sap-s-4hana-clo-part-02",
+      "title": "Test Script: Treasury Trading via Trading Platforms (2F5) - SAP S/4HANA Cloud Public Edition (2F5_S4CLD2608_BPD_EN_XX) — part 2 of 2",
+      "description": "S/4HANA Cloud 2608 test script (2F5): treasury trading via external platforms - MM/MMF steps, optional trade tasks, mapping and business-rule examples.",
+      "keywords": [
+        "Treasury Trading Platforms and SWIFT Correspondence",
+        "money market fund trades",
+        "mmf without clearing house",
+        "mmf clearing house scenario",
+        "trading platform integration",
+        "trade request processing",
+        "trade editing and reprocessing",
+        "counterparty limits",
+        "field mappings",
+        "business rules"
+      ],
+      "aliases": [],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-trading-platforms-and-swift"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-treasury-trading-via-trading-platforms-2f5-sap-s-4hana-clo-part-02.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2F5_S4CLD2608_BPD_EN_XX.docx#lines-3619-4517"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Treasury Trading via Trading Platforms (2F5) - SAP S/4HANA Cloud Public Edition (2F5_S4CLD2608_BPD_EN_XX) — part 2 of 2 (Treasury and Cash Management) — S/4HANA Cloud 2608 test script (2F5): treasury trading via external platforms - MM/MMF steps, optional trade tasks, mapping and business-rule examples | keywords: Treasury Trading Platforms and SWIFT Correspondence, money market fund trades, mmf without clearing house, mmf clearing house scenario, trading platform integration, trade request processing, trade editing and reprocessing, counterparty limits, field mappings, business rules"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-treasury-workstation-accounting-integration-33e-ae-897",
+      "title": "Test Script: Treasury Workstation Accounting Integration (33E_AE) (33E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for 33E: replicating Treasury (TRM) accounting postings to a central accounting system (ECC or Private Edition) and verifying them.",
+      "keywords": [
+        "Treasury Workstation Accounting Integration",
+        "treasury accounting integration",
+        "treasury and risk management",
+        "accounting document replication",
+        "outbound message monitoring",
+        "communication connection",
+        "field mapping rules",
+        "business roles",
+        "demo data",
+        "test script"
+      ],
+      "aliases": [
+        "33E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-accounting-integration"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-treasury-workstation-accounting-integration-33e-ae-897.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/33E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Treasury Workstation Accounting Integration (33E_AE) (33E_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP S/4HANA Cloud Public Edition test script for 33E: replicating Treasury (TRM) accounting postings to a central accounting system (ECC or Private Edition) and verifying them | keywords: Treasury Workstation Accounting Integration, treasury accounting integration, treasury and risk management, accounting document replication, outbound message monitoring, communication connection, field mapping rules, business roles, demo data, test script, 33E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/test-script-treasury-workstation-cash-integration-34p-ae-sap-s-4hana-c",
+      "title": "Test Script: Treasury Workstation Cash Integration (34P_AE) - SAP S/4HANA Cloud Public Edition (34P_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script (34P_AE) for replicating house banks, bank accounts and cash flows from subsidiary systems to a central treasury workstation.",
+      "keywords": [
+        "Treasury Workstation Accounting Integration",
+        "treasury workstation integration",
+        "cash flow replication",
+        "cash flow replication jobs",
+        "house bank replication",
+        "bank account replication",
+        "replication filter criteria",
+        "cash flow reconciliation",
+        "remote cash flow retrieval",
+        "cash flow release"
+      ],
+      "aliases": [
+        "34P_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-accounting-integration"
+      ],
+      "path": "05-treasury-and-cash-management/test-script-treasury-workstation-cash-integration-34p-ae-sap-s-4hana-c.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/34P_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Treasury Workstation Cash Integration (34P_AE) - SAP S/4HANA Cloud Public Edition (34P_S4CLD2608_BPD_EN_AE) (Treasury and Cash Management) — SAP test script (34P_AE) for replicating house banks, bank accounts and cash flows from subsidiary systems to a central treasury workstation | keywords: Treasury Workstation Accounting Integration, treasury workstation integration, cash flow replication, cash flow replication jobs, house bank replication, bank account replication, replication filter criteria, cash flow reconciliation, remote cash flow retrieval, cash flow release, 34P_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "05-treasury-and-cash-management/treasury-correspondence-integration-with-swift-network-3qm-test-script",
+      "title": "Treasury Correspondence Integration with SWIFT Network (3QM) - Test Script, SAP S/4HANA Cloud Public Edition (3QM_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 3QM: set up and test treasury SWIFT correspondence (MT300/MT320) via SAP Multi-Bank Connectivity, from BP settings to settlement.",
+      "keywords": [
+        "Treasury Trading Platforms and SWIFT Correspondence",
+        "swift integration",
+        "treasury correspondence",
+        "multi-bank connectivity",
+        "swift messages",
+        "correspondence settings",
+        "bic assignment",
+        "inbound correspondence",
+        "outbound correspondence",
+        "correspondence monitoring"
+      ],
+      "aliases": [
+        "3QM_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/treasury-and-cash-management",
+        "topic/treasury-trading-platforms-and-swift"
+      ],
+      "path": "05-treasury-and-cash-management/treasury-correspondence-integration-with-swift-network-3qm-test-script.md",
+      "cluster": "05-treasury-and-cash-management",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3QM_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Treasury Correspondence Integration with SWIFT Network (3QM) - Test Script, SAP S/4HANA Cloud Public Edition (3QM_S4CLD2608_BPD_EN_XX) (Treasury and Cash Management) — SAP test script for scope item 3QM: set up and test treasury SWIFT correspondence (MT300/MT320) via SAP Multi-Bank Connectivity, from BP settings to settlement | keywords: Treasury Trading Platforms and SWIFT Correspondence, swift integration, treasury correspondence, multi-bank connectivity, swift messages, correspondence settings, bic assignment, inbound correspondence, outbound correspondence, correspondence monitoring, 3QM_S4CLD2608_BPD_EN_XX"
+    }
+  ]
+}

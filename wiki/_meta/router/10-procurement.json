@@ -1,0 +1,2160 @@
+{
+  "version": 1,
+  "layer": 2,
+  "generated": "2026-10-12T11:48:15Z",
+  "cluster": "10-procurement",
+  "cluster_title": "Procurement",
+  "cluster_description": "Purchase requisitions and purchase orders through goods receipt, info records, scheduling agreements, RFQs and sourcing, consignment, ERS, supplier evaluation, returns, Ariba and Fieldglass.",
+  "usage": "Layer 2 of a two-layer router. Score the query against each node's description/keywords/embedding_text, pick the best with a confidence score, then read `path` (relative to the wiki/ vault root).",
+  "count": 65,
+  "nodes": [
+    {
+      "id": "10-procurement/central-procurement-with-sap-ariba-sourcing-4qn-test-script-sap-s-4han",
+      "title": "Central Procurement with SAP Ariba Sourcing (4QN) - Test Script, SAP S/4HANA Cloud Public Edition (4QN_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 4QN: central RFQ, Ariba Sourcing (guided/classic UI), award, supplier quotation and follow-on contract or PO in S/4HANA Cloud Public.",
+      "keywords": [
+        "Sourcing with SAP Ariba Sourcing",
+        "central procurement",
+        "central rfq",
+        "ariba sourcing",
+        "guided sourcing ui",
+        "classic sourcing ui",
+        "supplier bidding",
+        "award scenarios",
+        "central supplier quotation",
+        "follow-on documents"
+      ],
+      "aliases": [
+        "4QN_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-sourcing"
+      ],
+      "path": "10-procurement/central-procurement-with-sap-ariba-sourcing-4qn-test-script-sap-s-4han.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4QN_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Central Procurement with SAP Ariba Sourcing (4QN) - Test Script, SAP S/4HANA Cloud Public Edition (4QN_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for scope item 4QN: central RFQ, Ariba Sourcing (guided/classic UI), award, supplier quotation and follow-on contract or PO in S/4HANA Cloud Public | keywords: Sourcing with SAP Ariba Sourcing, central procurement, central rfq, ariba sourcing, guided sourcing ui, classic sourcing ui, supplier bidding, award scenarios, central supplier quotation, follow-on documents, 4QN_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/complementary-procurement-functions-2tw-ae-test-script-sap-s-4hana-clo",
+      "title": "Complementary Procurement Functions (2TW_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2TW_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2TW_AE: procuring operating supplies, batch- and serial-number-managed materials (PO, goods receipt, supplier invoice), UAE plant 3310.",
+      "keywords": [
+        "Complementary Procurement for Operating Supplies, Batches…",
+        "complementary procurement",
+        "operating supply procurement",
+        "batch managed materials",
+        "serial number management",
+        "purchase orders",
+        "goods receipt",
+        "supplier invoices",
+        "purchasing info records",
+        "business roles"
+      ],
+      "aliases": [
+        "2TW_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/complementary-procurement"
+      ],
+      "path": "10-procurement/complementary-procurement-functions-2tw-ae-test-script-sap-s-4hana-clo.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2TW_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Complementary Procurement Functions (2TW_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2TW_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script for scope item 2TW_AE: procuring operating supplies, batch- and serial-number-managed materials (PO, goods receipt, supplier invoice), UAE plant 3310 | keywords: Complementary Procurement for Operating Supplies, Batches…, complementary procurement, operating supply procurement, batch managed materials, serial number management, purchase orders, goods receipt, supplier invoices, purchasing info records, business roles, 2TW_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/consumable-purchasing-bnx-ae-test-script-sap-s-4hana-cloud-public-edit",
+      "title": "Consumable Purchasing (BNX_AE) Test Script - SAP S/4HANA Cloud Public Edition (BNX_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item BNX_AE (Consumable Purchasing, UAE): PR, PO, approval, goods receipt, supplier invoice, invoicing plan, retention; release 2608.",
+      "keywords": [
+        "Requisitioning and Consumable Purchasing",
+        "consumable purchasing",
+        "purchase requisition",
+        "purchase order",
+        "purchase order approval",
+        "flexible workflow",
+        "goods receipt",
+        "supplier invoice",
+        "multiple account assignment",
+        "invoicing plan"
+      ],
+      "aliases": [
+        "BNX_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/requisitioning-and-consumable-purchasing"
+      ],
+      "path": "10-procurement/consumable-purchasing-bnx-ae-test-script-sap-s-4hana-cloud-public-edit.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BNX_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Consumable Purchasing (BNX_AE) Test Script - SAP S/4HANA Cloud Public Edition (BNX_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script for scope item BNX_AE (Consumable Purchasing, UAE): PR, PO, approval, goods receipt, supplier invoice, invoicing plan, retention; release 2608 | keywords: Requisitioning and Consumable Purchasing, consumable purchasing, purchase requisition, purchase order, purchase order approval, flexible workflow, goods receipt, supplier invoice, multiple account assignment, invoicing plan, BNX_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/contract-for-central-procurement-with-sap-ariba-contracts-4b0-test-scr",
+      "title": "Contract for Central Procurement with SAP Ariba Contracts (4B0) - Test Script (4B0_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 4B0: creating, reviewing and updating central purchase contracts in SAP Ariba Contracts and creating a sourcing project, with S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Contracts with SAP Ariba Contracts",
+        "central purchase contracts",
+        "sap ariba contracts",
+        "central procurement",
+        "sourcing project",
+        "test script",
+        "contract amendment",
+        "business roles",
+        "test prerequisites",
+        "master data"
+      ],
+      "aliases": [
+        "4B0_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-contracts"
+      ],
+      "path": "10-procurement/contract-for-central-procurement-with-sap-ariba-contracts-4b0-test-scr.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4B0_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Contract for Central Procurement with SAP Ariba Contracts (4B0) - Test Script (4B0_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for scope item 4B0: creating, reviewing and updating central purchase contracts in SAP Ariba Contracts and creating a sourcing project, with S/4HANA Cloud Public Edition | keywords: Contracts with SAP Ariba Contracts, central purchase contracts, sap ariba contracts, central procurement, sourcing project, test script, contract amendment, business roles, test prerequisites, master data, 4B0_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/create-purchasing-info-record-mds-bhd-master-data-script-563",
+      "title": "Create Purchasing Info Record - MDS (BHD) Master Data Script (BHD_S4CLD2608_Master_Data_EN_XX)",
+      "description": "Master data script for creating and mass-changing purchasing info records (standard, consignment, subcontracting, pipeline) in S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Purchasing Info Records",
+        "consignment info record",
+        "subcontracting info record",
+        "pipeline info record",
+        "mass changes",
+        "mass price changes",
+        "number ranges",
+        "master data prerequisites",
+        "organizational units",
+        "tax codes"
+      ],
+      "aliases": [
+        "BHD_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-info-records"
+      ],
+      "path": "10-procurement/create-purchasing-info-record-mds-bhd-master-data-script-563.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BHD_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Create Purchasing Info Record - MDS (BHD) Master Data Script (BHD_S4CLD2608_Master_Data_EN_XX) (Procurement) — Master data script for creating and mass-changing purchasing info records (standard, consignment, subcontracting, pipeline) in S/4HANA Cloud Public Edition | keywords: Purchasing Info Records, consignment info record, subcontracting info record, pipeline info record, mass changes, mass price changes, number ranges, master data prerequisites, organizational units, tax codes, BHD_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "10-procurement/criar-registro-info-para-compras-mds-bhd-566",
+      "title": "Criar registro info para compras – MDS (BHD) (BHD_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Script de dados mestre (PT) do SAP S/4HANA Cloud Public Edition 2608: testes para criar e modificar registros info para compras, incl. consignação, subcontratação, pipeline e massa.",
+      "keywords": [
+        "Purchasing Info Records",
+        "consignment info records",
+        "subcontracting info records",
+        "pipeline info records",
+        "mass changes info records",
+        "mass price changes",
+        "numbering ranges",
+        "business roles",
+        "required master data",
+        "tax codes"
+      ],
+      "aliases": [
+        "BHD_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-info-records"
+      ],
+      "path": "10-procurement/criar-registro-info-para-compras-mds-bhd-566.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BHD_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Criar registro info para compras – MDS (BHD) (BHD_S4CLD2608_Master_Data_PT_XX) (Procurement) — Script de dados mestre (PT) do SAP S/4HANA Cloud Public Edition 2608: testes para criar e modificar registros info para compras, incl. consignação, subcontratação, pipeline e massa | keywords: Purchasing Info Records, consignment info records, subcontracting info records, pipeline info records, mass changes info records, mass price changes, numbering ranges, business roles, required master data, tax codes, BHD_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "10-procurement/direct-procurement-with-inbound-delivery-2tx-ae-test-script-sap-s-4han",
+      "title": "Direct Procurement with Inbound Delivery (2TX_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2TX_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2TX_AE (UAE): PO, supplier confirmation, inbound delivery, goods receipt and supplier invoice, with roles, sample data and Fiori apps.",
+      "keywords": [
+        "Direct Material Procurement",
+        "direct procurement test script",
+        "purchase order creation",
+        "supplier confirmation",
+        "situation handling",
+        "order acknowledgement",
+        "inbound delivery",
+        "goods receipt",
+        "two step goods receipt",
+        "supplier invoice"
+      ],
+      "aliases": [
+        "2TX_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/direct-material-procurement"
+      ],
+      "path": "10-procurement/direct-procurement-with-inbound-delivery-2tx-ae-test-script-sap-s-4han.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2TX_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Direct Procurement with Inbound Delivery (2TX_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2TX_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 2TX_AE (UAE): PO, supplier confirmation, inbound delivery, goods receipt and supplier invoice, with roles, sample data and Fiori apps | keywords: Direct Material Procurement, direct procurement test script, purchase order creation, supplier confirmation, situation handling, order acknowledgement, inbound delivery, goods receipt, two step goods receipt, supplier invoice, 2TX_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/einkaufsinfosatz-anlegen-sds-bhd-stammdatenskript-562",
+      "title": "Einkaufsinfosatz anlegen – SDS (BHD) Stammdatenskript (BHD_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German SAP S/4HANA Cloud master data script for creating purchasing info records (standard, consignment, subcontracting, pipeline) and mass changes.",
+      "keywords": [
+        "Purchasing Info Records",
+        "consignment info record",
+        "subcontracting info record",
+        "pipeline info record",
+        "mass changes",
+        "price mass changes",
+        "master data scripts",
+        "number ranges",
+        "business roles",
+        "tax code"
+      ],
+      "aliases": [
+        "BHD_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-info-records"
+      ],
+      "path": "10-procurement/einkaufsinfosatz-anlegen-sds-bhd-stammdatenskript-562.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BHD_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Einkaufsinfosatz anlegen – SDS (BHD) Stammdatenskript (BHD_S4CLD2608_Master_Data_DE_XX) (Procurement) — German SAP S/4HANA Cloud master data script for creating purchasing info records (standard, consignment, subcontracting, pipeline) and mass changes | keywords: Purchasing Info Records, consignment info record, subcontracting info record, pipeline info record, mass changes, price mass changes, master data scripts, number ranges, business roles, tax code, BHD_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "10-procurement/external-workforce-procurement-via-sap-fieldglass-22k-test-script-sap",
+      "title": "External Workforce Procurement via SAP Fieldglass (22K) - Test Script, SAP S/4HANA Cloud Public Edition (22K_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 22K: SAP Fieldglass to S/4HANA Cloud Public Edition integration for work orders, statements of work, time sheets, invoices, ERS; dated 19-06-26.",
+      "keywords": [
+        "Service Procurement with SAP Fieldglass and Business Network",
+        "external workforce procurement",
+        "sap fieldglass integration",
+        "work order",
+        "job posting",
+        "statement of work",
+        "time sheets",
+        "service entry sheets",
+        "supplier invoices",
+        "evaluated receipt settlement"
+      ],
+      "aliases": [
+        "22K_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/service-procurement-fieldglass"
+      ],
+      "path": "10-procurement/external-workforce-procurement-via-sap-fieldglass-22k-test-script-sap.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/22K_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "External Workforce Procurement via SAP Fieldglass (22K) - Test Script, SAP S/4HANA Cloud Public Edition (22K_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for scope item 22K: SAP Fieldglass to S/4HANA Cloud Public Edition integration for work orders, statements of work, time sheets, invoices, ERS; dated 19-06-26 | keywords: Service Procurement with SAP Fieldglass and Business Network, external workforce procurement, sap fieldglass integration, work order, job posting, statement of work, time sheets, service entry sheets, supplier invoices, evaluated receipt settlement, 22K_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/master-data-script-create-scheduling-agreement-mds-bf6-557",
+      "title": "Master Data Script: Create Scheduling Agreement - MDS (BF6) (BF6_S4CLD2608_Master_Data_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 master data script for creating purchase scheduling agreements (standard, consigned, subcontracting) in Fiori app F2179.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "standard procurement",
+        "consigned procurement",
+        "subcontracting procurement",
+        "number ranges",
+        "business roles",
+        "purchasing organization",
+        "material and supplier master data",
+        "tax code and tax country"
+      ],
+      "aliases": [
+        "BF6_S4CLD2608_Master_Data_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/master-data-script-create-scheduling-agreement-mds-bf6-557.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF6_S4CLD2608_Master_Data_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Master Data Script: Create Scheduling Agreement - MDS (BF6) (BF6_S4CLD2608_Master_Data_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 master data script for creating purchase scheduling agreements (standard, consigned, subcontracting) in Fiori app F2179 | keywords: Purchase Scheduling Agreements, scheduling agreements, standard procurement, consigned procurement, subcontracting procurement, number ranges, business roles, purchasing organization, material and supplier master data, tax code and tax country, BF6_S4CLD2608_Master_Data_EN_XX"
+    },
+    {
+      "id": "10-procurement/mds-bf6-559",
+      "title": "マスタデータスクリプト: 分納契約の登録 - MDS (BF6) (BF6_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data/test script (BF6) for creating scheduling agreements (分納契約) in SAP S/4HANA Cloud Public Edition 2608 via app F2179: standard, consignment, subcontracting.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "standard procurement",
+        "consignment procurement",
+        "subcontracting procurement",
+        "number ranges",
+        "business roles",
+        "master data prerequisites",
+        "test procedures",
+        "tax registration country"
+      ],
+      "aliases": [
+        "BF6_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/mds-bf6-559.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF6_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "マスタデータスクリプト: 分納契約の登録 - MDS (BF6) (BF6_S4CLD2608_Master_Data_JA_XX) (Procurement) — Japanese master data/test script (BF6) for creating scheduling agreements (分納契約) in SAP S/4HANA Cloud Public Edition 2608 via app F2179: standard, consignment, subcontracting | keywords: Purchase Scheduling Agreements, scheduling agreements, standard procurement, consignment procurement, subcontracting procurement, number ranges, business roles, master data prerequisites, test procedures, tax registration country, BF6_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "10-procurement/mds-bf6-561",
+      "title": "主数据脚本: 创建计划协议 - MDS (BF6) (BF6_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) master data script BF6 for creating scheduling agreements (standard, consignment, subcontracting) via app F2179 in SAP S/4HANA Cloud Public.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "consignment procurement",
+        "subcontracting procurement",
+        "standard procurement",
+        "number ranges",
+        "master data scripts",
+        "business roles",
+        "BF6"
+      ],
+      "aliases": [
+        "BF6_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/mds-bf6-561.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF6_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "主数据脚本: 创建计划协议 - MDS (BF6) (BF6_S4CLD2608_Master_Data_ZH_XX) (Procurement) — Chinese (machine-translated) master data script BF6 for creating scheduling agreements (standard, consignment, subcontracting) via app F2179 in SAP S/4HANA Cloud Public | keywords: Purchase Scheduling Agreements, scheduling agreements, consignment procurement, subcontracting procurement, standard procurement, number ranges, master data scripts, business roles, BF6, BF6_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "10-procurement/mds-bhd-565",
+      "title": "購買情報の登録 - MDS (BHD) (BHD_S4CLD2608_Master_Data_JA_XX)",
+      "description": "Japanese master data script (BHD) for creating and mass-changing purchasing info records (standard, consignment, subcontracting, pipeline) in SAP S/4HANA Cloud Public Edition.",
+      "keywords": [
+        "Purchasing Info Records",
+        "standard info record",
+        "consignment info record",
+        "subcontracting info record",
+        "pipeline info record",
+        "mass change info records",
+        "mass price change",
+        "number ranges",
+        "business roles",
+        "related functions"
+      ],
+      "aliases": [
+        "BHD_S4CLD2608_Master_Data_JA_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-info-records"
+      ],
+      "path": "10-procurement/mds-bhd-565.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BHD_S4CLD2608_Master_Data_JA_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "購買情報の登録 - MDS (BHD) (BHD_S4CLD2608_Master_Data_JA_XX) (Procurement) — Japanese master data script (BHD) for creating and mass-changing purchasing info records (standard, consignment, subcontracting, pipeline) in SAP S/4HANA Cloud Public Edition | keywords: Purchasing Info Records, standard info record, consignment info record, subcontracting info record, pipeline info record, mass change info records, mass price change, number ranges, business roles, related functions, BHD_S4CLD2608_Master_Data_JA_XX"
+    },
+    {
+      "id": "10-procurement/mds-bhd-567",
+      "title": "创建采购信息记录 - MDS (BHD) (BHD_S4CLD2608_Master_Data_ZH_XX)",
+      "description": "Chinese (machine-translated) SAP S/4HANA Cloud Public 2608 master data script BHD: creating purchasing info records (standard, consignment, subcontracting, pipeline) and mass changes.",
+      "keywords": [
+        "Purchasing Info Records",
+        "consignment info record",
+        "subcontracting info record",
+        "pipeline info record",
+        "mass change info records",
+        "mass price change",
+        "number ranges",
+        "business roles",
+        "master data prerequisites",
+        "tax code configuration"
+      ],
+      "aliases": [
+        "BHD_S4CLD2608_Master_Data_ZH_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-info-records"
+      ],
+      "path": "10-procurement/mds-bhd-567.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BHD_S4CLD2608_Master_Data_ZH_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "创建采购信息记录 - MDS (BHD) (BHD_S4CLD2608_Master_Data_ZH_XX) (Procurement) — Chinese (machine-translated) SAP S/4HANA Cloud Public 2608 master data script BHD: creating purchasing info records (standard, consignment, subcontracting, pipeline) and mass changes | keywords: Purchasing Info Records, consignment info record, subcontracting info record, pipeline info record, mass change info records, mass price change, number ranges, business roles, master data prerequisites, tax code configuration, BHD_S4CLD2608_Master_Data_ZH_XX"
+    },
+    {
+      "id": "10-procurement/procurement-of-materials-with-variant-configuration-2xu-ae-test-script",
+      "title": "Procurement of Materials with Variant Configuration (2XU_AE) - Test Script (2XU_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 2XU, UAE) for procuring variant-configured materials: prerequisites, PO to goods receipt to supplier invoice.",
+      "keywords": [
+        "Procurement of Variant-Configured Materials",
+        "variant configuration",
+        "purchase orders",
+        "purchase order approval",
+        "flexible workflow",
+        "purchasing info record",
+        "variant pricing",
+        "goods receipt",
+        "supplier invoice",
+        "purchase requisition by MRP"
+      ],
+      "aliases": [
+        "2XU_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/procurement-with-variant-configuration"
+      ],
+      "path": "10-procurement/procurement-of-materials-with-variant-configuration-2xu-ae-test-script.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2XU_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Procurement of Materials with Variant Configuration (2XU_AE) - Test Script (2XU_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition test script (scope item 2XU, UAE) for procuring variant-configured materials: prerequisites, PO to goods receipt to supplier invoice | keywords: Procurement of Variant-Configured Materials, variant configuration, purchase orders, purchase order approval, flexible workflow, purchasing info record, variant pricing, goods receipt, supplier invoice, purchase requisition by MRP, 2XU_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/procurement-of-pipeline-materials-41f-ae-993",
+      "title": "Procurement of Pipeline Materials (41F_AE) (41F_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 41F_AE: pipeline info record, consumption posting and pipeline settlement or scheduled supplier invoice jobs.",
+      "keywords": [
+        "Procurement of Pipeline Materials",
+        "pipeline materials",
+        "purchasing info records",
+        "record consumption",
+        "pipeline settlement",
+        "supplier invoice jobs",
+        "goods issue",
+        "business roles",
+        "demo data update behavior",
+        "41F"
+      ],
+      "aliases": [
+        "41F_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/pipeline-procurement"
+      ],
+      "path": "10-procurement/procurement-of-pipeline-materials-41f-ae-993.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/41F_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Procurement of Pipeline Materials (41F_AE) (41F_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud 2608 test script for scope item 41F_AE: pipeline info record, consumption posting and pipeline settlement or scheduled supplier invoice jobs | keywords: Procurement of Pipeline Materials, pipeline materials, purchasing info records, record consumption, pipeline settlement, supplier invoice jobs, goods issue, business roles, demo data update behavior, 41F, 41F_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/purchasing-rebate-processing-2r7-ae-test-script-sap-s-4hana-cloud-publ",
+      "title": "Purchasing Rebate Processing (2R7_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2R7_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 2R7 (AE) Purchasing Rebate Processing: config prerequisites, condition contract types, settlements, workflow, fixed amounts, scales, reversal.",
+      "keywords": [
+        "Purchasing Rebate Processing",
+        "condition contracts",
+        "contract process variants",
+        "delta accruals settlement",
+        "partial settlement",
+        "final settlement",
+        "two-step settlement",
+        "rebate approval workflow",
+        "graduated scale determination",
+        "fixed amount agreements"
+      ],
+      "aliases": [
+        "2R7_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-rebates"
+      ],
+      "path": "10-procurement/purchasing-rebate-processing-2r7-ae-test-script-sap-s-4hana-cloud-publ.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2R7_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Purchasing Rebate Processing (2R7_AE) - Test Script, SAP S/4HANA Cloud Public Edition (2R7_S4CLD2608_BPD_EN_AE) (Procurement) — Test script for scope item 2R7 (AE) Purchasing Rebate Processing: config prerequisites, condition contract types, settlements, workflow, fixed amounts, scales, reversal | keywords: Purchasing Rebate Processing, condition contracts, contract process variants, delta accruals settlement, partial settlement, final settlement, two-step settlement, rebate approval workflow, graduated scale determination, fixed amount agreements, 2R7_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/request-for-quotation-customer-specification-en-de-255",
+      "title": "Request for Quotation (Customer Specification EN/DE) (Customer_Specification_EN_DE)",
+      "description": "Bilingual (English/German) blank Request for Quotation letter template with product description, quantity and technical detail fields, signed by Purchase/Einkauf.",
+      "keywords": [
+        "Request for Price and Quotation Comparison",
+        "request for quotation",
+        "technical specification",
+        "quotation request template",
+        "bilingual templates",
+        "bidding procedures",
+        "technical details"
+      ],
+      "aliases": [
+        "Customer_Specification_EN_DE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/request-for-quotation"
+      ],
+      "path": "10-procurement/request-for-quotation-customer-specification-en-de-255.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/Customer_Specification_EN_DE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Request for Quotation (Customer Specification EN/DE) (Customer_Specification_EN_DE) (Procurement) — Bilingual (English/German) blank Request for Quotation letter template with product description, quantity and technical detail fields, signed by Purchase/Einkauf | keywords: Request for Price and Quotation Comparison, request for quotation, technical specification, quotation request template, bilingual templates, bidding procedures, technical details, Customer_Specification_EN_DE"
+    },
+    {
+      "id": "10-procurement/return-to-supplier-bmk-ae-test-script-sap-s-4hana-cloud-public-edition",
+      "title": "Return to Supplier (BMK_AE) - Test Script, SAP S/4HANA Cloud Public Edition (BMK_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for the Return to Supplier scope item (BMK_AE, UAE): prerequisites, roles, master data and step-by-step Fiori tests for advanced and basic returns to a supplier.",
+      "keywords": [
+        "Return to Supplier",
+        "returns purchase order",
+        "advanced returns management",
+        "basic return to supplier",
+        "outbound delivery",
+        "goods issue",
+        "supplier credit memo",
+        "replacement material",
+        "business roles",
+        "master data"
+      ],
+      "aliases": [
+        "BMK_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/return-to-supplier"
+      ],
+      "path": "10-procurement/return-to-supplier-bmk-ae-test-script-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BMK_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Return to Supplier (BMK_AE) - Test Script, SAP S/4HANA Cloud Public Edition (BMK_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script for the Return to Supplier scope item (BMK_AE, UAE): prerequisites, roles, master data and step-by-step Fiori tests for advanced and basic returns to a supplier | keywords: Return to Supplier, returns purchase order, advanced returns management, basic return to supplier, outbound delivery, goods issue, supplier credit memo, replacement material, business roles, master data, BMK_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/sap-ariba-buying-4ai-1009",
+      "title": "SAP Ariba Buying (4AI) (4AI_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 4AI, SAP Ariba Buying: purchase request through approval, purchase order, goods receipt and supplier invoice.",
+      "keywords": [
+        "SAP Ariba Buying Purchase Requests",
+        "sap ariba buying",
+        "purchase requests",
+        "purchase request approval",
+        "purchase requisition to order",
+        "purchase order approval",
+        "goods receipt",
+        "supplier invoices",
+        "user profile",
+        "business roles"
+      ],
+      "aliases": [
+        "4AI_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-buying"
+      ],
+      "path": "10-procurement/sap-ariba-buying-4ai-1009.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4AI_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "SAP Ariba Buying (4AI) (4AI_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 4AI, SAP Ariba Buying: purchase request through approval, purchase order, goods receipt and supplier invoice | keywords: SAP Ariba Buying Purchase Requests, sap ariba buying, purchase requests, purchase request approval, purchase requisition to order, purchase order approval, goods receipt, supplier invoices, user profile, business roles, 4AI_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/sap-ariba-buying-base-edition-7ym-test-script-1237",
+      "title": "SAP Ariba Buying Base Edition (7YM) Test Script (7YM_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for SAP Ariba Buying Base Edition (7YM) on S/4HANA Cloud Public Edition: purchase request to PO, goods receipt and supplier invoice test steps.",
+      "keywords": [
+        "SAP Ariba Buying Purchase Requests",
+        "ariba buying",
+        "purchase requests",
+        "purchase request approval",
+        "purchase order conversion",
+        "goods receipt",
+        "supplier invoices",
+        "buying profile",
+        "purchase order approval",
+        "business roles"
+      ],
+      "aliases": [
+        "7YM_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-buying"
+      ],
+      "path": "10-procurement/sap-ariba-buying-base-edition-7ym-test-script-1237.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7YM_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "SAP Ariba Buying Base Edition (7YM) Test Script (7YM_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for SAP Ariba Buying Base Edition (7YM) on S/4HANA Cloud Public Edition: purchase request to PO, goods receipt and supplier invoice test steps | keywords: SAP Ariba Buying Purchase Requests, ariba buying, purchase requests, purchase request approval, purchase order conversion, goods receipt, supplier invoices, buying profile, purchase order approval, business roles, 7YM_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/scheduling-agreements-in-procurement-bmr-ae-test-script-sap-s-4hana-cl",
+      "title": "Scheduling Agreements in Procurement (BMR_AE) - Test Script, SAP S/4HANA Cloud Public Edition (BMR_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scheduling agreements in procurement: prerequisites, three test cases, Fiori apps, roles, sample data.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "scheduling agreement with release doc",
+        "scheduling agreement without release doc",
+        "edi supplier integration",
+        "delivery schedule",
+        "quota arrangement",
+        "mrp run",
+        "flexible workflow approval",
+        "purchasing info record"
+      ],
+      "aliases": [
+        "BMR_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/scheduling-agreements-in-procurement-bmr-ae-test-script-sap-s-4hana-cl.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BMR_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Scheduling Agreements in Procurement (BMR_AE) - Test Script, SAP S/4HANA Cloud Public Edition (BMR_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scheduling agreements in procurement: prerequisites, three test cases, Fiori apps, roles, sample data | keywords: Purchase Scheduling Agreements, scheduling agreements, scheduling agreement with release doc, scheduling agreement without release doc, edi supplier integration, delivery schedule, quota arrangement, mrp run, flexible workflow approval, purchasing info record, BMR_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/script-de-dados-mestre-criar-programa-de-remessas-mds-bf6-560",
+      "title": "Script de dados mestre - Criar programa de remessas – MDS (BF6) (BF6_S4CLD2608_Master_Data_PT_XX)",
+      "description": "Portuguese master data script (BF6) for SAP S/4HANA Cloud Public Edition: creating scheduling agreements (programas de remessas) for standard, consignment and subcontracting procurement.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "standard procurement",
+        "consignment procurement",
+        "subcontracting procurement",
+        "number ranges",
+        "business roles",
+        "master data prerequisites",
+        "test procedures",
+        "BF6"
+      ],
+      "aliases": [
+        "BF6_S4CLD2608_Master_Data_PT_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/script-de-dados-mestre-criar-programa-de-remessas-mds-bf6-560.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF6_S4CLD2608_Master_Data_PT_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de dados mestre - Criar programa de remessas – MDS (BF6) (BF6_S4CLD2608_Master_Data_PT_XX) (Procurement) — Portuguese master data script (BF6) for SAP S/4HANA Cloud Public Edition: creating scheduling agreements (programas de remessas) for standard, consignment and subcontracting procurement | keywords: Purchase Scheduling Agreements, scheduling agreements, standard procurement, consignment procurement, subcontracting procurement, number ranges, business roles, master data prerequisites, test procedures, BF6, BF6_S4CLD2608_Master_Data_PT_XX"
+    },
+    {
+      "id": "10-procurement/script-de-datos-maestros-creacion-de-plan-de-entregas-mds-bf6-558",
+      "title": "Script de datos maestros - Creación de plan de entregas - MDS (BF6) (BF6_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script BF6: prerequisites and test steps to create purchasing scheduling agreements (plan de entregas).",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "standard procurement",
+        "consignment procurement",
+        "subcontracting procurement",
+        "number ranges",
+        "business roles",
+        "mandatory master data",
+        "organizational units",
+        "test procedures"
+      ],
+      "aliases": [
+        "BF6_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/script-de-datos-maestros-creacion-de-plan-de-entregas-mds-bf6-558.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF6_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de plan de entregas - MDS (BF6) (BF6_S4CLD2608_Master_Data_ES_XX) (Procurement) — Spanish (machine-translated) SAP S/4HANA Cloud Public Edition master data script BF6: prerequisites and test steps to create purchasing scheduling agreements (plan de entregas) | keywords: Purchase Scheduling Agreements, scheduling agreements, standard procurement, consignment procurement, subcontracting procurement, number ranges, business roles, mandatory master data, organizational units, test procedures, BF6_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "10-procurement/script-de-datos-maestros-creacion-de-registro-info-de-compras-mds-bhd",
+      "title": "Script de datos maestros - Creación de registro info de compras - MDS (BHD) (BHD_S4CLD2608_Master_Data_ES_XX)",
+      "description": "Spanish SAP S/4HANA Cloud Public Edition 2608 master data script: test procedures to create and mass-change purchasing info records (BHD).",
+      "keywords": [
+        "Purchasing Info Records",
+        "info record creation",
+        "consignment info records",
+        "subcontracting info records",
+        "pipeline info records",
+        "mass changes",
+        "mass price changes",
+        "business roles",
+        "number ranges",
+        "master data prerequisites"
+      ],
+      "aliases": [
+        "BHD_S4CLD2608_Master_Data_ES_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-info-records"
+      ],
+      "path": "10-procurement/script-de-datos-maestros-creacion-de-registro-info-de-compras-mds-bhd.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BHD_S4CLD2608_Master_Data_ES_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Script de datos maestros - Creación de registro info de compras - MDS (BHD) (BHD_S4CLD2608_Master_Data_ES_XX) (Procurement) — Spanish SAP S/4HANA Cloud Public Edition 2608 master data script: test procedures to create and mass-change purchasing info records (BHD) | keywords: Purchasing Info Records, info record creation, consignment info records, subcontracting info records, pipeline info records, mass changes, mass price changes, business roles, number ranges, master data prerequisites, BHD_S4CLD2608_Master_Data_ES_XX"
+    },
+    {
+      "id": "10-procurement/stammdatenskript-lieferplan-anlegen-sds-bf6-556",
+      "title": "Stammdatenskript: Lieferplan anlegen – SDS (BF6) (BF6_S4CLD2608_Master_Data_DE_XX)",
+      "description": "German master data script (BF6) for SAP S/4HANA Cloud Public Edition 2608: creating scheduling agreements (Lieferplan) for standard, consignment and subcontracting procurement.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "purchasing master data",
+        "number ranges",
+        "consignment procurement",
+        "subcontracting procurement",
+        "standard procurement",
+        "business roles",
+        "organizational units",
+        "test procedures"
+      ],
+      "aliases": [
+        "BF6_S4CLD2608_Master_Data_DE_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements"
+      ],
+      "path": "10-procurement/stammdatenskript-lieferplan-anlegen-sds-bf6-556.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/Others/2608_Master_Data_Scripts/BF6_S4CLD2608_Master_Data_DE_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Stammdatenskript: Lieferplan anlegen – SDS (BF6) (BF6_S4CLD2608_Master_Data_DE_XX) (Procurement) — German master data script (BF6) for SAP S/4HANA Cloud Public Edition 2608: creating scheduling agreements (Lieferplan) for standard, consignment and subcontracting procurement | keywords: Purchase Scheduling Agreements, scheduling agreements, purchasing master data, number ranges, consignment procurement, subcontracting procurement, standard procurement, business roles, organizational units, test procedures, BF6_S4CLD2608_Master_Data_DE_XX"
+    },
+    {
+      "id": "10-procurement/supplier-classification-and-segmentation-19e-ae-test-script-706",
+      "title": "Supplier Classification and Segmentation (19E_AE) – Test Script (19E_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 19E_AE: creating and managing purchasing categories in app F0337 as Purchaser.",
+      "keywords": [
+        "Supplier Classification and Purchasing Categories",
+        "purchasing categories",
+        "supplier classification",
+        "supplier segmentation",
+        "planned spend",
+        "material groups",
+        "test scripts",
+        "business roles",
+        "demo data",
+        "19E"
+      ],
+      "aliases": [
+        "19E_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchasing-categories"
+      ],
+      "path": "10-procurement/supplier-classification-and-segmentation-19e-ae-test-script-706.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/19E_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Supplier Classification and Segmentation (19E_AE) – Test Script (19E_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 19E_AE: creating and managing purchasing categories in app F0337 as Purchaser | keywords: Supplier Classification and Purchasing Categories, purchasing categories, supplier classification, supplier segmentation, planned spend, material groups, test scripts, business roles, demo data, 19E, 19E_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-automated-invoice-settlement-2lh-ae-831",
+      "title": "Test Script: Automated Invoice Settlement (2LH_AE) (2LH_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2LH Automated Invoice Settlement (ERS), UAE (AE) baseline: prerequisites, PO-to-ERS test steps.",
+      "keywords": [
+        "Automated Invoice Settlement (ERS)",
+        "evaluated receipt settlement",
+        "automated invoice settlement",
+        "purchase order creation",
+        "purchase order approval",
+        "flexible workflow",
+        "goods receipt",
+        "purchasing info record",
+        "ers email output",
+        "business roles"
+      ],
+      "aliases": [
+        "2LH_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/evaluated-receipt-settlement"
+      ],
+      "path": "10-procurement/test-script-automated-invoice-settlement-2lh-ae-831.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2LH_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Automated Invoice Settlement (2LH_AE) (2LH_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 2LH Automated Invoice Settlement (ERS), UAE (AE) baseline: prerequisites, PO-to-ERS test steps | keywords: Automated Invoice Settlement (ERS), evaluated receipt settlement, automated invoice settlement, purchase order creation, purchase order approval, flexible workflow, goods receipt, purchasing info record, ers email output, business roles, 2LH_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-automated-purchase-to-pay-with-sap-ariba-commerce-automati",
+      "title": "Test Script: Automated Purchase-to-Pay with SAP Ariba Commerce Automation (J82_AE) (J82_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud Public Edition test script for scope item J82 (UAE): Ariba-integrated PO-to-invoice process, prerequisites and 15 test procedures.",
+      "keywords": [
+        "Purchase-to-Pay Automation with SAP Business Network",
+        "ariba commerce automation",
+        "purchase-to-pay automation",
+        "sap business network",
+        "flexible workflow",
+        "purchase order creation",
+        "purchase order approval",
+        "goods receipt",
+        "supplier invoice",
+        "scope item 42k"
+      ],
+      "aliases": [
+        "J82_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/business-network-purchase-to-pay"
+      ],
+      "path": "10-procurement/test-script-automated-purchase-to-pay-with-sap-ariba-commerce-automati.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J82_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Automated Purchase-to-Pay with SAP Ariba Commerce Automation (J82_AE) (J82_S4CLD2608_BPD_EN_AE) (Procurement) — S/4HANA Cloud Public Edition test script for scope item J82 (UAE): Ariba-integrated PO-to-invoice process, prerequisites and 15 test procedures | keywords: Purchase-to-Pay Automation with SAP Business Network, ariba commerce automation, purchase-to-pay automation, sap business network, flexible workflow, purchase order creation, purchase order approval, goods receipt, supplier invoice, scope item 42k, J82_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-automation-of-central-procurement-quote-with-sap-business",
+      "title": "Test Script: Automation of Central Procurement Quote with SAP Business Network (5JT) (5JT_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script 5JT: central RFQ via SAP Business Network, supplier quote, award, follow-on PO, supplier quick enablement.",
+      "keywords": [
+        "Central Sourcing and Central Procurement",
+        "central request for quotation",
+        "central procurement",
+        "sap business network",
+        "supplier quotation award",
+        "price quote submission",
+        "supplier quick enablement",
+        "supplier registration",
+        "purchase requisition update",
+        "follow-on purchase order"
+      ],
+      "aliases": [
+        "5JT_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/central-sourcing",
+        "topic/business-network-purchase-to-pay"
+      ],
+      "path": "10-procurement/test-script-automation-of-central-procurement-quote-with-sap-business.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5JT_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Automation of Central Procurement Quote with SAP Business Network (5JT) (5JT_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition test script 5JT: central RFQ via SAP Business Network, supplier quote, award, follow-on PO, supplier quick enablement | keywords: Central Sourcing and Central Procurement, central request for quotation, central procurement, sap business network, supplier quotation award, price quote submission, supplier quick enablement, supplier registration, purchase requisition update, follow-on purchase order, 5JT_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-automation-of-source-to-pay-with-sap-business-network-42k",
+      "title": "Test Script: Automation of Source-to-Pay with SAP Business Network (42K_AE) (42K_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 42K: source-to-pay with SAP Business Network, covering material, service, enhanced limit and ERS procurement.",
+      "keywords": [
+        "Purchase-to-Pay Automation with SAP Business Network",
+        "source-to-pay automation",
+        "sap business network",
+        "material procurement",
+        "service procurement",
+        "enhanced limit purchase order",
+        "quick enablement of suppliers",
+        "quote automation",
+        "evaluated receipt settlement",
+        "payment proposals"
+      ],
+      "aliases": [
+        "42K_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/business-network-purchase-to-pay"
+      ],
+      "path": "10-procurement/test-script-automation-of-source-to-pay-with-sap-business-network-42k.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/42K_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Automation of Source-to-Pay with SAP Business Network (42K_AE) (42K_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 42K: source-to-pay with SAP Business Network, covering material, service, enhanced limit and ERS procurement | keywords: Purchase-to-Pay Automation with SAP Business Network, source-to-pay automation, sap business network, material procurement, service procurement, enhanced limit purchase order, quick enablement of suppliers, quote automation, evaluated receipt settlement, payment proposals, 42K_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-central-procurement-with-sap-business-network-for-procurem",
+      "title": "Test Script: Central Procurement with SAP Business Network for Procurement (6BJ) (6BJ_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 6BJ: central purchase orders and supplier confirmations via SAP Business Network.",
+      "keywords": [
+        "Central Requisitioning, Purchasing and Purchase Contracts",
+        "central procurement",
+        "sap business network",
+        "test script",
+        "purchase order creation",
+        "purchase order import",
+        "purchase order approval",
+        "central purchase orders",
+        "central supplier confirmation",
+        "supplier order confirmation"
+      ],
+      "aliases": [
+        "6BJ_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/central-procurement"
+      ],
+      "path": "10-procurement/test-script-central-procurement-with-sap-business-network-for-procurem.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6BJ_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Central Procurement with SAP Business Network for Procurement (6BJ) (6BJ_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 6BJ: central purchase orders and supplier confirmations via SAP Business Network | keywords: Central Requisitioning, Purchasing and Purchase Contracts, central procurement, sap business network, test script, purchase order creation, purchase order import, purchase order approval, central purchase orders, central supplier confirmation, supplier order confirmation, 6BJ_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-central-requisitioning-1xi-sap-s-4hana-cloud-public-editio",
+      "title": "Test Script: Central Requisitioning (1XI) - SAP S/4HANA Cloud Public Edition (1XI_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for Central Requisitioning (1XI): hub/connected-system setup, PR-to-invoice and reservation test steps.",
+      "keywords": [
+        "Central Requisitioning, Purchasing and Purchase Contracts",
+        "central requisitioning",
+        "hub and connected systems",
+        "purchase requisitions",
+        "purchase requisition approval",
+        "flexible workflow",
+        "default settings for users",
+        "connected system configuration",
+        "reservations",
+        "goods receipt"
+      ],
+      "aliases": [
+        "1XI_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/central-procurement"
+      ],
+      "path": "10-procurement/test-script-central-requisitioning-1xi-sap-s-4hana-cloud-public-editio.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1XI_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Central Requisitioning (1XI) - SAP S/4HANA Cloud Public Edition (1XI_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition test script for Central Requisitioning (1XI): hub/connected-system setup, PR-to-invoice and reservation test steps | keywords: Central Requisitioning, Purchasing and Purchase Contracts, central requisitioning, hub and connected systems, purchase requisitions, purchase requisition approval, flexible workflow, default settings for users, connected system configuration, reservations, goods receipt, 1XI_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-central-sourcing-3zf-sap-s-4hana-cloud-public-edition-990",
+      "title": "Test Script: Central Sourcing (3ZF) - SAP S/4HANA Cloud Public Edition (3ZF_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 3ZF Central Sourcing: central RFQ, supplier quotation, award, central contract or PO follow-ons.",
+      "keywords": [
+        "Central Sourcing and Central Procurement",
+        "central sourcing",
+        "central request for quotation",
+        "central supplier quotation",
+        "supplier quotation award",
+        "central purchase contract",
+        "purchase order creation",
+        "test prerequisites",
+        "business roles",
+        "pro-rata vat"
+      ],
+      "aliases": [
+        "3ZF_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/central-sourcing"
+      ],
+      "path": "10-procurement/test-script-central-sourcing-3zf-sap-s-4hana-cloud-public-edition-990.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3ZF_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Central Sourcing (3ZF) - SAP S/4HANA Cloud Public Edition (3ZF_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 3ZF Central Sourcing: central RFQ, supplier quotation, award, central contract or PO follow-ons | keywords: Central Sourcing and Central Procurement, central sourcing, central request for quotation, central supplier quotation, supplier quotation award, central purchase contract, purchase order creation, test prerequisites, business roles, pro-rata vat, 3ZF_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-contract-management-with-sap-ariba-contracts-4az-ae-1014",
+      "title": "Test Script: Contract Management with SAP Ariba Contracts (4AZ_AE) (4AZ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script (scope item 4AZ) for creating contracts or scheduling agreements in SAP Ariba Contracts and reviewing them in S/4HANA.",
+      "keywords": [
+        "Contracts with SAP Ariba Contracts",
+        "ariba contracts integration",
+        "purchase contracts",
+        "scheduling agreements",
+        "contract creation",
+        "contract id synchronization",
+        "additional configuration",
+        "business roles",
+        "master data",
+        "demo data"
+      ],
+      "aliases": [
+        "4AZ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-contracts"
+      ],
+      "path": "10-procurement/test-script-contract-management-with-sap-ariba-contracts-4az-ae-1014.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4AZ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Contract Management with SAP Ariba Contracts (4AZ_AE) (4AZ_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script (scope item 4AZ) for creating contracts or scheduling agreements in SAP Ariba Contracts and reviewing them in S/4HANA | keywords: Contracts with SAP Ariba Contracts, ariba contracts integration, purchase contracts, scheduling agreements, contract creation, contract id synchronization, additional configuration, business roles, master data, demo data, 4AZ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-cross-company-purchasing-organization-2r3-ae-854",
+      "title": "Test Script: Cross-Company Purchasing Organization (2R3_AE) (2R3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (scope item 2R3, UAE) for cross-company purchasing organization setup, then PO, goods receipt and supplier invoice.",
+      "keywords": [
+        "Direct Material Procurement",
+        "cross-company purchasing",
+        "purchasing organization setup",
+        "organizational structure configuration",
+        "purchase order creation",
+        "goods receipt posting",
+        "supplier invoice creation",
+        "business partner extension",
+        "material master extension",
+        "purchasing info records"
+      ],
+      "aliases": [
+        "2R3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/direct-material-procurement"
+      ],
+      "path": "10-procurement/test-script-cross-company-purchasing-organization-2r3-ae-854.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2R3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Cross-Company Purchasing Organization (2R3_AE) (2R3_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition test script (scope item 2R3, UAE) for cross-company purchasing organization setup, then PO, goods receipt and supplier invoice | keywords: Direct Material Procurement, cross-company purchasing, purchasing organization setup, organizational structure configuration, purchase order creation, goods receipt posting, supplier invoice creation, business partner extension, material master extension, purchasing info records, 2R3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-guided-buying-capability-with-sap-ariba-buying-2nv-ae-836",
+      "title": "Test Script: Guided Buying Capability with SAP Ariba Buying (2NV_AE) (2NV_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 2NV (AE): guided buying with SAP Ariba Buying, from shopping cart to PR, PO, GR/SES and supplier invoice.",
+      "keywords": [
+        "Guided Buying with SAP Ariba Buying",
+        "guided buying",
+        "shopping cart",
+        "purchase requisition",
+        "purchase requisition approval",
+        "flexible workflow",
+        "purchase order creation",
+        "service entry sheet",
+        "goods receipt",
+        "supplier invoice"
+      ],
+      "aliases": [
+        "2NV_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-guided-buying"
+      ],
+      "path": "10-procurement/test-script-guided-buying-capability-with-sap-ariba-buying-2nv-ae-836.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2NV_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Guided Buying Capability with SAP Ariba Buying (2NV_AE) (2NV_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 2NV (AE): guided buying with SAP Ariba Buying, from shopping cart to PR, PO, GR/SES and supplier invoice | keywords: Guided Buying with SAP Ariba Buying, guided buying, shopping cart, purchase requisition, purchase requisition approval, flexible workflow, purchase order creation, service entry sheet, goods receipt, supplier invoice, 2NV_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-guided-buying-for-central-procurement-with-sap-ariba-buyin",
+      "title": "Test Script: Guided Buying for Central Procurement with SAP Ariba Buying (3EN) (3EN_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3EN: Guided Buying with SAP Ariba Buying and Central Procurement, from shopping cart to supplier invoice.",
+      "keywords": [
+        "Guided Buying with SAP Ariba Buying",
+        "guided buying",
+        "central procurement",
+        "shopping cart",
+        "shopping cart approval",
+        "inventory reservation",
+        "purchase order creation",
+        "goods receipt",
+        "supplier invoice",
+        "service entry sheet"
+      ],
+      "aliases": [
+        "3EN_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-guided-buying"
+      ],
+      "path": "10-procurement/test-script-guided-buying-for-central-procurement-with-sap-ariba-buyin.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3EN_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Guided Buying for Central Procurement with SAP Ariba Buying (3EN) (3EN_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 3EN: Guided Buying with SAP Ariba Buying and Central Procurement, from shopping cart to supplier invoice | keywords: Guided Buying with SAP Ariba Buying, guided buying, central procurement, shopping cart, shopping cart approval, inventory reservation, purchase order creation, goods receipt, supplier invoice, service entry sheet, 3EN_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-integration-of-procurement-with-external-suppliers-2ej-ae",
+      "title": "Test Script: Integration of Procurement with External Suppliers (2EJ_AE) - SAP S/4HANA Cloud Public Edition (2EJ_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 2EJ_AE (UAE): API-based procurement and return exchange with external suppliers, S/4HANA-to-S/4HANA and third-party via Postman.",
+      "keywords": [
+        "Purchase-to-Pay Automation with SAP Business Network",
+        "external supplier integration",
+        "test prerequisites",
+        "purchase order creation",
+        "return purchase orders",
+        "supplier master data",
+        "supplier confirmation",
+        "third-party integration",
+        "supplier invoices",
+        "order confirmation"
+      ],
+      "aliases": [
+        "2EJ_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/business-network-purchase-to-pay"
+      ],
+      "path": "10-procurement/test-script-integration-of-procurement-with-external-suppliers-2ej-ae.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2EJ_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Integration of Procurement with External Suppliers (2EJ_AE) - SAP S/4HANA Cloud Public Edition (2EJ_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script for scope item 2EJ_AE (UAE): API-based procurement and return exchange with external suppliers, S/4HANA-to-S/4HANA and third-party via Postman | keywords: Purchase-to-Pay Automation with SAP Business Network, external supplier integration, test prerequisites, purchase order creation, return purchase orders, supplier master data, supplier confirmation, third-party integration, supplier invoices, order confirmation, 2EJ_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-invoice-processing-with-sap-ariba-invoicing-4n6-1038",
+      "title": "Test Script: Invoice Processing with SAP Ariba Invoicing (4N6) (4N6_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition test script for scope item 4N6: upload, view, auto-post and manually process supplier invoices via SAP Ariba Invoicing.",
+      "keywords": [
+        "Invoice Processing with SAP Ariba Invoicing",
+        "supplier invoice upload",
+        "ariba invoicing",
+        "draft invoices",
+        "automatic invoice posting",
+        "manual invoice processing",
+        "extensive edit",
+        "data restrictions",
+        "business roles",
+        "test scripts"
+      ],
+      "aliases": [
+        "4N6_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-invoicing"
+      ],
+      "path": "10-procurement/test-script-invoice-processing-with-sap-ariba-invoicing-4n6-1038.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4N6_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Invoice Processing with SAP Ariba Invoicing (4N6) (4N6_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition test script for scope item 4N6: upload, view, auto-post and manually process supplier invoices via SAP Ariba Invoicing | keywords: Invoice Processing with SAP Ariba Invoicing, supplier invoice upload, ariba invoicing, draft invoices, automatic invoice posting, manual invoice processing, extensive edit, data restrictions, business roles, test scripts, 4N6_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-invoice-processing-with-sap-ariba-invoicing-7yh-1236",
+      "title": "Test Script: Invoice Processing with SAP Ariba Invoicing (7YH) (7YH_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP test script for scope item 7YH: step-by-step tests for supplier invoice upload, posting, approval and import with SAP Ariba Invoicing and S/4HANA Cloud.",
+      "keywords": [
+        "Invoice Processing with SAP Ariba Invoicing",
+        "ariba invoicing",
+        "supplier invoices",
+        "invoice upload",
+        "invoices without purchase order",
+        "invoices with purchase order",
+        "invoice approval workflow",
+        "manual invoice processing",
+        "invoice posting",
+        "invoice import"
+      ],
+      "aliases": [
+        "7YH_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-invoicing"
+      ],
+      "path": "10-procurement/test-script-invoice-processing-with-sap-ariba-invoicing-7yh-1236.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7YH_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Invoice Processing with SAP Ariba Invoicing (7YH) (7YH_S4CLD2608_BPD_EN_XX) (Procurement) — SAP test script for scope item 7YH: step-by-step tests for supplier invoice upload, posting, approval and import with SAP Ariba Invoicing and S/4HANA Cloud | keywords: Invoice Processing with SAP Ariba Invoicing, ariba invoicing, supplier invoices, invoice upload, invoices without purchase order, invoices with purchase order, invoice approval workflow, manual invoice processing, invoice posting, invoice import, 7YH_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-mrp-change-request-integration-with-sap-business-network-6",
+      "title": "Test Script: MRP Change Request Integration with SAP Business Network (65D_AE) (65D_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud test script (scope 65D_AE) for MRP change requests negotiated with suppliers via SAP Business Network: prerequisites and test steps.",
+      "keywords": [
+        "Supply Chain Collaboration with SAP Business Network",
+        "mrp change requests",
+        "sap business network",
+        "mrp rescheduling check",
+        "supplier response",
+        "change request confirmation",
+        "planned independent requirements",
+        "purchasing info records",
+        "purchase orders",
+        "application jobs"
+      ],
+      "aliases": [
+        "65D_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/business-network-supply-chain-collaboration"
+      ],
+      "path": "10-procurement/test-script-mrp-change-request-integration-with-sap-business-network-6.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/65D_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: MRP Change Request Integration with SAP Business Network (65D_AE) (65D_S4CLD2608_BPD_EN_AE) (Procurement) — S/4HANA Cloud test script (scope 65D_AE) for MRP change requests negotiated with suppliers via SAP Business Network: prerequisites and test steps | keywords: Supply Chain Collaboration with SAP Business Network, mrp change requests, sap business network, mrp rescheduling check, supplier response, change request confirmation, planned independent requirements, purchasing info records, purchase orders, application jobs, 65D_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-procurement-for-service-management-3ni-ae-964",
+      "title": "Test Script: Procurement for Service Management (3NI_AE) (3NI_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 3NI: procurement of consumption materials and external workforce integrated with service orders.",
+      "keywords": [
+        "Procurement of Services",
+        "service management procurement",
+        "purchase requisitions",
+        "purchase order creation",
+        "purchase order approval",
+        "flexible workflow",
+        "service entry sheets",
+        "goods receipt",
+        "supplier invoices",
+        "evaluated receipt settlement"
+      ],
+      "aliases": [
+        "3NI_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/procurement-of-services",
+        "topic/service-order-management-and-billing"
+      ],
+      "path": "10-procurement/test-script-procurement-for-service-management-3ni-ae-964.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/3NI_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Procurement for Service Management (3NI_AE) (3NI_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 3NI: procurement of consumption materials and external workforce integrated with service orders | keywords: Procurement of Services, service management procurement, purchase requisitions, purchase order creation, purchase order approval, flexible workflow, service entry sheets, goods receipt, supplier invoices, evaluated receipt settlement, 3NI_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-procurement-of-production-components-consumer-products-5w3",
+      "title": "Test Script: Procurement of Production Components – Consumer Products (5W3_AE) (5W3_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5W3 (AE): procure batch-managed raw material with QM and packaging without QM, plant 3310.",
+      "keywords": [
+        "Direct Material Procurement",
+        "procurement of production components",
+        "purchase requisitions",
+        "purchase orders",
+        "flexible workflow approval",
+        "automatic purchase order creation",
+        "source inspection",
+        "goods receipt inspection",
+        "usage decision",
+        "goods receipt"
+      ],
+      "aliases": [
+        "5W3_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/direct-material-procurement",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "10-procurement/test-script-procurement-of-production-components-consumer-products-5w3.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5W3_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Procurement of Production Components – Consumer Products (5W3_AE) (5W3_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5W3 (AE): procure batch-managed raw material with QM and packaging without QM, plant 3310 | keywords: Direct Material Procurement, procurement of production components, purchase requisitions, purchase orders, flexible workflow approval, automatic purchase order creation, source inspection, goods receipt inspection, usage decision, goods receipt, 5W3_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-procurement-of-services-22z-ae-sap-s-4hana-cloud-public-ed",
+      "title": "Test Script: Procurement of Services (22Z_AE) - SAP S/4HANA Cloud Public Edition (22Z_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP Best Practices test script for scope item 22Z (UAE, company code 3310): service PO, service entry sheet, supplier invoice, with prerequisites and workflow setup.",
+      "keywords": [
+        "Procurement of Services",
+        "service procurement",
+        "purchase requisitions",
+        "purchase orders",
+        "purchase contracts",
+        "item hierarchies",
+        "service entry sheets",
+        "flexible workflow",
+        "supplier invoices",
+        "multiple account assignment"
+      ],
+      "aliases": [
+        "22Z_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/procurement-of-services"
+      ],
+      "path": "10-procurement/test-script-procurement-of-services-22z-ae-sap-s-4hana-cloud-public-ed.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/22Z_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Procurement of Services (22Z_AE) - SAP S/4HANA Cloud Public Edition (22Z_S4CLD2608_BPD_EN_AE) (Procurement) — SAP Best Practices test script for scope item 22Z (UAE, company code 3310): service PO, service entry sheet, supplier invoice, with prerequisites and workflow setup | keywords: Procurement of Services, service procurement, purchase requisitions, purchase orders, purchase contracts, item hierarchies, service entry sheets, flexible workflow, supplier invoices, multiple account assignment, 22Z_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-purchase-contract-bmd-ae-sap-s-4hana-cloud-public-edition",
+      "title": "Test Script: Purchase Contract (BMD_AE) - SAP S/4HANA Cloud Public Edition (BMD_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item BMD Purchase Contract: prerequisites, configuration and step-by-step test procedures.",
+      "keywords": [
+        "Purchase Contracts",
+        "quantity contracts",
+        "test scripts",
+        "contract version management",
+        "item hierarchies",
+        "flexible workflow",
+        "purchase contract approval",
+        "reference purchasing organization",
+        "purchase requisitions",
+        "source lists"
+      ],
+      "aliases": [
+        "BMD_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/purchase-contracts"
+      ],
+      "path": "10-procurement/test-script-purchase-contract-bmd-ae-sap-s-4hana-cloud-public-edition.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BMD_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Purchase Contract (BMD_AE) - SAP S/4HANA Cloud Public Edition (BMD_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item BMD Purchase Contract: prerequisites, configuration and step-by-step test procedures | keywords: Purchase Contracts, quantity contracts, test scripts, contract version management, item hierarchies, flexible workflow, purchase contract approval, reference purchasing organization, purchase requisitions, source lists, BMD_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-real-time-reporting-and-monitoring-for-procurement-1ji-729",
+      "title": "Test Script: Real-Time Reporting and Monitoring for Procurement (1JI) (1JI_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 1JI: roles, prerequisites and tests of Procurement Overview, analytical list pages and Spend Dashboard.",
+      "keywords": [
+        "Procurement Analytics and Monitoring",
+        "procurement analytics",
+        "procurement overview page",
+        "purchase contract monitoring",
+        "rfq monitoring",
+        "purchase order monitoring",
+        "supplier confirmations",
+        "scheduling agreements",
+        "material price variance",
+        "central procurement"
+      ],
+      "aliases": [
+        "1JI_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/procurement-analytics"
+      ],
+      "path": "10-procurement/test-script-real-time-reporting-and-monitoring-for-procurement-1ji-729.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1JI_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Real-Time Reporting and Monitoring for Procurement (1JI) (1JI_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud 2608 test script for scope item 1JI: roles, prerequisites and tests of Procurement Overview, analytical list pages and Spend Dashboard | keywords: Procurement Analytics and Monitoring, procurement analytics, procurement overview page, purchase contract monitoring, rfq monitoring, purchase order monitoring, supplier confirmations, scheduling agreements, material price variance, central procurement, 1JI_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-request-for-price-1xf-ae-780",
+      "title": "Test Script - Request for Price (1XF_AE) (1XF_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud 2608 test script for scope item 1XF_AE (UAE): RFQ creation, supplier quotations, award, purchase contract follow-on, low-quotation situation handling.",
+      "keywords": [
+        "Request for Price and Quotation Comparison",
+        "request for quotation",
+        "supplier quotation",
+        "quotation award",
+        "situation handling",
+        "procurement test scripts",
+        "follow-on documents",
+        "flexible workflow",
+        "teams and responsibilities",
+        "business roles"
+      ],
+      "aliases": [
+        "1XF_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/request-for-quotation"
+      ],
+      "path": "10-procurement/test-script-request-for-price-1xf-ae-780.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/1XF_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Request for Price (1XF_AE) (1XF_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud 2608 test script for scope item 1XF_AE (UAE): RFQ creation, supplier quotations, award, purchase contract follow-on, low-quotation situation handling | keywords: Request for Price and Quotation Comparison, request for quotation, supplier quotation, quotation award, situation handling, procurement test scripts, follow-on documents, flexible workflow, teams and responsibilities, business roles, 1XF_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-requisitioning-18j-ae-sap-s-4hana-cloud-public-edition-705",
+      "title": "Test Script - Requisitioning (18J_AE), SAP S/4HANA Cloud Public Edition (18J_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item 18J (AE): requisition to PO, approval workflows, goods receipt, supplier invoice, reservation; prerequisites and sample data.",
+      "keywords": [
+        "Requisitioning and Consumable Purchasing",
+        "requisitioning",
+        "purchase requisitions",
+        "flexible workflow",
+        "purchase requisition approval",
+        "purchase order approval",
+        "purchase orders",
+        "supplier invoices",
+        "catalog purchasing",
+        "goods receipt"
+      ],
+      "aliases": [
+        "18J_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/requisitioning-and-consumable-purchasing"
+      ],
+      "path": "10-procurement/test-script-requisitioning-18j-ae-sap-s-4hana-cloud-public-edition-705.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/18J_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script - Requisitioning (18J_AE), SAP S/4HANA Cloud Public Edition (18J_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script for scope item 18J (AE): requisition to PO, approval workflows, goods receipt, supplier invoice, reservation; prerequisites and sample data | keywords: Requisitioning and Consumable Purchasing, requisitioning, purchase requisitions, flexible workflow, purchase requisition approval, purchase order approval, purchase orders, supplier invoices, catalog purchasing, goods receipt, 18J_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-sap-ariba-buying-procurement-expansion-package-81y-1244",
+      "title": "Test Script: SAP Ariba Buying Procurement Expansion Package (81Y) (81Y_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 81Y: SAP Ariba Buying purchase request through PO, goods receipt and supplier invoice in S/4HANA Cloud Public Edition 2608.",
+      "keywords": [
+        "SAP Ariba Buying Purchase Requests",
+        "sap ariba buying",
+        "purchase requests",
+        "buying profile",
+        "purchase order conversion",
+        "goods receipt",
+        "supplier invoices",
+        "purchase order approval",
+        "purchase request approval",
+        "business roles"
+      ],
+      "aliases": [
+        "81Y_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-buying"
+      ],
+      "path": "10-procurement/test-script-sap-ariba-buying-procurement-expansion-package-81y-1244.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/81Y_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: SAP Ariba Buying Procurement Expansion Package (81Y) (81Y_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for scope item 81Y: SAP Ariba Buying purchase request through PO, goods receipt and supplier invoice in S/4HANA Cloud Public Edition 2608 | keywords: SAP Ariba Buying Purchase Requests, sap ariba buying, purchase requests, buying profile, purchase order conversion, goods receipt, supplier invoices, purchase order approval, purchase request approval, business roles, 81Y_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-sap-s-4hana-cloud-public-edition-central-purchase-contract",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Central Purchase Contracts (2ME_AE) (2ME_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script, scope item 2ME (AE): setup and test steps for central purchase contracts, distribution, hierarchy, versioning, mass changes, situations.",
+      "keywords": [
+        "Central Requisitioning, Purchasing and Purchase Contracts",
+        "central purchase contracts",
+        "central procurement",
+        "contract distribution",
+        "hierarchy central contracts",
+        "contract versioning",
+        "mass changes",
+        "contract monitoring",
+        "price history",
+        "situation handling"
+      ],
+      "aliases": [
+        "2ME_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/central-procurement"
+      ],
+      "path": "10-procurement/test-script-sap-s-4hana-cloud-public-edition-central-purchase-contract.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2ME_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Central Purchase Contracts (2ME_AE) (2ME_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script, scope item 2ME (AE): setup and test steps for central purchase contracts, distribution, hierarchy, versioning, mass changes, situations | keywords: Central Requisitioning, Purchasing and Purchase Contracts, central purchase contracts, central procurement, contract distribution, hierarchy central contracts, contract versioning, mass changes, contract monitoring, price history, situation handling, 2ME_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-sap-s-4hana-cloud-public-edition-central-purchasing-2xt-88",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Central Purchasing (2XT) (2XT_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 2XT Central Purchasing (hub system 2608): prerequisites, roles, Fiori apps and step-by-step tests for central PR/PO processing, confirmations, automation.",
+      "keywords": [
+        "Central Requisitioning, Purchasing and Purchase Contracts",
+        "central purchasing",
+        "purchase requisitions",
+        "purchase orders",
+        "flexible workflow",
+        "supplier confirmation",
+        "purchase requisition automation",
+        "central purchase contracts",
+        "mass changes",
+        "procurement analytics"
+      ],
+      "aliases": [
+        "2XT_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/central-procurement"
+      ],
+      "path": "10-procurement/test-script-sap-s-4hana-cloud-public-edition-central-purchasing-2xt-88.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2XT_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Central Purchasing (2XT) (2XT_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for scope item 2XT Central Purchasing (hub system 2608): prerequisites, roles, Fiori apps and step-by-step tests for central PR/PO processing, confirmations, automation | keywords: Central Requisitioning, Purchasing and Purchase Contracts, central purchasing, purchase requisitions, purchase orders, flexible workflow, supplier confirmation, purchase requisition automation, central purchase contracts, mass changes, procurement analytics, 2XT_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-sap-s-4hana-cloud-public-edition-procurement-of-direct-mat",
+      "title": "Test Script SAP S/4HANA Cloud Public Edition - Procurement of Direct Materials (J45_AE) (J45_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (UAE) test script for scope item J45: direct-material procurement from requisition to PO, goods receipt, invoice, plus optional variants.",
+      "keywords": [
+        "Direct Material Procurement",
+        "direct materials procurement",
+        "purchase orders",
+        "purchase requisitions",
+        "automatic purchase order creation",
+        "goods receipt",
+        "supplier invoices",
+        "purchase order workflow",
+        "down payments",
+        "cash discount situations"
+      ],
+      "aliases": [
+        "J45_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/direct-material-procurement"
+      ],
+      "path": "10-procurement/test-script-sap-s-4hana-cloud-public-edition-procurement-of-direct-mat.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J45_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script SAP S/4HANA Cloud Public Edition - Procurement of Direct Materials (J45_AE) (J45_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (UAE) test script for scope item J45: direct-material procurement from requisition to PO, goods receipt, invoice, plus optional variants | keywords: Direct Material Procurement, direct materials procurement, purchase orders, purchase requisitions, automatic purchase order creation, goods receipt, supplier invoices, purchase order workflow, down payments, cash discount situations, J45_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-scheduling-agreement-for-consignment-procurement-2ny-ae-sa",
+      "title": "Test Script: Scheduling Agreement for Consignment Procurement (2NY_AE) - SAP S/4HANA Cloud Public Edition (2NY_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud test script for scope item 2NY (AE): consignment scheduling agreement from requisition to settlement, with roles, apps and sample data.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreements",
+        "consignment procurement",
+        "test scripts",
+        "delivery schedule",
+        "purchase requisitions",
+        "consignment settlement",
+        "flexible workflow",
+        "scheduling agreement approval",
+        "supplier invoices"
+      ],
+      "aliases": [
+        "2NY_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements",
+        "topic/supplier-consignment"
+      ],
+      "path": "10-procurement/test-script-scheduling-agreement-for-consignment-procurement-2ny-ae-sa.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2NY_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Scheduling Agreement for Consignment Procurement (2NY_AE) - SAP S/4HANA Cloud Public Edition (2NY_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud test script for scope item 2NY (AE): consignment scheduling agreement from requisition to settlement, with roles, apps and sample data | keywords: Purchase Scheduling Agreements, scheduling agreements, consignment procurement, test scripts, delivery schedule, purchase requisitions, consignment settlement, flexible workflow, scheduling agreement approval, supplier invoices, 2NY_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-scheduling-agreement-for-subcontracting-procurement-2nx-ae",
+      "title": "Test Script: Scheduling Agreement for Subcontracting Procurement (2NX_AE) - SAP S/4HANA Cloud Public Edition (2NX_S4CLD2608_BPD_EN_AE)",
+      "description": "S/4HANA Cloud 2608 (AE) test script, scope item 2NX: subcontracting scheduling agreements, with and without serial numbers, from creation to supplier invoice.",
+      "keywords": [
+        "Purchase Scheduling Agreements",
+        "scheduling agreement",
+        "subcontracting procurement",
+        "test scripts",
+        "serial number management",
+        "delivery schedule",
+        "purchasing info record",
+        "outbound delivery",
+        "goods receipt",
+        "supplier invoice"
+      ],
+      "aliases": [
+        "2NX_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/scheduling-agreements",
+        "topic/subcontracting-procurement"
+      ],
+      "path": "10-procurement/test-script-scheduling-agreement-for-subcontracting-procurement-2nx-ae.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2NX_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Scheduling Agreement for Subcontracting Procurement (2NX_AE) - SAP S/4HANA Cloud Public Edition (2NX_S4CLD2608_BPD_EN_AE) (Procurement) — S/4HANA Cloud 2608 (AE) test script, scope item 2NX: subcontracting scheduling agreements, with and without serial numbers, from creation to supplier invoice | keywords: Purchase Scheduling Agreements, scheduling agreement, subcontracting procurement, test scripts, serial number management, delivery schedule, purchasing info record, outbound delivery, goods receipt, supplier invoice, 2NX_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-search-for-supplier-in-sap-business-network-7vl-1231",
+      "title": "Test Script: Search for Supplier in SAP Business Network (7VL) (7VL_S4CLD2608_BPD_EN_XX)",
+      "description": "Test script for scope item 7VL: searching suppliers in SAP Business Network from S/4HANA Cloud, requesting supplier creation, and informing the buyer.",
+      "keywords": [
+        "Purchase-to-Pay Automation with SAP Business Network",
+        "supplier search",
+        "sap business network",
+        "supplier creation request",
+        "supplier profile",
+        "discovery postings",
+        "supplier master data",
+        "business roles",
+        "test scripts",
+        "additional manual configuration"
+      ],
+      "aliases": [
+        "7VL_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/business-network-purchase-to-pay"
+      ],
+      "path": "10-procurement/test-script-search-for-supplier-in-sap-business-network-7vl-1231.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/7VL_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Search for Supplier in SAP Business Network (7VL) (7VL_S4CLD2608_BPD_EN_XX) (Procurement) — Test script for scope item 7VL: searching suppliers in SAP Business Network from S/4HANA Cloud, requesting supplier creation, and informing the buyer | keywords: Purchase-to-Pay Automation with SAP Business Network, supplier search, sap business network, supplier creation request, supplier profile, discovery postings, supplier master data, business roles, test scripts, additional manual configuration, 7VL_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-service-and-material-procurement-project-based-services-j1",
+      "title": "Test Script: Service and Material Procurement – Project-Based Services (J13_AE) (J13_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item J13: service, consumable and third-party procurement for project-based services, with prerequisites and steps.",
+      "keywords": [
+        "Procurement of Services",
+        "service procurement",
+        "third-party order processing",
+        "consumable material procurement",
+        "service entry sheets",
+        "supplier invoices",
+        "flexible workflow",
+        "purchase contracts",
+        "limit items",
+        "situation handling"
+      ],
+      "aliases": [
+        "J13_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/procurement-of-services",
+        "topic/customer-project-management"
+      ],
+      "path": "10-procurement/test-script-service-and-material-procurement-project-based-services-j1.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/J13_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Service and Material Procurement – Project-Based Services (J13_AE) (J13_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item J13: service, consumable and third-party procurement for project-based services, with prerequisites and steps | keywords: Procurement of Services, service procurement, third-party order processing, consumable material procurement, service entry sheets, supplier invoices, flexible workflow, purchase contracts, limit items, situation handling, J13_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-service-procurement-with-sap-business-network-and-sap-fiel",
+      "title": "Test Script: Service Procurement with SAP Business Network and SAP Fieldglass (4R2) (4R2_S4CLD2608_BPD_EN_XX)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4R2: service PO, Fieldglass SOW/events, service entry sheet, Business Network invoice, payment.",
+      "keywords": [
+        "Service Procurement with SAP Fieldglass and Business Network",
+        "service procurement",
+        "purchase order creation",
+        "purchase order approval",
+        "flexible workflow",
+        "sap business network",
+        "sap fieldglass",
+        "service entry sheet",
+        "supplier invoice",
+        "automatic payments"
+      ],
+      "aliases": [
+        "4R2_S4CLD2608_BPD_EN_XX"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/service-procurement-fieldglass"
+      ],
+      "path": "10-procurement/test-script-service-procurement-with-sap-business-network-and-sap-fiel.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4R2_S4CLD2608_BPD_EN_XX.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Service Procurement with SAP Business Network and SAP Fieldglass (4R2) (4R2_S4CLD2608_BPD_EN_XX) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 4R2: service PO, Fieldglass SOW/events, service entry sheet, Business Network invoice, payment | keywords: Service Procurement with SAP Fieldglass and Business Network, service procurement, purchase order creation, purchase order approval, flexible workflow, sap business network, sap fieldglass, service entry sheet, supplier invoice, automatic payments, 4R2_S4CLD2608_BPD_EN_XX"
+    },
+    {
+      "id": "10-procurement/test-script-sourcing-with-sap-ariba-sourcing-4bl-ae-sap-s-4hana-cloud",
+      "title": "Test Script: Sourcing with SAP Ariba Sourcing (4BL_AE) - SAP S/4HANA Cloud Public Edition (4BL_S4CLD2608_BPD_EN_AE)",
+      "description": "Test script for scope item 4BL_AE: RFQ in S/4HANA Cloud, Ariba sourcing project, event and award (Guided/Classic UI), then supplier quotation, PO, contract.",
+      "keywords": [
+        "Sourcing with SAP Ariba Sourcing",
+        "ariba sourcing",
+        "test scripts",
+        "request for quotation",
+        "guided sourcing ui",
+        "classic sourcing ui",
+        "sourcing projects",
+        "sourcing events",
+        "supplier award",
+        "supplier quotations"
+      ],
+      "aliases": [
+        "4BL_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/ariba-sourcing"
+      ],
+      "path": "10-procurement/test-script-sourcing-with-sap-ariba-sourcing-4bl-ae-sap-s-4hana-cloud.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/4BL_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Sourcing with SAP Ariba Sourcing (4BL_AE) - SAP S/4HANA Cloud Public Edition (4BL_S4CLD2608_BPD_EN_AE) (Procurement) — Test script for scope item 4BL_AE: RFQ in S/4HANA Cloud, Ariba sourcing project, event and award (Guided/Classic UI), then supplier quotation, PO, contract | keywords: Sourcing with SAP Ariba Sourcing, ariba sourcing, test scripts, request for quotation, guided sourcing ui, classic sourcing ui, sourcing projects, sourcing events, supplier award, supplier quotations, 4BL_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-subcontracting-bmy-ae-sap-s-4hana-cloud-public-edition-129",
+      "title": "Test Script: Subcontracting (BMY_AE) - SAP S/4HANA Cloud Public Edition (BMY_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP test script for scope item BMY (UAE) subcontracting in S/4HANA Cloud Public Edition 2608: prerequisites and test steps, with and without serial numbers.",
+      "keywords": [
+        "Subcontracting Procurement",
+        "subcontracting",
+        "subcontracting purchase order",
+        "serial number management",
+        "outbound delivery",
+        "goods receipt",
+        "supplier invoice",
+        "purchase order approval",
+        "goods issue",
+        "inbound delivery"
+      ],
+      "aliases": [
+        "BMY_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/subcontracting-procurement"
+      ],
+      "path": "10-procurement/test-script-subcontracting-bmy-ae-sap-s-4hana-cloud-public-edition-129.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/BMY_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subcontracting (BMY_AE) - SAP S/4HANA Cloud Public Edition (BMY_S4CLD2608_BPD_EN_AE) (Procurement) — SAP test script for scope item BMY (UAE) subcontracting in S/4HANA Cloud Public Edition 2608: prerequisites and test steps, with and without serial numbers | keywords: Subcontracting Procurement, subcontracting, subcontracting purchase order, serial number management, outbound delivery, goods receipt, supplier invoice, purchase order approval, goods issue, inbound delivery, BMY_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-subcontracting-consumer-products-5w4-ae-sap-s-4hana-cloud",
+      "title": "Test Script: Subcontracting - Consumer Products (5W4_AE), SAP S/4HANA Cloud Public Edition (5W4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5W4_AE: subcontracting with batch anonymization, MRP areas, quality inspection and invoicing (plant 3310).",
+      "keywords": [
+        "Subcontracting Procurement",
+        "subcontracting process",
+        "subcontracting purchase order",
+        "planned independent requirements",
+        "material requirements planning",
+        "subcontracting mrp area",
+        "batch traceability",
+        "component transfer to subcontractor",
+        "goods receipt",
+        "quality inspection"
+      ],
+      "aliases": [
+        "5W4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/subcontracting-procurement",
+        "topic/end-to-end-produce-and-sell"
+      ],
+      "path": "10-procurement/test-script-subcontracting-consumer-products-5w4-ae-sap-s-4hana-cloud.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5W4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Subcontracting - Consumer Products (5W4_AE), SAP S/4HANA Cloud Public Edition (5W4_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5W4_AE: subcontracting with batch anonymization, MRP areas, quality inspection and invoicing (plant 3310) | keywords: Subcontracting Procurement, subcontracting process, subcontracting purchase order, planned independent requirements, material requirements planning, subcontracting mrp area, batch traceability, component transfer to subcontractor, goods receipt, quality inspection, 5W4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-supplier-consignment-2lg-ae-sap-s-4hana-cloud-public-editi",
+      "title": "Test Script: Supplier Consignment (2LG_AE) - SAP S/4HANA Cloud Public Edition (2LG_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item Supplier Consignment (2LG): info record, PO, goods receipt, stock transfer, consignment settlement.",
+      "keywords": [
+        "Supplier Consignment",
+        "consignment info record",
+        "purchase orders",
+        "goods receipt",
+        "stock transfer",
+        "consignment settlement",
+        "supplier invoice jobs",
+        "purchase order approval",
+        "supplier invoice list",
+        "business roles"
+      ],
+      "aliases": [
+        "2LG_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/supplier-consignment"
+      ],
+      "path": "10-procurement/test-script-supplier-consignment-2lg-ae-sap-s-4hana-cloud-public-editi.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/2LG_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Supplier Consignment (2LG_AE) - SAP S/4HANA Cloud Public Edition (2LG_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item Supplier Consignment (2LG): info record, PO, goods receipt, stock transfer, consignment settlement | keywords: Supplier Consignment, consignment info record, purchase orders, goods receipt, stock transfer, consignment settlement, supplier invoice jobs, purchase order approval, supplier invoice list, business roles, 2LG_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-supplier-evaluation-and-performance-monitoring-sl4-ae-sap",
+      "title": "Test Script: Supplier Evaluation and Performance Monitoring (SL4_AE) - SAP S/4HANA Cloud Public Edition (SL4_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition test script (SL4_AE, 2608): set up and test supplier evaluation by operational KPIs, questionnaires and user-defined criteria.",
+      "keywords": [
+        "Supplier Evaluation and Vendor Performance",
+        "supplier evaluation",
+        "test scripts",
+        "procurement analytics configuration",
+        "operational supplier evaluation",
+        "weighting and scoring",
+        "questionnaire evaluation",
+        "user-defined criteria",
+        "parts per million",
+        "supplier score history"
+      ],
+      "aliases": [
+        "SL4_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/supplier-evaluation"
+      ],
+      "path": "10-procurement/test-script-supplier-evaluation-and-performance-monitoring-sl4-ae-sap.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/SL4_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Supplier Evaluation and Performance Monitoring (SL4_AE) - SAP S/4HANA Cloud Public Edition (SL4_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition test script (SL4_AE, 2608): set up and test supplier evaluation by operational KPIs, questionnaires and user-defined criteria | keywords: Supplier Evaluation and Vendor Performance, supplier evaluation, test scripts, procurement analytics configuration, operational supplier evaluation, weighting and scoring, questionnaire evaluation, user-defined criteria, parts per million, supplier score history, SL4_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-supply-chain-automation-with-sap-business-network-5i2-ae-1",
+      "title": "Test Script: Supply Chain Automation with SAP Business Network (5I2_AE) (5I2_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5I2 (AE): subcontracting, scheduling agreements, multi-tier and consignment with SAP Business Network.",
+      "keywords": [
+        "Supply Chain Collaboration with SAP Business Network",
+        "subcontracting",
+        "serial number management",
+        "batch-managed material",
+        "packing instruction",
+        "scheduling agreements",
+        "multi-tier subcontracting",
+        "sap business network",
+        "consignment purchase order",
+        "purchase order approval"
+      ],
+      "aliases": [
+        "5I2_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/business-network-supply-chain-collaboration"
+      ],
+      "path": "10-procurement/test-script-supply-chain-automation-with-sap-business-network-5i2-ae-1.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "low",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/5I2_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Supply Chain Automation with SAP Business Network (5I2_AE) (5I2_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 test script for scope item 5I2 (AE): subcontracting, scheduling agreements, multi-tier and consignment with SAP Business Network | keywords: Supply Chain Collaboration with SAP Business Network, subcontracting, serial number management, batch-managed material, packing instruction, scheduling agreements, multi-tier subcontracting, sap business network, consignment purchase order, purchase order approval, 5I2_S4CLD2608_BPD_EN_AE"
+    },
+    {
+      "id": "10-procurement/test-script-vendor-performance-consumer-products-6a6-ae-1154",
+      "title": "Test Script: Vendor Performance – Consumer Products (6A6_AE) (6A6_S4CLD2608_BPD_EN_AE)",
+      "description": "SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 6A6: supplier evaluation via weighting/scoring, questionnaires, templates, appraisals and scorecards.",
+      "keywords": [
+        "Supplier Evaluation and Vendor Performance",
+        "supplier evaluation",
+        "weighting and scoring",
+        "question library",
+        "evaluation questionnaires",
+        "evaluation templates",
+        "group-based evaluation",
+        "supplier scorecards",
+        "appraiser responses",
+        "purchasing categories"
+      ],
+      "aliases": [
+        "6A6_S4CLD2608_BPD_EN_AE"
+      ],
+      "tags": [
+        "kb/procurement",
+        "topic/supplier-evaluation"
+      ],
+      "path": "10-procurement/test-script-vendor-performance-consumer-products-6a6-ae-1154.md",
+      "cluster": "10-procurement",
+      "status": "active",
+      "confidence": "high",
+      "sources": [
+        "raw_assets/SAP_Best_Practices_for_SAP_S4HANA_Cloud_Public_Edition_2608_AE_SAPCUSTOMER (1)/S4C/Library/TestScripts/6A6_S4CLD2608_BPD_EN_AE.docx"
+      ],
+      "updated": "2026-10-12",
+      "embedding_text": "Test Script: Vendor Performance – Consumer Products (6A6_AE) (6A6_S4CLD2608_BPD_EN_AE) (Procurement) — SAP S/4HANA Cloud Public Edition 2608 (AE) test script for scope item 6A6: supplier evaluation via weighting/scoring, questionnaires, templates, appraisals and scorecards | keywords: Supplier Evaluation and Vendor Performance, supplier evaluation, weighting and scoring, question library, evaluation questionnaires, evaluation templates, group-based evaluation, supplier scorecards, appraiser responses, purchasing categories, 6A6_S4CLD2608_BPD_EN_AE"
+    }
+  ]
+}
